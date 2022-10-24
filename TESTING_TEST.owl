@@ -620,6 +620,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0001_Reposol_5w40_PISTON_WEIGHT_MEASUREMENT_OUTPUT">
         <rdf:type rdf:resource="https://w3id.org/tribont/test#WeightMeasurementOutput"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0001_Repsol_5w40_PISTONRING_WEIGHT"/>
     </owl:NamedIndividual>
     
 
@@ -628,7 +629,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0001_Repsol_5w40_PISTONRING_WEIGHT">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Weight"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#mg"/>
+        <property:hasUnit rdf:resource="https://w3id.org/tribont/common#mg"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10000.0</property:value>
     </owl:NamedIndividual>
     
@@ -648,8 +649,9 @@
     <!-- https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#Measurement"/>
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Weight"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#mg"/>
+        <property:hasUnit rdf:resource="https://w3id.org/tribont/common#mg"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</property:value>
     </owl:NamedIndividual>
     
@@ -659,17 +661,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT">
         <rdf:type rdf:resource="https://w3id.org/tribont/test#WeightMeasurement"/>
-        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT_OUTPUT"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT"/>
         <test:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#SCALE01"/>
         <test:testsSample rdf:resource="https://w3id.org/tribont/TESTINGtest#AUDI_CYLINDER"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT_OUTPUT -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT_OUTPUT">
-        <rdf:type rdf:resource="https://w3id.org/tribont/test#WeightMeasurementOutput"/>
     </owl:NamedIndividual>
     
 
@@ -678,7 +672,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0003_Repsol_5w40_PISTONRING_WEIGHT">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Weight"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#mg"/>
+        <property:hasUnit rdf:resource="https://w3id.org/tribont/common#mg"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10000.0</property:value>
     </owl:NamedIndividual>
     
@@ -700,6 +694,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0003_Repsol_5w40_PISTON_WEIGHT_MEASUREMENT_OUTPUT">
         <rdf:type rdf:resource="https://w3id.org/tribont/test#WeightMeasurementOutput"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0003_Repsol_5w40_PISTONRING_WEIGHT"/>
     </owl:NamedIndividual>
     
 
@@ -707,8 +702,9 @@
     <!-- https://w3id.org/tribont/TESTINGtest#SC0004_Repsol_5w40_AUDILINER_WEIGHT -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0004_Repsol_5w40_AUDILINER_WEIGHT">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#Measurement"/>
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Weight"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#mg"/>
+        <property:hasUnit rdf:resource="https://w3id.org/tribont/common#mg"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19999.88</property:value>
     </owl:NamedIndividual>
     
@@ -718,18 +714,10 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0004_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT">
         <rdf:type rdf:resource="https://w3id.org/tribont/test#WeightMeasurement"/>
-        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0004_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT_OUTPUT"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0004_Repsol_5w40_AUDILINER_WEIGHT"/>
         <test:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_TRIBOLOGY_TEST"/>
         <test:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#SCALE01"/>
         <test:testsSample rdf:resource="https://w3id.org/tribont/TESTINGtest#AUDI_CYLINDER"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/TESTINGtest#SC0004_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT_OUTPUT -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0004_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT_OUTPUT">
-        <rdf:type rdf:resource="https://w3id.org/tribont/test#WeightMeasurementOutput"/>
     </owl:NamedIndividual>
     
 
