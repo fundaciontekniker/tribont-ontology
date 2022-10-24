@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/trib#"
+     xml:base="https://w3id.org/trib"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:rdfs1="https://w3id.org/tribont/equipment#rdfs:"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dcterms="https://w3id.org/tribont/equipment#dcterms:"
+     xmlns:property="https://w3id.org/tribontproperty#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="https://w3id.org/tribont/property">
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <terms:created>2021-10-18</terms:created>
+        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla &lt;mailto: patricia.casla@tekniker.es&gt;
+Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
+        <terms:description xml:lang="en">The xxx ontology xxx</terms:description>
+        <terms:issued>2021-mm-dd</terms:issued>
+        <terms:title>XXX</terms:title>
+        <vann:preferredNamespacePrefix>characterisedBy</vann:preferredNamespacePrefix>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/tribont/property#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#belongsTo">
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/property#isGroupingOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/property#characterises -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#characterises">
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/property#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#hasProperty">
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/property#isPropertyFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/property#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#hasUnit">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/tribont/property#isUnitFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/property#isCharacterisedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#isCharacterisedBy">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#belongsTo"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#isCharacterisedBy"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#isCharacterisedBy"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#hasProperty"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/property#isGroupingOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#isGroupingOf"/>
+    
+
+
+    <!-- https://w3id.org/tribont/property#isPropertyFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#isPropertyFor"/>
+    
+
+
+    <!-- https://w3id.org/tribont/property#isUnitFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#isUnitFor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- https://w3id.org/tribont/property#maxValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/property#maxValue"/>
+    
+
+
+    <!-- https://w3id.org/tribont/property#minValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/property#minValue"/>
+    
+
+
+    <!-- https://w3id.org/tribont/property#value -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/property#value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/tribont/property#Feature -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/property#Feature">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/property#Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/property#Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/title"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Feature  is a logical aggregation of  qualifiable or quantifiable attribute, or characteristic of something. or somebody</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/property</rdfs:isDefinedBy>
+        <rdfs:label>Feature</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/property#Property -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/property#Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#characterises"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/property#SubjectOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/property#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isPropertyFor"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/property#Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#maxValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#minValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#value"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/title"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Property is a qualifiable or quantifiable attribute, or characteristic of something. or somebody</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/property</rdfs:isDefinedBy>
+        <rdfs:label>Property</rdfs:label>
+        <ns1:term_status>testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/property#SubjectOfInterest -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/property#SubjectOfInterest">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/property#Feature"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/property#Property"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isGroupingOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/property#SubjectOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/title"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/property#Unit -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/property#Unit"/>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/fproperty#FeatureOfInterest">
+        <rdfs:isDefinedBy>https://w3id.org/tribont/property</rdfs:isDefinedBy>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Feature"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Property"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#SubjectOfInterest"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Unit"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

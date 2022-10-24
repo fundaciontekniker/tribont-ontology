@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/tribont/TESTINGequipment#"
+     xml:base="https://w3id.org/tribont/TESTINGequipment"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:body="https://w3id.org/tribont/body#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:unit="https://w3id.org/tribont/unit#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:common="https://w3id.org/tribont/common#"
+     xmlns:property="https://w3id.org/tribont/property#"
+     xmlns:equipment="https://w3id.org/tribont/equipment#"
+     xmlns:tribontcore="https://w3id.org/tribontcore#">
+    <owl:Ontology rdf:about="https://w3id.org/tribont/TESTINGequipment">
+        <owl:imports rdf:resource="https://w3id.org/tribont/equipment"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/tribont/equipment#isManufacturedBy -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/equipment#isManufacturedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#LTU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#LTU">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#OPTIMOL -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#OPTIMOL">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#TribometerClass"/>
+        <common:hasManufacturer rdf:resource="https://w3id.org/tribont/TESTINGequipment#OPTIMOL"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_NOVING_PIN"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPUT_SPECIFICATION"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_STATIC_PLATE"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_WORKINGSPECIFICATION"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_WORKING_MEASUREMENT"/>
+        <property:isGroupingOf rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_LTU"/>
+        <property:isGroupingOf rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
+        <equipment:isManufacturedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#OPTIMOL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_LTU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_LTU">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#Tribometer"/>
+        <common:hasOwner rdf:resource="https://w3id.org/tribont/TESTINGequipment#LTU"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_LTU_WORKINGSPECIFICATION"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_LTU_WORKINGSPECIFICATION -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_LTU_WORKINGSPECIFICATION">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#TribometerOperationSpecification"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_NOR_REFRIGERATED"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#N2CO295"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#dry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_CHANBER_T -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_CHANBER_T">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#ChamberTemperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_FREQUENCY -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_FREQUENCY">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#Frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_HUMIDITY -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_HUMIDITY">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#Humidity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_LOAD -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_LOAD">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#Load"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_SAMPLETEMPERATURE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_SAMPLETEMPERATURE">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#SampleTemperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_NORMAL_FORCE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_NORMAL_FORCE">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#NormalForce"/>
+        <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000.0</property:maxValue>
+        <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</property:minValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_NOVING_PIN -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_NOVING_PIN">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#MovingBodySpecification"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#pin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPUT_SPECIFICATION -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPUT_SPECIFICATION">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#TribometerOutputSpecification"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_L"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_V"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_L -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_L">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#WearScarLength"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_V -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_V">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#WearScarVolume"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_FREQUENCY -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_FREQUENCY">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#Frequency"/>
+        <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</property:maxValue>
+        <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</property:minValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_STROKELENGTH -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_STROKELENGTH">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#StrokeLength"/>
+        <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</property:maxValue>
+        <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</property:maxValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_STATIC_PLATE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_STATIC_PLATE">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#StaticBodySpecification"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#plate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_TEK -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#Tribometer"/>
+        <common:hasOwner rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_MOVING_BALL"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_MOVING_RING"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_WORKINGSPECIFICATION"/>
+        <terms:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">TEK0010</terms:identifier>
+        <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SRV Machine with upgraded sensors and ambient chamber</terms:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_MOVING_BALL -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_MOVING_BALL">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#MovingBodySpecification"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#ball"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_MOVING_RING -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_MOVING_RING">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#MovingBodySpecification"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#ring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_WORKINGSPECIFICATION -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_WORKINGSPECIFICATION">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#TribometerOperationSpecification"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_REFRIGERATED"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_NOR_REFRIGERATED -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_NOR_REFRIGERATED">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#ChamberTemperature"/>
+        <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">900.0</property:maxValue>
+        <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</property:minValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_REFRIGERATED -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_REFRIGERATED">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#ChamberTemperature"/>
+        <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">900.0</property:maxValue>
+        <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-35.0</property:minValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_VELOCITY -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_VELOCITY">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#Velocity"/>
+        <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</property:maxValue>
+        <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.009</property:minValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_WORKINGSPECIFICATION -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_WORKINGSPECIFICATION">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#TribometerOperationSpecification"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_NORMAL_FORCE"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_FREQUENCY"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_STROKELENGTH"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_VELOCITY"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#EHD"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#ambient_air"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#ambient_humidity"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#ambient_pressure"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#boundary_lubrication"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#grease"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#mixed_lubrication"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#oil"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#rotating_reciprocating"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/common#sliding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_WORKING_MEASUREMENT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_WORKING_MEASUREMENT">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#TribometerOperationMeasurementSpecification"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_CHANBER_T"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_FREQUENCY"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_HUMIDITY"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_LOAD"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_SAMPLETEMPERATURE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#TEKNIKER -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#TEKNIKER">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#TESSA_TEK -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#TESSA_TEK">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#Tribometer"/>
+        <common:hasOwner rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
