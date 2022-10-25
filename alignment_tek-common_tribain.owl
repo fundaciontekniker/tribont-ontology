@@ -1,0 +1,299 @@
+@prefix : <https://w3id.org/tribont/tribAInAlignment#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/tribont/common/tribAInAlignment> .
+
+<https://w3id.org/tribont/common/tribAInAlignment> rdf:type owl:Ontology ;
+                                                    <http://purl.org/dc/elements/1.1/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>""" ;
+                                                    <http://purl.org/dc/elements/1.1/title> "Trib XX module alignment with TribAIn ontology" ;
+                                                    rdfs:comment "Definition of the alignments between the xxx and the TribAIn ontology."@en ;
+                                                    owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ktmfk.de/ontology/tribAIn/AmbientMedium
+<http://ktmfk.de/ontology/tribAIn/AmbientMedium> rdf:type owl:Class ;
+                                                 owl:equivalentClass <https://w3id.org/tribont/common#EnvironmentMedium> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/CoefficientOfFriction
+<http://ktmfk.de/ontology/tribAIn/CoefficientOfFriction> rdf:type owl:Class ;
+                                                         owl:equivalentClass <https://w3id.org/tribont/common#COFMean> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Diameter
+<http://ktmfk.de/ontology/tribAIn/Diameter> rdf:type owl:Class ;
+                                            owl:equivalentClass <https://w3id.org/tribont/common#Diameter> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Geometry
+<http://ktmfk.de/ontology/tribAIn/Geometry> rdf:type owl:Class ;
+                                            owl:equivalentClass <https://w3id.org/tribont/common#GeometricDimension> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/GeometryElement
+<http://ktmfk.de/ontology/tribAIn/GeometryElement> rdf:type owl:Class ;
+                                                   owl:equivalentClass <https://w3id.org/tribont/common#Shape> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Height
+<http://ktmfk.de/ontology/tribAIn/Height> rdf:type owl:Class ;
+                                          owl:equivalentClass <https://w3id.org/tribont/common#Height> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Humidity
+<http://ktmfk.de/ontology/tribAIn/Humidity> rdf:type owl:Class ;
+                                            owl:equivalentClass <https://w3id.org/tribont/common#Humidity> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Length
+<http://ktmfk.de/ontology/tribAIn/Length> rdf:type owl:Class ;
+                                          owl:equivalentClass <https://w3id.org/tribont/common#Length> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/NormalForce
+<http://ktmfk.de/ontology/tribAIn/NormalForce> rdf:type owl:Class ;
+                                               owl:equivalentClass <https://w3id.org/tribont/common#NormalForce> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Output
+<http://ktmfk.de/ontology/tribAIn/Output> rdf:type owl:Class ;
+                                          owl:equivalentClass <https://w3id.org/tribont/common#OutputResult> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/PoissonsRatio
+<http://ktmfk.de/ontology/tribAIn/PoissonsRatio> rdf:type owl:Class ;
+                                                 owl:equivalentClass <https://w3id.org/tribont/common#PoisssonRatio> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Pressure
+<http://ktmfk.de/ontology/tribAIn/Pressure> rdf:type owl:Class ;
+                                            owl:equivalentClass <https://w3id.org/tribont/common#Pressure> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Ra
+<http://ktmfk.de/ontology/tribAIn/Ra> rdf:type owl:Class ;
+                                      owl:equivalentClass <https://w3id.org/tribont/common#Ra> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rk
+<http://ktmfk.de/ontology/tribAIn/Rk> rdf:type owl:Class ;
+                                      owl:equivalentClass <https://w3id.org/tribont/common#Rk> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/RotationSpeed
+<http://ktmfk.de/ontology/tribAIn/RotationSpeed> rdf:type owl:Class ;
+                                                 owl:equivalentClass <https://w3id.org/tribont/common#RotationalSpeed> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rp
+<http://ktmfk.de/ontology/tribAIn/Rp> rdf:type owl:Class ;
+                                      owl:equivalentClass <https://w3id.org/tribont/common#Rp> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rpk
+<http://ktmfk.de/ontology/tribAIn/Rpk> rdf:type owl:Class ;
+                                       owl:equivalentClass <https://w3id.org/tribont/common#Rpk> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rq
+<http://ktmfk.de/ontology/tribAIn/Rq> rdf:type owl:Class ;
+                                      owl:equivalentClass <https://w3id.org/tribont/common#Rq> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rsk
+<http://ktmfk.de/ontology/tribAIn/Rsk> rdf:type owl:Class ;
+                                       owl:equivalentClass <https://w3id.org/tribont/common#Rsk> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Runtime
+<http://ktmfk.de/ontology/tribAIn/Runtime> rdf:type owl:Class ;
+                                           owl:equivalentClass <https://w3id.org/tribont/common#Duration> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rv
+<http://ktmfk.de/ontology/tribAIn/Rv> rdf:type owl:Class ;
+                                      owl:equivalentClass <https://w3id.org/tribont/common#Rv> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rz
+<http://ktmfk.de/ontology/tribAIn/Rz> rdf:type owl:Class ;
+                                      owl:equivalentClass <https://w3id.org/tribont/common#Rz> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SurfaceRoughness
+<http://ktmfk.de/ontology/tribAIn/SurfaceRoughness> rdf:type owl:Class ;
+                                                    owl:equivalentClass <https://w3id.org/tribont/common#SurfaceRoughness> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TechnicalStandard
+<http://ktmfk.de/ontology/tribAIn/TechnicalStandard> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.org/dc/terms/Standard> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Temperature
+<http://ktmfk.de/ontology/tribAIn/Temperature> rdf:type owl:Class ;
+                                               owl:equivalentClass <https://w3id.org/tribont/common#Temperature> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TribologicalParameter
+<http://ktmfk.de/ontology/tribAIn/TribologicalParameter> rdf:type owl:Class ;
+                                                         owl:equivalentClass <https://w3id.org/tribont/common#Rp> ,
+                                                                             <https://w3id.org/tribont/common#TribologicalProperty> ,
+                                                                             <https://w3id.org/tribont/common#WearScarVolume> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Velocity
+<http://ktmfk.de/ontology/tribAIn/Velocity> rdf:type owl:Class ;
+                                            owl:equivalentClass <https://w3id.org/tribont/common#Velocity> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Width
+<http://ktmfk.de/ontology/tribAIn/Width> rdf:type owl:Class ;
+                                         owl:equivalentClass <https://w3id.org/tribont/common#Width> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/YoungsModulus
+<http://ktmfk.de/ontology/tribAIn/YoungsModulus> rdf:type owl:Class ;
+                                                 owl:equivalentClass <https://w3id.org/tribont/common#YoungModulus> .
+
+
+###  http://purl.org/dc/terms/Standard
+<http://purl.org/dc/terms/Standard> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#COFMean
+<https://w3id.org/tribont/common#COFMean> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Diameter
+<https://w3id.org/tribont/common#Diameter> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Duration
+<https://w3id.org/tribont/common#Duration> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#EnvironmentMedium
+<https://w3id.org/tribont/common#EnvironmentMedium> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#GeometricDimension
+<https://w3id.org/tribont/common#GeometricDimension> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Height
+<https://w3id.org/tribont/common#Height> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Humidity
+<https://w3id.org/tribont/common#Humidity> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Length
+<https://w3id.org/tribont/common#Length> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#NormalForce
+<https://w3id.org/tribont/common#NormalForce> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#OutputResult
+<https://w3id.org/tribont/common#OutputResult> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#PoisssonRatio
+<https://w3id.org/tribont/common#PoisssonRatio> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Pressure
+<https://w3id.org/tribont/common#Pressure> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Ra
+<https://w3id.org/tribont/common#Ra> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Rk
+<https://w3id.org/tribont/common#Rk> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#RotationalSpeed
+<https://w3id.org/tribont/common#RotationalSpeed> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Rp
+<https://w3id.org/tribont/common#Rp> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Rpk
+<https://w3id.org/tribont/common#Rpk> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Rq
+<https://w3id.org/tribont/common#Rq> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Rsk
+<https://w3id.org/tribont/common#Rsk> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Rv
+<https://w3id.org/tribont/common#Rv> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Rz
+<https://w3id.org/tribont/common#Rz> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Shape
+<https://w3id.org/tribont/common#Shape> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#SurfaceRoughness
+<https://w3id.org/tribont/common#SurfaceRoughness> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Temperature
+<https://w3id.org/tribont/common#Temperature> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#TribologicalProperty
+<https://w3id.org/tribont/common#TribologicalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Velocity
+<https://w3id.org/tribont/common#Velocity> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#WearScarVolume
+<https://w3id.org/tribont/common#WearScarVolume> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#Width
+<https://w3id.org/tribont/common#Width> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/common#YoungModulus
+<https://w3id.org/tribont/common#YoungModulus> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

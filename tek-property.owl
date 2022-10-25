@@ -136,9 +136,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <!-- https://w3id.org/tribont/property#hasProperty -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#hasProperty">
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/property#isPropertyFor"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#hasProperty"/>
     
 
 
@@ -168,12 +166,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/property#isGroupingOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#isGroupingOf"/>
-    
-
-
-    <!-- https://w3id.org/tribont/property#isPropertyFor -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#isPropertyFor"/>
     
 
 
@@ -283,12 +275,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasUnit"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/property#Unit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isPropertyFor"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/property#Feature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>

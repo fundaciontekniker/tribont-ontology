@@ -48,23 +48,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/tribont/sample#CoatingConfiguration -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/sample#CoatingConfiguration"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -284,7 +267,7 @@
     <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_COATING_CONFIG -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_COATING_CONFIG">
-        <rdf:type rdf:resource="https://w3id.org/tribont/sample#CoatingConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleCoatingSpecification"/>
         <property:hasProperty rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_COATING_THICK"/>
     </owl:NamedIndividual>
     

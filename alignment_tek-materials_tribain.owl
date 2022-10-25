@@ -1,0 +1,122 @@
+@prefix : <https://w3id.org/tribont/tribAInAlignment#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/tribont/materials/tribAInAlignment> .
+
+<https://w3id.org/tribont/materials/tribAInAlignment> rdf:type owl:Ontology ;
+                                                       <http://purl.org/dc/elements/1.1/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>""" ;
+                                                       <http://purl.org/dc/elements/1.1/title> "Trib XX module alignment with TribAIn ontology" ;
+                                                       rdfs:comment "Definition of the alignments between the xxx and the TribAIn ontology."@en ;
+                                                       owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ktmfk.de/ontology/tribAIn/Additive
+<http://ktmfk.de/ontology/tribAIn/Additive> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://w3id.org/tek-material#Additive> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ChemicalComposition
+<http://ktmfk.de/ontology/tribAIn/ChemicalComposition> rdf:type owl:Class ;
+                                                       owl:equivalentClass <http://w3id.org/tek-material#ChemicalComposition> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/DistanceUnit
+<http://ktmfk.de/ontology/tribAIn/DistanceUnit> rdf:type owl:Class ;
+                                                owl:equivalentClass <http://w3id.org/tek-material#DistanceUnit> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/IndustrialProcess
+<http://ktmfk.de/ontology/tribAIn/IndustrialProcess> rdf:type owl:Class ;
+                                                     owl:equivalentClass <http://w3id.org/tek-material#ManufacturingProcess> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Material
+<http://ktmfk.de/ontology/tribAIn/Material> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://w3id.org/tek-material#Material> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MaterialProperty
+<http://ktmfk.de/ontology/tribAIn/MaterialProperty> rdf:type owl:Class ;
+                                                    owl:equivalentClass <http://w3id.org/tek-material#MaterialProperty> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TechnicalStandard
+<http://ktmfk.de/ontology/tribAIn/TechnicalStandard> rdf:type owl:Class ;
+                                                     owl:equivalentClass <http://w3id.org/tek-material#Standard> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TemperatureUnit
+<http://ktmfk.de/ontology/tribAIn/TemperatureUnit> rdf:type owl:Class ;
+                                                   owl:equivalentClass <http://w3id.org/tek-material#TemperatureUnit> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TimeUnit
+<http://ktmfk.de/ontology/tribAIn/TimeUnit> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://w3id.org/tek-material#TimeUnit> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Unit
+<http://ktmfk.de/ontology/tribAIn/Unit> rdf:type owl:Class ;
+                                        owl:equivalentClass <http://qudt.org/schema/qudt/Unit> .
+
+
+###  http://qudt.org/schema/qudt/Unit
+<http://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
+
+
+###  http://w3id.org/tek-material#Additive
+<http://w3id.org/tek-material#Additive> rdf:type owl:Class .
+
+
+###  http://w3id.org/tek-material#ChemicalComposition
+<http://w3id.org/tek-material#ChemicalComposition> rdf:type owl:Class .
+
+
+###  http://w3id.org/tek-material#DistanceUnit
+<http://w3id.org/tek-material#DistanceUnit> rdf:type owl:Class .
+
+
+###  http://w3id.org/tek-material#ManufacturingProcess
+<http://w3id.org/tek-material#ManufacturingProcess> rdf:type owl:Class .
+
+
+###  http://w3id.org/tek-material#Material
+<http://w3id.org/tek-material#Material> rdf:type owl:Class .
+
+
+###  http://w3id.org/tek-material#MaterialProperty
+<http://w3id.org/tek-material#MaterialProperty> rdf:type owl:Class .
+
+
+###  http://w3id.org/tek-material#Standard
+<http://w3id.org/tek-material#Standard> rdf:type owl:Class .
+
+
+###  http://w3id.org/tek-material#TemperatureUnit
+<http://w3id.org/tek-material#TemperatureUnit> rdf:type owl:Class .
+
+
+###  http://w3id.org/tek-material#TimeUnit
+<http://w3id.org/tek-material#TimeUnit> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
