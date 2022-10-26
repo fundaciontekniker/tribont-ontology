@@ -454,6 +454,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/common#ChamberTemperature">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#Temperature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/common#SampleTemperature"/>
     </owl:Class>
     
 
@@ -556,6 +557,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/common#Density">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#SolidPhysicalProperty"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/common#Porosity"/>
     </owl:Class>
     
 
@@ -634,6 +636,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/common#ElectricalConductivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#ElectricalProperty"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/common#ElectricalResistivity"/>
     </owl:Class>
     
 
@@ -976,6 +979,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/common#InnerDiameter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#Diameter"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/common#OuterDiameter"/>
     </owl:Class>
     
 
@@ -984,6 +988,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/common#InnerTeethHeight">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#TeethHeight"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/common#OuterTeethHeight"/>
     </owl:Class>
     
 
@@ -992,6 +997,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/common#InnerTeethLength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#TeethLength"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/common#OuterTeethLength"/>
     </owl:Class>
     
 
@@ -1385,6 +1391,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/common#measurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/common#OutputSpecification"/>
     </owl:Class>
     
 
@@ -1461,6 +1468,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/common#PolishGrade">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#SurfaceProperty"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/common#SurfaceRoughness"/>
     </owl:Class>
     
 
@@ -2081,6 +2089,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/common#configuration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/common#SystemSpecification"/>
     </owl:Class>
     
 
@@ -2386,6 +2395,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/common#DistanceUnit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/common#WearScarVolume"/>
     </owl:Class>
     
 
@@ -2488,7 +2498,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <!-- https://w3id.org/tribont/test#TestStandard -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/test#TestStandard"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/test#TestStandard">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Standard"/>
+    </owl:Class>
     
 
 
@@ -4422,36 +4434,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -4465,6 +4447,12 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -4512,13 +4500,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -4546,6 +4537,351 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://dbpedia.org/ontology/Company"/>
+            <rdf:Description rdf:about="http://dbpedia.org/ontology/Document"/>
+            <rdf:Description rdf:about="http://purl.org/dc/terms/Standard"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Role"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Feature"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Property"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#SubjectOfInterest"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Unit"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Acceleration"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#AngularPosition"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Decceleration"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Frequency"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#LinearSpeed"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#NormalForce"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#RotationalSpeed"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SlidingSpeed"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SlipPercentage"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#StrokeAmplitude"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#StrokeDiameter"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#StrokeLength"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Velocity"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#AccelerationUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#AngleUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#CapacityUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ContentUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#DensityUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#DistanceUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ExpansionCOFUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ForceUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#FrequencyUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HardnessUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HeatCapacityUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#LoadRateUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#MechanicalUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#NumberUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#PercentageUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#PressureUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#RotationalSpeedUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TemperatureUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TendencyUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TensionUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ThermalConductivityUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TimeUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TorqueUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ToughnessUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#VelocityUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ViscosityUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#VoltageUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#WeightUnit"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#AcidNumberAN"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#AirReleaseTimeLAV"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#AlkalineAdditivesConsumption"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#AntioxidantContent"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ColourIndex"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Conductivity"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#CoradsonCarbonResidue"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#CorrosionLevel"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Dispersancy"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#DissipationFactor"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#DynamicViscosity"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ElectricalBreakdownVoltage"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Filterability"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#FoamingTendency"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#GlycolContent"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#InterfacialTensionBetweenWaterOil"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#KinematicViscosity"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#LodineNumber"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#LubricantsOxidationStability"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#NeutralisationNumberNN"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#PQIndex"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#RelativeDielectricConstant"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rust-PreventingCharacteristicInPresenceOfWater"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ShearStability"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SolidContaminants"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SulfateAsh"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TolyltriazoleAndOtherNonFerrousMetalInhibitorsContent"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#WaterContent"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#i-ph"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#AxialLoad"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ExternalForce"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#FrictionTorque"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Load"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#LoadLeverRatio"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#LoadPressure"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#LoadRate"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Torque"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#BodyConfiguration"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#BodyMeasurement"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#BodySpecification"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#CloudPoint"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ColdFilterPluggingPoint"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#FlashPoint"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#PourPoint"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#CompressiveStrength"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#FlexuralStrength"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#FractureToughness"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HardnessProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#PoisssonRatio"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TensileStrength"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#WeibullModulus"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#YieldStrength"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#YoungModulus"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ContactSurfaceType"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#GeometricalArrangement"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#NumberOfContactSurface"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#CourseOfMovement"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Duration"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#EnvironmentMedium"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#EnvironmentProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#LoadProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#LubricantPumpProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#LubricantType"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#LubricationRegime"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#MovementProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#MovementType"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#RadiationType"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#WearType"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Diameter"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Height"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Length"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TeethHeight"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TeethLength"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Width"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ElectricalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#MechanicalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#PhysicalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SurfaceProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ThermalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TribologicalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Volume"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Weight"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#FailureProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#FrictionProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#WearProperty"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#GeometricDimension"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#OperationProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Shape"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SystemProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TechnicalProperty"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HardnessBrinell"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HardnessKnoop100g"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HardnessRockwellB"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HardnessRockwellC"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HardnessRockwellM"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HardnessRockwellR"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HardnessShoreA"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HardnessShoreD"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#HardnessVickers"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#IndentationHardnessMicro"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#IndentationHardnessNano"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Humidity"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Inclination"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#O2Level"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#PhLevel"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Pressure"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#RadiationDosage"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Temperature"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#MaximumServiceTemperature"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#MeltingPoint"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SpecificHeatCapacity"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ThermalConductivity"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#ThermalExpansionCoefficient"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#OperationCondition"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#OutputResult"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SampleBody"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SampleSystemArrangement"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#OperationConfiguration"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#OperationMeasurementSpecification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#OperationSpecification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#OperationTerminationMeasurement"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#PumpFlowRate"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#PumpRotationalSpeed"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#PumpTemperature"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Ra"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rk"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rku"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rmk1"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rmk2"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rp"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rpk"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rpkx"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rq"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rsk"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rt"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rv"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rvkx"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Rz"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Sa"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Sdq"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Sdr"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Sk"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Sku"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Smk1"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Smk2"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Sp"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Spk"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Spkx"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Sq"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Ssk"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Sv"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Svk"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Svkx"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Sz"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Vmc"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Vmp"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Vvc"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Vvv"/>
+        </owl:members>
     </rdf:Description>
     
 
@@ -4595,13 +4931,25 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/property#Property"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
                                     </rdf:Description>
                                 </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
                             </rdf:Description>
                         </rdf:rest>
                     </rdf:Description>

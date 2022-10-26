@@ -22,6 +22,31 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/tribont/material#MaterialNaming -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialNaming">
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#MaterialTradename"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/material#MaterialTradename -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialTradename"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -243,6 +268,31 @@
         <rdf:type rdf:resource="https://w3id.org/tribont/common#YoungModulus"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</property:value>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://dbpedia.org/ontology/Company"/>
+            <rdf:Description rdf:about="http://dbpedia.org/ontology/Document"/>
+            <rdf:Description rdf:about="http://purl.org/dc/terms/Standard"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Role"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Feature"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Property"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Unit"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 

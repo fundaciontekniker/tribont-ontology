@@ -20,9 +20,9 @@
      xmlns:equipment="https://w3id.org/tribont/equipment#"
      xmlns:tribontcore="https://w3id.org/tribontcore#">
     <owl:Ontology rdf:about="https://w3id.org/tribont/TESTINGtest">
-        <owl:imports rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/TESTINGequipment"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/TESTINGmaterial"/>
+        <owl:imports rdf:resource="https://w3id.org/tribont/TESTINGsample"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/test"/>
     </owl:Ontology>
     
@@ -39,19 +39,43 @@
     
 
 
+    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-723_SAMPLESYSTEM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-723_SAMPLESYSTEM"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_SAMPLESYSTEM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_SAMPLESYSTEM"/>
+    
+
+
     <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18 -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#CoatedSample"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_lubricante -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_lubricante">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_lubricante">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#LubricationSample"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#OPTIMOL -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#OPTIMOL"/>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6"/>
     
 
 
@@ -913,7 +937,7 @@
         <common:isMadeOf rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_5"/>
         <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_TRIBO_TESTCONFIGURATION"/>
         <test:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#TESSA_TEK"/>
-        <test:isPerformedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
+        <test:isPerformedAt rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
         <test:testsSample rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_SAMPLESYSTEM"/>
     </owl:NamedIndividual>
     

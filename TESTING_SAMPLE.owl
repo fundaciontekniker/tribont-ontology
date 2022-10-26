@@ -15,7 +15,7 @@
      xmlns:material="https://w3id.org/tribont/material#"
      xmlns:property="https://w3id.org/tribont/property#"
      xmlns:tribontcore="https://w3id.org/tribontcore#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074">
+    <owl:Ontology rdf:about="https://w3id.org/tribont/TESTINGsample">
         <owl:imports rdf:resource="https://w3id.org/tribont/TESTINGmaterial"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/sample"/>
     </owl:Ontology>
@@ -56,274 +56,274 @@
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#Chrome -->
+    <!-- https://w3id.org/tribont/TESTINGsample#Chrome -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#Chrome">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#Chrome">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#NonPolymeric"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#DROP_380 -->
+    <!-- https://w3id.org/tribont/TESTINGsample#DROP_380 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#DROP_380">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#DROP_380">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#Oil"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#HNBR_80_LF -->
+    <!-- https://w3id.org/tribont/TESTINGsample#HNBR_80_LF -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#HNBR_80_LF">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#HNBR_80_LF">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#NonPolymeric"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#HPU_lubric_doped -->
+    <!-- https://w3id.org/tribont/TESTINGsample#HPU_lubric_doped -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#HPU_lubric_doped">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#HPU_lubric_doped">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#Polymer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d -->
+    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-d -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-        <sample:hasCoreMaterial rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#42CrMo4_chromed"/>
+        <sample:hasCoreMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#42CrMo4_chromed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d_BODYCONFIGURATION -->
+    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_BODYCONFIGURATION -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d_BODYCONFIGURATION">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_BODYCONFIGURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
-        <property:hasProperty rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d_DIAMETER"/>
-        <property:hasProperty rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d_HEIGHT"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_DIAMETER"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_HEIGHT"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#disc"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d_DIAMETER -->
+    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_DIAMETER -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d_DIAMETER">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_DIAMETER">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Diameter"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.0</property:value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d_HEIGHT -->
+    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_HEIGHT -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d_HEIGHT">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_HEIGHT">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Height"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.9</property:value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d_SPEC_Ra -->
+    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_SPEC_Ra -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d_SPEC_Ra">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_SPEC_Ra">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Ra"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</property:value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p -->
+    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-p -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-        <sample:hasCoreMaterial rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#HPU_lubric_doped"/>
+        <sample:hasCoreMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#HPU_lubric_doped"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p_BODYCONFIGURATION -->
+    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_BODYCONFIGURATION -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p_BODYCONFIGURATION">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_BODYCONFIGURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
-        <property:hasProperty rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p_LENGTH"/>
-        <property:hasProperty rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p_WIDTH"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_LENGTH"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_WIDTH"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#pin"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p_LENGTH -->
+    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_LENGTH -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p_LENGTH">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_LENGTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Length"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</property:value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p_TECHNICALSPECIFICATION -->
+    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_TECHNICALSPECIFICATION -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p_TECHNICALSPECIFICATION">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_TECHNICALSPECIFICATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleTechnicalSpecification"/>
-        <property:hasProperty rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d_SPEC_Ra"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_SPEC_Ra"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#grinded"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p_WIDTH -->
+    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_WIDTH -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p_WIDTH">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_WIDTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Width"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-723_SAMPLESYSTEM -->
+    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-723_SAMPLE_SYSTEM -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-723_SAMPLESYSTEM">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-723_SAMPLE_SYSTEM">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleSystem"/>
-        <sample:hasMovingSample rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-p"/>
-        <sample:hasStaticSample rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#OP3798-7238-d"/>
+        <sample:hasMovingSample rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p"/>
+        <sample:hasStaticSample rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#SAMPLEBATCH_01 -->
+    <!-- https://w3id.org/tribont/TESTINGsample#SAMPLEBATCH_01 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#SAMPLEBATCH_01">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#SAMPLEBATCH_01">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleBatch"/>
-        <property:isCharacterisedBy rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_BODYCONFIGURATION"/>
-        <property:isCharacterisedBy rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_COATING_CONFIG"/>
-        <property:isGroupingOf rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#SAMPLE_01_1"/>
-        <property:isGroupingOf rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#SAMPLE_01_2"/>
-        <sample:hasCoatingMaterial rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#Chrome"/>
-        <sample:hasCoreMaterial rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#42CrMo4_chromed"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_BODYCONFIGURATION"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_CONFIG"/>
+        <property:isGroupingOf rdf:resource="https://w3id.org/tribont/TESTINGsample#SAMPLE_01_1"/>
+        <property:isGroupingOf rdf:resource="https://w3id.org/tribont/TESTINGsample#SAMPLE_01_2"/>
+        <sample:hasCoatingMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#Chrome"/>
+        <sample:hasCoreMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#42CrMo4_chromed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#SAMPLE_01_1 -->
+    <!-- https://w3id.org/tribont/TESTINGsample#SAMPLE_01_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#SAMPLE_01_1">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#SAMPLE_01_1">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#Sample"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#SAMPLE_01_2 -->
+    <!-- https://w3id.org/tribont/TESTINGsample#SAMPLE_01_2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#SAMPLE_01_2">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#SAMPLE_01_2">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#Sample"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#42CrMo4_chromed -->
+    <!-- https://w3id.org/tribont/TESTINGsample#42CrMo4_chromed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#42CrMo4_chromed">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#42CrMo4_chromed">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#NonPolymeric"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_SAMPLESYSTEM -->
+    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_SAMPLE_SYSTEM -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_SAMPLESYSTEM">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_SAMPLE_SYSTEM">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleSystem"/>
-        <sample:hasLubricationSample rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_lubricante"/>
-        <sample:hasMovingSample rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_junta"/>
-        <sample:hasStaticSample rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18"/>
+        <sample:hasLubricationSample rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_lubricante"/>
+        <sample:hasMovingSample rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta"/>
+        <sample:hasStaticSample rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18 -->
+    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-        <property:isCharacterisedBy rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_BODYCONFIGURATION"/>
-        <property:isCharacterisedBy rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_COATING_CONFIG"/>
-        <sample:hasCoatingMaterial rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#Chrome"/>
-        <sample:hasCoreMaterial rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#42CrMo4_chromed"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_BODYCONFIGURATION"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_CONFIG"/>
+        <sample:hasCoatingMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#Chrome"/>
+        <sample:hasCoreMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#42CrMo4_chromed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_BODYCONFIGURATION -->
+    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_BODYCONFIGURATION -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_BODYCONFIGURATION">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_BODYCONFIGURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
-        <property:hasProperty rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_DIAMETER"/>
-        <property:hasProperty rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_LENGTH"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_DIAMETER"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_LENGTH"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#shaft"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_COATING_CONFIG -->
+    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_CONFIG -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_COATING_CONFIG">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_CONFIG">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleCoatingSpecification"/>
-        <property:hasProperty rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_COATING_THICK"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_THICK"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_COATING_THICK -->
+    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_THICK -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_COATING_THICK">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_THICK">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#CoatingThickness"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</property:value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_DIAMETER -->
+    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_DIAMETER -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_DIAMETER">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_DIAMETER">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Diameter"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</property:value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_LENGTH -->
+    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_LENGTH -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18_LENGTH">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_LENGTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Length"/>
         <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">522.0</property:value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_junta -->
+    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_junta">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-        <property:isCharacterisedBy rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_junta_BODYCONFIGURATION"/>
-        <sample:hasCoreMaterial rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#HNBR_80_LF"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta_BODYCONFIGURATION"/>
+        <sample:hasCoreMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#HNBR_80_LF"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_junta_BODYCONFIGURATION -->
+    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta_BODYCONFIGURATION -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_junta_BODYCONFIGURATION">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta_BODYCONFIGURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#seal"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_lubricante -->
+    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_lubricante -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_lubricante">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_lubricante">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-        <sample:hasCoreMaterial rdf:resource="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#DROP_380"/>
+        <sample:hasCoreMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#DROP_380"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
