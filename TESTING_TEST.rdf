@@ -51,22 +51,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_eje_18">
-        <rdf:type rdf:resource="https://w3id.org/tribont/sample#CoatedSample"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_lubricante -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1074#7238LN53_TESSA_lubricante">
-        <rdf:type rdf:resource="https://w3id.org/tribont/sample#LubricationSample"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/tribont/TESTINGequipment#OPTIMOL -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#OPTIMOL">

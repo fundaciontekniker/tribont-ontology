@@ -546,7 +546,17 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/common#TechnicalProperty"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/common#ElectricalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/common#MechanicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/common#PhysicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/common#SurfaceProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/common#ThermalProperty"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>

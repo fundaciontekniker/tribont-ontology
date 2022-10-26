@@ -167,24 +167,15 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPUT_SPECIFICATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/equipment#TribometerOutputSpecification"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_L"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_V"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPUt_COFMean"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_L -->
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPUt_COFMean -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_L">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#WearScarLength"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_V -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPU_SCAR_V">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#WearScarVolume"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPUt_COFMean">
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#COFMean"/>
     </owl:NamedIndividual>
     
 
