@@ -120,7 +120,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasCoatingMaterial">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasMaterial"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isCoatingMaterialFor"/>
     </owl:ObjectProperty>
     
 
@@ -129,7 +128,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasCoreMaterial">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasMaterial"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isCoreMaterialFor"/>
     </owl:ObjectProperty>
     
 
@@ -145,9 +143,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <!-- https://w3id.org/tribont/sample#hasMaterial -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasMaterial">
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isMaterialFor"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasMaterial"/>
     
 
 
@@ -266,15 +262,18 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#CoatedSample -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#CoatedSample">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/tribont/sample#Sample"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/tribont/sample#hasCoatingMaterial"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/material#Material"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/sample#CoatedSampleBatch -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/sample#CoatedSampleBatch">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#SampleBatch"/>
     </owl:Class>
     
 
@@ -303,18 +302,20 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/sample#DrySampleSystem -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/sample#DrySampleSystem">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#SampleSystem"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/tribont/sample#LubricatedSampleSystem"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/sample#LubricatedSampleSystem -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#LubricatedSampleSystem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleSystem"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/tribont/sample#hasLubricationSample"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/sample#LubricationSample"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#SampleSystem"/>
     </owl:Class>
     
@@ -323,6 +324,25 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#LubricationSample -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#LubricationSample">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/tribont/sample#Sample"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/tribont/sample#hasCoreMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/material#FluidLubricant"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/tribont/sample#hasCoreMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/material#SolidLubricant"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#Sample"/>
     </owl:Class>
     
@@ -550,125 +570,11 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <rdf:Description rdf:about="urn:swrl:var#s">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl:var#m">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
     <rdf:Description rdf:about="urn:swrl:var#sb">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl:var#ss">
+    <rdf:Description rdf:about="urn:swrl:var#m">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl:var#l">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#hasCoreMaterial"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#m"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/material#FluidLubricant"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#m"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#LubricationSample"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#hasCoreMaterial"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#m"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/material#SolidLubricant"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#m"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#LubricationSample"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -832,132 +738,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                         <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#preparationDate"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#m"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#hasCoatingMaterial"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#m"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#CoatedSample"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#SampleBatch"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#sb"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#hasCoatingMaterial"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#m"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#CoatedSampleBatch"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#sb"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#hasLubricationSample"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#ss"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#l"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#SampleSystem"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#ss"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#LubricatedSampleSystem"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#ss"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
