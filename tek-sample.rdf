@@ -562,6 +562,30 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#OperationCondition"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#OutputResult"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SampleBody"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SampleSystemArrangement"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialCompositionSpecification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleCoatingSpecification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleTechnicalSpecification"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Rules
     //
     ///////////////////////////////////////////////////////////////////////////////////////
