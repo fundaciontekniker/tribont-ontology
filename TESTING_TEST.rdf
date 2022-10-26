@@ -67,6 +67,32 @@
     
 
 
+    <!-- https://w3id.org/tribont/TESTINGequipment#OPTIMOL -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#OPTIMOL">
+        <owl:sameAs rdf:resource="https://w3id.org/tribont/TESTINGmaterial#OPTIMOL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_TEK -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#TEKNIKER -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#TESSA_TEK -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#TESSA_TEK"/>
+    
+
+
     <!-- https://w3id.org/tribont/TESTINGmaterial#OPTIMOL -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#OPTIMOL"/>

@@ -18,7 +18,6 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/pcasla/ontologies/2022/8/untitled-ontology-1000">
         <owl:imports rdf:resource="https://w3id.org/tribont/common"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/property"/>
-        <owl:imports rdf:resource="https://w3id.org/tribont/unit"/>
     </owl:Ontology>
     
 
@@ -43,6 +42,12 @@
     <!-- https://w3id.org/tribont/equipment#isManufacturedBy -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/equipment#isManufacturedBy"/>
+    
+
+
+    <!-- https://w3id.org/tribont/unit#hasUnit -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/unit#hasUnit"/>
     
 
 
@@ -1314,6 +1319,12 @@
     
 
 
+    <!-- https://w3id.org/tribont/common#WorkingCondition -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/common#WorkingCondition"/>
+    
+
+
     <!-- https://w3id.org/tribont/common#Anti-friction/wearLubricant -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/common#Anti-friction/wearLubricant">
@@ -1353,6 +1364,12 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/property#SubjetOfInterest -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/property#SubjetOfInterest"/>
     
 
 
@@ -1401,9 +1418,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/common#SRV3_FREQUENCY">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Frequency"/>
-        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#Hz"/>
         <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</property:maxValue>
         <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</property:minValue>
+        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#Hz"/>
     </owl:NamedIndividual>
     
 
@@ -1431,9 +1448,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/common#SRV3_NORMAL_FORCE">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#NormalForce"/>
-        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#N"/>
         <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000.0</property:maxValue>
         <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</property:minValue>
+        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#N"/>
     </owl:NamedIndividual>
     
 
@@ -1460,9 +1477,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/common#SRV3_STROKE_AMPLITUDE">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#StrokeAmplitude"/>
-        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#mm"/>
         <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</property:maxValue>
         <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</property:minValue>
+        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#mm"/>
     </owl:NamedIndividual>
     
 
@@ -1511,9 +1528,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/common#SRV3_TEMPERATURE_NON_REFRIGERATED">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Temperature"/>
-        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#°C"/>
         <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">900.0</property:maxValue>
         <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</property:minValue>
+        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#°C"/>
     </owl:NamedIndividual>
     
 
@@ -1522,9 +1539,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/common#SRV3_TEMPERATURE_REFRIGERATED">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Temperature"/>
-        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#°C"/>
         <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">900.0</property:maxValue>
         <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-35.0</property:minValue>
+        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#°C"/>
     </owl:NamedIndividual>
     
 
@@ -1533,9 +1550,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/common#SRV3_VELOCITY">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Velocity"/>
-        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#m/s"/>
         <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</property:maxValue>
         <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0E-4</property:maxValue>
+        <unit:hasUnit rdf:resource="https://w3id.org/tribont/unit#m/s"/>
     </owl:NamedIndividual>
     
 
