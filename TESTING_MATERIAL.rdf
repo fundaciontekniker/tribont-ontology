@@ -172,7 +172,7 @@
     <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_MATERIAL_TECHNICALSPECIFICATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_MATERIAL_TECHNICALSPECIFICATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/material#SolidMaterialSpecification"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_COMPRESSIVE_STRENGTH"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_DENSITY"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_ELECTRICAL_RESISTIVITY"/>

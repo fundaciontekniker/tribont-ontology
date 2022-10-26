@@ -458,7 +458,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/test#ScarMeasurementOutput -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/test#ScarMeasurementOutput">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#OutputMeasurement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#OutputResultMeasurement"/>
     </owl:Class>
     
 
@@ -482,7 +482,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/common#OutputMeasurement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/common#OutputResultMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -605,7 +605,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/common#OutputMeasurement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/common#OutputResultMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -720,7 +720,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/test#TribologicalTestOutput -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/test#TribologicalTestOutput">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#OutputMeasurement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#OutputResultMeasurement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
@@ -754,7 +754,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/test#WeightMeasurementOutput -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/test#WeightMeasurementOutput">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#OutputMeasurement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#OutputResultMeasurement"/>
     </owl:Class>
     
 
