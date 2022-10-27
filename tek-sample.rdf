@@ -355,7 +355,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/common#SampleBodyConfiguration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -424,7 +424,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/common#SampleBodyConfiguration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -496,13 +496,22 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#SampleCoatingSpecification -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleCoatingSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/property#Feature"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#SampleSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/sample#CoatingProperty"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/sample#SampleTechnicalSpecification"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/sample#SampleSpecification -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/property#Feature"/>
     </owl:Class>
     
 
@@ -514,7 +523,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/common#SystemConfiguration"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/common#SampleSystemConfiguration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -542,7 +551,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#SampleTechnicalSpecification -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleTechnicalSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/property#Feature"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#SampleSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
@@ -581,12 +590,19 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/tribont/common#OperationCondition"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#OutputResult"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/common#SampleBody"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/common#SampleSystemArrangement"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialCompositionSpecification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleCoatingSpecification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleTechnicalSpecification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialSpecification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleSpecification"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/sample#Sample"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleBatch"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleSystem"/>
         </owl:members>
     </rdf:Description>
     

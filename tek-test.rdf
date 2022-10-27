@@ -455,10 +455,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#ScarMeasurementOutput -->
+    <!-- https://w3id.org/tribont/test#ScarMeasurementOutputrResult -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/test#ScarMeasurementOutput">
+    <owl:Class rdf:about="https://w3id.org/tribont/test#ScarMeasurementOutputrResult">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#OutputResultMeasurement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/common#WearScarProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -673,7 +679,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#TribologicalTestOutput"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#TribologicalTestOutputResult"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -717,9 +723,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#TribologicalTestOutput -->
+    <!-- https://w3id.org/tribont/test#TribologicalTestOutputResult -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/test#TribologicalTestOutput">
+    <owl:Class rdf:about="https://w3id.org/tribont/test#TribologicalTestOutputResult">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#OutputResultMeasurement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -751,10 +757,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#WeightMeasurementOutput -->
+    <!-- https://w3id.org/tribont/test#WeightMeasurementOutputResult -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/test#WeightMeasurementOutput">
+    <owl:Class rdf:about="https://w3id.org/tribont/test#WeightMeasurementOutputResult">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/common#OutputResultMeasurement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/common#Weight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -801,10 +813,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#Equipment"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/sample#Sample"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleSystem"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/test#Experiment"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/test#ScarMeasurementOutputrResult"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/test#TribologicalTestOutputResult"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/test#WeightMeasurementOutputResult"/>
         </owl:members>
     </rdf:Description>
     

@@ -867,13 +867,14 @@
     <!-- https://w3id.org/tribont/material#MaterialCompositionSpecification -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialCompositionSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/property#Feature"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
     </owl:Class>
     
 
@@ -906,6 +907,14 @@
     
 
 
+    <!-- https://w3id.org/tribont/material#MaterialSpecification -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/property#Feature"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/tribont/material#MaterialStandard -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialStandard">
@@ -917,7 +926,7 @@
     <!-- https://w3id.org/tribont/material#MaterialTechnicalSpecification -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialTechnicalSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/property#Feature"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
@@ -1683,21 +1692,6 @@
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -1707,10 +1701,25 @@
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
@@ -1730,24 +1739,25 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://dbpedia.org/ontology/Company"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://dbpedia.org/ontology/Document"/>
+            <rdf:Description rdf:about="http://purl.org/dc/terms/Standard"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#Role"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Feature"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Property"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#SubjectOfInterest"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/property#Unit"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/dc/terms/Standard"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#BodyProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#OperationProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#SystemProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/common#TechnicalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementContent"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1757,16 +1767,7 @@
             <rdf:Description rdf:about="https://w3id.org/tribont/common#OutputResult"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/common#SampleBody"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/common#SampleSystemArrangement"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialCompositionSpecification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/common#Role"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialSpecification"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -3767,38 +3768,6 @@
             <rdf:Description rdf:about="https://w3id.org/tribont/material#Silica-Fumed"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#StainlessSteel-Fiber"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#Talc"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/property#Feature"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/property#Property"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/property#SubjectOfInterest"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/property#Unit"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

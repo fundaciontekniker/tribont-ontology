@@ -102,7 +102,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#AUDI_CYLINDER_BODICONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#AUDI_CYLINDER_BODICONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#SampleBodyConfiguration"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#cylinder"/>
     </owl:NamedIndividual>
     
@@ -132,7 +132,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#LAICA0101_Perstorp__SCAR_MEASUREMENT_RESULT -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#LAICA0101_Perstorp__SCAR_MEASUREMENT_RESULT">
-        <rdf:type rdf:resource="https://w3id.org/tribont/test#ScarMeasurementOutput"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/test#ScarMeasurementOutputrResult"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_SCAR_LENTH"/>
     </owl:NamedIndividual>
     
@@ -161,7 +161,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_BODYCONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_BODYCONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#SampleBodyConfiguration"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_DIAMETER"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#ball"/>
     </owl:NamedIndividual>
@@ -266,7 +266,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC_BODYCONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC_BODYCONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#SampleBodyConfiguration"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC_HEIGHT"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC__DIAMETER"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#disc"/>
@@ -350,7 +350,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SAMPLESYSTEM_CONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SAMPLESYSTEM_CONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#SystemConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#SampleSystemConfiguration"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#ball_on_llate"/>
     </owl:NamedIndividual>
     
@@ -367,7 +367,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_TRIBOLOGYTEST_RESULT -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_TRIBOLOGYTEST_RESULT">
-        <rdf:type rdf:resource="https://w3id.org/tribont/test#TribologicalTestOutput"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/test#TribologicalTestOutputResult"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_COFMean"/>
     </owl:NamedIndividual>
     
@@ -569,7 +569,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OS3038-6131_SAMPLESYSTEM_CONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OS3038-6131_SAMPLESYSTEM_CONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#SystemConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#SampleSystemConfiguration"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#ring_on_cylinder"/>
     </owl:NamedIndividual>
     
@@ -586,7 +586,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OS3038-6131_TRIBOLOGYTEST_RESULT -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OS3038-6131_TRIBOLOGYTEST_RESULT">
-        <rdf:type rdf:resource="https://w3id.org/tribont/test#TribologicalTestOutput"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/test#TribologicalTestOutputResult"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_COFMean"/>
     </owl:NamedIndividual>
     
@@ -644,7 +644,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#PISTON_RING_BODYCONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#PISTON_RING_BODYCONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#SampleBodyConfiguration"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#ring"/>
     </owl:NamedIndividual>
     
@@ -653,7 +653,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#SC0001_Reposol_5w40_PISTON_WEIGHT_MEASUREMENT_OUTPUT -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0001_Reposol_5w40_PISTON_WEIGHT_MEASUREMENT_OUTPUT">
-        <rdf:type rdf:resource="https://w3id.org/tribont/test#WeightMeasurementOutput"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/test#WeightMeasurementOutputResult"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0001_Repsol_5w40_PISTONRING_WEIGHT"/>
     </owl:NamedIndividual>
     
@@ -727,7 +727,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#SC0003_Repsol_5w40_PISTON_WEIGHT_MEASUREMENT_OUTPUT -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0003_Repsol_5w40_PISTON_WEIGHT_MEASUREMENT_OUTPUT">
-        <rdf:type rdf:resource="https://w3id.org/tribont/test#WeightMeasurementOutput"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/test#WeightMeasurementOutputResult"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0003_Repsol_5w40_PISTONRING_WEIGHT"/>
     </owl:NamedIndividual>
     

@@ -100,7 +100,7 @@
     <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_BODYCONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_BODYCONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#SampleBodyConfiguration"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_DIAMETER"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_HEIGHT"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#disc"/>
@@ -147,7 +147,7 @@
     <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_BODYCONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_BODYCONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#SampleBodyConfiguration"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_LENGTH"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_WIDTH"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#pin"/>
@@ -256,7 +256,7 @@
     <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_BODYCONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_BODYCONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#SampleBodyConfiguration"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_DIAMETER"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_LENGTH"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#shaft"/>
@@ -313,7 +313,7 @@
     <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta_BODYCONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta_BODYCONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#BodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/common#SampleBodyConfiguration"/>
         <property:hasProperty rdf:resource="https://w3id.org/tribont/common#seal"/>
     </owl:NamedIndividual>
     
