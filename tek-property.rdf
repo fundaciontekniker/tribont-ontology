@@ -143,7 +143,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/property#hasUnit -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#hasUnit">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/tribont/property#isUnitFor"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/property#isUnitFor"/>
     </owl:ObjectProperty>
     
 
