@@ -59,14 +59,6 @@
     
 
 
-    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_LOAD -->
-
-    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_MONITORED_LOAD">
-        <property:hasUnit rdf:resource="https://w3id.org/tribont/common#N"/>
-    </rdf:Description>
-    
-
-
     <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_TEK -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
@@ -246,8 +238,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_CONFIG_LOAD">
         <rdf:type rdf:resource="https://w3id.org/tribont/common#Load"/>
-        <property:hasUnit rdf:resource="https://w3id.org/tribont/common#N"/>
-        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</property:value>
     </owl:NamedIndividual>
     
 
@@ -919,15 +909,6 @@
     
 
 
-    <!-- https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_COFMean -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_COFMean">
-        <rdf:type rdf:resource="https://w3id.org/tribont/common#COFMean"/>
-        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.01</property:value>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_CONFIG_STROKELENGTH -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_CONFIG_STROKELENGTH">
@@ -955,26 +936,15 @@
     
 
 
-    <!-- https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_TRIBOLOGYTEST_RESULT -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_TRIBOLOGYTEST_RESULT">
-        <rdf:type rdf:resource="https://w3id.org/tribont/test#TribologicalTestOutputResult"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_COFMean"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_TRIBOLOGY_TEST -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_TRIBOLOGY_TEST">
         <rdf:type rdf:resource="https://w3id.org/tribont/test#TribologicalTest"/>
-        <common:compliesWith rdf:resource="https://w3id.org/tribont/common#ASTMD5706"/>
         <common:isMadeOf rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_1"/>
         <common:isMadeOf rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_2"/>
         <common:isMadeOf rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_3"/>
         <common:isMadeOf rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_4"/>
         <common:isMadeOf rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_5"/>
-        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_TRIBOLOGYTEST_RESULT"/>
         <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_TRIBO_TESTCONFIGURATION"/>
         <test:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#TESSA_TEK"/>
         <test:isPerformedAt rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>

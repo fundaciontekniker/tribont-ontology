@@ -67,7 +67,7 @@
     <!-- https://w3id.org/tribont/TESTINGsample#DROP_380 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#DROP_380">
-        <rdf:type rdf:resource="https://w3id.org/tribont/material#Grease"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/material#Oil"/>
     </owl:NamedIndividual>
     
 
