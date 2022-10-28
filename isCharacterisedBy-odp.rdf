@@ -16,7 +16,7 @@
      xmlns:dcterms="https://w3id.org/tribont/equipment#dcterms:"
      xmlns:property="https://w3id.org/tribontproperty#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology rdf:about="https://w3id.org/tribont/property">
+    <owl:Ontology rdf:about="https://w3id.org/isCharacterisedBy">
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:created>2021-10-18</terms:created>
         <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla &lt;mailto: patricia.casla@tekniker.es&gt;
@@ -118,51 +118,59 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/property#belongsTo -->
+    <!-- https://w3id.org/isCharacterisedBy#hasProperty -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#belongsTo">
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/property#isGroupingOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#hasProperty">
+        <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isPropertyFor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/tribont/property#characterises -->
+    <!-- https://w3id.org/isCharacterisedBy#isPropertyFor -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#characterises">
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isPropertyFor"/>
+    
+
+
+    <!-- https://w3id.org/isCharacterisedByy#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedByy#belongsTo">
+        <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedByy#isGroupingOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/tribont/property#hasProperty -->
+    <!-- https://w3id.org/isCharacterisedByy#characterises -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#hasProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/property#hasUnit -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#hasUnit">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/tribont/property#isUnitFor"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedByy#characterises">
+        <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedByy#isCharacterisedBy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/tribont/property#isCharacterisedBy -->
+    <!-- https://w3id.org/isCharacterisedByy#hasUnit -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#isCharacterisedBy"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedByy#hasUnit">
+        <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedByy#isUnitFor"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/tribont/property#isGroupingOf -->
+    <!-- https://w3id.org/isCharacterisedByy#isCharacterisedBy -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#isGroupingOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedByy#isCharacterisedBy"/>
     
 
 
-    <!-- https://w3id.org/tribont/property#isUnitFor -->
+    <!-- https://w3id.org/isCharacterisedByy#isGroupingOf -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/property#isUnitFor"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedByy#isGroupingOf"/>
+    
+
+
+    <!-- https://w3id.org/isCharacterisedByy#isUnitFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedByy#isUnitFor"/>
     
 
 
@@ -189,21 +197,21 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/property#maxValue -->
+    <!-- https://w3id.org/isCharacterisedByy#maxValue -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/property#maxValue"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/isCharacterisedByy#maxValue"/>
     
 
 
-    <!-- https://w3id.org/tribont/property#minValue -->
+    <!-- https://w3id.org/isCharacterisedByy#minValue -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/property#minValue"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/isCharacterisedByy#minValue"/>
     
 
 
-    <!-- https://w3id.org/tribont/property#value -->
+    <!-- https://w3id.org/isCharacterisedByy#value -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/property#value"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/isCharacterisedByy#value"/>
     
 
 
@@ -218,19 +226,19 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/property#Feature -->
+    <!-- https://w3id.org/isCharacterisedByy#Feature -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/property#Feature">
+    <owl:Class rdf:about="https://w3id.org/isCharacterisedByy#Feature">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/property#Property"/>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/isCharacterisedByy#Property"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/property#Property"/>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/isCharacterisedByy#Property"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -253,36 +261,36 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/property#Property -->
+    <!-- https://w3id.org/isCharacterisedByy#Property -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/property#Property">
+    <owl:Class rdf:about="https://w3id.org/isCharacterisedByy#Property">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#characterises"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/property#SubjectOfInterest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedByy#characterises"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/isCharacterisedByy#SubjectOfInterest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#hasUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/property#Unit"/>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedByy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/isCharacterisedByy#Unit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#maxValue"/>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedByy#maxValue"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#minValue"/>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedByy#minValue"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#value"/>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedByy#value"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -306,17 +314,17 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/property#SubjectOfInterest -->
+    <!-- https://w3id.org/isCharacterisedByy#SubjectOfInterest -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/property#SubjectOfInterest">
+    <owl:Class rdf:about="https://w3id.org/isCharacterisedByy#SubjectOfInterest">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedByy#isCharacterisedBy"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/property#Feature"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/property#Property"/>
+                            <rdf:Description rdf:about="https://w3id.org/isCharacterisedByy#Feature"/>
+                            <rdf:Description rdf:about="https://w3id.org/isCharacterisedByy#Property"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -324,8 +332,8 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/property#isGroupingOf"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/property#SubjectOfInterest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedByy#isGroupingOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/isCharacterisedByy#SubjectOfInterest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -344,9 +352,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/property#Unit -->
+    <!-- https://w3id.org/isCharacterisedByy#Unit -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/property#Unit"/>
+    <owl:Class rdf:about="https://w3id.org/isCharacterisedByy#Unit"/>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
@@ -384,10 +392,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/property#Feature"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/property#Property"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/property#SubjectOfInterest"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/property#Unit"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedByy#Feature"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedByy#Property"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedByy#SubjectOfInterest"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedByy#Unit"/>
         </owl:members>
     </rdf:Description>
     
@@ -424,7 +432,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/property#SubjectOfInterest"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/isCharacterisedByy#SubjectOfInterest"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#so"/>
                     </rdf:Description>
                 </rdf:first>
@@ -434,7 +442,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/tribont/property#Feature"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/isCharacterisedByy#Feature"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
                             </rdf:Description>
                         </rdf:first>
@@ -444,7 +452,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedByy#isCharacterisedBy"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#so"/>
                                         <swrl:argument2 rdf:resource="urn:swrl:var#f"/>
                                     </rdf:Description>
@@ -455,7 +463,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/property#hasProperty"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
                                                 <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
                                             </rdf:Description>
@@ -475,7 +483,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedByy#isCharacterisedBy"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#so"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
                     </rdf:Description>
@@ -492,8 +500,8 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/property#SubjectOfInterest"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#soi"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/isCharacterisedByy#Feature"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -502,8 +510,8 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/tribont/property#SubjectOfInterest"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#soc"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/isCharacterisedByy#SubjectOfInterest"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#soi"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -512,9 +520,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/property#belongsTo"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#soi"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl:var#soc"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedByy#isCharacterisedBy"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#soc"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#f"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -523,8 +531,8 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="https://w3id.org/tribont/property#Feature"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/isCharacterisedByy#SubjectOfInterest"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#soc"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -533,9 +541,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl:var#soc"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl:var#f"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedByy#belongsTo"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#soi"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#soc"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -555,7 +563,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/property#isCharacterisedBy"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedByy#isCharacterisedBy"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#soi"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#f"/>
                     </rdf:Description>
