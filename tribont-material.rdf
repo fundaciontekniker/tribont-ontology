@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:tribontcore="https://w3id.org/tribontcore#">
     <owl:Ontology rdf:about="https://w3id.org/tribont/material">
-        <owl:imports rdf:resource="https://w3id.org/tribont/corw"/>
+        <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
     </owl:Ontology>
     
 
@@ -69,17 +69,17 @@
     
 
 
-    <!-- https://w3id.org/tribont/corw#IsRoleFor -->
+    <!-- https://w3id.org/tribont/core#IsRoleFor -->
 
-    <rdf:Description rdf:about="https://w3id.org/tribont/corw#IsRoleFor">
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/corw#hasRole"/>
+    <rdf:Description rdf:about="https://w3id.org/tribont/core#IsRoleFor">
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#hasRole"/>
     </rdf:Description>
     
 
 
-    <!-- https://w3id.org/tribont/corw#hasRole -->
+    <!-- https://w3id.org/tribont/core#hasRole -->
 
-    <rdf:Description rdf:about="https://w3id.org/tribont/corw#hasRole"/>
+    <rdf:Description rdf:about="https://w3id.org/tribont/core#hasRole"/>
     
 
 
@@ -810,9 +810,9 @@
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/corw#ElectricalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/corw#LiquidPhysicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/corw#LiquidThermalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LiquidThermalProperty"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -940,10 +940,10 @@
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/corw#ElectricalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/corw#MechanicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/corw#PhysicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/corw#ThermalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#PhysicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ThermalProperty"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1365,10 +1365,10 @@
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/corw#ElectricalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/corw#MechanicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/corw#SolidPhysicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/corw#SolidThermalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidThermalProperty"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1752,7 +1752,7 @@
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedByy#Property"/>
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedByy#SubjectOfInterest"/>
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedByy#Unit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/corw#Role"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Role"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
         </owl:members>
@@ -1760,20 +1760,20 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/corw#BodyProperty"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/corw#OperationProperty"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/corw#SystemProperty"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/corw#TechnicalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#BodyProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#SystemProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementContent"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/corw#OperationCondition"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/corw#OutputResult"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/corw#SampleBody"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/corw#SampleSystemArrangement"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationCondition"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#OutputResult"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleBody"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleSystemArrangement"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialSpecification"/>
         </owl:members>
     </rdf:Description>

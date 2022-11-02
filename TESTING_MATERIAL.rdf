@@ -7,14 +7,14 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="https://w3id.org/tribont/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:material="https://w3id.org/tribont/material#"
      xmlns:property="https://w3id.org/tribont/property#"
-     xmlns:tribontcore="https://w3id.org/tribontcore#"
-     xmlns:isCharacterisedBy="https://w3id.org/isCharacterisedBy#"
-     xmlns:isCharacterisedByy="https://w3id.org/isCharacterisedByy#">
+     xmlns:isCharacterisedBy="https://w3id.org/isCharacterisedBy#">
+	
     <owl:Ontology rdf:about="https://w3id.org/tribont/TESTINGmaterial">
         <owl:imports rdf:resource="https://w3id.org/tribont/material"/>
     </owl:Ontology>
@@ -35,6 +35,12 @@
     <!-- https://w3id.org/tribont/property#hasProperty -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/property#hasProperty"/>
+    
+
+
+    <!-- https://w3id.org/tribont/property#hasUnit -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/property#hasUnit"/>
     
 
 
@@ -70,6 +76,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- https://w3id.org/tribont/core#CompressiveStrength -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#CompressiveStrength"/>
     
 
 
@@ -118,9 +130,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#NonPolymeric"/>
-        <isCharacterisedByy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_MATERIAL_COMPOSITIONSPECIFICATION"/>
-        <isCharacterisedByy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_MATERIAL_TECHNICALSPECIFICATION"/>
         <material:hasNaming rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100CR6_Naming"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_MATERIAL_COMPOSITIONSPECIFICATION"/>
+        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_MATERIAL_TECHNICALSPECIFICATION"/>
     </owl:NamedIndividual>
     
 
@@ -138,10 +150,10 @@
     <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_COMPRESSIVE_STRENGTH -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_COMPRESSIVE_STRENGTH">
-        <rdf:type rdf:resource="https://w3id.org/tribont/corw#CompressiveStrength"/>
-        <isCharacterisedByy:hasUnit rdf:resource="https://w3id.org/tribont/corw#MPa"/>
-        <isCharacterisedByy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2600.0</isCharacterisedByy:maxValue>
-        <isCharacterisedByy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2500.0</isCharacterisedByy:minValue>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#CompressiveStrength"/>
+        <property:hasUnit rdf:resource="https://w3id.org/tribont/core#MPa"/>
+        <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2600.0</property:maxValue>
+        <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2500.0</property:minValue>
     </owl:NamedIndividual>
     
 
@@ -169,9 +181,9 @@
     <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_DENSITY -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_DENSITY">
-        <rdf:type rdf:resource="https://w3id.org/tribont/corw#Density"/>
-        <isCharacterisedByy:hasUnit rdf:resource="https://w3id.org/tribont/common#g/cm3"/>
-        <isCharacterisedByy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</isCharacterisedByy:value>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#Density"/>
+        <property:hasUnit rdf:resource="https://w3id.org/tribont/core#g/cm3"/>
+        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</property:value>
     </owl:NamedIndividual>
     
 
@@ -179,8 +191,8 @@
     <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_ELECTRICAL_RESISTIVITY -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_ELECTRICAL_RESISTIVITY">
-        <rdf:type rdf:resource="https://w3id.org/tribont/corw#ElectricalResistivity"/>
-        <isCharacterisedByy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">215.0</isCharacterisedByy:value>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ElectricalResistivity"/>
+        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">215.0</property:value>
     </owl:NamedIndividual>
     
 
@@ -188,9 +200,9 @@
     <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_HRC -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_HRC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/corw#HardnessRockwellC"/>
-        <isCharacterisedByy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">66.0</isCharacterisedByy:maxValue>
-        <isCharacterisedByy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</isCharacterisedByy:minValue>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessRockwellC"/>
+        <property:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">66.0</property:maxValue>
+        <property:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</property:minValue>
     </owl:NamedIndividual>
     
 
@@ -199,15 +211,15 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_MATERIAL_COMPOSITIONSPECIFICATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#BasicCompositionSpecification"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_C"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Cr"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Cu"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Mn"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Mo"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Ni"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_P"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_S"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Si"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_C"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Cr"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Cu"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Mn"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Mo"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Ni"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_P"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_S"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Si"/>
     </owl:NamedIndividual>
     
 
@@ -215,14 +227,14 @@
     <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_MATERIAL_TECHNICALSPECIFICATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_MATERIAL_TECHNICALSPECIFICATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/material#SolidMaterialSpecification"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_COMPRESSIVE_STRENGTH"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_DENSITY"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_ELECTRICAL_RESISTIVITY"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_HRC"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_CONDUCTIVITY"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_EXPANSION_COEF"/>
-        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_YOUNG"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_COMPRESSIVE_STRENGTH"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_DENSITY"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_ELECTRICAL_RESISTIVITY"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_HRC"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_CONDUCTIVITY"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_EXPANSION_COEF"/>
+        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_YOUNG"/>
     </owl:NamedIndividual>
     
 
@@ -290,8 +302,8 @@
     <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_CONDUCTIVITY -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_CONDUCTIVITY">
-        <rdf:type rdf:resource="https://w3id.org/tribont/corw#ThermalConductivity"/>
-        <isCharacterisedByy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">42.4</isCharacterisedByy:value>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivity"/>
+        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">42.4</property:value>
     </owl:NamedIndividual>
     
 
@@ -299,8 +311,8 @@
     <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_EXPANSION_COEF -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_EXPANSION_COEF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/corw#ThermalExpansionCoefficient"/>
-        <isCharacterisedByy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.5</isCharacterisedByy:value>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalExpansionCoefficient"/>
+        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.5</property:value>
     </owl:NamedIndividual>
     
 
@@ -308,21 +320,9 @@
     <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_YOUNG -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_YOUNG">
-        <rdf:type rdf:resource="https://w3id.org/tribont/corw#YoungModulus"/>
-        <isCharacterisedByy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</isCharacterisedByy:value>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#YoungModulus"/>
+        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</property:value>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/common#MPa -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/common#MPa"/>
-    
-
-
-    <!-- https://w3id.org/tribont/common#g/cm3 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/common#g/cm3"/>
 </rdf:RDF>
 
 
