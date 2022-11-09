@@ -149,6 +149,12 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
+    <!-- https://w3id.org/isCharacterisedBy#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#belongsTo"/>
+    
+
+
     <!-- https://w3id.org/tribont/equipment#hasCalibration -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#hasCalibration"/>
@@ -252,7 +258,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/equipment#Equipment -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#Equipment">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedByy#SubjectOfInterest"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/equipment#hasTechnicalDescription"/>
@@ -298,7 +304,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/equipment#EquipmentClass -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#EquipmentClass">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedByy#SubjectOfInterest"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/equipment#hasTechnicalDescription"/>
@@ -389,6 +395,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#HardnessTesterOutputSpecification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OutputResultSpecification"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/equipment#TribometerOutputSpecification"/>
     </owl:Class>
     
 
@@ -553,10 +560,22 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OutputResultSpecification"/>
     </owl:Class>
     <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
@@ -564,17 +583,30 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://dbpedia.org/ontology/Company"/>
+            <rdf:Description rdf:about="http://dbpedia.org/ontology/Document"/>
+            <rdf:Description rdf:about="http://purl.org/dc/terms/Standard"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Feature"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Role"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#Calibration"/>
+        </owl:members>
     </rdf:Description>
     
 
@@ -637,7 +669,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedByy#belongsTo"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#belongsTo"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
                                         <swrl:argument2 rdf:resource="urn:swrl:var#eqc"/>
                                     </rdf:Description>
@@ -682,7 +714,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedByy#belongsTo"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#belongsTo"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
                                 <swrl:argument2 rdf:resource="urn:swrl:var#eqc"/>
                             </rdf:Description>
@@ -738,7 +770,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedByy#belongsTo"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#belongsTo"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
                                 <swrl:argument2 rdf:resource="urn:swrl:var#eqc"/>
                             </rdf:Description>

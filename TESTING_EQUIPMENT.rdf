@@ -31,10 +31,6 @@
     
 
 
-    <!-- https://w3id.org/tribont/equipment#isManufacturedBy -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/equipment#isManufacturedBy"/>
-    
 
 
     <!-- 

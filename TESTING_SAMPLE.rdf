@@ -14,54 +14,13 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:sample="https://w3id.org/tribont/sample#"
      xmlns:material="https://w3id.org/tribont/material#"
-     xmlns:property="https://w3id.org/isCharacterisedBy#"
-     xmlns:property1="https://w3id.org/tribont/property#"
-     xmlns:tribontcore="https://w3id.org/tribontcore#">
+     xmlns:property="https://w3id.org/tribont/property#"
+     xmlns:tribontcore="https://w3id.org/tribontcore#"
+     xmlns:isCharacterisedBy="https://w3id.org/isCharacterisedBy#">
     <owl:Ontology rdf:about="https://w3id.org/tribont/TESTINGsample">
         <owl:imports rdf:resource="https://w3id.org/tribont/TESTINGmaterial"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/sample"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#isCharacterisedBy -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#isGroupingOf -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/isCharacterisedBy#isGroupingOf"/>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#value -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/isCharacterisedBy#value"/>
-    
-
-
-    <!-- https://w3id.org/tribont/sample#hasLubricant -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/sample#hasLubricant"/>
-    
-
-
-    <!-- https://w3id.org/tribont/sample#hasLubricantionSample -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/sample#hasLubricantionSample"/>
     
 
 
@@ -121,9 +80,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_BODYCONFIGURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleBodyConfiguration"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_DIAMETER"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_HEIGHT"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/core:#disc"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_DIAMETER"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_HEIGHT"/>
     </owl:NamedIndividual>
     
 
@@ -132,7 +90,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_DIAMETER">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Diameter"/>
-        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.0</property:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -141,7 +99,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_HEIGHT">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Height"/>
-        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.9</property:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.9</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -150,7 +108,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_SPEC_Ra">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Ra"/>
-        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</property:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -168,9 +126,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_BODYCONFIGURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleBodyConfiguration"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_LENGTH"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_WIDTH"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/core#pin"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_LENGTH"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_WIDTH"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/core#pin"/>
     </owl:NamedIndividual>
     
 
@@ -179,7 +137,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_LENGTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Length"/>
-        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</property:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -188,8 +146,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_TECHNICALSPECIFICATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleTechnicalSpecification"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_SPEC_Ra"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/core#grinded"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_SPEC_Ra"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/core#grinded"/>
     </owl:NamedIndividual>
     
 
@@ -216,12 +174,12 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#SAMPLEBATCH_01">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleBatch"/>
+        <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_BODYCONFIGURATION"/>
+        <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_CONFIG"/>
+        <isCharacterisedBy:isGroupingOf rdf:resource="https://w3id.org/tribont/TESTINGsample#SAMPLE_01_1"/>
+        <isCharacterisedBy:isGroupingOf rdf:resource="https://w3id.org/tribont/TESTINGsample#SAMPLE_01_2"/>
         <sample:hasCoatingMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#Chrome"/>
         <sample:hasCoreMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#42CrMo4_chromed"/>
-        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_BODYCONFIGURATION"/>
-        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_CONFIG"/>
-        <property:isGroupingOf rdf:resource="https://w3id.org/tribont/TESTINGsample#SAMPLE_01_1"/>
-        <property:isGroupingOf rdf:resource="https://w3id.org/tribont/TESTINGsample#SAMPLE_01_2"/>
     </owl:NamedIndividual>
     
 
@@ -265,10 +223,10 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#Sample"/>
+        <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_BODYCONFIGURATION"/>
+        <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_CONFIG"/>
         <sample:hasCoatingMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#Chrome"/>
         <sample:hasCoreMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#42CrMo4_chromed"/>
-        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_BODYCONFIGURATION"/>
-        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_CONFIG"/>
     </owl:NamedIndividual>
     
 
@@ -277,9 +235,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_BODYCONFIGURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleBodyConfiguration"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_DIAMETER"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_LENGTH"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/core#shaft"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_DIAMETER"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_LENGTH"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/core#shaft"/>
     </owl:NamedIndividual>
     
 
@@ -288,7 +246,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_CONFIG">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleCoatingSpecification"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_THICK"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_THICK"/>
     </owl:NamedIndividual>
     
 
@@ -297,7 +255,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_THICK">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#CoatingThickness"/>
-        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</property:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -306,7 +264,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_DIAMETER">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Diameter"/>
-        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</property:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -315,7 +273,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_LENGTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Length"/>
-        <property:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">522.0</property:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">522.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -324,8 +282,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#Sample"/>
+        <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta_BODYCONFIGURATION"/>
         <sample:hasCoreMaterial rdf:resource="https://w3id.org/tribont/TESTINGsample#HNBR_80_LF"/>
-        <property:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta_BODYCONFIGURATION"/>
     </owl:NamedIndividual>
     
 
@@ -334,7 +292,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_junta_BODYCONFIGURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleBodyConfiguration"/>
-        <property:hasProperty rdf:resource="https://w3id.org/tribont/core#seal"/>
+        <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/core#seal"/>
     </owl:NamedIndividual>
     
 
@@ -375,12 +333,6 @@
     <!-- https://w3id.org/tribont/core#shaft -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#shaft"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core:#disc -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core:#disc"/>
 </rdf:RDF>
 
 
