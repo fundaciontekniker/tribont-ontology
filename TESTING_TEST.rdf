@@ -164,54 +164,10 @@
     
 
 
-    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_DIAMETER -->
-
-    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_DIAMETER">
-        <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.0</isCharacterisedBy:value>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_HEIGHT -->
-
-    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_HEIGHT">
-        <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.9</isCharacterisedBy:value>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_LENGTH -->
-
-    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_LENGTH">
-        <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</isCharacterisedBy:value>
-    </rdf:Description>
-    
-
-
     <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_WIDTH -->
 
     <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_WIDTH">
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_THICK -->
-
-    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_COATING_THICK">
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</isCharacterisedBy:value>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_DIAMETER -->
-
-    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_DIAMETER">
-        <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</isCharacterisedBy:value>
     </rdf:Description>
     
 
@@ -346,7 +302,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_COFMean">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#COFMean"/>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.133</isCharacterisedBy:maxValue>
         <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.133</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
@@ -521,6 +476,7 @@
         <rdf:type rdf:resource="https://w3id.org/tribont/test#TribologicalTest"/>
         <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_TRIBOLOGYTEST_RESULT"/>
         <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_TRIBO_TEST_CONFIGURATION"/>
+        <core:compliesWith rdf:resource="https://w3id.org/tribont/core#ASTMD5706"/>
         <test:hasTestResultDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SRV3_RESULTFILE"/>
         <test:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
         <test:isPerformedAt rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
@@ -642,7 +598,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OS3038-6131_COFMean">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#COFMean"/>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.073</isCharacterisedBy:maxValue>
         <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.073</isCharacterisedBy:value>
     </owl:NamedIndividual>
     

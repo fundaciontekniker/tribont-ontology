@@ -90,6 +90,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_DIAMETER">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Diameter"/>
+        <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
         <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
@@ -99,6 +100,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_HEIGHT">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Height"/>
+        <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
         <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.9</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
@@ -137,6 +139,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_LENGTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Length"/>
+        <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
         <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
@@ -264,6 +267,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_DIAMETER">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Diameter"/>
+        <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
         <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
@@ -273,6 +277,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_LENGTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Length"/>
+        <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
         <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">522.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
