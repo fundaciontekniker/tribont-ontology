@@ -12,9 +12,10 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:common="https://w3id.org/tribontcore#"
      xmlns:dcterms="https://w3id.org/tribont/equipment#dcterms:"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+	 
+	 
     <owl:Ontology rdf:about="https://w3id.org/tribont/core">
         <owl:imports rdf:resource="https://w3id.org/isCharacterisedBy"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
@@ -79,7 +80,12 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:comment>A name given to the resource.</rdfs:comment>
+        <rdfs:comment>http://purl.org/dc/terms/</rdfs:comment>
+        <rdfs:label>title</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+    </rdf:Description>
     
 
 
@@ -123,13 +129,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
-
-
-    <!-- https://w3id.org/tribontcore#environmentMediumType -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/tribontcore#environmentMediumType"/>
     
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -146,13 +146,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#compliesWith">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isCompliedBy"/>
+        <rdfs:comment>Relation between something and the standard it complies with.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>compliesWith</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/tribont/core#hasDocument -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasDocument"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasDocument">
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isDocumentFor"/>
+        <rdfs:comment>Relation between something and its related documents</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>hasDocument</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
@@ -160,6 +170,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasManufacturer">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isManufacturerFor"/>
+        <rdfs:comment>Relation between a something and its manufacturer</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>hasManufacturer</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -168,19 +182,44 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasOwner">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isOwnerFor"/>
+        <rdfs:comment>Relation between something and the person or entity that owns it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>hasOwner</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/tribont/core#hasRole -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasRole"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasRole">
+        <rdfs:comment>The relation between something and the roles it can play.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>hasRole</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/tribont/core#isCompliedBy -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCompliedBy"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCompliedBy">
+        <rdfs:comment>Relation between a standard and what it regulates.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>isCompliedBy</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/core#isDocumentFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isDocumentFor">
+        <rdfs:comment>Relation between a document and what it provides information about.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>isDocumentFor</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
@@ -188,25 +227,44 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isMadeOf">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isPartOf"/>
+        <rdfs:comment>Relation between something and its component parts.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>isMadeOf</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/tribont/core#isManufacturerFor -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isManufacturerFor"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isManufacturerFor">
+        <rdfs:comment>Relation between between a company and what it produces.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>isManufacturerFor</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/tribont/core#isOwnerFor -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isOwnerFor"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isOwnerFor">
+        <rdfs:comment>Relation between between a company and what it owns.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>isOwnerFor</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/tribont/core#isPartOf -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isPartOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isPartOf">
+        <rdfs:comment>Relation between a component part and that of which it is a part.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>isPartOf</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
@@ -223,7 +281,45 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <!-- https://w3id.org/tribont/core#accessUrl -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#accessUrl"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#accessUrl">
+        <rdfs:comment>Url to access a specific information content or document.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>accessUrl</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/core#longName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#longName">
+        <rdfs:comment>long name of a resource.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>longName</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/core#name -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#name">
+        <rdfs:comment>Name of a resource.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>name</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/core#shortNam -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#shortNam">
+        <rdfs:comment>Short name of a resource.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>shortName</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:DatatypeProperty>
     
 
 
@@ -243,6 +339,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="http://dbpedia.org/ontology/Company">
         <rdfs:isDefinedBy>http://dbpedia.org/ontology/</rdfs:isDefinedBy>
         <rdfs:label>Company</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -259,6 +356,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:comment>Any document</rdfs:comment>
         <rdfs:isDefinedBy>http://dbpedia.org/ontology/</rdfs:isDefinedBy>
         <rdfs:label>Document</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -269,6 +367,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:comment>A reference point against which other things can be evaluated or compared.</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/dc/terms/Standard</rdfs:isDefinedBy>
         <rdfs:label>Standard</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -291,6 +390,12 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Property">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasRole"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PropertyRole"/>
             </owl:Restriction>
@@ -303,6 +408,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Acceleration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#AccelerationUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#AccelerationUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Increase in speed or rate.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Acceleration</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -311,6 +433,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#AccelerationUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for derivative of velocity with respect to time.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>AccelerationUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -319,6 +445,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#AcidNumberAN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#mgKOH/g"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Acid number of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>AcidNumberAN</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -327,6 +463,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#AirReleaseTimeLAV">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Air release time for something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>AirReleaseTimeLAV</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -335,6 +488,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#AlkalineAdditivesConsumption">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Consumption of alkaline additives by something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>AlkalineAdditivesConsumption</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -343,6 +513,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#AngleUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for angle.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>AngleUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -351,6 +525,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#AngularPosition">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:comment>Angular position of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>AngularPosition</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -359,6 +537,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#AntioxidantContent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Antioxidant content for something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>AntioxidantContent</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -367,6 +562,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#AxialLoad">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Axial load applied to something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>AxialLoad</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -375,6 +587,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#BodyProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
+        <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of a body.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>BodyProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -383,6 +599,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#COFMean">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#FrictionProperty"/>
+        <rdfs:comment>Mean value of the coefficient of friction.</rdfs:comment>
+        <rdfs:label>COFMean</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -391,6 +611,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#CapacityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for capacity.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -400,6 +623,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#ChamberTemperature">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Temperature"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#SampleTemperature"/>
+        <rdfs:comment>Temperature of the chamber where the sample is tested.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ChamberTemperature</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -408,6 +635,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#CloudPoint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidThermalProperty"/>
+        <rdfs:comment>Cloud point.</rdfs:comment>
+        <rdfs:label>CloudPoint</rdfs:label>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -416,6 +646,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ColdFilterPluggingPoint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidThermalProperty"/>
+        <rdfs:comment>Cold filter plugging point.</rdfs:comment>
+        <rdfs:label>ColdFilterPluggingPoint</rdfs:label>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -424,6 +657,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ColourIndex">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:comment>Colour index  of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ColourIndex</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -432,6 +669,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#CompressiveStrength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Compressive strength applied to something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>CompressiveStrength</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -440,6 +694,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Conductivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Conductivity  of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Conductivity</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -448,6 +719,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ContactSurfaceType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SystemProperty"/>
+        <rdfs:comment>Contact surface type (e.g. line, point,etc. .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ContactSurfaceType</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -456,6 +731,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ContentUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for contents.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ContentUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -464,6 +743,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#CoradsonCarbonResidue">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#percentage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Coradson carbon residue in something .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>CoradsonCarbonResidue</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -472,6 +761,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#CorrosionLevel">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:comment>Corrosion level of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>CorrosionLevel</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -480,6 +773,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#CourseOfMovement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+        <rdfs:comment>Type of relative motion  between two or more bodies.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>CourseOfMovement</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -488,6 +785,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Decceleration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#AccelerationUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#AccelerationUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Decrease in speed or rate.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Decceleration</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -496,7 +810,24 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Density">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#Porosity"/>
+        <rdfs:comment>Density of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Density</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -505,6 +836,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#DensityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for density.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>DensityUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -513,6 +848,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Diameter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
+        <rdfs:comment>Diameter of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Diameter</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -521,6 +860,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Dispersancy">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Dispersancy of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Dispersancy</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -529,6 +885,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#DissipationFactor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:comment>Dissipation factor of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>DissipationFactor</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -537,6 +897,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#DistanceUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for distance.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>DistanceUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -545,6 +909,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Duration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Amount of time during which an event persists.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Duration</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -553,6 +934,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#DynamicViscosity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Dynamic viscosity of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>DynamicViscosity</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -561,6 +959,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ElectricalBreakdownVoltage">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#VoltageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#VoltageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Electrical breakdown voltage of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ElectricalBreakdownVoltage</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -570,6 +985,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#ElectricalConductivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#ElectricalProperty"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#ElectricalResistivity"/>
+        <rdfs:comment>Electrical conductivity of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ElectricalConductivity</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -578,6 +997,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ElectricalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of electrical behaviour of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ElectricalProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -586,6 +1009,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ElectricalResistivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#ElectricalProperty"/>
+        <rdfs:comment>Electrical resistivity of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ElectricalResistivity</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -594,6 +1021,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#EnvironmentMedium">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+        <rdfs:comment>Environment medium surrounding something .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>EnvironmentMedium</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -602,6 +1033,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#EnvironmentProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of the enviroment  in which a test has been / or should be carried out.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>EnvironmentProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -610,6 +1045,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ExpansionCOFUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for expansion coefficient.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ExpansionCOFUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -618,6 +1057,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ExternalForce">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>External force applied to something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ExternalForce</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -626,6 +1082,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#FailureProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of the moment when a sample bodey fails.</rdfs:comment>
+        <rdfs:label>FailureProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -634,6 +1094,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Filterability">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:comment>Filterability of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Filterability</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -642,6 +1106,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#FlashPoint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidThermalProperty"/>
+        <rdfs:comment>Flash point of something.</rdfs:comment>
+        <rdfs:label>FlashPoint</rdfs:label>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -650,6 +1117,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#FlexuralStrength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Flexural strength of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>FlexuralStrength</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -658,6 +1142,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#FoamingTendency">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Foaming tendency of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>FoamingTendency</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -666,6 +1167,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ForceUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for force.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ForceUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -674,6 +1179,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#FractureToughness">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Fracture toughness of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>FractureToughness</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -682,6 +1204,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Frequency">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Frequency of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Frequency</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -690,6 +1229,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#FrequencyUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for frequency.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>FrequencyUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -698,6 +1241,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#FrictionProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of the friction between two or more bodies.</rdfs:comment>
+        <rdfs:label>FrictionProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -706,6 +1253,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#FrictionTorque">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TorqueUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TorqueUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Friction torque applied to something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>FrictionTorque</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -714,6 +1278,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#GeometricDimension">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#BodyProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Quantifiable attribute, or characteristic of the geometry of a body.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>GeometricDimension</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -722,6 +1303,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#GeometricalArrangement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SystemProperty"/>
+        <rdfs:comment>Geometrical combination of bodies belonging to a tribological system (e.g. ball on disc).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>GeometricalArrangement</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -730,6 +1315,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#GlycolContent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Content of glycol of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>GlycolContent</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -738,6 +1340,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessBrinell">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+        <rdfs:comment>Brinell hardness of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HardnessBrinell</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -746,6 +1352,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessKnoop100g">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+        <rdfs:comment>Knoop hardness of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HardnessKnoop100g</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -754,6 +1364,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Quantifiable attribute, or characteristic of the hardness of a body.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HardnessProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -762,6 +1389,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessRockwellB">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+        <rdfs:comment>RockwellB hardness of something .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HardnessRockwellB</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -770,6 +1401,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessRockwellC">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+        <rdfs:comment>RockwellC hardness of something .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HardnessRockwellC</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -778,6 +1413,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessRockwellM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+        <rdfs:comment>RockwellM hardnes of somethings .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HardnessRockwellM</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -786,6 +1425,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessRockwellR">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+        <rdfs:comment>RockwellR hardness of something .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HardnessRockwellR</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -794,6 +1437,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessShoreA">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+        <rdfs:comment>ShoreA hardness of something .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HardnessShoreA</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -802,6 +1449,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessShoreD">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+        <rdfs:comment>ShoreD hardness of something .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HardnessShoreD</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -810,6 +1461,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for hardness.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HardnessUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -818,6 +1473,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessVickers">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+        <rdfs:comment>Vickers hardness of something .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HardnessVickers</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -826,6 +1485,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HeatCapacityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for heat capacity.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>HeatCapacityUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -834,6 +1497,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Height">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
+        <rdfs:comment>Height of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Height</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -842,6 +1509,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Humidity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Humidity of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Humidity</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -850,6 +1534,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Inclination">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#AngleUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#AngleUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Inclination of the camber where the test is carried out.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Inclination</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -858,6 +1559,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#IndentationHardnessMicro">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+        <rdfs:comment>Indentation hardness micro.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>IndentationHardnessMicro</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -866,6 +1571,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#IndentationHardnessNano">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+        <rdfs:comment>Indentation hardness nano.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>IndentationHardnessNano</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -874,6 +1583,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Inhibited Hydraulic Fluids Oxidation Stability And Lubricating Oils For High Pressure Loads.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -883,6 +1609,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#InnerDiameter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Diameter"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#OuterDiameter"/>
+        <rdfs:comment>Inner diameter of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>InnerDiameter</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -892,6 +1622,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#InnerTeethHeight">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TeethHeight"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#OuterTeethHeight"/>
+        <rdfs:comment>Inner teeth height of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>InnerTeethHeight</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -901,6 +1635,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#InnerTeethLength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TeethLength"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#OuterTeethLength"/>
+        <rdfs:comment>Inner teeth length of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>InnerTeethLength</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -909,6 +1647,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#InterfacialTensionBetweenWaterOil">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Interfacial Tension Between Water Oil</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>InterfacialTensionBetweenWaterOil</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -917,6 +1672,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#KinematicViscosity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Kinematic viscosity of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>KinematicViscosity</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -925,6 +1697,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Length">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
+        <rdfs:comment>Length of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Length</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -933,6 +1709,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LinearSpeed">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#VelocityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#VelocityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Linear speed of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>LinearSpeed</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -942,6 +1735,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#LiquidPhysicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#PhysicalProperty"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable physical attribute, or characteristic of a liquid.</rdfs:comment>
+        <rdfs:label>LiquidPhysicalProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -950,7 +1747,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LiquidThermalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#ThermalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#SolidThermalProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable thermal attribute, or characteristic of a liquid.</rdfs:comment>
+        <rdfs:label>LiquidThermalProperty</rdfs:label>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -959,6 +1772,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Load">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Load applied to something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Load</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -967,6 +1797,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LoadLeverRatio">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
+        <rdfs:comment>Load leverlratio of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>LoadLevelRatio</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -975,6 +1809,30 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LoadPressure">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ForceUnit"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#PressureUnit"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Load pressure applied to something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>LoadPressure</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -983,6 +1841,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LoadProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable  attribute, or characteristic of load.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>LoadProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -991,6 +1853,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LoadRate">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#LoadRateUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#LoadRateUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Load rate applied to something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>LoadRate</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -999,6 +1878,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LoadRateUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for load rate.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>LoadRateUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1007,6 +1890,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LodineNumber">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:comment>Lodine number of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>LodineNumber</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1023,6 +1910,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LubricantType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+        <rdfs:comment>Lubricant type.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>LubricantType</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1031,6 +1922,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LubricantsOxidationStability">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Lubricants oxidation stability.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>LubricantsOxidationStability</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1039,6 +1947,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LubricationRegime">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+        <rdfs:comment>Lubrication regime applied to a test or process .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>LubricationRegime</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1047,6 +1959,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#MaxLoadWithoutFailure">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#FailureProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Maximun load before failure of the material.</rdfs:comment>
+        <rdfs:label>MaxLoadWithoutFailure</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1055,6 +1984,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#MaximumServiceTemperature">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidThermalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Maximun temperature of operation.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>MaximumServiceTemperature</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1063,7 +2009,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#MechanicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
-        <rdfs:comment>Move at Common Level. Could be measured by a TEst</rdfs:comment>
+        <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of mechanical behaviour of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>MechanicalProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1072,6 +2021,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#MechanicalUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement units for mechanizal properties.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>MechanicalUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1080,6 +2033,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#MeltingPoint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidThermalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Melting point  of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>MeltingPoint</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1088,6 +2058,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#MovementProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of something&apos;s movement.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>MovementProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1096,6 +2070,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#MovementType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+        <rdfs:comment>Type of movement appled to something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>MovementType</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1104,6 +2082,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#NeutralisationNumberNN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#mgKOH/g"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Neutralisation number of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>NeutralisationNumberNN</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1112,6 +2100,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#NormalForce">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Normal force applied to something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>NormalForce</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1120,14 +2125,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#NumberOfContactSurface">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SystemProperty"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/core#NumberUnit -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#NumberUnit">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Number of contact surfaces of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>NumberOfContactSurface</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1136,6 +2137,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#O2Level">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>O2 level of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>O2Level</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1144,6 +2162,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#OperationCondition">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Feature"/>
+        <rdfs:comment>Qualifiable or quantifiable operation attribute, or characteristic of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OperationCondition</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1158,6 +2180,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/core#configuration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Logical aggregation of nominal value of operation attributes, or characteristics of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OperationConfiguration</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1172,6 +2198,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/core#specification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Logical aggregation of operation attributes, or characteristics that can be measured by something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OperationMeasurementSpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1180,6 +2210,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#OperationProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
+        <rdfs:comment>Quantifiable operation attribute, or characteristic of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OperationProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1194,6 +2228,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/core#specification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Logical aggregation of  value ranges of operation attributes, or characteristics supported by something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OperationSpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1208,6 +2246,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/core#measurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Logical aggregation of the values of the operation attributes, or characteristics measured when a test is terminated.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OperationTerminationMeasurement</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1216,6 +2258,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#OuterDiameter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Diameter"/>
+        <rdfs:comment>Outer diameter.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OuterDiameter</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1224,6 +2270,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#OuterTeethHeight">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TeethHeight"/>
+        <rdfs:comment>Outer teeth height of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OuterTeethHeight</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1232,6 +2282,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#OuterTeethLength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TeethLength"/>
+        <rdfs:comment>Outer teeth length of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OuterTeethLength</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1240,6 +2294,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#OutputResult">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Feature"/>
+        <rdfs:comment>Logical aggregation of the technical attributes, or characteristics obtained as result of a test.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OutputResult</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1255,6 +2313,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#OutputResultSpecification"/>
+        <rdfs:comment>Logical aggregation of the measured values of the technical attributes, or characteristics obtained as result of a test.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OutputResultMeasurement</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1269,6 +2331,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/core#specification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Logical aggregation of the expected technical attributes, or characteristics resulting from a test.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>OutputResultSpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1277,6 +2343,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PQIndex">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:comment>PQ index of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>PQIndex</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1285,6 +2355,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PercentageUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for angle.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>PercentageUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1293,6 +2367,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PhLevel">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Ph level of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>PhLevel</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1301,6 +2392,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PhysicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable physical attribute, or characteristic of a something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>PhysicalProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1309,6 +2404,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PoisssonRatio">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
+        <rdfs:comment>Poissson ratio of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>PoisssonRatio</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1317,7 +2416,17 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PolishGrade">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#µm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
+        <rdfs:comment>Polish grade of something.</rdfs:comment>
+        <rdfs:label>PolishGrade</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1326,6 +2435,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Porosity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Porosity of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Porosity</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1334,6 +2460,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PourPoint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidThermalProperty"/>
+        <rdfs:comment>Pour point of something.</rdfs:comment>
+        <rdfs:label>PourPoint</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1342,6 +2472,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Pressure">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PressureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PressureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Pressure applied to soemthing.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Pressure</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1350,6 +2497,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PressureUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for pressure.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>PressureUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1358,6 +2509,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PropertyRole">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Role"/>
+        <rdfs:comment>Allowed property roles.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>PropertyRole</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1366,6 +2521,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PumpFlowRate">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LubricantPumpProperty"/>
+        <rdfs:comment>Pump flow rate.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>PumpFlowRate</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1374,6 +2533,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PumpRotationalSpeed">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LubricantPumpProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Pump rotational speed.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>PumpRotationalSpeed</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1382,6 +2551,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PumpTemperature">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LubricantPumpProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Pump temperature.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>PumpTemperature</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1390,7 +2576,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Ra">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
-        <rdfs:comment>Arithmetical mean height of the absolute values</rdfs:comment>
+        <rdfs:comment>Arithmetical mean height of the absolute values.</rdfs:comment>
+        <rdfs:label>Ra</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1399,6 +2588,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#RadiationDosage">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Radiation dosage applied to something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>RadiationDosage</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1407,6 +2613,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#RadiationType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+        <rdfs:comment>Radiation type.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>RadiationType</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1415,6 +2625,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#RelativeDielectricConstant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:comment>Relative dielectric constant of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>RelativeDielectricConstant</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1423,7 +2637,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
-        <rdfs:comment>Core height</rdfs:comment>
+        <rdfs:comment>Core height.</rdfs:comment>
+        <rdfs:label>Rk</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1433,6 +2650,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rku">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Kurtosis</rdfs:comment>
+        <rdfs:label>Rku</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1442,6 +2662,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rmk1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Material ratio of the reduced peak height</rdfs:comment>
+        <rdfs:label>Rmk1</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1451,13 +2674,21 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rmk2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Material ratio of the reduced valley depth</rdfs:comment>
+        <rdfs:label>Rmk2</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
 
     <!-- https://w3id.org/tribont/core#Role -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/core#Role"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Role">
+        <rdfs:comment>The position or purpose that someone or something has in a situation, organization, society, or relationship:.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Role</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
     
 
 
@@ -1465,6 +2696,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#RotationalSpeed">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Rotational speed of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>RotationalSpeed</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1473,6 +2721,17 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#RotationalSpeedUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Measurement unit for rotational speed.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>RotationalSpeedUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1481,7 +2740,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rp">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
-        <rdfs:comment>Mean peak height</rdfs:comment>
+        <rdfs:comment>Mean peak height.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Rp</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1490,7 +2752,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rpk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
-        <rdfs:comment>Reduced peak height (</rdfs:comment>
+        <rdfs:comment>Reduced peak height</rdfs:comment>
+        <rdfs:label>Rpk</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1499,6 +2764,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rpkx">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
+        <rdfs:comment>Reduced peak height along x</rdfs:comment>
+        <rdfs:label>Rpkx</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1508,6 +2777,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rq">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Root mean square height</rdfs:comment>
+        <rdfs:label>Rq</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1517,6 +2789,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rsk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Skewness</rdfs:comment>
+        <rdfs:label>Rsk</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1526,6 +2801,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rt">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Total height</rdfs:comment>
+        <rdfs:label>Rt</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1534,6 +2812,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rust-PreventingCharacteristicInPresenceOfWater">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:comment>Rust-Preventing Characteristic In Presence Of Water.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Rust-PreventingCharacteristicInPresenceOfWater</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1543,6 +2825,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rv">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Mean valley depth</rdfs:comment>
+        <rdfs:label>Rv</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1552,6 +2837,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rvkx">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Maximum peak height</rdfs:comment>
+        <rdfs:label>Rvkx</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1561,6 +2849,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rz">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Mean total height</rdfs:comment>
+        <rdfs:label>Rz</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1570,6 +2861,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sa">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Arithmetical mean height</rdfs:comment>
+        <rdfs:label>Sa</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1578,6 +2872,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SampleBody">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Feature"/>
+        <rdfs:comment>logical aggregation of  qualifiable or quantifiable attributes, or characteristics of a sample body.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SampleBody</rdfs:label>
     </owl:Class>
     
 
@@ -1592,6 +2889,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/core#configuration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>logical aggregation of nominal values of qualifiable or quantifiable attributes, or characteristics of a sample body.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SampleBodyConfiguration</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1606,6 +2907,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/core#measurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>logical aggregation of measured values of qualifiable or quantifiable attributes, or characteristics of a sample body.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SampleBodyMeasurement</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1620,6 +2925,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/core#specification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>logical aggregation of allowed value/ value range of qualifiable or quantifiable attributes, or characteristics of a sample body.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SampleBodySpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1628,6 +2937,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SampleSystemArrangement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Feature"/>
+        <rdfs:comment>logical aggregation of  qualifiable or quantifiable attributes, or characteristics of a sample system.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SampleSystemArrangement</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1643,6 +2956,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#SampleSystemSpecification"/>
+        <rdfs:comment>logical aggregation of nominal values of qualifiable or quantifiable attributes, or characteristics of a sample system.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SampleSystemConfiguration</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1657,6 +2974,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/core#specification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>logical aggregation of allowed value/ value range of qualifiable or quantifiable attributes, or characteristics of a sample s¡ystem.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SampleSystemSpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1665,6 +2986,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SampleTemperature">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Temperature"/>
+        <rdfs:comment>Temperature of the sample body.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SampleTemperature</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1673,6 +2998,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sdq">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
+        <rdfs:comment>Sdq.</rdfs:comment>
+        <rdfs:label>Sdq</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1681,6 +3010,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sdr">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
+        <rdfs:comment>Sdr.</rdfs:comment>
+        <rdfs:label>Sdr</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1689,7 +3022,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Shape">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#BodyProperty"/>
-        <rdfs:comment>the form or outline of something</rdfs:comment>
+        <rdfs:comment>The form or outline of something</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Shape</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1698,6 +3034,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ShearStability">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Shear stability.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ShearStability</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1707,6 +3060,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Core height</rdfs:comment>
+        <rdfs:label>Sk</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1716,6 +3072,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sku">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Kurtosis</rdfs:comment>
+        <rdfs:label>Sku</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1724,6 +3083,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SlidingSpeed">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#VelocityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#VelocityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Sliding speed of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SlidingSpeed</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1732,6 +3108,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SlipPercentage">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Slip percentage of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SlipPercentage</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1741,6 +3134,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Smk1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Material ratio of the hills</rdfs:comment>
+        <rdfs:label>Smk1</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1750,6 +3146,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Smk2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Material ratio of the dales</rdfs:comment>
+        <rdfs:label>Smk2</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1758,6 +3157,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SolidContaminants">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#percentage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Solid contaminants.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SolidContaminants</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1766,6 +3175,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SolidPhysicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#PhysicalProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable physical attribute, or characteristic of a solid.</rdfs:comment>
+        <rdfs:label>SolidPhysicalProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1774,6 +3187,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SolidThermalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#ThermalProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable thermal attribute, or characteristic of a solid.</rdfs:comment>
+        <rdfs:label>SolidThermalProperty</rdfs:label>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1783,6 +3199,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sp">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Maximum peak height</rdfs:comment>
+        <rdfs:label>Sp</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1791,6 +3210,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SpecificHeatCapacity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidThermalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Specific heat capacity</rdfs:comment>
+        <rdfs:label>SpecificHeatCapacity</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1800,6 +3236,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Spk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Reduced peak height</rdfs:comment>
+        <rdfs:label>Spk</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1809,6 +3248,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Spkx">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Maximum peak height</rdfs:comment>
+        <rdfs:label>Spkx</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1818,6 +3260,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sq">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Root mean square height</rdfs:comment>
+        <rdfs:label>Sq</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1827,6 +3272,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Ssk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Skewness</rdfs:comment>
+        <rdfs:label>Ssk</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1835,6 +3283,30 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#StrokeAmplitude">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#AngleUnit"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#DistanceUnit"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Stroke amplitude.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>StrokeAmplitude</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1843,6 +3315,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#StrokeDiameter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Stroke diameter.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>StrokeDiameter</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1851,6 +3340,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#StrokeLength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Stroke length.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>StrokeLength</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1859,6 +3365,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SulfateAsh">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#percentage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Sulfate ash .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SulfateAsh</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1867,6 +3383,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SurfaceProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#µm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Qualifiable or quantifiable  attribute, or characteristic of a surface. .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SurfaceProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1875,6 +3401,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SurfaceRoughness">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceProperty"/>
+        <rdfs:comment>Surface roughness. .</rdfs:comment>
+        <rdfs:label>SurfaceRoughness</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1884,6 +3414,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sv">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Maximum valley depth</rdfs:comment>
+        <rdfs:label>Sv</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1893,6 +3426,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Svk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Reduced valley depth</rdfs:comment>
+        <rdfs:label>Svk</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1902,6 +3438,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Svkx">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Maximum valley depth</rdfs:comment>
+        <rdfs:label>Svkx</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1910,6 +3449,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SystemProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
+        <rdfs:comment>Qualifiable or quantifiable  attribute, or characteristic of a sample system. .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>SystemProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1918,7 +3461,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sz">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
-        <rdfs:comment>Maximum height</rdfs:comment>
+        <rdfs:comment>Maximum height z</rdfs:comment>
+        <rdfs:label>Sz</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -1927,6 +3473,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TechnicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
+        <rdfs:comment>Qualifiable or quantifiable technical attribute, or characteristic of something. .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>TechnicalProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1935,6 +3485,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TeethHeight">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
+        <rdfs:comment>Height of a teeth. .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>TeethHeight</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1943,6 +3497,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TeethLength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
+        <rdfs:comment>Length of a teeth. .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>TeethLength</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1951,6 +3509,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Temperature">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Temperature ofsomebody or something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Temperature</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1959,6 +3534,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TemperatureUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for temperature.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>TemperatureUni</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1967,6 +3546,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TendencyUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for tendency.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>TendencyUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1975,6 +3558,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TensileStrength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Tensile strength of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>TensileStrength</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -1983,6 +3583,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TensionUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for tension.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>TensionUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1991,6 +3595,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ThermalConductivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidThermalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Thermal conductivity of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ThermalConductivity</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1999,6 +3620,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ThermalConductivityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for conductivity.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ThermalConductivityUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2007,6 +3632,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ThermalExpansionCoefficient">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidThermalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Thermal expansion coefficient of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ThermalExpansionCoefficient</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2015,6 +3657,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ThermalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable termal attribute, or characteristic of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ThermalProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2023,6 +3669,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TimeUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for time.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>TimeUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2031,6 +3681,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TolyltriazoleAndOtherNonFerrousMetalInhibitorsContent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Tolyltriazole And Other Non Ferrous Metal Inhibitors Content.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>TolyltriazoleAndOtherNonFerrousMetalInhibitorsContent</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2039,6 +3706,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Torque">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TorqueUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TorqueUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Torque applied to something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Torque</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2047,6 +3731,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TorqueUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for torque.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>TorqueUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2055,6 +3743,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ToughnessUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for toughness.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ToughnessUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2063,6 +3755,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TribologicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable tribological attribute, or characteristic of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>TribologicalProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2071,6 +3767,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Velocity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#VelocityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#VelocityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Velocity of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Velocity</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2079,6 +3792,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#VelocityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for velocity.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>VelocityUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2087,6 +3804,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ViscosityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for viscosity.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>ViscosityUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2096,6 +3817,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Vmc">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Core material volume</rdfs:comment>
+        <rdfs:label>Vmc</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -2105,6 +3829,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Vmp">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Peak material volume</rdfs:comment>
+        <rdfs:label>Vmp</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -2113,6 +3840,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#VoltageUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for voltage.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>VoltageUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2121,6 +3852,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Volume">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#BodyProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Volume of someting.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Volume</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2130,6 +3878,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Vvc">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Core void volume</rdfs:comment>
+        <rdfs:label>Vvc</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -2139,6 +3890,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/core#Vvv">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Dale void volume</rdfs:comment>
+        <rdfs:label>Vvv</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -2147,6 +3901,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#WaterContent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Water content of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>WaterContent</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2155,6 +3919,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#WearProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
+        <rdfs:comment>Qualifiable or quantifiable wear attribute, or characteristic of something..</rdfs:comment>
+        <rdfs:label>WearProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -2163,7 +3931,24 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#WearScarLength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#WearScarProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#WearScarVolume"/>
+        <rdfs:comment> Length of wear scar..</rdfs:comment>
+        <rdfs:label>WearScarLength</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -2172,6 +3957,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#WearScarProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#WearProperty"/>
+        <rdfs:comment> Qualifiable or quantifiable  attribute, or characteristic of a wear scar.</rdfs:comment>
+        <rdfs:label>WearScarProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -2180,6 +3969,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#WearScarVolume">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#WearScarProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment> Volume of wear scar..</rdfs:comment>
+        <rdfs:label>WearScarVolume</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -2188,6 +3994,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#WearType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+        <rdfs:comment>Wear type of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>WearType</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2196,6 +4006,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#WeibullModulus">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
+        <rdfs:comment>Weibull modulus of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>WeibullModulus</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2204,6 +4018,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Weight">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#BodyProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#WeightUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#WeightUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Weight of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Weight</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2212,6 +4043,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#WeightUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Measurement unit for weight.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>WeightUnit</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2220,6 +4055,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Width">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
+        <rdfs:comment>Width of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Width</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2228,6 +4067,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#YieldStrength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
+        <rdfs:comment>Yield strength of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>YieldStrength</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2236,6 +4079,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#YoungModulus">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
+        <rdfs:comment>Young modulus of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>YoungModulus</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2244,6 +4091,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#i-ph">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
+        <rdfs:comment>i-phof something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>i-ph</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2252,6 +4103,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/test#TestStandard">
         <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Standard"/>
+        <rdfs:comment>Test standard.</rdfs:comment>
+        <rdfs:label>TestStandard</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
 
@@ -2375,7 +4230,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N2CO295">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
-        <common:environmentMediumType>CUSTOM</common:environmentMediumType>
     </owl:NamedIndividual>
     
 
@@ -2408,7 +4262,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ambient_air">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
-        <common:environmentMediumType>AMBIENT</common:environmentMediumType>
     </owl:NamedIndividual>
     
 
@@ -2505,7 +4358,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#corrosive_gas">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
-        <common:environmentMediumType>CUSTOM</common:environmentMediumType>
     </owl:NamedIndividual>
     
 
@@ -2738,7 +4590,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#innert_gas">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
-        <common:environmentMediumType>CUSTOM</common:environmentMediumType>
     </owl:NamedIndividual>
     
 
@@ -2963,7 +4814,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#nitrogen">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
-        <common:environmentMediumType>CUSTOM</common:environmentMediumType>
     </owl:NamedIndividual>
     
 
@@ -3284,7 +5134,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#synhetic_air">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
-        <common:environmentMediumType>CUSTOM</common:environmentMediumType>
     </owl:NamedIndividual>
     
 
@@ -3979,9 +5828,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <!-- https://w3id.org/tribont/core#mgKOH/g -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mgKOH/g">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#NumberUnit"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mgKOH/g"/>
     
 
 
@@ -4183,7 +6030,19 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdf:type rdf:resource="https://w3id.org/tribont/core#AngleUnit"/>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -4195,7 +6054,22 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -4243,49 +6117,13 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -4310,6 +6148,32 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+        <ns1:term_status>Stable</ns1:term_status>
+        <rdfs:label>identifier</rdfs:label>
+        <rdfs:comment>An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/dc/terms/</rdfs:isDefinedBy>
     </rdf:Description>
     
 
@@ -4351,39 +6215,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#StrokeDiameter"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#StrokeLength"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#Velocity"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#AccelerationUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#AngleUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#CapacityUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#ContentUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#DensityUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#DistanceUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#ForceUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#FrequencyUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#HardnessUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#LoadRateUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#NumberUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#PercentageUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#PressureUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#TemperatureUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#TendencyUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#TensionUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#TimeUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#TorqueUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#ToughnessUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#VelocityUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#ViscosityUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#VoltageUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#WeightUnit"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

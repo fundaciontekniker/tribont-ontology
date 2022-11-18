@@ -13,20 +13,16 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:unit="https://w3id.org/tribont/unit#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:rdfs1="https://w3id.org/tribont/equipment#rdfs:"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:dcterms="https://w3id.org/tribont/equipment#dcterms:"
      xmlns:ontology="https://dbpedia.org/ontology/"
-     xmlns:property="https://w3id.org/tribont/property#"
-     xmlns:equipment="https://w3id.org/tribont/equipment#"
-     xmlns:tribontcore="https://w3id.org/tribontcore#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+	 
     <owl:Ontology rdf:about="https://w3id.org/tribont/equipment">
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:created>2021-10-18</terms:created>
-        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla Eguia &lt;mailto:ipatricia.casla@tekniker.es&gt;
+        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla &lt;mailto:patricia.casla@tekniker.es&gt;
 Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <terms:description xml:lang="en">The xxx ontology xxx</terms:description>
         <terms:issued>2021-mm-dd</terms:issued>
@@ -125,28 +121,13 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
 
-
-    <!-- https://w3id.org/tribont/body#hasDimension -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/body#hasDimension"/>
-    
-
-
-    <!-- https://w3id.org/tribont/body#hasParameter -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/body#hasParameter"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
+     -->  
 
 
     <!-- https://w3id.org/isCharacterisedBy#belongsTo -->
@@ -157,13 +138,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <!-- https://w3id.org/tribont/equipment#hasCalibration -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#hasCalibration"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#hasCalibration">
+        <rdfs:comment>The relation between a specific equipment and the calibrations performed on it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>hasCalibration</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/tribont/equipment#hasTechnicalDescription -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#hasTechnicalDescription"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#hasTechnicalDescription">
+        <rdfs:comment>The relation between an equipment or aggrupation of identical equipments and the related technical documentation.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>hasTechnicalDescription</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
@@ -176,29 +167,47 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
      -->
 
     
-
-
     <!-- https://w3id.org/tribont/equipment#executionDate -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#executionDate"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#executionDate">
+        <rdfs:comment>The date when a specific action has been performed.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>executionDate</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/tribont/equipment#measuringPrinciple -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#measuringPrinciple"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#measuringPrinciple">
+        <rdfs:comment>The measuring principle followed by an equipment.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>measuringPrinciple</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/tribont/equipment#purpose -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#purpose"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#purpose">
+        <rdfs:comment>The puspose of an equipment.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>purpose</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/tribont/equipment#validityDate -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#validityDate"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#validityDate">
+        <rdfs:comment>The date until which a given action is valid and after which it is necessary to repeat it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>validityDate</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:DatatypeProperty>
     
 
 
@@ -223,6 +232,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#AbrasionTester">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
+        <rdfs:comment> An equipment that measures the abrasion resistance of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>AbrasionTester</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -242,6 +255,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>The action or process of calibrating something to maintain accuracy, and repeatability in measurements, assuring reliable results.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>Calibration</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -251,6 +268,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#CalibrationDocument">
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Document"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/equipment#TechnicalInformation"/>
+        <rdfs:comment>A document that contains all the relevant information related to a specific calibration.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>CalibrationDocument</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -297,6 +318,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/equipment#EquipmentClass"/>
+        <rdfs:comment>An object which is instrumental for reaching a particular purpose through its characteristic functioning process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>Equipment</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -329,6 +354,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>An aggrupation of equipments with a set of common atributes of characteristics.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>EquipmentClass</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -337,6 +366,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#EquipmentStandard">
         <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Standard"/>
+        <rdfs:comment>A document approved by a recognized body that provides common to by fullfiled by an equipment.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>EquipmentStandard</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -345,6 +378,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ExperimentalEquipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
+        <rdfs:comment>An equipment that reproduces certain operation conditions for experimentation purposes.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>ExperimentalEquipment</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -353,6 +390,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ExperimentalEquipmentClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#EquipmentClass"/>
+        <rdfs:comment>An aggrupation of experimental equipments with a set of common atributes of characteristics.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>ExperimentalEquipmentClass</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -361,6 +402,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#HardnessTester">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
+        <rdfs:comment>An equipment that measures the hardness of a material, </rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>HardnessTester</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -369,6 +414,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#HardnessTesterClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipmentClass"/>
+        <rdfs:comment>An aggrupation of hardness testers with a set of common atributes of characteristics.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>HardnessTesterClass</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -378,6 +427,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#HardnessTesterOperationMeasurementSpecification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationMeasurementSpecification"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/equipment#TribometerOperationMeasurementSpecification"/>
+        <rdfs:comment>Logical aggregation of operation attributes, or characteristics that can be measured by a hardness tester.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>HardnessTesterOperationMeasurementSpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -387,6 +440,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#HardnessTesterOperationSpecification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationSpecification"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/equipment#TribometerOperationSpecification"/>
+        <rdfs:comment>Logical aggregation of value ranges of operation attributes, or characteristics supported by a hardness tester.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>HardnessTesterOperationSpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -395,15 +452,17 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#HardnessTesterOutputSpecification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OutputResultSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/equipment#TribometerOutputSpecification"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/equipment#LightScatteringSensor -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/equipment#LightScatteringSensor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
+        <rdfs:comment>Logical aggregation of the expected technical attributes, or characteristics obtained from a hardness tester.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>HardnessTesterOutputSpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -413,6 +472,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#MachineryBook">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#TechnicalInformation"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/equipment#ManufacturerDataSheet"/>
+        <rdfs:comment>A document providing all the relevant information of the technical characteristics of an equipment, and describes how and when to use and mantain it. </rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>MachineryBook</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -421,6 +484,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ManufacturerDataSheet">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#TechnicalInformation"/>
+        <rdfs:comment>A document provided by the manufacturer that includes a summary of technical characteristics, and describes how and when to use something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>ManufacturerDataSheet</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -429,6 +496,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#MeasuringEquipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
+        <rdfs:comment>An equipment used to measure technical attributes or characteristics of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>MeasuringEquipment</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -437,6 +508,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#MeasuringEquipmentClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#EquipmentClass"/>
+        <rdfs:comment>An aggrupation of measuring equipment with a set of common atributes of characteristics.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>MeasuringEquipmentClass</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -446,6 +521,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#MovingBodySpecification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SampleBodySpecification"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/equipment#StaticBodySpecification"/>
+        <rdfs:comment>Logical aggregation  of attributes, or characteristics describing the moving bodies supported by a specific equipment.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>MovingBodySpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -454,6 +533,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#OpticalMicroscope">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
+        <rdfs:comment>An equipment used to assess surfaces by magnifying images with visible light.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>OpticalMicroscope</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -462,6 +545,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#OpticalProfilometer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
+        <rdfs:comment>An equipment used to measure precisely surface profiles.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>OpticalProfilometer</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -470,6 +557,31 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#Scale">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
+        <rdfs:comment>An equipment used to measure the weigth of somebody or something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>Scale</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/equipment#ScaleOutputSpecification -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/equipment#ScaleOutputSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OutputResultSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#Weight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:comment>Logical aggregation of the expected technical attributes, or characteristics obtained from a scale.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>ScaleOutputSpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+		
+		
+		
     </owl:Class>
     
 
@@ -478,6 +590,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ScanningElectronMicroscope">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
+        <rdfs:comment>An equipment used to assess the materials surfaces by producing images of a sample.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>ScanningElectronMicroscope</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -486,6 +602,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ScratchTester">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
+        <rdfs:comment>An equipment used to assess the coating adhesion.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>ScratchTester</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -494,6 +614,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#StaticBodySpecification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SampleBodySpecification"/>
+        <rdfs:comment>Logical aggregation  of attributes, or characteristics describing the static bodies supported by a specific equipment.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>StaticBodySpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -502,22 +626,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#TechnicalInformation">
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Document"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/equipment#TopographyTesterClass -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/equipment#TopographyTesterClass">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipmentClass"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/equipment#TribocorrosionTester -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/equipment#TribocorrosionTester">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
+        <rdfs:comment>Information on how to to use and maintain something as for e.g. drawings, manuals, technical reports, etc.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>TechnicalInformation</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -526,6 +638,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#Tribometer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#ExperimentalEquipment"/>
+        <rdfs:comment>An equipment used to measure tribological properties (e.g. friction coefficients, wear, etc.) by simulating the interaction of between two surfaces in contact under specific operation conditions.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>Tribometer</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -534,6 +650,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#TribometerClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#ExperimentalEquipmentClass"/>
+        <rdfs:comment>An aggrupation of tribometers with a set of common atributes of characteristics.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>TribometerClass</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -542,6 +662,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#TribometerOperationMeasurementSpecification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationMeasurementSpecification"/>
+        <rdfs:comment>Logical aggregation of operation attributes, or characteristics that can be measured by a tribometer.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>TribometerOperationMeasurementSpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -550,6 +674,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#TribometerOperationSpecification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationSpecification"/>
+        <rdfs:comment>Logical aggregation of value ranges of operation attributes, or characteristics supported by a tribometer.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>TribometerOperationSpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -558,16 +686,19 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#TribometerOutputSpecification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OutputResultSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Logical aggregation of the expected technical attributes, or characteristics obtained from a tribometer.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>TribometerOutputResultSpecification</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
+	
+	
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
@@ -579,6 +710,15 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
