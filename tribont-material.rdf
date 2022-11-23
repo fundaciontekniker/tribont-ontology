@@ -173,13 +173,13 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#AdditiveCompositionSpecification -->
+    <!-- https://w3id.org/tribont/material#AdditiveComposition -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#AdditiveCompositionSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialCompositionSpecification"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/material#AdditiveComposition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Composition"/>
         <rdfs:comment>Logical aggregation of value/value ranges of the additive elements composing a material. The specification values are provided by the manufacturer or the applicable standard.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>AdditiveCompositionSpecification</rdfs:label>
+        <rdfs:label>AdditiveComposition</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -389,13 +389,13 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#BasicCompositionSpecification -->
+    <!-- https://w3id.org/tribont/material#BasicComposition -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#BasicCompositionSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialCompositionSpecification"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/material#BasicComposition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Composition"/>
         <rdfs:comment>Logical aggregation of value/value ranges of the basic elements composing a material. The specification values are provided by the manufacturer or the applicable standard.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>BasicCompositionSpecification</rdfs:label>
+        <rdfs:label>BasicComposition</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -617,6 +617,24 @@
     
 
 
+    <!-- https://w3id.org/tribont/material#Composition -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#Composition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Feature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Logical aggregation of value/value ranges of the elements composing  a material. The specification values are provided by the manufacturer or the applicable standards.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>Composition</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/tribont/material#Cr -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Cr">
@@ -693,7 +711,6 @@
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElementContent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
         <rdfs:comment>Content of an specific element in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>ElementContent</rdfs:label>
@@ -762,10 +779,10 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#FillerCompositionSpecification -->
+    <!-- https://w3id.org/tribont/material#FillerComposition -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#FillerCompositionSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialCompositionSpecification"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/material#FillerComposition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Composition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
@@ -781,7 +798,7 @@
         </rdfs:subClassOf>
         <rdfs:comment>Logical aggregation of value/value ranges of the filler elements composing a material. The specification values are provided by the manufacturer or the applicable standard.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>FillerCompositionSpecification</rdfs:label>
+        <rdfs:label>FillerComposition</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1093,36 +1110,27 @@
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Liquid">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Material"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#Solid"/>
-        <rdfs:comment>Liquid material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Liquid</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-    <!-- https://w3id.org/tribont/material#LiquidMaterialSpecification -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#LiquidMaterialSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#LiquidThermalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/material#Composition"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementContent"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#SolidMaterialSpecification"/>
-        <rdfs:comment>Logical aggregation of value/value range of the elements composing  a liquid material. The specification values are provided by the manufacturer or the related standard.</rdfs:comment>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#Solid"/>
+        <rdfs:comment>Liquid material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>LiquidMaterialSpecification</rdfs:label>
+        <rdfs:label>Liquid</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1158,18 +1166,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/material#MaterialCompositionSpecification"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/material#hasNaming"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/material#MaterialIdentification"/>
             </owl:Restriction>
@@ -1194,25 +1190,6 @@
         <rdfs:comment>The possible uses of a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>MaterialApplication</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/material#MaterialCompositionSpecification -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialCompositionSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialSpecification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
-        <rdfs:comment>Logical aggregation of value/value ranges of the elements composing  a material. The specification values are provided by the manufacturer or the applicable standards.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>MaterialCompositionSpecification</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1251,24 +1228,6 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#MaterialSpecification -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Feature"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasRole"/>
-                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#specification"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of value/value ranges of  attributes or characteristics defining a material. The specification values are provided by the manufacturer or the applicable standards.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>MaterialSpecification</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/material#MaterialStandard -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialStandard">
@@ -1276,33 +1235,6 @@
         <rdfs:comment>A document approved by a recognized body that provides common to by fullfiled by a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>MaterialStandard</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/material#MaterialTechnicalSpecification -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialTechnicalSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialSpecification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#PhysicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ThermalProperty"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of value/value ranges of technical attributes or characteristics defining a material. </rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>MaterialTechnicalSpecification</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1886,6 +1818,24 @@
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Solid">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Material"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidThermalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/material#Composition"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementContent"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Solid material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Solid</rdfs:label>
@@ -1901,33 +1851,6 @@
         <rdfs:comment>Solid lubricant material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>SolidLubricant</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/material#SolidMaterialSpecification -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#SolidMaterialSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidThermalProperty"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of value/value ranges of attributes or characteristics defining a solid material. </rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>SolidMaterialSpecification</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -2398,9 +2321,6 @@
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -2410,13 +2330,16 @@
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     
 
@@ -2452,16 +2375,6 @@
             <rdf:Description rdf:about="https://w3id.org/tribont/core#SystemProperty"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementContent"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationCondition"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#OutputResult"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleBody"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleSystemArrangement"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialSpecification"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

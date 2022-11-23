@@ -13,8 +13,6 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-	 
-	 
     <owl:Ontology rdf:about="https://w3id.org/tribont/sample">
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/material"/>
@@ -38,46 +36,57 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
     
+
+
     <!-- http://creativecommons.org/ns#license -->
 
     <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
+
 
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
+
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
+
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
+
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
+
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
+
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
+
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
+
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
@@ -90,6 +99,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
 
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -97,12 +107,14 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
     
+
 
     <!-- https://w3id.org/isCharacterisedBy#belongsTo -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#belongsTo">
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#belongsTo"/>
+    
 
 
     <!-- https://w3id.org/tribont/sample#hasCoatingMaterial -->
@@ -110,90 +122,97 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasCoatingMaterial">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasMaterial"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isCoatingMaterialFor"/>
-		<rdfs:label>hasCoatingMaterial</rdfs:label>
-		<rdfs:comment>Relation between a sample and the coating material that is part of it.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a sample and the coating material that is part of it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>hasCoatingMaterial</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
+
 
     <!-- https://w3id.org/tribont/sample#hasCoreMaterial -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasCoreMaterial">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasMaterial"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isCoreMaterialFor"/>
-		<rdfs:label>hasCoreMaterial</rdfs:label>
-		<rdfs:comment>Relation between a sample and the core material that is part of it.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a sample and the core material that is part of it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>hasCoreMaterial</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
+
 
     <!-- https://w3id.org/tribont/sample#hasLubricationSample -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasLubricationSample">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasSample"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isLubricationSampleFor"/>
-		<rdfs:label>hasLubricationSample</rdfs:label>
-		<rdfs:comment>Relation between a sample system and a lubricant material that is part of it.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a sample system and a lubricant material that is part of it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>hasLubricationSample</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
+
 
     <!-- https://w3id.org/tribont/sample#hasMaterial -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasMaterial">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isMaterialFor"/>
-		<rdfs:label>hasMaterial</rdfs:label>
-		<rdfs:comment>Relation between a sample and a material that are part of it.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a sample and a material that are part of it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>hasMaterial</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
+
 
     <!-- https://w3id.org/tribont/sample#hasMovingSample -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasMovingSample">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasSample"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isStaticSampleFor"/>
-		<rdfs:label>hasMovingSample</rdfs:label>
-		<rdfs:comment>Relation between a sample system and a moving sample body that is part of it.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a sample system and a moving sample body that is part of it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>hasMovingSample</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
+
 
     <!-- https://w3id.org/tribont/sample#hasSample -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasSample">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isSampleFor"/>
-		<rdfs:label>hasSample</rdfs:label>
-		<rdfs:comment>Relation between a sample system and a sample body that is part of it.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a sample system and a sample body that is part of it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>hasSample</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
+
 
     <!-- https://w3id.org/tribont/sample#hasStaticSample -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasStaticSample">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasSample"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isMoingSampleFor"/>
-		<rdfs:label>hasStaticSample</rdfs:label>
-		<rdfs:comment>Relation between a sample system and a static sample body that is part of it.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a sample system and a static sample body that is part of it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>hasStaticSample</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
+
 
     <!-- https://w3id.org/tribont/sample#isCoatingMaterialFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isCoatingMaterialFor">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#isMaterialFor"/>
-		<rdfs:label>isCoatingMaterialFor</rdfs:label>
-		<rdfs:comment>Relation between a coating material and the sample body of which it is a part.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a coating material and the sample body of which it is a part.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>isCoatingMaterialFor</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -203,9 +222,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isCoreMaterialFor">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#isMaterialFor"/>
-		<rdfs:label>isCoreMaterialFor</rdfs:label>
-		<rdfs:comment>Relation between a core material and the sample body of which it is a part.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a core material and the sample body of which it is a part.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>isCoreMaterialFor</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -215,9 +234,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isLubricationSampleFor">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#isSampleFor"/>
-		<rdfs:label>isLubricationSampleFor</rdfs:label>
-		<rdfs:comment>Relation between a lubrication sample body and the sample system of which it is a part.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a lubrication sample body and the sample system of which it is a part.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>isLubricationSampleFor</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -226,11 +245,17 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#isMaterialFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isMaterialFor">
-	    <rdfs:label>isMaterialFor</rdfs:label>
-		<rdfs:comment>Relation between a material and the sample body of which it is a part.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a material and the sample body of which it is a part.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>isMaterialFor</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/sample#isMoingSampleFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isMoingSampleFor"/>
     
 
 
@@ -238,9 +263,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isMovingSampleFor">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#isSampleFor"/>
-		<rdfs:label>isMovingSampleFor</rdfs:label>
-		<rdfs:comment>Relation between a moving sample body and the sample system of which it is a part.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a moving sample body and the sample system of which it is a part.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>isMovingSampleFor</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -249,9 +274,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#isSampleFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isSampleFor">
-	    <rdfs:label>isSampleFor</rdfs:label>
-		<rdfs:comment>Relation between a sample body and the sample system of which it is a part.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a sample body and the sample system of which it is a part.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>isSampleFor</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -261,12 +286,13 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isStaticSampleFor">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#isSampleFor"/>
-		<rdfs:label>isStaticSampleFor</rdfs:label>
-		<rdfs:comment>Relation between a static sample body and the sample system of which it is a part.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Relation between a static sample body and the sample system of which it is a part.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>isStaticSampleFor</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
+
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -276,12 +302,15 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
     <!-- https://w3id.org/tribont/sample#executionDate -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/sample#executionDate">
-	    <rdfs:label>executionDate</rdfs:label>
-		<rdfs:comment>Data when something has been executed.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Data when something has been executed.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>executionDate</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:DatatypeProperty>
     
@@ -290,12 +319,13 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#preparationDate -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/sample#preparationDate">
-	    <rdfs:label>preparationDate</rdfs:label>
-		<rdfs:comment>Data when something has been prepared.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Data when something has been prepared.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>preparationDate</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:DatatypeProperty>
     
+
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -303,7 +333,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
-     -->  
+     -->
+
+    
 
 
     <!-- https://w3id.org/tribont/sample#CoatedSample -->
@@ -321,9 +353,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-		<rdfs:label>CoatedSample</rdfs:label>
-		<rdfs:comment>Sample body which has a coating moterial.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Sample body which has a coating moterial.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>CoatedSample</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -333,10 +365,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#CoatingProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
-		<rdfs:label>CoatingProperty</rdfs:label>
-		<rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of a coating.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
-        <ns1:term_status>Testing</ns1:term_status>		
+        <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of a coating.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>CoatingProperty</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -345,9 +377,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#CoatingThickness">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#CoatingProperty"/>
-		<rdfs:label>CoatingThickness</rdfs:label>
-		<rdfs:comment>Thickness of a coating.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Thickness of a coating.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>CoatingThickness</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -357,9 +389,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#CoatingType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#CoatingProperty"/>
-		<rdfs:label>CoatingType</rdfs:label>
-		<rdfs:comment>Type of coating.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Type of coating.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>CoatingType</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -380,9 +412,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#SampleSystem"/>
-		<rdfs:label>LubricatedSampleSystem</rdfs:label>
-		<rdfs:comment>Sample system that includes a lubricant as part of it.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Sample system that includes a lubricant as part of it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>LubricatedSampleSystem</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -411,9 +443,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-		<rdfs:label>LubricationSample</rdfs:label>
-		<rdfs:comment>Portion of lubricant material selected from a larger quantity of lubricant material for testing purposes. Lubricant material can be fluid or solid lubricants </rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Portion of lubricant material selected from a larger quantity of lubricant material for testing purposes. Lubricant material can be fluid or solid lubricants </rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>LubricationSample</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -423,6 +455,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#Sample">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#BodyProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/sample#CoatingProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleBodyConfiguration"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleCoatingSpecification"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/sample#hasCoatingMaterial"/>
@@ -453,9 +502,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-		<rdfs:label>Sample</rdfs:label>
-		<rdfs:comment>Portion of material which can be transformed or not for testing purposes. For example the moving and static samples in a tribological tests are transformed following a specific manufacturing process to achieve the required body characteristics, while lubricants acting as lubrication body are not transformed.</rdfs:comment>
+        <rdfs:comment>Portion of material which can be transformed or not for testing purposes. For example the moving and static samples in a tribological tests are transformed following a specific manufacturing process to achieve the required body characteristics, while lubricants acting as lubrication body are not transformed.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>Sample</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -465,6 +514,23 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleBatch">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#BodyProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/sample#CoatingProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleBodyConfiguration"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleCoatingSpecification"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/sample#hasCoatingMaterial"/>
@@ -496,9 +562,33 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-		<rdfs:label>SampleBatch</rdfs:label>
-		<rdfs:comment>An aggrupation of samples which have been transformed at the same time using a same material and share a set of common atributes of characteristics.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>An aggrupation of samples which have been transformed at the same time using a same material and share a set of common atributes of characteristics.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>SampleBatch</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/sample#SampleBodyConfiguration -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleBodyConfiguration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SampleBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#BodyProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasRole"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#configuration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>logical aggregation of nominal values of qualifiable or quantifiable attributes, or characteristics of a sample body.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>SampleBodyConfiguration</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -507,10 +597,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#SampleCoatingSpecification -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleCoatingSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SampleBody"/>
-		<rdfs:label>SampleCoatingSpecification</rdfs:label>
-		<rdfs:comment></rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Feature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/sample#CoatingProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>SampleCoatingSpecification</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -520,6 +616,19 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleSystem">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleSystemArrangement"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SystemProperty"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/sample#hasLubricationSample"/>
@@ -538,34 +647,19 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/sample#Sample"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-		<rdfs:label>SampleSystem</rdfs:label>
-		<rdfs:comment>Object aggregate that has part two or more elements that interact with each other and it is used for testing purposes. For example a tribological sample system aggrupates at least a satic and a moving sample body and can include or not a lubrication sample body..</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:comment>Object aggregate that has part two or more elements that interact with each other and it is used for testing purposes. For example a tribological sample system aggrupates at least a satic and a moving sample body and can include or not a lubrication sample body..</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>SampleSystem</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/sample#SampleTechnicalSpecification -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleTechnicalSpecification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SampleBody"/>
-		<rdfs:label>SampleTechnicalSpecification</rdfs:label>
-		<rdfs:comment>Logical aggregation of the values or value ranges of technical attributes, or characteristics of a sample.The specification values are provided by the manufacturer or de applicable standard.</rdfs:comment>
-		<rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-	
-	
-	
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
@@ -595,11 +689,13 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleBodyConfiguration"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleBodyMeasurement"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleBodySpecification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationCondition"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#OutputResult"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleBody"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleSystemArrangement"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#Composition"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleCoatingSpecification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleTechnicalSpecification"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

@@ -30,6 +30,31 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/tribont/equipment#SampleBodySpecification -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/equipment#SampleBodySpecification">
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/sample#SampleBodyConfiguration"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/sample#SampleBodyConfiguration -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleBodyConfiguration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -194,7 +219,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#AUDI_CYLINDER_BODICONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#AUDI_CYLINDER_BODICONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleBodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleBodyConfiguration"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/core#cylinder"/>
     </owl:NamedIndividual>
     
@@ -253,7 +278,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_BODYCONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_BODYCONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleBodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleBodyConfiguration"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_DIAMETER"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/core#ball"/>
     </owl:NamedIndividual>
@@ -292,7 +317,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_TECHNICAL_SPECIFICATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_TECHNICAL_SPECIFICATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleTechnicalSpecification"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#TechnicalSpecification"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_SPEC_Ra"/>
     </owl:NamedIndividual>
     
@@ -361,7 +386,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC_BODYCONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC_BODYCONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleBodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleBodyConfiguration"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC_HEIGHT"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC__DIAMETER"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/core#disc"/>
@@ -391,7 +416,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC_TECHNICAL_SPECIFICATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC_TECHNICAL_SPECIFICATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleTechnicalSpecification"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#TechnicalSpecification"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC_SPEC_Ra"/>
     </owl:NamedIndividual>
     
@@ -447,7 +472,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SAMPLESYSTEM_CONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SAMPLESYSTEM_CONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleSystemConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleSystemArrangement"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/core#ball_on_llate"/>
     </owl:NamedIndividual>
     
@@ -669,7 +694,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#OS3038-6131_SAMPLESYSTEM_CONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OS3038-6131_SAMPLESYSTEM_CONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleSystemConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleSystemArrangement"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/core#ring_on_cylinder"/>
     </owl:NamedIndividual>
     
@@ -745,7 +770,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#PISTON_RING_BODYCONFIGURATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#PISTON_RING_BODYCONFIGURATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleBodyConfiguration"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleBodyConfiguration"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/core#ring"/>
     </owl:NamedIndividual>
     
