@@ -458,18 +458,15 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                <owl:allValuesFrom>
+                <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#BodyProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/sample#CoatingProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleBodyConfiguration"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleCoatingSpecification"/>
                         </owl:unionOf>
                     </owl:Class>
-                </owl:allValuesFrom>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -517,18 +514,15 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                <owl:allValuesFrom>
+                <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#BodyProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/sample#CoatingProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleBodyConfiguration"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleCoatingSpecification"/>
                         </owl:unionOf>
                     </owl:Class>
-                </owl:allValuesFrom>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
