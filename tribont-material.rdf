@@ -89,6 +89,14 @@
     
 
 
+    <!-- https://w3id.org/tribont/material#hasElementRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasElementRole">
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/material#isElementRoleFor"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/tribont/material#hasNaming -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasNaming">
@@ -108,6 +116,12 @@
         <rdfs:label>hasTypicalUse</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/material#isElementRoleFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isElementRoleFor"/>
     
 
 
@@ -173,22 +187,16 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#AdditiveComposition -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#AdditiveComposition">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Composition"/>
-        <rdfs:comment>Logical aggregation of value/value ranges of the additive elements composing a material. The specification values are provided by the manufacturer or the applicable standard.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>AdditiveComposition</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/material#AdditiveElementContent -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#AdditiveElementContent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/material#hasElementRole"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/material#additive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Content of an additive element in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>AdditiveElementContent</rdfs:label>
@@ -384,18 +392,6 @@
         <rdfs:comment>Content of BaSO4 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>BaSO4</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/material#BasicComposition -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#BasicComposition">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Composition"/>
-        <rdfs:comment>Logical aggregation of value/value ranges of the basic elements composing a material. The specification values are provided by the manufacturer or the applicable standard.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>BasicComposition</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -711,10 +707,31 @@
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElementContent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/material#hasElementRole"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/material#hasElementRole"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Content of an specific element in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>ElementContent</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/material#ElementRole -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#ElementRole">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Role"/>
     </owl:Class>
     
 
@@ -774,31 +791,6 @@
         <rdfs:comment>Content of Fe203 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Fe203</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/material#FillerComposition -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#FillerComposition">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Composition"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#ChemicalElementContent"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#PolymerElementContent"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of value/value ranges of the filler elements composing a material. The specification values are provided by the manufacturer or the applicable standard.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>FillerComposition</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -2320,20 +2312,38 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#JIS_G4805">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/material#additive -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#additive">
+        <rdf:type rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/material#basic -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#basic">
+        <rdf:type rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/material#filler -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#filler">
+        <rdf:type rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
@@ -2342,16 +2352,22 @@
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     
 
