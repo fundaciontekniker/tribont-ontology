@@ -2222,33 +2222,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/core#OutputResult -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#OutputResult">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Feature"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#GeometricDimension"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#Volume"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#Weight"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of the technical attributes, or characteristics obtained as result of a test.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>OutputResult</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/core#PQIndex -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PQIndex">
@@ -2538,6 +2511,33 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:comment>Relative dielectric constant of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>RelativeDielectricConstant</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Output -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Output">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Feature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#GeometricDimension"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#Volume"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#Weight"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Logical aggregation of the technical attributes, or characteristics obtained as Output of a test.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Output</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -3975,6 +3975,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ASTMD5706">
         <rdf:type rdf:resource="https://w3id.org/tribont/test#TestStandard"/>
+        <rdfs:label>ASTMD5706</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3983,6 +3984,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ASTMD5707">
         <rdf:type rdf:resource="https://w3id.org/tribont/test#TestStandard"/>
+        <rdfs:label>ASTMD5707</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3991,6 +3993,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ASTMD6425">
         <rdf:type rdf:resource="https://w3id.org/tribont/test#TestStandard"/>
+        <rdfs:label>ASTMD6425</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3999,6 +4002,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ASTMD7421">
         <rdf:type rdf:resource="https://w3id.org/tribont/test#TestStandard"/>
+        <rdfs:label>ASTMD7421</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4007,6 +4011,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Ba">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>Ba</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4015,6 +4020,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#EHD">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricationRegime"/>
+        <rdfs:label>EHD</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4023,6 +4029,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#HV">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>HV</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4031,6 +4038,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Hz">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
+        <rdfs:label>Hz</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4039,6 +4047,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Kgf">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+        <rdfs:label>Kgf</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4047,6 +4056,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#MGO">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>MGO</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4055,6 +4065,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#MPa">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>MPa</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4063,6 +4074,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+        <rdfs:label>N</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4071,6 +4083,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.m">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TorqueUnit"/>
+        <rdfs:label>N.m</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4079,6 +4092,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N2CO295">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
+        <rdfs:label>N2CO295</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4087,6 +4101,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Pa">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PressureUnit"/>
+        <rdfs:label>Pa</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4095,6 +4110,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#abrasive_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
+        <rdfs:label>abrasive_wear</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4103,6 +4119,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#adhesive_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
+        <rdfs:label>adhesive_wear</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4111,6 +4128,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ambient_air">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
+        <rdfs:label>ambient_air</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4119,6 +4137,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ambient_humidity">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Humidity"/>
+        <rdfs:label>ambient_humidity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4127,6 +4146,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ambient_pressure">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Pressure"/>
+        <rdfs:label>ambient_pressure</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4135,6 +4155,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#area">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ContactSurfaceType"/>
+        <rdfs:label>area</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4143,6 +4164,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#atm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>atm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4151,14 +4173,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ball">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
+        <rdfs:label>ball</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/tribont/core#ball_on_llate -->
+    <!-- https://w3id.org/tribont/core#ball_on_plate -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ball_on_llate">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ball_on_plate">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
+        <rdfs:label>ball_on_plate</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4167,6 +4191,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#bar">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PressureUnit"/>
+        <rdfs:label>bar</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4175,6 +4200,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#boundary_lubrication">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricationRegime"/>
+        <rdfs:label>boundary_lubrication</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4183,6 +4209,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+        <rdfs:label>cm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4191,6 +4218,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>cm3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4199,6 +4227,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#configuration">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PropertyRole"/>
+        <rdfs:label>configuration</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4207,6 +4236,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#corrosive_gas">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
+        <rdfs:label>corrosive_gas</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4215,6 +4245,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cuboid">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
+        <rdfs:label>cuboid</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4223,6 +4254,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cylinder">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
+        <rdfs:label>cylinder</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4231,6 +4263,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#day">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+        <rdfs:label>day</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#degree -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degree">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#AngleUnit"/>
+        <rdfs:label>degree</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4239,6 +4281,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#disc">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
+        <rdfs:label>disc</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4247,6 +4290,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#dm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>dm3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4255,6 +4299,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#dry">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricationRegime"/>
+        <rdfs:label>dry</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4263,6 +4308,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#e-4">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+        <rdfs:label>e-4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4271,6 +4317,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#fl-ozUk">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>fl-ozUk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4279,6 +4326,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#fl-ozUs">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>fl-ozUs</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4287,6 +4335,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#fretting_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
+        <rdfs:label>fretting_wear</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4295,6 +4344,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>ft3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4303,6 +4353,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#g">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WeightUnit"/>
+        <rdfs:label>g</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4311,6 +4362,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#galUk">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>galUk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4319,6 +4371,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#galUs">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>galUs</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4327,6 +4380,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#gear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
+        <rdfs:label>gear</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4335,6 +4389,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#grease">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricantType"/>
+        <rdfs:label>grease</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4343,6 +4398,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#grinded">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PolishGrade"/>
+        <rdfs:label>grinded</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4351,6 +4407,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#h">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
+        <rdfs:label>h</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4359,6 +4416,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hPa">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>hPa</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4367,6 +4425,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hb">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
+        <rdfs:label>hb</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4375,6 +4434,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hk">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
+        <rdfs:label>hk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4383,6 +4443,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hour">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+        <rdfs:label>hour</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4391,6 +4452,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hrb">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
+        <rdfs:label>hrb</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4399,6 +4461,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hrc">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
+        <rdfs:label>hrc</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4407,6 +4470,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hrm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
+        <rdfs:label>hrm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4415,6 +4479,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hrr">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
+        <rdfs:label>hrr</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4423,6 +4488,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hv">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
+        <rdfs:label>hv</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4431,6 +4497,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#inHg">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>inHg</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4439,6 +4506,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#innert_gas">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
+        <rdfs:label>innert_gas</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4447,6 +4515,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kHz">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
+        <rdfs:label>kHz</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4455,6 +4524,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kg">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WeightUnit"/>
+        <rdfs:label>kg</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4463,6 +4533,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#km">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+        <rdfs:label>km</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4471,6 +4542,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ksi">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>ksi</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4479,6 +4551,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ksi.in0.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
+        <rdfs:label>ksi.in0.5</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4487,6 +4560,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kv">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#VoltageUnit"/>
+        <rdfs:label>kv</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4495,6 +4569,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lapped">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PolishGrade"/>
+        <rdfs:label>lapped</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4503,6 +4578,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#line">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ContactSurfaceType"/>
+        <rdfs:label>line</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4511,6 +4587,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#linear_reciprocating">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CourseOfMovement"/>
+        <rdfs:label>linear_reciprocating</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4519,6 +4596,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#linear_unidirectional">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CourseOfMovement"/>
+        <rdfs:label>linear_unidirectional</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4527,6 +4605,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#liquid_lubricant">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricantType"/>
+        <rdfs:label>liquid_lubricant</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4535,6 +4614,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#m">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+        <rdfs:label>m</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4543,6 +4623,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#m3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>m3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4551,6 +4632,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mPa">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PressureUnit"/>
+        <rdfs:label>mPa</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4559,6 +4641,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mb">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>mb</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4567,6 +4650,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#measurement">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PropertyRole"/>
+        <rdfs:label>measurement</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4575,6 +4659,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mg">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WeightUnit"/>
+        <rdfs:label>mg</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4583,6 +4668,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microinche">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+        <rdfs:label>microinche</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4591,6 +4677,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mile">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+        <rdfs:label>mile</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4599,6 +4686,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#milisecond">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+        <rdfs:label>milisecond</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4607,6 +4695,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#minute">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+        <rdfs:label>minute</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4615,6 +4704,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mixed_lubrication">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricationRegime"/>
+        <rdfs:label>mixed_lubrication</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4623,6 +4713,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ml">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>ml</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4631,6 +4722,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+        <rdfs:label>mm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4639,6 +4731,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>mm3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4647,6 +4740,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mpa.m0.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
+        <rdfs:label>mpa.m0.5</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4655,6 +4749,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mpa.mm0.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
+        <rdfs:label>mpa.mm0.5</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4663,6 +4758,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#nitrogen">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
+        <rdfs:label>nitrogen</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4671,6 +4767,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#nmile">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+        <rdfs:label>nmile</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4679,6 +4776,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#no_lubricant">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricantType"/>
+        <rdfs:label>no_lubricant</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4687,6 +4785,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#oil">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricantType"/>
+        <rdfs:label>oil</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4695,6 +4794,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#pa.m0.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
+        <rdfs:label>pa.m0.5</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4703,6 +4803,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#percentage">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+        <rdfs:label>percentage</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4711,6 +4812,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#pin">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
+        <rdfs:label>pin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4719,6 +4821,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#pin_on_disc">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
+        <rdfs:label>pin_on_disc</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4727,6 +4830,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#pintUk">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>pintUk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4735,6 +4839,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#pintUs">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>pintUs</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4743,6 +4848,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#plate">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
+        <rdfs:label>plate</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4751,6 +4857,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#point">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ContactSurfaceType"/>
+        <rdfs:label>point</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4759,6 +4866,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#polished">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PolishGrade"/>
+        <rdfs:label>polished</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4767,14 +4875,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ppb">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#ppm -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ppm">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+        <rdfs:label>ppb</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4783,6 +4884,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#psi">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>psi</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4791,6 +4893,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#psi.in0.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
+        <rdfs:label>psi.in0.5</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4799,6 +4902,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#radian">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#AngleUnit"/>
+        <rdfs:label>radian</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4807,6 +4911,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ring">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
+        <rdfs:label>ring</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4815,14 +4920,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ring_on_cylinder">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
+        <rdfs:label>ring_on_cylinder</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/tribont/core#ring_on_dsc -->
+    <!-- https://w3id.org/tribont/core#ring_on_disc -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ring_on_dsc">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ring_on_disc">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
+        <rdfs:label>ring_on_disc</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4831,6 +4938,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#rolling">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MovementType"/>
+        <rdfs:label>rolling</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4839,6 +4947,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#rotating_reciprocating">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CourseOfMovement"/>
+        <rdfs:label>rotating_reciprocating</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4847,6 +4956,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#rotating_unidirectional">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CourseOfMovement"/>
+        <rdfs:label>rotating_unidirectional</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4855,6 +4965,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#rpm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+        <rdfs:label>rpm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4863,6 +4974,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#seal">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
+        <rdfs:label>seal</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4871,6 +4983,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#seal_on_shaft">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
+        <rdfs:label>seal_on_shaft</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4879,6 +4992,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#second">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+        <rdfs:label>second</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4887,6 +5001,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#shaft">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
+        <rdfs:label>shaft</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4895,6 +5010,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#sliding">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MovementType"/>
+        <rdfs:label>sliding</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4903,6 +5019,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#sliding_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
+        <rdfs:label>sliding_wear</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4911,14 +5028,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#slip">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MovementType"/>
+        <rdfs:label>slip</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/tribont/core#slipRolling_wear -->
+    <!-- https://w3id.org/tribont/core#slip_rolling_wear -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#slipRolling_wear">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#slip_rolling_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
+        <rdfs:label>slip_rolling_wear</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4927,6 +5046,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#solid_friction">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricationRegime"/>
+        <rdfs:label>solid_friction</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4935,6 +5055,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#solid_lubricant">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricantType"/>
+        <rdfs:label>solid_lubricant</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4943,6 +5064,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#sonotrode">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
+        <rdfs:label>sonotrode</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4951,14 +5073,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#specification">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PropertyRole"/>
+        <rdfs:label>specification</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/tribont/core#stickSlip -->
+    <!-- https://w3id.org/tribont/core#stick_slip -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#stickSlip">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#stick_slip">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MovementType"/>
+        <rdfs:label>stick_slip</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4967,22 +5091,25 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#strain">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:label>strain</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/tribont/core#strainpercentage -->
+    <!-- https://w3id.org/tribont/core#strain_percentage -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#strainpercentage">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#strain_percentage">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:label>strain_percentage</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/tribont/core#synhetic_air -->
+    <!-- https://w3id.org/tribont/core#synthetic_air -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#synhetic_air">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#synthetic_air">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
+        <rdfs:label>synthetic_air</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4991,14 +5118,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#torr">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>torr</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/tribont/core#triboCorrosive_wear -->
+    <!-- https://w3id.org/tribont/core#tribocorrosive_wear -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#triboCorrosive_wear">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#tribocorrosive_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
+        <rdfs:label>tribocorrosive_wear</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5007,6 +5136,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#v">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#VoltageUnit"/>
+        <rdfs:label>v</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5015,6 +5145,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#vacuum">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
+        <rdfs:label>vacuum</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5023,14 +5154,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#week">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+        <rdfs:label>week</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/tribont/core#wtpercentage -->
+    <!-- https://w3id.org/tribont/core#wt_percentage -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#wtpercentage">
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#wt_percentage">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
+        <rdfs:label>wt_percentage</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5039,6 +5172,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#yd">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+        <rdfs:label>yd</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5047,6 +5181,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#year">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+        <rdfs:label>year</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5055,6 +5190,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Å">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+        <rdfs:label>Å</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5063,6 +5199,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#-v">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#VoltageUnit"/>
+        <rdfs:label>-v</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5071,6 +5208,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#/min">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+        <rdfs:label>min</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5079,6 +5217,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#10-3_mbar">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>10-3_mbar</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5087,6 +5226,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#10-4_strain/°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:label>°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5095,6 +5235,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#10-6m2/s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+        <rdfs:label>10-6m2/s</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5103,6 +5244,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#106psi">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>106psi</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5111,6 +5253,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#BTU/in2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>in2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5119,6 +5262,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#BTU/hr.ft.°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:label>hr.ft.°F</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5127,6 +5271,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#BTU/lb.°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:label>lb.°F</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5135,6 +5280,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#J/cm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>cm3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5143,6 +5289,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#J/m2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>J/m2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5151,6 +5298,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#J/m3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>J/m3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5159,6 +5307,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#J/kg.°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:label>J/kg.°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5167,6 +5316,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#J/m.s.°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:label>J/m.s.°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5175,6 +5325,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#MJ/m2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>MJ/m2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5183,6 +5334,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#MJ/m3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>MJ/m3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5191,6 +5343,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mm/mm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>N.mm/mm2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5199,6 +5352,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mm/mm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>N.mm/mm3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5207,6 +5361,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mm/g.°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:label>N.mm/g.°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5215,6 +5370,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mm/ms.mm.°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:label>N.mm/ms.mm.°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5223,6 +5379,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mm/s/mm.°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:label>N.mm/s/mm.°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5231,6 +5388,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mm/tonne.°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:label>N.mm/tonne.°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5239,6 +5397,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N/mm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>N/mm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5247,6 +5406,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N/mm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>N/mm2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5255,6 +5415,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N/s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LoadRateUnit"/>
+        <rdfs:label>N/s</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5263,6 +5424,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#W/m.°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:label>W/m.°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5271,6 +5433,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cal/g.°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:label>cal/g.°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5279,6 +5442,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cm/cm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:label>cm/cm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5287,6 +5451,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cm/100m">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:label>cm/100m</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5295,6 +5460,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cm2/s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+        <rdfs:label>cm2/s</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5303,6 +5469,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#dyn/cm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>dyn/cm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5311,6 +5478,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#dyn/cm1.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
+        <rdfs:label>dyn/cm1.5</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5319,6 +5487,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#dyn/cm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>dyn/cm2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5327,6 +5496,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#erg/cm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>erg/cm2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5335,6 +5505,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#erg/cm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>erg/cm3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5343,6 +5514,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#erg/g.°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:label>erg/g.°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5351,6 +5523,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#erg/s.cm.°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:label>s.cm.°C&quot;</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5359,6 +5532,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft.lbf/ft2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>ft.lbf/ft2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5367,6 +5541,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft.lbf/ft3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>ft.lbf/ft3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5375,6 +5550,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft.lbf/in2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>ft.lbf/in2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5383,6 +5559,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft.lbf/in3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>ft.lbf/in3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5391,6 +5568,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft/ft">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:label>ft/ft</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5399,6 +5577,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft2/hr">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+        <rdfs:label>ft2/hr</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5407,6 +5586,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft2/s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+        <rdfs:label>ft2/s</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5415,6 +5595,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#g/cm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>g/cm3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5423,6 +5604,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#g/mm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>g/mm3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5431,6 +5613,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#in.lbf/in2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>in.lbf/in2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5439,6 +5622,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#in.lbf/in3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>in.lbf/in3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5447,6 +5631,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#in/in">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:label>in/in</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5455,6 +5640,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#in/100ft">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:label>in/100ft</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5463,6 +5649,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#in/in/°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:label>in/in/°F</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5471,6 +5658,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#in2/s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+        <rdfs:label>in2/s</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5479,6 +5667,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kJ/m2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>kJ/m2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5487,6 +5676,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kJ/m3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>kJ/m3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5495,6 +5685,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kJ/kg.°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:label>kJ/kg.°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5503,6 +5694,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kN/cm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>kN/cm2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5511,6 +5703,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kN/m">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>kN/m</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5519,6 +5712,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kg/m3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>kg/m3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5527,6 +5721,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kg/mm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>kg/mm3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5535,6 +5730,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kgf/mm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>kgf/mm2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5543,6 +5739,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lb/ft3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>lb/ft3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5551,6 +5748,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lb/in3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>lb/in3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5559,6 +5757,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.ft/lb.°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:label>lbf.ft/lb.°F</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5567,6 +5766,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.ft/slug.°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:label>lbf.ft/slug.°F</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5575,6 +5775,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.in.in/lbf.s2.°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:label>lbf.in.in/lbf.s2.°F</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5583,6 +5784,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.in/lb.°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:label>lbf.in/lb.°F</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5591,6 +5793,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.s2/in.in3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>lbf.s2/in.in3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5599,6 +5802,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf/ft">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>lbf/ft</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5607,6 +5811,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf/ft1.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
+        <rdfs:label>lbf/ft1.5</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5615,6 +5820,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf/ft2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:label>lbf/ft2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5623,6 +5829,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf/in">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>lbf/in</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5631,6 +5838,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf/s.°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:label>lbf/s.°F</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5639,6 +5847,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#m/m">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:label>m/m</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5647,6 +5856,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#m/s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#VelocityUnit"/>
+        <rdfs:label>m/s</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5655,6 +5865,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#m2/s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+        <rdfs:label>m2/s</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5663,6 +5874,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mN/m">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
+        <rdfs:label>mN/m</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5671,13 +5883,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mg/m3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>mg/m3</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- https://w3id.org/tribont/core#mgKOH/g -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mgKOH/g"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mgKOH/g">
+        <rdfs:label>mgKOH/g</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -5685,6 +5900,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ml/ml">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:label>ml/ml</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5693,6 +5909,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mm/mm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:label>mm/mm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5701,6 +5918,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mm/s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#VelocityUnit"/>
+        <rdfs:label>mm/s</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5709,6 +5927,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mm2/ms">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+        <rdfs:label>mm2/ms</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5717,6 +5936,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mm2/s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+        <rdfs:label>mm2/s</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5725,6 +5945,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#n/mm1.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
+        <rdfs:label>n/mm1.5</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5733,6 +5954,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#percentagestrain/°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:label>percentagestrain/°F</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5741,6 +5963,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#percentangestrain/°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:label>percentangestrain/°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5749,6 +5972,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#slug/ft3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>slug/ft3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5757,6 +5981,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#sp-gr23/23°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>sp-gr23/23°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5765,6 +5990,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#strain/°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:label>strain/°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5773,6 +5999,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#strain/°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:label>strain/°F</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5781,6 +6008,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ton/in3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>ton/in3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5789,6 +6017,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#tonne/mm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:label>tonne/mm3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5797,6 +6026,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+        <rdfs:label>°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5805,6 +6035,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+        <rdfs:label>°F</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5813,6 +6044,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#°K">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+        <rdfs:label>°K</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5821,6 +6053,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#°R">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+        <rdfs:label>°R</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5829,6 +6062,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#µHz">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
+        <rdfs:label>µHz</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5837,6 +6071,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#µm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+        <rdfs:label>µm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5845,6 +6080,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#µm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:label>µm3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5853,6 +6089,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#µstrain">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:label>µstrain</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5861,6 +6098,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#µstrain/°C">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:label>µstrain/°C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5869,69 +6107,8 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#µstrain/°F">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:label>µstrain/°F</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#º -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#º">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#AngleUnit"/>
-    </owl:NamedIndividual>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
@@ -5954,6 +6131,36 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -5961,6 +6168,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -5996,16 +6206,37 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     
 
@@ -6252,7 +6483,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationCondition"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#OutputResult"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Output"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleBody"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleSystemArrangement"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>

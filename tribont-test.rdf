@@ -178,13 +178,13 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#hasTestResultDocument -->
+    <!-- https://w3id.org/tribont/test#hasTestOutputDocument -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#hasTestResultDocument">
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#hasTestOutputDocument">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/core#hasDocument"/>
-        <rdfs:comment>Relation between a test and the document containting the output results.</rdfs:comment>
+        <rdfs:comment>Relation between a test and the document containting its outputs.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>hasTestResultDocument</rdfs:label>
+        <rdfs:label>hasTestOutputDocument</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -375,10 +375,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/equipment#OutputResultSpecification -->
+    <!-- https://w3id.org/tribont/equipment#OutputSpecification -->
 
-    <rdf:Description rdf:about="https://w3id.org/tribont/equipment#OutputResultSpecification">
-        <owl:disjointWith rdf:resource="https://w3id.org/tribont/test#OutputResultMeasurement"/>
+    <rdf:Description rdf:about="https://w3id.org/tribont/equipment#OutputSpecification">
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/test#OutputMeasurement"/>
     </rdf:Description>
     
 
@@ -405,7 +405,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A series of activities to carry out an experimentation procedure and measure its results.</rdfs:comment>
+        <rdfs:comment>A series of activities to carry out an experimentation procedure and measure its outputs.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>Experiment</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
@@ -530,19 +530,19 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#OutputResultMeasurement -->
+    <!-- https://w3id.org/tribont/test#OutputMeasurement -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/test#OutputResultMeasurement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OutputResult"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/test#OutputMeasurement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Output"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasRole"/>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/core#measurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of the measured values of the technical attributes, or characteristics obtained as result of a test.</rdfs:comment>
+        <rdfs:comment>Logical aggregation of the measured values of the technical attributes, or characteristics obtained as output of a test.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>OutputResultMeasurement</rdfs:label>
+        <rdfs:label>OutputMeasurement</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -555,7 +555,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#ScarMeasurementOutputrResult"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#ScarMeasurementOutput"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A testing activity to measure  one or more attributes or characteristics of the resulting scar in a given sample.</rdfs:comment>
@@ -566,10 +566,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#ScarMeasurementOutputrResult -->
+    <!-- https://w3id.org/tribont/test#ScarMeasurementOutput -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/test#ScarMeasurementOutputrResult">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OutputResultMeasurement"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/test#ScarMeasurementOutput">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OutputMeasurement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
@@ -578,7 +578,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         </rdfs:subClassOf>
         <rdfs:comment>Logical aggregation of the technical attributes, or characteristics of a scar obtained as result of a scar measuement test.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>ScarMeasurementOutputrResult</rdfs:label>
+        <rdfs:label>ScarMeasurementOutput</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -596,7 +596,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/tribont/test#OperationConfiguration"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/test#OperationTerminationMeasurement"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/test#OutputResultMeasurement"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/test#OutputMeasurement"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -616,8 +616,8 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#hasTestResultDocument"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/test#TestResultDocument"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#hasTestOutputDocument"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/test#TestOutputDocument"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -672,13 +672,13 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#TestResultDocument -->
+    <!-- https://w3id.org/tribont/test#TestOutputDocument -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/test#TestResultDocument">
+    <owl:Class rdf:about="https://w3id.org/tribont/test#TestOutputDocument">
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Document"/>
         <rdfs:comment>A document compiling the outputs of a given test.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>TestResultDocument</rdfs:label>
+        <rdfs:label>TestOutputDocument</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -708,7 +708,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/tribont/test#OperationConfiguration"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/test#OperationTerminationMeasurement"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/test#OutputResultMeasurement"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/test#OutputMeasurement"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -722,8 +722,8 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#hasTestResultDocument"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/test#TestResultDocument"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#hasTestOutputDocument"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/test#TestOutputDocument"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Each of the steps into which a given test can be subdivided</rdfs:comment>
@@ -789,13 +789,13 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#TribologicalTestOutputResult -->
+    <!-- https://w3id.org/tribont/test#TribologicalTestOutput -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/test#TribologicalTestOutputResult">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OutputResultMeasurement"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/test#TribologicalTestOutput">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OutputMeasurement"/>
         <rdfs:comment>Logical aggregation of the technical attributes, or characteristics obtained as result of a tribological test.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>TribologicalTestOutputResult</rdfs:label>
+        <rdfs:label>TribologicalTestOutput</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -808,7 +808,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#WeightMeasurementOutputResult"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#WeightMeasurementOutput"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -825,10 +825,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#WeightMeasurementOutputResult -->
+    <!-- https://w3id.org/tribont/test#WeightMeasurementOutput -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/test#WeightMeasurementOutputResult">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OutputResultMeasurement"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/test#WeightMeasurementOutput">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OutputMeasurement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
@@ -837,7 +837,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         </rdfs:subClassOf>
         <rdfs:comment>A testing activity to measure the weight in a given sample.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>WeightMeasurementOutputResult</rdfs:label>
+        <rdfs:label>WeightMeasurementOutput</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     <rdf:Description>
@@ -916,9 +916,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/test#ScarMeasurementOutputrResult"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/test#TribologicalTestOutputResult"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/test#WeightMeasurementOutputResult"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/test#ScarMeasurementOutput"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/test#TribologicalTestOutput"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/test#WeightMeasurementOutput"/>
         </owl:members>
     </rdf:Description>
     
@@ -1144,7 +1144,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/test#hasTestResultDocument"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/test#hasTestOutputDocument"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
                                                 <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
                                             </rdf:Description>
@@ -1164,7 +1164,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/test#hasTestResultDocument"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/test#hasTestOutputDocument"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
                     </rdf:Description>

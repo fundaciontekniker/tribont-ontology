@@ -684,7 +684,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationCondition"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#OutputResult"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Output"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleBody"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleSystemArrangement"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>

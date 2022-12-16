@@ -2271,6 +2271,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#AISI_52100">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
+        <rdfs:label>AISI_52100</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2279,6 +2280,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#ASTM_A295">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
+        <rdfs:label>ASTM_A295</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2287,6 +2289,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#BS_970">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
+        <rdfs:label>BS_970</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2295,6 +2298,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#CAS_Number">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
+        <rdfs:label>CAS_Number</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2303,6 +2307,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#DIN_17230">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
+        <rdfs:label>DIN_17230</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2311,6 +2316,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#JIS_G4805">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
+        <rdfs:label>JIS_G4805</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2319,6 +2325,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#additive">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+        <rdfs:label>additive</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2327,6 +2334,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#basic">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+        <rdfs:label>basic</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2335,9 +2343,28 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#filler">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+        <rdfs:label>filler</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
@@ -2350,24 +2377,6 @@
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     
 
@@ -2403,6 +2412,17 @@
             <rdf:Description rdf:about="https://w3id.org/tribont/core#SystemProperty"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementContent"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationCondition"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Output"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleBody"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleSystemArrangement"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#Composition"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
