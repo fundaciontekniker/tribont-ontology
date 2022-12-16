@@ -38,12 +38,6 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#BasicComposition -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#BasicComposition"/>
-    
-
-
     <!-- https://w3id.org/tribont/material#MaterialNaming -->
 
     <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialNaming">
@@ -81,6 +75,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100CR6_Naming">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialNaming"/>
+        <core:name>100Cr6</core:name>
     </owl:NamedIndividual>
     
 
@@ -172,7 +167,7 @@
     <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_MATERIAL_COMPOSITIONSPECIFICATION -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_MATERIAL_COMPOSITIONSPECIFICATION">
-        <rdf:type rdf:resource="https://w3id.org/tribont/material#BasicComposition"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/material#Composition"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_C"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Cr"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Cu"/>
