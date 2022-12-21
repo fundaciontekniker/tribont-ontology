@@ -120,7 +120,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#hasCoatingMaterial -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasCoatingMaterial">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasMaterial"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isCoatingMaterialFor"/>
         <rdfs:comment>Relation between a sample and the coating material that is part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
@@ -133,7 +132,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#hasCoreMaterial -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasCoreMaterial">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasMaterial"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isCoreMaterialFor"/>
         <rdfs:comment>Relation between a sample and the core material that is part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
@@ -146,7 +144,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#hasLubricationSample -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasLubricationSample">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasSample"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isLubricationSampleFor"/>
         <rdfs:comment>Relation between a sample system and a lubricant material that is part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
@@ -156,22 +153,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/sample#hasMaterial -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasMaterial">
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isMaterialFor"/>
-        <rdfs:comment>Relation between a sample and a material that are part of it.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
-        <rdfs:label>hasMaterial</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/tribont/sample#hasMovingSample -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasMovingSample">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasSample"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isStaticSampleFor"/>
         <rdfs:comment>Relation between a sample system and a moving sample body that is part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
@@ -181,23 +165,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/sample#hasSample -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasSample">
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isSampleFor"/>
-        <rdfs:comment>Relation between a sample system and a sample body that is part of it.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
-        <rdfs:label>hasSample</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/tribont/sample#hasStaticSample -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasStaticSample">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#hasSample"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isMoingSampleFor"/>
         <rdfs:comment>Relation between a sample system and a static sample body that is part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>hasStaticSample</rdfs:label>
@@ -209,7 +179,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#isCoatingMaterialFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isCoatingMaterialFor">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#isMaterialFor"/>
         <rdfs:comment>Relation between a coating material and the sample body of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isCoatingMaterialFor</rdfs:label>
@@ -221,7 +190,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#isCoreMaterialFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isCoreMaterialFor">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#isMaterialFor"/>
         <rdfs:comment>Relation between a core material and the sample body of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isCoreMaterialFor</rdfs:label>
@@ -233,7 +201,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/sample#isLubricationSampleFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isLubricationSampleFor">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#isSampleFor"/>
         <rdfs:comment>Relation between a lubrication sample body and the sample system of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isLubricationSampleFor</rdfs:label>
@@ -242,27 +209,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/sample#isMaterialFor -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isMaterialFor">
-        <rdfs:comment>Relation between a material and the sample body of which it is a part.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
-        <rdfs:label>isMaterialFor</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/tribont/sample#isMoingSampleFor -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isMoingSampleFor"/>
-    
-
-
     <!-- https://w3id.org/tribont/sample#isMovingSampleFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isMovingSampleFor">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#isSampleFor"/>
         <rdfs:comment>Relation between a moving sample body and the sample system of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isMovingSampleFor</rdfs:label>
@@ -271,21 +220,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/sample#isSampleFor -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isSampleFor">
-        <rdfs:comment>Relation between a sample body and the sample system of which it is a part.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
-        <rdfs:label>isSampleFor</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/tribont/sample#isStaticSampleFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isStaticSampleFor">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/sample#isSampleFor"/>
         <rdfs:comment>Relation between a static sample body and the sample system of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isStaticSampleFor</rdfs:label>
