@@ -475,42 +475,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#ScarMeasurement -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/test#ScarMeasurement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#MeasuringTest"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#ScarMeasurementOutput"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A testing activity to measure  one or more attributes or characteristics of the resulting scar in a given sample.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>ScarMeasurement</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/test#ScarMeasurementOutput -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/test#ScarMeasurementOutput">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OutputMeasurement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#WearScarProperty"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of the technical attributes, or characteristics of a scar obtained as result of a scar measuement test.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>ScarMeasurementOutput</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/test#Test -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/test#Test">
@@ -728,6 +692,42 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
+    <!-- https://w3id.org/tribont/test#WearScarMeasurement -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/test#WearScarMeasurement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#MeasuringTest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#WearScarMeasurementOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A testing activity to measure  one or more attributes or characteristics of the resulting scar in a given sample.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:label>WearScarMeasurement</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/test#WearScarMeasurementOutput -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/test#WearScarMeasurementOutput">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OutputMeasurement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#WearScarProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Logical aggregation of the technical attributes, or characteristics of a scar obtained as result of a scar measuement test.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:label>WearScarMeasurementOutput</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/tribont/test#WeightMeasurement -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/test#WeightMeasurement">
@@ -843,8 +843,8 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/test#ScarMeasurementOutput"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/test#TribologicalTestOutput"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/test#WearScarMeasurementOutput"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/test#WeightMeasurementOutput"/>
         </owl:members>
     </rdf:Description>
