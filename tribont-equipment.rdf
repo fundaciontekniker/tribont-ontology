@@ -238,6 +238,12 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#Calibration">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasDocument"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/equipment#CalibrationDocument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/equipment#executionDate"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
@@ -300,7 +306,14 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasDocument"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/equipment#TechnicalDocumentation"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#CalibrationDocument"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#TechnicalDocumentation"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -454,6 +467,17 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/equipment#HardnessTesterOutputSpecification -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#HardnessTesterOutputSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/tribont/equipment#OutputSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/equipment#HardnessTester"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#OutputSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -537,20 +561,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationCondition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#EnvironmentProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LoadProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MovementProperty"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasRole"/>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/core#specification"/>
             </owl:Restriction>
@@ -568,28 +578,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#OperationSpecification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationCondition"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#CourseOfMovement"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#EnvironmentMedium"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#EnvironmentProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LoadProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LubricantPumpProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LubricantType"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LubricationRegime"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MovementProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MovementType"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#RadiationType"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#WearType"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/core#compliesWith"/>
@@ -618,6 +606,31 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>OpticalMicroscope</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/equipment#OpticalMicroscopeOperationSpecification -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/equipment#OpticalMicroscopeOperationSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/tribont/equipment#OperationSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/equipment#OpticalMicroscope"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#OperationSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#MagnificationProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -718,6 +731,17 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/equipment#ScaleOutputSpecification -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ScaleOutputSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/tribont/equipment#OutputSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/equipment#Scale"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#OutputSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -845,9 +869,94 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
+    <!-- https://w3id.org/tribont/equipment#TribometerOperationMeasurementSpecification -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/equipment#TribometerOperationMeasurementSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/tribont/equipment#OperationMeasurementSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/equipment#Tribometer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#OperationMeasurementSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#EnvironmentProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LoadProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MovementProperty"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/equipment#TribometerOperationSpecification -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/equipment#TribometerOperationSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/tribont/equipment#OperationSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/equipment#Tribometer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#OperationSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#CourseOfMovement"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#EnvironmentMedium"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#EnvironmentProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LoadProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LubricantPumpProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LubricantType"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LubricationRegime"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MovementProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MovementType"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#RadiationType"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#WearType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/tribont/equipment#TribometerOutputSpecification -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#TribometerOutputSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/tribont/equipment#OutputSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/equipment#Tribometer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#OutputSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -861,25 +970,25 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>

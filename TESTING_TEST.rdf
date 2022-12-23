@@ -181,6 +181,134 @@
     
 
 
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_C -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_C">
+        <isCharacterisedBy:concept>C</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_COMPRESSIVE_STRENGTH -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_COMPRESSIVE_STRENGTH">
+        <isCharacterisedBy:concept>CompressiveStrength</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_Cr -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Cr">
+        <isCharacterisedBy:concept>Cr</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_Cu -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Cu">
+        <isCharacterisedBy:concept>Cu</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_DENSITY -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_DENSITY">
+        <isCharacterisedBy:concept>Density</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_ELECTRICAL_RESISTIVITY -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_ELECTRICAL_RESISTIVITY">
+        <isCharacterisedBy:concept>ElectricalResistivity</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_HRC -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_HRC">
+        <isCharacterisedBy:concept>HardnessRockwellC</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_Mn -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Mn">
+        <isCharacterisedBy:concept>Mn</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_Mo -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Mo">
+        <isCharacterisedBy:concept>Mo</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_Ni -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Ni">
+        <isCharacterisedBy:concept>Ni</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_P -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_P">
+        <isCharacterisedBy:concept>P</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_S -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_S">
+        <isCharacterisedBy:concept>S</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_Si -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_Si">
+        <isCharacterisedBy:concept>Si</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_CONDUCTIVITY -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_CONDUCTIVITY">
+        <isCharacterisedBy:concept>ThermalConductivity</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_EXPANSION_COEF -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_THERMAL_EXPANSION_COEF">
+        <isCharacterisedBy:concept>ThermalExpansionCoefficient</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGmaterial#100Cr6_YOUNG -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGmaterial#100Cr6_YOUNG">
+        <isCharacterisedBy:concept>YoungModulus</isCharacterisedBy:concept>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_BODYCONFIGURATION -->
 
     <rdf:Description rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-d_BODYCONFIGURATION">
@@ -236,7 +364,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#LAICA0101_Perstorp__SCAR_MEASUREMENT -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#LAICA0101_Perstorp__SCAR_MEASUREMENT">
-        <rdf:type rdf:resource="https://w3id.org/tribont/test#ScarMeasurement"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/test#WearScarMeasurement"/>
         <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#LAICA0101_Perstorp__SCAR_MEASUREMENT_Output"/>
         <test:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_TRIBOLOGY_TEST"/>
         <test:hasTestOutputDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_LAICA_IMAGE"/>
@@ -249,7 +377,7 @@
     <!-- https://w3id.org/tribont/TESTINGtest#LAICA0101_Perstorp__SCAR_MEASUREMENT_Output -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#LAICA0101_Perstorp__SCAR_MEASUREMENT_Output">
-        <rdf:type rdf:resource="https://w3id.org/tribont/test#ScarMeasurementOutput"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/test#WearScarMeasurementOutput"/>
         <isCharacterisedBy:hasProperty rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_SCAR_LENTH"/>
     </owl:NamedIndividual>
     
