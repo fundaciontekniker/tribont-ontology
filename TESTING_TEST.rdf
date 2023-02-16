@@ -30,6 +30,23 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/tribont/test#hasTestOutputDocument -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/test#hasTestOutputDocument"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -367,9 +384,9 @@
         <rdf:type rdf:resource="https://w3id.org/tribont/test#WearScarMeasurement"/>
         <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#LAICA0101_Perstorp__SCAR_MEASUREMENT_Output"/>
         <test:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_TRIBOLOGY_TEST"/>
-        <test:hasTestOutputDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_LAICA_IMAGE"/>
         <test:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#LAICA_MICROSCOPE"/>
         <test:testsSample rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL"/>
+        <test:hasTestOutputDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_LAICA_IMAGE"/>
     </owl:NamedIndividual>
     
 
@@ -606,14 +623,6 @@
     
 
 
-    <!-- https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SRV3_OUTPUTRESULTFILE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SRV3_OUTPUTRESULTFILE">
-        <rdf:type rdf:resource="https://w3id.org/tribont/test#TestOutputDocument"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SRV3_OutputFILE -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SRV3_OutputFILE">
@@ -638,7 +647,7 @@
         <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_TRIBOLOGYTEST_Output"/>
         <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_TRIBO_TEST_CONFIGURATION"/>
         <core:compliesWith rdf:resource="https://w3id.org/tribont/core#ASTMD5706"/>
-        <test:hasTestOutputDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SRV3_OutputFILE"/>
+        <core:hasDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SRV3_OutputFILE"/>
         <test:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
         <test:isPerformedAt rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
         <test:testsSampleSystem rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SAMPLESYSTEM"/>
@@ -859,11 +868,12 @@
         <rdf:type rdf:resource="https://w3id.org/tribont/test#TribologicalTest"/>
         <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_TRIBOLOGYTEST_Output"/>
         <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_TRIBO_TEST_CONFIGURATION"/>
+        <core:hasDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_SRV3_OutputFILE"/>
         <test:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0001_Repsol_5w40_PISTON_WEIGHT_MEASUREMENT"/>
         <test:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT"/>
-        <test:hasTestOutputDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_SRV3_OutputFILE"/>
         <test:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
         <test:testsSampleSystem rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_SAMPLESYSTEM"/>
+        <test:hasTestOutputDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_SRV3_OutputFILE"/>
     </owl:NamedIndividual>
     
 
