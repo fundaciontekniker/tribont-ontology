@@ -531,28 +531,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/core#AntioxidantContent -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#AntioxidantContent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Antioxidant content for something.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>AntioxidantContent</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
+ 
     
 
 
@@ -1309,29 +1288,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/core#GlycolContent -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#GlycolContent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Content of glycol of something.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>GlycolContent</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
+  
 
 
     <!-- https://w3id.org/tribont/core#HardnessBrinell -->
@@ -2989,26 +2946,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/core#SolidContaminants -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#SolidContaminants">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#percentage"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Solid contaminants.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>SolidContaminants</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
+  
 
     <!-- https://w3id.org/tribont/core#SolidPhysicalProperty -->
 
@@ -3198,25 +3136,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
-
-
-    <!-- https://w3id.org/tribont/core#SulfateAsh -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#SulfateAsh">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#percentage"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Sulfate ash .</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>SulfateAsh</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
 
     <!-- https://w3id.org/tribont/core#SurfaceProperty -->
 
@@ -3532,32 +3451,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
-
-
-    <!-- https://w3id.org/tribont/core#TolyltriazoleAndOtherNonFerrousMetalInhibitorsContent -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#TolyltriazoleAndOtherNonFerrousMetalInhibitorsContent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Tolyltriazole And Other Non Ferrous Metal Inhibitors Content.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>TolyltriazoleAndOtherNonFerrousMetalInhibitorsContent</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
+   
 
     <!-- https://w3id.org/tribont/core#Torque -->
 
@@ -3751,26 +3645,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/core#WaterContent -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#WaterContent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Water content of something.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>WaterContent</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
+   
 
     <!-- https://w3id.org/tribont/core#WearProperty -->
 
@@ -3954,7 +3829,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
-
+    
 
     <!-- https://w3id.org/tribont/test#TestStandard -->
 
@@ -6121,33 +5996,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -6163,10 +6011,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6179,21 +6024,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6226,13 +6056,37 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6245,6 +6099,27 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     
 
@@ -6311,7 +6186,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#AcidNumberAN"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#AirReleaseTimeLAV"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#AlkalineAdditivesConsumption"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#AntioxidantContent"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#ColourIndex"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#Conductivity"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#CoradsonCarbonResidue"/>
@@ -6322,7 +6196,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalBreakdownVoltage"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#Filterability"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#FoamingTendency"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#GlycolContent"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#InterfacialTensionBetweenWaterOil"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#KinematicViscosity"/>
@@ -6332,11 +6205,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#PQIndex"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#RelativeDielectricConstant"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#Rust-PreventingCharacteristicInPresenceOfWater"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#ShearStability"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidContaminants"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#SulfateAsh"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#TolyltriazoleAndOtherNonFerrousMetalInhibitorsContent"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#WaterContent"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#ShearStability"/>   
             <rdf:Description rdf:about="https://w3id.org/tribont/core#i-ph"/>
         </owl:members>
     </rdf:Description>
