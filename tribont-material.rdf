@@ -187,24 +187,6 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#AdditiveElementContent -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#AdditiveElementContent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/material#hasElementRole"/>
-                <owl:hasValue rdf:resource="https://w3id.org/tribont/material#additive"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Content of an additive element in a material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>AdditiveElementContent</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/material#Ag -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ag">
@@ -272,6 +254,31 @@
         <rdfs:comment>Alluminium alloy.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>AlluminiumAlloy</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/material#Antioxidant -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#Antioxidant">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Antioxidant content for something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>Antioxidant</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -620,6 +627,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -799,7 +812,7 @@
     <!-- https://w3id.org/tribont/material#FlameRetardant -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#FlameRetardant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#AdditiveElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
         <rdfs:comment>Content of FlameRetardant in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>FlameRetardant</rdfs:label>
@@ -899,6 +912,31 @@
         <rdfs:comment>Content of Glass-Other in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Glass-Other</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/material#Glycol -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#Glycol">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Content of glycol of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>Glycol</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1028,7 +1066,7 @@
     <!-- https://w3id.org/tribont/material#ImpactModifier -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ImpactModifier">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#AdditiveElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
         <rdfs:comment>Content of ImpactModifier in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
@@ -1198,10 +1236,10 @@
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#PhysicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#ThermalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/material#Composition"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementContent"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1546,6 +1584,24 @@
         <rdfs:comment>Content of Os in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Os</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/material#OtherElementContent -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#OtherElementContent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/material#hasElementRole"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/material#additive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Content of an additive element in a material.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>OtherElementContent</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1906,6 +1962,24 @@
     
 
 
+    <!-- https://w3id.org/tribont/material#SolidContaminants -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#SolidContaminants">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#percentage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Solid contaminants.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>SolidContaminants</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/tribont/material#SolidLubricant -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#SolidLubricant">
@@ -1995,6 +2069,24 @@
         <rdfs:comment>Steel material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Steel</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/material#SulfateAsh -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#SulfateAsh">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#percentage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Sulfate ash .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>SulfateAsh</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -2156,6 +2248,31 @@
     
 
 
+    <!-- https://w3id.org/tribont/material#TolyltriazoleAndOtherNonFerrousMetalInhibitor -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#TolyltriazoleAndOtherNonFerrousMetalInhibitor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Tolyltriazole And Other Non Ferrous Metal Inhibitors Content.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>TolyltriazoleAndOtherNonFerrousMetalInhibitor</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/tribont/material#ToolSteel -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ToolSteel">
@@ -2183,7 +2300,7 @@
     <!-- https://w3id.org/tribont/material#UVStabilizer -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#UVStabilizer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#AdditiveElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
         <rdfs:comment>Content of UVStabilizer in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>UVStabilizer</rdfs:label>
@@ -2223,6 +2340,24 @@
         <rdfs:comment>Content of WC in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>WC</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/material#Water -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#Water">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Water content of something.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>Water</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -2315,7 +2450,7 @@
     <!-- https://w3id.org/tribont/material#Anti-friction/wearLubricant -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Anti-friction/wearLubricant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#AdditiveElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
         <rdfs:comment>Content of Anti-friction/wearLubricant in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Anti-friction/wearLubricant</rdfs:label>
@@ -2327,7 +2462,7 @@
     <!-- https://w3id.org/tribont/material#Plasticizer/Oil -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Plasticizer/Oil">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#AdditiveElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
         <rdfs:comment>Content of Plasticizer/Oil in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Plasticizer/Oil</rdfs:label>
@@ -2339,7 +2474,7 @@
     <!-- https://w3id.org/tribont/material#Plasticizer/phthalate -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Plasticizer/phthalate">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#AdditiveElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
         <rdfs:comment>Content of Plasticizer/phthalate in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Plasticizer/phthalate</rdfs:label>
@@ -2441,10 +2576,10 @@
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
@@ -2456,19 +2591,19 @@
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     
 
