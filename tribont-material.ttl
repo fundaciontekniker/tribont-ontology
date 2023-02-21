@@ -8,7 +8,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@prefix tribontcore: <https://w3id.org/tribontcore#> .
 @base <https://w3id.org/tribont/material> .
 
 <https://w3id.org/tribont/material> rdf:type owl:Ontology ;
@@ -34,24 +33,12 @@ owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
 owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
-ns1:term_status rdf:type owl:AnnotationProperty .
-
-
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/isCharacterisedBy#characterises
-<https://w3id.org/isCharacterisedBy#characterises> rdf:type owl:ObjectProperty .
-
-
 ###  https://w3id.org/isCharacterisedBy#hasProperty
 <https://w3id.org/isCharacterisedBy#hasProperty> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/isCharacterisedBy#hasUnit
-<https://w3id.org/isCharacterisedBy#hasUnit> rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/isCharacterisedBy#isCharacterisedBy
@@ -64,8 +51,6 @@ ns1:term_status rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/tribont/core#hasRole
-<https://w3id.org/tribont/core#hasRole> rdf:type owl:ObjectProperty .
-
 
 ###  https://w3id.org/tribont/material#hasElementRole
 :hasElementRole rdf:type owl:ObjectProperty ;
@@ -124,120 +109,8 @@ ns1:term_status rdf:type owl:AnnotationProperty .
 <http://dbpedia.org/ontology/Document> rdf:type owl:Class .
 
 
-###  http://org.semanticweb.owlapi/error#Error64
-<http://org.semanticweb.owlapi/error#Error64> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error65
-<http://org.semanticweb.owlapi/error#Error65> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error66
-<http://org.semanticweb.owlapi/error#Error66> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error67
-<http://org.semanticweb.owlapi/error#Error67> rdf:type owl:Class .
-
-
 ###  http://purl.org/dc/terms/Standard
 terms:Standard rdf:type owl:Class .
-
-
-###  https://w3id.org/isCharacterisedBy#Feature
-<https://w3id.org/isCharacterisedBy#Feature> rdf:type owl:Class .
-
-
-###  https://w3id.org/isCharacterisedBy#Property
-<https://w3id.org/isCharacterisedBy#Property> rdf:type owl:Class .
-
-
-###  https://w3id.org/isCharacterisedBy#SubjectOfInterest
-<https://w3id.org/isCharacterisedBy#SubjectOfInterest> rdf:type owl:Class .
-
-
-###  https://w3id.org/isCharacterisedBy#Unit
-<https://w3id.org/isCharacterisedBy#Unit> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#BodyProperty
-<https://w3id.org/tribont/core#BodyProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#ContentUnit
-<https://w3id.org/tribont/core#ContentUnit> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#ElectricalProperty
-<https://w3id.org/tribont/core#ElectricalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#LiquidPhysicalProperty
-<https://w3id.org/tribont/core#LiquidPhysicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#LiquidThermalProperty
-<https://w3id.org/tribont/core#LiquidThermalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#MechanicalProperty
-<https://w3id.org/tribont/core#MechanicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#OperationCondition
-<https://w3id.org/tribont/core#OperationCondition> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#OperationProperty
-<https://w3id.org/tribont/core#OperationProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#Output
-<https://w3id.org/tribont/core#Output> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#PercentageUnit
-<https://w3id.org/tribont/core#PercentageUnit> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#PhysicalProperty
-<https://w3id.org/tribont/core#PhysicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#Role
-<https://w3id.org/tribont/core#Role> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#SampleBody
-<https://w3id.org/tribont/core#SampleBody> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#SampleSystemArrangement
-<https://w3id.org/tribont/core#SampleSystemArrangement> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#SolidPhysicalProperty
-<https://w3id.org/tribont/core#SolidPhysicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#SolidThermalProperty
-<https://w3id.org/tribont/core#SolidThermalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#SystemProperty
-<https://w3id.org/tribont/core#SystemProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#TechnicalProperty
-<https://w3id.org/tribont/core#TechnicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#TechnicalSpecification
-<https://w3id.org/tribont/core#TechnicalSpecification> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#ThermalProperty
-<https://w3id.org/tribont/core#ThermalProperty> rdf:type owl:Class .
 
 
 ###  https://w3id.org/tribont/material#Ag
@@ -296,11 +169,15 @@ terms:Standard rdf:type owl:Class .
 
 ###  https://w3id.org/tribont/material#Antioxidant
 :Antioxidant rdf:type owl:Class ;
-             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error66> ,
-                             :OtherElementContent ,
+             rdfs:subClassOf :OtherElementContent ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                owl:allValuesFrom <https://w3id.org/tribont/core#PercentageUnit>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass <https://w3id.org/tribont/core#PercentageUnit>
                              ] ;
              rdfs:comment "Antioxidant content for something." ;
              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
@@ -560,23 +437,6 @@ terms:Standard rdf:type owl:Class .
            ns1:term_status "Testing" .
 
 
-###  https://w3id.org/tribont/material#Composition
-:Composition rdf:type owl:Class ;
-             rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                               owl:someValuesFrom :ElementContent
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                               owl:allValuesFrom :ElementContent
-                             ] ;
-             rdfs:comment "Logical aggregation of value/value ranges of the elements composing  a material. The specification values are provided by the manufacturer or the applicable standards." ;
-             rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-             rdfs:label "Composition" ;
-             ns1:term_status "Testing" .
-
-
 ###  https://w3id.org/tribont/material#Cr
 :Cr rdf:type owl:Class ;
     rdfs:subClassOf :ChemicalElementContent ;
@@ -782,11 +642,15 @@ terms:Standard rdf:type owl:Class .
 
 ###  https://w3id.org/tribont/material#Glycol
 :Glycol rdf:type owl:Class ;
-        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error65> ,
-                        :OtherElementContent ,
+        rdfs:subClassOf :OtherElementContent ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                           owl:allValuesFrom <https://w3id.org/tribont/core#ContentUnit>
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass <https://w3id.org/tribont/core#ContentUnit>
                         ] ;
         rdfs:comment "Content of glycol of something." ;
         rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
@@ -949,9 +813,7 @@ terms:Standard rdf:type owl:Class .
                                               owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
                                                             <https://w3id.org/tribont/core#LiquidPhysicalProperty>
                                                             <https://w3id.org/tribont/core#LiquidThermalProperty>
-                                                            :Composition
                                                             :ElementContent
-                                                            :LiquidTechnicalSpecification
                                                           )
                                             ]
                         ] ;
@@ -960,28 +822,6 @@ terms:Standard rdf:type owl:Class .
         rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
         rdfs:label "Liquid" ;
         ns1:term_status "Testing" .
-
-
-###  https://w3id.org/tribont/material#LiquidTechnicalSpecification
-:LiquidTechnicalSpecification rdf:type owl:Class ;
-                              owl:equivalentClass [ owl:intersectionOf ( :MaterialTechnicalSpecification
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
-                                                                           owl:someValuesFrom :Liquid
-                                                                         ]
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ] ;
-                              rdfs:subClassOf :MaterialTechnicalSpecification ,
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                                owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                    owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
-                                                                                  <https://w3id.org/tribont/core#LiquidPhysicalProperty>
-                                                                                  <https://w3id.org/tribont/core#LiquidThermalProperty>
-                                                                                )
-                                                                  ]
-                                              ] .
 
 
 ###  https://w3id.org/tribont/material#LowAlloySteel
@@ -1012,9 +852,7 @@ terms:Standard rdf:type owl:Class .
                                                               <https://w3id.org/tribont/core#MechanicalProperty>
                                                               <https://w3id.org/tribont/core#PhysicalProperty>
                                                               <https://w3id.org/tribont/core#ThermalProperty>
-                                                              :Composition
                                                               :ElementContent
-                                                              :MaterialTechnicalSpecification
                                                             )
                                               ]
                           ] ,
@@ -1046,8 +884,12 @@ terms:Standard rdf:type owl:Class .
 
 ###  https://w3id.org/tribont/material#MaterialNaming
 :MaterialNaming rdf:type owl:Class ;
-                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error67> ,
-                                :MaterialIdentification ,
+                rdfs:subClassOf :MaterialIdentification ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/tribont/core#name> ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :number ;
                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -1067,29 +909,6 @@ terms:Standard rdf:type owl:Class .
                   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                   rdfs:label "MaterialStandard" ;
                   ns1:term_status "Testing" .
-
-
-###  https://w3id.org/tribont/material#MaterialTechnicalSpecification
-:MaterialTechnicalSpecification rdf:type owl:Class ;
-                                owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/tribont/core#TechnicalSpecification>
-                                                                           [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
-                                                                             owl:someValuesFrom :Material
-                                                                           ]
-                                                                         ) ;
-                                                      rdf:type owl:Class
-                                                    ] ;
-                                rdfs:subClassOf <https://w3id.org/tribont/core#TechnicalSpecification> ,
-                                                [ rdf:type owl:Restriction ;
-                                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                                  owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                      owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
-                                                                                    <https://w3id.org/tribont/core#MechanicalProperty>
-                                                                                    <https://w3id.org/tribont/core#PhysicalProperty>
-                                                                                    <https://w3id.org/tribont/core#ThermalProperty>
-                                                                                  )
-                                                                    ]
-                                                ] .
 
 
 ###  https://w3id.org/tribont/material#MaterialTradename
@@ -1546,9 +1365,7 @@ terms:Standard rdf:type owl:Class .
                                                            <https://w3id.org/tribont/core#MechanicalProperty>
                                                            <https://w3id.org/tribont/core#SolidPhysicalProperty>
                                                            <https://w3id.org/tribont/core#SolidThermalProperty>
-                                                           :Composition
                                                            :ElementContent
-                                                           :SolidTechnicalSpecification
                                                          )
                                            ]
                        ] ;
@@ -1578,29 +1395,6 @@ terms:Standard rdf:type owl:Class .
                 rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                 rdfs:label "SolidLubricant" ;
                 ns1:term_status "Testing" .
-
-
-###  https://w3id.org/tribont/material#SolidTechnicalSpecification
-:SolidTechnicalSpecification rdf:type owl:Class ;
-                             owl:equivalentClass [ owl:intersectionOf ( :MaterialTechnicalSpecification
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
-                                                                          owl:someValuesFrom :Solid
-                                                                        ]
-                                                                      ) ;
-                                                   rdf:type owl:Class
-                                                 ] ;
-                             rdfs:subClassOf :MaterialTechnicalSpecification ,
-                                             [ rdf:type owl:Restriction ;
-                                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                               owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                   owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
-                                                                                 <https://w3id.org/tribont/core#MechanicalProperty>
-                                                                                 <https://w3id.org/tribont/core#SolidPhysicalProperty>
-                                                                                 <https://w3id.org/tribont/core#SolidThermalProperty>
-                                                                               )
-                                                                 ]
-                                             ] .
 
 
 ###  https://w3id.org/tribont/material#Sr
@@ -1771,11 +1565,15 @@ terms:Standard rdf:type owl:Class .
 
 ###  https://w3id.org/tribont/material#TolyltriazoleAndOtherNonFerrousMetalInhibitor
 :TolyltriazoleAndOtherNonFerrousMetalInhibitor rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error64> ,
-                                                               :OtherElementContent ,
+                                               rdfs:subClassOf :OtherElementContent ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                                                  owl:allValuesFrom <https://w3id.org/tribont/core#PercentageUnit>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                 owl:onClass <https://w3id.org/tribont/core#PercentageUnit>
                                                                ] ;
                                                rdfs:comment "Tolyltriazole And Other Non Ferrous Metal Inhibitors Content." ;
                                                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
@@ -1944,10 +1742,6 @@ terms:Standard rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  https://w3id.org/tribont/core#percentage
-<https://w3id.org/tribont/core#percentage> rdf:type owl:NamedIndividual .
-
-
 ###  https://w3id.org/tribont/material#AISI_52100
 :AISI_52100 rdf:type owl:NamedIndividual ,
                      :MaterialStandard ;
@@ -2002,13 +1796,16 @@ terms:Standard rdf:type owl:Class .
         rdfs:label "filler" .
 
 
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxCardinality "1"^^xsd:nonNegativeInteger
@@ -2017,25 +1814,7 @@ terms:Standard rdf:type owl:Class .
 [ owl:maxCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2044,7 +1823,10 @@ terms:Standard rdf:type owl:Class .
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################
@@ -2052,39 +1834,13 @@ terms:Standard rdf:type owl:Class .
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-   owl:members ( <http://dbpedia.org/ontology/Company>
-                 <http://dbpedia.org/ontology/Document>
-                 terms:Standard
-                 <https://w3id.org/isCharacterisedBy#Feature>
-                 <https://w3id.org/isCharacterisedBy#Property>
-                 <https://w3id.org/isCharacterisedBy#SubjectOfInterest>
-                 <https://w3id.org/isCharacterisedBy#Unit>
-                 <https://w3id.org/tribont/core#Role>
-                 :MaterialApplication
-                 :MaterialIdentification
+   owl:members ( <https://w3id.org/tribont/core#BodyProperty>
+                 <https://w3id.org/tribont/core#OperationProperty>
+                 <https://w3id.org/tribont/core#SystemProperty>
+                 <https://w3id.org/tribont/core#TechnicalProperty>
+                 :ElementContent
                )
  ] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <https://w3id.org/tribont/core#BodyProperty>
-                <https://w3id.org/tribont/core#OperationProperty>
-                <https://w3id.org/tribont/core#SystemProperty>
-                <https://w3id.org/tribont/core#TechnicalProperty>
-                :ElementContent
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <https://w3id.org/tribont/core#OperationCondition>
-                <https://w3id.org/tribont/core#Output>
-                <https://w3id.org/tribont/core#SampleBody>
-                <https://w3id.org/tribont/core#SampleSystemArrangement>
-                <https://w3id.org/tribont/core#TechnicalSpecification>
-                :Composition
-              )
-] .
 
 
 [ rdf:type owl:AllDisjointClasses ;

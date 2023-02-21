@@ -22,7 +22,7 @@
                                       ns:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
                                       terms:created "2021-10-18" ;
                                       terms:creator """Patricia Casla <mailto:patricia.casla@tekniker.es>
-Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>""";
+Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>""" ;
                                       terms:description "The xxx ontology xxx"@en ;
                                       terms:issued "2021-mm-dd" ;
                                       terms:title "XXX" ;
@@ -77,10 +77,6 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 owl:maxCardinality rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/2002/07/owl#maxQualifiedCardinality
-owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/2002/07/owl#qualifiedCardinality
 owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
@@ -97,36 +93,58 @@ ns1:term_status rdf:type owl:AnnotationProperty .
 <https://w3id.org/isCharacterisedBy#belongsTo> rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/isCharacterisedBy#characterises
-<https://w3id.org/isCharacterisedBy#characterises> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/isCharacterisedBy#hasProperty
-<https://w3id.org/isCharacterisedBy#hasProperty> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/isCharacterisedBy#isCharacterisedBy
-<https://w3id.org/isCharacterisedBy#isCharacterisedBy> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/tribont/core#compliesWith
-<https://w3id.org/tribont/core#compliesWith> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/tribont/core#hasDocument
-<https://w3id.org/tribont/core#hasDocument> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/tribont/core#hasRole
-<https://w3id.org/tribont/core#hasRole> rdf:type owl:ObjectProperty .
-
-
 ###  https://w3id.org/tribont/equipment#hasCalibration
 :hasCalibration rdf:type owl:ObjectProperty ;
                 rdfs:comment "The relation between a specific equipment and the calibrations performed on it." ;
                 rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
                 rdfs:label "hasCalibration" ;
                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/equipment#isCharacterisedByMeasuredOperationCondition
+:isCharacterisedByMeasuredOperationCondition rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
+
+
+###  https://w3id.org/tribont/equipment#isCharacterisedBySupportedOperationCondition
+:isCharacterisedBySupportedOperationCondition rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
+
+
+###  https://w3id.org/tribont/equipment#isCharacterisedBySupportedOutput
+:isCharacterisedBySupportedOutput rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
+
+
+###  https://w3id.org/tribont/equipment#isSupportedMovingSampleBodyBy
+:isSupportedMovingSampleBodyBy rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf :isSupportedSampleBodyBy ;
+                               owl:inverseOf :supportsMovingSampleBody .
+
+
+###  https://w3id.org/tribont/equipment#isSupportedSampleBodyBy
+:isSupportedSampleBodyBy rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :supportsSampleBody .
+
+
+###  https://w3id.org/tribont/equipment#isSupportedStaticSampleBodyBy
+:isSupportedStaticSampleBodyBy rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf :isSupportedSampleBodyBy ;
+                               owl:inverseOf :supportsStaticSampleBody .
+
+
+###  https://w3id.org/tribont/equipment#supportsMovingSampleBody
+:supportsMovingSampleBody rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :supportsSampleBody .
+
+
+###  https://w3id.org/tribont/equipment#supportsSampleBody
+:supportsSampleBody rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/equipment#supportsStaticSampleBody
+:supportsStaticSampleBody rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :supportsSampleBody .
 
 
 #################################################################
@@ -165,141 +183,13 @@ ns1:term_status rdf:type owl:AnnotationProperty .
               ns1:term_status "Testing" .
 
 
+###  https://w3id.org/tribont/equipment#rdfs:label
+:rdfs:label rdf:type owl:DatatypeProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
-
-###  http://dbpedia.org/ontology/Company
-<http://dbpedia.org/ontology/Company> rdf:type owl:Class .
-
-
-###  http://dbpedia.org/ontology/Document
-<http://dbpedia.org/ontology/Document> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error61
-<http://org.semanticweb.owlapi/error#Error61> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error62
-<http://org.semanticweb.owlapi/error#Error62> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error63
-<http://org.semanticweb.owlapi/error#Error63> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/Standard
-terms:Standard rdf:type owl:Class .
-
-
-###  https://w3id.org/isCharacterisedBy#Feature
-<https://w3id.org/isCharacterisedBy#Feature> rdf:type owl:Class .
-
-
-###  https://w3id.org/isCharacterisedBy#Property
-<https://w3id.org/isCharacterisedBy#Property> rdf:type owl:Class .
-
-
-###  https://w3id.org/isCharacterisedBy#SubjectOfInterest
-<https://w3id.org/isCharacterisedBy#SubjectOfInterest> rdf:type owl:Class .
-
-
-###  https://w3id.org/isCharacterisedBy#Unit
-<https://w3id.org/isCharacterisedBy#Unit> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#BodyProperty
-<https://w3id.org/tribont/core#BodyProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#CourseOfMovement
-<https://w3id.org/tribont/core#CourseOfMovement> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#EnvironmentMedium
-<https://w3id.org/tribont/core#EnvironmentMedium> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#EnvironmentProperty
-<https://w3id.org/tribont/core#EnvironmentProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#GeometricDimension
-<https://w3id.org/tribont/core#GeometricDimension> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#HardnessProperty
-<https://w3id.org/tribont/core#HardnessProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#LoadProperty
-<https://w3id.org/tribont/core#LoadProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#LubricantPumpProperty
-<https://w3id.org/tribont/core#LubricantPumpProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#LubricantType
-<https://w3id.org/tribont/core#LubricantType> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#LubricationRegime
-<https://w3id.org/tribont/core#LubricationRegime> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#MagnificationProperty
-<https://w3id.org/tribont/core#MagnificationProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#MovementProperty
-<https://w3id.org/tribont/core#MovementProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#MovementType
-<https://w3id.org/tribont/core#MovementType> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#OperationCondition
-<https://w3id.org/tribont/core#OperationCondition> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#OperationProperty
-<https://w3id.org/tribont/core#OperationProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#Output
-<https://w3id.org/tribont/core#Output> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#RadiationType
-<https://w3id.org/tribont/core#RadiationType> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#Role
-<https://w3id.org/tribont/core#Role> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#SampleBody
-<https://w3id.org/tribont/core#SampleBody> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#TechnicalProperty
-<https://w3id.org/tribont/core#TechnicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#TribologicalProperty
-<https://w3id.org/tribont/core#TribologicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#WearType
-<https://w3id.org/tribont/core#WearType> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#Weight
-<https://w3id.org/tribont/core#Weight> rdf:type owl:Class .
-
 
 ###  https://w3id.org/tribont/equipment#AbrasionTester
 :AbrasionTester rdf:type owl:Class ;
@@ -348,19 +238,6 @@ terms:Standard rdf:type owl:Class .
                              owl:someValuesFrom :TechnicalDocumentation
                            ] ,
                            [ rdf:type owl:Restriction ;
-                             owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
-                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                 owl:unionOf ( <https://w3id.org/tribont/core#BodyProperty>
-                                                               <https://w3id.org/tribont/core#OperationProperty>
-                                                               <https://w3id.org/tribont/core#TechnicalProperty>
-                                                               :OperationMeasurementSpecification
-                                                               :OperationSpecification
-                                                               :OutputSpecification
-                                                               :SampleBodySpecification
-                                                             )
-                                               ]
-                           ] ,
-                           [ rdf:type owl:Restriction ;
                              owl:onProperty <https://w3id.org/tribont/core#hasDocument> ;
                              owl:allValuesFrom [ rdf:type owl:Class ;
                                                  owl:unionOf ( :CalibrationDocument
@@ -371,6 +248,27 @@ terms:Standard rdf:type owl:Class .
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :hasCalibration ;
                              owl:allValuesFrom :Calibration
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isCharacterisedByMeasuredOperationCondition ;
+                             owl:allValuesFrom <https://w3id.org/tribont/core#OperationProperty>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isCharacterisedBySupportedOperationCondition ;
+                             owl:allValuesFrom <https://w3id.org/tribont/core#OperationProperty>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isCharacterisedBySupportedOutput ;
+                             owl:allValuesFrom [ rdf:type owl:Class ;
+                                                 owl:unionOf ( <https://w3id.org/tribont/core#TechnicalProperty>
+                                                               <https://w3id.org/tribont/core#Volume>
+                                                               <https://w3id.org/tribont/core#Weight>
+                                                             )
+                                               ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :supportsSampleBody ;
+                             owl:allValuesFrom <https://w3id.org/tribont/core#Body>
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :hasCalibration ;
@@ -400,21 +298,12 @@ terms:Standard rdf:type owl:Class .
                                   owl:someValuesFrom :TechnicalDocumentation
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
-                                  owl:allValuesFrom [ rdf:type owl:Class ;
-                                                      owl:unionOf ( <https://w3id.org/tribont/core#BodyProperty>
-                                                                    <https://w3id.org/tribont/core#OperationProperty>
-                                                                    <https://w3id.org/tribont/core#TechnicalProperty>
-                                                                    :OperationMeasurementSpecification
-                                                                    :OperationSpecification
-                                                                    :OutputSpecification
-                                                                    :SampleBodySpecification
-                                                                  )
-                                                    ]
-                                ] ,
-                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <https://w3id.org/tribont/core#hasDocument> ;
                                   owl:allValuesFrom :TechnicalDocumentation
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :supportsSampleBody ;
+                                  owl:allValuesFrom <https://w3id.org/tribont/core#Body>
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :measuringPrinciple ;
@@ -459,7 +348,11 @@ terms:Standard rdf:type owl:Class .
 
 ###  https://w3id.org/tribont/equipment#HardnessTester
 :HardnessTester rdf:type owl:Class ;
-                rdfs:subClassOf :MeasuringEquipment ;
+                rdfs:subClassOf :MeasuringEquipment ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :isCharacterisedBySupportedOutput ;
+                                  owl:allValuesFrom <https://w3id.org/tribont/core#HardnessProperty>
+                                ] ;
                 rdfs:comment "An equipment that measures the hardness of a material, " ;
                 rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
                 rdfs:label "HardnessTester" ;
@@ -473,27 +366,6 @@ terms:Standard rdf:type owl:Class .
                      rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
                      rdfs:label "HardnessTesterClass" ;
                      ns1:term_status "Testing" .
-
-
-###  https://w3id.org/tribont/equipment#HardnessTesterOutputSpecification
-:HardnessTesterOutputSpecification rdf:type owl:Class ;
-                                   owl:equivalentClass [ owl:intersectionOf ( :OutputSpecification
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
-                                                                                owl:someValuesFrom :HardnessTester
-                                                                              ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ] ;
-                                   rdfs:subClassOf :OutputSpecification ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                                     owl:allValuesFrom <https://w3id.org/tribont/core#HardnessProperty>
-                                                   ] ;
-                                   rdfs:comment "Logical aggregation of the expected technical attributes, or characteristics obtained from a hardness tester." ;
-                                   rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
-                                   rdfs:label "HardnessTesterOutputSpecification" ;
-                                   ns1:term_status "Testing" .
 
 
 ###  https://w3id.org/tribont/equipment#MachineryBook
@@ -533,71 +405,17 @@ terms:Standard rdf:type owl:Class .
                          ns1:term_status "Testing" .
 
 
-###  https://w3id.org/tribont/equipment#MovingBodySpecification
-:MovingBodySpecification rdf:type owl:Class ;
-                         rdfs:subClassOf :SampleBodySpecification ;
-                         owl:disjointWith :StaticBodySpecification ;
-                         rdfs:comment "Logical aggregation  of attributes, or characteristics describing the moving bodies supported by a specific equipment." ;
-                         rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
-                         rdfs:label "MovingBodySpecification" ;
-                         ns1:term_status "Testing" .
-
-
-###  https://w3id.org/tribont/equipment#OperationMeasurementSpecification
-:OperationMeasurementSpecification rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/tribont/core#OperationCondition> ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <https://w3id.org/tribont/core#hasRole> ;
-                                                     owl:hasValue <https://w3id.org/tribont/core#specification>
-                                                   ] ;
-                                   owl:disjointWith :OperationSpecification ;
-                                   rdfs:comment "Logical aggregation of operation attributes, or characteristics that can be measured by something." ;
-                                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
-                                   rdfs:label "OperationMeasurementSpecification" ;
-                                   ns1:term_status "Testing" .
-
-
-###  https://w3id.org/tribont/equipment#OperationSpecification
-:OperationSpecification rdf:type owl:Class ;
-                        rdfs:subClassOf <https://w3id.org/tribont/core#OperationCondition> ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <https://w3id.org/tribont/core#compliesWith> ;
-                                          owl:allValuesFrom terms:Standard
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <https://w3id.org/tribont/core#hasRole> ;
-                                          owl:hasValue <https://w3id.org/tribont/core#specification>
-                                        ] ;
-                        rdfs:comment "Logical aggregation of  value ranges of operation attributes, or characteristics supported by something." ;
-                        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
-                        rdfs:label "OperationSpecification" ;
-                        ns1:term_status "Testing" .
-
-
 ###  https://w3id.org/tribont/equipment#OpticalMicroscope
 :OpticalMicroscope rdf:type owl:Class ;
-                   rdfs:subClassOf :MeasuringEquipment ;
+                   rdfs:subClassOf :MeasuringEquipment ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isCharacterisedBySupportedOperationCondition ;
+                                     owl:allValuesFrom :OpticalMicroscope
+                                   ] ;
                    rdfs:comment "An equipment used to assess surfaces by magnifying images with visible light." ;
                    rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
                    rdfs:label "OpticalMicroscope" ;
                    ns1:term_status "Testing" .
-
-
-###  https://w3id.org/tribont/equipment#OpticalMicroscopeOperationSpecification
-:OpticalMicroscopeOperationSpecification rdf:type owl:Class ;
-                                         owl:equivalentClass [ owl:intersectionOf ( :OperationSpecification
-                                                                                    [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
-                                                                                      owl:someValuesFrom :OpticalMicroscope
-                                                                                    ]
-                                                                                  ) ;
-                                                               rdf:type owl:Class
-                                                             ] ;
-                                         rdfs:subClassOf :OperationSpecification ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                                           owl:allValuesFrom <https://w3id.org/tribont/core#MagnificationProperty>
-                                                         ] .
 
 
 ###  https://w3id.org/tribont/equipment#OpticalProfilometer
@@ -609,71 +427,17 @@ terms:Standard rdf:type owl:Class .
                      ns1:term_status "Testing" .
 
 
-###  https://w3id.org/tribont/equipment#OutputSpecification
-:OutputSpecification rdf:type owl:Class ;
-                     rdfs:subClassOf <https://w3id.org/tribont/core#Output> ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty <https://w3id.org/tribont/core#hasRole> ;
-                                       owl:hasValue <https://w3id.org/tribont/core#specification>
-                                     ] ;
-                     rdfs:comment "Logical aggregation of the expected technical attributes, or characteristics resulting from a test." ;
-                     rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
-                     rdfs:label "OutputSpecification" ;
-                     ns1:term_status "Testing" .
-
-
-###  https://w3id.org/tribont/equipment#SampleBodySpecification
-:SampleBodySpecification rdf:type owl:Class ;
-                         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error61> ,
-                                         <http://org.semanticweb.owlapi/error#Error62> ,
-                                         <http://org.semanticweb.owlapi/error#Error63> ,
-                                         <https://w3id.org/tribont/core#SampleBody> ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                           owl:someValuesFrom <https://w3id.org/tribont/core#GeometricDimension>
-                                         ] ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                           owl:allValuesFrom <https://w3id.org/tribont/core#BodyProperty>
-                                         ] ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty <https://w3id.org/tribont/core#hasRole> ;
-                                           owl:hasValue <https://w3id.org/tribont/core#specification>
-                                         ] ;
-                         rdfs:comment "logical aggregation of allowed value/ value range of qualifiable or quantifiable attributes, or characteristics of a sample body." ;
-                         rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
-                         rdfs:label "SampleBodySpecification" ;
-                         ns1:term_status "Testing" .
-
-
 ###  https://w3id.org/tribont/equipment#Scale
 :Scale rdf:type owl:Class ;
-       rdfs:subClassOf :MeasuringEquipment ;
+       rdfs:subClassOf :MeasuringEquipment ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :isCharacterisedBySupportedOutput ;
+                         owl:allValuesFrom <https://w3id.org/tribont/core#Weight>
+                       ] ;
        rdfs:comment "An equipment used to measure the weigth of somebody or something." ;
        rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
        rdfs:label "Scale" ;
        ns1:term_status "Testing" .
-
-
-###  https://w3id.org/tribont/equipment#ScaleOutputSpecification
-:ScaleOutputSpecification rdf:type owl:Class ;
-                          owl:equivalentClass [ owl:intersectionOf ( :OutputSpecification
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
-                                                                       owl:someValuesFrom :Scale
-                                                                     ]
-                                                                   ) ;
-                                                rdf:type owl:Class
-                                              ] ;
-                          rdfs:subClassOf :OutputSpecification ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                            owl:allValuesFrom <https://w3id.org/tribont/core#Weight>
-                                          ] ;
-                          rdfs:comment "Logical aggregation of the expected technical attributes, or characteristics obtained from a scale." ;
-                          rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
-                          rdfs:label "ScaleOutputSpecification" ;
-                          ns1:term_status "Testing" .
 
 
 ###  https://w3id.org/tribont/equipment#ScanningElectronMicroscope
@@ -694,15 +458,6 @@ terms:Standard rdf:type owl:Class .
                ns1:term_status "Testing" .
 
 
-###  https://w3id.org/tribont/equipment#StaticBodySpecification
-:StaticBodySpecification rdf:type owl:Class ;
-                         rdfs:subClassOf :SampleBodySpecification ;
-                         rdfs:comment "Logical aggregation  of attributes, or characteristics describing the static bodies supported by a specific equipment." ;
-                         rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
-                         rdfs:label "StaticBodySpecification" ;
-                         ns1:term_status "Testing" .
-
-
 ###  https://w3id.org/tribont/equipment#TechnicalDocumentation
 :TechnicalDocumentation rdf:type owl:Class ;
                         rdfs:subClassOf <http://dbpedia.org/ontology/Document> ;
@@ -716,12 +471,50 @@ terms:Standard rdf:type owl:Class .
 :Tribometer rdf:type owl:Class ;
             rdfs:subClassOf :ExperimentalEquipment ,
                             [ rdf:type owl:Restriction ;
-                              owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
-                              owl:someValuesFrom :MovingBodySpecification
+                              owl:onProperty :supportsMovingSampleBody ;
+                              owl:someValuesFrom <https://w3id.org/tribont/core#Body>
                             ] ,
                             [ rdf:type owl:Restriction ;
-                              owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
-                              owl:someValuesFrom :StaticBodySpecification
+                              owl:onProperty :supportsStaticSampleBody ;
+                              owl:someValuesFrom <https://w3id.org/tribont/core#Body>
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isCharacterisedByMeasuredOperationCondition ;
+                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <https://w3id.org/tribont/core#EnvironmentProperty>
+                                                                <https://w3id.org/tribont/core#LoadProperty>
+                                                                <https://w3id.org/tribont/core#MovementProperty>
+                                                              )
+                                                ]
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isCharacterisedBySupportedOperationCondition ;
+                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <https://w3id.org/tribont/core#CourseOfMovement>
+                                                                <https://w3id.org/tribont/core#EnvironmentMedium>
+                                                                <https://w3id.org/tribont/core#EnvironmentProperty>
+                                                                <https://w3id.org/tribont/core#LoadProperty>
+                                                                <https://w3id.org/tribont/core#LubricantPumpProperty>
+                                                                <https://w3id.org/tribont/core#LubricantType>
+                                                                <https://w3id.org/tribont/core#LubricationRegime>
+                                                                <https://w3id.org/tribont/core#MovementProperty>
+                                                                <https://w3id.org/tribont/core#MovementType>
+                                                                <https://w3id.org/tribont/core#RadiationType>
+                                                                <https://w3id.org/tribont/core#WearType>
+                                                              )
+                                                ]
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isCharacterisedBySupportedOutput ;
+                              owl:allValuesFrom <https://w3id.org/tribont/core#TribologicalProperty>
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :supportsMovingSampleBody ;
+                              owl:allValuesFrom <https://w3id.org/tribont/core#Body>
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :supportsStaticSampleBody ;
+                              owl:allValuesFrom <https://w3id.org/tribont/core#Body>
                             ] ;
             rdfs:comment "An equipment used to measure tribological properties (e.g. friction coefficients, wear, etc.) by simulating the interaction of between two surfaces in contact under specific operation conditions." ;
             rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
@@ -733,27 +526,12 @@ terms:Standard rdf:type owl:Class .
 :TribometerClass rdf:type owl:Class ;
                  rdfs:subClassOf :ExperimentalEquipmentClass ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
-                                   owl:allValuesFrom [ rdf:type owl:Class ;
-                                                       owl:unionOf ( <https://w3id.org/tribont/core#BodyProperty>
-                                                                     <https://w3id.org/tribont/core#CourseOfMovement>
-                                                                     <https://w3id.org/tribont/core#EnvironmentMedium>
-                                                                     <https://w3id.org/tribont/core#EnvironmentProperty>
-                                                                     <https://w3id.org/tribont/core#LoadProperty>
-                                                                     <https://w3id.org/tribont/core#LubricantPumpProperty>
-                                                                     <https://w3id.org/tribont/core#LubricantType>
-                                                                     <https://w3id.org/tribont/core#LubricationRegime>
-                                                                     <https://w3id.org/tribont/core#MovementProperty>
-                                                                     <https://w3id.org/tribont/core#MovementType>
-                                                                     <https://w3id.org/tribont/core#RadiationType>
-                                                                     <https://w3id.org/tribont/core#TribologicalProperty>
-                                                                     <https://w3id.org/tribont/core#WearType>
-                                                                     :OperationMeasurementSpecification
-                                                                     :OperationSpecification
-                                                                     :OutputSpecification
-                                                                     :SampleBodySpecification
-                                                                   )
-                                                     ]
+                                   owl:onProperty :supportsMovingSampleBody ;
+                                   owl:allValuesFrom <https://w3id.org/tribont/core#Body>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :supportsStaticSampleBody ;
+                                   owl:allValuesFrom <https://w3id.org/tribont/core#Body>
                                  ] ;
                  rdfs:comment "An aggrupation of tribometers with a set of common atributes of characteristics." ;
                  rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
@@ -761,101 +539,8 @@ terms:Standard rdf:type owl:Class .
                  ns1:term_status "Testing" .
 
 
-###  https://w3id.org/tribont/equipment#TribometerOperationMeasurementSpecification
-:TribometerOperationMeasurementSpecification rdf:type owl:Class ;
-                                             owl:equivalentClass [ owl:intersectionOf ( :OperationMeasurementSpecification
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
-                                                                                          owl:someValuesFrom :Tribometer
-                                                                                        ]
-                                                                                      ) ;
-                                                                   rdf:type owl:Class
-                                                                 ] ;
-                                             rdfs:subClassOf :OperationMeasurementSpecification ,
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                                               owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                                   owl:unionOf ( <https://w3id.org/tribont/core#EnvironmentProperty>
-                                                                                                 <https://w3id.org/tribont/core#LoadProperty>
-                                                                                                 <https://w3id.org/tribont/core#MovementProperty>
-                                                                                               )
-                                                                                 ]
-                                                             ] .
-
-
-###  https://w3id.org/tribont/equipment#TribometerOperationSpecification
-:TribometerOperationSpecification rdf:type owl:Class ;
-                                  owl:equivalentClass [ owl:intersectionOf ( :OperationSpecification
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
-                                                                               owl:someValuesFrom :Tribometer
-                                                                             ]
-                                                                           ) ;
-                                                        rdf:type owl:Class
-                                                      ] ;
-                                  rdfs:subClassOf :OperationSpecification ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                                    owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                        owl:unionOf ( <https://w3id.org/tribont/core#CourseOfMovement>
-                                                                                      <https://w3id.org/tribont/core#EnvironmentMedium>
-                                                                                      <https://w3id.org/tribont/core#EnvironmentProperty>
-                                                                                      <https://w3id.org/tribont/core#LoadProperty>
-                                                                                      <https://w3id.org/tribont/core#LubricantPumpProperty>
-                                                                                      <https://w3id.org/tribont/core#LubricantType>
-                                                                                      <https://w3id.org/tribont/core#LubricationRegime>
-                                                                                      <https://w3id.org/tribont/core#MovementProperty>
-                                                                                      <https://w3id.org/tribont/core#MovementType>
-                                                                                      <https://w3id.org/tribont/core#RadiationType>
-                                                                                      <https://w3id.org/tribont/core#WearType>
-                                                                                    )
-                                                                      ]
-                                                  ] .
-
-
-###  https://w3id.org/tribont/equipment#TribometerOutputSpecification
-:TribometerOutputSpecification rdf:type owl:Class ;
-                               owl:equivalentClass [ owl:intersectionOf ( :OutputSpecification
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
-                                                                            owl:someValuesFrom :Tribometer
-                                                                          ]
-                                                                        ) ;
-                                                     rdf:type owl:Class
-                                                   ] ;
-                               rdfs:subClassOf :OutputSpecification ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                                 owl:allValuesFrom <https://w3id.org/tribont/core#TribologicalProperty>
-                                               ] ;
-                               rdfs:comment "Logical aggregation of the expected technical attributes, or characteristics obtained from a tribometer." ;
-                               rdfs:isDefinedBy "https://w3id.org/tribont/equipment" ;
-                               rdfs:label "TribometerOutputSpecification" ;
-                               ns1:term_status "Testing" .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  https://w3id.org/tribont/core#specification
-<https://w3id.org/tribont/core#specification> rdf:type owl:NamedIndividual .
-
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
 
 [ owl:maxCardinality "1"^^xsd:nonNegativeInteger
  ] .
@@ -863,6 +548,9 @@ terms:Standard rdf:type owl:Class .
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -872,34 +560,8 @@ terms:Standard rdf:type owl:Class .
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-   owl:members ( <http://dbpedia.org/ontology/Company>
-                 <http://dbpedia.org/ontology/Document>
-                 terms:Standard
-                 <https://w3id.org/isCharacterisedBy#Feature>
-                 <https://w3id.org/isCharacterisedBy#Property>
-                 <https://w3id.org/isCharacterisedBy#SubjectOfInterest>
-                 <https://w3id.org/isCharacterisedBy#Unit>
-                 <https://w3id.org/tribont/core#Role>
-                 :Calibration
-               )
- ] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :HardnessTesterOutputSpecification
-                :ScaleOutputSpecification
-                :TribometerOutputSpecification
-              )
-] .
-
 
 #################################################################
 #    Rules
