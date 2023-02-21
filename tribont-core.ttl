@@ -55,8 +55,7 @@ terms:issued rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title
-terms:title rdf:type owl:AnnotationProperty ;
-            rdfs:comment "A name given to the resource." ,
+terms:title rdfs:comment "A name given to the resource." ,
                          "http://purl.org/dc/terms/" ;
             rdfs:label "title" ;
             ns1:term_status "Stable" .
@@ -93,14 +92,6 @@ ns1:term_status rdf:type owl:AnnotationProperty .
 #################################################################
 #    Object Properties
 #################################################################
-
-###  https://w3id.org/isCharacterisedBy#hasProperty
-<https://w3id.org/isCharacterisedBy#hasProperty> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/isCharacterisedBy#hasUnit
-<https://w3id.org/isCharacterisedBy#hasUnit> rdf:type owl:ObjectProperty .
-
 
 ###  https://w3id.org/tribont/core#compliesWith
 :compliesWith rdf:type owl:ObjectProperty ;
@@ -254,246 +245,6 @@ ns1:term_status rdf:type owl:AnnotationProperty .
                                        ns1:term_status "Stable" .
 
 
-###  http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error10
-<http://org.semanticweb.owlapi/error#Error10> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error11
-<http://org.semanticweb.owlapi/error#Error11> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error12
-<http://org.semanticweb.owlapi/error#Error12> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error13
-<http://org.semanticweb.owlapi/error#Error13> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error14
-<http://org.semanticweb.owlapi/error#Error14> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error15
-<http://org.semanticweb.owlapi/error#Error15> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error16
-<http://org.semanticweb.owlapi/error#Error16> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error17
-<http://org.semanticweb.owlapi/error#Error17> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error18
-<http://org.semanticweb.owlapi/error#Error18> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error19
-<http://org.semanticweb.owlapi/error#Error19> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error2
-<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error20
-<http://org.semanticweb.owlapi/error#Error20> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error21
-<http://org.semanticweb.owlapi/error#Error21> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error22
-<http://org.semanticweb.owlapi/error#Error22> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error23
-<http://org.semanticweb.owlapi/error#Error23> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error24
-<http://org.semanticweb.owlapi/error#Error24> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error25
-<http://org.semanticweb.owlapi/error#Error25> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error26
-<http://org.semanticweb.owlapi/error#Error26> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error27
-<http://org.semanticweb.owlapi/error#Error27> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error28
-<http://org.semanticweb.owlapi/error#Error28> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error29
-<http://org.semanticweb.owlapi/error#Error29> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error3
-<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error30
-<http://org.semanticweb.owlapi/error#Error30> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error31
-<http://org.semanticweb.owlapi/error#Error31> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error32
-<http://org.semanticweb.owlapi/error#Error32> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error33
-<http://org.semanticweb.owlapi/error#Error33> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error34
-<http://org.semanticweb.owlapi/error#Error34> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error35
-<http://org.semanticweb.owlapi/error#Error35> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error36
-<http://org.semanticweb.owlapi/error#Error36> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error37
-<http://org.semanticweb.owlapi/error#Error37> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error38
-<http://org.semanticweb.owlapi/error#Error38> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error39
-<http://org.semanticweb.owlapi/error#Error39> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error4
-<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error40
-<http://org.semanticweb.owlapi/error#Error40> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error41
-<http://org.semanticweb.owlapi/error#Error41> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error42
-<http://org.semanticweb.owlapi/error#Error42> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error43
-<http://org.semanticweb.owlapi/error#Error43> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error44
-<http://org.semanticweb.owlapi/error#Error44> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error45
-<http://org.semanticweb.owlapi/error#Error45> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error46
-<http://org.semanticweb.owlapi/error#Error46> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error47
-<http://org.semanticweb.owlapi/error#Error47> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error48
-<http://org.semanticweb.owlapi/error#Error48> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error49
-<http://org.semanticweb.owlapi/error#Error49> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error5
-<http://org.semanticweb.owlapi/error#Error5> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error50
-<http://org.semanticweb.owlapi/error#Error50> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error51
-<http://org.semanticweb.owlapi/error#Error51> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error52
-<http://org.semanticweb.owlapi/error#Error52> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error53
-<http://org.semanticweb.owlapi/error#Error53> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error54
-<http://org.semanticweb.owlapi/error#Error54> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error55
-<http://org.semanticweb.owlapi/error#Error55> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error56
-<http://org.semanticweb.owlapi/error#Error56> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error57
-<http://org.semanticweb.owlapi/error#Error57> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error58
-<http://org.semanticweb.owlapi/error#Error58> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error59
-<http://org.semanticweb.owlapi/error#Error59> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error6
-<http://org.semanticweb.owlapi/error#Error6> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error60
-<http://org.semanticweb.owlapi/error#Error60> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error7
-<http://org.semanticweb.owlapi/error#Error7> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error8
-<http://org.semanticweb.owlapi/error#Error8> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error9
-<http://org.semanticweb.owlapi/error#Error9> rdf:type owl:Class .
-
-
 ###  http://purl.org/dc/terms/Standard
 terms:Standard rdf:type owl:Class ;
                rdfs:comment "A reference point against which other things can be evaluated or compared." ;
@@ -502,41 +253,24 @@ terms:Standard rdf:type owl:Class ;
                ns1:term_status "Stable" .
 
 
-###  https://w3id.org/isCharacterisedBy#Feature
-<https://w3id.org/isCharacterisedBy#Feature> rdf:type owl:Class ;
-                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                               owl:onProperty :hasRole ;
-                                                               owl:allValuesFrom :PropertyRole
-                                                             ] .
-
-
 ###  https://w3id.org/isCharacterisedBy#Property
-<https://w3id.org/isCharacterisedBy#Property> rdf:type owl:Class ;
-                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+<https://w3id.org/isCharacterisedBy#Property> rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                                                 owl:allValuesFrom <https://w3id.org/isCharacterisedBy#Unit>
-                                                              ] ,
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty :hasRole ;
-                                                                owl:allValuesFrom :PropertyRole
                                                               ] .
-
-
-###  https://w3id.org/isCharacterisedBy#SubjectOfInterest
-<https://w3id.org/isCharacterisedBy#SubjectOfInterest> rdf:type owl:Class .
-
-
-###  https://w3id.org/isCharacterisedBy#Unit
-<https://w3id.org/isCharacterisedBy#Unit> rdf:type owl:Class .
 
 
 ###  https://w3id.org/tribont/core#Acceleration
 :Acceleration rdf:type owl:Class ;
-              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error16> ,
-                              :MovementProperty ,
+              rdfs:subClassOf :MovementProperty ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                 owl:allValuesFrom :AccelerationUnit
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :AccelerationUnit
                               ] ;
               rdfs:comment "Increase in speed or rate." ;
               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -568,11 +302,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#AirReleaseTimeLAV
 :AirReleaseTimeLAV rdf:type owl:Class ;
-                   rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error12> ,
-                                   :LiquidPhysicalProperty ,
+                   rdfs:subClassOf :LiquidPhysicalProperty ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                      owl:allValuesFrom :TimeUnit
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :TimeUnit
                                    ] ;
                    rdfs:comment "Air release time for something." ;
                    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -582,11 +320,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#AlkalineAdditivesConsumption
 :AlkalineAdditivesConsumption rdf:type owl:Class ;
-                              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error7> ,
-                                              :LiquidPhysicalProperty ,
+                              rdfs:subClassOf :LiquidPhysicalProperty ,
                                               [ rdf:type owl:Restriction ;
                                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                                 owl:allValuesFrom :CapacityUnit
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass :CapacityUnit
                                               ] ;
                               rdfs:comment "Consumption of alkaline additives by something." ;
                               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -614,16 +356,48 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#AxialLoad
 :AxialLoad rdf:type owl:Class ;
-           rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error37> ,
-                           :LoadProperty ,
+           rdfs:subClassOf :LoadProperty ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                              owl:allValuesFrom :ForceUnit
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :ForceUnit
                            ] ;
            rdfs:comment "Axial load applied to something." ;
            rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
            rdfs:label "AxialLoad" ;
            ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Body
+:Body rdf:type owl:Class ;
+      rdfs:subClassOf <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                        owl:someValuesFrom :GeometricDimension
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                        owl:allValuesFrom :BodyProperty
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Shape
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Volume
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Weight
+                      ] .
 
 
 ###  https://w3id.org/tribont/core#BodyProperty
@@ -689,11 +463,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#CompressiveStrength
 :CompressiveStrength rdf:type owl:Class ;
-                     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error36> ,
-                                     :MechanicalProperty ,
+                     rdfs:subClassOf :MechanicalProperty ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                        owl:allValuesFrom :MechanicalUnit
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :MechanicalUnit
                                      ] ;
                      rdfs:comment "Compressive strength applied to something." ;
                      rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -703,11 +481,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Conductivity
 :Conductivity rdf:type owl:Class ;
-              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error10> ,
-                              :LiquidPhysicalProperty ,
+              rdfs:subClassOf :LiquidPhysicalProperty ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                 owl:allValuesFrom :DistanceUnit
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :DistanceUnit
                               ] ;
               rdfs:comment "Conductivity  of something." ;
               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -766,11 +548,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Decceleration
 :Decceleration rdf:type owl:Class ;
-               rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error2> ,
-                               :MovementProperty ,
+               rdfs:subClassOf :MovementProperty ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                  owl:allValuesFrom :AccelerationUnit
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :AccelerationUnit
                                ] ;
                rdfs:comment "Decrease in speed or rate." ;
                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -780,11 +566,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Density
 :Density rdf:type owl:Class ;
-         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error35> ,
-                         :SolidPhysicalProperty ,
+         rdfs:subClassOf :SolidPhysicalProperty ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                            owl:allValuesFrom :DensityUnit
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :DensityUnit
                          ] ;
          owl:disjointWith :Porosity ;
          rdfs:comment "Density of something." ;
@@ -813,11 +603,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Dispersancy
 :Dispersancy rdf:type owl:Class ;
-             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error50> ,
-                             :LiquidPhysicalProperty ,
+             rdfs:subClassOf :LiquidPhysicalProperty ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                owl:allValuesFrom :PercentageUnit
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :PercentageUnit
                              ] ;
              rdfs:comment "Dispersancy of something." ;
              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -845,11 +639,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Duration
 :Duration rdf:type owl:Class ;
-          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error59> ,
-                          :OperationProperty ,
+          rdfs:subClassOf :OperationProperty ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                             owl:allValuesFrom :TimeUnit
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :TimeUnit
                           ] ;
           rdfs:comment "Amount of time during which an event persists." ;
           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -859,11 +657,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#DynamicViscosity
 :DynamicViscosity rdf:type owl:Class ;
-                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error56> ,
-                                  :LiquidPhysicalProperty ,
+                  rdfs:subClassOf :LiquidPhysicalProperty ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                     owl:allValuesFrom :ViscosityUnit
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :ViscosityUnit
                                   ] ;
                   rdfs:comment "Dynamic viscosity of something." ;
                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -873,11 +675,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#ElectricalBreakdownVoltage
 :ElectricalBreakdownVoltage rdf:type owl:Class ;
-                            rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error18> ,
-                                            :LiquidPhysicalProperty ,
+                            rdfs:subClassOf :LiquidPhysicalProperty ,
                                             [ rdf:type owl:Restriction ;
                                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                               owl:allValuesFrom :VoltageUnit
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass :VoltageUnit
                                             ] ;
                             rdfs:comment "Electrical breakdown voltage of something." ;
                             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -942,11 +748,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#ExternalForce
 :ExternalForce rdf:type owl:Class ;
-               rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error51> ,
-                               :LoadProperty ,
+               rdfs:subClassOf :LoadProperty ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                  owl:allValuesFrom :ForceUnit
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ForceUnit
                                ] ;
                rdfs:comment "External force applied to something." ;
                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -982,11 +792,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#FlexuralStrength
 :FlexuralStrength rdf:type owl:Class ;
-                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error15> ,
-                                  :MechanicalProperty ,
+                  rdfs:subClassOf :MechanicalProperty ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                     owl:allValuesFrom :MechanicalUnit
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :MechanicalUnit
                                   ] ;
                   rdfs:comment "Flexural strength of something." ;
                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -996,11 +810,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#FoamingTendency
 :FoamingTendency rdf:type owl:Class ;
-                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error41> ,
-                                 :LiquidPhysicalProperty ,
+                 rdfs:subClassOf :LiquidPhysicalProperty ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                    owl:allValuesFrom :TendencyUnit
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :TendencyUnit
                                  ] ;
                  rdfs:comment "Foaming tendency of something." ;
                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1019,11 +837,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#FractureToughness
 :FractureToughness rdf:type owl:Class ;
-                   rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error49> ,
-                                   :MechanicalProperty ,
+                   rdfs:subClassOf :MechanicalProperty ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                      owl:allValuesFrom :ToughnessUnit
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :ToughnessUnit
                                    ] ;
                    rdfs:comment "Fracture toughness of something." ;
                    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1033,11 +855,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Frequency
 :Frequency rdf:type owl:Class ;
-           rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error13> ,
-                           :MovementProperty ,
+           rdfs:subClassOf :MovementProperty ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                              owl:allValuesFrom :FrequencyUnit
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :FrequencyUnit
                            ] ;
            rdfs:comment "Frequency of something." ;
            rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1065,11 +891,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#FrictionTorque
 :FrictionTorque rdf:type owl:Class ;
-                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error42> ,
-                                :LoadProperty ,
+                rdfs:subClassOf :LoadProperty ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                   owl:allValuesFrom :TorqueUnit
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :TorqueUnit
                                 ] ;
                 rdfs:comment "Friction torque applied to something." ;
                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1079,11 +909,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#GeometricDimension
 :GeometricDimension rdf:type owl:Class ;
-                    rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error47> ,
-                                    :BodyProperty ,
+                    rdfs:subClassOf :BodyProperty ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                       owl:allValuesFrom :DistanceUnit
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :DistanceUnit
                                     ] ;
                     rdfs:comment "Quantifiable attribute, or characteristic of the geometry of a body." ;
                     rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1120,11 +954,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#HardnessProperty
 :HardnessProperty rdf:type owl:Class ;
-                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error52> ,
-                                  :MechanicalProperty ,
+                  rdfs:subClassOf :MechanicalProperty ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                     owl:allValuesFrom :HardnessUnit
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :HardnessUnit
                                   ] ;
                   rdfs:comment "Quantifiable attribute, or characteristic of the hardness of a body." ;
                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1224,11 +1062,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Humidity
 :Humidity rdf:type owl:Class ;
-          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error21> ,
-                          :EnvironmentProperty ,
+          rdfs:subClassOf :EnvironmentProperty ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                             owl:allValuesFrom :PercentageUnit
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :PercentageUnit
                           ] ;
           rdfs:comment "Humidity of something." ;
           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1238,11 +1080,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Inclination
 :Inclination rdf:type owl:Class ;
-             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error43> ,
-                             :EnvironmentProperty ,
+             rdfs:subClassOf :EnvironmentProperty ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                owl:allValuesFrom :AngleUnit
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :AngleUnit
                              ] ;
              rdfs:comment "Inclination of the camber where the test is carried out." ;
              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1270,11 +1116,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads
 :InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads rdf:type owl:Class ;
-                                                                                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error6> ,
-                                                                                                  :LiquidPhysicalProperty ,
+                                                                                  rdfs:subClassOf :LiquidPhysicalProperty ,
                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                                                                                     owl:allValuesFrom :TensionUnit
+                                                                                                  ] ,
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                    owl:onClass :TensionUnit
                                                                                                   ] ;
                                                                                   rdfs:comment "Inhibited Hydraulic Fluids Oxidation Stability And Lubricating Oils For High Pressure Loads." ;
                                                                                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1314,11 +1164,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#InterfacialTensionBetweenWaterOil
 :InterfacialTensionBetweenWaterOil rdf:type owl:Class ;
-                                   rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error14> ,
-                                                   :LiquidPhysicalProperty ,
+                                   rdfs:subClassOf :LiquidPhysicalProperty ,
                                                    [ rdf:type owl:Restriction ;
                                                      owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                                      owl:allValuesFrom :TensionUnit
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass :TensionUnit
                                                    ] ;
                                    rdfs:comment "Interfacial Tension Between Water Oil" ;
                                    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1328,11 +1182,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#KinematicViscosity
 :KinematicViscosity rdf:type owl:Class ;
-                    rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error30> ,
-                                    :LiquidPhysicalProperty ,
+                    rdfs:subClassOf :LiquidPhysicalProperty ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                       owl:allValuesFrom :ViscosityUnit
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :ViscosityUnit
                                     ] ;
                     rdfs:comment "Kinematic viscosity of something." ;
                     rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1351,11 +1209,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#LinearSpeed
 :LinearSpeed rdf:type owl:Class ;
-             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error57> ,
-                             :MovementProperty ,
+             rdfs:subClassOf :MovementProperty ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                owl:allValuesFrom :VelocityUnit
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :VelocityUnit
                              ] ;
              rdfs:comment "Linear speed of something." ;
              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1375,11 +1237,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#LiquidThermalProperty
 :LiquidThermalProperty rdf:type owl:Class ;
-                       rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
-                                       :ThermalProperty ,
+                       rdfs:subClassOf :ThermalProperty ,
                                        [ rdf:type owl:Restriction ;
                                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                          owl:allValuesFrom :TemperatureUnit
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass :TemperatureUnit
                                        ] ;
                        owl:disjointWith :SolidThermalProperty ;
                        rdfs:comment "Qualifiable or quantifiable thermal attribute, or characteristic of a liquid." ;
@@ -1389,11 +1255,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Load
 :Load rdf:type owl:Class ;
-      rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error9> ,
-                      :LoadProperty ,
+      rdfs:subClassOf :LoadProperty ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                         owl:allValuesFrom :ForceUnit
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :ForceUnit
                       ] ;
       rdfs:comment "Load applied to something." ;
       rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1412,8 +1282,7 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#LoadPressure
 :LoadPressure rdf:type owl:Class ;
-              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error27> ,
-                              :LoadProperty ,
+              rdfs:subClassOf :LoadProperty ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                 owl:allValuesFrom [ rdf:type owl:Class ;
@@ -1421,6 +1290,11 @@ terms:Standard rdf:type owl:Class ;
                                                                   :PressureUnit
                                                                 )
                                                   ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass <https://w3id.org/isCharacterisedBy#Unit>
                               ] ;
               rdfs:comment "Load pressure applied to something." ;
               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1439,11 +1313,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#LoadRate
 :LoadRate rdf:type owl:Class ;
-          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error60> ,
-                          :LoadProperty ,
+          rdfs:subClassOf :LoadProperty ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                             owl:allValuesFrom :LoadRateUnit
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :LoadRateUnit
                           ] ;
           rdfs:comment "Load rate applied to something." ;
           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1485,11 +1363,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#LubricantsOxidationStability
 :LubricantsOxidationStability rdf:type owl:Class ;
-                              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error28> ,
-                                              :LiquidPhysicalProperty ,
+                              rdfs:subClassOf :LiquidPhysicalProperty ,
                                               [ rdf:type owl:Restriction ;
                                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                                 owl:allValuesFrom :TimeUnit
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass :TimeUnit
                                               ] ;
                               rdfs:comment "Lubricants oxidation stability." ;
                               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1513,11 +1395,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#MaxLoadWithoutFailure
 :MaxLoadWithoutFailure rdf:type owl:Class ;
-                       rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error54> ,
-                                       :FailureProperty ,
+                       rdfs:subClassOf :FailureProperty ,
                                        [ rdf:type owl:Restriction ;
                                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                          owl:allValuesFrom :ForceUnit
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass :ForceUnit
                                        ] ;
                        rdfs:comment "Maximun load before failure of the material." ;
                        rdfs:label "MaxLoadWithoutFailure" ;
@@ -1527,11 +1413,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#MaximumServiceTemperature
 :MaximumServiceTemperature rdf:type owl:Class ;
-                           rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error33> ,
-                                           :SolidThermalProperty ,
+                           rdfs:subClassOf :SolidThermalProperty ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                              owl:allValuesFrom :TemperatureUnit
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :TemperatureUnit
                                            ] ;
                            rdfs:comment "Maximun temperature of operation." ;
                            rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1559,11 +1449,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#MeltingPoint
 :MeltingPoint rdf:type owl:Class ;
-              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error23> ,
-                              :SolidThermalProperty ,
+              rdfs:subClassOf :SolidThermalProperty ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                 owl:allValuesFrom :TemperatureUnit
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :TemperatureUnit
                               ] ;
               rdfs:comment "Melting point  of something." ;
               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1604,11 +1498,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#NormalForce
 :NormalForce rdf:type owl:Class ;
-             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error8> ,
-                             :MovementProperty ,
+             rdfs:subClassOf :MovementProperty ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                owl:allValuesFrom :ForceUnit
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :ForceUnit
                              ] ;
              rdfs:comment "Normal force applied to something." ;
              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1627,29 +1525,20 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#O2Level
 :O2Level rdf:type owl:Class ;
-         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error17> ,
-                         :EnvironmentProperty ,
+         rdfs:subClassOf :EnvironmentProperty ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                            owl:allValuesFrom :ContentUnit
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :ContentUnit
                          ] ;
          rdfs:comment "O2 level of something." ;
          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
          rdfs:label "O2Level" ;
          ns1:term_status "Testing" .
-
-
-###  https://w3id.org/tribont/core#OperationCondition
-:OperationCondition rdf:type owl:Class ;
-                    rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                      owl:allValuesFrom :OperationProperty
-                                    ] ;
-                    rdfs:comment "Qualifiable or quantifiable operation attribute, or characteristic of something." ;
-                    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
-                    rdfs:label "OperationCondition" ;
-                    ns1:term_status "Testing" .
 
 
 ###  https://w3id.org/tribont/core#OperationProperty
@@ -1688,25 +1577,6 @@ terms:Standard rdf:type owl:Class ;
                   ns1:term_status "Testing" .
 
 
-###  https://w3id.org/tribont/core#Output
-:Output rdf:type owl:Class ;
-        rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                          owl:allValuesFrom [ rdf:type owl:Class ;
-                                              owl:unionOf ( :GeometricDimension
-                                                            :TechnicalProperty
-                                                            :Volume
-                                                            :Weight
-                                                          )
-                                            ]
-                        ] ;
-        rdfs:comment "Logical aggregation of the technical attributes, or characteristics obtained as Output of a test." ;
-        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
-        rdfs:label "Output" ;
-        ns1:term_status "Testing" .
-
-
 ###  https://w3id.org/tribont/core#PQIndex
 :PQIndex rdf:type owl:Class ;
          rdfs:subClassOf :LiquidPhysicalProperty ;
@@ -1727,11 +1597,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#PhLevel
 :PhLevel rdf:type owl:Class ;
-         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error5> ,
-                         :EnvironmentProperty ,
+         rdfs:subClassOf :EnvironmentProperty ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                            owl:allValuesFrom :ContentUnit
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :ContentUnit
                          ] ;
          rdfs:comment "Ph level of something." ;
          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1773,11 +1647,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Porosity
 :Porosity rdf:type owl:Class ;
-          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error46> ,
-                          :SolidPhysicalProperty ,
+          rdfs:subClassOf :SolidPhysicalProperty ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                             owl:allValuesFrom :PercentageUnit
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :PercentageUnit
                           ] ;
           rdfs:comment "Porosity of something." ;
           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1796,11 +1674,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Pressure
 :Pressure rdf:type owl:Class ;
-          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error4> ,
-                          :EnvironmentProperty ,
+          rdfs:subClassOf :EnvironmentProperty ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                             owl:allValuesFrom :PressureUnit
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :PressureUnit
                           ] ;
           rdfs:comment "Pressure applied to soemthing." ;
           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1815,15 +1697,6 @@ terms:Standard rdf:type owl:Class ;
               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
               rdfs:label "PressureUnit" ;
               ns1:term_status "Stable" .
-
-
-###  https://w3id.org/tribont/core#PropertyRole
-:PropertyRole rdf:type owl:Class ;
-              rdfs:subClassOf :Role ;
-              rdfs:comment "Allowed property roles." ;
-              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
-              rdfs:label "PropertyRole" ;
-              ns1:term_status "Testing" .
 
 
 ###  https://w3id.org/tribont/core#PumpFlowRate
@@ -1850,11 +1723,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#PumpTemperature
 :PumpTemperature rdf:type owl:Class ;
-                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error53> ,
-                                 :LubricantPumpProperty ,
+                 rdfs:subClassOf :LubricantPumpProperty ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                    owl:allValuesFrom :TemperatureUnit
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :TemperatureUnit
                                  ] ;
                  rdfs:comment "Pump temperature." ;
                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1873,11 +1750,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#RadiationDosage
 :RadiationDosage rdf:type owl:Class ;
-                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error29> ,
-                                 :EnvironmentProperty ,
+                 rdfs:subClassOf :EnvironmentProperty ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                    owl:allValuesFrom :ContentUnit
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :ContentUnit
                                  ] ;
                  rdfs:comment "Radiation dosage applied to something." ;
                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1949,11 +1830,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#RotationalSpeed
 :RotationalSpeed rdf:type owl:Class ;
-                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error39> ,
-                                 :MovementProperty ,
+                 rdfs:subClassOf :MovementProperty ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                    owl:allValuesFrom :RotationalSpeedUnit
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :RotationalSpeedUnit
                                  ] ;
                  rdfs:comment "Rotational speed of something." ;
                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -1963,8 +1848,12 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#RotationalSpeedUnit
 :RotationalSpeedUnit rdf:type owl:Class ;
-                     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error44> ,
-                                     <https://w3id.org/isCharacterisedBy#Unit> ;
+                     rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :RotationalSpeedUnit
+                                     ] ;
                      rdfs:comment "Measurement unit for rotational speed." ;
                      rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
                      rdfs:label "RotationalSpeedUnit" ;
@@ -2070,31 +1959,6 @@ terms:Standard rdf:type owl:Class ;
                     "https://w3id.org/tribont/core" .
 
 
-###  https://w3id.org/tribont/core#SampleBody
-:SampleBody rdf:type owl:Class ;
-            rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                              owl:allValuesFrom :BodyProperty
-                            ] ;
-            rdfs:comment "logical aggregation of  qualifiable or quantifiable attributes, or characteristics of a sample body." ;
-            rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
-            rdfs:label "SampleBody" .
-
-
-###  https://w3id.org/tribont/core#SampleSystemArrangement
-:SampleSystemArrangement rdf:type owl:Class ;
-                         rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                           owl:allValuesFrom :SystemProperty
-                                         ] ;
-                         rdfs:comment "logical aggregation of  qualifiable or quantifiable attributes, or characteristics of a sample system." ;
-                         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
-                         rdfs:label "SampleSystemArrangement" ;
-                         ns1:term_status "Testing" .
-
-
 ###  https://w3id.org/tribont/core#SampleTemperature
 :SampleTemperature rdf:type owl:Class ;
                    rdfs:subClassOf :Temperature ;
@@ -2133,11 +1997,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#ShearStability
 :ShearStability rdf:type owl:Class ;
-                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error3> ,
-                                :LiquidPhysicalProperty ,
+                rdfs:subClassOf :LiquidPhysicalProperty ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                   owl:allValuesFrom :PercentageUnit
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :PercentageUnit
                                 ] ;
                 rdfs:comment "Shear stability." ;
                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2165,11 +2033,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#SlidingSpeed
 :SlidingSpeed rdf:type owl:Class ;
-              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error38> ,
-                              :MovementProperty ,
+              rdfs:subClassOf :MovementProperty ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                 owl:allValuesFrom :VelocityUnit
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :VelocityUnit
                               ] ;
               rdfs:comment "Sliding speed of something." ;
               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2179,11 +2051,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#SlipPercentage
 :SlipPercentage rdf:type owl:Class ;
-                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error24> ,
-                                :MovementProperty ,
+                rdfs:subClassOf :MovementProperty ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                   owl:allValuesFrom :PercentageUnit
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :PercentageUnit
                                 ] ;
                 rdfs:comment "Slip percentage of something." ;
                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2237,11 +2113,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#SpecificHeatCapacity
 :SpecificHeatCapacity rdf:type owl:Class ;
-                      rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error32> ,
-                                      :SolidThermalProperty ,
+                      rdfs:subClassOf :SolidThermalProperty ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                         owl:allValuesFrom :HeatCapacityUnit
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass :HeatCapacityUnit
                                       ] ;
                       rdfs:comment "Specific heat capacity" ;
                       rdfs:label "SpecificHeatCapacity" ;
@@ -2287,8 +2167,7 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#StrokeAmplitude
 :StrokeAmplitude rdf:type owl:Class ;
-                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error58> ,
-                                 :MovementProperty ,
+                 rdfs:subClassOf :MovementProperty ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                    owl:allValuesFrom [ rdf:type owl:Class ;
@@ -2296,6 +2175,11 @@ terms:Standard rdf:type owl:Class ;
                                                                      :DistanceUnit
                                                                    )
                                                      ]
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass <https://w3id.org/isCharacterisedBy#Unit>
                                  ] ;
                  rdfs:comment "Stroke amplitude." ;
                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2305,11 +2189,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#StrokeDiameter
 :StrokeDiameter rdf:type owl:Class ;
-                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error11> ,
-                                :MovementProperty ,
+                rdfs:subClassOf :MovementProperty ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                   owl:allValuesFrom :DistanceUnit
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :DistanceUnit
                                 ] ;
                 rdfs:comment "Stroke diameter." ;
                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2319,11 +2207,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#StrokeLength
 :StrokeLength rdf:type owl:Class ;
-              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error22> ,
-                              :MovementProperty ,
+              rdfs:subClassOf :MovementProperty ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                 owl:allValuesFrom :DistanceUnit
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :DistanceUnit
                               ] ;
               rdfs:comment "Stroke length." ;
               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2407,19 +2299,6 @@ terms:Standard rdf:type owl:Class ;
                    ns1:term_status "Testing" .
 
 
-###  https://w3id.org/tribont/core#TechnicalSpecification
-:TechnicalSpecification rdf:type owl:Class ;
-                        rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                          owl:allValuesFrom :TechnicalProperty
-                                        ] ;
-                        rdfs:comment "Logical aggregation of value/value ranges of technical attributes or characteristics defining a material or sample." ;
-                        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
-                        rdfs:label "TechnicalSpecification" ;
-                        ns1:term_status "Testing" .
-
-
 ###  https://w3id.org/tribont/core#TeethHeight
 :TeethHeight rdf:type owl:Class ;
              rdfs:subClassOf :GeometricDimension ;
@@ -2440,11 +2319,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Temperature
 :Temperature rdf:type owl:Class ;
-             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error55> ,
-                             :EnvironmentProperty ,
+             rdfs:subClassOf :EnvironmentProperty ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                owl:allValuesFrom :TemperatureUnit
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :TemperatureUnit
                              ] ;
              rdfs:comment "Temperature ofsomebody or something." ;
              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2472,11 +2355,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#TensileStrength
 :TensileStrength rdf:type owl:Class ;
-                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error26> ,
-                                 :MechanicalProperty ,
+                 rdfs:subClassOf :MechanicalProperty ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                    owl:allValuesFrom :MechanicalUnit
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :MechanicalUnit
                                  ] ;
                  rdfs:comment "Tensile strength of something." ;
                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2495,11 +2382,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#ThermalConductivity
 :ThermalConductivity rdf:type owl:Class ;
-                     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error19> ,
-                                     :SolidThermalProperty ,
+                     rdfs:subClassOf :SolidThermalProperty ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                        owl:allValuesFrom :ThermalConductivityUnit
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :ThermalConductivityUnit
                                      ] ;
                      rdfs:comment "Thermal conductivity of something." ;
                      rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2518,11 +2409,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#ThermalExpansionCoefficient
 :ThermalExpansionCoefficient rdf:type owl:Class ;
-                             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error31> ,
-                                             :SolidThermalProperty ,
+                             rdfs:subClassOf :SolidThermalProperty ,
                                              [ rdf:type owl:Restriction ;
                                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                                owl:allValuesFrom :ExpansionCOFUnit
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :ExpansionCOFUnit
                                              ] ;
                              rdfs:comment "Thermal expansion coefficient of something." ;
                              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2550,11 +2445,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Torque
 :Torque rdf:type owl:Class ;
-        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error48> ,
-                        :LoadProperty ,
+        rdfs:subClassOf :LoadProperty ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                           owl:allValuesFrom :TorqueUnit
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :TorqueUnit
                         ] ;
         rdfs:comment "Torque applied to something." ;
         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2591,11 +2490,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Velocity
 :Velocity rdf:type owl:Class ;
-          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error45> ,
-                          :MovementProperty ,
+          rdfs:subClassOf :MovementProperty ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                             owl:allValuesFrom :VelocityUnit
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :VelocityUnit
                           ] ;
           rdfs:comment "Velocity of something." ;
           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2650,11 +2553,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Volume
 :Volume rdf:type owl:Class ;
-        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error25> ,
-                        :BodyProperty ,
+        rdfs:subClassOf :BodyProperty ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                           owl:allValuesFrom :CapacityUnit
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :CapacityUnit
                         ] ;
         rdfs:comment "Volume of someting." ;
         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2691,11 +2598,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#WearScarLength
 :WearScarLength rdf:type owl:Class ;
-                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error34> ,
-                                :WearScarProperty ,
+                rdfs:subClassOf :WearScarProperty ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                   owl:allValuesFrom :DistanceUnit
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :DistanceUnit
                                 ] ;
                 owl:disjointWith :WearScarVolume ;
                 rdfs:comment " Length of wear scar.." ;
@@ -2715,11 +2626,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#WearScarVolume
 :WearScarVolume rdf:type owl:Class ;
-                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error20> ,
-                                :WearScarProperty ,
+                rdfs:subClassOf :WearScarProperty ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                                   owl:allValuesFrom :CapacityUnit
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :CapacityUnit
                                 ] ;
                 rdfs:comment " Volume of wear scar.." ;
                 rdfs:label "WearScarVolume" ;
@@ -2747,11 +2662,15 @@ terms:Standard rdf:type owl:Class ;
 
 ###  https://w3id.org/tribont/core#Weight
 :Weight rdf:type owl:Class ;
-        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error40> ,
-                        :BodyProperty ,
+        rdfs:subClassOf :BodyProperty ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
                           owl:allValuesFrom :WeightUnit
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :WeightUnit
                         ] ;
         rdfs:comment "Weight of something." ;
         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
@@ -2983,12 +2902,6 @@ terms:Standard rdf:type owl:Class ;
 :cm3 rdf:type owl:NamedIndividual ,
               :CapacityUnit ;
      rdfs:label "cm3" .
-
-
-###  https://w3id.org/tribont/core#configuration
-:configuration rdf:type owl:NamedIndividual ,
-                        :PropertyRole ;
-               rdfs:label "configuration" .
 
 
 ###  https://w3id.org/tribont/core#corrosive_gas
@@ -3267,12 +3180,6 @@ terms:Standard rdf:type owl:Class ;
     rdfs:label "mb" .
 
 
-###  https://w3id.org/tribont/core#measurement
-:measurement rdf:type owl:NamedIndividual ,
-                      :PropertyRole ;
-             rdfs:label "measurement" .
-
-
 ###  https://w3id.org/tribont/core#mg
 :mg rdf:type owl:NamedIndividual ,
              :WeightUnit ;
@@ -3547,12 +3454,6 @@ terms:Standard rdf:type owl:Class ;
 :sonotrode rdf:type owl:NamedIndividual ,
                     :Shape ;
            rdfs:label "sonotrode" .
-
-
-###  https://w3id.org/tribont/core#specification
-:specification rdf:type owl:NamedIndividual ,
-                        :PropertyRole ;
-               rdfs:label "specification" .
 
 
 ###  https://w3id.org/tribont/core#stick_slip
@@ -4268,21 +4169,6 @@ terms:Standard rdf:type owl:Class ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -4301,13 +4187,7 @@ terms:Standard rdf:type owl:Class ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -4328,165 +4208,6 @@ terms:Standard rdf:type owl:Class ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -4494,15 +4215,6 @@ terms:Standard rdf:type owl:Class ;
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -4523,7 +4235,7 @@ terms:Standard rdf:type owl:Class ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -4538,19 +4250,28 @@ terms:Standard rdf:type owl:Class ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################
@@ -4566,19 +4287,6 @@ terms:identifier ns1:term_status "Stable" ;
 #################################################################
 #    General axioms
 #################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://dbpedia.org/ontology/Company>
-                <http://dbpedia.org/ontology/Document>
-                terms:Standard
-                <https://w3id.org/isCharacterisedBy#Feature>
-                <https://w3id.org/isCharacterisedBy#Property>
-                <https://w3id.org/isCharacterisedBy#SubjectOfInterest>
-                <https://w3id.org/isCharacterisedBy#Unit>
-                :Role
-              )
-] .
-
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :Acceleration
@@ -4775,16 +4483,6 @@ terms:identifier ns1:term_status "Stable" ;
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :OperationCondition
-                :Output
-                :SampleBody
-                :SampleSystemArrangement
-                :TechnicalSpecification
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
   owl:members ( :PumpFlowRate
                 :PumpRotationalSpeed
                 :PumpTemperature
@@ -4830,53 +4528,5 @@ terms:identifier ns1:term_status "Stable" ;
               )
 ] .
 
-
-#################################################################
-#    Rules
-#################################################################
-
-<urn:swrl:var#f> rdf:type swrl:Variable .
-
-<urn:swrl:var#p> rdf:type swrl:Variable .
-
-<urn:swrl:var#r> rdf:type swrl:Variable .
-
-[ rdf:type swrl:Imp ;
-   swrl:body [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:ClassAtom ;
-                           swrl:classPredicate <https://w3id.org/isCharacterisedBy#Feature> ;
-                           swrl:argument1 <urn:swrl:var#f>
-                         ] ;
-               rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:ClassAtom ;
-                                      swrl:classPredicate <https://w3id.org/isCharacterisedBy#Property> ;
-                                      swrl:argument1 <urn:swrl:var#p>
-                                    ] ;
-                          rdf:rest [ rdf:type swrl:AtomList ;
-                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                 swrl:propertyPredicate <https://w3id.org/isCharacterisedBy#hasProperty> ;
-                                                 swrl:argument1 <urn:swrl:var#f> ;
-                                                 swrl:argument2 <urn:swrl:var#p>
-                                               ] ;
-                                     rdf:rest [ rdf:type swrl:AtomList ;
-                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                            swrl:propertyPredicate :hasRole ;
-                                                            swrl:argument1 <urn:swrl:var#f> ;
-                                                            swrl:argument2 <urn:swrl:var#r>
-                                                          ] ;
-                                                rdf:rest rdf:nil
-                                              ]
-                                   ]
-                        ]
-             ] ;
-   swrl:head [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate :hasRole ;
-                           swrl:argument1 <urn:swrl:var#p> ;
-                           swrl:argument2 <urn:swrl:var#r>
-                         ] ;
-               rdf:rest rdf:nil
-             ]
- ] .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

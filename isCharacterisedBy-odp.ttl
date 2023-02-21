@@ -93,16 +93,6 @@ ns1:term_status rdf:type owl:AnnotationProperty .
                ns1:term_status "Testing" .
 
 
-###  https://w3id.org/isCharacterisedBy#hasProperty
-:hasProperty rdf:type owl:ObjectProperty ;
-             owl:inverseOf :isPropertyFor ;
-             rdfs:range :Property ;
-             rdfs:comment "Relation from a Feature to a Property." ;
-             rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
-             rdfs:label "hasProperty" ;
-             ns1:term_status "Testing" .
-
-
 ###  https://w3id.org/isCharacterisedBy#hasUnit
 :hasUnit rdf:type owl:ObjectProperty ;
          owl:inverseOf :isUnitFor ;
@@ -128,14 +118,6 @@ ns1:term_status rdf:type owl:AnnotationProperty .
               rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
               rdfs:label "isGroupingOf" ;
               ns1:term_status "Testing" .
-
-
-###  https://w3id.org/isCharacterisedBy#isPropertyFor
-:isPropertyFor rdf:type owl:ObjectProperty ;
-               rdfs:range :Feature ;
-               rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
-               rdfs:label "isPropertyFor" ;
-               ns1:term_status "Testing" .
 
 
 ###  https://w3id.org/isCharacterisedBy#isUnitFor
@@ -186,37 +168,9 @@ terms:title rdf:type owl:DatatypeProperty .
 #    Classes
 #################################################################
 
-###  https://w3id.org/isCharacterisedBy#Feature
-:Feature rdf:type owl:Class ;
-         rdfs:subClassOf [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasProperty ;
-                           owl:someValuesFrom :Property
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasProperty ;
-                           owl:allValuesFrom :Property
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty terms:identifier ;
-                           owl:cardinality "1"^^xsd:nonNegativeInteger
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty terms:title ;
-                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                         ] ;
-         rdfs:comment "Feature  is a logical aggregation of  qualifiable or quantifiable attribute, or characteristic of something. or somebody" ;
-         rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
-         rdfs:label "Feature" ;
-         ns1:term_status "Testing" .
-
-
 ###  https://w3id.org/isCharacterisedBy#Property
 :Property rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
-                            owl:onProperty :characterises ;
-                            owl:allValuesFrom :SubjectOfInterest
-                          ] ,
-                          [ rdf:type owl:Restriction ;
                             owl:onProperty :maxValue ;
                             owl:allValuesFrom xsd:float
                           ] ,
@@ -246,11 +200,7 @@ terms:title rdf:type owl:DatatypeProperty .
 :SubjectOfInterest rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
                                      owl:onProperty :isCharacterisedBy ;
-                                     owl:allValuesFrom [ rdf:type owl:Class ;
-                                                         owl:unionOf ( :Feature
-                                                                       :Property
-                                                                     )
-                                                       ]
+                                     owl:allValuesFrom :Property
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :isGroupingOf ;
@@ -288,25 +238,8 @@ terms:title rdf:type owl:DatatypeProperty .
  ] .
 
 #################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-   owl:members ( :Feature
-                 :Property
-                 :SubjectOfInterest
-                 :Unit
-               )
- ] .
-
-
-#################################################################
 #    Rules
 #################################################################
-
-<urn:swrl:var#so> rdf:type swrl:Variable .
-
-<urn:swrl:var#f> rdf:type swrl:Variable .
 
 <urn:swrl:var#p> rdf:type swrl:Variable .
 
@@ -317,46 +250,8 @@ terms:title rdf:type owl:DatatypeProperty .
 [ rdf:type swrl:Imp ;
    swrl:body [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:ClassAtom ;
-                           swrl:classPredicate :SubjectOfInterest ;
-                           swrl:argument1 <urn:swrl:var#so>
-                         ] ;
-               rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:ClassAtom ;
-                                      swrl:classPredicate :Feature ;
-                                      swrl:argument1 <urn:swrl:var#f>
-                                    ] ;
-                          rdf:rest [ rdf:type swrl:AtomList ;
-                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                 swrl:propertyPredicate :isCharacterisedBy ;
-                                                 swrl:argument1 <urn:swrl:var#so> ;
-                                                 swrl:argument2 <urn:swrl:var#f>
-                                               ] ;
-                                     rdf:rest [ rdf:type swrl:AtomList ;
-                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                            swrl:propertyPredicate :hasProperty ;
-                                                            swrl:argument1 <urn:swrl:var#f> ;
-                                                            swrl:argument2 <urn:swrl:var#p>
-                                                          ] ;
-                                                rdf:rest rdf:nil
-                                              ]
-                                   ]
-                        ]
-             ] ;
-   swrl:head [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate :isCharacterisedBy ;
-                           swrl:argument1 <urn:swrl:var#so> ;
-                           swrl:argument2 <urn:swrl:var#p>
-                         ] ;
-               rdf:rest rdf:nil
-             ]
- ] .
-
-[ rdf:type swrl:Imp ;
-   swrl:body [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:ClassAtom ;
-                           swrl:classPredicate :Feature ;
-                           swrl:argument1 <urn:swrl:var#f>
+                           swrl:classPredicate :Property ;
+                           swrl:argument1 <urn:swrl:var#p>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:ClassAtom ;
@@ -367,7 +262,7 @@ terms:title rdf:type owl:DatatypeProperty .
                                      rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                                                  swrl:propertyPredicate :isCharacterisedBy ;
                                                  swrl:argument1 <urn:swrl:var#soc> ;
-                                                 swrl:argument2 <urn:swrl:var#f>
+                                                 swrl:argument2 <urn:swrl:var#p>
                                                ] ;
                                      rdf:rest [ rdf:type swrl:AtomList ;
                                                 rdf:first [ rdf:type swrl:ClassAtom ;
@@ -390,7 +285,7 @@ terms:title rdf:type owl:DatatypeProperty .
                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                            swrl:propertyPredicate :isCharacterisedBy ;
                            swrl:argument1 <urn:swrl:var#soi> ;
-                           swrl:argument2 <urn:swrl:var#f>
+                           swrl:argument2 <urn:swrl:var#p>
                          ] ;
                rdf:rest rdf:nil
              ]
