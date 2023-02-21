@@ -19,7 +19,7 @@
                                    ns:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
                                    terms:created "2021-10-18" ;
                                    terms:creator """Patricia Casla <mailto:patricia.casla@tekniker.es>
-Izaskun Fernandez <mailto:izaskun.fernandez"""@tekniker.es> ;
+Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>""";
                                    terms:description "The xxx ontology xxx"@en ;
                                    terms:issued "2021-mm-dd" ;
                                    terms:title "XXX" ;
