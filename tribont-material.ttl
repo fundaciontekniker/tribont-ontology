@@ -1,0 +1,2229 @@
+@prefix : <http://w3id.org/tribont-ontology#> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix ns1: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix tribontcore: <https://w3id.org/tribontcore#> .
+@base <https://w3id.org/tribont/material> .
+
+<https://w3id.org/tribont/material> rdf:type owl:Ontology ;
+                                     owl:imports <https://w3id.org/tribont/core> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#cardinality
+owl:cardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxQualifiedCardinality
+owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+ns1:term_status rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/isCharacterisedBy#characterises
+<https://w3id.org/isCharacterisedBy#characterises> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/isCharacterisedBy#hasProperty
+<https://w3id.org/isCharacterisedBy#hasProperty> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/isCharacterisedBy#hasUnit
+<https://w3id.org/isCharacterisedBy#hasUnit> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/isCharacterisedBy#isCharacterisedBy
+<https://w3id.org/isCharacterisedBy#isCharacterisedBy> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/core#IsRoleFor
+<https://w3id.org/tribont/core#IsRoleFor> rdf:type owl:ObjectProperty ;
+                                          owl:inverseOf <https://w3id.org/tribont/core#hasRole> .
+
+
+###  https://w3id.org/tribont/core#hasRole
+<https://w3id.org/tribont/core#hasRole> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/material#hasElementRole
+:hasElementRole rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isElementRoleFor .
+
+
+###  https://w3id.org/tribont/material#hasNaming
+:hasNaming rdf:type owl:ObjectProperty ;
+           rdfs:comment "Relation between something and its standard naming." ;
+           rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+           rdfs:label "hasNaming" ;
+           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#hasTypicalUse
+:hasTypicalUse rdf:type owl:ObjectProperty ;
+               rdfs:comment "Relation between something and  its typical application." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+               rdfs:label "hasTypicalUse" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#isElementRoleFor
+:isElementRoleFor rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/material#isSuppliedBy
+:isSuppliedBy rdf:type owl:ObjectProperty ;
+              rdfs:comment "Relation between something and the company supplying it." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+              rdfs:label "isSuppliedBy" ;
+              ns1:term_status "Testing" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/tribont/material#number
+:number rdf:type owl:DatatypeProperty ;
+        rdfs:comment "Defined number for the unique designation of materials." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+        rdfs:label "number" ;
+        ns1:term_status "Testing" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Company
+<http://dbpedia.org/ontology/Company> rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/Document
+<http://dbpedia.org/ontology/Document> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error64
+<http://org.semanticweb.owlapi/error#Error64> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error65
+<http://org.semanticweb.owlapi/error#Error65> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error66
+<http://org.semanticweb.owlapi/error#Error66> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error67
+<http://org.semanticweb.owlapi/error#Error67> rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/Standard
+terms:Standard rdf:type owl:Class .
+
+
+###  https://w3id.org/isCharacterisedBy#Feature
+<https://w3id.org/isCharacterisedBy#Feature> rdf:type owl:Class .
+
+
+###  https://w3id.org/isCharacterisedBy#Property
+<https://w3id.org/isCharacterisedBy#Property> rdf:type owl:Class .
+
+
+###  https://w3id.org/isCharacterisedBy#SubjectOfInterest
+<https://w3id.org/isCharacterisedBy#SubjectOfInterest> rdf:type owl:Class .
+
+
+###  https://w3id.org/isCharacterisedBy#Unit
+<https://w3id.org/isCharacterisedBy#Unit> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#BodyProperty
+<https://w3id.org/tribont/core#BodyProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#ContentUnit
+<https://w3id.org/tribont/core#ContentUnit> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#ElectricalProperty
+<https://w3id.org/tribont/core#ElectricalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#LiquidPhysicalProperty
+<https://w3id.org/tribont/core#LiquidPhysicalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#LiquidThermalProperty
+<https://w3id.org/tribont/core#LiquidThermalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#MechanicalProperty
+<https://w3id.org/tribont/core#MechanicalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#OperationCondition
+<https://w3id.org/tribont/core#OperationCondition> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#OperationProperty
+<https://w3id.org/tribont/core#OperationProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#Output
+<https://w3id.org/tribont/core#Output> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#PercentageUnit
+<https://w3id.org/tribont/core#PercentageUnit> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#PhysicalProperty
+<https://w3id.org/tribont/core#PhysicalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#Role
+<https://w3id.org/tribont/core#Role> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#SampleBody
+<https://w3id.org/tribont/core#SampleBody> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#SampleSystemArrangement
+<https://w3id.org/tribont/core#SampleSystemArrangement> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#SolidPhysicalProperty
+<https://w3id.org/tribont/core#SolidPhysicalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#SolidThermalProperty
+<https://w3id.org/tribont/core#SolidThermalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#SystemProperty
+<https://w3id.org/tribont/core#SystemProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#TechnicalProperty
+<https://w3id.org/tribont/core#TechnicalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#TechnicalSpecification
+<https://w3id.org/tribont/core#TechnicalSpecification> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#ThermalProperty
+<https://w3id.org/tribont/core#ThermalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#Ag
+:Ag rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Ag in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Ag" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Al
+:Al rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Al in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Al" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Al203
+:Al203 rdf:type owl:Class ;
+       rdfs:subClassOf :ChemicalElementContent ;
+       rdfs:comment "Content of Al203 in a material." ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+       rdfs:label "Al203" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#AlN
+:AlN rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of AlN in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "AlN" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Alluminium-Flake
+:Alluminium-Flake rdf:type owl:Class ;
+                  rdfs:subClassOf :PolymerElementContent ;
+                  rdfs:comment "Content of Alluminium-Flake in a material." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                  rdfs:label "Alluminium-Flake" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#AlluminiumAlloy
+:AlluminiumAlloy rdf:type owl:Class ;
+                 rdfs:subClassOf :MetalAndAlloy ;
+                 rdfs:comment "Alluminium alloy." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                 rdfs:label "AlluminiumAlloy" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Antioxidant
+:Antioxidant rdf:type owl:Class ;
+             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error66> ,
+                             :OtherElementContent ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:allValuesFrom <https://w3id.org/tribont/core#PercentageUnit>
+                             ] ;
+             rdfs:comment "Antioxidant content for something." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+             rdfs:label "Antioxidant" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Aramid-Fiber
+:Aramid-Fiber rdf:type owl:Class ;
+              rdfs:subClassOf :PolymerElementContent ;
+              rdfs:comment "Content of Aramid-Fiber in a material." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+              rdfs:label "Aramid-Fiber" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#ArsenicOxide
+:ArsenicOxide rdf:type owl:Class ;
+              rdfs:subClassOf :ChemicalElementContent ;
+              rdfs:comment "Content of ArsenicOxide in a material." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+              rdfs:label "ArsenicOxide" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#As
+:As rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of As in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "As" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Au
+:Au rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Au in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Au" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#B
+:B rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of B in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "B" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#B203
+:B203 rdf:type owl:Class ;
+      rdfs:subClassOf :ChemicalElementContent ;
+      rdfs:comment "Content of B203 in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "B203" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#B4C
+:B4C rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of B4C in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "B4C" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#BN
+:BN rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of BN in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "BN" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#BaO
+:BaO rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of BaO in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "BaO" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#BaSO4
+:BaSO4 rdf:type owl:Class ;
+       rdfs:subClassOf :PolymerElementContent ;
+       rdfs:comment "Content of BaSO4 in a material." ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+       rdfs:label "BaSO4" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Be
+:Be rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Be in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Be" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#BeO
+:BeO rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of BeO in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "BeO" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Bi
+:Bi rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Biin a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Bi" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#C
+:C rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of C in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "C" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Ca
+:Ca rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Ca in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Ca" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#CaCO3
+:CaCO3 rdf:type owl:Class ;
+       rdfs:subClassOf :ChemicalElementContent ;
+       rdfs:comment "Content of CaCO3 in a material." ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+       rdfs:label "CaCO3" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#CaO
+:CaO rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of CaO in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "CaO" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#CalciumCarbonate-Powder
+:CalciumCarbonate-Powder rdf:type owl:Class ;
+                         rdfs:subClassOf :PolymerElementContent ;
+                         rdfs:comment "Content of CalciumCarbonate-Powder in a material." ;
+                         rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                         rdfs:label "CalciumCarbonate-Powder" ;
+                         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Carbon-Fiber
+:Carbon-Fiber rdf:type owl:Class ;
+              rdfs:subClassOf :PolymerElementContent ;
+              rdfs:comment "Content of Carbon-Fiber in a material." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+              rdfs:label "Carbon-Fiber" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Carbon-Powder
+:Carbon-Powder rdf:type owl:Class ;
+               rdfs:subClassOf :PolymerElementContent ;
+               rdfs:comment "Content of Carbon-Powder in a material." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+               rdfs:label "Carbon-Powder" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Cd
+:Cd rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Cd in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Cd" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#CdS
+:CdS rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of CdS in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "CdS" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Ce
+:Ce rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Ce in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Ce" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Cellulose
+:Cellulose rdf:type owl:Class ;
+           rdfs:subClassOf :PolymerElementContent ;
+           rdfs:comment "Content of Cellulose in a material." ;
+           rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+           rdfs:label "Cellulose" ;
+           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Ceramic
+:Ceramic rdf:type owl:Class ;
+         rdfs:subClassOf :NonPolymeric ;
+         rdfs:comment "Ceramic material." ;
+         rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+         rdfs:label "Ceramic" ;
+         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#ChemicalElementContent
+:ChemicalElementContent rdf:type owl:Class ;
+                        rdfs:subClassOf :ElementContent ;
+                        rdfs:comment "Content of chemical element in a material." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                        rdfs:label "ChemicalElementContent" ;
+                        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Co
+:Co rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Co in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Co" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Composite
+:Composite rdf:type owl:Class ;
+           rdfs:subClassOf :Hybrid ;
+           rdfs:comment "Composite material." ;
+           rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+           rdfs:label "Composite" ;
+           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Composition
+:Composition rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                               owl:someValuesFrom :ElementContent
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                               owl:allValuesFrom :ElementContent
+                             ] ;
+             rdfs:comment "Logical aggregation of value/value ranges of the elements composing  a material. The specification values are provided by the manufacturer or the applicable standards." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+             rdfs:label "Composition" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Cr
+:Cr rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Cr in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Cr" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Cr203
+:Cr203 rdf:type owl:Class ;
+       rdfs:subClassOf :ChemicalElementContent ;
+       rdfs:comment "Content of Cr203 in a material." ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+       rdfs:label "Cr203" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Cu
+:Cu rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Cu in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Cu" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Dy
+:Dy rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Dy in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Dy" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#ElastomerThermoplastic
+:ElastomerThermoplastic rdf:type owl:Class ;
+                        rdfs:subClassOf :Polymer ;
+                        rdfs:comment "Elastomer thermoplastic material." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                        rdfs:label "ElastomerThermoplastic" ;
+                        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#ElastomerThermoset
+:ElastomerThermoset rdf:type owl:Class ;
+                    rdfs:subClassOf :Polymer ;
+                    rdfs:comment "Elastomer thermoset material." ;
+                    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                    rdfs:label "ElastomerThermoset" ;
+                    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#ElementContent
+:ElementContent rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Property> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasElementRole ;
+                                  owl:allValuesFrom :ElementRole
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasElementRole ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ElementRole
+                                ] ;
+                rdfs:comment "Content of an specific element in a material." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                rdfs:label "ElementContent" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#ElementRole
+:ElementRole rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/tribont/core#Role> .
+
+
+###  https://w3id.org/tribont/material#Er
+:Er rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Er in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Er" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Eu
+:Eu rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Eu in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Eu" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#F
+:F rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of F in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "F" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Fe
+:Fe rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Fe in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Fe" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Fe203
+:Fe203 rdf:type owl:Class ;
+       rdfs:subClassOf :ChemicalElementContent ;
+       rdfs:comment "Content of Fe203 in a material." ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+       rdfs:label "Fe203" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#FlameRetardant
+:FlameRetardant rdf:type owl:Class ;
+                rdfs:subClassOf :OtherElementContent ;
+                rdfs:comment "Content of FlameRetardant in a material." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                rdfs:label "FlameRetardant" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#FluidLubricant
+:FluidLubricant rdf:type owl:Class ;
+                rdfs:subClassOf :Liquid ;
+                rdfs:comment "Fluid lubricant material." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                rdfs:label "FluidLubricant" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Foam
+:Foam rdf:type owl:Class ;
+      rdfs:subClassOf :Hybrid ;
+      rdfs:comment "Foam material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "Foam" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Gd
+:Gd rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Gd in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Gd" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Ge
+:Ge rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Ge in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Ge" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Glass
+:Glass rdf:type owl:Class ;
+       rdfs:subClassOf :NonPolymeric ;
+       rdfs:comment "Glass material." ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+       rdfs:label "Glass" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Glass-Fiber
+:Glass-Fiber rdf:type owl:Class ;
+             rdfs:subClassOf :PolymerElementContent ;
+             rdfs:comment "Content of Glass-Fiber in a material." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+             rdfs:label "Glass-Fiber" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Glass-MatFabric
+:Glass-MatFabric rdf:type owl:Class ;
+                 rdfs:subClassOf :PolymerElementContent ;
+                 rdfs:comment "Content of Glass-MatFabric in a material." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                 rdfs:label "Glass-MatFabric" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Glass-Other
+:Glass-Other rdf:type owl:Class ;
+             rdfs:subClassOf :PolymerElementContent ;
+             rdfs:comment "Content of Glass-Other in a material." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+             rdfs:label "Glass-Other" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Glycol
+:Glycol rdf:type owl:Class ;
+        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error65> ,
+                        :OtherElementContent ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                          owl:allValuesFrom <https://w3id.org/tribont/core#ContentUnit>
+                        ] ;
+        rdfs:comment "Content of glycol of something." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+        rdfs:label "Glycol" ;
+        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Graphite-Powder
+:Graphite-Powder rdf:type owl:Class ;
+                 rdfs:subClassOf :PolymerElementContent ;
+                 rdfs:comment "Content of Graphite-Powder in a material." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                 rdfs:label "Graphite-Powder" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Grease
+:Grease rdf:type owl:Class ;
+        rdfs:subClassOf :FluidLubricant ;
+        owl:disjointWith :Oil ;
+        rdfs:comment "Grease material." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+        rdfs:label "Grease" ;
+        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#H
+:H rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of H in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "H" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#H2O
+:H2O rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of H2O in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "H2O" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Hf
+:Hf rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Hf in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Hf" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Hg
+:Hg rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Hg in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Hg" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#HighAlloySteel
+:HighAlloySteel rdf:type owl:Class ;
+                rdfs:subClassOf :Steel ;
+                rdfs:comment "High alloy steel material." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                rdfs:label "HighAlloySteel" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Ho
+:Ho rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Ho in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Ho" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Honeycomb
+:Honeycomb rdf:type owl:Class ;
+           rdfs:subClassOf :Hybrid ;
+           rdfs:comment "Honeycomb material." ;
+           rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+           rdfs:label "Honeycomb" ;
+           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Hybrid
+:Hybrid rdf:type owl:Class ;
+        rdfs:subClassOf :NonPolymeric ;
+        rdfs:comment "Hybrid material." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+        rdfs:label "Hybrid" ;
+        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#ImpactModifier
+:ImpactModifier rdf:type owl:Class ;
+                rdfs:subClassOf :OtherElementContent ,
+                                :PolymerElementContent ;
+                rdfs:comment "Content of ImpactModifier in a material." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                rdfs:label "ImpactModifier" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#In
+:In rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of In in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "In" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Ir
+:Ir rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Ir in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Ir" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#La
+:La rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of La in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "La" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Li
+:Li rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Li in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Li" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Li2O
+:Li2O rdf:type owl:Class ;
+      rdfs:subClassOf :ChemicalElementContent ;
+      rdfs:comment "Content of Li2O in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "Li2O" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Liquid
+:Liquid rdf:type owl:Class ;
+        rdfs:subClassOf :Material ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                          owl:allValuesFrom [ rdf:type owl:Class ;
+                                              owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
+                                                            <https://w3id.org/tribont/core#LiquidPhysicalProperty>
+                                                            <https://w3id.org/tribont/core#LiquidThermalProperty>
+                                                            :Composition
+                                                            :ElementContent
+                                                            :LiquidTechnicalSpecification
+                                                          )
+                                            ]
+                        ] ;
+        owl:disjointWith :Solid ;
+        rdfs:comment "Liquid material." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+        rdfs:label "Liquid" ;
+        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#LiquidTechnicalSpecification
+:LiquidTechnicalSpecification rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( :MaterialTechnicalSpecification
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
+                                                                           owl:someValuesFrom :Liquid
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                              rdfs:subClassOf :MaterialTechnicalSpecification ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
+                                                                                  <https://w3id.org/tribont/core#LiquidPhysicalProperty>
+                                                                                  <https://w3id.org/tribont/core#LiquidThermalProperty>
+                                                                                )
+                                                                  ]
+                                              ] .
+
+
+###  https://w3id.org/tribont/material#LowAlloySteel
+:LowAlloySteel rdf:type owl:Class ;
+               rdfs:subClassOf :Steel ;
+               rdfs:comment "Low alloy steel material." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+               rdfs:label "LowAlloySteel" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Lu
+:Lu rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Lu in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Lu" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Material
+:Material rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                            owl:allValuesFrom [ rdf:type owl:Class ;
+                                                owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
+                                                              <https://w3id.org/tribont/core#MechanicalProperty>
+                                                              <https://w3id.org/tribont/core#PhysicalProperty>
+                                                              <https://w3id.org/tribont/core#ThermalProperty>
+                                                              :Composition
+                                                              :ElementContent
+                                                              :MaterialTechnicalSpecification
+                                                            )
+                                              ]
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasNaming ;
+                            owl:allValuesFrom :MaterialIdentification
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasTypicalUse ;
+                            owl:allValuesFrom :MaterialApplication
+                          ] ;
+          rdfs:comment "The basic material from which something is made." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+          rdfs:label "Material" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#MaterialApplication
+:MaterialApplication rdf:type owl:Class ;
+                     rdfs:comment "The possible uses of a material." ;
+                     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                     rdfs:label "MaterialApplication" ;
+                     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#MaterialIdentification
+:MaterialIdentification rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#MaterialNaming
+:MaterialNaming rdf:type owl:Class ;
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error67> ,
+                                :MaterialIdentification ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :number ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ;
+                owl:disjointWith :MaterialTradename ;
+                rdfs:comment "A unique name asssigned to a material independently of the manufacturer." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                rdfs:label "MaterialNaming" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#MaterialStandard
+:MaterialStandard rdf:type owl:Class ;
+                  rdfs:subClassOf terms:Standard ;
+                  rdfs:comment "A document approved by a recognized body that provides common to by fullfiled by a material." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                  rdfs:label "MaterialStandard" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#MaterialTechnicalSpecification
+:MaterialTechnicalSpecification rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/tribont/core#TechnicalSpecification>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
+                                                                             owl:someValuesFrom :Material
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] ;
+                                rdfs:subClassOf <https://w3id.org/tribont/core#TechnicalSpecification> ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                      owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
+                                                                                    <https://w3id.org/tribont/core#MechanicalProperty>
+                                                                                    <https://w3id.org/tribont/core#PhysicalProperty>
+                                                                                    <https://w3id.org/tribont/core#ThermalProperty>
+                                                                                  )
+                                                                    ]
+                                                ] .
+
+
+###  https://w3id.org/tribont/material#MaterialTradename
+:MaterialTradename rdf:type owl:Class ;
+                   rdfs:subClassOf :MaterialIdentification ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isSuppliedBy ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://dbpedia.org/ontology/Company>
+                                   ] ;
+                   rdfs:comment "Commercial name of a material defined by the manufactuer company." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                   rdfs:label "MaterialTradename" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#MetalAndAlloy
+:MetalAndAlloy rdf:type owl:Class ;
+               rdfs:subClassOf :NonPolymeric ;
+               rdfs:comment "Metal and alloy material." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+               rdfs:label "MetalAndAlloy" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Mg
+:Mg rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Mg in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Mg" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Mica
+:Mica rdf:type owl:Class ;
+      rdfs:subClassOf :PolymerElementContent ;
+      rdfs:comment "Content of Mica in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "Mica" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Mineral
+:Mineral rdf:type owl:Class ;
+         rdfs:subClassOf :PolymerElementContent ;
+         rdfs:comment "Content of Mineral in a material." ;
+         rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+         rdfs:label "Mineral" ;
+         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Mn
+:Mn rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Mn in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Mn" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Mo
+:Mo rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Mo in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Mo" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#MoS2
+:MoS2 rdf:type owl:Class ;
+      rdfs:subClassOf :PolymerElementContent ;
+      rdfs:comment "Content of MoS2 in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "MoS2" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#N
+:N rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of N in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "N" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Na2O
+:Na2O rdf:type owl:Class ;
+      rdfs:subClassOf :ChemicalElementContent ;
+      rdfs:comment "Content of Na2O in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "Na2O" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#NaCl
+:NaCl rdf:type owl:Class ;
+      rdfs:subClassOf :ChemicalElementContent ;
+      rdfs:comment "Content of NaCl in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "NaCl" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#NaturalMaterial
+:NaturalMaterial rdf:type owl:Class ;
+                 rdfs:subClassOf :NonPolymeric ;
+                 rdfs:comment "Natural material." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                 rdfs:label "NaturalMaterial" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Nb
+:Nb rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Nb in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Nb" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Nd
+:Nd rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Nd in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Nd" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Ni
+:Ni rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Ni in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Ni" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#NonPolymeric
+:NonPolymeric rdf:type owl:Class ;
+              rdfs:subClassOf :Solid ;
+              owl:disjointWith :Polymer ,
+                               :SolidLubricant ;
+              rdfs:comment "Non polymeric material." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+              rdfs:label "NonPolymeric" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#O
+:O rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of O in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "O" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#O2
+:O2 rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of O2 in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "O2" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Oil
+:Oil rdf:type owl:Class ;
+     rdfs:subClassOf :FluidLubricant ;
+     rdfs:comment "Oil material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "Oil" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Os
+:Os rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Os in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Os" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#OtherElementContent
+:OtherElementContent rdf:type owl:Class ;
+                     rdfs:subClassOf :ElementContent ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasElementRole ;
+                                       owl:hasValue :additive
+                                     ] ;
+                     rdfs:comment "Content of an additive element in a material." ;
+                     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                     rdfs:label "OtherElementContent" ;
+                     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#P
+:P rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of P in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "P" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#PTFE-Lubricant
+:PTFE-Lubricant rdf:type owl:Class ;
+                rdfs:subClassOf :SolidLubricant ;
+                rdfs:comment "PTFE-Lubricant material." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                rdfs:label "PTFE-Lubricant" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Pb
+:Pb rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Pb in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Pb" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#PbO
+:PbO rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of PbO in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "PbO" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Pd
+:Pd rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Pd in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Pd" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#PlasticThermoplastic
+:PlasticThermoplastic rdf:type owl:Class ;
+                      rdfs:subClassOf :Polymer ;
+                      rdfs:comment "Plastic thermoplastic material." ;
+                      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                      rdfs:label "PlasticThermoplastic" ;
+                      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#PlasticThermoset
+:PlasticThermoset rdf:type owl:Class ;
+                  rdfs:subClassOf :Polymer ;
+                  rdfs:comment "Plastic Thermoset material." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                  rdfs:label "PlasticThermoset" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Polymer
+:Polymer rdf:type owl:Class ;
+         rdfs:subClassOf :Solid ;
+         owl:disjointWith :SolidLubricant ;
+         rdfs:comment "Polymer" ;
+         rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+         rdfs:label "Polymer" ;
+         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#PolymerElementContent
+:PolymerElementContent rdf:type owl:Class ;
+                       rdfs:subClassOf :ElementContent ;
+                       rdfs:comment "Content of polymer element in a material." ;
+                       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                       rdfs:label "PolymerElementContent" ;
+                       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Pr
+:Pr rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Pr in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Pr" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Pt
+:Pt rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Pt in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Pt" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Rag-Cotton-Fabric
+:Rag-Cotton-Fabric rdf:type owl:Class ;
+                   rdfs:subClassOf :PolymerElementContent ;
+                   rdfs:comment "Content of Rag-Cotton-Fabric in a material." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                   rdfs:label "Rag-Cotton-Fabric" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Re
+:Re rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Re in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Re" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Rh
+:Rh rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Rh in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Rh" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Ru
+:Ru rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Ru in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Ru" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#S
+:S rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of S in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "S" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Sb
+:Sb rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Sb in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Sb" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Sc
+:Sc rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Sc in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Sc" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Se
+:Se rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Se in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Se" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Si
+:Si rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Si in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Si" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Si3N4
+:Si3N4 rdf:type owl:Class ;
+       rdfs:subClassOf :ChemicalElementContent ;
+       rdfs:comment "Content of Si3N4 in a material." ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+       rdfs:label "Si3N4" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#SiC
+:SiC rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of SiC in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "SiC" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#SiO2
+:SiO2 rdf:type owl:Class ;
+      rdfs:subClassOf :ChemicalElementContent ;
+      rdfs:comment "Content of SiO2 in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "SiO2" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Silica-Fumed
+:Silica-Fumed rdf:type owl:Class ;
+              rdfs:subClassOf :PolymerElementContent ;
+              rdfs:comment "Content of Silica-Fumed in a material." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+              rdfs:label "Silica-Fumed" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Silicone-Lubricant
+:Silicone-Lubricant rdf:type owl:Class ;
+                    rdfs:subClassOf :SolidLubricant ;
+                    rdfs:comment "Silicone-Lubricant material." ;
+                    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                    rdfs:label "Silicone-Lubricant" ;
+                    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Sm
+:Sm rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Sm  in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Sm" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Sn
+:Sn rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Sn in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Sn" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Solid
+:Solid rdf:type owl:Class ;
+       rdfs:subClassOf :Material ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                             owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
+                                                           <https://w3id.org/tribont/core#MechanicalProperty>
+                                                           <https://w3id.org/tribont/core#SolidPhysicalProperty>
+                                                           <https://w3id.org/tribont/core#SolidThermalProperty>
+                                                           :Composition
+                                                           :ElementContent
+                                                           :SolidTechnicalSpecification
+                                                         )
+                                           ]
+                       ] ;
+       rdfs:comment "Solid material." ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+       rdfs:label "Solid" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#SolidContaminants
+:SolidContaminants rdf:type owl:Class ;
+                   rdfs:subClassOf :OtherElementContent ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                     owl:hasValue <https://w3id.org/tribont/core#percentage>
+                                   ] ;
+                   rdfs:comment "Solid contaminants." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                   rdfs:label "SolidContaminants" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#SolidLubricant
+:SolidLubricant rdf:type owl:Class ;
+                rdfs:subClassOf :Solid ;
+                rdfs:comment "Solid lubricant material." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                rdfs:label "SolidLubricant" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#SolidTechnicalSpecification
+:SolidTechnicalSpecification rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( :MaterialTechnicalSpecification
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
+                                                                          owl:someValuesFrom :Solid
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             rdfs:subClassOf :MaterialTechnicalSpecification ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
+                                                                                 <https://w3id.org/tribont/core#MechanicalProperty>
+                                                                                 <https://w3id.org/tribont/core#SolidPhysicalProperty>
+                                                                                 <https://w3id.org/tribont/core#SolidThermalProperty>
+                                                                               )
+                                                                 ]
+                                             ] .
+
+
+###  https://w3id.org/tribont/material#Sr
+:Sr rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Sr in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Sr" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#StainlessSteel
+:StainlessSteel rdf:type owl:Class ;
+                rdfs:subClassOf :Steel ;
+                rdfs:comment "Stainless steel material." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                rdfs:label "StainlessSteel" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#StainlessSteel-Fiber
+:StainlessSteel-Fiber rdf:type owl:Class ;
+                      rdfs:subClassOf :PolymerElementContent ;
+                      rdfs:comment "Content of StainlessSteel-Fiber in a material." ;
+                      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                      rdfs:label "StainlessSteel-Fiber" ;
+                      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Steel
+:Steel rdf:type owl:Class ;
+       rdfs:subClassOf :MetalAndAlloy ;
+       rdfs:comment "Steel material." ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+       rdfs:label "Steel" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#SulfateAsh
+:SulfateAsh rdf:type owl:Class ;
+            rdfs:subClassOf :OtherElementContent ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                              owl:hasValue <https://w3id.org/tribont/core#percentage>
+                            ] ;
+            rdfs:comment "Sulfate ash ." ;
+            rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+            rdfs:label "SulfateAsh" ;
+            ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Ta
+:Ta rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Ta in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Ta" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#TaC
+:TaC rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of TaC in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "TaC" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Talc
+:Talc rdf:type owl:Class ;
+      rdfs:subClassOf :PolymerElementContent ;
+      rdfs:comment "Content of Talc in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "Talc" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Tb
+:Tb rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Tb in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Tb" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Te
+:Te rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Te in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Te" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#ThO2
+:ThO2 rdf:type owl:Class ;
+      rdfs:subClassOf :ChemicalElementContent ;
+      rdfs:comment "Content of ThO2 in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "ThO2" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Ti
+:Ti rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Ti in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Ti" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#TiB2
+:TiB2 rdf:type owl:Class ;
+      rdfs:subClassOf :ChemicalElementContent ;
+      rdfs:comment "Content of TiB2 in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "TiB2" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#TiC
+:TiC rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of TiC in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "TiC" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#TiO2
+:TiO2 rdf:type owl:Class ;
+      rdfs:subClassOf :ChemicalElementContent ;
+      rdfs:comment "Content of TiO2 in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "TiO2" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#TitaniumAlloy
+:TitaniumAlloy rdf:type owl:Class ;
+               rdfs:subClassOf :MetalAndAlloy ;
+               rdfs:comment "Titanium alloy material." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+               rdfs:label "TitaniumAlloy" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Tl
+:Tl rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Tl in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Tl" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Tm
+:Tm rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Tm in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Tm" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#TolyltriazoleAndOtherNonFerrousMetalInhibitor
+:TolyltriazoleAndOtherNonFerrousMetalInhibitor rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error64> ,
+                                                               :OtherElementContent ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                                                 owl:allValuesFrom <https://w3id.org/tribont/core#PercentageUnit>
+                                                               ] ;
+                                               rdfs:comment "Tolyltriazole And Other Non Ferrous Metal Inhibitors Content." ;
+                                               rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                                               rdfs:label "TolyltriazoleAndOtherNonFerrousMetalInhibitor" ;
+                                               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#ToolSteel
+:ToolSteel rdf:type owl:Class ;
+           rdfs:subClassOf :Steel ;
+           rdfs:comment "Steel used for tooling." ;
+           rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+           rdfs:label "ToolSteel" ;
+           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#U
+:U rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of U in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "U" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#UVStabilizer
+:UVStabilizer rdf:type owl:Class ;
+              rdfs:subClassOf :OtherElementContent ;
+              rdfs:comment "Content of UVStabilizer in a material." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+              rdfs:label "UVStabilizer" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#V
+:V rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of V in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "V" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#W
+:W rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of W in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "W" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#WC
+:WC rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of WC in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "WC" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Water
+:Water rdf:type owl:Class ;
+       rdfs:subClassOf :OtherElementContent ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                         owl:allValuesFrom <https://w3id.org/tribont/core#ContentUnit>
+                       ] ;
+       rdfs:comment "Water content of something." ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+       rdfs:label "Water" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Y
+:Y rdf:type owl:Class ;
+   rdfs:subClassOf :ChemicalElementContent ;
+   rdfs:comment "Content of Y in a material." ;
+   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+   rdfs:label "Y" ;
+   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Y203
+:Y203 rdf:type owl:Class ;
+      rdfs:subClassOf :ChemicalElementContent ;
+      rdfs:comment "Content of Y203 in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "Y203" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Yb
+:Yb rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Yb in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Yb" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Zn
+:Zn rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Zn in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Zn" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#ZnO
+:ZnO rdf:type owl:Class ;
+     rdfs:subClassOf :ChemicalElementContent ;
+     rdfs:comment "Content of ZnO in a material." ;
+     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+     rdfs:label "ZnO" ;
+     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Zr
+:Zr rdf:type owl:Class ;
+    rdfs:subClassOf :ChemicalElementContent ;
+    rdfs:comment "Content of Zr in a material." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+    rdfs:label "Zr" ;
+    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#ZrO2
+:ZrO2 rdf:type owl:Class ;
+      rdfs:subClassOf :ChemicalElementContent ;
+      rdfs:comment "Content of ZrO2 in a material." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+      rdfs:label "ZrO2" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Anti-friction/wearLubricant
+<https://w3id.org/tribont/material#Anti-friction/wearLubricant> rdf:type owl:Class ;
+                                                                rdfs:subClassOf :OtherElementContent ;
+                                                                rdfs:comment "Content of Anti-friction/wearLubricant in a material." ;
+                                                                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                                                                rdfs:label "Anti-friction/wearLubricant" ;
+                                                                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Plasticizer/Oil
+<https://w3id.org/tribont/material#Plasticizer/Oil> rdf:type owl:Class ;
+                                                    rdfs:subClassOf :OtherElementContent ;
+                                                    rdfs:comment "Content of Plasticizer/Oil in a material." ;
+                                                    rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                                                    rdfs:label "Plasticizer/Oil" ;
+                                                    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/material#Plasticizer/phthalate
+<https://w3id.org/tribont/material#Plasticizer/phthalate> rdf:type owl:Class ;
+                                                          rdfs:subClassOf :OtherElementContent ;
+                                                          rdfs:comment "Content of Plasticizer/phthalate in a material." ;
+                                                          rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                                                          rdfs:label "Plasticizer/phthalate" ;
+                                                          ns1:term_status "Testing" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/tribont/core#percentage
+<https://w3id.org/tribont/core#percentage> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/tribont/material#AISI_52100
+:AISI_52100 rdf:type owl:NamedIndividual ,
+                     :MaterialStandard ;
+            rdfs:label "AISI_52100" .
+
+
+###  https://w3id.org/tribont/material#ASTM_A295
+:ASTM_A295 rdf:type owl:NamedIndividual ,
+                    :MaterialStandard ;
+           rdfs:label "ASTM_A295" .
+
+
+###  https://w3id.org/tribont/material#BS_970
+:BS_970 rdf:type owl:NamedIndividual ,
+                 :MaterialStandard ;
+        rdfs:label "BS_970" .
+
+
+###  https://w3id.org/tribont/material#CAS_Number
+:CAS_Number rdf:type owl:NamedIndividual ,
+                     :MaterialStandard ;
+            rdfs:label "CAS_Number" .
+
+
+###  https://w3id.org/tribont/material#DIN_17230
+:DIN_17230 rdf:type owl:NamedIndividual ,
+                    :MaterialStandard ;
+           rdfs:label "DIN_17230" .
+
+
+###  https://w3id.org/tribont/material#JIS_G4805
+:JIS_G4805 rdf:type owl:NamedIndividual ,
+                    :MaterialStandard ;
+           rdfs:label "JIS_G4805" .
+
+
+###  https://w3id.org/tribont/material#additive
+:additive rdf:type owl:NamedIndividual ,
+                   :ElementRole ;
+          rdfs:label "additive" .
+
+
+###  https://w3id.org/tribont/material#basic
+:basic rdf:type owl:NamedIndividual ,
+                :ElementRole ;
+       rdfs:label "basic" .
+
+
+###  https://w3id.org/tribont/material#filler
+:filler rdf:type owl:NamedIndividual ,
+                 :ElementRole ;
+        rdfs:label "filler" .
+
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( <http://dbpedia.org/ontology/Company>
+                 <http://dbpedia.org/ontology/Document>
+                 terms:Standard
+                 <https://w3id.org/isCharacterisedBy#Feature>
+                 <https://w3id.org/isCharacterisedBy#Property>
+                 <https://w3id.org/isCharacterisedBy#SubjectOfInterest>
+                 <https://w3id.org/isCharacterisedBy#Unit>
+                 <https://w3id.org/tribont/core#Role>
+                 :MaterialApplication
+                 :MaterialIdentification
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://w3id.org/tribont/core#BodyProperty>
+                <https://w3id.org/tribont/core#OperationProperty>
+                <https://w3id.org/tribont/core#SystemProperty>
+                <https://w3id.org/tribont/core#TechnicalProperty>
+                :ElementContent
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://w3id.org/tribont/core#OperationCondition>
+                <https://w3id.org/tribont/core#Output>
+                <https://w3id.org/tribont/core#SampleBody>
+                <https://w3id.org/tribont/core#SampleSystemArrangement>
+                <https://w3id.org/tribont/core#TechnicalSpecification>
+                :Composition
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Ag
+                :Al
+                :Al203
+                :AlN
+                :ArsenicOxide
+                :As
+                :Au
+                :B
+                :B203
+                :B4C
+                :BN
+                :BaO
+                :Be
+                :BeO
+                :Bi
+                :C
+                :Ca
+                :CaCO3
+                :CaO
+                :Cd
+                :CdS
+                :Ce
+                :Co
+                :Cr
+                :Cr203
+                :Cu
+                :Dy
+                :Er
+                :Eu
+                :F
+                :Fe
+                :Fe203
+                :Gd
+                :Ge
+                :H
+                :H2O
+                :Hf
+                :Hg
+                :Ho
+                :In
+                :Ir
+                :La
+                :Li
+                :Li2O
+                :Lu
+                :Mg
+                :Mn
+                :Mo
+                :N
+                :Na2O
+                :NaCl
+                :Nb
+                :Nd
+                :Ni
+                :O
+                :O2
+                :Os
+                :P
+                :Pb
+                :PbO
+                :Pd
+                :Pr
+                :Pt
+                :Re
+                :Rh
+                :Ru
+                :S
+                :Sb
+                :Sc
+                :Se
+                :Si
+                :Si3N4
+                :SiC
+                :SiO2
+                :Sm
+                :Sn
+                :Sr
+                :Ta
+                :TaC
+                :Tb
+                :Te
+                :ThO2
+                :Ti
+                :TiB2
+                :TiC
+                :TiO2
+                :Tl
+                :Tm
+                :U
+                :V
+                :W
+                :WC
+                :Y
+                :Y203
+                :Yb
+                :Zn
+                :ZnO
+                :Zr
+                :ZrO2
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Alluminium-Flake
+                :Aramid-Fiber
+                :BaSO4
+                :CalciumCarbonate-Powder
+                :Carbon-Fiber
+                :Carbon-Powder
+                :Cellulose
+                :Glass-Fiber
+                :Glass-MatFabric
+                :Glass-Other
+                :Graphite-Powder
+                :ImpactModifier
+                :Mica
+                :Mineral
+                :MoS2
+                :Rag-Cotton-Fabric
+                :Silica-Fumed
+                :StainlessSteel-Fiber
+                :Talc
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FlameRetardant
+                :ImpactModifier
+                :UVStabilizer
+                <https://w3id.org/tribont/material#Anti-friction/wearLubricant>
+                <https://w3id.org/tribont/material#Plasticizer/Oil>
+                <https://w3id.org/tribont/material#Plasticizer/phthalate>
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

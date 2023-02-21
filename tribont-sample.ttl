@@ -1,0 +1,652 @@
+@prefix : <https://w3id.org/trib#> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix ns1: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@base <https://w3id.org/tribont/sample> .
+
+<https://w3id.org/tribont/sample> rdf:type owl:Ontology ;
+                                   owl:imports <https://w3id.org/tribont/core> ,
+                                               <https://w3id.org/tribont/material> ;
+                                   ns:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                   terms:created "2021-10-18" ;
+                                   terms:creator """Patricia Casla <mailto:patricia.casla@tekniker.es>
+Izaskun Fernandez <mailto:izaskun.fernandez"""@tekniker.es> ;
+                                   terms:description "The xxx ontology xxx"@en ;
+                                   terms:issued "2021-mm-dd" ;
+                                   terms:title "XXX" ;
+                                   vann:preferredNamespacePrefix "tribEq" ;
+                                   owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+ns:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+terms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+terms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+terms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+terms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+terms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+ns1:term_status rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/isCharacterisedBy#belongsTo
+<https://w3id.org/isCharacterisedBy#belongsTo> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/sample#hasCoatingMaterial
+:hasCoatingMaterial rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :isCoatingMaterialFor ;
+                    rdfs:comment "Relation between a sample and the coating material that is part of it." ;
+                    rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                    rdfs:label "hasCoatingMaterial" ;
+                    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#hasCoreMaterial
+:hasCoreMaterial rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isCoreMaterialFor ;
+                 rdfs:comment "Relation between a sample and the core material that is part of it." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                 rdfs:label "hasCoreMaterial" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#hasLubricationSample
+:hasLubricationSample rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :isLubricationSampleFor ;
+                      rdfs:comment "Relation between a sample system and a lubricant material that is part of it." ;
+                      rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                      rdfs:label "hasLubricationSample" ;
+                      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#hasMovingSample
+:hasMovingSample rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isStaticSampleFor ;
+                 rdfs:comment "Relation between a sample system and a moving sample body that is part of it." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                 rdfs:label "hasMovingSample" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#hasStaticSample
+:hasStaticSample rdf:type owl:ObjectProperty ;
+                 rdfs:comment "Relation between a sample system and a static sample body that is part of it." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                 rdfs:label "hasStaticSample" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#isCoatingMaterialFor
+:isCoatingMaterialFor rdf:type owl:ObjectProperty ;
+                      rdfs:comment "Relation between a coating material and the sample body of which it is a part." ;
+                      rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                      rdfs:label "isCoatingMaterialFor" ;
+                      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#isCoreMaterialFor
+:isCoreMaterialFor rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Relation between a core material and the sample body of which it is a part." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                   rdfs:label "isCoreMaterialFor" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#isLubricationSampleFor
+:isLubricationSampleFor rdf:type owl:ObjectProperty ;
+                        rdfs:comment "Relation between a lubrication sample body and the sample system of which it is a part." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                        rdfs:label "isLubricationSampleFor" ;
+                        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#isMovingSampleFor
+:isMovingSampleFor rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Relation between a moving sample body and the sample system of which it is a part." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                   rdfs:label "isMovingSampleFor" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#isStaticSampleFor
+:isStaticSampleFor rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Relation between a static sample body and the sample system of which it is a part." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                   rdfs:label "isStaticSampleFor" ;
+                   ns1:term_status "Testing" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/tribont/sample#executionDate
+:executionDate rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Data when something has been executed." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+               rdfs:label "executionDate" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#preparationDate
+:preparationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:comment "Data when something has been prepared." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                 rdfs:label "preparationDate" ;
+                 ns1:term_status "Testing" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://org.semanticweb.owlapi/error#Error68
+<http://org.semanticweb.owlapi/error#Error68> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error69
+<http://org.semanticweb.owlapi/error#Error69> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error70
+<http://org.semanticweb.owlapi/error#Error70> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error71
+<http://org.semanticweb.owlapi/error#Error71> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#HardnessProperty
+<https://w3id.org/tribont/core#HardnessProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#SurfaceProperty
+<https://w3id.org/tribont/core#SurfaceProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#Composition
+<https://w3id.org/tribont/material#Composition> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#ElementContent
+<https://w3id.org/tribont/material#ElementContent> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#FluidLubricant
+<https://w3id.org/tribont/material#FluidLubricant> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#Material
+<https://w3id.org/tribont/material#Material> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#SolidLubricant
+<https://w3id.org/tribont/material#SolidLubricant> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/sample#CoatedSample
+:CoatedSample rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( :Sample
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :hasCoatingMaterial ;
+                                                           owl:someValuesFrom <https://w3id.org/tribont/material#Material>
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf :Sample ;
+              rdfs:comment "Sample body which has a coating moterial." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+              rdfs:label "CoatedSample" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#CoatingProperty
+:CoatingProperty rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Property> ;
+                 rdfs:comment "Qualifiable or quantifiable attribute, or characteristic of a coating." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                 rdfs:label "CoatingProperty" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#CoatingThickness
+:CoatingThickness rdf:type owl:Class ;
+                  rdfs:subClassOf :CoatingProperty ;
+                  rdfs:comment "Thickness of a coating." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                  rdfs:label "CoatingThickness" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#CoatingType
+:CoatingType rdf:type owl:Class ;
+             rdfs:subClassOf :CoatingProperty ;
+             rdfs:comment "Type of coating." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+             rdfs:label "CoatingType" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#LubricatedSampleSystem
+:LubricatedSampleSystem rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :SampleSystem
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :hasLubricationSample ;
+                                                                     owl:someValuesFrom :LubricationSample
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf :SampleSystem ;
+                        rdfs:comment "Sample system that includes a lubricant as part of it." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                        rdfs:label "LubricatedSampleSystem" ;
+                        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#LubricationSample
+:LubricationSample rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :Sample
+                                                              [ rdf:type owl:Class ;
+                                                                owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty :hasCoreMaterial ;
+                                                                                owl:someValuesFrom <https://w3id.org/tribont/material#FluidLubricant>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty :hasCoreMaterial ;
+                                                                                owl:someValuesFrom <https://w3id.org/tribont/material#SolidLubricant>
+                                                                              ]
+                                                                            )
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf :Sample ;
+                   rdfs:comment "Portion of lubricant material selected from a larger quantity of lubricant material for testing purposes. Lubricant material can be fluid or solid lubricants " ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                   rdfs:label "LubricationSample" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#Sample
+:Sample rdf:type owl:Class ;
+        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error70> ,
+                        <http://org.semanticweb.owlapi/error#Error71> ,
+                        <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                          owl:allValuesFrom [ rdf:type owl:Class ;
+                                              owl:unionOf ( <https://w3id.org/tribont/core#BodyProperty>
+                                                            <https://w3id.org/tribont/core#HardnessProperty>
+                                                            <https://w3id.org/tribont/core#SurfaceProperty>
+                                                            :CoatingProperty
+                                                            :SampleBodyConfiguration
+                                                            :SampleCoatingSpecification
+                                                            :SampleTechnicalSpecification
+                                                          )
+                                            ]
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasCoatingMaterial ;
+                          owl:allValuesFrom <https://w3id.org/tribont/material#Material>
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasCoreMaterial ;
+                          owl:allValuesFrom <https://w3id.org/tribont/material#Material>
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :preparationDate ;
+                          owl:allValuesFrom xsd:dateTime
+                        ] ;
+        rdfs:comment "Portion of material which can be transformed or not for testing purposes. For example the moving and static samples in a tribological tests are transformed following a specific manufacturing process to achieve the required body characteristics, while lubricants acting as lubrication body are not transformed." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+        rdfs:label "Sample" ;
+        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#SampleBatch
+:SampleBatch rdf:type owl:Class ;
+             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error68> ,
+                             <http://org.semanticweb.owlapi/error#Error69> ,
+                             <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                   owl:unionOf ( <https://w3id.org/tribont/core#BodyProperty>
+                                                                 <https://w3id.org/tribont/core#HardnessProperty>
+                                                                 <https://w3id.org/tribont/core#SurfaceProperty>
+                                                                 :CoatingProperty
+                                                                 :SampleBodyConfiguration
+                                                                 :SampleCoatingSpecification
+                                                                 :SampleTechnicalSpecification
+                                                               )
+                                                 ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasCoatingMaterial ;
+                               owl:allValuesFrom <https://w3id.org/tribont/material#Material>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasCoreMaterial ;
+                               owl:allValuesFrom <https://w3id.org/tribont/material#Material>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :preparationDate ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:dateTime
+                             ] ;
+             rdfs:comment "An aggrupation of samples which have been transformed at the same time using a same material and share a set of common atributes of characteristics." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+             rdfs:label "SampleBatch" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#SampleBodyConfiguration
+:SampleBodyConfiguration rdf:type owl:Class ;
+                         rdfs:subClassOf <https://w3id.org/tribont/core#SampleBody> ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                           owl:allValuesFrom <https://w3id.org/tribont/core#BodyProperty>
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <https://w3id.org/tribont/core#hasRole> ;
+                                           owl:hasValue <https://w3id.org/tribont/core#configuration>
+                                         ] ;
+                         rdfs:comment "logical aggregation of nominal values of qualifiable or quantifiable attributes, or characteristics of a sample body." ;
+                         rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                         rdfs:label "SampleBodyConfiguration" ;
+                         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#SampleCoatingSpecification
+:SampleCoatingSpecification rdf:type owl:Class ;
+                            rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                              owl:allValuesFrom :CoatingProperty
+                                            ] ;
+                            rdfs:comment "" ;
+                            rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                            rdfs:label "SampleCoatingSpecification" ;
+                            ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#SampleSystem
+:SampleSystem rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                    owl:unionOf ( <https://w3id.org/tribont/core#SampleSystemArrangement>
+                                                                  <https://w3id.org/tribont/core#SystemProperty>
+                                                                )
+                                                  ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasLubricationSample ;
+                                owl:allValuesFrom :LubricationSample
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasMovingSample ;
+                                owl:allValuesFrom :Sample
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasStaticSample ;
+                                owl:allValuesFrom :Sample
+                              ] ;
+              rdfs:comment "Object aggregate that has part two or more elements that interact with each other and it is used for testing purposes. For example a tribological sample system aggrupates at least a satic and a moving sample body and can include or not a lubrication sample body.." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+              rdfs:label "SampleSystem" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/sample#SampleTechnicalSpecification
+:SampleTechnicalSpecification rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/tribont/core#TechnicalSpecification>
+                                                                         [ rdf:type owl:Class ;
+                                                                           owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
+                                                                                           owl:someValuesFrom :Sample
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
+                                                                                           owl:someValuesFrom :SampleBatch
+                                                                                         ]
+                                                                                       )
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                              rdfs:subClassOf <https://w3id.org/tribont/core#TechnicalSpecification> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( <https://w3id.org/tribont/core#HardnessProperty>
+                                                                                  <https://w3id.org/tribont/core#SurfaceProperty>
+                                                                                )
+                                                                  ]
+                                              ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/tribont/core#configuration
+<https://w3id.org/tribont/core#configuration> rdf:type owl:NamedIndividual .
+
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( <https://w3id.org/tribont/core#BodyProperty>
+                 <https://w3id.org/tribont/core#OperationProperty>
+                 <https://w3id.org/tribont/core#SystemProperty>
+                 <https://w3id.org/tribont/core#TechnicalProperty>
+                 <https://w3id.org/tribont/material#ElementContent>
+                 :CoatingProperty
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://w3id.org/tribont/core#OperationCondition>
+                <https://w3id.org/tribont/core#Output>
+                <https://w3id.org/tribont/core#SampleBody>
+                <https://w3id.org/tribont/core#SampleSystemArrangement>
+                <https://w3id.org/tribont/core#TechnicalSpecification>
+                <https://w3id.org/tribont/material#Composition>
+                :SampleCoatingSpecification
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://w3id.org/tribont/material#Material>
+                :Sample
+                :SampleBatch
+                :SampleSystem
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#s> rdf:type swrl:Variable .
+
+<urn:swrl:var#sb> rdf:type swrl:Variable .
+
+<urn:swrl:var#m> rdf:type swrl:Variable .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Sample ;
+                           swrl:argument1 <urn:swrl:var#s>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate <https://w3id.org/isCharacterisedBy#belongsTo> ;
+                                      swrl:argument1 <urn:swrl:var#s> ;
+                                      swrl:argument2 <urn:swrl:var#sb>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate :hasCoreMaterial ;
+                                                 swrl:argument1 <urn:swrl:var#sb> ;
+                                                 swrl:argument2 <urn:swrl:var#m>
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate :hasCoreMaterial ;
+                           swrl:argument1 <urn:swrl:var#s> ;
+                           swrl:argument2 <urn:swrl:var#m>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Sample ;
+                           swrl:argument1 <urn:swrl:var#s>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate <https://w3id.org/isCharacterisedBy#belongsTo> ;
+                                      swrl:argument1 <urn:swrl:var#s> ;
+                                      swrl:argument2 <urn:swrl:var#sb>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate :preparationDate ;
+                                                 swrl:argument1 <urn:swrl:var#sb> ;
+                                                 swrl:argument2 <urn:swrl:var#m>
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate :preparationDate ;
+                           swrl:argument1 <urn:swrl:var#s> ;
+                           swrl:argument2 <urn:swrl:var#m>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Sample ;
+                           swrl:argument1 <urn:swrl:var#s>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate <https://w3id.org/isCharacterisedBy#belongsTo> ;
+                                      swrl:argument1 <urn:swrl:var#s> ;
+                                      swrl:argument2 <urn:swrl:var#sb>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate :hasCoatingMaterial ;
+                                                 swrl:argument1 <urn:swrl:var#sb> ;
+                                                 swrl:argument2 <urn:swrl:var#m>
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate :hasCoatingMaterial ;
+                           swrl:argument1 <urn:swrl:var#s> ;
+                           swrl:argument2 <urn:swrl:var#m>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

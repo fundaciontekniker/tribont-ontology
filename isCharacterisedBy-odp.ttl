@@ -1,0 +1,399 @@
+@prefix : <https://w3id.org/trib#> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix ns1: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@base <https://w3id.org/isCharacterisedBy> .
+
+<https://w3id.org/isCharacterisedBy> rdf:type owl:Ontology ;
+                                      ns:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                      terms:created "2021-10-18" ;
+                                      terms:creator """Patricia Casla <mailto: patricia.casla@tekniker.es>
+Izaskun Fernandez <mailto:izaskun.fernandez"""@tekniker.es> ;
+                                      terms:description "The xxx ontology xxx"@en ;
+                                      terms:issued "2021-mm-dd" ;
+                                      terms:title "XXX" ;
+                                      vann:preferredNamespacePrefix "icb" ;
+                                      owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+ns:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+terms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+terms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+terms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+terms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+terms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+ns1:term_status rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/isCharacterisedBy#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isGroupingOf ;
+           rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+           rdfs:label "belongsTo" ;
+           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#characterises
+:characterises rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isCharacterisedBy ;
+               rdfs:range :SubjectOfInterest ;
+               rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+               rdfs:label "characterises" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#hasProperty
+:hasProperty rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isPropertyFor ;
+             rdfs:range :Property ;
+             rdfs:comment "Relation from a Feature to a Property." ;
+             rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+             rdfs:label "hasProperty" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#hasUnit
+:hasUnit rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isUnitFor ;
+         rdfs:range :Unit ;
+         rdfs:comment "Relation from a quantifiable property to a unit of measure" ,
+                      "https://w3id.org/isCharacterisedBy" ;
+         rdfs:label "hasUnit" ;
+         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#isCharacterisedBy
+:isCharacterisedBy rdf:type owl:ObjectProperty ;
+                   rdfs:domain :SubjectOfInterest ;
+                   rdfs:comment "Relation from a  SubjectOfInterest to a Feature of Property." ;
+                   rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+                   rdfs:label "isCharacterisedBy" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#isGroupingOf
+:isGroupingOf rdf:type owl:ObjectProperty ;
+              rdfs:comment "Relation between a group and the members of such group. All the members of a group have the same charabterists or attributes." ;
+              rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+              rdfs:label "isGroupingOf" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#isPropertyFor
+:isPropertyFor rdf:type owl:ObjectProperty ;
+               rdfs:range :Feature ;
+               rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+               rdfs:label "isPropertyFor" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#isUnitFor
+:isUnitFor rdf:type owl:ObjectProperty ;
+           rdfs:domain :Unit ;
+           rdfs:comment "https://w3id.org/isCharacterisedBy" ;
+           rdfs:label "isUnitFor" ;
+           ns1:term_status "Testing" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/identifier
+terms:identifier rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/isCharacterisedBy#maxValue
+:maxValue rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Xaximum permissible value." ;
+          rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+          rdfs:label "maxValue" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#minValue
+:minValue rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Minimun permissible value." ;
+          rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+          rdfs:label "minValue" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:comment "Specific value." ;
+       rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+       rdfs:label "value" ;
+       ns1:term_status "Testing" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/isCharacterisedBy#Feature
+:Feature rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasProperty ;
+                           owl:someValuesFrom :Property
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasProperty ;
+                           owl:allValuesFrom :Property
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty terms:identifier ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty terms:title ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         rdfs:comment "Feature  is a logical aggregation of  qualifiable or quantifiable attribute, or characteristic of something. or somebody" ;
+         rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+         rdfs:label "Feature" ;
+         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#Property
+:Property rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :characterises ;
+                            owl:allValuesFrom :SubjectOfInterest
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :maxValue ;
+                            owl:allValuesFrom xsd:float
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :minValue ;
+                            owl:allValuesFrom xsd:float
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :value ;
+                            owl:allValuesFrom xsd:float
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty terms:identifier ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty terms:title ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ;
+          rdfs:comment "Property is a qualifiable or quantifiable attribute, or characteristic of something. or somebody" ;
+          rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+          rdfs:label "Property" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#SubjectOfInterest
+:SubjectOfInterest rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isCharacterisedBy ;
+                                     owl:allValuesFrom [ rdf:type owl:Class ;
+                                                         owl:unionOf ( :Feature
+                                                                       :Property
+                                                                     )
+                                                       ]
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isGroupingOf ;
+                                     owl:allValuesFrom :SubjectOfInterest
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty terms:identifier ;
+                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty terms:title ;
+                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                   ] ;
+                   rdfs:comment "A subject of interest is an abstraction of a real world phenomena (thing, person, event, etc)." ;
+                   rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+                   rdfs:label "SubjectOfInterest" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/isCharacterisedBy#Unit
+:Unit rdf:type owl:Class ;
+      rdfs:comment "A reference to the unit of measure of a quantifiable aspect (attribute or characteristic)." ;
+      rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
+      rdfs:label "Unit" ;
+      ns1:term_status "Teting" .
+
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( :Feature
+                 :Property
+                 :SubjectOfInterest
+                 :Unit
+               )
+ ] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#so> rdf:type swrl:Variable .
+
+<urn:swrl:var#f> rdf:type swrl:Variable .
+
+<urn:swrl:var#p> rdf:type swrl:Variable .
+
+<urn:swrl:var#soi> rdf:type swrl:Variable .
+
+<urn:swrl:var#soc> rdf:type swrl:Variable .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :SubjectOfInterest ;
+                           swrl:argument1 <urn:swrl:var#so>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate :Feature ;
+                                      swrl:argument1 <urn:swrl:var#f>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate :isCharacterisedBy ;
+                                                 swrl:argument1 <urn:swrl:var#so> ;
+                                                 swrl:argument2 <urn:swrl:var#f>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate :hasProperty ;
+                                                            swrl:argument1 <urn:swrl:var#f> ;
+                                                            swrl:argument2 <urn:swrl:var#p>
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate :isCharacterisedBy ;
+                           swrl:argument1 <urn:swrl:var#so> ;
+                           swrl:argument2 <urn:swrl:var#p>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Feature ;
+                           swrl:argument1 <urn:swrl:var#f>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate :SubjectOfInterest ;
+                                      swrl:argument1 <urn:swrl:var#soi>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate :isCharacterisedBy ;
+                                                 swrl:argument1 <urn:swrl:var#soc> ;
+                                                 swrl:argument2 <urn:swrl:var#f>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate :SubjectOfInterest ;
+                                                            swrl:argument1 <urn:swrl:var#soc>
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate :belongsTo ;
+                                                                       swrl:argument1 <urn:swrl:var#soi> ;
+                                                                       swrl:argument2 <urn:swrl:var#soc>
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate :isCharacterisedBy ;
+                           swrl:argument1 <urn:swrl:var#soi> ;
+                           swrl:argument2 <urn:swrl:var#f>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,4882 @@
+@prefix : <https://w3id.org/trib#> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix ns1: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix dcterms: <https://w3id.org/tribont/equipment#dcterms:> .
+@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@base <https://w3id.org/tribont/core> .
+
+<https://w3id.org/tribont/core> rdf:type owl:Ontology ;
+                                 owl:imports <https://w3id.org/isCharacterisedBy> ;
+                                 ns:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                 terms:created "2022-08-31" ;
+                                 terms:creator """Patricia Casla<mailto:patricia.casla@tekniker.es>
+Izaskun Fernandez <mailto:izaskun.fernandez"""@tekniker.es> ;
+                                 terms:description "The xxx ontology xxx"@en ;
+                                 terms:issued "2022-mm-dd" ;
+                                 terms:title "XXX" ;
+                                 vann:preferredNamespacePrefix "tribCommon" ;
+                                 owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+ns:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+terms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+terms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+terms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+terms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+terms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty ;
+            rdfs:comment "A name given to the resource." ,
+                         "http://purl.org/dc/terms/" ;
+            rdfs:label "title" ;
+            ns1:term_status "Stable" .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#cardinality
+owl:cardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxQualifiedCardinality
+owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+ns1:term_status rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/isCharacterisedBy#hasProperty
+<https://w3id.org/isCharacterisedBy#hasProperty> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/isCharacterisedBy#hasUnit
+<https://w3id.org/isCharacterisedBy#hasUnit> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/core#compliesWith
+:compliesWith rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isCompliedBy ;
+              rdfs:comment "Relation between something and the standard it complies with." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "compliesWith" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#hasDocument
+:hasDocument rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isDocumentFor ;
+             rdfs:comment "Relation between something and its related documents" ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "hasDocument" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#hasManufacturer
+:hasManufacturer rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isManufacturerFor ;
+                 rdfs:comment "Relation between a something and its manufacturer" ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "hasManufacturer" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#hasOwner
+:hasOwner rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isOwnerFor ;
+          rdfs:comment "Relation between something and the person or entity that owns it." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "hasOwner" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#hasRole
+:hasRole rdf:type owl:ObjectProperty ;
+         rdfs:comment "The relation between something and the roles it can play." ;
+         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+         rdfs:label "hasRole" ;
+         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#isCompliedBy
+:isCompliedBy rdf:type owl:ObjectProperty ;
+              rdfs:comment "Relation between a standard and what it regulates." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "isCompliedBy" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#isDocumentFor
+:isDocumentFor rdf:type owl:ObjectProperty ;
+               rdfs:comment "Relation between a document and what it provides information about." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "isDocumentFor" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#isMadeOf
+:isMadeOf rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isPartOf ;
+          rdfs:comment "Relation between something and its component parts." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "isMadeOf" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#isManufacturerFor
+:isManufacturerFor rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Relation between between a company and what it produces." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "isManufacturerFor" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#isOwnerFor
+:isOwnerFor rdf:type owl:ObjectProperty ;
+            rdfs:comment "Relation between between a company and what it owns." ;
+            rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+            rdfs:label "isOwnerFor" ;
+            ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+          rdfs:comment "Relation between a component part and that of which it is a part." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "isPartOf" ;
+          ns1:term_status "Testing" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/tribont/core#accessUrl
+:accessUrl rdf:type owl:DatatypeProperty ;
+           rdfs:comment "Url to access a specific information content or document." ;
+           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+           rdfs:label "accessUrl" ;
+           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#longName
+:longName rdf:type owl:DatatypeProperty ;
+          rdfs:comment "long name of a resource." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "longName" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:comment "Name of a resource." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+      rdfs:label "name" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#shortNam
+:shortNam rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Short name of a resource." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "shortName" ;
+          ns1:term_status "Testing" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Company
+<http://dbpedia.org/ontology/Company> rdf:type owl:Class ;
+                                      rdfs:isDefinedBy "http://dbpedia.org/ontology/" ;
+                                      rdfs:label "Company" ;
+                                      ns1:term_status "Stable" .
+
+
+###  http://dbpedia.org/ontology/Document
+<http://dbpedia.org/ontology/Document> rdf:type owl:Class ;
+                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :accessUrl ;
+                                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                       ] ;
+                                       rdfs:comment "Any document" ;
+                                       rdfs:isDefinedBy "http://dbpedia.org/ontology/" ;
+                                       rdfs:label "Document" ;
+                                       ns1:term_status "Stable" .
+
+
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error10
+<http://org.semanticweb.owlapi/error#Error10> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error11
+<http://org.semanticweb.owlapi/error#Error11> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error12
+<http://org.semanticweb.owlapi/error#Error12> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error13
+<http://org.semanticweb.owlapi/error#Error13> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error14
+<http://org.semanticweb.owlapi/error#Error14> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error15
+<http://org.semanticweb.owlapi/error#Error15> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error16
+<http://org.semanticweb.owlapi/error#Error16> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error17
+<http://org.semanticweb.owlapi/error#Error17> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error18
+<http://org.semanticweb.owlapi/error#Error18> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error19
+<http://org.semanticweb.owlapi/error#Error19> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error20
+<http://org.semanticweb.owlapi/error#Error20> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error21
+<http://org.semanticweb.owlapi/error#Error21> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error22
+<http://org.semanticweb.owlapi/error#Error22> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error23
+<http://org.semanticweb.owlapi/error#Error23> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error24
+<http://org.semanticweb.owlapi/error#Error24> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error25
+<http://org.semanticweb.owlapi/error#Error25> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error26
+<http://org.semanticweb.owlapi/error#Error26> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error27
+<http://org.semanticweb.owlapi/error#Error27> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error28
+<http://org.semanticweb.owlapi/error#Error28> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error29
+<http://org.semanticweb.owlapi/error#Error29> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error30
+<http://org.semanticweb.owlapi/error#Error30> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error31
+<http://org.semanticweb.owlapi/error#Error31> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error32
+<http://org.semanticweb.owlapi/error#Error32> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error33
+<http://org.semanticweb.owlapi/error#Error33> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error34
+<http://org.semanticweb.owlapi/error#Error34> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error35
+<http://org.semanticweb.owlapi/error#Error35> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error36
+<http://org.semanticweb.owlapi/error#Error36> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error37
+<http://org.semanticweb.owlapi/error#Error37> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error38
+<http://org.semanticweb.owlapi/error#Error38> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error39
+<http://org.semanticweb.owlapi/error#Error39> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error40
+<http://org.semanticweb.owlapi/error#Error40> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error41
+<http://org.semanticweb.owlapi/error#Error41> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error42
+<http://org.semanticweb.owlapi/error#Error42> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error43
+<http://org.semanticweb.owlapi/error#Error43> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error44
+<http://org.semanticweb.owlapi/error#Error44> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error45
+<http://org.semanticweb.owlapi/error#Error45> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error46
+<http://org.semanticweb.owlapi/error#Error46> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error47
+<http://org.semanticweb.owlapi/error#Error47> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error48
+<http://org.semanticweb.owlapi/error#Error48> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error49
+<http://org.semanticweb.owlapi/error#Error49> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error5
+<http://org.semanticweb.owlapi/error#Error5> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error50
+<http://org.semanticweb.owlapi/error#Error50> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error51
+<http://org.semanticweb.owlapi/error#Error51> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error52
+<http://org.semanticweb.owlapi/error#Error52> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error53
+<http://org.semanticweb.owlapi/error#Error53> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error54
+<http://org.semanticweb.owlapi/error#Error54> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error55
+<http://org.semanticweb.owlapi/error#Error55> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error56
+<http://org.semanticweb.owlapi/error#Error56> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error57
+<http://org.semanticweb.owlapi/error#Error57> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error58
+<http://org.semanticweb.owlapi/error#Error58> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error59
+<http://org.semanticweb.owlapi/error#Error59> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error6
+<http://org.semanticweb.owlapi/error#Error6> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error60
+<http://org.semanticweb.owlapi/error#Error60> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error7
+<http://org.semanticweb.owlapi/error#Error7> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error8
+<http://org.semanticweb.owlapi/error#Error8> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error9
+<http://org.semanticweb.owlapi/error#Error9> rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/Standard
+terms:Standard rdf:type owl:Class ;
+               rdfs:comment "A reference point against which other things can be evaluated or compared." ;
+               rdfs:isDefinedBy "http://purl.org/dc/terms/Standard" ;
+               rdfs:label "Standard" ;
+               ns1:term_status "Stable" .
+
+
+###  https://w3id.org/isCharacterisedBy#Feature
+<https://w3id.org/isCharacterisedBy#Feature> rdf:type owl:Class ;
+                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasRole ;
+                                                               owl:allValuesFrom :PropertyRole
+                                                             ] .
+
+
+###  https://w3id.org/isCharacterisedBy#Property
+<https://w3id.org/isCharacterisedBy#Property> rdf:type owl:Class ;
+                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                                                owl:allValuesFrom <https://w3id.org/isCharacterisedBy#Unit>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasRole ;
+                                                                owl:allValuesFrom :PropertyRole
+                                                              ] .
+
+
+###  https://w3id.org/isCharacterisedBy#SubjectOfInterest
+<https://w3id.org/isCharacterisedBy#SubjectOfInterest> rdf:type owl:Class .
+
+
+###  https://w3id.org/isCharacterisedBy#Unit
+<https://w3id.org/isCharacterisedBy#Unit> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#Acceleration
+:Acceleration rdf:type owl:Class ;
+              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error16> ,
+                              :MovementProperty ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:allValuesFrom :AccelerationUnit
+                              ] ;
+              rdfs:comment "Increase in speed or rate." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "Acceleration" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#AccelerationUnit
+:AccelerationUnit rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+                  rdfs:comment "Measurement unit for derivative of velocity with respect to time." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "AccelerationUnit" ;
+                  ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#AcidNumberAN
+:AcidNumberAN rdf:type owl:Class ;
+              rdfs:subClassOf :LiquidPhysicalProperty ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:hasValue <https://w3id.org/tribont/core#mgKOH/g>
+                              ] ;
+              rdfs:comment "Acid number of something." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "AcidNumberAN" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#AirReleaseTimeLAV
+:AirReleaseTimeLAV rdf:type owl:Class ;
+                   rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error12> ,
+                                   :LiquidPhysicalProperty ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                     owl:allValuesFrom :TimeUnit
+                                   ] ;
+                   rdfs:comment "Air release time for something." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "AirReleaseTimeLAV" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#AlkalineAdditivesConsumption
+:AlkalineAdditivesConsumption rdf:type owl:Class ;
+                              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error7> ,
+                                              :LiquidPhysicalProperty ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                                owl:allValuesFrom :CapacityUnit
+                                              ] ;
+                              rdfs:comment "Consumption of alkaline additives by something." ;
+                              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                              rdfs:label "AlkalineAdditivesConsumption" ;
+                              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#AngleUnit
+:AngleUnit rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+           rdfs:comment "Measurement unit for angle." ;
+           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+           rdfs:label "AngleUnit" ;
+           ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#AngularPosition
+:AngularPosition rdf:type owl:Class ;
+                 rdfs:subClassOf :MovementProperty ;
+                 rdfs:comment "Angular position of something." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "AngularPosition" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#AxialLoad
+:AxialLoad rdf:type owl:Class ;
+           rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error37> ,
+                           :LoadProperty ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                             owl:allValuesFrom :ForceUnit
+                           ] ;
+           rdfs:comment "Axial load applied to something." ;
+           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+           rdfs:label "AxialLoad" ;
+           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#BodyProperty
+:BodyProperty rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Property> ;
+              rdfs:comment "Qualifiable or quantifiable attribute, or characteristic of a body." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "BodyProperty" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#COFMean
+:COFMean rdf:type owl:Class ;
+         rdfs:subClassOf :FrictionProperty ;
+         rdfs:comment "Mean value of the coefficient of friction." ;
+         rdfs:label "COFMean" ;
+         ns1:term_status "Testing" ,
+                         "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#CapacityUnit
+:CapacityUnit rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+              rdfs:comment "Measurement unit for capacity." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#ChamberTemperature
+:ChamberTemperature rdf:type owl:Class ;
+                    rdfs:subClassOf :Temperature ;
+                    owl:disjointWith :SampleTemperature ;
+                    rdfs:comment "Temperature of the chamber where the sample is tested." ;
+                    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                    rdfs:label "ChamberTemperature" ;
+                    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#CloudPoint
+:CloudPoint rdf:type owl:Class ;
+            rdfs:subClassOf :LiquidThermalProperty ;
+            rdfs:comment "Cloud point." ;
+            rdfs:label "CloudPoint" ;
+            ns1:term_status "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#ColdFilterPluggingPoint
+:ColdFilterPluggingPoint rdf:type owl:Class ;
+                         rdfs:subClassOf :LiquidThermalProperty ;
+                         rdfs:comment "Cold filter plugging point." ;
+                         rdfs:label "ColdFilterPluggingPoint" ;
+                         ns1:term_status "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#ColourIndex
+:ColourIndex rdf:type owl:Class ;
+             rdfs:subClassOf :LiquidPhysicalProperty ;
+             rdfs:comment "Colour index  of something." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "ColourIndex" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#CompressiveStrength
+:CompressiveStrength rdf:type owl:Class ;
+                     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error36> ,
+                                     :MechanicalProperty ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                       owl:allValuesFrom :MechanicalUnit
+                                     ] ;
+                     rdfs:comment "Compressive strength applied to something." ;
+                     rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                     rdfs:label "CompressiveStrength" ;
+                     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Conductivity
+:Conductivity rdf:type owl:Class ;
+              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error10> ,
+                              :LiquidPhysicalProperty ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:allValuesFrom :DistanceUnit
+                              ] ;
+              rdfs:comment "Conductivity  of something." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "Conductivity" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#ContactSurfaceType
+:ContactSurfaceType rdf:type owl:Class ;
+                    rdfs:subClassOf :SystemProperty ;
+                    rdfs:comment "Contact surface type (e.g. line, point,etc. ." ;
+                    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                    rdfs:label "ContactSurfaceType" ;
+                    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#ContentUnit
+:ContentUnit rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+             rdfs:comment "Measurement unit for contents." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "ContentUnit" ;
+             ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#CoradsonCarbonResidue
+:CoradsonCarbonResidue rdf:type owl:Class ;
+                       rdfs:subClassOf :LiquidPhysicalProperty ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                         owl:hasValue :percentage
+                                       ] ;
+                       rdfs:comment "Coradson carbon residue in something ." ;
+                       rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                       rdfs:label "CoradsonCarbonResidue" ;
+                       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#CorrosionLevel
+:CorrosionLevel rdf:type owl:Class ;
+                rdfs:subClassOf :LiquidPhysicalProperty ;
+                rdfs:comment "Corrosion level of something." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "CorrosionLevel" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#CourseOfMovement
+:CourseOfMovement rdf:type owl:Class ;
+                  rdfs:subClassOf :OperationProperty ;
+                  rdfs:comment "Type of relative motion  between two or more bodies." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "CourseOfMovement" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Decceleration
+:Decceleration rdf:type owl:Class ;
+               rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error2> ,
+                               :MovementProperty ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                 owl:allValuesFrom :AccelerationUnit
+                               ] ;
+               rdfs:comment "Decrease in speed or rate." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "Decceleration" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Density
+:Density rdf:type owl:Class ;
+         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error35> ,
+                         :SolidPhysicalProperty ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                           owl:allValuesFrom :DensityUnit
+                         ] ;
+         owl:disjointWith :Porosity ;
+         rdfs:comment "Density of something." ;
+         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+         rdfs:label "Density" ;
+         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#DensityUnit
+:DensityUnit rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+             rdfs:comment "Measurement unit for density." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "DensityUnit" ;
+             ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#Diameter
+:Diameter rdf:type owl:Class ;
+          rdfs:subClassOf :GeometricDimension ;
+          rdfs:comment "Diameter of something." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "Diameter" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Dispersancy
+:Dispersancy rdf:type owl:Class ;
+             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error50> ,
+                             :LiquidPhysicalProperty ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:allValuesFrom :PercentageUnit
+                             ] ;
+             rdfs:comment "Dispersancy of something." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "Dispersancy" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#DissipationFactor
+:DissipationFactor rdf:type owl:Class ;
+                   rdfs:subClassOf :LiquidPhysicalProperty ;
+                   rdfs:comment "Dissipation factor of something." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "DissipationFactor" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#DistanceUnit
+:DistanceUnit rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+              rdfs:comment "Measurement unit for distance." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "DistanceUnit" ;
+              ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#Duration
+:Duration rdf:type owl:Class ;
+          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error59> ,
+                          :OperationProperty ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:allValuesFrom :TimeUnit
+                          ] ;
+          rdfs:comment "Amount of time during which an event persists." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "Duration" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#DynamicViscosity
+:DynamicViscosity rdf:type owl:Class ;
+                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error56> ,
+                                  :LiquidPhysicalProperty ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                    owl:allValuesFrom :ViscosityUnit
+                                  ] ;
+                  rdfs:comment "Dynamic viscosity of something." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "DynamicViscosity" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#ElectricalBreakdownVoltage
+:ElectricalBreakdownVoltage rdf:type owl:Class ;
+                            rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error18> ,
+                                            :LiquidPhysicalProperty ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                              owl:allValuesFrom :VoltageUnit
+                                            ] ;
+                            rdfs:comment "Electrical breakdown voltage of something." ;
+                            rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                            rdfs:label "ElectricalBreakdownVoltage" ;
+                            ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#ElectricalConductivity
+:ElectricalConductivity rdf:type owl:Class ;
+                        rdfs:subClassOf :ElectricalProperty ;
+                        owl:disjointWith :ElectricalResistivity ;
+                        rdfs:comment "Electrical conductivity of something." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                        rdfs:label "ElectricalConductivity" ;
+                        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#ElectricalProperty
+:ElectricalProperty rdf:type owl:Class ;
+                    rdfs:subClassOf :TechnicalProperty ;
+                    rdfs:comment "Qualifiable or quantifiable attribute, or characteristic of electrical behaviour of something." ;
+                    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                    rdfs:label "ElectricalProperty" ;
+                    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#ElectricalResistivity
+:ElectricalResistivity rdf:type owl:Class ;
+                       rdfs:subClassOf :ElectricalProperty ;
+                       rdfs:comment "Electrical resistivity of something." ;
+                       rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                       rdfs:label "ElectricalResistivity" ;
+                       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#EnvironmentMedium
+:EnvironmentMedium rdf:type owl:Class ;
+                   rdfs:subClassOf :OperationProperty ;
+                   rdfs:comment "Environment medium surrounding something ." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "EnvironmentMedium" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#EnvironmentProperty
+:EnvironmentProperty rdf:type owl:Class ;
+                     rdfs:subClassOf :OperationProperty ;
+                     rdfs:comment "Qualifiable or quantifiable attribute, or characteristic of the enviroment  in which a test has been / or should be carried out." ;
+                     rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                     rdfs:label "EnvironmentProperty" ;
+                     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#ExpansionCOFUnit
+:ExpansionCOFUnit rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+                  rdfs:comment "Measurement unit for expansion coefficient." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "ExpansionCOFUnit" ;
+                  ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#ExternalForce
+:ExternalForce rdf:type owl:Class ;
+               rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error51> ,
+                               :LoadProperty ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                 owl:allValuesFrom :ForceUnit
+                               ] ;
+               rdfs:comment "External force applied to something." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "ExternalForce" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#FailureProperty
+:FailureProperty rdf:type owl:Class ;
+                 rdfs:subClassOf :TribologicalProperty ;
+                 rdfs:comment "Qualifiable or quantifiable attribute, or characteristic of the moment when a sample bodey fails." ;
+                 rdfs:label "FailureProperty" ;
+                 ns1:term_status "Testing" ,
+                                 "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Filterability
+:Filterability rdf:type owl:Class ;
+               rdfs:subClassOf :LiquidPhysicalProperty ;
+               rdfs:comment "Filterability of something." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "Filterability" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#FlashPoint
+:FlashPoint rdf:type owl:Class ;
+            rdfs:subClassOf :LiquidThermalProperty ;
+            rdfs:comment "Flash point of something." ;
+            rdfs:label "FlashPoint" ;
+            ns1:term_status "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#FlexuralStrength
+:FlexuralStrength rdf:type owl:Class ;
+                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error15> ,
+                                  :MechanicalProperty ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                    owl:allValuesFrom :MechanicalUnit
+                                  ] ;
+                  rdfs:comment "Flexural strength of something." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "FlexuralStrength" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#FoamingTendency
+:FoamingTendency rdf:type owl:Class ;
+                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error41> ,
+                                 :LiquidPhysicalProperty ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:allValuesFrom :TendencyUnit
+                                 ] ;
+                 rdfs:comment "Foaming tendency of something." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "FoamingTendency" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#ForceUnit
+:ForceUnit rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+           rdfs:comment "Measurement unit for force." ;
+           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+           rdfs:label "ForceUnit" ;
+           ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#FractureToughness
+:FractureToughness rdf:type owl:Class ;
+                   rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error49> ,
+                                   :MechanicalProperty ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                     owl:allValuesFrom :ToughnessUnit
+                                   ] ;
+                   rdfs:comment "Fracture toughness of something." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "FractureToughness" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Frequency
+:Frequency rdf:type owl:Class ;
+           rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error13> ,
+                           :MovementProperty ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                             owl:allValuesFrom :FrequencyUnit
+                           ] ;
+           rdfs:comment "Frequency of something." ;
+           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+           rdfs:label "Frequency" ;
+           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#FrequencyUnit
+:FrequencyUnit rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+               rdfs:comment "Measurement unit for frequency." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "FrequencyUnit" ;
+               ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#FrictionProperty
+:FrictionProperty rdf:type owl:Class ;
+                  rdfs:subClassOf :TribologicalProperty ;
+                  rdfs:comment "Qualifiable or quantifiable attribute, or characteristic of the friction between two or more bodies." ;
+                  rdfs:label "FrictionProperty" ;
+                  ns1:term_status "Testing" ,
+                                  "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#FrictionTorque
+:FrictionTorque rdf:type owl:Class ;
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error42> ,
+                                :LoadProperty ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:allValuesFrom :TorqueUnit
+                                ] ;
+                rdfs:comment "Friction torque applied to something." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "FrictionTorque" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#GeometricDimension
+:GeometricDimension rdf:type owl:Class ;
+                    rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error47> ,
+                                    :BodyProperty ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                      owl:allValuesFrom :DistanceUnit
+                                    ] ;
+                    rdfs:comment "Quantifiable attribute, or characteristic of the geometry of a body." ;
+                    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                    rdfs:label "GeometricDimension" ;
+                    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#GeometricalArrangement
+:GeometricalArrangement rdf:type owl:Class ;
+                        rdfs:subClassOf :SystemProperty ;
+                        rdfs:comment "Geometrical combination of bodies belonging to a tribological system (e.g. ball on disc)." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                        rdfs:label "GeometricalArrangement" ;
+                        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#HardnessBrinell
+:HardnessBrinell rdf:type owl:Class ;
+                 rdfs:subClassOf :HardnessProperty ;
+                 rdfs:comment "Brinell hardness of something." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "HardnessBrinell" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#HardnessKnoop100g
+:HardnessKnoop100g rdf:type owl:Class ;
+                   rdfs:subClassOf :HardnessProperty ;
+                   rdfs:comment "Knoop hardness of something." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "HardnessKnoop100g" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#HardnessProperty
+:HardnessProperty rdf:type owl:Class ;
+                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error52> ,
+                                  :MechanicalProperty ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                    owl:allValuesFrom :HardnessUnit
+                                  ] ;
+                  rdfs:comment "Quantifiable attribute, or characteristic of the hardness of a body." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "HardnessProperty" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#HardnessRockwellB
+:HardnessRockwellB rdf:type owl:Class ;
+                   rdfs:subClassOf :HardnessProperty ;
+                   rdfs:comment "RockwellB hardness of something ." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "HardnessRockwellB" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#HardnessRockwellC
+:HardnessRockwellC rdf:type owl:Class ;
+                   rdfs:subClassOf :HardnessProperty ;
+                   rdfs:comment "RockwellC hardness of something ." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "HardnessRockwellC" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#HardnessRockwellM
+:HardnessRockwellM rdf:type owl:Class ;
+                   rdfs:subClassOf :HardnessProperty ;
+                   rdfs:comment "RockwellM hardnes of somethings ." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "HardnessRockwellM" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#HardnessRockwellR
+:HardnessRockwellR rdf:type owl:Class ;
+                   rdfs:subClassOf :HardnessProperty ;
+                   rdfs:comment "RockwellR hardness of something ." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "HardnessRockwellR" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#HardnessShoreA
+:HardnessShoreA rdf:type owl:Class ;
+                rdfs:subClassOf :HardnessProperty ;
+                rdfs:comment "ShoreA hardness of something ." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "HardnessShoreA" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#HardnessShoreD
+:HardnessShoreD rdf:type owl:Class ;
+                rdfs:subClassOf :HardnessProperty ;
+                rdfs:comment "ShoreD hardness of something ." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "HardnessShoreD" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#HardnessUnit
+:HardnessUnit rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+              rdfs:comment "Measurement unit for hardness." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "HardnessUnit" ;
+              ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#HardnessVickers
+:HardnessVickers rdf:type owl:Class ;
+                 rdfs:subClassOf :HardnessProperty ;
+                 rdfs:comment "Vickers hardness of something ." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "HardnessVickers" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#HeatCapacityUnit
+:HeatCapacityUnit rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+                  rdfs:comment "Measurement unit for heat capacity." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "HeatCapacityUnit" ;
+                  ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#Height
+:Height rdf:type owl:Class ;
+        rdfs:subClassOf :GeometricDimension ;
+        rdfs:comment "Height of something." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+        rdfs:label "Height" ;
+        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Humidity
+:Humidity rdf:type owl:Class ;
+          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error21> ,
+                          :EnvironmentProperty ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:allValuesFrom :PercentageUnit
+                          ] ;
+          rdfs:comment "Humidity of something." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "Humidity" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Inclination
+:Inclination rdf:type owl:Class ;
+             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error43> ,
+                             :EnvironmentProperty ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:allValuesFrom :AngleUnit
+                             ] ;
+             rdfs:comment "Inclination of the camber where the test is carried out." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "Inclination" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#IndentationHardnessMicro
+:IndentationHardnessMicro rdf:type owl:Class ;
+                          rdfs:subClassOf :HardnessProperty ;
+                          rdfs:comment "Indentation hardness micro." ;
+                          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                          rdfs:label "IndentationHardnessMicro" ;
+                          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#IndentationHardnessNano
+:IndentationHardnessNano rdf:type owl:Class ;
+                         rdfs:subClassOf :HardnessProperty ;
+                         rdfs:comment "Indentation hardness nano." ;
+                         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                         rdfs:label "IndentationHardnessNano" ;
+                         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads
+:InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error6> ,
+                                                                                                  :LiquidPhysicalProperty ,
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                                                                                    owl:allValuesFrom :TensionUnit
+                                                                                                  ] ;
+                                                                                  rdfs:comment "Inhibited Hydraulic Fluids Oxidation Stability And Lubricating Oils For High Pressure Loads." ;
+                                                                                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                                                                                  rdfs:label "InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads" ;
+                                                                                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#InnerDiameter
+:InnerDiameter rdf:type owl:Class ;
+               rdfs:subClassOf :Diameter ;
+               owl:disjointWith :OuterDiameter ;
+               rdfs:comment "Inner diameter of something." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "InnerDiameter" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#InnerTeethHeight
+:InnerTeethHeight rdf:type owl:Class ;
+                  rdfs:subClassOf :TeethHeight ;
+                  owl:disjointWith :OuterTeethHeight ;
+                  rdfs:comment "Inner teeth height of something." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "InnerTeethHeight" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#InnerTeethLength
+:InnerTeethLength rdf:type owl:Class ;
+                  rdfs:subClassOf :TeethLength ;
+                  owl:disjointWith :OuterTeethLength ;
+                  rdfs:comment "Inner teeth length of something." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "InnerTeethLength" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#InterfacialTensionBetweenWaterOil
+:InterfacialTensionBetweenWaterOil rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error14> ,
+                                                   :LiquidPhysicalProperty ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                                     owl:allValuesFrom :TensionUnit
+                                                   ] ;
+                                   rdfs:comment "Interfacial Tension Between Water Oil" ;
+                                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                                   rdfs:label "InterfacialTensionBetweenWaterOil" ;
+                                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#KinematicViscosity
+:KinematicViscosity rdf:type owl:Class ;
+                    rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error30> ,
+                                    :LiquidPhysicalProperty ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                      owl:allValuesFrom :ViscosityUnit
+                                    ] ;
+                    rdfs:comment "Kinematic viscosity of something." ;
+                    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                    rdfs:label "KinematicViscosity" ;
+                    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Length
+:Length rdf:type owl:Class ;
+        rdfs:subClassOf :GeometricDimension ;
+        rdfs:comment "Length of something." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+        rdfs:label "Length" ;
+        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#LinearSpeed
+:LinearSpeed rdf:type owl:Class ;
+             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error57> ,
+                             :MovementProperty ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:allValuesFrom :VelocityUnit
+                             ] ;
+             rdfs:comment "Linear speed of something." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "LinearSpeed" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#LiquidPhysicalProperty
+:LiquidPhysicalProperty rdf:type owl:Class ;
+                        rdfs:subClassOf :PhysicalProperty ;
+                        owl:disjointWith :SolidPhysicalProperty ;
+                        rdfs:comment "Qualifiable or quantifiable physical attribute, or characteristic of a liquid." ;
+                        rdfs:label "LiquidPhysicalProperty" ;
+                        ns1:term_status "Testing" ,
+                                        "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#LiquidThermalProperty
+:LiquidThermalProperty rdf:type owl:Class ;
+                       rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
+                                       :ThermalProperty ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                         owl:allValuesFrom :TemperatureUnit
+                                       ] ;
+                       owl:disjointWith :SolidThermalProperty ;
+                       rdfs:comment "Qualifiable or quantifiable thermal attribute, or characteristic of a liquid." ;
+                       rdfs:label "LiquidThermalProperty" ;
+                       ns1:term_status "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Load
+:Load rdf:type owl:Class ;
+      rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error9> ,
+                      :LoadProperty ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                        owl:allValuesFrom :ForceUnit
+                      ] ;
+      rdfs:comment "Load applied to something." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+      rdfs:label "Load" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#LoadLeverRatio
+:LoadLeverRatio rdf:type owl:Class ;
+                rdfs:subClassOf :LoadProperty ;
+                rdfs:comment "Load leverlratio of something." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "LoadLevelRatio" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#LoadPressure
+:LoadPressure rdf:type owl:Class ;
+              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error27> ,
+                              :LoadProperty ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                    owl:unionOf ( :ForceUnit
+                                                                  :PressureUnit
+                                                                )
+                                                  ]
+                              ] ;
+              rdfs:comment "Load pressure applied to something." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "LoadPressure" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#LoadProperty
+:LoadProperty rdf:type owl:Class ;
+              rdfs:subClassOf :OperationProperty ;
+              rdfs:comment "Qualifiable or quantifiable  attribute, or characteristic of load." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "LoadProperty" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#LoadRate
+:LoadRate rdf:type owl:Class ;
+          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error60> ,
+                          :LoadProperty ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:allValuesFrom :LoadRateUnit
+                          ] ;
+          rdfs:comment "Load rate applied to something." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "LoadRate" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#LoadRateUnit
+:LoadRateUnit rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+              rdfs:comment "Measurement unit for load rate." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "LoadRateUnit" ;
+              ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#LodineNumber
+:LodineNumber rdf:type owl:Class ;
+              rdfs:subClassOf :LiquidPhysicalProperty ;
+              rdfs:comment "Lodine number of something." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "LodineNumber" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#LubricantPumpProperty
+:LubricantPumpProperty rdf:type owl:Class ;
+                       rdfs:subClassOf :OperationProperty .
+
+
+###  https://w3id.org/tribont/core#LubricantType
+:LubricantType rdf:type owl:Class ;
+               rdfs:subClassOf :OperationProperty ;
+               rdfs:comment "Lubricant type." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "LubricantType" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#LubricantsOxidationStability
+:LubricantsOxidationStability rdf:type owl:Class ;
+                              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error28> ,
+                                              :LiquidPhysicalProperty ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                                owl:allValuesFrom :TimeUnit
+                                              ] ;
+                              rdfs:comment "Lubricants oxidation stability." ;
+                              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                              rdfs:label "LubricantsOxidationStability" ;
+                              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#LubricationRegime
+:LubricationRegime rdf:type owl:Class ;
+                   rdfs:subClassOf :OperationProperty ;
+                   rdfs:comment "Lubrication regime applied to a test or process ." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "LubricationRegime" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#MagnificationProperty
+:MagnificationProperty rdf:type owl:Class ;
+                       rdfs:subClassOf :OperationProperty .
+
+
+###  https://w3id.org/tribont/core#MaxLoadWithoutFailure
+:MaxLoadWithoutFailure rdf:type owl:Class ;
+                       rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error54> ,
+                                       :FailureProperty ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                         owl:allValuesFrom :ForceUnit
+                                       ] ;
+                       rdfs:comment "Maximun load before failure of the material." ;
+                       rdfs:label "MaxLoadWithoutFailure" ;
+                       ns1:term_status "Testing" ,
+                                       "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#MaximumServiceTemperature
+:MaximumServiceTemperature rdf:type owl:Class ;
+                           rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error33> ,
+                                           :SolidThermalProperty ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                             owl:allValuesFrom :TemperatureUnit
+                                           ] ;
+                           rdfs:comment "Maximun temperature of operation." ;
+                           rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                           rdfs:label "MaximumServiceTemperature" ;
+                           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#MechanicalProperty
+:MechanicalProperty rdf:type owl:Class ;
+                    rdfs:subClassOf :TechnicalProperty ;
+                    rdfs:comment "Qualifiable or quantifiable attribute, or characteristic of mechanical behaviour of something." ;
+                    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                    rdfs:label "MechanicalProperty" ;
+                    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#MechanicalUnit
+:MechanicalUnit rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+                rdfs:comment "Measurement units for mechanizal properties." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "MechanicalUnit" ;
+                ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#MeltingPoint
+:MeltingPoint rdf:type owl:Class ;
+              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error23> ,
+                              :SolidThermalProperty ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:allValuesFrom :TemperatureUnit
+                              ] ;
+              rdfs:comment "Melting point  of something." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "MeltingPoint" ;
+              ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#MovementProperty
+:MovementProperty rdf:type owl:Class ;
+                  rdfs:subClassOf :OperationProperty ;
+                  rdfs:comment "Qualifiable or quantifiable attribute, or characteristic of something's movement." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "MovementProperty" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#MovementType
+:MovementType rdf:type owl:Class ;
+              rdfs:subClassOf :OperationProperty ;
+              rdfs:comment "Type of movement appled to something." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "MovementType" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#NeutralisationNumberNN
+:NeutralisationNumberNN rdf:type owl:Class ;
+                        rdfs:subClassOf :LiquidPhysicalProperty ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                          owl:hasValue <https://w3id.org/tribont/core#mgKOH/g>
+                                        ] ;
+                        rdfs:comment "Neutralisation number of something." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                        rdfs:label "NeutralisationNumberNN" ;
+                        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#NormalForce
+:NormalForce rdf:type owl:Class ;
+             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error8> ,
+                             :MovementProperty ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:allValuesFrom :ForceUnit
+                             ] ;
+             rdfs:comment "Normal force applied to something." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "NormalForce" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#NumberOfContactSurface
+:NumberOfContactSurface rdf:type owl:Class ;
+                        rdfs:subClassOf :SystemProperty ;
+                        rdfs:comment "Number of contact surfaces of something." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                        rdfs:label "NumberOfContactSurface" ;
+                        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#O2Level
+:O2Level rdf:type owl:Class ;
+         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error17> ,
+                         :EnvironmentProperty ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                           owl:allValuesFrom :ContentUnit
+                         ] ;
+         rdfs:comment "O2 level of something." ;
+         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+         rdfs:label "O2Level" ;
+         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#OperationCondition
+:OperationCondition rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                      owl:allValuesFrom :OperationProperty
+                                    ] ;
+                    rdfs:comment "Qualifiable or quantifiable operation attribute, or characteristic of something." ;
+                    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                    rdfs:label "OperationCondition" ;
+                    ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#OperationProperty
+:OperationProperty rdf:type owl:Class ;
+                   rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Property> ;
+                   rdfs:comment "Quantifiable operation attribute, or characteristic of something." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "OperationProperty" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#OuterDiameter
+:OuterDiameter rdf:type owl:Class ;
+               rdfs:subClassOf :Diameter ;
+               rdfs:comment "Outer diameter." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "OuterDiameter" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#OuterTeethHeight
+:OuterTeethHeight rdf:type owl:Class ;
+                  rdfs:subClassOf :TeethHeight ;
+                  rdfs:comment "Outer teeth height of something." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "OuterTeethHeight" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#OuterTeethLength
+:OuterTeethLength rdf:type owl:Class ;
+                  rdfs:subClassOf :TeethLength ;
+                  rdfs:comment "Outer teeth length of something." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "OuterTeethLength" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Output
+:Output rdf:type owl:Class ;
+        rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                          owl:allValuesFrom [ rdf:type owl:Class ;
+                                              owl:unionOf ( :GeometricDimension
+                                                            :TechnicalProperty
+                                                            :Volume
+                                                            :Weight
+                                                          )
+                                            ]
+                        ] ;
+        rdfs:comment "Logical aggregation of the technical attributes, or characteristics obtained as Output of a test." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+        rdfs:label "Output" ;
+        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#PQIndex
+:PQIndex rdf:type owl:Class ;
+         rdfs:subClassOf :LiquidPhysicalProperty ;
+         rdfs:comment "PQ index of something." ;
+         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+         rdfs:label "PQIndex" ;
+         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#PercentageUnit
+:PercentageUnit rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+                rdfs:comment "Measurement unit for angle." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "PercentageUnit" ;
+                ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#PhLevel
+:PhLevel rdf:type owl:Class ;
+         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error5> ,
+                         :EnvironmentProperty ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                           owl:allValuesFrom :ContentUnit
+                         ] ;
+         rdfs:comment "Ph level of something." ;
+         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+         rdfs:label "PhLevel" ;
+         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#PhysicalProperty
+:PhysicalProperty rdf:type owl:Class ;
+                  rdfs:subClassOf :TechnicalProperty ;
+                  rdfs:comment "Qualifiable or quantifiable physical attribute, or characteristic of a something." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                  rdfs:label "PhysicalProperty" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#PoisssonRatio
+:PoisssonRatio rdf:type owl:Class ;
+               rdfs:subClassOf :MechanicalProperty ;
+               rdfs:comment "Poissson ratio of something." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "PoisssonRatio" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#PolishGrade
+:PolishGrade rdf:type owl:Class ;
+             rdfs:subClassOf :SurfaceProperty ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:hasValue <https://w3id.org/tribont/core#µm>
+                             ] ;
+             owl:disjointWith :SurfaceRoughness ;
+             rdfs:comment "Polish grade of something." ;
+             rdfs:label "PolishGrade" ;
+             ns1:term_status "Testing" ,
+                             "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Porosity
+:Porosity rdf:type owl:Class ;
+          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error46> ,
+                          :SolidPhysicalProperty ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:allValuesFrom :PercentageUnit
+                          ] ;
+          rdfs:comment "Porosity of something." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "Porosity" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#PourPoint
+:PourPoint rdf:type owl:Class ;
+           rdfs:subClassOf :LiquidThermalProperty ;
+           rdfs:comment "Pour point of something." ;
+           rdfs:label "PourPoint" ;
+           ns1:term_status "Testing" ,
+                           "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Pressure
+:Pressure rdf:type owl:Class ;
+          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error4> ,
+                          :EnvironmentProperty ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:allValuesFrom :PressureUnit
+                          ] ;
+          rdfs:comment "Pressure applied to soemthing." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "Pressure" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#PressureUnit
+:PressureUnit rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+              rdfs:comment "Measurement unit for pressure." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "PressureUnit" ;
+              ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#PropertyRole
+:PropertyRole rdf:type owl:Class ;
+              rdfs:subClassOf :Role ;
+              rdfs:comment "Allowed property roles." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "PropertyRole" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#PumpFlowRate
+:PumpFlowRate rdf:type owl:Class ;
+              rdfs:subClassOf :LubricantPumpProperty ;
+              rdfs:comment "Pump flow rate." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "PumpFlowRate" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#PumpRotationalSpeed
+:PumpRotationalSpeed rdf:type owl:Class ;
+                     rdfs:subClassOf :LubricantPumpProperty ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                       owl:allValuesFrom :RotationalSpeedUnit
+                                     ] ;
+                     rdfs:comment "Pump rotational speed." ;
+                     rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                     rdfs:label "PumpRotationalSpeed" ;
+                     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#PumpTemperature
+:PumpTemperature rdf:type owl:Class ;
+                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error53> ,
+                                 :LubricantPumpProperty ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:allValuesFrom :TemperatureUnit
+                                 ] ;
+                 rdfs:comment "Pump temperature." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "PumpTemperature" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Ra
+:Ra rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Arithmetical mean height of the absolute values." ;
+    rdfs:label "Ra" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#RadiationDosage
+:RadiationDosage rdf:type owl:Class ;
+                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error29> ,
+                                 :EnvironmentProperty ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:allValuesFrom :ContentUnit
+                                 ] ;
+                 rdfs:comment "Radiation dosage applied to something." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "RadiationDosage" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#RadiationType
+:RadiationType rdf:type owl:Class ;
+               rdfs:subClassOf :OperationProperty ;
+               rdfs:comment "Radiation type." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "RadiationType" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#RelativeDielectricConstant
+:RelativeDielectricConstant rdf:type owl:Class ;
+                            rdfs:subClassOf :LiquidPhysicalProperty ;
+                            rdfs:comment "Relative dielectric constant of something." ;
+                            rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                            rdfs:label "RelativeDielectricConstant" ;
+                            ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Rk
+:Rk rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Core height." ;
+    rdfs:label "Rk" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Rku
+:Rku rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Kurtosis" ;
+     rdfs:label "Rku" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Rmk1
+:Rmk1 rdf:type owl:Class ;
+      rdfs:subClassOf :SurfaceRoughness ;
+      rdfs:comment "Material ratio of the reduced peak height" ;
+      rdfs:label "Rmk1" ;
+      ns1:term_status "Stable" ,
+                      "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Rmk2
+:Rmk2 rdf:type owl:Class ;
+      rdfs:subClassOf :SurfaceRoughness ;
+      rdfs:comment "Material ratio of the reduced valley depth" ;
+      rdfs:label "Rmk2" ;
+      ns1:term_status "Stable" ,
+                      "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Role
+:Role rdf:type owl:Class ;
+      rdfs:comment "The position or purpose that someone or something has in a situation, organization, society, or relationship:." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+      rdfs:label "Role" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#RotationalSpeed
+:RotationalSpeed rdf:type owl:Class ;
+                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error39> ,
+                                 :MovementProperty ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:allValuesFrom :RotationalSpeedUnit
+                                 ] ;
+                 rdfs:comment "Rotational speed of something." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "RotationalSpeed" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#RotationalSpeedUnit
+:RotationalSpeedUnit rdf:type owl:Class ;
+                     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error44> ,
+                                     <https://w3id.org/isCharacterisedBy#Unit> ;
+                     rdfs:comment "Measurement unit for rotational speed." ;
+                     rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                     rdfs:label "RotationalSpeedUnit" ;
+                     ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#Rp
+:Rp rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Mean peak height." ;
+    rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+    rdfs:label "Rp" ;
+    ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#Rpk
+:Rpk rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Reduced peak height" ;
+     rdfs:label "Rpk" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Rpkx
+:Rpkx rdf:type owl:Class ;
+      rdfs:subClassOf :SurfaceRoughness ;
+      rdfs:comment "Reduced peak height along x" ;
+      rdfs:label "Rpkx" ;
+      ns1:term_status "Stable" ,
+                      "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Rq
+:Rq rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Root mean square height" ;
+    rdfs:label "Rq" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Rsk
+:Rsk rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Skewness" ;
+     rdfs:label "Rsk" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Rt
+:Rt rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Total height" ;
+    rdfs:label "Rt" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Rust-PreventingCharacteristicInPresenceOfWater
+:Rust-PreventingCharacteristicInPresenceOfWater rdf:type owl:Class ;
+                                                rdfs:subClassOf :LiquidPhysicalProperty ;
+                                                rdfs:comment "Rust-Preventing Characteristic In Presence Of Water." ;
+                                                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                                                rdfs:label "Rust-PreventingCharacteristicInPresenceOfWater" ;
+                                                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Rv
+:Rv rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Mean valley depth" ;
+    rdfs:label "Rv" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Rvkx
+:Rvkx rdf:type owl:Class ;
+      rdfs:subClassOf :SurfaceRoughness ;
+      rdfs:comment "Maximum peak height" ;
+      rdfs:label "Rvkx" ;
+      ns1:term_status "Stable" ,
+                      "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Rz
+:Rz rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Mean total height" ;
+    rdfs:label "Rz" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Sa
+:Sa rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Arithmetical mean height" ;
+    rdfs:label "Sa" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#SampleBody
+:SampleBody rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                              owl:allValuesFrom :BodyProperty
+                            ] ;
+            rdfs:comment "logical aggregation of  qualifiable or quantifiable attributes, or characteristics of a sample body." ;
+            rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+            rdfs:label "SampleBody" .
+
+
+###  https://w3id.org/tribont/core#SampleSystemArrangement
+:SampleSystemArrangement rdf:type owl:Class ;
+                         rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                           owl:allValuesFrom :SystemProperty
+                                         ] ;
+                         rdfs:comment "logical aggregation of  qualifiable or quantifiable attributes, or characteristics of a sample system." ;
+                         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                         rdfs:label "SampleSystemArrangement" ;
+                         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#SampleTemperature
+:SampleTemperature rdf:type owl:Class ;
+                   rdfs:subClassOf :Temperature ;
+                   rdfs:comment "Temperature of the sample body." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "SampleTemperature" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Sdq
+:Sdq rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Sdq." ;
+     rdfs:label "Sdq" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Sdr
+:Sdr rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Sdr." ;
+     rdfs:label "Sdr" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Shape
+:Shape rdf:type owl:Class ;
+       rdfs:subClassOf :BodyProperty ;
+       rdfs:comment "The form or outline of something" ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+       rdfs:label "Shape" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#ShearStability
+:ShearStability rdf:type owl:Class ;
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error3> ,
+                                :LiquidPhysicalProperty ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:allValuesFrom :PercentageUnit
+                                ] ;
+                rdfs:comment "Shear stability." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "ShearStability" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Sk
+:Sk rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Core height" ;
+    rdfs:label "Sk" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Sku
+:Sku rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Kurtosis" ;
+     rdfs:label "Sku" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#SlidingSpeed
+:SlidingSpeed rdf:type owl:Class ;
+              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error38> ,
+                              :MovementProperty ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:allValuesFrom :VelocityUnit
+                              ] ;
+              rdfs:comment "Sliding speed of something." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "SlidingSpeed" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#SlipPercentage
+:SlipPercentage rdf:type owl:Class ;
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error24> ,
+                                :MovementProperty ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:allValuesFrom :PercentageUnit
+                                ] ;
+                rdfs:comment "Slip percentage of something." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "SlipPercentage" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Smk1
+:Smk1 rdf:type owl:Class ;
+      rdfs:subClassOf :SurfaceRoughness ;
+      rdfs:comment "Material ratio of the hills" ;
+      rdfs:label "Smk1" ;
+      ns1:term_status "Stable" ,
+                      "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Smk2
+:Smk2 rdf:type owl:Class ;
+      rdfs:subClassOf :SurfaceRoughness ;
+      rdfs:comment "Material ratio of the dales" ;
+      rdfs:label "Smk2" ;
+      ns1:term_status "Stable" ,
+                      "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#SolidPhysicalProperty
+:SolidPhysicalProperty rdf:type owl:Class ;
+                       rdfs:subClassOf :PhysicalProperty ;
+                       rdfs:comment "Qualifiable or quantifiable physical attribute, or characteristic of a solid." ;
+                       rdfs:label "SolidPhysicalProperty" ;
+                       ns1:term_status "Testing" ,
+                                       "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#SolidThermalProperty
+:SolidThermalProperty rdf:type owl:Class ;
+                      rdfs:subClassOf :ThermalProperty ;
+                      rdfs:comment "Qualifiable or quantifiable thermal attribute, or characteristic of a solid." ;
+                      rdfs:label "SolidThermalProperty" ;
+                      ns1:term_status "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Sp
+:Sp rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Maximum peak height" ;
+    rdfs:label "Sp" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#SpecificHeatCapacity
+:SpecificHeatCapacity rdf:type owl:Class ;
+                      rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error32> ,
+                                      :SolidThermalProperty ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                        owl:allValuesFrom :HeatCapacityUnit
+                                      ] ;
+                      rdfs:comment "Specific heat capacity" ;
+                      rdfs:label "SpecificHeatCapacity" ;
+                      ns1:term_status "Testing" ,
+                                      "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Spk
+:Spk rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Reduced peak height" ;
+     rdfs:label "Spk" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Spkx
+:Spkx rdf:type owl:Class ;
+      rdfs:subClassOf :SurfaceRoughness ;
+      rdfs:comment "Maximum peak height" ;
+      rdfs:label "Spkx" ;
+      ns1:term_status "Stable" ,
+                      "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Sq
+:Sq rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Root mean square height" ;
+    rdfs:label "Sq" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Ssk
+:Ssk rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Skewness" ;
+     rdfs:label "Ssk" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#StrokeAmplitude
+:StrokeAmplitude rdf:type owl:Class ;
+                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error58> ,
+                                 :MovementProperty ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( :AngleUnit
+                                                                     :DistanceUnit
+                                                                   )
+                                                     ]
+                                 ] ;
+                 rdfs:comment "Stroke amplitude." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "StrokeAmplitude" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#StrokeDiameter
+:StrokeDiameter rdf:type owl:Class ;
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error11> ,
+                                :MovementProperty ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:allValuesFrom :DistanceUnit
+                                ] ;
+                rdfs:comment "Stroke diameter." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "StrokeDiameter" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#StrokeLength
+:StrokeLength rdf:type owl:Class ;
+              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error22> ,
+                              :MovementProperty ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                owl:allValuesFrom :DistanceUnit
+                              ] ;
+              rdfs:comment "Stroke length." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "StrokeLength" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#SurfaceProperty
+:SurfaceProperty rdf:type owl:Class ;
+                 rdfs:subClassOf :TechnicalProperty ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:hasValue <https://w3id.org/tribont/core#µm>
+                                 ] ;
+                 rdfs:comment "Qualifiable or quantifiable  attribute, or characteristic of a surface. ." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "SurfaceProperty" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#SurfaceRoughness
+:SurfaceRoughness rdf:type owl:Class ;
+                  rdfs:subClassOf :SurfaceProperty ;
+                  rdfs:comment "Surface roughness. ." ;
+                  rdfs:label "SurfaceRoughness" ;
+                  ns1:term_status "Stable" ,
+                                  "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Sv
+:Sv rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Maximum valley depth" ;
+    rdfs:label "Sv" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Svk
+:Svk rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Reduced valley depth" ;
+     rdfs:label "Svk" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Svkx
+:Svkx rdf:type owl:Class ;
+      rdfs:subClassOf :SurfaceRoughness ;
+      rdfs:comment "Maximum valley depth" ;
+      rdfs:label "Svkx" ;
+      ns1:term_status "Stable" ,
+                      "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#SystemProperty
+:SystemProperty rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Property> ;
+                rdfs:comment "Qualifiable or quantifiable  attribute, or characteristic of a sample system. ." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "SystemProperty" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Sz
+:Sz rdf:type owl:Class ;
+    rdfs:subClassOf :SurfaceRoughness ;
+    rdfs:comment "Maximum height z" ;
+    rdfs:label "Sz" ;
+    ns1:term_status "Stable" ,
+                    "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#TechnicalProperty
+:TechnicalProperty rdf:type owl:Class ;
+                   rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Property> ;
+                   rdfs:comment "Qualifiable or quantifiable technical attribute, or characteristic of something. ." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                   rdfs:label "TechnicalProperty" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#TechnicalSpecification
+:TechnicalSpecification rdf:type owl:Class ;
+                        rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Feature> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                          owl:allValuesFrom :TechnicalProperty
+                                        ] ;
+                        rdfs:comment "Logical aggregation of value/value ranges of technical attributes or characteristics defining a material or sample." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                        rdfs:label "TechnicalSpecification" ;
+                        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#TeethHeight
+:TeethHeight rdf:type owl:Class ;
+             rdfs:subClassOf :GeometricDimension ;
+             rdfs:comment "Height of a teeth. ." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "TeethHeight" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#TeethLength
+:TeethLength rdf:type owl:Class ;
+             rdfs:subClassOf :GeometricDimension ;
+             rdfs:comment "Length of a teeth. ." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "TeethLength" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Temperature
+:Temperature rdf:type owl:Class ;
+             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error55> ,
+                             :EnvironmentProperty ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                               owl:allValuesFrom :TemperatureUnit
+                             ] ;
+             rdfs:comment "Temperature ofsomebody or something." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "Temperature" ;
+             ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#TemperatureUnit
+:TemperatureUnit rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+                 rdfs:comment "Measurement unit for temperature." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "TemperatureUni" ;
+                 ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#TendencyUnit
+:TendencyUnit rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+              rdfs:comment "Measurement unit for tendency." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "TendencyUnit" ;
+              ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#TensileStrength
+:TensileStrength rdf:type owl:Class ;
+                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error26> ,
+                                 :MechanicalProperty ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                   owl:allValuesFrom :MechanicalUnit
+                                 ] ;
+                 rdfs:comment "Tensile strength of something." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "TensileStrength" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#TensionUnit
+:TensionUnit rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+             rdfs:comment "Measurement unit for tension." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "TensionUnit" ;
+             ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#ThermalConductivity
+:ThermalConductivity rdf:type owl:Class ;
+                     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error19> ,
+                                     :SolidThermalProperty ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                       owl:allValuesFrom :ThermalConductivityUnit
+                                     ] ;
+                     rdfs:comment "Thermal conductivity of something." ;
+                     rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                     rdfs:label "ThermalConductivity" ;
+                     ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#ThermalConductivityUnit
+:ThermalConductivityUnit rdf:type owl:Class ;
+                         rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+                         rdfs:comment "Measurement unit for conductivity." ;
+                         rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                         rdfs:label "ThermalConductivityUnit" ;
+                         ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#ThermalExpansionCoefficient
+:ThermalExpansionCoefficient rdf:type owl:Class ;
+                             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error31> ,
+                                             :SolidThermalProperty ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                               owl:allValuesFrom :ExpansionCOFUnit
+                                             ] ;
+                             rdfs:comment "Thermal expansion coefficient of something." ;
+                             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                             rdfs:label "ThermalExpansionCoefficient" ;
+                             ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#ThermalProperty
+:ThermalProperty rdf:type owl:Class ;
+                 rdfs:subClassOf :TechnicalProperty ;
+                 rdfs:comment "Qualifiable or quantifiable termal attribute, or characteristic of something." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                 rdfs:label "ThermalProperty" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#TimeUnit
+:TimeUnit rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+          rdfs:comment "Measurement unit for time." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "TimeUnit" ;
+          ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#Torque
+:Torque rdf:type owl:Class ;
+        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error48> ,
+                        :LoadProperty ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                          owl:allValuesFrom :TorqueUnit
+                        ] ;
+        rdfs:comment "Torque applied to something." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+        rdfs:label "Torque" ;
+        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#TorqueUnit
+:TorqueUnit rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+            rdfs:comment "Measurement unit for torque." ;
+            rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+            rdfs:label "TorqueUnit" ;
+            ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#ToughnessUnit
+:ToughnessUnit rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+               rdfs:comment "Measurement unit for toughness." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "ToughnessUnit" ;
+               ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#TribologicalProperty
+:TribologicalProperty rdf:type owl:Class ;
+                      rdfs:subClassOf :TechnicalProperty ;
+                      rdfs:comment "Qualifiable or quantifiable tribological attribute, or characteristic of something." ;
+                      rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                      rdfs:label "TribologicalProperty" ;
+                      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Velocity
+:Velocity rdf:type owl:Class ;
+          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error45> ,
+                          :MovementProperty ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                            owl:allValuesFrom :VelocityUnit
+                          ] ;
+          rdfs:comment "Velocity of something." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "Velocity" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#VelocityUnit
+:VelocityUnit rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+              rdfs:comment "Measurement unit for velocity." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "VelocityUnit" ;
+              ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#ViscosityUnit
+:ViscosityUnit rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+               rdfs:comment "Measurement unit for viscosity." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "ViscosityUnit" ;
+               ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#Vmc
+:Vmc rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Core material volume" ;
+     rdfs:label "Vmc" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Vmp
+:Vmp rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Peak material volume" ;
+     rdfs:label "Vmp" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#VoltageUnit
+:VoltageUnit rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+             rdfs:comment "Measurement unit for voltage." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+             rdfs:label "VoltageUnit" ;
+             ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#Volume
+:Volume rdf:type owl:Class ;
+        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error25> ,
+                        :BodyProperty ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                          owl:allValuesFrom :CapacityUnit
+                        ] ;
+        rdfs:comment "Volume of someting." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+        rdfs:label "Volume" ;
+        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Vvc
+:Vvc rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Core void volume" ;
+     rdfs:label "Vvc" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#Vvv
+:Vvv rdf:type owl:Class ;
+     rdfs:subClassOf :SurfaceRoughness ;
+     rdfs:comment "Dale void volume" ;
+     rdfs:label "Vvv" ;
+     ns1:term_status "Stable" ,
+                     "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#WearProperty
+:WearProperty rdf:type owl:Class ;
+              rdfs:subClassOf :TribologicalProperty ;
+              rdfs:comment "Qualifiable or quantifiable wear attribute, or characteristic of something.." ;
+              rdfs:label "WearProperty" ;
+              ns1:term_status "Testing" ,
+                              "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#WearScarLength
+:WearScarLength rdf:type owl:Class ;
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error34> ,
+                                :WearScarProperty ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:allValuesFrom :DistanceUnit
+                                ] ;
+                owl:disjointWith :WearScarVolume ;
+                rdfs:comment " Length of wear scar.." ;
+                rdfs:label "WearScarLength" ;
+                ns1:term_status "Testing" ,
+                                "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#WearScarProperty
+:WearScarProperty rdf:type owl:Class ;
+                  rdfs:subClassOf :WearProperty ;
+                  rdfs:comment " Qualifiable or quantifiable  attribute, or characteristic of a wear scar." ;
+                  rdfs:label "WearScarProperty" ;
+                  ns1:term_status "Testing" ,
+                                  "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#WearScarVolume
+:WearScarVolume rdf:type owl:Class ;
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error20> ,
+                                :WearScarProperty ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                                  owl:allValuesFrom :CapacityUnit
+                                ] ;
+                rdfs:comment " Volume of wear scar.." ;
+                rdfs:label "WearScarVolume" ;
+                ns1:term_status "Testing" ,
+                                "https://w3id.org/tribont/core" .
+
+
+###  https://w3id.org/tribont/core#WearType
+:WearType rdf:type owl:Class ;
+          rdfs:subClassOf :OperationProperty ;
+          rdfs:comment "Wear type of something." ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+          rdfs:label "WearType" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#WeibullModulus
+:WeibullModulus rdf:type owl:Class ;
+                rdfs:subClassOf :MechanicalProperty ;
+                rdfs:comment "Weibull modulus of something." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+                rdfs:label "WeibullModulus" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#Weight
+:Weight rdf:type owl:Class ;
+        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error40> ,
+                        :BodyProperty ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#hasUnit> ;
+                          owl:allValuesFrom :WeightUnit
+                        ] ;
+        rdfs:comment "Weight of something." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+        rdfs:label "Weight" ;
+        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#WeightUnit
+:WeightUnit rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Unit> ;
+            rdfs:comment "Measurement unit for weight." ;
+            rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+            rdfs:label "WeightUnit" ;
+            ns1:term_status "Stable" .
+
+
+###  https://w3id.org/tribont/core#Width
+:Width rdf:type owl:Class ;
+       rdfs:subClassOf :GeometricDimension ;
+       rdfs:comment "Width of something." ;
+       rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+       rdfs:label "Width" ;
+       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#YieldStrength
+:YieldStrength rdf:type owl:Class ;
+               rdfs:subClassOf :MechanicalProperty ;
+               rdfs:comment "Yield strength of something." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+               rdfs:label "YieldStrength" ;
+               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#YoungModulus
+:YoungModulus rdf:type owl:Class ;
+              rdfs:subClassOf :MechanicalProperty ;
+              rdfs:comment "Young modulus of something." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+              rdfs:label "YoungModulus" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/core#i-ph
+:i-ph rdf:type owl:Class ;
+      rdfs:subClassOf :LiquidPhysicalProperty ;
+      rdfs:comment "i-phof something." ;
+      rdfs:isDefinedBy "https://w3id.org/tribont/core" ;
+      rdfs:label "i-ph" ;
+      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#TestStandard
+<https://w3id.org/tribont/test#TestStandard> rdf:type owl:Class ;
+                                             rdfs:subClassOf terms:Standard ;
+                                             rdfs:comment "Test standard." ;
+                                             rdfs:label "TestStandard" ;
+                                             ns1:term_status "Stable" ,
+                                                             "https://w3id.org/tribont/core" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/tribont/core#ASTMD5706
+:ASTMD5706 rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/tribont/test#TestStandard> ;
+           rdfs:label "ASTMD5706" .
+
+
+###  https://w3id.org/tribont/core#ASTMD5707
+:ASTMD5707 rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/tribont/test#TestStandard> ;
+           rdfs:label "ASTMD5707" .
+
+
+###  https://w3id.org/tribont/core#ASTMD6425
+:ASTMD6425 rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/tribont/test#TestStandard> ;
+           rdfs:label "ASTMD6425" .
+
+
+###  https://w3id.org/tribont/core#ASTMD7421
+:ASTMD7421 rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/tribont/test#TestStandard> ;
+           rdfs:label "ASTMD7421" .
+
+
+###  https://w3id.org/tribont/core#Ba
+:Ba rdf:type owl:NamedIndividual ,
+             :MechanicalUnit ;
+    rdfs:label "Ba" .
+
+
+###  https://w3id.org/tribont/core#EHD
+:EHD rdf:type owl:NamedIndividual ,
+              :LubricationRegime ;
+     rdfs:label "EHD" .
+
+
+###  https://w3id.org/tribont/core#HV
+:HV rdf:type owl:NamedIndividual ,
+             :MechanicalUnit ;
+    rdfs:label "HV" .
+
+
+###  https://w3id.org/tribont/core#Hz
+:Hz rdf:type owl:NamedIndividual ,
+             :FrequencyUnit ;
+    rdfs:label "Hz" .
+
+
+###  https://w3id.org/tribont/core#Kgf
+:Kgf rdf:type owl:NamedIndividual ,
+              :ForceUnit ;
+     rdfs:label "Kgf" .
+
+
+###  https://w3id.org/tribont/core#MGO
+:MGO rdf:type owl:NamedIndividual ,
+              :MechanicalUnit ;
+     rdfs:label "MGO" .
+
+
+###  https://w3id.org/tribont/core#MPa
+:MPa rdf:type owl:NamedIndividual ,
+              :MechanicalUnit ;
+     rdfs:label "MPa" .
+
+
+###  https://w3id.org/tribont/core#N
+:N rdf:type owl:NamedIndividual ,
+            :ForceUnit ;
+   rdfs:label "N" .
+
+
+###  https://w3id.org/tribont/core#N.m
+:N.m rdf:type owl:NamedIndividual ,
+              :TorqueUnit ;
+     rdfs:label "N.m" .
+
+
+###  https://w3id.org/tribont/core#N2CO295
+:N2CO295 rdf:type owl:NamedIndividual ,
+                  :EnvironmentMedium ;
+         rdfs:label "N2CO295" .
+
+
+###  https://w3id.org/tribont/core#Pa
+:Pa rdf:type owl:NamedIndividual ,
+             :PressureUnit ;
+    rdfs:label "Pa" .
+
+
+###  https://w3id.org/tribont/core#abrasive_wear
+:abrasive_wear rdf:type owl:NamedIndividual ,
+                        :WearType ;
+               rdfs:label "abrasive_wear" .
+
+
+###  https://w3id.org/tribont/core#adhesive_wear
+:adhesive_wear rdf:type owl:NamedIndividual ,
+                        :WearType ;
+               rdfs:label "adhesive_wear" .
+
+
+###  https://w3id.org/tribont/core#ambient_air
+:ambient_air rdf:type owl:NamedIndividual ,
+                      :EnvironmentMedium ;
+             rdfs:label "ambient_air" .
+
+
+###  https://w3id.org/tribont/core#ambient_humidity
+:ambient_humidity rdf:type owl:NamedIndividual ,
+                           :Humidity ;
+                  rdfs:label "ambient_humidity" .
+
+
+###  https://w3id.org/tribont/core#ambient_pressure
+:ambient_pressure rdf:type owl:NamedIndividual ,
+                           :Pressure ;
+                  rdfs:label "ambient_pressure" .
+
+
+###  https://w3id.org/tribont/core#area
+:area rdf:type owl:NamedIndividual ,
+               :ContactSurfaceType ;
+      rdfs:label "area" .
+
+
+###  https://w3id.org/tribont/core#atm
+:atm rdf:type owl:NamedIndividual ,
+              :MechanicalUnit ;
+     rdfs:label "atm" .
+
+
+###  https://w3id.org/tribont/core#ball
+:ball rdf:type owl:NamedIndividual ,
+               :Shape ;
+      rdfs:label "ball" .
+
+
+###  https://w3id.org/tribont/core#ball_on_plate
+:ball_on_plate rdf:type owl:NamedIndividual ,
+                        :GeometricalArrangement ;
+               rdfs:label "ball_on_plate" .
+
+
+###  https://w3id.org/tribont/core#bar
+:bar rdf:type owl:NamedIndividual ,
+              :PressureUnit ;
+     rdfs:label "bar" .
+
+
+###  https://w3id.org/tribont/core#boundary_lubrication
+:boundary_lubrication rdf:type owl:NamedIndividual ,
+                               :LubricationRegime ;
+                      rdfs:label "boundary_lubrication" .
+
+
+###  https://w3id.org/tribont/core#cm
+:cm rdf:type owl:NamedIndividual ,
+             :DistanceUnit ;
+    rdfs:label "cm" .
+
+
+###  https://w3id.org/tribont/core#cm3
+:cm3 rdf:type owl:NamedIndividual ,
+              :CapacityUnit ;
+     rdfs:label "cm3" .
+
+
+###  https://w3id.org/tribont/core#configuration
+:configuration rdf:type owl:NamedIndividual ,
+                        :PropertyRole ;
+               rdfs:label "configuration" .
+
+
+###  https://w3id.org/tribont/core#corrosive_gas
+:corrosive_gas rdf:type owl:NamedIndividual ,
+                        :EnvironmentMedium ;
+               rdfs:label "corrosive_gas" .
+
+
+###  https://w3id.org/tribont/core#cuboid
+:cuboid rdf:type owl:NamedIndividual ,
+                 :Shape ;
+        rdfs:label "cuboid" .
+
+
+###  https://w3id.org/tribont/core#cylinder
+:cylinder rdf:type owl:NamedIndividual ,
+                   :Shape ;
+          rdfs:label "cylinder" .
+
+
+###  https://w3id.org/tribont/core#day
+:day rdf:type owl:NamedIndividual ,
+              :TimeUnit ;
+     rdfs:label "day" .
+
+
+###  https://w3id.org/tribont/core#degree
+:degree rdf:type owl:NamedIndividual ,
+                 :AngleUnit ;
+        rdfs:label "degree" .
+
+
+###  https://w3id.org/tribont/core#disc
+:disc rdf:type owl:NamedIndividual ,
+               :Shape ;
+      rdfs:label "disc" .
+
+
+###  https://w3id.org/tribont/core#dm3
+:dm3 rdf:type owl:NamedIndividual ,
+              :CapacityUnit ;
+     rdfs:label "dm3" .
+
+
+###  https://w3id.org/tribont/core#dry
+:dry rdf:type owl:NamedIndividual ,
+              :LubricationRegime ;
+     rdfs:label "dry" .
+
+
+###  https://w3id.org/tribont/core#e-4
+:e-4 rdf:type owl:NamedIndividual ,
+              :PercentageUnit ;
+     rdfs:label "e-4" .
+
+
+###  https://w3id.org/tribont/core#fl-ozUk
+:fl-ozUk rdf:type owl:NamedIndividual ,
+                  :CapacityUnit ;
+         rdfs:label "fl-ozUk" .
+
+
+###  https://w3id.org/tribont/core#fl-ozUs
+:fl-ozUs rdf:type owl:NamedIndividual ,
+                  :CapacityUnit ;
+         rdfs:label "fl-ozUs" .
+
+
+###  https://w3id.org/tribont/core#fretting_wear
+:fretting_wear rdf:type owl:NamedIndividual ,
+                        :WearType ;
+               rdfs:label "fretting_wear" .
+
+
+###  https://w3id.org/tribont/core#ft3
+:ft3 rdf:type owl:NamedIndividual ,
+              :CapacityUnit ;
+     rdfs:label "ft3" .
+
+
+###  https://w3id.org/tribont/core#g
+:g rdf:type owl:NamedIndividual ,
+            :WeightUnit ;
+   rdfs:label "g" .
+
+
+###  https://w3id.org/tribont/core#galUk
+:galUk rdf:type owl:NamedIndividual ,
+                :CapacityUnit ;
+       rdfs:label "galUk" .
+
+
+###  https://w3id.org/tribont/core#galUs
+:galUs rdf:type owl:NamedIndividual ,
+                :CapacityUnit ;
+       rdfs:label "galUs" .
+
+
+###  https://w3id.org/tribont/core#gear
+:gear rdf:type owl:NamedIndividual ,
+               :Shape ;
+      rdfs:label "gear" .
+
+
+###  https://w3id.org/tribont/core#grease
+:grease rdf:type owl:NamedIndividual ,
+                 :LubricantType ;
+        rdfs:label "grease" .
+
+
+###  https://w3id.org/tribont/core#grinded
+:grinded rdf:type owl:NamedIndividual ,
+                  :PolishGrade ;
+         rdfs:label "grinded" .
+
+
+###  https://w3id.org/tribont/core#h
+:h rdf:type owl:NamedIndividual ,
+            :HardnessUnit ;
+   rdfs:label "h" .
+
+
+###  https://w3id.org/tribont/core#hPa
+:hPa rdf:type owl:NamedIndividual ,
+              :MechanicalUnit ;
+     rdfs:label "hPa" .
+
+
+###  https://w3id.org/tribont/core#hb
+:hb rdf:type owl:NamedIndividual ,
+             :HardnessUnit ;
+    rdfs:label "hb" .
+
+
+###  https://w3id.org/tribont/core#hk
+:hk rdf:type owl:NamedIndividual ,
+             :HardnessUnit ;
+    rdfs:label "hk" .
+
+
+###  https://w3id.org/tribont/core#hour
+:hour rdf:type owl:NamedIndividual ,
+               :TimeUnit ;
+      rdfs:label "hour" .
+
+
+###  https://w3id.org/tribont/core#hrb
+:hrb rdf:type owl:NamedIndividual ,
+              :HardnessUnit ;
+     rdfs:label "hrb" .
+
+
+###  https://w3id.org/tribont/core#hrc
+:hrc rdf:type owl:NamedIndividual ,
+              :HardnessUnit ;
+     rdfs:label "hrc" .
+
+
+###  https://w3id.org/tribont/core#hrm
+:hrm rdf:type owl:NamedIndividual ,
+              :HardnessUnit ;
+     rdfs:label "hrm" .
+
+
+###  https://w3id.org/tribont/core#hrr
+:hrr rdf:type owl:NamedIndividual ,
+              :HardnessUnit ;
+     rdfs:label "hrr" .
+
+
+###  https://w3id.org/tribont/core#hv
+:hv rdf:type owl:NamedIndividual ,
+             :HardnessUnit ;
+    rdfs:label "hv" .
+
+
+###  https://w3id.org/tribont/core#inHg
+:inHg rdf:type owl:NamedIndividual ,
+               :MechanicalUnit ;
+      rdfs:label "inHg" .
+
+
+###  https://w3id.org/tribont/core#innert_gas
+:innert_gas rdf:type owl:NamedIndividual ,
+                     :EnvironmentMedium ;
+            rdfs:label "innert_gas" .
+
+
+###  https://w3id.org/tribont/core#kHz
+:kHz rdf:type owl:NamedIndividual ,
+              :FrequencyUnit ;
+     rdfs:label "kHz" .
+
+
+###  https://w3id.org/tribont/core#kg
+:kg rdf:type owl:NamedIndividual ,
+             :WeightUnit ;
+    rdfs:label "kg" .
+
+
+###  https://w3id.org/tribont/core#km
+:km rdf:type owl:NamedIndividual ,
+             :DistanceUnit ;
+    rdfs:label "km" .
+
+
+###  https://w3id.org/tribont/core#ksi
+:ksi rdf:type owl:NamedIndividual ,
+              :MechanicalUnit ;
+     rdfs:label "ksi" .
+
+
+###  https://w3id.org/tribont/core#ksi.in0.5
+:ksi.in0.5 rdf:type owl:NamedIndividual ,
+                    :ToughnessUnit ;
+           rdfs:label "ksi.in0.5" .
+
+
+###  https://w3id.org/tribont/core#kv
+:kv rdf:type owl:NamedIndividual ,
+             :VoltageUnit ;
+    rdfs:label "kv" .
+
+
+###  https://w3id.org/tribont/core#lapped
+:lapped rdf:type owl:NamedIndividual ,
+                 :PolishGrade ;
+        rdfs:label "lapped" .
+
+
+###  https://w3id.org/tribont/core#line
+:line rdf:type owl:NamedIndividual ,
+               :ContactSurfaceType ;
+      rdfs:label "line" .
+
+
+###  https://w3id.org/tribont/core#linear_reciprocating
+:linear_reciprocating rdf:type owl:NamedIndividual ,
+                               :CourseOfMovement ;
+                      rdfs:label "linear_reciprocating" .
+
+
+###  https://w3id.org/tribont/core#linear_unidirectional
+:linear_unidirectional rdf:type owl:NamedIndividual ,
+                                :CourseOfMovement ;
+                       rdfs:label "linear_unidirectional" .
+
+
+###  https://w3id.org/tribont/core#liquid_lubricant
+:liquid_lubricant rdf:type owl:NamedIndividual ,
+                           :LubricantType ;
+                  rdfs:label "liquid_lubricant" .
+
+
+###  https://w3id.org/tribont/core#m
+:m rdf:type owl:NamedIndividual ,
+            :DistanceUnit ;
+   rdfs:label "m" .
+
+
+###  https://w3id.org/tribont/core#m3
+:m3 rdf:type owl:NamedIndividual ,
+             :CapacityUnit ;
+    rdfs:label "m3" .
+
+
+###  https://w3id.org/tribont/core#mPa
+:mPa rdf:type owl:NamedIndividual ,
+              :PressureUnit ;
+     rdfs:label "mPa" .
+
+
+###  https://w3id.org/tribont/core#mb
+:mb rdf:type owl:NamedIndividual ,
+             :MechanicalUnit ;
+    rdfs:label "mb" .
+
+
+###  https://w3id.org/tribont/core#measurement
+:measurement rdf:type owl:NamedIndividual ,
+                      :PropertyRole ;
+             rdfs:label "measurement" .
+
+
+###  https://w3id.org/tribont/core#mg
+:mg rdf:type owl:NamedIndividual ,
+             :WeightUnit ;
+    rdfs:label "mg" .
+
+
+###  https://w3id.org/tribont/core#microinche
+:microinche rdf:type owl:NamedIndividual ,
+                     :DistanceUnit ;
+            rdfs:label "microinche" .
+
+
+###  https://w3id.org/tribont/core#mile
+:mile rdf:type owl:NamedIndividual ,
+               :DistanceUnit ;
+      rdfs:label "mile" .
+
+
+###  https://w3id.org/tribont/core#milisecond
+:milisecond rdf:type owl:NamedIndividual ,
+                     :TimeUnit ;
+            rdfs:label "milisecond" .
+
+
+###  https://w3id.org/tribont/core#minute
+:minute rdf:type owl:NamedIndividual ,
+                 :TimeUnit ;
+        rdfs:label "minute" .
+
+
+###  https://w3id.org/tribont/core#mixed_lubrication
+:mixed_lubrication rdf:type owl:NamedIndividual ,
+                            :LubricationRegime ;
+                   rdfs:label "mixed_lubrication" .
+
+
+###  https://w3id.org/tribont/core#ml
+:ml rdf:type owl:NamedIndividual ,
+             :CapacityUnit ;
+    rdfs:label "ml" .
+
+
+###  https://w3id.org/tribont/core#mm
+:mm rdf:type owl:NamedIndividual ,
+             :DistanceUnit ;
+    rdfs:label "mm" .
+
+
+###  https://w3id.org/tribont/core#mm3
+:mm3 rdf:type owl:NamedIndividual ,
+              :CapacityUnit ;
+     rdfs:label "mm3" .
+
+
+###  https://w3id.org/tribont/core#mpa.m0.5
+:mpa.m0.5 rdf:type owl:NamedIndividual ,
+                   :ToughnessUnit ;
+          rdfs:label "mpa.m0.5" .
+
+
+###  https://w3id.org/tribont/core#mpa.mm0.5
+:mpa.mm0.5 rdf:type owl:NamedIndividual ,
+                    :ToughnessUnit ;
+           rdfs:label "mpa.mm0.5" .
+
+
+###  https://w3id.org/tribont/core#nitrogen
+:nitrogen rdf:type owl:NamedIndividual ,
+                   :EnvironmentMedium ;
+          rdfs:label "nitrogen" .
+
+
+###  https://w3id.org/tribont/core#nmile
+:nmile rdf:type owl:NamedIndividual ,
+                :DistanceUnit ;
+       rdfs:label "nmile" .
+
+
+###  https://w3id.org/tribont/core#no_lubricant
+:no_lubricant rdf:type owl:NamedIndividual ,
+                       :LubricantType ;
+              rdfs:label "no_lubricant" .
+
+
+###  https://w3id.org/tribont/core#oil
+:oil rdf:type owl:NamedIndividual ,
+              :LubricantType ;
+     rdfs:label "oil" .
+
+
+###  https://w3id.org/tribont/core#pa.m0.5
+:pa.m0.5 rdf:type owl:NamedIndividual ,
+                  :ToughnessUnit ;
+         rdfs:label "pa.m0.5" .
+
+
+###  https://w3id.org/tribont/core#percentage
+:percentage rdf:type owl:NamedIndividual ,
+                     :PercentageUnit ;
+            rdfs:label "percentage" .
+
+
+###  https://w3id.org/tribont/core#pin
+:pin rdf:type owl:NamedIndividual ,
+              :Shape ;
+     rdfs:label "pin" .
+
+
+###  https://w3id.org/tribont/core#pin_on_disc
+:pin_on_disc rdf:type owl:NamedIndividual ,
+                      :GeometricalArrangement ;
+             rdfs:label "pin_on_disc" .
+
+
+###  https://w3id.org/tribont/core#pintUk
+:pintUk rdf:type owl:NamedIndividual ,
+                 :CapacityUnit ;
+        rdfs:label "pintUk" .
+
+
+###  https://w3id.org/tribont/core#pintUs
+:pintUs rdf:type owl:NamedIndividual ,
+                 :CapacityUnit ;
+        rdfs:label "pintUs" .
+
+
+###  https://w3id.org/tribont/core#plate
+:plate rdf:type owl:NamedIndividual ,
+                :Shape ;
+       rdfs:label "plate" .
+
+
+###  https://w3id.org/tribont/core#point
+:point rdf:type owl:NamedIndividual ,
+                :ContactSurfaceType ;
+       rdfs:label "point" .
+
+
+###  https://w3id.org/tribont/core#polished
+:polished rdf:type owl:NamedIndividual ,
+                   :PolishGrade ;
+          rdfs:label "polished" .
+
+
+###  https://w3id.org/tribont/core#ppb
+:ppb rdf:type owl:NamedIndividual ,
+              :ContentUnit ;
+     rdfs:label "ppb" .
+
+
+###  https://w3id.org/tribont/core#psi
+:psi rdf:type owl:NamedIndividual ,
+              :MechanicalUnit ;
+     rdfs:label "psi" .
+
+
+###  https://w3id.org/tribont/core#psi.in0.5
+:psi.in0.5 rdf:type owl:NamedIndividual ,
+                    :ToughnessUnit ;
+           rdfs:label "psi.in0.5" .
+
+
+###  https://w3id.org/tribont/core#radian
+:radian rdf:type owl:NamedIndividual ,
+                 :AngleUnit ;
+        rdfs:label "radian" .
+
+
+###  https://w3id.org/tribont/core#ring
+:ring rdf:type owl:NamedIndividual ,
+               :Shape ;
+      rdfs:label "ring" .
+
+
+###  https://w3id.org/tribont/core#ring_on_cylinder
+:ring_on_cylinder rdf:type owl:NamedIndividual ,
+                           :GeometricalArrangement ;
+                  rdfs:label "ring_on_cylinder" .
+
+
+###  https://w3id.org/tribont/core#ring_on_disc
+:ring_on_disc rdf:type owl:NamedIndividual ,
+                       :GeometricalArrangement ;
+              rdfs:label "ring_on_disc" .
+
+
+###  https://w3id.org/tribont/core#rolling
+:rolling rdf:type owl:NamedIndividual ,
+                  :MovementType ;
+         rdfs:label "rolling" .
+
+
+###  https://w3id.org/tribont/core#rotating_reciprocating
+:rotating_reciprocating rdf:type owl:NamedIndividual ,
+                                 :CourseOfMovement ;
+                        rdfs:label "rotating_reciprocating" .
+
+
+###  https://w3id.org/tribont/core#rotating_unidirectional
+:rotating_unidirectional rdf:type owl:NamedIndividual ,
+                                  :CourseOfMovement ;
+                         rdfs:label "rotating_unidirectional" .
+
+
+###  https://w3id.org/tribont/core#rpm
+:rpm rdf:type owl:NamedIndividual ,
+              :RotationalSpeedUnit ;
+     rdfs:label "rpm" .
+
+
+###  https://w3id.org/tribont/core#seal
+:seal rdf:type owl:NamedIndividual ,
+               :Shape ;
+      rdfs:label "seal" .
+
+
+###  https://w3id.org/tribont/core#seal_on_shaft
+:seal_on_shaft rdf:type owl:NamedIndividual ,
+                        :GeometricalArrangement ;
+               rdfs:label "seal_on_shaft" .
+
+
+###  https://w3id.org/tribont/core#second
+:second rdf:type owl:NamedIndividual ,
+                 :TimeUnit ;
+        rdfs:label "second" .
+
+
+###  https://w3id.org/tribont/core#shaft
+:shaft rdf:type owl:NamedIndividual ,
+                :Shape ;
+       rdfs:label "shaft" .
+
+
+###  https://w3id.org/tribont/core#sliding
+:sliding rdf:type owl:NamedIndividual ,
+                  :MovementType ;
+         rdfs:label "sliding" .
+
+
+###  https://w3id.org/tribont/core#sliding_wear
+:sliding_wear rdf:type owl:NamedIndividual ,
+                       :WearType ;
+              rdfs:label "sliding_wear" .
+
+
+###  https://w3id.org/tribont/core#slip
+:slip rdf:type owl:NamedIndividual ,
+               :MovementType ;
+      rdfs:label "slip" .
+
+
+###  https://w3id.org/tribont/core#slip_rolling_wear
+:slip_rolling_wear rdf:type owl:NamedIndividual ,
+                            :WearType ;
+                   rdfs:label "slip_rolling_wear" .
+
+
+###  https://w3id.org/tribont/core#solid_friction
+:solid_friction rdf:type owl:NamedIndividual ,
+                         :LubricationRegime ;
+                rdfs:label "solid_friction" .
+
+
+###  https://w3id.org/tribont/core#solid_lubricant
+:solid_lubricant rdf:type owl:NamedIndividual ,
+                          :LubricantType ;
+                 rdfs:label "solid_lubricant" .
+
+
+###  https://w3id.org/tribont/core#sonotrode
+:sonotrode rdf:type owl:NamedIndividual ,
+                    :Shape ;
+           rdfs:label "sonotrode" .
+
+
+###  https://w3id.org/tribont/core#specification
+:specification rdf:type owl:NamedIndividual ,
+                        :PropertyRole ;
+               rdfs:label "specification" .
+
+
+###  https://w3id.org/tribont/core#stick_slip
+:stick_slip rdf:type owl:NamedIndividual ,
+                     :MovementType ;
+            rdfs:label "stick_slip" .
+
+
+###  https://w3id.org/tribont/core#strain
+:strain rdf:type owl:NamedIndividual ,
+                 :TendencyUnit ;
+        rdfs:label "strain" .
+
+
+###  https://w3id.org/tribont/core#strain_percentage
+:strain_percentage rdf:type owl:NamedIndividual ,
+                            :TendencyUnit ;
+                   rdfs:label "strain_percentage" .
+
+
+###  https://w3id.org/tribont/core#synthetic_air
+:synthetic_air rdf:type owl:NamedIndividual ,
+                        :EnvironmentMedium ;
+               rdfs:label "synthetic_air" .
+
+
+###  https://w3id.org/tribont/core#torr
+:torr rdf:type owl:NamedIndividual ,
+               :MechanicalUnit ;
+      rdfs:label "torr" .
+
+
+###  https://w3id.org/tribont/core#tribocorrosive_wear
+:tribocorrosive_wear rdf:type owl:NamedIndividual ,
+                              :WearType ;
+                     rdfs:label "tribocorrosive_wear" .
+
+
+###  https://w3id.org/tribont/core#v
+:v rdf:type owl:NamedIndividual ,
+            :VoltageUnit ;
+   rdfs:label "v" .
+
+
+###  https://w3id.org/tribont/core#vacuum
+:vacuum rdf:type owl:NamedIndividual ,
+                 :EnvironmentMedium ;
+        rdfs:label "vacuum" .
+
+
+###  https://w3id.org/tribont/core#week
+:week rdf:type owl:NamedIndividual ,
+               :TimeUnit ;
+      rdfs:label "week" .
+
+
+###  https://w3id.org/tribont/core#wt_percentage
+:wt_percentage rdf:type owl:NamedIndividual ,
+                        :HardnessUnit ;
+               rdfs:label "wt_percentage" .
+
+
+###  https://w3id.org/tribont/core#yd
+:yd rdf:type owl:NamedIndividual ,
+             :DistanceUnit ;
+    rdfs:label "yd" .
+
+
+###  https://w3id.org/tribont/core#year
+:year rdf:type owl:NamedIndividual ,
+               :TimeUnit ;
+      rdfs:label "year" .
+
+
+###  https://w3id.org/tribont/core#Å
+:Å rdf:type owl:NamedIndividual ,
+            :DistanceUnit ;
+   rdfs:label "Å" .
+
+
+###  https://w3id.org/tribont/core#-v
+<https://w3id.org/tribont/core#-v> rdf:type owl:NamedIndividual ,
+                                            :VoltageUnit ;
+                                   rdfs:label "-v" .
+
+
+###  https://w3id.org/tribont/core#/min
+<https://w3id.org/tribont/core#/min> rdf:type owl:NamedIndividual ,
+                                              :RotationalSpeedUnit ;
+                                     rdfs:label "min" .
+
+
+###  https://w3id.org/tribont/core#10-3_mbar
+<https://w3id.org/tribont/core#10-3_mbar> rdf:type owl:NamedIndividual ,
+                                                   :MechanicalUnit ;
+                                          rdfs:label "10-3_mbar" .
+
+
+###  https://w3id.org/tribont/core#10-4_strain/°C
+<https://w3id.org/tribont/core#10-4_strain/°C> rdf:type owl:NamedIndividual ,
+                                                        :ExpansionCOFUnit ;
+                                               rdfs:label "°C" .
+
+
+###  https://w3id.org/tribont/core#10-6m2/s
+<https://w3id.org/tribont/core#10-6m2/s> rdf:type owl:NamedIndividual ,
+                                                  :ViscosityUnit ;
+                                         rdfs:label "10-6m2/s" .
+
+
+###  https://w3id.org/tribont/core#106psi
+<https://w3id.org/tribont/core#106psi> rdf:type owl:NamedIndividual ,
+                                                :MechanicalUnit ;
+                                       rdfs:label "106psi" .
+
+
+###  https://w3id.org/tribont/core#BTU/in2
+<https://w3id.org/tribont/core#BTU/in2> rdf:type owl:NamedIndividual ,
+                                                 :TensionUnit ;
+                                        rdfs:label "in2" .
+
+
+###  https://w3id.org/tribont/core#BTU/hr.ft.°F
+<https://w3id.org/tribont/core#BTU/hr.ft.°F> rdf:type owl:NamedIndividual ,
+                                                      :ThermalConductivityUnit ;
+                                             rdfs:label "hr.ft.°F" .
+
+
+###  https://w3id.org/tribont/core#BTU/lb.°F
+<https://w3id.org/tribont/core#BTU/lb.°F> rdf:type owl:NamedIndividual ,
+                                                   :HeatCapacityUnit ;
+                                          rdfs:label "lb.°F" .
+
+
+###  https://w3id.org/tribont/core#J/cm3
+<https://w3id.org/tribont/core#J/cm3> rdf:type owl:NamedIndividual ,
+                                               :MechanicalUnit ;
+                                      rdfs:label "cm3" .
+
+
+###  https://w3id.org/tribont/core#J/m2
+<https://w3id.org/tribont/core#J/m2> rdf:type owl:NamedIndividual ,
+                                              :TensionUnit ;
+                                     rdfs:label "J/m2" .
+
+
+###  https://w3id.org/tribont/core#J/m3
+<https://w3id.org/tribont/core#J/m3> rdf:type owl:NamedIndividual ,
+                                              :MechanicalUnit ;
+                                     rdfs:label "J/m3" .
+
+
+###  https://w3id.org/tribont/core#J/kg.°C
+<https://w3id.org/tribont/core#J/kg.°C> rdf:type owl:NamedIndividual ,
+                                                 :HeatCapacityUnit ;
+                                        rdfs:label "J/kg.°C" .
+
+
+###  https://w3id.org/tribont/core#J/m.s.°C
+<https://w3id.org/tribont/core#J/m.s.°C> rdf:type owl:NamedIndividual ,
+                                                  :ThermalConductivityUnit ;
+                                         rdfs:label "J/m.s.°C" .
+
+
+###  https://w3id.org/tribont/core#MJ/m2
+<https://w3id.org/tribont/core#MJ/m2> rdf:type owl:NamedIndividual ,
+                                               :TensionUnit ;
+                                      rdfs:label "MJ/m2" .
+
+
+###  https://w3id.org/tribont/core#MJ/m3
+<https://w3id.org/tribont/core#MJ/m3> rdf:type owl:NamedIndividual ,
+                                               :MechanicalUnit ;
+                                      rdfs:label "MJ/m3" .
+
+
+###  https://w3id.org/tribont/core#N.mm/mm2
+<https://w3id.org/tribont/core#N.mm/mm2> rdf:type owl:NamedIndividual ,
+                                                  :TensionUnit ;
+                                         rdfs:label "N.mm/mm2" .
+
+
+###  https://w3id.org/tribont/core#N.mm/mm3
+<https://w3id.org/tribont/core#N.mm/mm3> rdf:type owl:NamedIndividual ,
+                                                  :MechanicalUnit ;
+                                         rdfs:label "N.mm/mm3" .
+
+
+###  https://w3id.org/tribont/core#N.mm/g.°C
+<https://w3id.org/tribont/core#N.mm/g.°C> rdf:type owl:NamedIndividual ,
+                                                   :HeatCapacityUnit ;
+                                          rdfs:label "N.mm/g.°C" .
+
+
+###  https://w3id.org/tribont/core#N.mm/ms.mm.°C
+<https://w3id.org/tribont/core#N.mm/ms.mm.°C> rdf:type owl:NamedIndividual ,
+                                                       :ThermalConductivityUnit ;
+                                              rdfs:label "N.mm/ms.mm.°C" .
+
+
+###  https://w3id.org/tribont/core#N.mm/s/mm.°C
+<https://w3id.org/tribont/core#N.mm/s/mm.°C> rdf:type owl:NamedIndividual ,
+                                                      :ThermalConductivityUnit ;
+                                             rdfs:label "N.mm/s/mm.°C" .
+
+
+###  https://w3id.org/tribont/core#N.mm/tonne.°C
+<https://w3id.org/tribont/core#N.mm/tonne.°C> rdf:type owl:NamedIndividual ,
+                                                       :HeatCapacityUnit ;
+                                              rdfs:label "N.mm/tonne.°C" .
+
+
+###  https://w3id.org/tribont/core#N/mm
+<https://w3id.org/tribont/core#N/mm> rdf:type owl:NamedIndividual ,
+                                              :TensionUnit ;
+                                     rdfs:label "N/mm" .
+
+
+###  https://w3id.org/tribont/core#N/mm2
+<https://w3id.org/tribont/core#N/mm2> rdf:type owl:NamedIndividual ,
+                                               :MechanicalUnit ;
+                                      rdfs:label "N/mm2" .
+
+
+###  https://w3id.org/tribont/core#N/s
+<https://w3id.org/tribont/core#N/s> rdf:type owl:NamedIndividual ,
+                                             :LoadRateUnit ;
+                                    rdfs:label "N/s" .
+
+
+###  https://w3id.org/tribont/core#W/m.°C
+<https://w3id.org/tribont/core#W/m.°C> rdf:type owl:NamedIndividual ,
+                                                :ThermalConductivityUnit ;
+                                       rdfs:label "W/m.°C" .
+
+
+###  https://w3id.org/tribont/core#cal/g.°C
+<https://w3id.org/tribont/core#cal/g.°C> rdf:type owl:NamedIndividual ,
+                                                  :HeatCapacityUnit ;
+                                         rdfs:label "cal/g.°C" .
+
+
+###  https://w3id.org/tribont/core#cm/cm
+<https://w3id.org/tribont/core#cm/cm> rdf:type owl:NamedIndividual ,
+                                               :TendencyUnit ;
+                                      rdfs:label "cm/cm" .
+
+
+###  https://w3id.org/tribont/core#cm/100m
+<https://w3id.org/tribont/core#cm/100m> rdf:type owl:NamedIndividual ,
+                                                 :TendencyUnit ;
+                                        rdfs:label "cm/100m" .
+
+
+###  https://w3id.org/tribont/core#cm2/s
+<https://w3id.org/tribont/core#cm2/s> rdf:type owl:NamedIndividual ,
+                                               :ViscosityUnit ;
+                                      rdfs:label "cm2/s" .
+
+
+###  https://w3id.org/tribont/core#dyn/cm
+<https://w3id.org/tribont/core#dyn/cm> rdf:type owl:NamedIndividual ,
+                                                :TensionUnit ;
+                                       rdfs:label "dyn/cm" .
+
+
+###  https://w3id.org/tribont/core#dyn/cm1.5
+<https://w3id.org/tribont/core#dyn/cm1.5> rdf:type owl:NamedIndividual ,
+                                                   :ToughnessUnit ;
+                                          rdfs:label "dyn/cm1.5" .
+
+
+###  https://w3id.org/tribont/core#dyn/cm2
+<https://w3id.org/tribont/core#dyn/cm2> rdf:type owl:NamedIndividual ,
+                                                 :MechanicalUnit ;
+                                        rdfs:label "dyn/cm2" .
+
+
+###  https://w3id.org/tribont/core#erg/cm2
+<https://w3id.org/tribont/core#erg/cm2> rdf:type owl:NamedIndividual ,
+                                                 :TensionUnit ;
+                                        rdfs:label "erg/cm2" .
+
+
+###  https://w3id.org/tribont/core#erg/cm3
+<https://w3id.org/tribont/core#erg/cm3> rdf:type owl:NamedIndividual ,
+                                                 :MechanicalUnit ;
+                                        rdfs:label "erg/cm3" .
+
+
+###  https://w3id.org/tribont/core#erg/g.°C
+<https://w3id.org/tribont/core#erg/g.°C> rdf:type owl:NamedIndividual ,
+                                                  :HeatCapacityUnit ;
+                                         rdfs:label "erg/g.°C" .
+
+
+###  https://w3id.org/tribont/core#erg/s.cm.°C
+<https://w3id.org/tribont/core#erg/s.cm.°C> rdf:type owl:NamedIndividual ,
+                                                     :ThermalConductivityUnit ;
+                                            rdfs:label "s.cm.°C\"" .
+
+
+###  https://w3id.org/tribont/core#ft.lbf/ft2
+<https://w3id.org/tribont/core#ft.lbf/ft2> rdf:type owl:NamedIndividual ,
+                                                    :TensionUnit ;
+                                           rdfs:label "ft.lbf/ft2" .
+
+
+###  https://w3id.org/tribont/core#ft.lbf/ft3
+<https://w3id.org/tribont/core#ft.lbf/ft3> rdf:type owl:NamedIndividual ,
+                                                    :MechanicalUnit ;
+                                           rdfs:label "ft.lbf/ft3" .
+
+
+###  https://w3id.org/tribont/core#ft.lbf/in2
+<https://w3id.org/tribont/core#ft.lbf/in2> rdf:type owl:NamedIndividual ,
+                                                    :TensionUnit ;
+                                           rdfs:label "ft.lbf/in2" .
+
+
+###  https://w3id.org/tribont/core#ft.lbf/in3
+<https://w3id.org/tribont/core#ft.lbf/in3> rdf:type owl:NamedIndividual ,
+                                                    :MechanicalUnit ;
+                                           rdfs:label "ft.lbf/in3" .
+
+
+###  https://w3id.org/tribont/core#ft/ft
+<https://w3id.org/tribont/core#ft/ft> rdf:type owl:NamedIndividual ,
+                                               :TendencyUnit ;
+                                      rdfs:label "ft/ft" .
+
+
+###  https://w3id.org/tribont/core#ft2/hr
+<https://w3id.org/tribont/core#ft2/hr> rdf:type owl:NamedIndividual ,
+                                                :ViscosityUnit ;
+                                       rdfs:label "ft2/hr" .
+
+
+###  https://w3id.org/tribont/core#ft2/s
+<https://w3id.org/tribont/core#ft2/s> rdf:type owl:NamedIndividual ,
+                                               :ViscosityUnit ;
+                                      rdfs:label "ft2/s" .
+
+
+###  https://w3id.org/tribont/core#g/cm3
+<https://w3id.org/tribont/core#g/cm3> rdf:type owl:NamedIndividual ,
+                                               :DensityUnit ;
+                                      rdfs:label "g/cm3" .
+
+
+###  https://w3id.org/tribont/core#g/mm3
+<https://w3id.org/tribont/core#g/mm3> rdf:type owl:NamedIndividual ,
+                                               :DensityUnit ;
+                                      rdfs:label "g/mm3" .
+
+
+###  https://w3id.org/tribont/core#in.lbf/in2
+<https://w3id.org/tribont/core#in.lbf/in2> rdf:type owl:NamedIndividual ,
+                                                    :TensionUnit ;
+                                           rdfs:label "in.lbf/in2" .
+
+
+###  https://w3id.org/tribont/core#in.lbf/in3
+<https://w3id.org/tribont/core#in.lbf/in3> rdf:type owl:NamedIndividual ,
+                                                    :MechanicalUnit ;
+                                           rdfs:label "in.lbf/in3" .
+
+
+###  https://w3id.org/tribont/core#in/in
+<https://w3id.org/tribont/core#in/in> rdf:type owl:NamedIndividual ,
+                                               :TendencyUnit ;
+                                      rdfs:label "in/in" .
+
+
+###  https://w3id.org/tribont/core#in/100ft
+<https://w3id.org/tribont/core#in/100ft> rdf:type owl:NamedIndividual ,
+                                                  :TendencyUnit ;
+                                         rdfs:label "in/100ft" .
+
+
+###  https://w3id.org/tribont/core#in/in/°F
+<https://w3id.org/tribont/core#in/in/°F> rdf:type owl:NamedIndividual ,
+                                                  :ExpansionCOFUnit ;
+                                         rdfs:label "in/in/°F" .
+
+
+###  https://w3id.org/tribont/core#in2/s
+<https://w3id.org/tribont/core#in2/s> rdf:type owl:NamedIndividual ,
+                                               :ViscosityUnit ;
+                                      rdfs:label "in2/s" .
+
+
+###  https://w3id.org/tribont/core#kJ/m2
+<https://w3id.org/tribont/core#kJ/m2> rdf:type owl:NamedIndividual ,
+                                               :TensionUnit ;
+                                      rdfs:label "kJ/m2" .
+
+
+###  https://w3id.org/tribont/core#kJ/m3
+<https://w3id.org/tribont/core#kJ/m3> rdf:type owl:NamedIndividual ,
+                                               :MechanicalUnit ;
+                                      rdfs:label "kJ/m3" .
+
+
+###  https://w3id.org/tribont/core#kJ/kg.°C
+<https://w3id.org/tribont/core#kJ/kg.°C> rdf:type owl:NamedIndividual ,
+                                                  :HeatCapacityUnit ;
+                                         rdfs:label "kJ/kg.°C" .
+
+
+###  https://w3id.org/tribont/core#kN/cm2
+<https://w3id.org/tribont/core#kN/cm2> rdf:type owl:NamedIndividual ,
+                                                :MechanicalUnit ;
+                                       rdfs:label "kN/cm2" .
+
+
+###  https://w3id.org/tribont/core#kN/m
+<https://w3id.org/tribont/core#kN/m> rdf:type owl:NamedIndividual ,
+                                              :TensionUnit ;
+                                     rdfs:label "kN/m" .
+
+
+###  https://w3id.org/tribont/core#kg/m3
+<https://w3id.org/tribont/core#kg/m3> rdf:type owl:NamedIndividual ,
+                                               :DensityUnit ;
+                                      rdfs:label "kg/m3" .
+
+
+###  https://w3id.org/tribont/core#kg/mm3
+<https://w3id.org/tribont/core#kg/mm3> rdf:type owl:NamedIndividual ,
+                                                :DensityUnit ;
+                                       rdfs:label "kg/mm3" .
+
+
+###  https://w3id.org/tribont/core#kgf/mm2
+<https://w3id.org/tribont/core#kgf/mm2> rdf:type owl:NamedIndividual ,
+                                                 :MechanicalUnit ;
+                                        rdfs:label "kgf/mm2" .
+
+
+###  https://w3id.org/tribont/core#lb/ft3
+<https://w3id.org/tribont/core#lb/ft3> rdf:type owl:NamedIndividual ,
+                                                :DensityUnit ;
+                                       rdfs:label "lb/ft3" .
+
+
+###  https://w3id.org/tribont/core#lb/in3
+<https://w3id.org/tribont/core#lb/in3> rdf:type owl:NamedIndividual ,
+                                                :DensityUnit ;
+                                       rdfs:label "lb/in3" .
+
+
+###  https://w3id.org/tribont/core#lbf.ft/lb.°F
+<https://w3id.org/tribont/core#lbf.ft/lb.°F> rdf:type owl:NamedIndividual ,
+                                                      :HeatCapacityUnit ;
+                                             rdfs:label "lbf.ft/lb.°F" .
+
+
+###  https://w3id.org/tribont/core#lbf.ft/slug.°F
+<https://w3id.org/tribont/core#lbf.ft/slug.°F> rdf:type owl:NamedIndividual ,
+                                                        :HeatCapacityUnit ;
+                                               rdfs:label "lbf.ft/slug.°F" .
+
+
+###  https://w3id.org/tribont/core#lbf.in.in/lbf.s2.°F
+<https://w3id.org/tribont/core#lbf.in.in/lbf.s2.°F> rdf:type owl:NamedIndividual ,
+                                                             :HeatCapacityUnit ;
+                                                    rdfs:label "lbf.in.in/lbf.s2.°F" .
+
+
+###  https://w3id.org/tribont/core#lbf.in/lb.°F
+<https://w3id.org/tribont/core#lbf.in/lb.°F> rdf:type owl:NamedIndividual ,
+                                                      :HeatCapacityUnit ;
+                                             rdfs:label "lbf.in/lb.°F" .
+
+
+###  https://w3id.org/tribont/core#lbf.s2/in.in3
+<https://w3id.org/tribont/core#lbf.s2/in.in3> rdf:type owl:NamedIndividual ,
+                                                       :DensityUnit ;
+                                              rdfs:label "lbf.s2/in.in3" .
+
+
+###  https://w3id.org/tribont/core#lbf/ft
+<https://w3id.org/tribont/core#lbf/ft> rdf:type owl:NamedIndividual ,
+                                                :TensionUnit ;
+                                       rdfs:label "lbf/ft" .
+
+
+###  https://w3id.org/tribont/core#lbf/ft1.5
+<https://w3id.org/tribont/core#lbf/ft1.5> rdf:type owl:NamedIndividual ,
+                                                   :ToughnessUnit ;
+                                          rdfs:label "lbf/ft1.5" .
+
+
+###  https://w3id.org/tribont/core#lbf/ft2
+<https://w3id.org/tribont/core#lbf/ft2> rdf:type owl:NamedIndividual ,
+                                                 :MechanicalUnit ;
+                                        rdfs:label "lbf/ft2" .
+
+
+###  https://w3id.org/tribont/core#lbf/in
+<https://w3id.org/tribont/core#lbf/in> rdf:type owl:NamedIndividual ,
+                                                :TensionUnit ;
+                                       rdfs:label "lbf/in" .
+
+
+###  https://w3id.org/tribont/core#lbf/s.°F
+<https://w3id.org/tribont/core#lbf/s.°F> rdf:type owl:NamedIndividual ,
+                                                  :ThermalConductivityUnit ;
+                                         rdfs:label "lbf/s.°F" .
+
+
+###  https://w3id.org/tribont/core#m/m
+<https://w3id.org/tribont/core#m/m> rdf:type owl:NamedIndividual ,
+                                             :TendencyUnit ;
+                                    rdfs:label "m/m" .
+
+
+###  https://w3id.org/tribont/core#m/s
+<https://w3id.org/tribont/core#m/s> rdf:type owl:NamedIndividual ,
+                                             :VelocityUnit ;
+                                    rdfs:label "m/s" .
+
+
+###  https://w3id.org/tribont/core#m2/s
+<https://w3id.org/tribont/core#m2/s> rdf:type owl:NamedIndividual ,
+                                              :ViscosityUnit ;
+                                     rdfs:label "m2/s" .
+
+
+###  https://w3id.org/tribont/core#mN/m
+<https://w3id.org/tribont/core#mN/m> rdf:type owl:NamedIndividual ,
+                                              :TensionUnit ;
+                                     rdfs:label "mN/m" .
+
+
+###  https://w3id.org/tribont/core#mg/m3
+<https://w3id.org/tribont/core#mg/m3> rdf:type owl:NamedIndividual ,
+                                               :DensityUnit ;
+                                      rdfs:label "mg/m3" .
+
+
+###  https://w3id.org/tribont/core#mgKOH/g
+<https://w3id.org/tribont/core#mgKOH/g> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "mgKOH/g" .
+
+
+###  https://w3id.org/tribont/core#ml/ml
+<https://w3id.org/tribont/core#ml/ml> rdf:type owl:NamedIndividual ,
+                                               :TendencyUnit ;
+                                      rdfs:label "ml/ml" .
+
+
+###  https://w3id.org/tribont/core#mm/mm
+<https://w3id.org/tribont/core#mm/mm> rdf:type owl:NamedIndividual ,
+                                               :TendencyUnit ;
+                                      rdfs:label "mm/mm" .
+
+
+###  https://w3id.org/tribont/core#mm/s
+<https://w3id.org/tribont/core#mm/s> rdf:type owl:NamedIndividual ,
+                                              :VelocityUnit ;
+                                     rdfs:label "mm/s" .
+
+
+###  https://w3id.org/tribont/core#mm2/ms
+<https://w3id.org/tribont/core#mm2/ms> rdf:type owl:NamedIndividual ,
+                                                :ViscosityUnit ;
+                                       rdfs:label "mm2/ms" .
+
+
+###  https://w3id.org/tribont/core#mm2/s
+<https://w3id.org/tribont/core#mm2/s> rdf:type owl:NamedIndividual ,
+                                               :ViscosityUnit ;
+                                      rdfs:label "mm2/s" .
+
+
+###  https://w3id.org/tribont/core#n/mm1.5
+<https://w3id.org/tribont/core#n/mm1.5> rdf:type owl:NamedIndividual ,
+                                                 :ToughnessUnit ;
+                                        rdfs:label "n/mm1.5" .
+
+
+###  https://w3id.org/tribont/core#percentagestrain/°F
+<https://w3id.org/tribont/core#percentagestrain/°F> rdf:type owl:NamedIndividual ,
+                                                             :ExpansionCOFUnit ;
+                                                    rdfs:label "percentagestrain/°F" .
+
+
+###  https://w3id.org/tribont/core#percentangestrain/°C
+<https://w3id.org/tribont/core#percentangestrain/°C> rdf:type owl:NamedIndividual ,
+                                                              :ExpansionCOFUnit ;
+                                                     rdfs:label "percentangestrain/°C" .
+
+
+###  https://w3id.org/tribont/core#slug/ft3
+<https://w3id.org/tribont/core#slug/ft3> rdf:type owl:NamedIndividual ,
+                                                  :DensityUnit ;
+                                         rdfs:label "slug/ft3" .
+
+
+###  https://w3id.org/tribont/core#sp-gr23/23°C
+<https://w3id.org/tribont/core#sp-gr23/23°C> rdf:type owl:NamedIndividual ,
+                                                      :DensityUnit ;
+                                             rdfs:label "sp-gr23/23°C" .
+
+
+###  https://w3id.org/tribont/core#strain/°C
+<https://w3id.org/tribont/core#strain/°C> rdf:type owl:NamedIndividual ,
+                                                   :ExpansionCOFUnit ;
+                                          rdfs:label "strain/°C" .
+
+
+###  https://w3id.org/tribont/core#strain/°F
+<https://w3id.org/tribont/core#strain/°F> rdf:type owl:NamedIndividual ,
+                                                   :ExpansionCOFUnit ;
+                                          rdfs:label "strain/°F" .
+
+
+###  https://w3id.org/tribont/core#ton/in3
+<https://w3id.org/tribont/core#ton/in3> rdf:type owl:NamedIndividual ,
+                                                 :DensityUnit ;
+                                        rdfs:label "ton/in3" .
+
+
+###  https://w3id.org/tribont/core#tonne/mm3
+<https://w3id.org/tribont/core#tonne/mm3> rdf:type owl:NamedIndividual ,
+                                                   :DensityUnit ;
+                                          rdfs:label "tonne/mm3" .
+
+
+###  https://w3id.org/tribont/core#°C
+<https://w3id.org/tribont/core#°C> rdf:type owl:NamedIndividual ,
+                                            :TemperatureUnit ;
+                                   rdfs:label "°C" .
+
+
+###  https://w3id.org/tribont/core#°F
+<https://w3id.org/tribont/core#°F> rdf:type owl:NamedIndividual ,
+                                            :TemperatureUnit ;
+                                   rdfs:label "°F" .
+
+
+###  https://w3id.org/tribont/core#°K
+<https://w3id.org/tribont/core#°K> rdf:type owl:NamedIndividual ,
+                                            :TemperatureUnit ;
+                                   rdfs:label "°K" .
+
+
+###  https://w3id.org/tribont/core#°R
+<https://w3id.org/tribont/core#°R> rdf:type owl:NamedIndividual ,
+                                            :TemperatureUnit ;
+                                   rdfs:label "°R" .
+
+
+###  https://w3id.org/tribont/core#µHz
+<https://w3id.org/tribont/core#µHz> rdf:type owl:NamedIndividual ,
+                                             :FrequencyUnit ;
+                                    rdfs:label "µHz" .
+
+
+###  https://w3id.org/tribont/core#µm
+<https://w3id.org/tribont/core#µm> rdf:type owl:NamedIndividual ,
+                                            :DistanceUnit ;
+                                   rdfs:label "µm" .
+
+
+###  https://w3id.org/tribont/core#µm3
+<https://w3id.org/tribont/core#µm3> rdf:type owl:NamedIndividual ,
+                                             :CapacityUnit ;
+                                    rdfs:label "µm3" .
+
+
+###  https://w3id.org/tribont/core#µstrain
+<https://w3id.org/tribont/core#µstrain> rdf:type owl:NamedIndividual ,
+                                                 :TendencyUnit ;
+                                        rdfs:label "µstrain" .
+
+
+###  https://w3id.org/tribont/core#µstrain/°C
+<https://w3id.org/tribont/core#µstrain/°C> rdf:type owl:NamedIndividual ,
+                                                    :ExpansionCOFUnit ;
+                                           rdfs:label "µstrain/°C" .
+
+
+###  https://w3id.org/tribont/core#µstrain/°F
+<https://w3id.org/tribont/core#µstrain/°F> rdf:type owl:NamedIndividual ,
+                                                    :ExpansionCOFUnit ;
+                                           rdfs:label "µstrain/°F" .
+
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+terms:identifier ns1:term_status "Stable" ;
+                  rdfs:label "identifier" ;
+                  rdfs:comment "An unambiguous reference to the resource within a given context." ;
+                  rdfs:isDefinedBy "http://purl.org/dc/terms/" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://dbpedia.org/ontology/Company>
+                <http://dbpedia.org/ontology/Document>
+                terms:Standard
+                <https://w3id.org/isCharacterisedBy#Feature>
+                <https://w3id.org/isCharacterisedBy#Property>
+                <https://w3id.org/isCharacterisedBy#SubjectOfInterest>
+                <https://w3id.org/isCharacterisedBy#Unit>
+                :Role
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Acceleration
+                :AngularPosition
+                :Decceleration
+                :Frequency
+                :LinearSpeed
+                :NormalForce
+                :RotationalSpeed
+                :SlidingSpeed
+                :SlipPercentage
+                :StrokeAmplitude
+                :StrokeDiameter
+                :StrokeLength
+                :Velocity
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AcidNumberAN
+                :AirReleaseTimeLAV
+                :AlkalineAdditivesConsumption
+                :ColourIndex
+                :Conductivity
+                :CoradsonCarbonResidue
+                :CorrosionLevel
+                :Dispersancy
+                :DissipationFactor
+                :DynamicViscosity
+                :ElectricalBreakdownVoltage
+                :Filterability
+                :FoamingTendency
+                :InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads
+                :InterfacialTensionBetweenWaterOil
+                :KinematicViscosity
+                :LodineNumber
+                :LubricantsOxidationStability
+                :NeutralisationNumberNN
+                :PQIndex
+                :RelativeDielectricConstant
+                :Rust-PreventingCharacteristicInPresenceOfWater
+                :ShearStability
+                :i-ph
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AxialLoad
+                :ExternalForce
+                :FrictionTorque
+                :Load
+                :LoadLeverRatio
+                :LoadPressure
+                :LoadRate
+                :Torque
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BodyProperty
+                :OperationProperty
+                :SystemProperty
+                :TechnicalProperty
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CloudPoint
+                :ColdFilterPluggingPoint
+                :FlashPoint
+                :PourPoint
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CompressiveStrength
+                :FlexuralStrength
+                :FractureToughness
+                :HardnessProperty
+                :PoisssonRatio
+                :TensileStrength
+                :WeibullModulus
+                :YieldStrength
+                :YoungModulus
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ContactSurfaceType
+                :GeometricalArrangement
+                :NumberOfContactSurface
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CourseOfMovement
+                :Duration
+                :EnvironmentMedium
+                :EnvironmentProperty
+                :LoadProperty
+                :LubricantPumpProperty
+                :LubricantType
+                :LubricationRegime
+                :MovementProperty
+                :MovementType
+                :RadiationType
+                :WearType
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Diameter
+                :Height
+                :Length
+                :TeethHeight
+                :TeethLength
+                :Width
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ElectricalProperty
+                :MechanicalProperty
+                :PhysicalProperty
+                :SurfaceProperty
+                :ThermalProperty
+                :TribologicalProperty
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FailureProperty
+                :FrictionProperty
+                :WearProperty
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :GeometricDimension
+                :Shape
+                :Volume
+                :Weight
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HardnessBrinell
+                :HardnessKnoop100g
+                :HardnessRockwellB
+                :HardnessRockwellC
+                :HardnessRockwellM
+                :HardnessRockwellR
+                :HardnessShoreA
+                :HardnessShoreD
+                :HardnessVickers
+                :IndentationHardnessMicro
+                :IndentationHardnessNano
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Humidity
+                :Inclination
+                :O2Level
+                :PhLevel
+                :Pressure
+                :RadiationDosage
+                :Temperature
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :MaximumServiceTemperature
+                :MeltingPoint
+                :SpecificHeatCapacity
+                :ThermalConductivity
+                :ThermalExpansionCoefficient
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :OperationCondition
+                :Output
+                :SampleBody
+                :SampleSystemArrangement
+                :TechnicalSpecification
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :PumpFlowRate
+                :PumpRotationalSpeed
+                :PumpTemperature
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Ra
+                :Rk
+                :Rku
+                :Rmk1
+                :Rmk2
+                :Rp
+                :Rpk
+                :Rpkx
+                :Rq
+                :Rsk
+                :Rt
+                :Rv
+                :Rvkx
+                :Rz
+                :Sa
+                :Sdq
+                :Sdr
+                :Sk
+                :Sku
+                :Smk1
+                :Smk2
+                :Sp
+                :Spk
+                :Spkx
+                :Sq
+                :Ssk
+                :Sv
+                :Svk
+                :Svkx
+                :Sz
+                :Vmc
+                :Vmp
+                :Vvc
+                :Vvv
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#f> rdf:type swrl:Variable .
+
+<urn:swrl:var#p> rdf:type swrl:Variable .
+
+<urn:swrl:var#r> rdf:type swrl:Variable .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <https://w3id.org/isCharacterisedBy#Feature> ;
+                           swrl:argument1 <urn:swrl:var#f>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate <https://w3id.org/isCharacterisedBy#Property> ;
+                                      swrl:argument1 <urn:swrl:var#p>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                                 swrl:argument1 <urn:swrl:var#f> ;
+                                                 swrl:argument2 <urn:swrl:var#p>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate :hasRole ;
+                                                            swrl:argument1 <urn:swrl:var#f> ;
+                                                            swrl:argument2 <urn:swrl:var#r>
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate :hasRole ;
+                           swrl:argument1 <urn:swrl:var#p> ;
+                           swrl:argument2 <urn:swrl:var#r>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

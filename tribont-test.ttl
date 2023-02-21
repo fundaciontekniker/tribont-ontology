@@ -1,0 +1,965 @@
+@prefix : <https://w3id.org/trib#> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix p0: <http://xmlns.com/foaf/spec/#> .
+@prefix ns1: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix body: <https://w3id.org/tribont/body#> .
+@prefix core: <https://saref.etsi.org/core/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix test: <https://w3id.org/tribont/test#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix rdfs1: <https://w3id.org/tribont/test#rdfs:> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix dcterms: <https://w3id.org/tribont/equipment#dcterms:> .
+@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@base <https://w3id.org/tribont/test> .
+
+<https://w3id.org/tribont/test> rdf:type owl:Ontology ;
+                                 owl:imports <https://w3id.org/tribont/core> ,
+                                             <https://w3id.org/tribont/equipment> ,
+                                             <https://w3id.org/tribont/sample> ;
+                                 ns:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                 terms:created "2021-10-18" ;
+                                 terms:creator """Patricia Casla<mailto:patricia.casla@tekniker.es>
+Izaskun Fernandez <mailto:izaskun.fernandez"""@tekniker.es> ;
+                                 terms:description "The xxx ontology xxx"@en ;
+                                 terms:issued "2021-mm-dd" ;
+                                 terms:title "XXX" ;
+                                 vann:preferredNamespacePrefix "test" ;
+                                 owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+ns:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+terms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+terms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+terms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+terms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+terms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#cardinality
+owl:cardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+ns1:term_status rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/isCharacterisedBy#characterises
+<https://w3id.org/isCharacterisedBy#characterises> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/isCharacterisedBy#hasProperty
+<https://w3id.org/isCharacterisedBy#hasProperty> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/isCharacterisedBy#isCharacterisedBy
+<https://w3id.org/isCharacterisedBy#isCharacterisedBy> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/core#hasDocument
+<https://w3id.org/tribont/core#hasDocument> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/core#hasRole
+<https://w3id.org/tribont/core#hasRole> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/core#isMadeOf
+<https://w3id.org/tribont/core#isMadeOf> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/sample#hasLubricationMaterial
+<https://w3id.org/tribont/sample#hasLubricationMaterial> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/test#executes
+test:executes rdf:type owl:ObjectProperty ;
+              owl:inverseOf test:isExecutedBy ;
+              rdfs:comment "Relation between an equipment and the activity it carries out." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+              rdfs:label "executes" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#hasAfterEndDependency
+test:hasAfterEndDependency rdf:type owl:ObjectProperty ;
+                           owl:equivalentProperty test:isNext ;
+                           rdfs:subPropertyOf test:hasDependency ;
+                           rdfs:comment "Relation between an activity and the one preceding it." ;
+                           rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                           rdfs:label "hasAfterEndDependency" ;
+                           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#hasDependency
+test:hasDependency rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Identifies the dependency between two activities." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                   rdfs:label "hasDependency" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#hasNofollowDependency
+test:hasNofollowDependency rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf test:hasDependency ;
+                           rdfs:comment "Indicates that an activity has not a following one." ;
+                           rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                           rdfs:label "hasNofollowDependency" ;
+                           ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#isExecutedBy
+test:isExecutedBy rdf:type owl:ObjectProperty ;
+                  rdfs:comment "Relation between an activity and the equipment that executes it." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                  rdfs:label "isExecutedBy" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#isNext
+test:isNext rdf:type owl:ObjectProperty ;
+            owl:inverseOf test:isPrevious ;
+            rdfs:comment "Relation between an activity and the one preceding it." ;
+            rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+            rdfs:label "isNext" ;
+            ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#isPerformedAt
+test:isPerformedAt rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Relation between an activity and the company where it is performed." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                   rdfs:label "isPerformedAt" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#isPerformedBy
+test:isPerformedBy rdf:type owl:ObjectProperty ;
+                   owl:inverseOf test:performs ;
+                   rdfs:comment "Relation between an activity and the person who performs it." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                   rdfs:label "isPerformedBy" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#isPrevious
+test:isPrevious rdf:type owl:ObjectProperty ;
+                rdfs:comment "Relation between an activity and the one following it." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                rdfs:label "isPrevious" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#performs
+test:performs rdf:type owl:ObjectProperty ;
+              rdfs:comment "The relation between a person and the activity he/she performs " ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+              rdfs:label "performs" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#testsSample
+test:testsSample rdf:type owl:ObjectProperty ;
+                 rdfs:comment "Relation between a testing activity and the involved sample." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                 rdfs:label "testsSample" ;
+                 ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#testsSampleSystem
+test:testsSampleSystem rdf:type owl:ObjectProperty ;
+                       rdfs:comment "Relation between a testing activity and the involved sample system." ;
+                       rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                       rdfs:label "testsSampleSystem" ;
+                       ns1:term_status "Testing" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Company
+<http://dbpedia.org/ontology/Company> rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/Document
+<http://dbpedia.org/ontology/Document> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error72
+<http://org.semanticweb.owlapi/error#Error72> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error73
+<http://org.semanticweb.owlapi/error#Error73> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error74
+<http://org.semanticweb.owlapi/error#Error74> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error75
+<http://org.semanticweb.owlapi/error#Error75> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error76
+<http://org.semanticweb.owlapi/error#Error76> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error77
+<http://org.semanticweb.owlapi/error#Error77> rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/Standard
+terms:Standard rdf:type owl:Class .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Person
+<https://purl.industrialontologies.org/ontology/core/Core/Person> rdf:type owl:Class ;
+                                                                  rdfs:comment "Object that is the member of the species of homo sapiens" ;
+                                                                  rdfs:isDefinedBy "https://purl.industrialontologies.org/ontology/core/Core/Person" ;
+                                                                  rdfs:label "Person" ;
+                                                                  ns1:term_status "Stable" .
+
+
+###  https://w3id.org/isCharacterisedBy#Feature
+<https://w3id.org/isCharacterisedBy#Feature> rdf:type owl:Class .
+
+
+###  https://w3id.org/isCharacterisedBy#Property
+<https://w3id.org/isCharacterisedBy#Property> rdf:type owl:Class .
+
+
+###  https://w3id.org/isCharacterisedBy#SubjectOfInterest
+<https://w3id.org/isCharacterisedBy#SubjectOfInterest> rdf:type owl:Class .
+
+
+###  https://w3id.org/isCharacterisedBy#Unit
+<https://w3id.org/isCharacterisedBy#Unit> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#GeometricDimension
+<https://w3id.org/tribont/core#GeometricDimension> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#OperationCondition
+<https://w3id.org/tribont/core#OperationCondition> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#OperationProperty
+<https://w3id.org/tribont/core#OperationProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#Output
+<https://w3id.org/tribont/core#Output> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#Role
+<https://w3id.org/tribont/core#Role> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#TechnicalProperty
+<https://w3id.org/tribont/core#TechnicalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#TribologicalProperty
+<https://w3id.org/tribont/core#TribologicalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#Volume
+<https://w3id.org/tribont/core#Volume> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#WearScarProperty
+<https://w3id.org/tribont/core#WearScarProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#Weight
+<https://w3id.org/tribont/core#Weight> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/equipment#Calibration
+<https://w3id.org/tribont/equipment#Calibration> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/equipment#CalibrationDocument
+<https://w3id.org/tribont/equipment#CalibrationDocument> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/equipment#Equipment
+<https://w3id.org/tribont/equipment#Equipment> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/equipment#EquipmentClass
+<https://w3id.org/tribont/equipment#EquipmentClass> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/equipment#ExperimentalEquipment
+<https://w3id.org/tribont/equipment#ExperimentalEquipment> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/equipment#MeasuringEquipment
+<https://w3id.org/tribont/equipment#MeasuringEquipment> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/equipment#OperationMeasurementSpecification
+<https://w3id.org/tribont/equipment#OperationMeasurementSpecification> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/equipment#OperationSpecification
+<https://w3id.org/tribont/equipment#OperationSpecification> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/equipment#OutputSpecification
+<https://w3id.org/tribont/equipment#OutputSpecification> rdf:type owl:Class ;
+                                                         owl:disjointWith test:OutputMeasurement .
+
+
+###  https://w3id.org/tribont/equipment#Scale
+<https://w3id.org/tribont/equipment#Scale> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/equipment#TechnicalDocumentation
+<https://w3id.org/tribont/equipment#TechnicalDocumentation> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/equipment#Tribometer
+<https://w3id.org/tribont/equipment#Tribometer> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#Material
+<https://w3id.org/tribont/material#Material> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#MaterialApplication
+<https://w3id.org/tribont/material#MaterialApplication> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#MaterialIdentification
+<https://w3id.org/tribont/material#MaterialIdentification> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/sample#Sample
+<https://w3id.org/tribont/sample#Sample> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/sample#SampleBatch
+<https://w3id.org/tribont/sample#SampleBatch> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/sample#SampleSystem
+<https://w3id.org/tribont/sample#SampleSystem> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/test#Experiment
+test:Experiment rdf:type owl:Class ;
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error72> ,
+                                <http://org.semanticweb.owlapi/error#Error73> ,
+                                <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/tribont/core#hasDocument> ;
+                                  owl:someValuesFrom test:TestOutputDocument
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/tribont/core#hasDocument> ;
+                                  owl:allValuesFrom test:TestOutputDocument
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/tribont/core#isMadeOf> ;
+                                  owl:allValuesFrom test:Test
+                                ] ;
+                rdfs:comment "A series of activities to carry out an experimentation procedure and measure its outputs." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                rdfs:label "Experiment" ;
+                ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#ExperimentalTest
+test:ExperimentalTest rdf:type owl:Class ;
+                      rdfs:subClassOf test:Test ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty test:isExecutedBy ;
+                                        owl:allValuesFrom <https://w3id.org/tribont/equipment#ExperimentalEquipment>
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty test:isExecutedBy ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass <https://w3id.org/tribont/equipment#ExperimentalEquipment>
+                                      ] ;
+                      rdfs:comment "A testing activity that reproduces certain operation conditions to assess one or more technical attributes or characteristics of a given sample or sample system." ;
+                      rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                      rdfs:label "ExperimentalTest" ;
+                      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#MeasuringTest
+test:MeasuringTest rdf:type owl:Class ;
+                   rdfs:subClassOf test:Test ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty test:isExecutedBy ;
+                                     owl:allValuesFrom <https://w3id.org/tribont/equipment#MeasuringEquipment>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty test:testsSample ;
+                                     owl:allValuesFrom <https://w3id.org/tribont/sample#Sample>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty test:isExecutedBy ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <https://w3id.org/tribont/equipment#MeasuringEquipment>
+                                   ] ;
+                   rdfs:comment "A testing activity that measures one or more attributes or characteristics of a given sample." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                   rdfs:label "MeasuringTest" ;
+                   ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#OperationConfiguration
+test:OperationConfiguration rdf:type owl:Class ;
+                            rdfs:subClassOf <https://w3id.org/tribont/core#OperationCondition> ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://w3id.org/tribont/core#hasRole> ;
+                                              owl:hasValue <https://w3id.org/tribont/core#configuration>
+                                            ] ;
+                            rdfs:comment "Logical aggregation of nominal value of operation attributes, or characteristics of something." ;
+                            rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                            rdfs:label "OperationConfiguration" ;
+                            ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#OperationTerminationMeasurement
+test:OperationTerminationMeasurement rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://w3id.org/tribont/core#OperationCondition> ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <https://w3id.org/tribont/core#hasRole> ;
+                                                       owl:hasValue <https://w3id.org/tribont/core#measurement>
+                                                     ] ;
+                                     rdfs:comment "Logical aggregation of the values of the operation attributes, or characteristics measured when a test is terminated." ;
+                                     rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                                     rdfs:label "OperationTerminationMeasurement" ;
+                                     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#Operator
+test:Operator rdf:type owl:Class ;
+              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error74> ,
+                              <http://org.semanticweb.owlapi/error#Error75> ,
+                              <https://purl.industrialontologies.org/ontology/core/Core/Person> ;
+              rdfs:comment "Person performing an specific activity or operation." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+              rdfs:label "Operator" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#OutputMeasurement
+test:OutputMeasurement rdf:type owl:Class ;
+                       rdfs:subClassOf <https://w3id.org/tribont/core#Output> ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <https://w3id.org/tribont/core#hasRole> ;
+                                         owl:hasValue <https://w3id.org/tribont/core#measurement>
+                                       ] ;
+                       rdfs:comment "Logical aggregation of the measured values of the technical attributes, or characteristics obtained as output of a test." ;
+                       rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                       rdfs:label "OutputMeasurement" ;
+                       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#Test
+test:Test rdf:type owl:Class ;
+          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error76> ,
+                          <http://org.semanticweb.owlapi/error#Error77> ,
+                          <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/tribont/core#hasDocument> ;
+                            owl:someValuesFrom test:TestOutputDocument
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                            owl:allValuesFrom [ rdf:type owl:Class ;
+                                                owl:unionOf ( <https://w3id.org/tribont/core#GeometricDimension>
+                                                              <https://w3id.org/tribont/core#OperationProperty>
+                                                              <https://w3id.org/tribont/core#TechnicalProperty>
+                                                              <https://w3id.org/tribont/core#Volume>
+                                                              <https://w3id.org/tribont/core#Weight>
+                                                              test:OperationConfiguration
+                                                              test:OperationTerminationMeasurement
+                                                              test:OutputMeasurement
+                                                            )
+                                              ]
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/tribont/core#hasDocument> ;
+                            owl:allValuesFrom test:TestOutputDocument
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/tribont/core#isMadeOf> ;
+                            owl:allValuesFrom test:TestStep
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty test:hasDependency ;
+                            owl:allValuesFrom test:Test
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty test:isExecutedBy ;
+                            owl:allValuesFrom <https://w3id.org/tribont/equipment#Equipment>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty test:isPerformedAt ;
+                            owl:allValuesFrom <http://dbpedia.org/ontology/Company>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty test:isPerformedBy ;
+                            owl:allValuesFrom test:Operator
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty test:isExecutedBy ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass <https://w3id.org/tribont/equipment#Equipment>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty test:isPerformedAt ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass <http://dbpedia.org/ontology/Company>
+                          ] ;
+          rdfs:comment "An activity intended to establish the techncial attributes or characteristics of something," ;
+          rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+          rdfs:label "Test" ;
+          ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#TestOutputDocument
+test:TestOutputDocument rdf:type owl:Class ;
+                        rdfs:subClassOf <http://dbpedia.org/ontology/Document> ;
+                        rdfs:comment "A document compiling the outputs of a given test." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                        rdfs:label "TestOutputDocument" ;
+                        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#TestOutputMeasurementFile
+test:TestOutputMeasurementFile rdf:type owl:Class ;
+                               rdfs:subClassOf test:TestOutputDocument .
+
+
+###  https://w3id.org/tribont/test#TestOutputReport
+test:TestOutputReport rdf:type owl:Class ;
+                      rdfs:subClassOf test:TestOutputDocument .
+
+
+###  https://w3id.org/tribont/test#TestStandard
+test:TestStandard rdf:type owl:Class ;
+                  rdfs:subClassOf terms:Standard ;
+                  rdfs:comment "A document approved by a recognized bodythat provides common to by fullfiled by a test." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                  rdfs:label "TestStandard" ;
+                  ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#TestStep
+test:TestStep rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                                owl:someValuesFrom [ rdf:type owl:Class ;
+                                                     owl:unionOf ( test:OperationConfiguration
+                                                                   test:OperationTerminationMeasurement
+                                                                   test:OutputMeasurement
+                                                                 )
+                                                   ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/tribont/core#hasDocument> ;
+                                owl:allValuesFrom test:TestOutputDocument
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty test:hasDependency ;
+                                owl:allValuesFrom test:TestStep
+                              ] ;
+              rdfs:comment "Each of the steps into which a given test can be subdivided" ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+              rdfs:label "TestStep" ;
+              ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#TribologicalOperationConfiguration
+test:TribologicalOperationConfiguration rdf:type owl:Class ;
+                                        rdfs:subClassOf test:OperationConfiguration ;
+                                        rdfs:comment "Logical aggregation of nominal value of operation attributes, or characteristics of a tribometer." ;
+                                        rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                                        rdfs:label "TribologicalOperationConfiguration" ;
+                                        ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#TribologicalTest
+test:TribologicalTest rdf:type owl:Class ;
+                      rdfs:subClassOf test:ExperimentalTest ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty test:isExecutedBy ;
+                                        owl:allValuesFrom <https://w3id.org/tribont/equipment#Tribometer>
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty test:testsSampleSystem ;
+                                        owl:allValuesFrom <https://w3id.org/tribont/sample#SampleSystem>
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty test:isExecutedBy ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass <https://w3id.org/tribont/equipment#Tribometer>
+                                      ] ;
+                      rdfs:comment "A testing activity that reproduces certain operation conditions to assess one or more tribological attributes or characteristics of a given sample system." ;
+                      rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                      rdfs:label "TribologicalTest" ;
+                      ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#TribologicalTestOperationTerminationMeasurement
+test:TribologicalTestOperationTerminationMeasurement rdf:type owl:Class ;
+                                                     rdfs:subClassOf test:OperationTerminationMeasurement ;
+                                                     rdfs:comment "Logical aggregation of the values of the operation attributes, or characteristics measured when a tribologival test is terminated." ;
+                                                     rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                                                     rdfs:label "TribologicalTestOperationTerminationMeasurement" ;
+                                                     ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#TribologicalTestOutput
+test:TribologicalTestOutput rdf:type owl:Class ;
+                            owl:equivalentClass [ owl:intersectionOf ( test:OutputMeasurement
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
+                                                                         owl:someValuesFrom test:TribologicalTest
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ] ;
+                            rdfs:subClassOf test:OutputMeasurement ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                              owl:allValuesFrom <https://w3id.org/tribont/core#TribologicalProperty>
+                                            ] ;
+                            rdfs:comment "Logical aggregation of the technical attributes, or characteristics obtained as result of a tribological test." ;
+                            rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                            rdfs:label "TribologicalTestOutput" ;
+                            ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#WearScarMeasurement
+test:WearScarMeasurement rdf:type owl:Class ;
+                         rdfs:subClassOf test:MeasuringTest ;
+                         rdfs:comment "A testing activity to measure  one or more attributes or characteristics of the resulting scar in a given sample." ;
+                         rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                         rdfs:label "WearScarMeasurement" ;
+                         ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#WearScarMeasurementOutput
+test:WearScarMeasurementOutput rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( test:OutputMeasurement
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
+                                                                            owl:someValuesFrom test:WearScarMeasurement
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ] ;
+                               rdfs:subClassOf test:OutputMeasurement ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                                 owl:allValuesFrom <https://w3id.org/tribont/core#WearScarProperty>
+                                               ] ;
+                               rdfs:comment "Logical aggregation of the technical attributes, or characteristics of a scar obtained as result of a scar measuement test." ;
+                               rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                               rdfs:label "WearScarMeasurementOutput" ;
+                               ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#WeightMeasurement
+test:WeightMeasurement rdf:type owl:Class ;
+                       rdfs:subClassOf test:MeasuringTest ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty test:isExecutedBy ;
+                                         owl:allValuesFrom <https://w3id.org/tribont/equipment#Scale>
+                                       ] ;
+                       rdfs:comment "A testing activity to measure the weight of a given sample." ;
+                       rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                       rdfs:label "WeightMeasurement" ;
+                       ns1:term_status "Testing" .
+
+
+###  https://w3id.org/tribont/test#WeightMeasurementOutput
+test:WeightMeasurementOutput rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( test:OutputMeasurement
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <https://w3id.org/isCharacterisedBy#characterises> ;
+                                                                          owl:someValuesFrom test:WeightMeasurement
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             rdfs:subClassOf test:OutputMeasurement ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://w3id.org/isCharacterisedBy#hasProperty> ;
+                                               owl:allValuesFrom <https://w3id.org/tribont/core#Weight>
+                                             ] ;
+                             rdfs:comment "A testing activity to measure the weight in a given sample." ;
+                             rdfs:isDefinedBy "https://w3id.org/tribont/test" ;
+                             rdfs:label "WeightMeasurementOutput" ;
+                             ns1:term_status "Testing" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/tribont/core#configuration
+<https://w3id.org/tribont/core#configuration> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/tribont/core#measurement
+<https://w3id.org/tribont/core#measurement> rdf:type owl:NamedIndividual .
+
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( <http://dbpedia.org/ontology/Company>
+                 <http://dbpedia.org/ontology/Document>
+                 terms:Standard
+                 <https://purl.industrialontologies.org/ontology/core/Core/Person>
+                 <https://w3id.org/isCharacterisedBy#Feature>
+                 <https://w3id.org/isCharacterisedBy#Property>
+                 <https://w3id.org/isCharacterisedBy#SubjectOfInterest>
+                 <https://w3id.org/isCharacterisedBy#Unit>
+                 <https://w3id.org/tribont/core#Role>
+                 <https://w3id.org/tribont/equipment#Calibration>
+                 <https://w3id.org/tribont/material#MaterialApplication>
+                 <https://w3id.org/tribont/material#MaterialIdentification>
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://dbpedia.org/ontology/Company>
+                <http://dbpedia.org/ontology/Document>
+                terms:Standard
+                <https://purl.industrialontologies.org/ontology/core/Core/Person>
+                <https://w3id.org/isCharacterisedBy#Feature>
+                <https://w3id.org/isCharacterisedBy#Property>
+                <https://w3id.org/isCharacterisedBy#SubjectOfInterest>
+                <https://w3id.org/tribont/core#Role>
+                <https://w3id.org/tribont/equipment#Calibration>
+                <https://w3id.org/tribont/material#MaterialApplication>
+                <https://w3id.org/tribont/material#MaterialIdentification>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://w3id.org/tribont/equipment#CalibrationDocument>
+                <https://w3id.org/tribont/equipment#TechnicalDocumentation>
+                test:TestOutputDocument
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://w3id.org/tribont/equipment#Equipment>
+                <https://w3id.org/tribont/equipment#EquipmentClass>
+                <https://w3id.org/tribont/material#Material>
+                <https://w3id.org/tribont/sample#Sample>
+                <https://w3id.org/tribont/sample#SampleBatch>
+                <https://w3id.org/tribont/sample#SampleSystem>
+                test:Experiment
+                test:Test
+                test:TestStep
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://w3id.org/tribont/equipment#OperationMeasurementSpecification>
+                <https://w3id.org/tribont/equipment#OperationSpecification>
+                test:OperationConfiguration
+                test:OperationTerminationMeasurement
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( test:TribologicalTestOutput
+                test:WearScarMeasurementOutput
+                test:WeightMeasurementOutput
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#e> rdf:type swrl:Variable .
+
+<urn:swrl:var#t> rdf:type swrl:Variable .
+
+<urn:swrl:var#op> rdf:type swrl:Variable .
+
+<urn:swrl:var#d> rdf:type swrl:Variable .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate test:Experiment ;
+                           swrl:argument1 <urn:swrl:var#e>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate <https://w3id.org/tribont/core#isMadeOf> ;
+                                      swrl:argument1 <urn:swrl:var#e> ;
+                                      swrl:argument2 <urn:swrl:var#t>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate test:Test ;
+                                                 swrl:argument1 <urn:swrl:var#t>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                                                            swrl:argument1 <urn:swrl:var#t> ;
+                                                            swrl:argument2 <urn:swrl:var#op>
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate <https://w3id.org/tribont/core#hasRole> ;
+                                                                       swrl:argument1 <urn:swrl:var#op> ;
+                                                                       swrl:argument2 <https://w3id.org/tribont/core#measurement>
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                           swrl:argument1 <urn:swrl:var#e> ;
+                           swrl:argument2 <urn:swrl:var#op>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate test:Experiment ;
+                           swrl:argument1 <urn:swrl:var#e>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate <https://w3id.org/tribont/core#isMadeOf> ;
+                                      swrl:argument1 <urn:swrl:var#e> ;
+                                      swrl:argument2 <urn:swrl:var#t>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate test:Test ;
+                                                 swrl:argument1 <urn:swrl:var#t>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate <https://w3id.org/tribont/core#hasDocument> ;
+                                                            swrl:argument1 <urn:swrl:var#t> ;
+                                                            swrl:argument2 <urn:swrl:var#d>
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate <https://w3id.org/tribont/core#hasDocument> ;
+                           swrl:argument1 <urn:swrl:var#e> ;
+                           swrl:argument2 <urn:swrl:var#d>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
