@@ -183,10 +183,6 @@ ns1:term_status rdf:type owl:AnnotationProperty .
               ns1:term_status "Testing" .
 
 
-###  https://w3id.org/tribont/equipment#rdfs:label
-:rdfs:label rdf:type owl:DatatypeProperty .
-
-
 #################################################################
 #    Classes
 #################################################################
