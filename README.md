@@ -1,2 +1,0 @@
-# tribont-ontology
-TribONT Ontology
