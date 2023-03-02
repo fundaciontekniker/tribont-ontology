@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://w3id.org/tribont-ontology#"
-     xml:base="http://w3id.org/tribont-ontology"
+<rdf:RDF xmlns="https://w3id.org/tribont/material#"
+     xml:base="https://w3id.org/tribont/material"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,8 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:tribontcore="https://w3id.org/tribontcore#">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/tribont/material">
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
     </owl:Ontology>
@@ -63,29 +62,9 @@
     
 
 
-    <!-- https://w3id.org/isCharacterisedBy#hasProperty -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#hasProperty"/>
-    
-
-
     <!-- https://w3id.org/isCharacterisedBy#isCharacterisedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#IsRoleFor -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#IsRoleFor">
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#hasRole"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/tribont/core#hasRole -->
-
-    <rdf:Description rdf:about="https://w3id.org/tribont/core#hasRole"/>
     
 
 
@@ -187,10 +166,24 @@
     
 
 
+    <!-- https://w3id.org/tribont/core#Body -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/core#Body">
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#Material"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/core#BodyProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#BodyProperty"/>
+    
+
+
     <!-- https://w3id.org/tribont/material#Ag -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ag">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ag in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Ag</rdfs:label>
@@ -202,7 +195,7 @@
     <!-- https://w3id.org/tribont/material#Al -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Al">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Al in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Al</rdfs:label>
@@ -214,7 +207,7 @@
     <!-- https://w3id.org/tribont/material#Al203 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Al203">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Al203 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Al203</rdfs:label>
@@ -226,7 +219,7 @@
     <!-- https://w3id.org/tribont/material#AlN -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#AlN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of AlN in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>AlN</rdfs:label>
@@ -238,7 +231,7 @@
     <!-- https://w3id.org/tribont/material#Alluminium-Flake -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Alluminium-Flake">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Alluminium-Flake in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Alluminium-Flake</rdfs:label>
@@ -262,7 +255,7 @@
     <!-- https://w3id.org/tribont/material#Antioxidant -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Antioxidant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
@@ -287,7 +280,7 @@
     <!-- https://w3id.org/tribont/material#Aramid-Fiber -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Aramid-Fiber">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Aramid-Fiber in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Aramid-Fiber</rdfs:label>
@@ -299,7 +292,7 @@
     <!-- https://w3id.org/tribont/material#ArsenicOxide -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ArsenicOxide">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of ArsenicOxide in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>ArsenicOxide</rdfs:label>
@@ -311,7 +304,7 @@
     <!-- https://w3id.org/tribont/material#As -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#As">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of As in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>As</rdfs:label>
@@ -323,7 +316,7 @@
     <!-- https://w3id.org/tribont/material#Au -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Au">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Au in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Au</rdfs:label>
@@ -335,7 +328,7 @@
     <!-- https://w3id.org/tribont/material#B -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#B">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of B in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>B</rdfs:label>
@@ -347,7 +340,7 @@
     <!-- https://w3id.org/tribont/material#B203 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#B203">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of B203 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>B203</rdfs:label>
@@ -359,7 +352,7 @@
     <!-- https://w3id.org/tribont/material#B4C -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#B4C">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of B4C in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>B4C</rdfs:label>
@@ -371,7 +364,7 @@
     <!-- https://w3id.org/tribont/material#BN -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#BN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of BN in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>BN</rdfs:label>
@@ -383,7 +376,7 @@
     <!-- https://w3id.org/tribont/material#BaO -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#BaO">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of BaO in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>BaO</rdfs:label>
@@ -395,7 +388,7 @@
     <!-- https://w3id.org/tribont/material#BaSO4 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#BaSO4">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of BaSO4 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>BaSO4</rdfs:label>
@@ -407,7 +400,7 @@
     <!-- https://w3id.org/tribont/material#Be -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Be">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Be in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Be</rdfs:label>
@@ -419,7 +412,7 @@
     <!-- https://w3id.org/tribont/material#BeO -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#BeO">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of BeO in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>BeO</rdfs:label>
@@ -431,7 +424,7 @@
     <!-- https://w3id.org/tribont/material#Bi -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Bi">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Biin a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Bi</rdfs:label>
@@ -443,7 +436,7 @@
     <!-- https://w3id.org/tribont/material#C -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#C">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of C in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>C</rdfs:label>
@@ -455,7 +448,7 @@
     <!-- https://w3id.org/tribont/material#Ca -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ca">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ca in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Ca</rdfs:label>
@@ -467,7 +460,7 @@
     <!-- https://w3id.org/tribont/material#CaCO3 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#CaCO3">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of CaCO3 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>CaCO3</rdfs:label>
@@ -479,7 +472,7 @@
     <!-- https://w3id.org/tribont/material#CaO -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#CaO">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of CaO in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>CaO</rdfs:label>
@@ -491,7 +484,7 @@
     <!-- https://w3id.org/tribont/material#CalciumCarbonate-Powder -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#CalciumCarbonate-Powder">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of CalciumCarbonate-Powder in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>CalciumCarbonate-Powder</rdfs:label>
@@ -503,7 +496,7 @@
     <!-- https://w3id.org/tribont/material#Carbon-Fiber -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Carbon-Fiber">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Carbon-Fiber in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Carbon-Fiber</rdfs:label>
@@ -515,7 +508,7 @@
     <!-- https://w3id.org/tribont/material#Carbon-Powder -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Carbon-Powder">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Carbon-Powder in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Carbon-Powder</rdfs:label>
@@ -527,7 +520,7 @@
     <!-- https://w3id.org/tribont/material#Cd -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Cd">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Cd in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Cd</rdfs:label>
@@ -539,7 +532,7 @@
     <!-- https://w3id.org/tribont/material#CdS -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#CdS">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of CdS in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>CdS</rdfs:label>
@@ -551,7 +544,7 @@
     <!-- https://w3id.org/tribont/material#Ce -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ce">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ce in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Ce</rdfs:label>
@@ -563,7 +556,7 @@
     <!-- https://w3id.org/tribont/material#Cellulose -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Cellulose">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Cellulose in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Cellulose</rdfs:label>
@@ -584,13 +577,13 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#ChemicalElementContent -->
+    <!-- https://w3id.org/tribont/material#ChemicalElementConcentration -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#ChemicalElementContent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
-        <rdfs:comment>Content of chemical element in a material.</rdfs:comment>
+    <owl:Class rdf:about="https://w3id.org/tribont/material#ChemicalElementConcentration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementConcentration"/>
+        <rdfs:comment>Concentration of chemical element in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>ChemicalElementContent</rdfs:label>
+        <rdfs:label>ChemicalElementConcentration</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -599,7 +592,7 @@
     <!-- https://w3id.org/tribont/material#Co -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Co">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Co in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Co</rdfs:label>
@@ -620,34 +613,10 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#Composition -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Composition">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Feature"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of value/value ranges of the elements composing  a material. The specification values are provided by the manufacturer or the applicable standards.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Composition</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/material#Cr -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Cr">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Cr in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Cr</rdfs:label>
@@ -659,7 +628,7 @@
     <!-- https://w3id.org/tribont/material#Cr203 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Cr203">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Cr203 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Cr203</rdfs:label>
@@ -671,7 +640,7 @@
     <!-- https://w3id.org/tribont/material#Cu -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Cu">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Cu in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Cu</rdfs:label>
@@ -683,7 +652,7 @@
     <!-- https://w3id.org/tribont/material#Dy -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Dy">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Dy in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Dy</rdfs:label>
@@ -716,9 +685,9 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#ElementContent -->
+    <!-- https://w3id.org/tribont/material#ElementConcentration -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#ElementContent">
+    <owl:Class rdf:about="https://w3id.org/tribont/material#ElementConcentration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -733,9 +702,9 @@
                 <owl:onClass rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Content of an specific element in a material.</rdfs:comment>
+        <rdfs:comment>Concentration of an specific element in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>ElementContent</rdfs:label>
+        <rdfs:label>ElementConcentration</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -744,7 +713,10 @@
     <!-- https://w3id.org/tribont/material#ElementRole -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElementRole">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Role"/>
+        <rdfs:comment>The position or purpose that an eelement  has in a situation, organization, society, or relationship:.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>ElementRole</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -752,7 +724,7 @@
     <!-- https://w3id.org/tribont/material#Er -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Er">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Er in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Er</rdfs:label>
@@ -764,7 +736,7 @@
     <!-- https://w3id.org/tribont/material#Eu -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Eu">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Eu in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Eu</rdfs:label>
@@ -776,7 +748,7 @@
     <!-- https://w3id.org/tribont/material#F -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#F">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of F in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>F</rdfs:label>
@@ -788,7 +760,7 @@
     <!-- https://w3id.org/tribont/material#Fe -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Fe">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Fe in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Fe</rdfs:label>
@@ -800,7 +772,7 @@
     <!-- https://w3id.org/tribont/material#Fe203 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Fe203">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Fe203 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Fe203</rdfs:label>
@@ -812,7 +784,7 @@
     <!-- https://w3id.org/tribont/material#FlameRetardant -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#FlameRetardant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:comment>Content of FlameRetardant in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>FlameRetardant</rdfs:label>
@@ -848,7 +820,7 @@
     <!-- https://w3id.org/tribont/material#Gd -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Gd">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Gd in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Gd</rdfs:label>
@@ -860,7 +832,7 @@
     <!-- https://w3id.org/tribont/material#Ge -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ge">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ge in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Ge</rdfs:label>
@@ -884,7 +856,7 @@
     <!-- https://w3id.org/tribont/material#Glass-Fiber -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Glass-Fiber">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Glass-Fiber in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Glass-Fiber</rdfs:label>
@@ -896,7 +868,7 @@
     <!-- https://w3id.org/tribont/material#Glass-MatFabric -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Glass-MatFabric">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Glass-MatFabric in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Glass-MatFabric</rdfs:label>
@@ -908,7 +880,7 @@
     <!-- https://w3id.org/tribont/material#Glass-Other -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Glass-Other">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Glass-Other in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Glass-Other</rdfs:label>
@@ -920,7 +892,7 @@
     <!-- https://w3id.org/tribont/material#Glycol -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Glycol">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
@@ -945,7 +917,7 @@
     <!-- https://w3id.org/tribont/material#Graphite-Powder -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Graphite-Powder">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Graphite-Powder in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Graphite-Powder</rdfs:label>
@@ -970,7 +942,7 @@
     <!-- https://w3id.org/tribont/material#H -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#H">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of H in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>H</rdfs:label>
@@ -982,7 +954,7 @@
     <!-- https://w3id.org/tribont/material#H2O -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#H2O">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of H2O in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>H2O</rdfs:label>
@@ -994,7 +966,7 @@
     <!-- https://w3id.org/tribont/material#Hf -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Hf">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Hf in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Hf</rdfs:label>
@@ -1006,7 +978,7 @@
     <!-- https://w3id.org/tribont/material#Hg -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Hg">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Hg in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Hg</rdfs:label>
@@ -1030,7 +1002,7 @@
     <!-- https://w3id.org/tribont/material#Ho -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ho">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ho in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Ho</rdfs:label>
@@ -1066,8 +1038,8 @@
     <!-- https://w3id.org/tribont/material#ImpactModifier -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ImpactModifier">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of ImpactModifier in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>ImpactModifier</rdfs:label>
@@ -1079,7 +1051,7 @@
     <!-- https://w3id.org/tribont/material#In -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#In">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of In in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>In</rdfs:label>
@@ -1091,7 +1063,7 @@
     <!-- https://w3id.org/tribont/material#Ir -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ir">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ir in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Ir</rdfs:label>
@@ -1103,7 +1075,7 @@
     <!-- https://w3id.org/tribont/material#La -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#La">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of La in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>La</rdfs:label>
@@ -1115,7 +1087,7 @@
     <!-- https://w3id.org/tribont/material#Li -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Li">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Li in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Li</rdfs:label>
@@ -1127,7 +1099,7 @@
     <!-- https://w3id.org/tribont/material#Li2O -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Li2O">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Li2O in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Li2O</rdfs:label>
@@ -1149,9 +1121,7 @@
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#LiquidThermalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#Composition"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementContent"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#LiquidTechnicalSpecification"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementConcentration"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1162,39 +1132,6 @@
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Liquid</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/material#LiquidTechnicalSpecification -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#LiquidTechnicalSpecification">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/material#Liquid"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#LiquidThermalProperty"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1214,7 +1151,7 @@
     <!-- https://w3id.org/tribont/material#Lu -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Lu">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Lu in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Lu</rdfs:label>
@@ -1237,9 +1174,7 @@
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#PhysicalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#ThermalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#Composition"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementContent"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementConcentration"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1321,40 +1256,6 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#MaterialTechnicalSpecification -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialTechnicalSpecification">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/material#Material"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalSpecification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#PhysicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ThermalProperty"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/material#MaterialTradename -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialTradename">
@@ -1389,7 +1290,7 @@
     <!-- https://w3id.org/tribont/material#Mg -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Mg">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Mg in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Mg</rdfs:label>
@@ -1401,7 +1302,7 @@
     <!-- https://w3id.org/tribont/material#Mica -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Mica">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Mica in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Mica</rdfs:label>
@@ -1413,7 +1314,7 @@
     <!-- https://w3id.org/tribont/material#Mineral -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Mineral">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Mineral in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Mineral</rdfs:label>
@@ -1425,7 +1326,7 @@
     <!-- https://w3id.org/tribont/material#Mn -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Mn">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Mn in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Mn</rdfs:label>
@@ -1437,7 +1338,7 @@
     <!-- https://w3id.org/tribont/material#Mo -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Mo">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Mo in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Mo</rdfs:label>
@@ -1449,7 +1350,7 @@
     <!-- https://w3id.org/tribont/material#MoS2 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#MoS2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of MoS2 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>MoS2</rdfs:label>
@@ -1461,7 +1362,7 @@
     <!-- https://w3id.org/tribont/material#N -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#N">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of N in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>N</rdfs:label>
@@ -1473,7 +1374,7 @@
     <!-- https://w3id.org/tribont/material#Na2O -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Na2O">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Na2O in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Na2O</rdfs:label>
@@ -1485,7 +1386,7 @@
     <!-- https://w3id.org/tribont/material#NaCl -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#NaCl">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of NaCl in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>NaCl</rdfs:label>
@@ -1509,7 +1410,7 @@
     <!-- https://w3id.org/tribont/material#Nb -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Nb">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Nb in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Nb</rdfs:label>
@@ -1521,7 +1422,7 @@
     <!-- https://w3id.org/tribont/material#Nd -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Nd">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Nd in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Nd</rdfs:label>
@@ -1533,7 +1434,7 @@
     <!-- https://w3id.org/tribont/material#Ni -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ni">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ni in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Ni</rdfs:label>
@@ -1559,7 +1460,7 @@
     <!-- https://w3id.org/tribont/material#O -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#O">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of O in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>O</rdfs:label>
@@ -1571,7 +1472,7 @@
     <!-- https://w3id.org/tribont/material#O2 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#O2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of O2 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>O2</rdfs:label>
@@ -1595,7 +1496,7 @@
     <!-- https://w3id.org/tribont/material#Os -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Os">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Os in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Os</rdfs:label>
@@ -1604,19 +1505,19 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#OtherElementContent -->
+    <!-- https://w3id.org/tribont/material#OtherElementConcentration -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#OtherElementContent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/material#OtherElementConcentration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementConcentration"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/material#hasElementRole"/>
                 <owl:hasValue rdf:resource="https://w3id.org/tribont/material#additive"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Content of an additive element in a material.</rdfs:comment>
+        <rdfs:comment>Concentration  of an additive element in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>OtherElementContent</rdfs:label>
+        <rdfs:label>OtherElementConcentration</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1625,7 +1526,7 @@
     <!-- https://w3id.org/tribont/material#P -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#P">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of P in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>P</rdfs:label>
@@ -1649,7 +1550,7 @@
     <!-- https://w3id.org/tribont/material#Pb -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Pb">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Pb in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Pb</rdfs:label>
@@ -1661,7 +1562,7 @@
     <!-- https://w3id.org/tribont/material#PbO -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#PbO">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of PbO in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>PbO</rdfs:label>
@@ -1673,7 +1574,7 @@
     <!-- https://w3id.org/tribont/material#Pd -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Pd">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Pd in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Pd</rdfs:label>
@@ -1719,13 +1620,13 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#PolymerElementContent -->
+    <!-- https://w3id.org/tribont/material#PolymerElementConcentration -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#PolymerElementContent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementContent"/>
-        <rdfs:comment>Content of polymer element in a material.</rdfs:comment>
+    <owl:Class rdf:about="https://w3id.org/tribont/material#PolymerElementConcentration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementConcentration"/>
+        <rdfs:comment>Concentration of polymer element in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>PolymerElementContent</rdfs:label>
+        <rdfs:label>PolymerElementConcentration</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1734,7 +1635,7 @@
     <!-- https://w3id.org/tribont/material#Pr -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Pr">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Pr in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Pr</rdfs:label>
@@ -1746,7 +1647,7 @@
     <!-- https://w3id.org/tribont/material#Pt -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Pt">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Pt in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Pt</rdfs:label>
@@ -1758,7 +1659,7 @@
     <!-- https://w3id.org/tribont/material#Rag-Cotton-Fabric -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Rag-Cotton-Fabric">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Rag-Cotton-Fabric in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Rag-Cotton-Fabric</rdfs:label>
@@ -1770,7 +1671,7 @@
     <!-- https://w3id.org/tribont/material#Re -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Re">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Re in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Re</rdfs:label>
@@ -1782,7 +1683,7 @@
     <!-- https://w3id.org/tribont/material#Rh -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Rh">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Rh in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Rh</rdfs:label>
@@ -1794,7 +1695,7 @@
     <!-- https://w3id.org/tribont/material#Ru -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ru">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ru in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Ru</rdfs:label>
@@ -1806,7 +1707,7 @@
     <!-- https://w3id.org/tribont/material#S -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#S">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of S in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>S</rdfs:label>
@@ -1818,7 +1719,7 @@
     <!-- https://w3id.org/tribont/material#Sb -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Sb">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Sb in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Sb</rdfs:label>
@@ -1830,7 +1731,7 @@
     <!-- https://w3id.org/tribont/material#Sc -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Sc">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Sc in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Sc</rdfs:label>
@@ -1842,7 +1743,7 @@
     <!-- https://w3id.org/tribont/material#Se -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Se">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Se in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Se</rdfs:label>
@@ -1854,7 +1755,7 @@
     <!-- https://w3id.org/tribont/material#Si -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Si">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Si in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Si</rdfs:label>
@@ -1866,7 +1767,7 @@
     <!-- https://w3id.org/tribont/material#Si3N4 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Si3N4">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Si3N4 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Si3N4</rdfs:label>
@@ -1878,7 +1779,7 @@
     <!-- https://w3id.org/tribont/material#SiC -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#SiC">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of SiC in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>SiC</rdfs:label>
@@ -1890,7 +1791,7 @@
     <!-- https://w3id.org/tribont/material#SiO2 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#SiO2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of SiO2 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>SiO2</rdfs:label>
@@ -1902,7 +1803,7 @@
     <!-- https://w3id.org/tribont/material#Silica-Fumed -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Silica-Fumed">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Silica-Fumed in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Silica-Fumed</rdfs:label>
@@ -1926,7 +1827,7 @@
     <!-- https://w3id.org/tribont/material#Sm -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Sm">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Sm  in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Sm</rdfs:label>
@@ -1938,7 +1839,7 @@
     <!-- https://w3id.org/tribont/material#Sn -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Sn">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Sn in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Sn</rdfs:label>
@@ -1961,9 +1862,7 @@
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
                             <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidThermalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#Composition"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementContent"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#SolidTechnicalSpecification"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementConcentration"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1980,7 +1879,7 @@
     <!-- https://w3id.org/tribont/material#SolidContaminants -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#SolidContaminants">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
@@ -2007,44 +1906,10 @@
     
 
 
-    <!-- https://w3id.org/tribont/material#SolidTechnicalSpecification -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#SolidTechnicalSpecification">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/material#Solid"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialTechnicalSpecification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidThermalProperty"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/material#Sr -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Sr">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Sr in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Sr</rdfs:label>
@@ -2068,7 +1933,7 @@
     <!-- https://w3id.org/tribont/material#StainlessSteel-Fiber -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#StainlessSteel-Fiber">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of StainlessSteel-Fiber in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>StainlessSteel-Fiber</rdfs:label>
@@ -2092,7 +1957,7 @@
     <!-- https://w3id.org/tribont/material#SulfateAsh -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#SulfateAsh">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
@@ -2110,7 +1975,7 @@
     <!-- https://w3id.org/tribont/material#Ta -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ta">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ta in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Ta</rdfs:label>
@@ -2122,7 +1987,7 @@
     <!-- https://w3id.org/tribont/material#TaC -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#TaC">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of TaC in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>TaC</rdfs:label>
@@ -2134,7 +1999,7 @@
     <!-- https://w3id.org/tribont/material#Talc -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Talc">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Talc in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Talc</rdfs:label>
@@ -2146,7 +2011,7 @@
     <!-- https://w3id.org/tribont/material#Tb -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Tb">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Tb in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Tb</rdfs:label>
@@ -2158,7 +2023,7 @@
     <!-- https://w3id.org/tribont/material#Te -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Te">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Te in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Te</rdfs:label>
@@ -2170,7 +2035,7 @@
     <!-- https://w3id.org/tribont/material#ThO2 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ThO2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of ThO2 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>ThO2</rdfs:label>
@@ -2182,7 +2047,7 @@
     <!-- https://w3id.org/tribont/material#Ti -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ti">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ti in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Ti</rdfs:label>
@@ -2194,7 +2059,7 @@
     <!-- https://w3id.org/tribont/material#TiB2 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#TiB2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of TiB2 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>TiB2</rdfs:label>
@@ -2206,7 +2071,7 @@
     <!-- https://w3id.org/tribont/material#TiC -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#TiC">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of TiC in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>TiC</rdfs:label>
@@ -2218,7 +2083,7 @@
     <!-- https://w3id.org/tribont/material#TiO2 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#TiO2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of TiO2 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>TiO2</rdfs:label>
@@ -2242,7 +2107,7 @@
     <!-- https://w3id.org/tribont/material#Tl -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Tl">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Tl in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Tl</rdfs:label>
@@ -2254,7 +2119,7 @@
     <!-- https://w3id.org/tribont/material#Tm -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Tm">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Tm in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Tm</rdfs:label>
@@ -2266,7 +2131,7 @@
     <!-- https://w3id.org/tribont/material#TolyltriazoleAndOtherNonFerrousMetalInhibitor -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#TolyltriazoleAndOtherNonFerrousMetalInhibitor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
@@ -2303,7 +2168,7 @@
     <!-- https://w3id.org/tribont/material#U -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#U">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of U in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>U</rdfs:label>
@@ -2315,7 +2180,7 @@
     <!-- https://w3id.org/tribont/material#UVStabilizer -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#UVStabilizer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:comment>Content of UVStabilizer in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>UVStabilizer</rdfs:label>
@@ -2327,7 +2192,7 @@
     <!-- https://w3id.org/tribont/material#V -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#V">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of V in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>V</rdfs:label>
@@ -2339,7 +2204,7 @@
     <!-- https://w3id.org/tribont/material#W -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#W">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of W in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>W</rdfs:label>
@@ -2351,7 +2216,7 @@
     <!-- https://w3id.org/tribont/material#WC -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#WC">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of WC in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>WC</rdfs:label>
@@ -2363,7 +2228,7 @@
     <!-- https://w3id.org/tribont/material#Water -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Water">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
@@ -2381,7 +2246,7 @@
     <!-- https://w3id.org/tribont/material#Y -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Y">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Y in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Y</rdfs:label>
@@ -2393,7 +2258,7 @@
     <!-- https://w3id.org/tribont/material#Y203 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Y203">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Y203 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Y203</rdfs:label>
@@ -2405,7 +2270,7 @@
     <!-- https://w3id.org/tribont/material#Yb -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Yb">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Yb in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Yb</rdfs:label>
@@ -2417,7 +2282,7 @@
     <!-- https://w3id.org/tribont/material#Zn -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Zn">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Zn in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Zn</rdfs:label>
@@ -2429,7 +2294,7 @@
     <!-- https://w3id.org/tribont/material#ZnO -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ZnO">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of ZnO in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>ZnO</rdfs:label>
@@ -2441,7 +2306,7 @@
     <!-- https://w3id.org/tribont/material#Zr -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Zr">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Zr in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Zr</rdfs:label>
@@ -2453,7 +2318,7 @@
     <!-- https://w3id.org/tribont/material#ZrO2 -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ZrO2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of ZrO2 in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>ZrO2</rdfs:label>
@@ -2465,7 +2330,7 @@
     <!-- https://w3id.org/tribont/material#Anti-friction/wearLubricant -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Anti-friction/wearLubricant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:comment>Content of Anti-friction/wearLubricant in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Anti-friction/wearLubricant</rdfs:label>
@@ -2477,7 +2342,7 @@
     <!-- https://w3id.org/tribont/material#Plasticizer/Oil -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Plasticizer/Oil">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:comment>Content of Plasticizer/Oil in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Plasticizer/Oil</rdfs:label>
@@ -2489,7 +2354,7 @@
     <!-- https://w3id.org/tribont/material#Plasticizer/phthalate -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Plasticizer/phthalate">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementContent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:comment>Content of Plasticizer/phthalate in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Plasticizer/phthalate</rdfs:label>
@@ -2588,34 +2453,34 @@
         <rdfs:label>filler</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
@@ -2637,11 +2502,10 @@
             <rdf:Description rdf:about="http://dbpedia.org/ontology/Company"/>
             <rdf:Description rdf:about="http://dbpedia.org/ontology/Document"/>
             <rdf:Description rdf:about="http://purl.org/dc/terms/Standard"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Feature"/>
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#Role"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementRole"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
         </owl:members>
@@ -2653,18 +2517,7 @@
             <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationProperty"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#SystemProperty"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementContent"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationCondition"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#Output"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleBody"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#SampleSystemArrangement"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalSpecification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Composition"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementConcentration"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

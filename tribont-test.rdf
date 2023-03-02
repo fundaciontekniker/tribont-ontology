@@ -1,24 +1,17 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/trib#"
-     xml:base="https://w3id.org/trib"
+<rdf:RDF xmlns="https://w3id.org/tribont/test#"
+     xml:base="https://w3id.org/tribont/test"
      xmlns:ns="http://creativecommons.org/ns#"
-     xmlns:p0="http://xmlns.com/foaf/spec/#"
      xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:body="https://w3id.org/tribont/body#"
-     xmlns:core="https://saref.etsi.org/core/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:test="https://w3id.org/tribont/test#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:rdfs1="https://w3id.org/tribont/test#rdfs:"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:dcterms="https://w3id.org/tribont/equipment#dcterms:"
-     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/tribont/test">
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/equipment"/>
@@ -178,6 +171,22 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
+    <!-- https://w3id.org/tribont/test#isCharacterisedByConfiguredOperationCondition -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isCharacterisedByConfiguredOperationCondition">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/tribont/test#isExecutedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isExecutedBy">
@@ -290,14 +299,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/equipment#OutputSpecification -->
-
-    <rdf:Description rdf:about="https://w3id.org/tribont/equipment#OutputSpecification">
-        <owl:disjointWith rdf:resource="https://w3id.org/tribont/test#OutputMeasurement"/>
-    </rdf:Description>
-    
-
-
     <!-- https://w3id.org/tribont/test#Experiment -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/test#Experiment">
@@ -396,42 +397,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#OperationConfiguration -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/test#OperationConfiguration">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationCondition"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasRole"/>
-                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#configuration"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of nominal value of operation attributes, or characteristics of something.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>OperationConfiguration</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/test#OperationTerminationMeasurement -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/test#OperationTerminationMeasurement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationCondition"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasRole"/>
-                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#measurement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of the values of the operation attributes, or characteristics measured when a test is terminated.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>OperationTerminationMeasurement</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/test#Operator -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/test#Operator">
@@ -457,59 +422,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#OutputMeasurement -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/test#OutputMeasurement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Output"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasRole"/>
-                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#measurement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of the measured values of the technical attributes, or characteristics obtained as output of a test.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>OutputMeasurement</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/test#Test -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/test#Test">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasDocument"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#TestOutputDocument"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#GeometricDimension"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#Volume"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#Weight"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/test#OperationConfiguration"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/test#OperationTerminationMeasurement"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/test#OutputMeasurement"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasDocument"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/test#TestOutputDocument"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/core#isMadeOf"/>
@@ -520,6 +436,25 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/test#hasDependency"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/test#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isCharacterisedByConfiguredOperationCondition"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#BodyProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -620,20 +555,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/test#OperationConfiguration"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/test#OperationTerminationMeasurement"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/test#OutputMeasurement"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasDocument"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/test#TestOutputDocument"/>
             </owl:Restriction>
@@ -644,21 +565,30 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/test#TestStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isCharacterisedByConfiguredOperationCondition"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#GeometricDimension"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#Volume"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#Weight"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Each of the steps into which a given test can be subdivided</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>TestStep</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/test#TribologicalOperationConfiguration -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/test#TribologicalOperationConfiguration">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OperationConfiguration"/>
-        <rdfs:comment>Logical aggregation of nominal value of operation attributes, or characteristics of a tribometer.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>TribologicalOperationConfiguration</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -668,6 +598,18 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/test#TribologicalTest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#ExperimentalTest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/core#WearScarProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isExecutedBy"/>
@@ -695,83 +637,25 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/test#TribologicalTestOperationTerminationMeasurement -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/test#TribologicalTestOperationTerminationMeasurement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OperationTerminationMeasurement"/>
-        <rdfs:comment>Logical aggregation of the values of the operation attributes, or characteristics measured when a tribologival test is terminated.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>TribologicalTestOperationTerminationMeasurement</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/test#TribologicalTestOutput -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/test#TribologicalTestOutput">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/tribont/test#OutputMeasurement"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#TribologicalTest"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OutputMeasurement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of the technical attributes, or characteristics obtained as result of a tribological test.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>TribologicalTestOutput</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/test#WearScarMeasurement -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/test#WearScarMeasurement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#MeasuringTest"/>
-        <rdfs:comment>A testing activity to measure  one or more attributes or characteristics of the resulting scar in a given sample.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>WearScarMeasurement</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/test#WearScarMeasurementOutput -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/test#WearScarMeasurementOutput">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/tribont/test#OutputMeasurement"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#WearScarMeasurement"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OutputMeasurement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/core#WearScarProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#WearScarProperty"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Logical aggregation of the technical attributes, or characteristics of a scar obtained as result of a scar measuement test.</rdfs:comment>
+        <rdfs:comment>A testing activity to measure  one or more attributes or characteristics of the resulting scar in a given sample.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>WearScarMeasurementOutput</rdfs:label>
+        <rdfs:label>WearScarMeasurement</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -783,6 +667,18 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#MeasuringTest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/core#Weight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#Weight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isExecutedBy"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/equipment#Scale"/>
             </owl:Restriction>
@@ -790,35 +686,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:comment>A testing activity to measure the weight of a given sample.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>WeightMeasurement</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/test#WeightMeasurementOutput -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/test#WeightMeasurementOutput">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/tribont/test#OutputMeasurement"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/tribont/test#WeightMeasurement"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#OutputMeasurement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#Weight"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A testing activity to measure the weight in a given sample.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>WeightMeasurementOutput</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     <rdf:Description>
@@ -841,47 +708,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://dbpedia.org/ontology/Company"/>
-            <rdf:Description rdf:about="http://dbpedia.org/ontology/Document"/>
-            <rdf:Description rdf:about="http://purl.org/dc/terms/Standard"/>
-            <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/Person"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Feature"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#Role"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#Calibration"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://dbpedia.org/ontology/Company"/>
-            <rdf:Description rdf:about="http://dbpedia.org/ontology/Document"/>
-            <rdf:Description rdf:about="http://purl.org/dc/terms/Standard"/>
-            <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/Person"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Feature"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#Role"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#Calibration"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#CalibrationDocument"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#TechnicalDocumentation"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/test#TestOutputDocument"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/tribont/equipment#Equipment"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/equipment#EquipmentClass"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#Material"/>
@@ -891,23 +717,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             <rdf:Description rdf:about="https://w3id.org/tribont/test#Experiment"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/test#Test"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/test#TestStep"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#OperationMeasurementSpecification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#OperationSpecification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/test#OperationConfiguration"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/test#OperationTerminationMeasurement"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/test#TribologicalTestOutput"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/test#WearScarMeasurementOutput"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/test#WeightMeasurementOutput"/>
         </owl:members>
     </rdf:Description>
     
@@ -927,92 +736,11 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <rdf:Description rdf:about="urn:swrl:var#t">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl:var#op">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
     <rdf:Description rdf:about="urn:swrl:var#d">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/test#Experiment"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#isMadeOf"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/test#Test"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl:var#op"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#hasRole"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl:var#op"/>
-                                                        <swrl:argument2 rdf:resource="https://w3id.org/tribont/core#measurement"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#op"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
+    <rdf:Description rdf:about="urn:swrl:var#op">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -1076,6 +804,74 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                         <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#hasDocument"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/test#Experiment"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#isMadeOf"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/test#Test"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#op"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/test#isCharacterisedByMeasuredOutput"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#op"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
