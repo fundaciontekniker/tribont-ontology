@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/tribont/equipment#"
      xml:base="https://w3id.org/tribont/equipment"
      xmlns:ns="http://creativecommons.org/ns#"
@@ -14,15 +13,18 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/tribont/equipment">
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
-        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:created>2021-10-18</terms:created>
-        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla &lt;mailto:patricia.casla@tekniker.es&gt;
-Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:creator>
-        <terms:description xml:lang="en">The xxx ontology xxx</terms:description>
-        <terms:issued>2021-mm-dd</terms:issued>
-        <terms:title>XXX</terms:title>
-        <vann:preferredNamespacePrefix>tribEq</vann:preferredNamespacePrefix>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+		<terms:title>TribOnt equipment module</terms:title>
+		<terms:description xml:lang="en">The goal of this module is to represent the equipment hierarchy model involved in the tribological experiments.</terms:description>
+		<terms:created>2023-05-09</terms:created>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+		<terms:issued>2023-05-09</terms:issued>
+		<terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
+Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
+Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
+       <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+       <vann:preferredNamespacePrefix>equipment</vann:preferredNamespacePrefix>
+       <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
     </owl:Ontology>
     
 

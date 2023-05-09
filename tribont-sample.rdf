@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/tribont/sample#"
      xml:base="https://w3id.org/tribont/sample"
      xmlns:ns="http://creativecommons.org/ns#"
@@ -15,15 +14,18 @@
     <owl:Ontology rdf:about="https://w3id.org/tribont/sample">
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/material"/>
-        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:created>2021-10-18</terms:created>
-        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla &lt;mailto:patricia.casla@tekniker.es&gt;
-Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
-        <terms:description xml:lang="en">The xxx ontology xxx</terms:description>
-        <terms:issued>2021-mm-dd</terms:issued>
-        <terms:title>XXX</terms:title>
-        <vann:preferredNamespacePrefix>tribEq</vann:preferredNamespacePrefix>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+		<terms:title>TribOnt sample module</terms:title>
+		<terms:description xml:lang="en">The goal of this module is to represent the sample systems (SampleSystem class), and the undelaying samples (Sample class), involved in the tribological experiments.</terms:description>
+		<terms:created>2023-05-09</terms:created>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+		<terms:issued>2023-05-09</terms:issued>
+		<terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
+Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
+Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
+       <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+       <vann:preferredNamespacePrefix>sample</vann:preferredNamespacePrefix>
+       <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
     </owl:Ontology>
     
 
@@ -588,22 +590,19 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/sample#Sample"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Object aggregate that has part two or more elements that interact with each other and it is used for testing purposes. For example a tribological sample system aggrupates at least a satic and a moving sample body and can include or not a lubrication sample body..</rdfs:comment>
+        <rdfs:comment>Object aggregate that has two or more elements that interact with each other, and it is used for testing purposes. For example, a tribological sample system aggregates at least a static and a moving sample body and can include or not a lubrication sample body.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>SampleSystem</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -615,7 +614,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     
 
