@@ -15,12 +15,12 @@
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:created>2022-08-31</terms:created>
         <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla&lt;mailto:patricia.casla@tekniker.es&gt;
-Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
+Izaskun Fernandez &lt;mailto:izaskun.fernande@tekniker.es&gt;</terms:creator>
         <terms:description xml:lang="en">The xxx ontology xxx</terms:description>
         <terms:issued>2022-mm-dd</terms:issued>
         <terms:title>XXX</terms:title>
         <vann:preferredNamespacePrefix>tribCommon</vann:preferredNamespacePrefix>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+        <owl:versionInfo xml:lang="tekniker.es&gt;">1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -179,6 +179,22 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>hasOwner</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/core#isCharacterisedByOperationCondition -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOperationCondition">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/core#isCharacterisedByOutputMeasure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOutputMeasure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
     </owl:ObjectProperty>
     
 
@@ -550,6 +566,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
                 <owl:onClass rdf:resource="https://w3id.org/tribont/core#Weight"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A body can be considered as an aggregate of particles to which it is possible to apply a force</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Body</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -557,7 +577,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/tribont/core#BodyProperty -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#BodyProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of a body.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>BodyProperty</rdfs:label>
@@ -582,6 +602,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#CapacityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Body</rdfs:comment>
         <rdfs:comment>Measurement unit for capacity.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <ns1:term_status>Stable</ns1:term_status>
@@ -1832,14 +1853,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     
 
 
-    <!-- https://w3id.org/tribont/core#LubricantPumpProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#LubricantPumpProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/core#LubricantType -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LubricantType">
@@ -2304,61 +2317,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>PressureUnit</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/core#PumpFlowRate -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#PumpFlowRate">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LubricantPumpProperty"/>
-        <rdfs:comment>Pump flow rate.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>PumpFlowRate</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/core#PumpRotationalSpeed -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#PumpRotationalSpeed">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LubricantPumpProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Pump rotational speed.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>PumpRotationalSpeed</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/core#PumpTemperature -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#PumpTemperature">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LubricantPumpProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Pump temperature.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>PumpTemperature</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -5813,37 +5771,16 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:label>µstrain/°F</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -5853,42 +5790,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -5906,10 +5807,13 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -5924,7 +5828,61 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6033,9 +5991,12 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/tribont/core#BodyProperty"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationProperty"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#SystemProperty"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#PhysicalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#SurfaceProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#ThermalProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#TribologicalProperty"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -6067,23 +6028,6 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#ContactSurfaceType"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#GeometricalArrangement"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#NumberOfContactSurface"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#CourseOfMovement"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#Duration"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#EnvironmentMedium"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#EnvironmentProperty"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#LoadProperty"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#LubricantPumpProperty"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#LubricantType"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#LubricationRegime"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#MovementProperty"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#MovementType"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#RadiationType"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#WearType"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -6158,9 +6102,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#PumpFlowRate"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#PumpRotationalSpeed"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#PumpTemperature"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#OperationProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#SystemProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

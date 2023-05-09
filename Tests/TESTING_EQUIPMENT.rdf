@@ -76,24 +76,27 @@
         <rdf:type rdf:resource="https://w3id.org/tribont/equipment#TribometerClass"/>
         <isCharacterisedBy:isGroupingOf rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_LTU"/>
         <isCharacterisedBy:isGroupingOf rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
+        <core:hasDocument rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_ManufacturerDataSheet"/>
         <core:hasManufacturer rdf:resource="https://w3id.org/tribont/TESTINGequipment#OPTIMOL"/>
-        <equipment:supportsMovingSampleBody rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_NOVING_PIN"/>
-        <equipment:supportsStaticSampleBody rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_STATIC_PLATE"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_NORMAL_FORCE"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_FREQUENCY"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_STROKELENGTH"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_VELOCITY"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#EHD"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#ambient_air"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#ambient_humidity"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#ambient_pressure"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#boundary_lubrication"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#grease"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#mixed_lubrication"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#oil"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#rotating_reciprocating"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#sliding"/>
-        <isCharacterisedBy:isCharacterisedBySupportedOutput rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPUt_COFMean"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_NORMAL_FORCE"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_FREQUENCY"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_STROKELENGTH"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_VELOCITY"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#EHD"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#ambient_air"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#ambient_humidity"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#ambient_pressure"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#boundary_lubrication"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#grease"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#mixed_lubrication"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#oil"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#rotating_reciprocating"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#sliding"/>
+        <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_OUTPUt_COFMean"/>
+        <equipment:holdsMovingSampleBody rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_NOVING_PIN"/>
+        <equipment:holdsStaticSampleBody rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_STATIC_PLATE"/>
+        <equipment:measuringPrinciple rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SRV3 measuring principle</equipment:measuringPrinciple>
+        <equipment:purpose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SRV3 purpose</equipment:purpose>
     </owl:NamedIndividual>
     
 
@@ -103,9 +106,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_LTU">
         <rdf:type rdf:resource="https://w3id.org/tribont/equipment#Tribometer"/>
         <core:hasOwner rdf:resource="https://w3id.org/tribont/TESTINGequipment#LTU"/>
-        <equipment:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_NOR_REFRIGERATED"/>
-        <equipment:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#dry"/>
-        <equipment:isCharacterisedBySupportedOperationCondition rdf:resource="https://w3id.org/tribont/core#nitrogen"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_NOR_REFRIGERATED"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#dry"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#nitrogen"/>
     </owl:NamedIndividual>
     
 
@@ -150,6 +153,14 @@
     
 
 
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_ManufacturerDataSheet -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_ManufacturerDataSheet">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#ManufacturerDataSheet"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_NORMAL_FORCE -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_NORMAL_FORCE">
@@ -181,8 +192,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_FREQUENCY">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Frequency"/>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</isCharacterisedBy:maxValue>
         <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</isCharacterisedBy:maxValue>
+        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</isCharacterisedBy:minValue>
     </owl:NamedIndividual>
     
 
@@ -210,12 +221,29 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK">
         <rdf:type rdf:resource="https://w3id.org/tribont/equipment#Tribometer"/>
-        <isCharacterisedBy:isCharacterisedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_REFRIGERATED"/>
         <core:hasOwner rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
-        <equipment:supportsMovingSampleBody rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_MOVING_BALL"/>
-        <equipment:supportsMovingSampleBody rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_MOVING_RING"/>
+        <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_REFRIGERATED"/>
+        <equipment:hasCalibration rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_Calibration"/>
+        <equipment:holdsMovingSampleBody rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_MOVING_BALL"/>
+        <equipment:holdsMovingSampleBody rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_MOVING_RING"/>
         <terms:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">TEK0010</terms:identifier>
-        <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SRV Machine with upgraded sensors and ambient chamber</terms:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_Calibration -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_Calibration">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#Calibration"/>
+        <core:hasDocument rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_CalibrationDocument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_CalibrationDocument -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK_CalibrationDocument">
+        <rdf:type rdf:resource="https://w3id.org/tribont/equipment#CalibrationDocument"/>
     </owl:NamedIndividual>
     
 

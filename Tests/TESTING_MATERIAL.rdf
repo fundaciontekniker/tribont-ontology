@@ -80,14 +80,6 @@
     
 
 
-    <!-- https://w3id.org/tribont/TESTINGmaterial#OPTIMOL -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#OPTIMOL">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/Company"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/tribont/TESTINGmaterial#100CR6_Naming -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGmaterial#100CR6_Naming">
