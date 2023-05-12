@@ -1,3 +1,4 @@
+
 <rdf:RDF xmlns="https://w3id.org/tribont/equipment#"
      xml:base="https://w3id.org/tribont/equipment"
      xmlns:ns="http://creativecommons.org/ns#"
@@ -141,7 +142,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>The relation between a specific equipment and the calibrations performed on it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>hasCalibration</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -211,7 +212,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>The date when a specific action has been performed.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>executionDate</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -222,7 +223,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>The measuring principle followed by an equipment.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>measuringPrinciple</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -233,7 +234,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>The puspose of an equipment.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>purpose</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -244,7 +245,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>The date until which a given action is valid and after which it is necessary to repeat it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>validityDate</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -267,7 +268,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment> An equipment that measures the abrasion resistance of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>AbrasionTester</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -298,7 +299,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>The action or process of calibrating something to maintain accuracy, and repeatability in measurements, assuring reliable results.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>Calibration</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -311,7 +312,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>A document that contains all the relevant information related to a specific calibration.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>CalibrationDocument</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -391,7 +392,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An object which is instrumental for reaching a particular purpose through its characteristic functioning process.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>Equipment</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -439,7 +440,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An aggrupation of equipments with a set of common atributes of characteristics.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>EquipmentClass</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -451,7 +452,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>A document approved by a recognized body that provides common to by fullfiled by an equipment.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>EquipmentStandard</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -463,7 +464,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An equipment that reproduces certain operation conditions for experimentation purposes.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>ExperimentalEquipment</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -475,7 +476,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An aggrupation of experimental equipments with a set of common atributes of characteristics.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>ExperimentalEquipmentClass</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -493,7 +494,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An equipment that measures the hardness of a material, </rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>HardnessTester</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -505,7 +506,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An aggrupation of hardness testers with a set of common atributes of characteristics.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>HardnessTesterClass</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -518,7 +519,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>A document providing all the relevant information of the technical characteristics of an equipment, and describes how and when to use and mantain it. </rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>MachineryBook</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -530,7 +531,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>A document provided by the manufacturer that includes a summary of technical characteristics, and describes how and when to use something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>ManufacturerDataSheet</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -542,7 +543,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An equipment used to measure technical attributes or characteristics of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>MeasuringEquipment</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -554,7 +555,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An aggrupation of measuring equipment with a set of common atributes of characteristics.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>MeasuringEquipmentClass</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -572,7 +573,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An equipment used to assess surfaces by magnifying images with visible light.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>OpticalMicroscope</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -584,7 +585,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An equipment used to measure precisely surface profiles.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>OpticalProfilometer</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -602,7 +603,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An equipment used to measure the weigth of somebody or something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>Scale</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -614,7 +615,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An equipment used to assess the materials surfaces by producing images of a sample.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>ScanningElectronMicroscope</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -626,7 +627,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An equipment used to assess the coating adhesion.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>ScratchTester</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -638,7 +639,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Information on how to to use and maintain something as for e.g. drawings, manuals, technical reports, etc.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>TechnicalDocument</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -680,7 +681,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An equipment used to measure tribological properties (e.g. friction coefficients, wear, etc.) by simulating the interaction of between two surfaces in contact under specific operation conditions.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>Tribometer</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -704,7 +705,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>An aggrupation of tribometers with a set of common atributes of characteristics.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>TribometerClass</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>

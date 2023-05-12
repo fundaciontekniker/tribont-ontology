@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/tribont/core#"
      xml:base="https://w3id.org/tribont/core"
      xmlns:ns="http://creativecommons.org/ns#"
@@ -11,18 +12,18 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/tribont/core">
         <owl:imports rdf:resource="https://w3id.org/isCharacterisedBy"/>
-		<terms:title>TribOnt core module</terms:title>
-		<terms:description xml:lang="en">The goal of this module is to represent the common classes, and object and data properties included in two or more modules of the TribOnt ontology. </terms:description>
-		<terms:created>2023-05-09</terms:created>
-		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-		<terms:issued>2023-05-09</terms:issued>
-		<terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
 Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
 Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
-       <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-       <vann:preferredNamespacePrefix>core</vann:preferredNamespacePrefix>
-       <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
+        <terms:created>2023-05-09</terms:created>
+        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <terms:description xml:lang="en">The goal of this module is to represent the common classes, and object and data properties included in two or more modules of the TribOnt ontology. </terms:description>
+        <terms:issued>2023-05-09</terms:issued>
+        <terms:title>TribOnt core module</terms:title>
+        <vann:preferredNamespacePrefix>core</vann:preferredNamespacePrefix>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
     </owl:Ontology>
     
 
@@ -138,6 +139,33 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     
 
 
+    <!-- https://w3id.org/tribont/core#characterisesOperationCondition -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#characterisesOperationCondition">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isCharacterisedByOperationCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/core#characterisesOperationMeasure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#characterisesOperationMeasure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isCharacterisedByOperationMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/core#characterisesOutputMeasure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#characterisesOutputMeasure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isCharacterisedByOutputMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/tribont/core#compliesWith -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#compliesWith">
@@ -145,7 +173,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Relation between something and the standard it complies with.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>compliesWith</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -157,7 +185,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Relation between something and its related documents</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>hasDocument</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -169,7 +197,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Relation between a something and its manufacturer</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>hasManufacturer</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -180,7 +208,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Relation between something and the person or entity that owns it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>hasOwner</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -188,6 +216,14 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/core#isCharacterisedByOperationCondition -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOperationCondition">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/core#isCharacterisedByOperationMeasure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOperationMeasure">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
     </owl:ObjectProperty>
     
@@ -207,7 +243,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Relation between a standard and what it regulates.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isCompliedBy</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -218,7 +254,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Relation between a document and what it provides information about.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isDocumentFor</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -230,7 +266,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Relation between something and its component parts.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isMadeOf</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -241,7 +277,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Relation between between a company and what it produces.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isManufacturerFor</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -252,7 +288,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Relation between a component part and that of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isPartOf</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -274,7 +310,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Url to access a specific information content or document.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>accessUrl</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -285,7 +321,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>long name of a resource.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>longName</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -296,7 +332,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Name of a resource.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>name</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -307,7 +343,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Short name of a resource.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>shortName</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -394,7 +430,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Increase in speed or rate.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Acceleration</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -418,7 +454,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Acid number of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>AcidNumberAN</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -443,7 +479,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Air release time for something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>AirReleaseTimeLAV</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -468,7 +504,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Consumption of alkaline additives by something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>AlkalineAdditivesConsumption</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -492,7 +528,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Angular position of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>AngularPosition</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -517,7 +553,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Axial load applied to something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>AxialLoad</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -571,7 +607,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>A body can be considered as an aggregate of particles to which it is possible to apply a force</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Body</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -583,7 +619,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of a body.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>BodyProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -594,7 +630,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#FrictionProperty"/>
         <rdfs:comment>Mean value of the coefficient of friction.</rdfs:comment>
         <rdfs:label>COFMean</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -620,7 +656,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Temperature of the chamber where the sample is tested.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ChamberTemperature</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -654,7 +690,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Colour index  of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ColourIndex</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -679,7 +715,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Compressive strength applied to something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>CompressiveStrength</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -704,7 +740,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Conductivity  of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Conductivity</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -716,7 +752,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Contact surface type (e.g. line, point,etc. .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ContactSurfaceType</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -746,7 +782,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Coradson carbon residue in something .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>CoradsonCarbonResidue</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -758,7 +794,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Corrosion level of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>CorrosionLevel</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -770,7 +806,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Type of relative motion  between two or more bodies.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>CourseOfMovement</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -795,7 +831,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Decrease in speed or rate.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Decceleration</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -821,7 +857,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Density of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Density</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -845,7 +881,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Diameter of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Diameter</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -870,7 +906,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Dispersancy of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Dispersancy</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -882,7 +918,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Dissipation factor of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>DissipationFactor</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -919,7 +955,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Amount of time during which an event persists.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Duration</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -944,7 +980,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Dynamic viscosity of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>DynamicViscosity</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -969,7 +1005,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Electrical breakdown voltage of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ElectricalBreakdownVoltage</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -982,7 +1018,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Electrical conductivity of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ElectricalConductivity</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -994,7 +1030,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of electrical behaviour of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ElectricalProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1006,7 +1042,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Electrical resistivity of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ElectricalResistivity</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1018,7 +1054,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Environment medium surrounding something .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>EnvironmentMedium</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1030,7 +1066,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of the enviroment  in which a test has been / or should be carried out.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>EnvironmentProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1067,7 +1103,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>External force applied to something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ExternalForce</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1079,7 +1115,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Filterability of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Filterability</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1115,7 +1151,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Flexural strength of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>FlexuralStrength</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1140,7 +1176,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Foaming tendency of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>FoamingTendency</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1177,7 +1213,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Fracture toughness of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>FractureToughness</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1202,7 +1238,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Frequency of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Frequency</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1225,7 +1261,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of the friction between two or more bodies.</rdfs:comment>
         <rdfs:label>FrictionProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -1251,7 +1287,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Friction torque applied to something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>FrictionTorque</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1276,7 +1312,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Quantifiable attribute, or characteristic of the geometry of a body.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>GeometricDimension</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1288,7 +1324,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Geometrical combination of bodies belonging to a tribological system (e.g. ball on disc).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>GeometricalArrangement</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1300,7 +1336,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Brinell hardness of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>HardnessBrinell</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1312,7 +1348,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Knoop hardness of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>HardnessKnoop100g</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1337,7 +1373,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Quantifiable attribute, or characteristic of the hardness of a body.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>HardnessProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1349,7 +1385,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>RockwellB hardness of something .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>HardnessRockwellB</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1361,7 +1397,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>RockwellC hardness of something .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>HardnessRockwellC</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1373,7 +1409,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>RockwellM hardnes of somethings .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>HardnessRockwellM</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1385,7 +1421,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>RockwellR hardness of something .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>HardnessRockwellR</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1397,7 +1433,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>ShoreA hardness of something .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>HardnessShoreA</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1409,7 +1445,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>ShoreD hardness of something .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>HardnessShoreD</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1433,7 +1469,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Vickers hardness of something .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>HardnessVickers</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1457,7 +1493,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Height of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Height</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1482,7 +1518,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Humidity of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Humidity</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1507,7 +1543,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Inclination of the camber where the test is carried out.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Inclination</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1519,7 +1555,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Indentation hardness micro.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>IndentationHardnessMicro</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1531,7 +1567,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Indentation hardness nano.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>IndentationHardnessNano</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1556,7 +1592,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Inhibited Hydraulic Fluids Oxidation Stability And Lubricating Oils For High Pressure Loads.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1569,7 +1605,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Inner diameter of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>InnerDiameter</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1582,7 +1618,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Inner teeth height of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>InnerTeethHeight</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1595,7 +1631,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Inner teeth length of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>InnerTeethLength</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1620,7 +1656,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Interfacial Tension Between Water Oil</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>InterfacialTensionBetweenWaterOil</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1645,7 +1681,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Kinematic viscosity of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>KinematicViscosity</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1657,7 +1693,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Length of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Length</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1682,7 +1718,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Linear speed of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>LinearSpeed</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1694,7 +1730,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable physical attribute, or characteristic of a liquid.</rdfs:comment>
         <rdfs:label>LiquidPhysicalProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -1745,7 +1781,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Load applied to something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Load</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1757,7 +1793,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Load leverlratio of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>LoadLevelRatio</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1789,7 +1825,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Load pressure applied to something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>LoadPressure</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1801,7 +1837,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable  attribute, or characteristic of load.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>LoadProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1826,7 +1862,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Load rate applied to something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>LoadRate</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1850,7 +1886,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Lodine number of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>LodineNumber</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1862,7 +1898,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Lubricant type.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>LubricantType</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1887,7 +1923,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Lubricants oxidation stability.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>LubricantsOxidationStability</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1899,7 +1935,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Lubrication regime applied to a test or process .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>LubricationRegime</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1931,7 +1967,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         </rdfs:subClassOf>
         <rdfs:comment>Maximun load before failure of the material.</rdfs:comment>
         <rdfs:label>MaxLoadWithoutFailure</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -1957,7 +1993,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Maximun temperature of operation.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>MaximumServiceTemperature</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1969,7 +2005,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of mechanical behaviour of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>MechanicalProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2018,7 +2054,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of something&apos;s movement.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>MovementProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2030,7 +2066,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Type of movement appled to something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>MovementType</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2042,7 +2078,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Neutralisation number of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>NeutralisationNumberNN</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2067,7 +2103,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Normal force applied to something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>NormalForce</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2079,7 +2115,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Number of contact surfaces of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>NumberOfContactSurface</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2104,7 +2140,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>O2 level of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>O2Level</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2116,7 +2152,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Quantifiable operation attribute, or characteristic of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>OperationProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2128,7 +2164,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Outer diameter.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>OuterDiameter</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2140,7 +2176,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Outer teeth height of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>OuterTeethHeight</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2152,7 +2188,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Outer teeth length of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>OuterTeethLength</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2164,7 +2200,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>PQ index of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>PQIndex</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2201,7 +2237,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Ph level of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>PhLevel</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2213,7 +2249,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable physical attribute, or characteristic of a something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>PhysicalProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2225,7 +2261,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Poissson ratio of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>PoisssonRatio</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2243,7 +2279,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Polish grade of something.</rdfs:comment>
         <rdfs:label>PolishGrade</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -2269,7 +2305,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Porosity of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Porosity</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2280,7 +2316,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidThermalProperty"/>
         <rdfs:comment>Pour point of something.</rdfs:comment>
         <rdfs:label>PourPoint</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -2306,7 +2342,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Pressure applied to soemthing.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Pressure</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2355,7 +2391,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Radiation dosage applied to something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>RadiationDosage</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2367,7 +2403,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Radiation type.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>RadiationType</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2379,7 +2415,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Relative dielectric constant of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>RelativeDielectricConstant</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2452,7 +2488,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Rotational speed of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>RotationalSpeed</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2555,7 +2591,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Rust-Preventing Characteristic In Presence Of Water.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Rust-PreventingCharacteristicInPresenceOfWater</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2615,7 +2651,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Temperature of the sample body.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>SampleTemperature</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2651,7 +2687,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>The form or outline of something</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Shape</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2676,7 +2712,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Shear stability.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ShearStability</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2725,7 +2761,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Sliding speed of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>SlidingSpeed</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2750,7 +2786,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Slip percentage of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>SlipPercentage</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2785,7 +2821,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#PhysicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable physical attribute, or characteristic of a solid.</rdfs:comment>
         <rdfs:label>SolidPhysicalProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -2833,7 +2869,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         </rdfs:subClassOf>
         <rdfs:comment>Specific heat capacity</rdfs:comment>
         <rdfs:label>SpecificHeatCapacity</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -2914,7 +2950,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Stroke amplitude.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>StrokeAmplitude</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2939,7 +2975,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Stroke diameter.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>StrokeDiameter</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2964,7 +3000,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Stroke length.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>StrokeLength</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -2982,7 +3018,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable  attribute, or characteristic of a surface. .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>SurfaceProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3042,7 +3078,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable  attribute, or characteristic of a sample system. .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>SystemProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3066,7 +3102,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable technical attribute, or characteristic of something. .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>TechnicalProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3078,7 +3114,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Height of a teeth. .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>TeethHeight</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3090,7 +3126,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Length of a teeth. .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>TeethLength</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3115,7 +3151,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Temperature ofsomebody or something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Temperature</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3164,7 +3200,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Tensile strength of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>TensileStrength</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3250,7 +3286,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable termal attribute, or characteristic of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ThermalProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3287,7 +3323,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Torque applied to something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Torque</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3323,7 +3359,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Qualifiable or quantifiable tribological attribute, or characteristic of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>TribologicalProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3348,7 +3384,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Velocity of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Velocity</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3433,7 +3469,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Volume of someting.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Volume</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3468,7 +3504,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable wear attribute, or characteristic of something..</rdfs:comment>
         <rdfs:label>WearProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -3494,7 +3530,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#WearScarVolume"/>
         <rdfs:comment> Length of wear scar..</rdfs:comment>
         <rdfs:label>WearScarLength</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -3506,7 +3542,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#WearProperty"/>
         <rdfs:comment> Qualifiable or quantifiable  attribute, or characteristic of a wear scar.</rdfs:comment>
         <rdfs:label>WearScarProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -3531,7 +3567,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         </rdfs:subClassOf>
         <rdfs:comment> Volume of wear scar..</rdfs:comment>
         <rdfs:label>WearScarVolume</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
         <ns1:term_status>https://w3id.org/tribont/core</ns1:term_status>
     </owl:Class>
     
@@ -3544,7 +3580,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Wear type of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>WearType</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3556,7 +3592,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Weibull modulus of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>WeibullModulus</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3581,7 +3617,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Weight of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Weight</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3605,7 +3641,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Width of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Width</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3617,7 +3653,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Yield strength of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>YieldStrength</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3629,7 +3665,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>Young modulus of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>YoungModulus</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3641,7 +3677,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>i-phof something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>i-ph</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -3872,6 +3908,14 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ball">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
         <rdfs:label>ball</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#ball_on_disc -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ball_on_disc">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
     </owl:NamedIndividual>
     
 
@@ -5773,10 +5817,103 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:label>µstrain/°F</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -5785,21 +5922,6 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -5816,90 +5938,12 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     
 

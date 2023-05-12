@@ -14,14 +14,17 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/isCharacterisedBy">
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:created>2021-10-18</terms:created>
-        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla &lt;mailto: patricia.casla@tekniker.es&gt;
-Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
-        <terms:description xml:lang="en">The xxx ontology xxx</terms:description>
-        <terms:issued>2021-mm-dd</terms:issued>
-        <terms:title>XXX</terms:title>
-        <vann:preferredNamespacePrefix>icb</vann:preferredNamespacePrefix>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
+Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
+Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
+        <terms:created>2023-05-09</terms:created>
+        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <terms:description xml:lang="en">The goal of this ontology design pattern is to characterise a subject or group of subjects of interest (SubjectOfInterest class)  by assigning qualifiable or quantifiable attributes or characteristics.</terms:description>
+        <terms:issued>2023-05-09</terms:issued>
+        <terms:title>isCharacterisedBy ontology design pattern </terms:title>
+        <vann:preferredNamespacePrefix>core</vann:preferredNamespacePrefix>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
     </owl:Ontology>
     
 
@@ -119,8 +122,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#belongsTo">
         <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isGroupingOf"/>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-        <rdfs:label>belongsTo</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+         <rdfs:comment>Relationship between a member and the group it belongs to.</rdfs:comment>
+		<rdfs:label>belongsTo</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -130,9 +134,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#characterises">
         <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
         <rdfs:range rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
+		<rdfs:comment>Relationship between a Property and the SubjectOfInterest it characterises.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>characterises</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -142,10 +147,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#hasUnit">
         <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isUnitFor"/>
         <rdfs:range rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
-        <rdfs:comment>Relation from a quantifiable property to a unit of measure</rdfs:comment>
+        <rdfs:comment>Relationship between a quantifiable property and a unit of measurement</rdfs:comment>
         <rdfs:comment>https://w3id.org/isCharacterisedBy</rdfs:comment>
         <rdfs:label>hasUnit</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -154,10 +159,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isCharacterisedBy">
         <rdfs:domain rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-        <rdfs:comment>Relation from a  SubjectOfInterest to a Feature of Property.</rdfs:comment>
+        <rdfs:comment>Relationship between a SubjectOfInterest and the Property that characterises it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>isCharacterisedBy</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -165,10 +170,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/isCharacterisedBy#isGroupingOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isGroupingOf">
-        <rdfs:comment>Relation between a group and the members of such group. All the members of a group have the same charabterists or attributes.</rdfs:comment>
+        <rdfs:comment>Relationship between a group and the members of such group. All the members of a group have the same charabterists or attributes.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>isGroupingOf</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -178,8 +183,9 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isUnitFor">
         <rdfs:domain rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>https://w3id.org/isCharacterisedBy</rdfs:comment>
+		<rdfs:comment>Relationship between an unit and the property of which it is a unit of measurement.</rdfs:comment>
         <rdfs:label>isUnitFor</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -210,10 +216,10 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/isCharacterisedBy#maxValue -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/isCharacterisedBy#maxValue">
-        <rdfs:comment>Xaximum permissible value.</rdfs:comment>
+        <rdfs:comment>Maximum permissible value.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>maxValue</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -224,7 +230,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:comment>Minimun permissible value.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>minValue</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -235,7 +241,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:comment>Specific value.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>value</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -254,6 +260,13 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
     <!-- https://w3id.org/isCharacterisedBy#Property -->
 
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#maxValue"/>
@@ -287,7 +300,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:comment>Property is a qualifiable or quantifiable attribute, or characteristic of something. or somebody</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>Property</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -322,7 +335,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:comment>A subject of interest is an abstraction of a real world phenomena (thing, person, event, etc).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>SubjectOfInterest</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
 
@@ -333,7 +346,7 @@ Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <rdfs:comment>A reference to the unit of measure of a quantifiable aspect (attribute or characteristic).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>Unit</rdfs:label>
-        <ns1:term_status>Teting</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
