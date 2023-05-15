@@ -290,8 +290,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_VELOCITY">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Velocity"/>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.009</isCharacterisedBy:maxValue>
         <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</isCharacterisedBy:maxValue>
+        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.009</isCharacterisedBy:minValue>
     </owl:NamedIndividual>
     
 
