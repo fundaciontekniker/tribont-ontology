@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/tribont/material#"
      xml:base="https://w3id.org/tribont/material"
      xmlns:ns="http://creativecommons.org/ns#"
@@ -11,18 +12,18 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/tribont/material">
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
-		<terms:title>TribOnt material module</terms:title>
-		<terms:description xml:lang="en">The goal of this module is to represent the materials (Material Class) that can be involved in the tribological experiments as part of the tested samples.</terms:description>
-		<terms:created>2023-05-09</terms:created>
-		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-		<terms:issued>2023-05-09</terms:issued>
-		<terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
 Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
 Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
-       <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-       <vann:preferredNamespacePrefix>material</vann:preferredNamespacePrefix>
-       <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
+        <terms:created>2023-05-09</terms:created>
+        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <terms:description xml:lang="en">The goal of this module is to represent the materials (Material Class) that can be involved in the tribological experiments as part of the tested samples.</terms:description>
+        <terms:issued>2023-05-09</terms:issued>
+        <terms:title>TribOnt material module</terms:title>
+        <vann:preferredNamespacePrefix>material</vann:preferredNamespacePrefix>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
     </owl:Ontology>
     
 
@@ -95,6 +96,11 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasElementRole">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/material#isElementRoleFor"/>
+        <rdfs:range rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>hasElementRole</rdfs:label>
+        <ns1:term_status>Relationship between an element and its role,</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -102,9 +108,22 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/material#hasNaming -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasNaming">
-        <rdfs:comment>Relation between something and its standard naming.</rdfs:comment>
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/material#isNamingFor"/>
+        <rdfs:comment>Relationship between something and the name identifying it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>hasNaming</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/material#hasSupplier -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasSupplier">
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/material#isSuppliedBy"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>hasSupplier</rdfs:label>
+        <ns1:term_status>Relationship between a company and what it supplies..</ns1:term_status>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -113,7 +132,8 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/material#hasTypicalUse -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasTypicalUse">
-        <rdfs:comment>Relation between something and  its typical application.</rdfs:comment>
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/material#isTypicalUseFor"/>
+        <rdfs:comment>Relationship between something and  its typical application.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>hasTypicalUse</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -123,16 +143,44 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#isElementRoleFor -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isElementRoleFor"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isElementRoleFor">
+        <rdfs:domain rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>isElementRoleFor</rdfs:label>
+        <ns1:term_status>Relationship between a role and the  element to which it applies,</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/material#isNamingFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isNamingFor">
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>isNamingFor</rdfs:label>
+        <ns1:term_status>Relationship between a name and what it identifies..</ns1:term_status>
+        <ns1:term_status>Stable</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/tribont/material#isSuppliedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isSuppliedBy">
-        <rdfs:comment>Relation between something and the company supplying it.</rdfs:comment>
+        <rdfs:comment>Relationship between something and the company supplying it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>isSuppliedBy</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/material#isTypicalUseFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isTypicalUseFor">
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>isTypicalUseFor</rdfs:label>
+        <ns1:term_status>Relationship between an application and what it is usually applied to,</ns1:term_status>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -2589,7 +2637,16 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:label>filler</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
@@ -2598,28 +2655,19 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     
 

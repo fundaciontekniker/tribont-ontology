@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/tribont/sample#"
      xml:base="https://w3id.org/tribont/sample"
      xmlns:ns="http://creativecommons.org/ns#"
@@ -14,18 +15,18 @@
     <owl:Ontology rdf:about="https://w3id.org/tribont/sample">
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/material"/>
-		<terms:title>TribOnt sample module</terms:title>
-		<terms:description xml:lang="en">The goal of this module is to represent the sample systems (SampleSystem class), and the undelaying samples (Sample class), involved in the tribological experiments.</terms:description>
-		<terms:created>2023-05-09</terms:created>
-		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-		<terms:issued>2023-05-09</terms:issued>
-		<terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
 Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
 Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
-       <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-       <vann:preferredNamespacePrefix>sample</vann:preferredNamespacePrefix>
-       <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
+        <terms:created>2023-05-09</terms:created>
+        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <terms:description xml:lang="en">The goal of this module is to represent the sample systems (SampleSystem class), and the undelaying samples (Sample class), involved in the tribological experiments.</terms:description>
+        <terms:issued>2023-05-09</terms:issued>
+        <terms:title>TribOnt sample module</terms:title>
+        <vann:preferredNamespacePrefix>sample</vann:preferredNamespacePrefix>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
     </owl:Ontology>
     
 
@@ -121,7 +122,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/sample#hasBody -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasBody">
-        <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isBodyFor"/>
+        <rdfs:comment>Relationship between something  and its body configuration..</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>hasBody</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -130,6 +134,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasCoating">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isCoatingFor"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>Relationship between a sample  and its coating.</rdfs:label>
+        <rdfs:label>hasCoating</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -138,7 +146,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasCoreMaterial">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isCoreMaterialFor"/>
-        <rdfs:comment>Relation between a sample and the core material that is part of it.</rdfs:comment>
+        <rdfs:comment>Relationship between something and the material of which it is made</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>hasCoreMaterial</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -150,7 +158,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasLubricationSample">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isLubricationSampleFor"/>
-        <rdfs:comment>Relation between a sample system and a lubricant material that is part of it.</rdfs:comment>
+        <rdfs:comment>Relationship between a sample system and a lubricant material that is part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>hasLubricationSample</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -162,7 +170,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasMovingSample">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isMovingSampleFor"/>
-        <rdfs:comment>Relation between a sample system and a moving sample body that is part of it.</rdfs:comment>
+        <rdfs:comment>Relationship between a sample system and a moving sample body that is part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>hasMovingSample</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -174,7 +182,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasStaticSample">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isStaticSampleFor"/>
-        <rdfs:comment>Relation between a sample system and a static sample body that is part of it.</rdfs:comment>
+        <rdfs:comment>Relationship between a sample system and a static sample body that is part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>hasStaticSample</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -184,28 +192,21 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#interactsWith -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#interactsWith"/>
-    
-
-
-    <!-- https://w3id.org/tribont/sample#isBodyFor -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isBodyFor"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#interactsWith">
+        <rdfs:comment>Releation between sveral samples interacting one with each other.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>interactsWith</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/tribont/sample#isCoatingFor -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isCoatingFor"/>
-    
-
-
-    <!-- https://w3id.org/tribont/sample#isCoatingMaterialFor -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isCoatingMaterialFor">
-        <rdfs:comment>Relation between a coating material and the sample body of which it is a part.</rdfs:comment>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isCoatingFor">
+        <rdfs:comment>Relationship between a coating  and the sample  of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
-        <rdfs:label>isCoatingMaterialFor</rdfs:label>
+        <rdfs:label>isCoatingFor</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -214,7 +215,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/sample#isCoreMaterialFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isCoreMaterialFor">
-        <rdfs:comment>Relation between a core material and the sample body of which it is a part.</rdfs:comment>
+        <rdfs:comment>Relationship between  the material it is made of and something</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isCoreMaterialFor</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -225,7 +226,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/sample#isLubricationSampleFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isLubricationSampleFor">
-        <rdfs:comment>Relation between a lubrication sample body and the sample system of which it is a part.</rdfs:comment>
+        <rdfs:comment>Relationship between a lubrication sample  and the sample system of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isLubricationSampleFor</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -236,7 +237,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/sample#isMovingSampleFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isMovingSampleFor">
-        <rdfs:comment>Relation between a moving sample body and the sample system of which it is a part.</rdfs:comment>
+        <rdfs:comment>Relationship between a moving sample  and the sample system of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isMovingSampleFor</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -244,26 +245,14 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     
 
 
-    <!-- https://w3id.org/tribont/sample#isSampleFor -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isSampleFor"/>
-    
-
-
     <!-- https://w3id.org/tribont/sample#isStaticSampleFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isStaticSampleFor">
-        <rdfs:comment>Relation between a static sample body and the sample system of which it is a part.</rdfs:comment>
+        <rdfs:comment>Relationship between a static sample  and the sample system of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isStaticSampleFor</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/tribont/sample#movesOn -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#movesOn"/>
     
 
 
@@ -608,16 +597,16 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     
 

@@ -120,17 +120,11 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     
 
 
-    <!-- https://w3id.org/tribont/sample#hasLubricationMaterial -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasLubricationMaterial"/>
-    
-
-
     <!-- https://w3id.org/tribont/test#executes -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#executes">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/test#isExecutedBy"/>
-        <rdfs:comment>Relation between an equipment and the activity it carries out.</rdfs:comment>
+        <rdfs:comment>Relationship between an equipment and the activity it carries out.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>executes</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -177,7 +171,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/test#isExecutedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isExecutedBy">
-        <rdfs:comment>Relation between an activity and the equipment that executes it.</rdfs:comment>
+        <rdfs:comment>Relationship between an activity and the equipment that executes it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>isExecutedBy</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -189,7 +183,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isNext">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/test#isPrevious"/>
-        <rdfs:comment>Relation between an activity and the one preceding it.</rdfs:comment>
+        <rdfs:comment>Relationship between an activity and the one preceding it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>isNext</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -200,7 +194,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/test#isPerformedAt -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isPerformedAt">
-        <rdfs:comment>Relation between an activity and the company where it is performed.</rdfs:comment>
+        <rdfs:comment>Relationship between an activity and the company where it is performed.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>isPerformedAt</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -212,7 +206,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isPerformedBy">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/test#performs"/>
-        <rdfs:comment>Relation between an activity and the person who performs it.</rdfs:comment>
+        <rdfs:comment>Relationship between an activity and the person who performs it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>isPerformedBy</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -223,9 +217,33 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/test#isPrevious -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isPrevious">
-        <rdfs:comment>Relation between an activity and the one following it.</rdfs:comment>
+        <rdfs:comment>Relationship between an activity and the one following it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>isPrevious</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/test#isSampleSystemTestedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isSampleSystemTestedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/test#testsSampleSystem"/>
+        <rdfs:comment>Relationship between a sample system and the testing activity testing it  .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:label>isSampleSystemTestedBy</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/test#isSampleTestedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isSampleTestedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/test#testsSample"/>
+        <rdfs:comment>Relationship between a sample and the testing activity testing it  .</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:label>isSampleTestedBy</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -234,7 +252,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/test#performs -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#performs">
-        <rdfs:comment>The relation between a person and the activity he/she performs </rdfs:comment>
+        <rdfs:comment>Relationship between a person and the activity he/she performs</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>performs</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -245,7 +263,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/test#testsSample -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#testsSample">
-        <rdfs:comment>Relation between a testing activity and the involved sample.</rdfs:comment>
+        <rdfs:comment>Relationship between a testing activity and the involved sample.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>testsSample</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -256,7 +274,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/test#testsSampleSystem -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#testsSampleSystem">
-        <rdfs:comment>Relation between a testing activity and the involved sample system.</rdfs:comment>
+        <rdfs:comment>Relationship between a testing activity and the involved sample system.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>testsSampleSystem</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -499,6 +517,18 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#testsSample"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/sample#Sample"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#testsSampleSystem"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/sample#SampleSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isExecutedBy"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
@@ -589,17 +619,14 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#isCharacterisedByOperationMeasure"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/core#isCharacterisedByOutputMeasure"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#GeometricDimension"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#Volume"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#Weight"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -721,6 +748,22 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://dbpedia.org/ontology/Company"/>
+            <rdf:Description rdf:about="http://dbpedia.org/ontology/Document"/>
+            <rdf:Description rdf:about="http://purl.org/dc/terms/Standard"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#Calibration"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementRole"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/test#Operator"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">

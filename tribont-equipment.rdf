@@ -1,4 +1,4 @@
-
+<?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/tribont/equipment#"
      xml:base="https://w3id.org/tribont/equipment"
      xmlns:ns="http://creativecommons.org/ns#"
@@ -14,18 +14,18 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/tribont/equipment">
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
-		<terms:title>TribOnt equipment module</terms:title>
-		<terms:description xml:lang="en">The goal of this module is to represent the equipment hierarchy model involved in the tribological experiments.</terms:description>
-		<terms:created>2023-05-09</terms:created>
-		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-		<terms:issued>2023-05-09</terms:issued>
-		<terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
 Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
 Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
-       <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-       <vann:preferredNamespacePrefix>equipment</vann:preferredNamespacePrefix>
-       <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
+        <terms:created>2023-05-09</terms:created>
+        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <terms:description xml:lang="en">The goal of this module is to represent the equipment hierarchy model involved in the tribological experiments.</terms:description>
+        <terms:issued>2023-05-09</terms:issued>
+        <terms:title>TribOnt equipment module</terms:title>
+        <vann:preferredNamespacePrefix>equipment</vann:preferredNamespacePrefix>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
     </owl:Ontology>
     
 
@@ -152,6 +152,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#holdsMovingSampleBody">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/equipment#holdsSampleBody"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/equipment#isHeldMovingSampleBodyBy"/>
+        <rdfs:comment>Relationship between an equipment and the moving sample  body it can hold</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>holdsMovingSampleBody</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -160,6 +164,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#holdsSampleBody">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/equipment#isHeldSampleBodyBy"/>
+        <rdfs:comment>Relationship between an equipment and the sample body it can hold</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>holdsSampleBody</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -169,6 +177,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#holdsStaticSampleBody">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/equipment#holdsSampleBody"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/equipment#isHeldStaticSampleBodyBy"/>
+        <rdfs:comment>Relationship between an equipment and the static sample  body it can hold</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>holdsStaticSampleBody</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -177,13 +189,22 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#isHeldMovingSampleBodyBy">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/equipment#isHeldSampleBodyBy"/>
+        <rdfs:comment>Relationship between a movig sample body and the equipment that hold it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>isHeldMovingSampleBodyBy</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/tribont/equipment#isHeldSampleBodyBy -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#isHeldSampleBodyBy"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#isHeldSampleBodyBy">
+        <rdfs:comment>Relationship between a sample body and the equipment that hold it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>isHeldSampleBodyBy</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
@@ -191,6 +212,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#isHeldStaticSampleBodyBy">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/equipment#isHeldSampleBodyBy"/>
+        <rdfs:comment>Relationship between astatic  sample body and the equipment that hold it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
+        <rdfs:label>isHeldStaticSampleBodyBy</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -714,28 +739,28 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     
 

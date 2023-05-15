@@ -144,6 +144,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#characterisesOperationCondition">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isCharacterisedByOperationCondition"/>
+        <rdfs:comment>Relationship between a specified operation property and the SubjectOfInterest it characterises  (e.g. equipemnt or test)..</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>characterisesOperationCondition</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -153,6 +157,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#characterisesOperationMeasure">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isCharacterisedByOperationMeasure"/>
+        <rdfs:comment>Relationship between a measured operation property and the SubjectOfInterest it characterises  (e.g. equipemnt or test)..</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>characterisesOperationMeasure</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -162,6 +170,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#characterisesOutputMeasure">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isCharacterisedByOutputMeasure"/>
+        <rdfs:comment>Relationship between a n output technical measure  and the SubjectOfInterest it characterises (e.g. equipemnt or test).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>characterisesOutputMeasure</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -170,7 +182,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#compliesWith">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isCompliedBy"/>
-        <rdfs:comment>Relation between something and the standard it complies with.</rdfs:comment>
+        <rdfs:comment>Relationship between something and the standard or procedure it complies with.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>compliesWith</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -182,7 +194,8 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasDocument">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isDocumentFor"/>
-        <rdfs:comment>Relation between something and its related documents</rdfs:comment>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Document"/>
+        <rdfs:comment>Relationship between something and its related documents</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>hasDocument</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -194,7 +207,8 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasManufacturer">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isManufacturerFor"/>
-        <rdfs:comment>Relation between a something and its manufacturer</rdfs:comment>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Company"/>
+        <rdfs:comment>Relationship between something and the company producing it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>hasManufacturer</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -205,7 +219,9 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/core#hasOwner -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasOwner">
-        <rdfs:comment>Relation between something and the person or entity that owns it.</rdfs:comment>
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isOwnerOf"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Company"/>
+        <rdfs:comment>Relationship between something and the company that owns it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>hasOwner</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -217,6 +233,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOperationCondition">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Relationship between a  SubjectOfInterest it characterises  (e.g. equipemnt or test) and a specified operation property characterisig it..</rdfs:label>
+        <rdfs:label>isCharacterisedByOperationCondition</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -225,6 +245,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOperationMeasure">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Relationship between a  SubjectOfInterest it characterises  (e.g. equipemnt or test) and a measured operation property characterisig it..</rdfs:label>
+        <rdfs:label>isCharacterisedByOperationMeasure</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -233,6 +257,10 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOutputMeasure">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Relationship between aSubjectOfInterest it characterises (e.g. equipemnt or test). and an output technical measurecgarcaterisg it.</rdfs:label>
+        <rdfs:label>isCharacterisedByOutputMeasure</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -240,7 +268,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/core#isCompliedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCompliedBy">
-        <rdfs:comment>Relation between a standard and what it regulates.</rdfs:comment>
+        <rdfs:comment>Relationship between a standard or procedure and what it regulates or formalise.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isCompliedBy</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -251,7 +279,8 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/core#isDocumentFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isDocumentFor">
-        <rdfs:comment>Relation between a document and what it provides information about.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Document"/>
+        <rdfs:comment>Relationship between a document and what it provides information about.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isDocumentFor</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -263,7 +292,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isMadeOf">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isPartOf"/>
-        <rdfs:comment>Relation between something and its component parts.</rdfs:comment>
+        <rdfs:comment>Relationship between something and its component parts.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isMadeOf</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -274,9 +303,22 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/core#isManufacturerFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isManufacturerFor">
-        <rdfs:comment>Relation between between a company and what it produces.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Company"/>
+        <rdfs:comment>Relationship between between a company and what it produces.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isManufacturerFor</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/core#isOwnerOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isOwnerOf">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Company"/>
+        <rdfs:comment>Relationship between an company and  something it owns..</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>isOwnerOf</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -285,7 +327,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- https://w3id.org/tribont/core#isPartOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isPartOf">
-        <rdfs:comment>Relation between a component part and that of which it is a part.</rdfs:comment>
+        <rdfs:comment>Relationship between a component part and that of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isPartOf</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -5823,6 +5865,45 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -5841,16 +5922,19 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -5902,48 +5986,6 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     
 
