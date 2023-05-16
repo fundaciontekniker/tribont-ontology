@@ -19,7 +19,7 @@ Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
 Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <terms:created>2023-05-09</terms:created>
         <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
-        <terms:description xml:lang="en">The goal of this ontology design pattern is to characterise a subject or group of subjects of interest (SubjectOfInterest class)  by assigning qualifiable or quantifiable attributes or characteristics.</terms:description>
+        <terms:description xml:lang="en">The goal of this ontology design pattern is to characterise a subject or group of subjects of interest by assigning qualifiable or quantifiable attributes or characteristics.</terms:description>
         <terms:issued>2023-05-09</terms:issued>
         <terms:title>isCharacterisedBy ontology design pattern </terms:title>
         <vann:preferredNamespacePrefix>core</vann:preferredNamespacePrefix>
@@ -121,9 +121,9 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#belongsTo">
         <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isGroupingOf"/>
+        <rdfs:comment>Relationship between a member and the group it belongs to.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-         <rdfs:comment>Relationship between a member and the group it belongs to.</rdfs:comment>
-		<rdfs:label>belongsTo</rdfs:label>
+        <rdfs:label>belongsTo</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -134,7 +134,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#characterises">
         <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
         <rdfs:range rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-		<rdfs:comment>Relationship between a Property and the SubjectOfInterest it characterises.</rdfs:comment>
+        <rdfs:comment>Relationship between a Property and the SubjectOfInterest it characterises.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>characterises</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -182,8 +182,8 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isUnitFor">
         <rdfs:domain rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+        <rdfs:comment>Relationship between an unit and the property of which it is a unit of measurement.</rdfs:comment>
         <rdfs:comment>https://w3id.org/isCharacterisedBy</rdfs:comment>
-		<rdfs:comment>Relationship between an unit and the property of which it is a unit of measurement.</rdfs:comment>
         <rdfs:label>isUnitFor</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
