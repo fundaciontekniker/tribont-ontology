@@ -22,7 +22,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <terms:description xml:lang="en">The goal of this ontology design pattern is to characterise a subject or group of subjects of interest by assigning qualifiable or quantifiable attributes or characteristics.</terms:description>
         <terms:issued>2023-05-09</terms:issued>
         <terms:title>isCharacterisedBy ontology design pattern </terms:title>
-        <vann:preferredNamespacePrefix>core</vann:preferredNamespacePrefix>
+        <vann:preferredNamespacePrefix>icb</vann:preferredNamespacePrefix>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
     </owl:Ontology>
