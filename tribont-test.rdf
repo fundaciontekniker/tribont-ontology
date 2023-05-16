@@ -225,17 +225,6 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     
 
 
-    <!-- https://w3id.org/tribont/test#isSampleTestedBy -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isSampleTestedBy">
-        <rdfs:comment>Relationship between a sample and the testing activity testing it  .</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
-        <rdfs:label>isSampleTestedBy</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/tribont/test#isTestedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/test#isTestedBy">
@@ -379,6 +368,30 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:comment>A testing activity that reproduces certain operation conditions to assess one or more technical attributes or characteristics of a given sample or sample system.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
         <rdfs:label>ExperimentalTest</rdfs:label>
+        <ns1:term_status>Stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/test#HardnessMeasurement -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/test#HardnessMeasurement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/test#MeasuringTest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#isCharacterisedByOutputMeasure"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/test#isExecutedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/equipment#HardnessTester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:label>A testing activity to measure  one or more  hardnes attributes or characteristics of  a given sample.</rdfs:label>
+        <rdfs:label>HardnessMeasurement</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
