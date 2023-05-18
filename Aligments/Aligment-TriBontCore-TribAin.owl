@@ -17,15 +17,12 @@
      xmlns:materialMetadata="http://ktmfk.de/ontology/tribAIn/materialMetadata/"
      xmlns:unitOfMeasurementMetadata="http://ktmfk.de/ontology/tribAIn/unitOfMeasurementMetadata/">
     <owl:Ontology rdf:about="https://w3id.org/tribont/core/triBainAligment">
-        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
-Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
-Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
+        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;</terms:contributor>
         <terms:created>2023-05-09</terms:created>
         <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
-        <terms:description xml:lang="en">The goal of this ontology design pattern is to characterise a subject or group of subjects of interest by assigning qualifiable or quantifiable attributes or characteristics.</terms:description>
+        <terms:description xml:lang="en">Definition of the alignments between the TribOnt Core module (v1.0) and the TribAIn ontology.</terms:description>
         <terms:issued>2023-05-09</terms:issued>
         <terms:title xml:lang="en">TribOnt Core module alignment with TribAIn ontology</terms:title>
-        <terms:title>isCharacterisedBy ontology design pattern </terms:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
     </owl:Ontology>
@@ -221,6 +218,14 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     
 
 
+    <!-- http://ktmfk.de/ontology/tribAIn/Parameter -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Parameter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
+    </owl:Class>
+    
+
+
     <!-- http://ktmfk.de/ontology/tribAIn/PoissonsRatio -->
 
     <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/PoissonsRatio">
@@ -382,6 +387,12 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <!-- http://purl.org/dc/terms/Standard -->
 
     <owl:Class rdf:about="http://purl.org/dc/terms/Standard"/>
+    
+
+
+    <!-- https://w3id.org/isCharacterisedBy#Property -->
+
+    <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
     
 
 
