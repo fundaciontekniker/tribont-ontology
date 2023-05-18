@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/trib#"
+     xml:base="https://w3id.org/trib"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:tribAIn="http://ktmfk.de/ontology/tribAIn/"
+     xmlns:materialMetadata="http://ktmfk.de/ontology/tribAIn/materialMetadata/"
+     xmlns:unitOfMeasurementMetadata="http://ktmfk.de/ontology/tribAIn/unitOfMeasurementMetadata/">
+    <owl:Ontology rdf:about="https://w3id.org/tribont/core/triBainAligment">
+        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
+Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
+Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
+        <terms:created>2023-05-09</terms:created>
+        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <terms:description xml:lang="en">The goal of this ontology design pattern is to characterise a subject or group of subjects of interest by assigning qualifiable or quantifiable attributes or characteristics.</terms:description>
+        <terms:issued>2023-05-09</terms:issued>
+        <terms:title xml:lang="en">TribOnt Core module alignment with TribAIn ontology</terms:title>
+        <terms:title>isCharacterisedBy ontology design pattern </terms:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://ktmfk.de/ontology/tribAIn/hasValue">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/isCharacterisedBy#value"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/isCharacterisedBy#value -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/isCharacterisedBy#value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Document -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Document">
+        <rdfs:subClassOf rdf:resource="http://ktmfk.de/ontology/tribAIn/ContentBearingObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/CoefficientOfFriction -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/CoefficientOfFriction"/>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/ConcentrationUnit -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/ConcentrationUnit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/ContentBearingObject -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/ContentBearingObject"/>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Diameter -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Diameter">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#Diameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/DistanceUnit -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/DistanceUnit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/ForceUnit -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/ForceUnit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Geometry -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Geometry">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Humidity -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Humidity">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#Humidity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/MassUnit -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/MassUnit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#WeightUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/PoissonsRatio -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/PoissonsRatio">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#PoisssonRatio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/PressureUnit -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/PressureUnit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#PressureUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Ra -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Ra">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#Ra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Representation -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Representation"/>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Rk -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Rk">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#Rv"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Rp -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Rp">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#Rp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Rpk -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Rpk">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#Rpk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Rq -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Rq">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#Rq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Rsk -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Rsk">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#Rsk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Runtime -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Runtime">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#Duration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Rv -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Rv">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#Rv"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Rz -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Rz">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#Rz"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/SpeedUnit -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/SpeedUnit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#VelocityUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/SurfaceRoughness -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/SurfaceRoughness">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/TechnicalStandard -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/TechnicalStandard">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Standard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/TemperatureUnit -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/TemperatureUnit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/TimeUnit -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/TimeUnit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/TorqueUnit -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/TorqueUnit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#TorqueUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/TribologicalParameter -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/TribologicalParameter">
+        <owl:equivalentClass rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ktmfk.de/ontology/tribAIn/Unit -->
+
+    <owl:Class rdf:about="http://ktmfk.de/ontology/tribAIn/Unit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Standard -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Standard"/>
+    
+
+
+    <!-- https://w3id.org/isCharacterisedBy#Unit -->
+
+    <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#COFMean -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#COFMean">
+        <rdfs:subClassOf rdf:resource="http://ktmfk.de/ontology/tribAIn/CoefficientOfFriction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Diameter -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Diameter"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#DistanceUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#DistanceUnit"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Duration -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Duration"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#ForceUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#ForceUnit"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#GeometricDimension -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#GeometricDimension"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Humidity -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Humidity"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#PercentageUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#PercentageUnit"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#PoisssonRatio -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#PoisssonRatio"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#PressureUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#PressureUnit"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Ra -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Ra"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Rp -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Rp"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Rpk -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Rpk"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Rq -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Rq"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Rsk -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Rsk"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Rv -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Rv"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Rz -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Rz"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#SurfaceRoughness -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#SurfaceRoughness"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#TemperatureUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#TemperatureUnit"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#TimeUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#TimeUnit"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#TorqueUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#TorqueUnit"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#TribologicalProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#TribologicalProperty"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#VelocityUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#VelocityUnit"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#WeightUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#WeightUnit"/>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
