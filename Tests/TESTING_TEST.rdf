@@ -9,18 +9,18 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:core="https://w3id.org/tribont/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:tribont="https://w3id.org/tribont#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:sample="https://w3id.org/tribont/sample#"
+     xmlns:tribont="https://w3id.org/tribont#"
      xmlns:material="https://w3id.org/tribont/material#"
      xmlns:equipment="https://w3id.org/tribont/equipment#"
      xmlns:isCharacterisedBy="https://w3id.org/isCharacterisedBy#">
     <owl:Ontology rdf:about="https://w3id.org/tribont/TESTINGtest">
+        <owl:imports rdf:resource="https://w3id.org/tribont"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/TESTINGequipment"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/TESTINGmaterial"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/TESTINGsample"/>
-        <owl:imports rdf:resource="https://w3id.org/tribont"/>
     </owl:Ontology>
     
 
@@ -42,15 +42,15 @@
     
 
 
-    <!-- https://w3id.org/tribont/core#hasRole -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/core#hasRole"/>
-    
-
-
     <!-- https://w3id.org/tribont#hasTestOutputDocument -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/tribont#hasTestOutputDocument"/>
+    
+
+
+    <!-- https://w3id.org/tribont/core#hasRole -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/tribont/core#hasRole"/>
     
 
 
@@ -163,7 +163,6 @@
     <!-- https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_WIDTH -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#OP3798-7238-p_WIDTH">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#Width"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
     </owl:NamedIndividual>
     
@@ -186,7 +185,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_eje_18_LENGTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Length"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">522.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">522.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -221,11 +220,11 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#LAICA0101_Perstorp__SCAR_MEASUREMENT">
         <rdf:type rdf:resource="https://w3id.org/tribont#WearScarMeasurement"/>
-        <core:hasDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_LAICA_IMAGE"/>
-        <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_SCAR_LENTH"/>
         <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_TRIBOLOGY_TEST"/>
         <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#LAICA_MICROSCOPE"/>
         <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL"/>
+        <core:hasDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_LAICA_IMAGE"/>
+        <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_SCAR_LENTH"/>
     </owl:NamedIndividual>
     
 
@@ -265,7 +264,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_DIAMETER">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Diameter"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -275,7 +274,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_SCAR_LENTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearScarLength"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#µm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">979.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">979.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -284,7 +283,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_BALL_SPEC_Ra">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Ra"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -293,7 +292,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_COFMean">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#COFMean"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.133</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.133</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -303,7 +302,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_CONFIG_DURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Duration"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#second"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7200.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7200.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -313,7 +312,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_CONFIG_FREQUENCY">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Frequency"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#Hz"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -332,8 +331,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_CONFIG_STROKELENGTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#StrokeLength"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</isCharacterisedBy:minValue>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</isCharacterisedBy:value>
+        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</isCharacterisedBy:minValue>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -366,7 +365,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC_HEIGHT">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Height"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.9</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.9</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -375,7 +374,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC_SPEC_Ra">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Ra"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.008</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.008</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -385,7 +384,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_DISC__DIAMETER">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Diameter"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -447,6 +446,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_TRIBOLOGY_TEST">
         <rdf:type rdf:resource="https://w3id.org/tribont#TribologicalTest"/>
+        <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
+        <tribont:isPerformedAt rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
+        <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SAMPLESYSTEM"/>
         <core:compliesWith rdf:resource="https://w3id.org/tribont/core#ASTMD5706"/>
         <core:hasDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SRV3_OutputFILE"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_CONFIG_DURATION"/>
@@ -455,9 +457,6 @@
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_CONFIG_STROKELENGTH"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp__CONFIG_SAMPLETEMPERATURE"/>
         <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_COFMean"/>
-        <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
-        <tribont:isPerformedAt rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
-        <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp_SAMPLESYSTEM"/>
     </owl:NamedIndividual>
     
 
@@ -467,7 +466,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OB4502_Perstorp__CONFIG_SAMPLETEMPERATURE">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleTemperature"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#°C"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -486,7 +485,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OP3798-7238_CONFIG_DURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Duration"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#second"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">28800.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28800.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -496,7 +495,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OP3798-7238_CONFIG_FREQUENCY">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Frequency"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#Hz"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -506,7 +505,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OP3798-7238_CONFIG_LOAD">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Load"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#N"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">39.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -516,7 +515,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OP3798-7238_CONFIG_STROKELENGTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#StrokeLength"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -526,7 +525,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OP3798-7238_TEMPERATURE">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ChamberTemperature"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#°C"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -535,15 +534,15 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OP3798-7238_TRIBOLOGY_TEST">
         <rdf:type rdf:resource="https://w3id.org/tribont#TribologicalTest"/>
+        <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
+        <tribont:isPerformedAt rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
+        <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-723_SAMPLE_SYSTEM"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#OP3798-7238_CONFIG_DURATION"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#OP3798-7238_CONFIG_FREQUENCY"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#OP3798-7238_CONFIG_LOAD"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#OP3798-7238_CONFIG_STROKELENGTH"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#OP3798-7238_TEMPERATURE"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#rotating_reciprocating"/>
-        <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
-        <tribont:isPerformedAt rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
-        <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGsample#OP3798-723_SAMPLE_SYSTEM"/>
     </owl:NamedIndividual>
     
 
@@ -552,7 +551,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OS3038-6131_COFMean">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#COFMean"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.073</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.073</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -562,7 +561,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OS3038-6131_CONFIG_DURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Duration"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#second"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10800.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10800.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -572,7 +571,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OS3038-6131_CONFIG_FREQUENCY">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Frequency"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#Hz"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -582,7 +581,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OS3038-6131_CONFIG_LOAD">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Load"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#N"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -592,7 +591,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OS3038-6131_CONFIG_SAMPLETEMPERATURE">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#SampleTemperature"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#°C"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">130.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">130.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -602,7 +601,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OS3038-6131_CONFIG_STROKELENTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#StrokeLength"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -631,6 +630,10 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#OS3038-6131_TRIBOLOGY_TEST">
         <rdf:type rdf:resource="https://w3id.org/tribont#TribologicalTest"/>
+        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0001_Repsol_5w40_PISTON_WEIGHT_MEASUREMENT"/>
+        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT"/>
+        <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
+        <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_SAMPLESYSTEM"/>
         <core:hasDocument rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_SRV3_OutputFILE"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_CONFIG_DURATION"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_CONFIG_FREQUENCY"/>
@@ -639,10 +642,6 @@
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_CONFIG_STROKELENTH"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/core#rotating_reciprocating"/>
         <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_COFMean"/>
-        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0001_Repsol_5w40_PISTON_WEIGHT_MEASUREMENT"/>
-        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT"/>
-        <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#SRV3_TEK"/>
-        <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_SAMPLESYSTEM"/>
     </owl:NamedIndividual>
     
 
@@ -681,7 +680,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0001_Repsol_5w40_PISTONRING_WEIGHT">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Weight"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mg"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10000.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10000.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -690,9 +689,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0001_Repsol_5w40_PISTON_WEIGHT_MEASUREMENT">
         <rdf:type rdf:resource="https://w3id.org/tribont#WeightMeasurement"/>
-        <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0001_Repsol_5w40_PISTONRING_WEIGHT"/>
         <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#SCALE01"/>
         <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGtest#PISTON_RING"/>
+        <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0001_Repsol_5w40_PISTONRING_WEIGHT"/>
     </owl:NamedIndividual>
     
 
@@ -702,8 +701,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Weight"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mg"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</isCharacterisedBy:value>
-        <core:hasRole rdf:resource="https://w3id.org/tribont/core#measurement"/>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20000.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -712,9 +710,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT">
         <rdf:type rdf:resource="https://w3id.org/tribont#WeightMeasurement"/>
-        <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT"/>
         <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#SCALE01"/>
         <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGtest#AUDI_CYLINDER"/>
+        <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0002_Repsol_5w40_AUDILINER_WEIGHT"/>
     </owl:NamedIndividual>
     
 
@@ -724,7 +722,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0003_Repsol_5w40_PISTONRING_WEIGHT">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Weight"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mg"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10000.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10000.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -733,10 +731,10 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0003_Repsol_5w40_PISTON_WEIGHT_MEASUREMENT">
         <rdf:type rdf:resource="https://w3id.org/tribont#WeightMeasurement"/>
-        <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0003_Repsol_5w40_PISTONRING_WEIGHT"/>
         <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_TRIBOLOGY_TEST"/>
         <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#SCALE01"/>
         <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGtest#PISTON_RING"/>
+        <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0003_Repsol_5w40_PISTONRING_WEIGHT"/>
     </owl:NamedIndividual>
     
 
@@ -746,8 +744,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0004_Repsol_5w40_AUDILINER_WEIGHT">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Weight"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mg"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19999.88</isCharacterisedBy:value>
-        <core:hasRole rdf:resource="https://w3id.org/tribont/core#measurement"/>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19999.88</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -756,10 +753,10 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#SC0004_Repsol_5w40_AUDILINER_WEIGHT_MEASUREMENT">
         <rdf:type rdf:resource="https://w3id.org/tribont#WeightMeasurement"/>
-        <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0004_Repsol_5w40_AUDILINER_WEIGHT"/>
         <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#OS3038-6131_TRIBOLOGY_TEST"/>
         <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGtest#SCALE01"/>
         <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGtest#AUDI_CYLINDER"/>
+        <core:isCharacterisedByOutputMeasure rdf:resource="https://w3id.org/tribont/TESTINGtest#SC0004_Repsol_5w40_AUDILINER_WEIGHT"/>
     </owl:NamedIndividual>
     
 
@@ -786,8 +783,8 @@
     <!-- https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_1_CONFIG_RPM -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_1_CONFIG_RPM">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationalSpeed"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.0</isCharacterisedBy:value>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationSpeed"/>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">46.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -796,9 +793,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_2">
         <rdf:type rdf:resource="https://w3id.org/tribont#TestStep"/>
+        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_1"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_2_CONFIG_RPM"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_STEP_CONFIG_DURATION"/>
-        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_1"/>
     </owl:NamedIndividual>
     
 
@@ -806,8 +803,8 @@
     <!-- https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_2_CONFIG_RPM -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_2_CONFIG_RPM">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationalSpeed"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">68.0</isCharacterisedBy:value>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationSpeed"/>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">68.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -816,9 +813,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_3">
         <rdf:type rdf:resource="https://w3id.org/tribont#TestStep"/>
+        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_2"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_3_CONFIG_RPM"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_STEP_CONFIG_DURATION"/>
-        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_2"/>
     </owl:NamedIndividual>
     
 
@@ -826,8 +823,8 @@
     <!-- https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_3_CONFIG_RPM -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_3_CONFIG_RPM">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationalSpeed"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">91.0</isCharacterisedBy:value>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationSpeed"/>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">91.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -836,9 +833,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_4">
         <rdf:type rdf:resource="https://w3id.org/tribont#TestStep"/>
+        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_3"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_4_CONFIG_RPM"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_STEP_CONFIG_DURATION"/>
-        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_3"/>
     </owl:NamedIndividual>
     
 
@@ -846,8 +843,8 @@
     <!-- https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_4_CONFIG_RPM -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_4_CONFIG_RPM">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationalSpeed"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">114.0</isCharacterisedBy:value>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationSpeed"/>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">114.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -856,9 +853,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_5">
         <rdf:type rdf:resource="https://w3id.org/tribont#TestStep"/>
+        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_4"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_5_CONFIG_RPM"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_STEP_CONFIG_DURATION"/>
-        <tribont:hasAfterEndDependency rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_4"/>
     </owl:NamedIndividual>
     
 
@@ -866,8 +863,8 @@
     <!-- https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_5_CONFIG_RPM -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_5_CONFIG_RPM">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationalSpeed"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">137.0</isCharacterisedBy:value>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationSpeed"/>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">137.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -877,7 +874,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_CONFIG_STROKELENGTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#StrokeLength"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#mm"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">84.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">84.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -886,7 +883,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_PRESSURE">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Pressure"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -896,7 +893,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_STEP_CONFIG_DURATION">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Duration"/>
         <isCharacterisedBy:hasUnit rdf:resource="https://w3id.org/tribont/core#second"/>
-        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</isCharacterisedBy:value>
+        <isCharacterisedBy:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.0</isCharacterisedBy:value>
     </owl:NamedIndividual>
     
 
@@ -905,6 +902,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_TRIBOLOGY_TEST">
         <rdf:type rdf:resource="https://w3id.org/tribont#TribologicalTest"/>
+        <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#TESSA_TEK"/>
+        <tribont:isPerformedAt rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
+        <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_SAMPLE_SYSTEM"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_CONFIG_STROKELENGTH"/>
         <core:isCharacterisedByOperationCondition rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_PRESSURE"/>
         <core:isMadeOf rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_1"/>
@@ -912,9 +912,6 @@
         <core:isMadeOf rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_3"/>
         <core:isMadeOf rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_4"/>
         <core:isMadeOf rdf:resource="https://w3id.org/tribont/TESTINGtest#TEK_TEST_TRIB_100_5"/>
-        <tribont:isExecutedBy rdf:resource="https://w3id.org/tribont/TESTINGequipment#TESSA_TEK"/>
-        <tribont:isPerformedAt rdf:resource="https://w3id.org/tribont/TESTINGequipment#TEKNIKER"/>
-        <tribont:tests rdf:resource="https://w3id.org/tribont/TESTINGsample#7238LN53_TESSA_SAMPLE_SYSTEM"/>
     </owl:NamedIndividual>
     
 

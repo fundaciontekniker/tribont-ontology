@@ -165,8 +165,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_NORMAL_FORCE">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#NormalForce"/>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000.0</isCharacterisedBy:maxValue>
-        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</isCharacterisedBy:minValue>
+        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2000.0</isCharacterisedBy:maxValue>
+        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</isCharacterisedBy:minValue>
     </owl:NamedIndividual>
     
 
@@ -192,8 +192,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_FREQUENCY">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Frequency"/>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</isCharacterisedBy:maxValue>
-        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</isCharacterisedBy:minValue>
+        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</isCharacterisedBy:maxValue>
+        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</isCharacterisedBy:minValue>
     </owl:NamedIndividual>
     
 
@@ -202,8 +202,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_SPEC_STROKELENGTH">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#StrokeLength"/>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</isCharacterisedBy:maxValue>
-        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</isCharacterisedBy:minValue>
+        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</isCharacterisedBy:maxValue>
+        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</isCharacterisedBy:minValue>
     </owl:NamedIndividual>
     
 
@@ -270,8 +270,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_NOR_REFRIGERATED">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ChamberTemperature"/>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</isCharacterisedBy:maxValue>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">900.0</isCharacterisedBy:maxValue>
+        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.0</isCharacterisedBy:maxValue>
+        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">900.0</isCharacterisedBy:maxValue>
     </owl:NamedIndividual>
     
 
@@ -280,8 +280,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_TEMPERATURE_REFRIGERATED">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ChamberTemperature"/>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-35.0</isCharacterisedBy:maxValue>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">900.0</isCharacterisedBy:maxValue>
+        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-35.0</isCharacterisedBy:maxValue>
+        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">900.0</isCharacterisedBy:maxValue>
     </owl:NamedIndividual>
     
 
@@ -290,8 +290,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#SRV3_VELOCITY">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Velocity"/>
-        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</isCharacterisedBy:maxValue>
-        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.009</isCharacterisedBy:minValue>
+        <isCharacterisedBy:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4</isCharacterisedBy:maxValue>
+        <isCharacterisedBy:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.009</isCharacterisedBy:minValue>
     </owl:NamedIndividual>
     
 
