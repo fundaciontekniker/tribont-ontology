@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/tribont/test#"
-     xml:base="https://w3id.org/tribont/test"
+<rdf:RDF xmlns="https://w3id.org/tribont#"
+     xml:base="https://w3id.org/tribont"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -119,7 +119,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#executes">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont#isExecutedBy"/>
         <rdfs:comment>Relationship between an equipment and the activity it carries out.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>executes</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -132,7 +132,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:equivalentProperty rdf:resource="https://w3id.org/tribont#isNext"/>
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont#hasDependency"/>
         <rdfs:comment>Relation between an activity and the one preceding it.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>hasAfterEndDependency</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -143,7 +143,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#hasDependency">
         <rdfs:comment>Identifies the dependency between two activities.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>hasDependency</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -155,7 +155,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#hasNofollowDependency">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont#hasDependency"/>
         <rdfs:comment>Indicates that an activity has not a following one.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>hasNofollowDependency</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -166,7 +166,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#isExecutedBy">
         <rdfs:comment>Relationship between an activity and the equipment that executes it.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>isExecutedBy</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -178,7 +178,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#isNext">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont#isPrevious"/>
         <rdfs:comment>Relationship between an activity and the one preceding it.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>isNext</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -189,7 +189,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#isPerformedAt">
         <rdfs:comment>Relationship between an activity and the company where it is performed.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>isPerformedAt</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -201,7 +201,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#isPerformedBy">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont#performs"/>
         <rdfs:comment>Relationship between an activity and the person who performs it.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>isPerformedBy</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -212,7 +212,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#isPrevious">
         <rdfs:comment>Relationship between an activity and the one following it.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>isPrevious</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -224,7 +224,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#isTestedBy">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont#tests"/>
         <rdfs:comment>Relationship between a sample body or sample system and the testing activity testing it  .</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>isTestedBy</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -235,7 +235,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#performs">
         <rdfs:comment>Relationship between a person and the activity he/she performs</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>performs</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -246,7 +246,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#tests">
         <rdfs:comment>Relationship between a testing activity and what it tests (i.e., sample,  sample system).</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>tests</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:ObjectProperty>
@@ -305,7 +305,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A series of activities to carry out an experimentation procedure and measure its outputs.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>Experiment</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
@@ -330,7 +330,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A testing activity that reproduces certain operation conditions to assess one or more technical attributes or characteristics of a given sample or sample system.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>ExperimentalTest</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
@@ -353,7 +353,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>A testing activity to measure  one or more  hardnes attributes or characteristics of  a given sample.</rdfs:label>
         <rdfs:label>HardnessMeasurement</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
@@ -385,7 +385,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A testing activity that measures one or more attributes or characteristics of a given sample.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>MeasuringTest</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
@@ -409,7 +409,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Person performing an specific activity or operation.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>Operator</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
@@ -520,7 +520,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>An activity intended to establish the techncial attributes or characteristics of something,</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>Test</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
@@ -532,7 +532,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <owl:Class rdf:about="https://w3id.org/tribont#TestOutputDocument">
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Document"/>
         <rdfs:comment>A document compiling the outputs of a given test.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>TestOutputDocument</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
@@ -560,7 +560,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <owl:Class rdf:about="https://w3id.org/tribont#TestStandard">
         <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Standard"/>
         <rdfs:comment>A document approved by a recognized bodythat provides common to by fullfiled by a test.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>TestStandard</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
@@ -602,7 +602,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Each of the steps into which a given test can be subdivided</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>TestStep</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
@@ -639,7 +639,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A testing activity that reproduces certain operation conditions to assess one or more tribological attributes or characteristics of a given sample system.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>TribologicalTest</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
@@ -663,7 +663,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A testing activity to measure  one or more attributes or characteristics of the resulting scar in a given sample.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>WearScarMeasurement</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
@@ -693,7 +693,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A testing activity to measure the weight of a given sample.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/test</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>WeightMeasurement</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
