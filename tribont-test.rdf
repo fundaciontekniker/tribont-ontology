@@ -18,13 +18,13 @@
         <owl:imports rdf:resource="https://w3id.org/tribont/sample"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
-Domain expert:;Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
-Domain expert:;Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
+Domain expert:Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
+Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <terms:created>2023-05-09</terms:created>
         <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
         <terms:description xml:lang="en">The goal  is to represent the tribological experiments by relaying on the representation included in the core,,  sample and equipment modules.</terms:description>
         <terms:issued>2023-05-09</terms:issued>
-        <terms:title>TribOnt tOntology</terms:title>
+        <terms:title>TribOnt ontology</terms:title>
         <vann:preferredNamespacePrefix>tribont</vann:preferredNamespacePrefix>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>

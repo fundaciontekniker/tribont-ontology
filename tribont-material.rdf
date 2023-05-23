@@ -14,8 +14,8 @@
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
-Domain expert:  Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
-Domain expert: Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
+Domain expert:Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
+Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <terms:created>2023-05-09</terms:created>
         <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
         <terms:description xml:lang="en">The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples.</terms:description>
