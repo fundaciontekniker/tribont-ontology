@@ -14,8 +14,8 @@
         <owl:imports rdf:resource="https://w3id.org/isCharacterisedBy"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
-Domain expert: Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
-Domain expert: Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
+Domain expert:Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
+Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <terms:created>2023-05-09</terms:created>
         <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
         <terms:description xml:lang="en">The goal of this module is to represent the common classes, and object and data properties included in two or more modules of the TribOnt ontology. </terms:description>
@@ -2517,14 +2517,14 @@ Domain expert: Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:c
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#RotationSpeedUnit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#RotationSpeedUnit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Rotation speed of something.</rdfs:comment>
@@ -2535,20 +2535,20 @@ Domain expert: Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:c
     
 
 
-    <!-- https://w3id.org/tribont/core#RotationalSpeedUnit -->
+    <!-- https://w3id.org/tribont/core#RotationSpeedUnit -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/core#RotationalSpeedUnit">
+    <owl:Class rdf:about="https://w3id.org/tribont/core#RotationSpeedUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#RotationSpeedUnit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Measurement unit for rotational speed.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>RotationalSpeedUnit</rdfs:label>
+        <rdfs:label>RotationSpeedUnit</rdfs:label>
         <ns1:term_status>Stable</ns1:term_status>
     </owl:Class>
     
@@ -4730,7 +4730,7 @@ Domain expert: Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:c
     <!-- https://w3id.org/tribont/core#rpm -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#rpm">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationSpeedUnit"/>
         <rdfs:label>rpm</rdfs:label>
     </owl:NamedIndividual>
     
@@ -4964,7 +4964,7 @@ Domain expert: Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:c
     <!-- https://w3id.org/tribont/core#/min -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#/min">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationSpeedUnit"/>
         <rdfs:label>min</rdfs:label>
     </owl:NamedIndividual>
     
@@ -5859,34 +5859,13 @@ Domain expert: Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:c
         <rdfs:label>µstrain/°F</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -5925,25 +5904,7 @@ Domain expert: Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:c
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -5959,15 +5920,6 @@ Domain expert: Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:c
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
@@ -5976,7 +5928,55 @@ Domain expert: Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:c
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6062,7 +6062,7 @@ Domain expert: Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:c
             <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalUnit"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#PercentageUnit"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#PressureUnit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#RotationalSpeedUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#RotationSpeedUnit"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#TemperatureUnit"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#TendencyUnit"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#TensionUnit"/>
