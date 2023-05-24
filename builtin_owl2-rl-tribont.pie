@@ -92,7 +92,7 @@ Prefices
      onto     :  http://www.ontotext.com/
 	 sample   :  https://w3id.org/tribont/sample#
 	 icb      :  https://w3id.org/isCharacterisedBy#
-	 test	  :  https://w3id.org/tribont/test#
+	 tribont  :  https://w3id.org/tribont
 	 equipment:  https://w3id.org/tribont/equipment#
 	 core	  :  https://w3id.org/tribont/core#
 
@@ -1492,21 +1492,5 @@ Id: equipment_tribont_calibrationdocument
     -------------------------------
 	eq <core:hasDocument> d
 	 	
-	 
-Id: experiment_tribont_document
-	exp a <test:Experiment>
-	exp <core:isMadeOf> t
-	t a <test:Test>
-	t <core:hasDocument> d
-    -------------------------------
-    exp <core:hasDocument> d
-	
-		 
-Id: experiment_tribont_isCharacterisedByOutputMeasure
-	exp a <test:Experiment>
-	exp <core:isMadeOf> t
-	t a <test:Test>
-	t <core:isCharacterisedByOutputMeasure> m
-    -------------------------------
-    exp <core:isCharacterisedByOutputMeasure> m
+
 }
