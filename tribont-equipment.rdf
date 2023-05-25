@@ -25,7 +25,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <terms:title>TribOnt equipment module</terms:title>
         <vann:preferredNamespacePrefix>equipment</vann:preferredNamespacePrefix>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
+        <ns1:term_status xml:lang="tekniker.es&gt;">Testing</ns1:term_status>
     </owl:Ontology>
     
 
@@ -142,7 +142,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>The relation between a specific equipment and the calibrations performed on it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>hasCalibration</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -155,7 +155,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between an equipment and the moving sample  body it can hold</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>holdsMovingSampleBody</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -167,7 +167,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between an equipment and the sample body it can hold</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>holdsSampleBody</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -180,7 +180,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between an equipment and the static sample  body it can hold</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>holdsStaticSampleBody</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -192,7 +192,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between a movig sample body and the equipment that hold it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>isHeldMovingSampleBodyBy</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -203,7 +203,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between a sample body and the equipment that hold it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>isHeldSampleBodyBy</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -215,7 +215,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between astatic  sample body and the equipment that hold it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>isHeldStaticSampleBodyBy</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -231,13 +231,19 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#shortNam -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#shortNam"/>
+    
+
+
     <!-- https://w3id.org/tribont/equipment#executionDate -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#executionDate">
         <rdfs:comment>The date when a specific action has been performed.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>executionDate</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -248,7 +254,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>The measuring principle followed by an equipment.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>measuringPrinciple</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -259,7 +265,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>The puspose of an equipment.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>purpose</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -270,7 +276,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>The date until which a given action is valid and after which it is necessary to repeat it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>validityDate</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -293,7 +299,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment> An equipment that measures the abrasion resistance of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>AbrasionTester</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -324,7 +330,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>The action or process of calibrating something to maintain accuracy, and repeatability in measurements, assuring reliable results.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>Calibration</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -332,12 +338,12 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <!-- https://w3id.org/tribont/equipment#CalibrationDocument -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#CalibrationDocument">
-        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Document"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Document"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/equipment#TechnicalDocument"/>
         <rdfs:comment>A document that contains all the relevant information related to a specific calibration.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>CalibrationDocument</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -368,7 +374,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasManufacturer"/>
-                <owl:allValuesFrom rdf:resource="http://dbpedia.org/ontology/Company"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#Organisation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -404,6 +410,12 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#shortNam"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/equipment#measuringPrinciple"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -414,10 +426,16 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#longName"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>An object which is instrumental for reaching a particular purpose through its characteristic functioning process.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>Equipment</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -441,7 +459,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/core#hasManufacturer"/>
-                <owl:allValuesFrom rdf:resource="http://dbpedia.org/ontology/Company"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#Organisation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -465,7 +483,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An aggrupation of equipments with a set of common atributes of characteristics.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>EquipmentClass</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -473,11 +491,11 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <!-- https://w3id.org/tribont/equipment#EquipmentStandard -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#EquipmentStandard">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Standard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Standard"/>
         <rdfs:comment>A document approved by a recognized body that provides common to by fullfiled by an equipment.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>EquipmentStandard</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -489,7 +507,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An equipment that reproduces certain operation conditions for experimentation purposes.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>ExperimentalEquipment</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -501,7 +519,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An aggrupation of experimental equipments with a set of common atributes of characteristics.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>ExperimentalEquipmentClass</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -519,7 +537,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An equipment that measures the hardness of a material, </rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>HardnessTester</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -531,7 +549,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An aggrupation of hardness testers with a set of common atributes of characteristics.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>HardnessTesterClass</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -544,7 +562,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>A document providing all the relevant information of the technical characteristics of an equipment, and describes how and when to use and mantain it. </rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>MachineryBook</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -556,7 +574,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>A document provided by the manufacturer that includes a summary of technical characteristics, and describes how and when to use something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>ManufacturerDataSheet</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -568,7 +586,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An equipment used to measure technical attributes or characteristics of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>MeasuringEquipment</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -580,7 +598,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An aggrupation of measuring equipment with a set of common atributes of characteristics.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>MeasuringEquipmentClass</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -598,7 +616,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An equipment used to assess surfaces by magnifying images with visible light.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>OpticalMicroscope</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -610,7 +628,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An equipment used to measure precisely surface profiles.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>OpticalProfilometer</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -628,7 +646,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An equipment used to measure the weigth of somebody or something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>Scale</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -640,7 +658,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An equipment used to assess the materials surfaces by producing images of a sample.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>ScanningElectronMicroscope</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -652,7 +670,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An equipment used to assess the coating adhesion.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>ScratchTester</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -660,11 +678,11 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <!-- https://w3id.org/tribont/equipment#TechnicalDocument -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#TechnicalDocument">
-        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Document"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Document"/>
         <rdfs:comment>Information on how to to use and maintain something as for e.g. drawings, manuals, technical reports, etc.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>TechnicalDocument</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -706,7 +724,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An equipment used to measure tribological properties (e.g. friction coefficients, wear, etc.) by simulating the interaction of between two surfaces in contact under specific operation conditions.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>Tribometer</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -730,7 +748,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An aggrupation of tribometers with a set of common atributes of characteristics.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
         <rdfs:label>TribometerClass</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -745,13 +763,13 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -776,12 +794,12 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://dbpedia.org/ontology/Company"/>
-            <rdf:Description rdf:about="http://dbpedia.org/ontology/Document"/>
-            <rdf:Description rdf:about="http://purl.org/dc/terms/Standard"/>
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Document"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Organisation"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Standard"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/equipment#Calibration"/>
         </owl:members>
     </rdf:Description>
