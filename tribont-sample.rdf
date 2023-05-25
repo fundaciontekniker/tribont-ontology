@@ -26,7 +26,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <terms:title>TribOnt sample module</terms:title>
         <vann:preferredNamespacePrefix>sample</vann:preferredNamespacePrefix>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
+        <ns1:term_status xml:lang="tekniker.es&gt;">Testing</ns1:term_status>
     </owl:Ontology>
     
 
@@ -125,7 +125,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between something  and its body configuration..</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>hasBody</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -137,7 +137,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>Relationship between a sample  and its coating.</rdfs:label>
         <rdfs:label>hasCoating</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -149,7 +149,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between something and the material of which it is made</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>hasCoreMaterial</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -161,7 +161,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between a sample system and a lubricant material that is part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>hasLubricationSample</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -173,7 +173,15 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between a sample system and a moving sample body that is part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>hasMovingSample</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/sample#hasSampleRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasSampleRole">
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isSampleRoleFor"/>
     </owl:ObjectProperty>
     
 
@@ -185,7 +193,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between a sample system and a static sample body that is part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>hasStaticSample</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -196,7 +204,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Releation between sveral samples interacting one with each other.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>interactsWith</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -207,7 +215,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between a coating  and the sample  of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isCoatingFor</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -218,7 +226,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between  the material it is made of and something</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isCoreMaterialFor</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -229,7 +237,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between a lubrication sample  and the sample system of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isLubricationSampleFor</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -240,8 +248,14 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between a moving sample  and the sample system of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isMovingSampleFor</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tribont/sample#isSampleRoleFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isSampleRoleFor"/>
     
 
 
@@ -251,7 +265,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Relationship between a static sample  and the sample system of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>isStaticSampleFor</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -273,7 +287,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Data when something has been executed.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>executionDate</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -284,7 +298,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Data when something has been prepared.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>preparationDate</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -318,7 +332,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Sample body which has a coating moterial.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>CoatedSample</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -349,7 +363,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>A thin layer covering of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Coating</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -361,7 +375,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of a coating.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>CoatingProperty</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -373,7 +387,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Thickness of a coating.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>CoatingThickness</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -385,7 +399,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Type of coating.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>CoatingType</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -408,7 +422,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Sample system that includes a lubricant as part of it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>LubricatedSampleSystem</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -436,10 +450,10 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#Sample"/>
-        <rdfs:comment>Portion of lubricant material selected from a larger quantity of lubricant material for Stable purposes. Lubricant material can be fluid or solid lubricants </rdfs:comment>
+        <rdfs:comment>Portion of lubricant material selected from a larger quantity of lubricant material for Testing purposes. Lubricant material can be fluid or solid lubricants </rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>LubricationSample</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -474,6 +488,12 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/sample#hasSampleRole"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/sample#SampleRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/sample#hasBody"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/tribont/core#Body"/>
@@ -488,14 +508,21 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/sample#hasSampleRole"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/sample#SampleRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/sample#preparationDate"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Portion of material which can be transformed or not for Stable purposes. For example the moving and static samples in a tribological tests are transformed following a specific manufacturing process to achieve the required body characteristics, while lubricants acting as lubrication body are not transformed.</rdfs:comment>
+        <rdfs:comment>Portion of material which can be transformed or not for Testing purposes. For example the moving and static samples in a tribological tests are transformed following a specific manufacturing process to achieve the required body characteristics, while lubricants acting as lubrication body are not transformed.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>Sample</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -546,8 +573,14 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>An aggrupation of samples which have been transformed at the same time using a same material and share a set of common atributes of characteristics.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>SampleBatch</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/sample#SampleRole -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleRole"/>
     
 
 
@@ -579,13 +612,51 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/sample#Sample"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Object aggregate that has two or more elements that interact with each other, and it is used for Stable purposes. For example, a tribological sample system aggregates at least a static and a moving sample body and can include or not a lubrication sample body.</rdfs:comment>
+        <rdfs:comment>Object aggregate that has two or more elements that interact with each other, and it is used for Testing purposes. For example, a tribological sample system aggregates at least a static and a moving sample body and can include or not a lubrication sample body.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>SampleSystem</rdfs:label>
-        <ns1:term_status>Stable</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/tribont/sample#reference -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/sample#reference">
+        <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleRole"/>
+        <rdfs:comment>A reference against which the sample is tested.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>reference</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/sample#target -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/sample#target">
+        <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleRole"/>
+        <rdfs:comment>Target sample for the  testing  activity.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>target</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -594,19 +665,16 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     
 
@@ -619,6 +687,21 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
+            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Document"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Organisation"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Standard"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementRole"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleRole"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -638,15 +721,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             <rdf:Description rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementConcentration"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/sample#CoatingProperty"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Material"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/sample#Sample"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleBatch"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleSystem"/>
         </owl:members>
     </rdf:Description>
     
@@ -683,6 +757,75 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl:var#sts">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#SampleSystem"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#ss"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#hasMovingSample"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#ss"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#ms"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#hasStaticSample"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#ss"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#sts"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#interactsWith"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#ms"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#sts"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#interactsWith"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#sts"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#ms"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -905,75 +1048,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/sample#SampleSystem"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#ss"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#hasMovingSample"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#ss"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#ms"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#hasStaticSample"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#ss"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl:var#sts"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#interactsWith"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#ms"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#sts"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/sample#interactsWith"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#sts"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#ms"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
             </rdf:Description>
         </swrl:head>
     </rdf:Description>
