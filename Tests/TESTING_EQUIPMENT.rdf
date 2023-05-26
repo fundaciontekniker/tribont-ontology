@@ -57,7 +57,7 @@
     <!-- https://w3id.org/tribont/TESTINGequipment#LTU -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#LTU">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#Organisation"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#Company"/>
     </owl:NamedIndividual>
     
 
@@ -65,7 +65,7 @@
     <!-- https://w3id.org/tribont/TESTINGequipment#OPTIMOL -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#OPTIMOL">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#Organisation"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#Company"/>
     </owl:NamedIndividual>
     
 
@@ -299,7 +299,7 @@
     <!-- https://w3id.org/tribont/TESTINGequipment#TEKNIKER -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/TESTINGequipment#TEKNIKER">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#Organisation"/>
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#Company"/>
     </owl:NamedIndividual>
     
 
