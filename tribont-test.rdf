@@ -185,17 +185,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
-    <!-- https://w3id.org/tribont#isPerformedAt -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont#isPerformedAt">
-        <rdfs:comment>Relationship between an activity and the company where it is performed.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
-        <rdfs:label>isPerformedAt</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/tribont#isPerformedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont#isPerformedBy">
@@ -440,12 +429,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont#isPerformedAt"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#Organisation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont#isPerformedBy"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont#Operator"/>
             </owl:Restriction>
@@ -498,13 +481,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
                 <owl:onProperty rdf:resource="https://w3id.org/tribont#isExecutedBy"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont#isPerformedAt"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/tribont/core#Organisation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -765,23 +741,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont#Operator"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#Document"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#Organisation"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#Standard"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/equipment#Calibration"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementRole"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/sample#SampleRole"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
