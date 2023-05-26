@@ -413,6 +413,18 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/material#AntifrictionLubricant -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#AntifrictionLubricant">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
+        <rdfs:comment>Content of Anti-friction/wearLubricant in a material.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>Anti-friction/wearLubricant</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/tribont/material#Antioxidant -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Antioxidant">
@@ -1784,6 +1796,18 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/material#PlasticizerOil -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#PlasticizerOil">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
+        <rdfs:comment>Content of Plasticizer/Oil in a material.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>Plasticizer/Oil</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/tribont/material#Polymer -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Polymer">
@@ -2504,42 +2528,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
-    <!-- https://w3id.org/tribont/material#Anti-friction/wearLubricant -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Anti-friction/wearLubricant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
-        <rdfs:comment>Content of Anti-friction/wearLubricant in a material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Anti-friction/wearLubricant</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/material#Plasticizer/Oil -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Plasticizer/Oil">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
-        <rdfs:comment>Content of Plasticizer/Oil in a material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Plasticizer/Oil</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/material#Plasticizer/phthalate -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Plasticizer/phthalate">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
-        <rdfs:comment>Content of Plasticizer/phthalate in a material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Plasticizer/phthalate</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2657,16 +2645,16 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
@@ -2832,17 +2820,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             <rdf:Description rdf:about="https://w3id.org/tribont/material#Silica-Fumed"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#StainlessSteel-Fiber"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#Talc"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#FlameRetardant"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#ImpactModifier"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#UVStabilizer"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Anti-friction/wearLubricant"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Plasticizer/Oil"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Plasticizer/phthalate"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
