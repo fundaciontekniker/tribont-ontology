@@ -192,11 +192,23 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasLocation">
+        <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isLocationFor"/>
+        <rdfs:comment>Relationship between something and where it is located.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
+        <rdfs:label>hasLocation</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/tribont/core#hasManufacturer -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasManufacturer">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isManufacturerFor"/>
-        <rdfs:range rdf:resource="https://w3id.org/tribont/core#Organisation"/>
+        <rdfs:range rdf:resource="https://w3id.org/tribont/core#Company"/>
         <rdfs:comment>Relationship between something and the company producing it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>hasManufacturer</rdfs:label>
@@ -209,7 +221,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasOwner">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isOwnerOf"/>
-        <rdfs:range rdf:resource="https://w3id.org/tribont/core#Organisation"/>
+        <rdfs:range rdf:resource="https://w3id.org/tribont/core#Company"/>
         <rdfs:comment>Relationship between something and the company that owns it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>hasOwner</rdfs:label>
@@ -277,6 +289,17 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#isLocationFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isLocationFor">
+        <rdfs:comment>Relationship between a physical location and  and something that is located there..</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
+        <rdfs:label>isLocationFor</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/tribont/core#isMadeOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isMadeOf">
@@ -292,7 +315,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <!-- https://w3id.org/tribont/core#isManufacturerFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isManufacturerFor">
-        <rdfs:domain rdf:resource="https://w3id.org/tribont/core#Organisation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/tribont/core#Company"/>
         <rdfs:comment>Relationship between between a company and what it produces.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isManufacturerFor</rdfs:label>
@@ -304,7 +327,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <!-- https://w3id.org/tribont/core#isOwnerOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isOwnerOf">
-        <rdfs:domain rdf:resource="https://w3id.org/tribont/core#Organisation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/tribont/core#Company"/>
         <rdfs:comment>Relationship between an company and  something it owns..</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>isOwnerOf</rdfs:label>
@@ -694,6 +717,35 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Colour index  of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ColourIndex</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Company -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/core#Company">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#shortName"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A company.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Company</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1722,7 +1774,11 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <!-- https://w3id.org/tribont/core#Laboratory -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Laboratory">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Organisation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Company"/>
+        <rdfs:comment>A laboratory.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>Laboratory</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -2193,35 +2249,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:comment>Quantifiable operation attribute, or characteristic of something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>OperationProperty</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/core#Organisation -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#Organisation">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#name"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#shortName"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>An organisation.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>Organisation</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -6354,24 +6381,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
@@ -6396,64 +6405,34 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6468,10 +6447,58 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6513,8 +6540,8 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
             <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
+            <rdf:Description rdf:about="https://w3id.org/tribont/core#Company"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#Document"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/core#Organisation"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/core#Standard"/>
         </owl:members>
     </rdf:Description>
