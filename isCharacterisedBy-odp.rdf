@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/trib#"
-     xml:base="https://w3id.org/trib"
+<rdf:RDF xmlns="https://w3id.org/isCharacterisedBy"
+     xml:base="https://w3id.org/isCharacterisedBy"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -23,6 +23,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <terms:issued>2023-05-09</terms:issued>
         <terms:title>isCharacterisedBy ontology design pattern </terms:title>
         <vann:preferredNamespacePrefix>icb</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/isCharacterisedBy</vann:preferredNamespaceUri>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
     </owl:Ontology>
