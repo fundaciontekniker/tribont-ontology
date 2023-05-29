@@ -228,26 +228,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#Property -->
-
-    <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#SubjectOfInterest -->
-
-    <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#Unit -->
-
-    <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
-    
-
+   
 
     <!-- https://w3id.org/tribont/core#Body -->
 
@@ -256,89 +237,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     </owl:Class>
     
 
-
-    <!-- https://w3id.org/tribont/core#BodyProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#BodyProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#ContentUnit -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#ContentUnit"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#ElectricalProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#LiquidPhysicalProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#LiquidThermalProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#LiquidThermalProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#MechanicalProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#OperationProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#OperationProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#PercentageUnit -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#PercentageUnit"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#PhysicalProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#PhysicalProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#SolidPhysicalProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#SolidThermalProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#SolidThermalProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#SystemProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#SystemProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#TechnicalProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#ThermalProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#ThermalProperty"/>
-    
 
 
     <!-- https://w3id.org/tribont/material#Ag -->
