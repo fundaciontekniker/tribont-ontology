@@ -182,6 +182,10 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasSampleRole">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isSampleRoleFor"/>
+		 <rdfs:comment>Relationship between a sample and its role.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>hasSampleRole</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -255,8 +259,12 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <!-- https://w3id.org/tribont/sample#isSampleRoleFor -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isSampleRoleFor"/>
-    
+    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isSampleRoleFor">
+        <rdfs:comment>Relationship between a role and the sample to which it applies,</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>isSampleRoleFor</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:ObjectProperty>
 
 
     <!-- https://w3id.org/tribont/sample#isStaticSampleFor -->
@@ -585,11 +593,14 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     </owl:Class>
     
 
-
     <!-- https://w3id.org/tribont/sample#SampleRole -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleRole">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Role"/>
+		<rdfs:comment>The position or purpose that a sample has in a situation.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
+        <rdfs:label>reference</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 

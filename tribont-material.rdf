@@ -147,7 +147,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:domain rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>isElementRoleFor</rdfs:label>
-        <ns1:term_status>Relationship between a role and the  element to which it applies,</ns1:term_status>
+        <ns1:term_status>Relationship between a role and the  element to which it applies.</ns1:term_status>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -785,7 +785,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElementRole">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Role"/>
-        <rdfs:comment>The position or purpose that an eelement  has in a situation, organization, society, or relationship:.</rdfs:comment>
+        <rdfs:comment>The position or purpose that an element has in a situation or relationship.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>ElementRole</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
