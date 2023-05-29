@@ -228,7 +228,8 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-   
+    
+
 
     <!-- https://w3id.org/tribont/core#Body -->
 
@@ -236,7 +237,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#Material"/>
     </owl:Class>
     
-
 
 
     <!-- https://w3id.org/tribont/material#Ag -->
@@ -949,18 +949,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
-    <!-- https://w3id.org/tribont/material#Glass-Other -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Glass-Other">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
-        <rdfs:comment>Content of Glass-Other in a material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Glass-Other</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/material#Glycol -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Glycol">
@@ -1531,6 +1519,31 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/material#NonFerrousMetalInhibitor -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#NonFerrousMetalInhibitor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Any Non Ferrous Metal Inhibitors Content.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>NonFerrousMetalInhibitor</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/tribont/material#NonPolymeric -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#NonPolymeric">
@@ -1712,7 +1725,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <owl:Class rdf:about="https://w3id.org/tribont/material#Polymer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Solid"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#SolidLubricant"/>
-        <rdfs:comment>Polymer</rdfs:comment>
+        <rdfs:comment>Any polymer</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Polymer</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
@@ -2228,26 +2241,13 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
-    <!-- https://w3id.org/tribont/material#TolyltriazoleAndOtherNonFerrousMetalInhibitor -->
+    <!-- https://w3id.org/tribont/material#Tolyltriazole -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#TolyltriazoleAndOtherNonFerrousMetalInhibitor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Tolyltriazole And Other Non Ferrous Metal Inhibitors Content.</rdfs:comment>
+    <owl:Class rdf:about="https://w3id.org/tribont/material#Tolyltriazole">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#NonFerrousMetalInhibitor"/>
+        <rdfs:comment>Tolyltriazole concentration</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>TolyltriazoleAndOtherNonFerrousMetalInhibitor</rdfs:label>
+        <rdfs:label>Tolyltriazole</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -2544,34 +2544,34 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     
 
@@ -2709,30 +2709,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             <rdf:Description rdf:about="https://w3id.org/tribont/material#ZnO"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#Zr"/>
             <rdf:Description rdf:about="https://w3id.org/tribont/material#ZrO2"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Alluminium-Flake"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Aramid-Fiber"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#BaSO4"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#CalciumCarbonate-Powder"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Carbon-Fiber"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Carbon-Powder"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Cellulose"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Glass-Fiber"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Glass-MatFabric"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Glass-Other"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Graphite-Powder"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#ImpactModifier"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Mica"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Mineral"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#MoS2"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Rag-Cotton-Fabric"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Silica-Fumed"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#StainlessSteel-Fiber"/>
-            <rdf:Description rdf:about="https://w3id.org/tribont/material#Talc"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
