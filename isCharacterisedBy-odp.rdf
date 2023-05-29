@@ -204,13 +204,23 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
     <!-- http://purl.org/dc/terms/identifier -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:comment>An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/dc/terms</rdfs:isDefinedBy>
+        <rdfs:label>identifier</rdfs:label>
+        
+    </owl:DatatypeProperty>
     
-
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:comment>A name given to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/dc/terms</rdfs:isDefinedBy>
+        <rdfs:label>title</rdfs:label>
+        <ns1:term_status></ns1:term_status>
+    </owl:DatatypeProperty>
+    	
     
 
 
