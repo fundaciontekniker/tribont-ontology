@@ -2367,12 +2367,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PolishGrade">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#µm"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Polish grade of something.</rdfs:comment>
         <rdfs:label>PolishGrade</rdfs:label>
@@ -3128,12 +3122,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SurfaceProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:hasValue rdf:resource="https://w3id.org/tribont/core#µm"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Qualifiable or quantifiable  attribute, or characteristic of a surface. .</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>SurfaceProperty</rdfs:label>
@@ -3852,12 +3840,34 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#BTUhr.ft.degreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#BTUhr.ft.degreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>BTU/hr.ft.°F</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/tribont/core#BTUin2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#BTUin2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>BTU/in2</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#BTUlb.degreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#BTUlb.degreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>BTU/lb.°F</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     
@@ -3902,6 +3912,39 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdf:type rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Hz</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Jcm3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Jcm3">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>cm3</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Jkg.degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Jkg.degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>J/kg.°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Jm.s.degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Jm.s.degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>J/m.s.°C</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     
@@ -4006,6 +4049,17 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#N.mmg.degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmg.degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>N.mm/g.°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/tribont/core#N.mmmm2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmmm2">
@@ -4023,6 +4077,39 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>N.mm/mm3</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#N.mmms.mm.degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmms.mm.degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>N.mm/ms.mm.°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#N.mmsmm.degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmsmm.degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>N.mm/s/mm.°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#N.mmtonne.degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmtonne.degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>N.mm/tonne.°C</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     
@@ -4078,6 +4165,61 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PressureUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>Pa</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#Wm.degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Wm.degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>W/m.°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#a103mbar -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#a103mbar">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>10-3_mbar</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#a104straindegreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#a104straindegreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>10-4_strain/°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#a106m2s -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#a106m2s">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>10-6m2/s</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#a106psi -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#a106psi">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>106psi</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     
@@ -4215,6 +4357,17 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#calg.degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#calg.degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>cal/g.°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/tribont/core#cm -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cm">
@@ -4325,6 +4478,50 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#degreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>°F</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#degreeK -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeK">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>°K</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#degreeR -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeR">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>°R</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/tribont/core#disc -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#disc">
@@ -4419,6 +4616,28 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>erg/cm3</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#ergg.degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ergg.degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>erg/g.°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#ergs.cm.degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ergs.cm.degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>s.cm.°C&quot;</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     
@@ -4807,6 +5026,17 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#inindegreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#inindegreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>in/in/°F</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/tribont/core#innert_gas -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#innert_gas">
@@ -4824,6 +5054,17 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdf:type rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>kHz</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#kJkg.degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kJkg.degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>kJ/kg.°C</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     
@@ -4972,6 +5213,50 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#lbf.ftlb.degreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.ftlb.degreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>lbf.ft/lb.°F</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#lbf.ftslug.degreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.ftslug.degreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>lbf.ft/slug.°F</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#lbf.in.inlbf.s2.degreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.in.inlbf.s2.degreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>lbf.in.in/lbf.s2.°F</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#lbf.inlb.degreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.inlb.degreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>lbf.in/lb.°F</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/tribont/core#lbf.s2in.in3 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.s2in.in3">
@@ -5022,6 +5307,17 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>lbf/in</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#lbfs.degreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbfs.degreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>lbf/s.°F</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     
@@ -5192,12 +5488,78 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#microHz -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microHz">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>µHz</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/tribont/core#microinche -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microinche">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>microinche</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#microm -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microm">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>µm</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#microm3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microm3">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>µm3</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#microstrain -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microstrain">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>µstrain</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#microstraindegreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microstraindegreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>µstrain/°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#microstraindegreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microstraindegreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>µstrain/°F</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     
@@ -5401,6 +5763,17 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#nmm1.5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#nmm1.5">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>n/mm1.5</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/tribont/core#no_lubricant -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#no_lubricant">
@@ -5440,6 +5813,28 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>percentage</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#percentagestraindegreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#percentagestraindegreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>percentagestrain/°F</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#percentangestraindegreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#percentangestraindegreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>percentangestrain/°C</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     
@@ -5775,6 +6170,17 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
+    <!-- https://w3id.org/tribont/core#sp-gr2323degreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#sp-gr2323degreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>sp-gr23/23°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/tribont/core#stick_slip -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#stick_slip">
@@ -5803,6 +6209,28 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>strain_percentage</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#straindegreeC -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#straindegreeC">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>strain/°C</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tribont/core#straindegreeF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#straindegreeF">
+        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>strain/°F</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     
@@ -5868,6 +6296,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#v">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#VoltageUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
+        <rdfs:label>-v</rdfs:label>
         <rdfs:label>v</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
@@ -5937,457 +6366,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:label>Å</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#v -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#v">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#VoltageUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>-v</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#10-3_mbar -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#103mbar">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>10-3_mbar</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#10-4_strain/degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#104straindegreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>10-4_strain/°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#10-6m2/s -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#106m2s">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>10-6m2/s</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#106psi -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#106psi">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>106psi</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#BTUhr.ft.degreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#BTUhr.ft.degreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>BTU/hr.ft.°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#BTUlb.degreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#BTUlb.degreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>BTU/lb.°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#J/cm3 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Jcm3">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>cm3</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#Jkg.degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Jkg.degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>J/kg.°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#Jm.s.degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Jm.s.degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>J/m.s.°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#N.mmg.degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmg.degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>N.mm/g.°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#N.mmms.mm.degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmms.mm.degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>N.mm/ms.mm.°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#N.mmsmm.degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmsmm.degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>N.mm/s/mm.°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#N.mmtonne.degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmtonne.degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>N.mm/tonne.°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#Wm.degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Wm.degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>W/m.°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#calg.degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#calg.degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>cal/g.°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#ergg.degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ergg.degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>erg/g.°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#ergs.cm.degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ergs.cm.degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>s.cm.°C&quot;</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#inindegreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#inindegreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>in/in/°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#kJkg.degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kJkg.degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>kJ/kg.°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#lbf.ftlb.degreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.ftlb.degreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>lbf.ft/lb.°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#lbf.ftslug.degreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.ftslug.degreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>lbf.ft/slug.°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#lbf.in.inlbf.s2.degreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.in.inlbf.s2.degreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>lbf.in.in/lbf.s2.°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#lbf.inlb.degreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.inlb.degreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>lbf.in/lb.°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#lbfs.degreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbfs.degreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>lbf/s.°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#n/mm1.5 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#nmm1.5">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>n/mm1.5</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#percentagestraindegreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#percentagestraindegreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>percentagestrain/°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#percentangestraindegreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#percentangestraindegreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>percentangestrain/°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#sp-gr2323degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#sp-gr2323degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>sp-gr23/23°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#straindegreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#straindegreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>strain/°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#straindegreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#straindegreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>strain/°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#degreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#degreeK -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeK">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>°K</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#degreeR -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeR">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>°R</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#microHz -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microHz">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>µHz</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#microm -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microm">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>µm</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#microm3 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microm3">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>µm3</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#microstrain -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microstrain">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>µstrain</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#microstrain/degreeC -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microstraindegreeC">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>µstrain/°C</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/tribont/core#microstrain/degreeF -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microstraindegreeF">
-        <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
-        <rdfs:label>µstrain/°F</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:NamedIndividual>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
@@ -6395,22 +6373,13 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6455,10 +6424,22 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6497,19 +6478,16 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
