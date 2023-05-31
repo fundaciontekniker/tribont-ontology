@@ -1,0 +1,1802 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "tekniker.es>", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/isCharacterisedBy", "https://w3id.org/tribont/sample", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/tribont/core", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/tribont/material" ],
+    "title" : {
+      "undefined" : "TribOnt sample module"
+    },
+    "iri" : "https://w3id.org/tribont/sample",
+    "version" : "1.0",
+    "author" : [ "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>" ],
+    "description" : {
+      "en" : "The goal of this module is to represent the sample systems , and the undelaying samples, involved in the tribological experiments."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "tekniker.es>",
+        "value" : "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "tekniker.es>",
+        "value" : "Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>\nDomain expert:Iban Quintana (Tekniker)  <mailto:iban.quintana>\nDomain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "tekniker.es>",
+        "value" : "Testing",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2023-05-09",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "sample",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "TribOnt sample module",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2023-05-09",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/tribont/core#Body",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Body"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#CoatingThickness",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoatingThickness",
+      "undefined" : "CoatingThickness"
+    },
+    "comment" : {
+      "undefined" : "Thickness of a coating."
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#LubricatedSampleSystem",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LubricatedSampleSystem",
+      "undefined" : "LubricatedSampleSystem"
+    },
+    "intersection" : [ "9" ],
+    "comment" : {
+      "undefined" : "Sample system that includes a lubricant as part of it."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/material#FluidLubricant",
+    "baseIri" : "https://w3id.org/tribont/material",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FluidLubricant"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#SubjectOfInterest",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubjectOfInterest"
+    },
+    "subClasses" : [ "31", "11", "4", "9" ],
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#OperationProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperationProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#CoatedSample",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoatedSample",
+      "undefined" : "CoatedSample"
+    },
+    "intersection" : [ "4" ],
+    "comment" : {
+      "undefined" : "Sample body which has a coating moterial."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "48",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#CoatingType",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoatingType",
+      "undefined" : "CoatingType"
+    },
+    "comment" : {
+      "undefined" : "Type of coating."
+    },
+    "id" : "46",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/material#SolidLubricant",
+    "baseIri" : "https://w3id.org/tribont/material",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SolidLubricant"
+    },
+    "attributes" : [ "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#TechnicalProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnicalProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#SystemProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SystemProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#SampleBatch",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SampleBatch",
+      "undefined" : "SampleBatch"
+    },
+    "comment" : {
+      "undefined" : "An aggrupation of samples which have been transformed at the same time using a same material and share a set of common atributes of characteristics."
+    },
+    "id" : "31",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/material#ElementConcentration",
+    "baseIri" : "https://w3id.org/tribont/material",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElementConcentration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#Property",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "subClasses" : [ "7" ],
+    "attributes" : [ "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#LubricationSample",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LubricationSample",
+      "undefined" : "LubricationSample"
+    },
+    "intersection" : [ "4" ],
+    "comment" : {
+      "undefined" : "Portion of lubricant material selected from a larger quantity of lubricant material for Testing purposes. Lubricant material can be fluid or solid lubricants "
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "68",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#SampleSystem",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SampleSystem",
+      "undefined" : "SampleSystem"
+    },
+    "subClasses" : [ "8" ],
+    "comment" : {
+      "undefined" : "Object aggregate that has two or more elements that interact with each other, and it is used for Testing purposes. For example, a tribological sample system aggregates at least a static and a moving sample body and can include or not a lubrication sample body."
+    },
+    "id" : "9",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#CoatingProperty",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoatingProperty",
+      "undefined" : "CoatingProperty"
+    },
+    "subClasses" : [ "46", "6" ],
+    "comment" : {
+      "undefined" : "Qualifiable or quantifiable attribute, or characteristic of a coating."
+    },
+    "id" : "7",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#Coating",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/material",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Coating",
+      "undefined" : "Coating"
+    },
+    "comment" : {
+      "undefined" : "A thin layer covering of something."
+    },
+    "id" : "11",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#Sample",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Sample",
+      "undefined" : "Sample"
+    },
+    "subClasses" : [ "48", "68" ],
+    "comment" : {
+      "undefined" : "Portion of material which can be transformed or not for Testing purposes. For example the moving and static samples in a tribological tests are transformed following a specific manufacturing process to achieve the required body characteristics, while lubricants acting as lubrication body are not transformed."
+    },
+    "id" : "4",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/material#ElementRole",
+    "baseIri" : "https://w3id.org/tribont/material",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElementRole"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#Role",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#SampleRole",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SampleRole",
+      "undefined" : "reference"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/tribont/sample#reference",
+      "baseIri" : "https://w3id.org/tribont/sample",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/tribont/sample",
+          "type" : "label"
+        } ],
+        "term_status" : [ {
+          "identifier" : "term_status",
+          "language" : "undefined",
+          "value" : "Testing",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "A reference against which the sample is tested."
+      },
+      "labels" : {
+        "IRI-based" : "reference",
+        "undefined" : "reference"
+      }
+    }, {
+      "iri" : "https://w3id.org/tribont/sample#target",
+      "baseIri" : "https://w3id.org/tribont/sample",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/tribont/sample",
+          "type" : "label"
+        } ],
+        "term_status" : [ {
+          "identifier" : "term_status",
+          "language" : "undefined",
+          "value" : "Testing",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Target sample for the  testing  activity."
+      },
+      "labels" : {
+        "IRI-based" : "target",
+        "undefined" : "target"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The position or purpose that a sample has in a situation."
+    },
+    "id" : "13",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/material#Material",
+    "baseIri" : "https://w3id.org/tribont/material",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "10",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "12",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "17",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "23",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "24",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "65",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "69",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "70",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "71",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "72",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "76",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "82",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "83",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "84",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "85",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "88",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/tribont/sample#isCoatingFor",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isCoatingFor",
+      "undefined" : "isCoatingFor"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relationship between a coating  and the sample  of which it is a part."
+    },
+    "attributes" : [ "object" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#preparationDate",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "preparationDate",
+      "undefined" : "preparationDate"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Data when something has been prepared."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasCoating",
+    "inverse" : "1",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCoating",
+      "undefined" : "Relationship between a sample  and its coating."
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasSampleRole",
+    "inverse" : "14",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSampleRole",
+      "undefined" : "hasSampleRole"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relationship between a sample and its role."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "12"
+  }, {
+    "range" : "13",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "7",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasCoreMaterial",
+    "inverse" : "22",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCoreMaterial",
+      "undefined" : "hasCoreMaterial"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Relationship between something and the material of which it is made"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#isCharacterisedBy",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isCharacterisedBy"
+    },
+    "domain" : "11",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "23"
+  }, {
+    "range" : "7",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "18",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "7",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "18",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "7",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasMovingSample",
+    "inverse" : "35",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMovingSample",
+      "undefined" : "hasMovingSample"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relationship between a sample system and a moving sample body that is part of it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "range" : "18",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "28",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "9",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "9",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "28",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "25",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "31",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "31",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "7",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "4",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#interactsWith",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "interactsWith",
+      "undefined" : "interactsWith"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Releation between sveral samples interacting one with each other."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#isStaticSampleFor",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isStaticSampleFor",
+      "undefined" : "isStaticSampleFor"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relationship between a static sample  and the sample system of which it is a part."
+    },
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasLubricationSample",
+    "inverse" : "53",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLubricationSample",
+      "undefined" : "hasLubricationSample"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relationship between a sample system and a lubricant material that is part of it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#isSampleRoleFor",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isSampleRoleFor",
+      "undefined" : "isSampleRoleFor"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relationship between a role and the sample to which it applies,"
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasStaticSample",
+    "inverse" : "51",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStaticSample",
+      "undefined" : "hasStaticSample"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relationship between a sample system and a static sample body that is part of it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "range" : "30",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasSampleRole",
+    "inverse" : "14",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSampleRole",
+      "undefined" : "hasSampleRole"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relationship between a sample and its role."
+    },
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "range" : "30",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "30",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "30",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "63",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasMovingSample",
+    "inverse" : "35",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMovingSample",
+      "undefined" : "hasMovingSample"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Relationship between a sample system and a moving sample body that is part of it."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasStaticSample",
+    "inverse" : "51",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStaticSample",
+      "undefined" : "hasStaticSample"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Relationship between a sample system and a static sample body that is part of it."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasLubricationSample",
+    "inverse" : "53",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "68",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLubricationSample",
+      "undefined" : "hasLubricationSample"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Relationship between a sample system and a lubricant material that is part of it."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasCoating",
+    "inverse" : "1",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCoating",
+      "undefined" : "Relationship between a sample  and its coating."
+    },
+    "domain" : "31",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasBody",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBody",
+      "undefined" : "hasBody"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Relationship between something  and its body configuration.."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#isCharacterisedBy",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "isCharacterisedBy"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasCoreMaterial",
+    "inverse" : "22",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCoreMaterial",
+      "undefined" : "hasCoreMaterial"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Relationship between something and the material of which it is made"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#belongsTo",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "belongsTo"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasBody",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBody",
+      "undefined" : "hasBody"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relationship between something  and its body configuration.."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#isLubricationSampleFor",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLubricationSampleFor",
+      "undefined" : "isLubricationSampleFor"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relationship between a lubrication sample  and the sample system of which it is a part."
+    },
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#isCharacterisedBy",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isCharacterisedBy"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasCoreMaterial",
+    "inverse" : "22",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCoreMaterial",
+      "undefined" : "hasCoreMaterial"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relationship between something and the material of which it is made"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasCoating",
+    "inverse" : "1",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCoating",
+      "undefined" : "Relationship between a sample  and its coating."
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#isCoreMaterialFor",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isCoreMaterialFor",
+      "undefined" : "isCoreMaterialFor"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relationship between  the material it is made of and something"
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "range" : "79",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "4",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "4",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "31",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "9",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "11",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "4",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "31",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "9",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "4",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "21",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "11",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#executionDate",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "60",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "executionDate",
+      "undefined" : "executionDate"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Data when something has been executed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#isMovingSampleFor",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isMovingSampleFor",
+      "undefined" : "isMovingSampleFor"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relationship between a moving sample  and the sample system of which it is a part."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#hasCoreMaterial",
+    "inverse" : "22",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/sample",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCoreMaterial",
+      "undefined" : "hasCoreMaterial"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relationship between something and the material of which it is made"
+    },
+    "attributes" : [ "object" ],
+    "id" : "92"
+  } ]
+}

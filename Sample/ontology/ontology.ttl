@@ -1,0 +1,771 @@
+@prefix : <https://w3id.org/tribont/sample#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/tribont/sample#> .
+
+<https://w3id.org/tribont/sample> rdf:type owl:Ontology ;
+                                   owl:imports <https://w3id.org/tribont/core> ,
+                                               <https://w3id.org/tribont/material> ;
+                                   <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                   <http://purl.org/dc/terms/contributor> """Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>
+Domain expert:Iban Quintana (Tekniker)  <mailto:iban.quintana>
+Domain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>"""@tekniker.es> ;
+                                   <http://purl.org/dc/terms/created> "2023-05-09" ;
+                                   <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>"@tekniker.es> ;
+                                   <http://purl.org/dc/terms/description> "The goal of this module is to represent the sample systems , and the undelaying samples, involved in the tribological experiments."@en ;
+                                   <http://purl.org/dc/terms/issued> "2023-05-09" ;
+                                   <http://purl.org/dc/terms/title> "TribOnt sample module" ;
+                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "sample" ;
+                                   owl:versionInfo 1.0 ;
+                                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#cardinality
+owl:cardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxQualifiedCardinality
+owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/isCharacterisedBy#belongsTo
+<https://w3id.org/isCharacterisedBy#belongsTo> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/isCharacterisedBy#isCharacterisedBy
+<https://w3id.org/isCharacterisedBy#isCharacterisedBy> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/tribont/sample#hasBody
+:hasBody rdf:type owl:ObjectProperty ;
+         rdfs:comment "Relationship between something  and its body configuration.." ;
+         rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+         rdfs:label "hasBody" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#hasCoating
+:hasCoating rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isCoatingFor ;
+            rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+            rdfs:label "Relationship between a sample  and its coating." ,
+                       "hasCoating" ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#hasCoreMaterial
+:hasCoreMaterial rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isCoreMaterialFor ;
+                 rdfs:comment "Relationship between something and the material of which it is made" ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                 rdfs:label "hasCoreMaterial" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#hasLubricationSample
+:hasLubricationSample rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :isLubricationSampleFor ;
+                      rdfs:comment "Relationship between a sample system and a lubricant material that is part of it." ;
+                      rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                      rdfs:label "hasLubricationSample" ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#hasMovingSample
+:hasMovingSample rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isMovingSampleFor ;
+                 rdfs:comment "Relationship between a sample system and a moving sample body that is part of it." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                 rdfs:label "hasMovingSample" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#hasSampleRole
+:hasSampleRole rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isSampleRoleFor ;
+               rdfs:comment "Relationship between a sample and its role." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+               rdfs:label "hasSampleRole" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#hasStaticSample
+:hasStaticSample rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isStaticSampleFor ;
+                 rdfs:comment "Relationship between a sample system and a static sample body that is part of it." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                 rdfs:label "hasStaticSample" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#interactsWith
+:interactsWith rdf:type owl:ObjectProperty ;
+               rdfs:comment "Releation between sveral samples interacting one with each other." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+               rdfs:label "interactsWith" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#isCoatingFor
+:isCoatingFor rdf:type owl:ObjectProperty ;
+              rdfs:comment "Relationship between a coating  and the sample  of which it is a part." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+              rdfs:label "isCoatingFor" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#isCoreMaterialFor
+:isCoreMaterialFor rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Relationship between  the material it is made of and something" ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                   rdfs:label "isCoreMaterialFor" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#isLubricationSampleFor
+:isLubricationSampleFor rdf:type owl:ObjectProperty ;
+                        rdfs:comment "Relationship between a lubrication sample  and the sample system of which it is a part." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                        rdfs:label "isLubricationSampleFor" ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#isMovingSampleFor
+:isMovingSampleFor rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Relationship between a moving sample  and the sample system of which it is a part." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                   rdfs:label "isMovingSampleFor" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#isSampleRoleFor
+:isSampleRoleFor rdf:type owl:ObjectProperty ;
+                 rdfs:comment "Relationship between a role and the sample to which it applies," ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                 rdfs:label "isSampleRoleFor" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#isStaticSampleFor
+:isStaticSampleFor rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Relationship between a static sample  and the sample system of which it is a part." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                   rdfs:label "isStaticSampleFor" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/tribont/sample#executionDate
+:executionDate rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Data when something has been executed." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+               rdfs:label "executionDate" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#preparationDate
+:preparationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:comment "Data when something has been prepared." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                 rdfs:label "preparationDate" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/isCharacterisedBy#Property
+<https://w3id.org/isCharacterisedBy#Property> rdf:type owl:Class .
+
+
+###  https://w3id.org/isCharacterisedBy#SubjectOfInterest
+<https://w3id.org/isCharacterisedBy#SubjectOfInterest> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#Body
+<https://w3id.org/tribont/core#Body> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#OperationProperty
+<https://w3id.org/tribont/core#OperationProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#Role
+<https://w3id.org/tribont/core#Role> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#SystemProperty
+<https://w3id.org/tribont/core#SystemProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/core#TechnicalProperty
+<https://w3id.org/tribont/core#TechnicalProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#ElementConcentration
+<https://w3id.org/tribont/material#ElementConcentration> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#ElementRole
+<https://w3id.org/tribont/material#ElementRole> rdf:type owl:Class ;
+                                                owl:disjointWith :SampleRole .
+
+
+###  https://w3id.org/tribont/material#FluidLubricant
+<https://w3id.org/tribont/material#FluidLubricant> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#Material
+<https://w3id.org/tribont/material#Material> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/material#SolidLubricant
+<https://w3id.org/tribont/material#SolidLubricant> rdf:type owl:Class .
+
+
+###  https://w3id.org/tribont/sample#CoatedSample
+:CoatedSample rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( :Sample
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :hasCoating ;
+                                                           owl:someValuesFrom :Coating
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf :Sample ;
+              rdfs:comment "Sample body which has a coating moterial." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+              rdfs:label "CoatedSample" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#Coating
+:Coating rdf:type owl:Class ;
+         rdfs:subClassOf <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                           owl:allValuesFrom :CoatingProperty
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasCoreMaterial ;
+                           owl:allValuesFrom <https://w3id.org/tribont/material#Material>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasCoreMaterial ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass <https://w3id.org/tribont/material#Material>
+                         ] ;
+         rdfs:comment "A thin layer covering of something." ;
+         rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+         rdfs:label "Coating" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#CoatingProperty
+:CoatingProperty rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/isCharacterisedBy#Property> ;
+                 rdfs:comment "Qualifiable or quantifiable attribute, or characteristic of a coating." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                 rdfs:label "CoatingProperty" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#CoatingThickness
+:CoatingThickness rdf:type owl:Class ;
+                  rdfs:subClassOf :CoatingProperty ;
+                  rdfs:comment "Thickness of a coating." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                  rdfs:label "CoatingThickness" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#CoatingType
+:CoatingType rdf:type owl:Class ;
+             rdfs:subClassOf :CoatingProperty ;
+             rdfs:comment "Type of coating." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+             rdfs:label "CoatingType" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#LubricatedSampleSystem
+:LubricatedSampleSystem rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :SampleSystem
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :hasLubricationSample ;
+                                                                     owl:someValuesFrom :LubricationSample
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf :SampleSystem ;
+                        rdfs:comment "Sample system that includes a lubricant as part of it." ;
+                        rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                        rdfs:label "LubricatedSampleSystem" ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#LubricationSample
+:LubricationSample rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :Sample
+                                                              [ rdf:type owl:Class ;
+                                                                owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty :hasCoreMaterial ;
+                                                                                owl:someValuesFrom <https://w3id.org/tribont/material#FluidLubricant>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty :hasCoreMaterial ;
+                                                                                owl:someValuesFrom <https://w3id.org/tribont/material#SolidLubricant>
+                                                                              ]
+                                                                            )
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf :Sample ;
+                   rdfs:comment "Portion of lubricant material selected from a larger quantity of lubricant material for Testing purposes. Lubricant material can be fluid or solid lubricants " ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+                   rdfs:label "LubricationSample" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#Sample
+:Sample rdf:type owl:Class ;
+        rdfs:subClassOf <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                          owl:allValuesFrom <https://w3id.org/tribont/core#TechnicalProperty>
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasBody ;
+                          owl:allValuesFrom <https://w3id.org/tribont/core#Body>
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasCoating ;
+                          owl:allValuesFrom :Coating
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasCoreMaterial ;
+                          owl:allValuesFrom <https://w3id.org/tribont/material#Material>
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasSampleRole ;
+                          owl:allValuesFrom :SampleRole
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasBody ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass <https://w3id.org/tribont/core#Body>
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasCoating ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Coating
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasSampleRole ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :SampleRole
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :preparationDate ;
+                          owl:allValuesFrom xsd:dateTime
+                        ] ;
+        rdfs:comment "Portion of material which can be transformed or not for Testing purposes. For example the moving and static samples in a tribological tests are transformed following a specific manufacturing process to achieve the required body characteristics, while lubricants acting as lubrication body are not transformed." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+        rdfs:label "Sample" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#SampleBatch
+:SampleBatch rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBody ;
+                               owl:allValuesFrom <https://w3id.org/tribont/core#Body>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasCoating ;
+                               owl:allValuesFrom :Coating
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasCoreMaterial ;
+                               owl:allValuesFrom <https://w3id.org/tribont/material#Material>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBody ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass <https://w3id.org/tribont/core#Body>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasCoating ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Coating
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :preparationDate ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:dateTime
+                             ] ;
+             rdfs:comment "An aggrupation of samples which have been transformed at the same time using a same material and share a set of common atributes of characteristics." ;
+             rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+             rdfs:label "SampleBatch" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#SampleRole
+:SampleRole rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/tribont/core#Role> ;
+            rdfs:comment "The position or purpose that a sample has in a situation." ;
+            rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+            rdfs:label "reference" ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#SampleSystem
+:SampleSystem rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                                owl:allValuesFrom <https://w3id.org/tribont/core#SystemProperty>
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasLubricationSample ;
+                                owl:allValuesFrom :LubricationSample
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasMovingSample ;
+                                owl:allValuesFrom :Sample
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasStaticSample ;
+                                owl:allValuesFrom :Sample
+                              ] ;
+              rdfs:comment "Object aggregate that has two or more elements that interact with each other, and it is used for Testing purposes. For example, a tribological sample system aggregates at least a static and a moving sample body and can include or not a lubrication sample body." ;
+              rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+              rdfs:label "SampleSystem" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/tribont/sample#reference
+:reference rdf:type owl:NamedIndividual ,
+                    :SampleRole ;
+           rdfs:comment "A reference against which the sample is tested." ;
+           rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+           rdfs:label "reference" ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/sample#target
+:target rdf:type owl:NamedIndividual ,
+                 :SampleRole ;
+        rdfs:comment "Target sample for the  testing  activity." ;
+        rdfs:isDefinedBy "https://w3id.org/tribont/sample" ;
+        rdfs:label "target" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( <https://w3id.org/tribont/core#Body>
+                 <https://w3id.org/tribont/material#Material>
+                 :Coating
+                 :Sample
+                 :SampleBatch
+                 :SampleSystem
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://w3id.org/tribont/core#OperationProperty>
+                <https://w3id.org/tribont/core#SystemProperty>
+                <https://w3id.org/tribont/core#TechnicalProperty>
+                <https://w3id.org/tribont/material#ElementConcentration>
+                :CoatingProperty
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#sb> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#b> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#m> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#ss> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#ms> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#sts> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Sample ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/isCharacterisedBy#belongsTo> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#sb>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasBody ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#sb> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#b>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasBody ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#b>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Sample ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/isCharacterisedBy#belongsTo> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#sb>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasCoating ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#sb> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasCoating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Sample ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/isCharacterisedBy#belongsTo> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#sb>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasCoreMaterial ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#sb> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasCoreMaterial ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Sample ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/isCharacterisedBy#belongsTo> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#sb>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :preparationDate ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#sb> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :preparationDate ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SampleSystem ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#ss>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasMovingSample ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#ss> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#ms>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasStaticSample ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#ss> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#sts>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :interactsWith ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#ms> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#sts>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :interactsWith ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#sts> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#ms>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

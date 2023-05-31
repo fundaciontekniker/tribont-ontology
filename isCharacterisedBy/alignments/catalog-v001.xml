@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://w3id.org/isCharacterisedBy" uri="file:/C:/Workspace%20-%20copia%20(2)/tribont-ontology/ontology.owl"/>
+    <uri id="Imports Wizard Entry" name="http://qudt.org/2.1/schema/qudt" uri="file:/C:/Workspace%20-%20copia%20(2)/tribont-ontology/SupportOntologies/QUDT.txt.owl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/isCharacterisedBy" uri="file:/C:/Workspace/tribont-ontology/isCharacterisedBy/ontology/ontology.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1685537395398" name="https://w3id.org/isCgaracterisedBy_DolceL_Alignment" uri="isCharacterisedBy-alignment-DOLCELite.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1685537395398" name="https://w3id.org/isCharacterisedBy/isCharacterisedByAligmentQUDT" uri="isCharacterisedBy-alignment-QUDT.owl"/>
+    </group>
+</catalog>
