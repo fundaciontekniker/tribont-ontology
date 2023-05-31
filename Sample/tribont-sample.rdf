@@ -182,7 +182,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasSampleRole">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isSampleRoleFor"/>
-		 <rdfs:comment>Relationship between a sample and its role.</rdfs:comment>
+        <rdfs:comment>Relationship between a sample and its role.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
         <rdfs:label>hasSampleRole</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
@@ -265,6 +265,7 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <rdfs:label>isSampleRoleFor</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
+    
 
 
     <!-- https://w3id.org/tribont/sample#isStaticSampleFor -->
@@ -593,13 +594,14 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     </owl:Class>
     
 
+
     <!-- https://w3id.org/tribont/sample#SampleRole -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleRole">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Role"/>
-		<rdfs:comment>The position or purpose that a sample has in a situation.</rdfs:comment>
+        <rdfs:comment>The position or purpose that a sample has in a situation.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
-        <rdfs:label>reference</rdfs:label>
+        <rdfs:label>SampleRole</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -674,18 +676,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -696,6 +686,18 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     
 
