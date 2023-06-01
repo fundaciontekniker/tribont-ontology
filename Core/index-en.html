@@ -40,10 +40,8 @@ function loadTOC(){
 	  });
 	  t+='</ul>';
 	  $("#toc").html(t); 
-}
- $.fn.ignore = function(sel){
-        return this.clone().find(sel||">*").remove().end();
- };    $(function(){
+}    
+	$(function(){
       $("#abstract").load("sections/abstract-en.html"); 
       $("#introduction").load("sections/introduction-en.html"); 
       $("#overview").load("sections/overview-en.html"); 
@@ -81,7 +79,7 @@ Domain expert:Xana Fernandez (Tekniker)
 </dd>
 
 <dt>Imported Ontologies:</dt>
-<dd><a href="https://w3id.org/isCharacterisedBy">isCharacterised design pattern</a></dd>
+<dd><a href="https://w3id.org/isCharacterisedBy">isCharacterisedBy design pattern</a></dd>
 
 
 <dt>Download serialization:</dt>
