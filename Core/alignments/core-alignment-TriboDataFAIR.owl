@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/tribont/core/coreAlignmentTriboDataFAIR"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/tribont/core/coreAlignmentTriboDataFAIR">
+    <Prefix name="" IRI="https://w3id.org/tribont/core/coreAlignmentTribain"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="ns1" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="tribAIn" IRI="http://ktmfk.de/ontology/tribAIn/"/>
+    <Prefix name="materialMetadata" IRI="http://ktmfk.de/ontology/tribAIn/materialMetadata/"/>
+    <Prefix name="unitOfMeasurementMetadata" IRI="http://ktmfk.de/ontology/tribAIn/unitOfMeasurementMetadata/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal>2023-06-01</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal xml:lang="en">Definition of the alignments between the  Core module (v1.0) and the TriboDataFAIR ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
+        <Literal>2023-06-01</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal xml:lang="en">Core module alignment with TriboDataFAIR ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <Literal xml:lang="tekniker.es&gt;">Testing</Literal>
+    </Annotation>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#HardnessMagnitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#AngleUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#VoltageUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#PhysicalQuantityUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#DensityUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#MassUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#VolumeUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Frequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#FrequencyUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#TimeUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#FrequencyUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#FrequencyMagnitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#RelativeHumidityMagnitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Weight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#HardnessScaleUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Duration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#ObjectMassMagnitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#TemperatureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#TemperatureMagnitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#ForceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#SpeedUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#HardnessProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#HardnessUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#CapacityUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#VelocityUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#TemperatureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#PressureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#DistanceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#AtmosphericPressureMagnitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Humidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#ForceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#TimeDurationUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#PressureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#VoltageUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#AngleUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#ContentBearingObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#MassDensityUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#DistanceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#TimeDuration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/isCharacterisedBy#Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#WeightUnit"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#AngleUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#AngleUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#AtmosphericPressureMagnitude"/>
+        <Class IRI="https://w3id.org/tribont/core#Pressure"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#DistanceUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#DistanceUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#ForceUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#ForceUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#FrequencyMagnitude"/>
+        <Class IRI="https://w3id.org/tribont/core#Frequency"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#FrequencyUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#FrequencyUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#HardnessMagnitude"/>
+        <Class IRI="https://w3id.org/tribont/core#HardnessProperty"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#HardnessScaleUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#HardnessUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#MassDensityUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#DensityUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#MassUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#WeightUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#ObjectMassMagnitude"/>
+        <Class IRI="https://w3id.org/tribont/core#Weight"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#PhysicalQuantityUnit"/>
+        <Class IRI="https://w3id.org/isCharacterisedBy#Unit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#PressureUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#PressureUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#RelativeHumidityMagnitude"/>
+        <Class IRI="https://w3id.org/tribont/core#Humidity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#SpeedUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#VelocityUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#TemperatureMagnitude"/>
+        <Class IRI="https://w3id.org/tribont/core#Temperature"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#TemperatureUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#TemperatureUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#TimeDuration"/>
+        <Class IRI="https://w3id.org/tribont/core#Duration"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#TimeDurationUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#TimeUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#VoltageUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#VoltageUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#VolumeUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#CapacityUnit"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/tribont/core#Document"/>
+        <Class IRI="https://raw.githubusercontent.com/nick-garabedian/TriboDataFAIR-Ontology/v0.1.1/TriboDataFAIR_Ontology.owl#ContentBearingObject"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
