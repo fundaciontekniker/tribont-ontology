@@ -1,0 +1,2318 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "tekniker.es>", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/isCharacterisedBy", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/tribont/core", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/tribont/equipment", "http://org.semanticweb.owlapi/error" ],
+    "title" : {
+      "undefined" : "TribOnt equipment module"
+    },
+    "iri" : "https://w3id.org/tribont/equipment",
+    "version" : "1.0",
+    "author" : [ "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>" ],
+    "description" : {
+      "en" : "The goal of this module is to represent the equipment hierarchy model involved in the tribological experiments."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "tekniker.es>",
+        "value" : "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "tekniker.es>",
+        "value" : "Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>\nDomain expert:Iban Quintana (Tekniker)  <mailto:iban.quintana>\nDomain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "tekniker.es>",
+        "value" : "Testing",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2023-05-09",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "equipment",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "TribOnt equipment module",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2023-05-09",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/tribont/core#Body",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Body"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#EquipmentClass",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EquipmentClass",
+      "undefined" : "EquipmentClass"
+    },
+    "subClasses" : [ "5", "6" ],
+    "comment" : {
+      "undefined" : "An aggrupation of equipments with a set of common atributes of characteristics."
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#SubjectOfInterest",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubjectOfInterest"
+    },
+    "subClasses" : [ "2", "3" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error60",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error60"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#OperationProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperationProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#HardnessTesterClass",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HardnessTesterClass",
+      "undefined" : "HardnessTesterClass"
+    },
+    "comment" : {
+      "undefined" : "An aggrupation of hardness testers with a set of common atributes of characteristics."
+    },
+    "id" : "33",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/core#TribologicalProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TribologicalProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#EquipmentStandard",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EquipmentStandard",
+      "undefined" : "EquipmentStandard"
+    },
+    "comment" : {
+      "undefined" : "A document approved by a recognized body that provides common to by fullfiled by an equipment."
+    },
+    "id" : "35",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#CalibrationDocument",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CalibrationDocument",
+      "undefined" : "CalibrationDocument"
+    },
+    "comment" : {
+      "undefined" : "A document that contains all the relevant information related to a specific calibration."
+    },
+    "id" : "51",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/tribont/core#Company",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Company"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#Document",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document"
+    },
+    "subClasses" : [ "51", "50" ],
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#ManufacturerDataSheet",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ManufacturerDataSheet",
+      "undefined" : "ManufacturerDataSheet"
+    },
+    "comment" : {
+      "undefined" : "A document provided by the manufacturer that includes a summary of technical characteristics, and describes how and when to use something."
+    },
+    "id" : "62",
+    "superClasses" : [ "50" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/tribont/core#TechnicalProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnicalProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#ScanningElectronMicroscope",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ScanningElectronMicroscope",
+      "undefined" : "ScanningElectronMicroscope"
+    },
+    "comment" : {
+      "undefined" : "An equipment used to assess the materials surfaces by producing images of a sample."
+    },
+    "id" : "77",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#TechnicalDocument",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TechnicalDocument",
+      "undefined" : "TechnicalDocument"
+    },
+    "subClasses" : [ "62", "80" ],
+    "comment" : {
+      "undefined" : "Information on how to to use and maintain something as for e.g. drawings, manuals, technical reports, etc."
+    },
+    "id" : "50",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#ExperimentalEquipment",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ExperimentalEquipment",
+      "undefined" : "ExperimentalEquipment"
+    },
+    "subClasses" : [ "83" ],
+    "comment" : {
+      "undefined" : "An equipment that reproduces certain operation conditions for experimentation purposes."
+    },
+    "id" : "82",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#Calibration",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Calibration",
+      "undefined" : "Calibration"
+    },
+    "comment" : {
+      "undefined" : "The action or process of calibrating something to maintain accuracy, and repeatability in measurements, assuring reliable results."
+    },
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#Property",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "attributes" : [ "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#MachineryBook",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MachineryBook",
+      "undefined" : "MachineryBook"
+    },
+    "comment" : {
+      "undefined" : "A document providing all the relevant information of the technical characteristics of an equipment, and describes how and when to use and mantain it. "
+    },
+    "id" : "80",
+    "superClasses" : [ "50" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#MeasuringEquipment",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasuringEquipment",
+      "undefined" : "MeasuringEquipment"
+    },
+    "subClasses" : [ "92", "93", "77", "94", "95", "96", "97" ],
+    "comment" : {
+      "undefined" : "An equipment used to measure technical attributes or characteristics of something."
+    },
+    "id" : "78",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#MeasuringEquipmentClass",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasuringEquipmentClass",
+      "undefined" : "MeasuringEquipmentClass"
+    },
+    "subClasses" : [ "33" ],
+    "comment" : {
+      "undefined" : "An aggrupation of measuring equipment with a set of common atributes of characteristics."
+    },
+    "id" : "5",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#ExperimentalEquipmentClass",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ExperimentalEquipmentClass",
+      "undefined" : "ExperimentalEquipmentClass"
+    },
+    "subClasses" : [ "88" ],
+    "comment" : {
+      "undefined" : "An aggrupation of experimental equipments with a set of common atributes of characteristics."
+    },
+    "id" : "6",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#Equipment",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Equipment",
+      "undefined" : "Equipment"
+    },
+    "subClasses" : [ "78", "82" ],
+    "comment" : {
+      "undefined" : "An object which is instrumental for reaching a particular purpose through its characteristic functioning process."
+    },
+    "id" : "2",
+    "superClasses" : [ "31", "4" ]
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#Unit",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#Tribometer",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Tribometer",
+      "undefined" : "Tribometer"
+    },
+    "comment" : {
+      "undefined" : "An equipment used to measure tribological properties (e.g. friction coefficients, wear, etc.) by simulating the interaction of between two surfaces in contact under specific operation conditions."
+    },
+    "id" : "83",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#OpticalProfilometer",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OpticalProfilometer",
+      "undefined" : "OpticalProfilometer"
+    },
+    "comment" : {
+      "undefined" : "An equipment used to measure precisely surface profiles."
+    },
+    "id" : "95",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/core#Weight",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#Scale",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Scale",
+      "undefined" : "Scale"
+    },
+    "comment" : {
+      "undefined" : "An equipment used to measure the weigth of somebody or something."
+    },
+    "id" : "92",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#HardnessTester",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HardnessTester",
+      "undefined" : "HardnessTester"
+    },
+    "comment" : {
+      "undefined" : "An equipment that measures the hardness of a material, "
+    },
+    "id" : "93",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#AbrasionTester",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AbrasionTester",
+      "undefined" : "AbrasionTester"
+    },
+    "comment" : {
+      "undefined" : " An equipment that measures the abrasion resistance of something."
+    },
+    "id" : "94",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/core#Role",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#HardnessProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HardnessProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#Standard",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Standard"
+    },
+    "subClasses" : [ "35" ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#TribometerClass",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TribometerClass",
+      "undefined" : "TribometerClass"
+    },
+    "comment" : {
+      "undefined" : "An aggrupation of tribometers with a set of common atributes of characteristics."
+    },
+    "id" : "88",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#OpticalMicroscope",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OpticalMicroscope",
+      "undefined" : "OpticalMicroscope"
+    },
+    "comment" : {
+      "undefined" : "An equipment used to assess surfaces by magnifying images with visible light."
+    },
+    "id" : "96",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#ScratchTester",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ScratchTester",
+      "undefined" : "ScratchTester"
+    },
+    "comment" : {
+      "undefined" : "An equipment used to assess the coating adhesion."
+    },
+    "id" : "97",
+    "superClasses" : [ "78" ]
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "11",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "12",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "19",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "23",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "49",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "55",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "56",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "58",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "59",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "60",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "61",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "64",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "66",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "68",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "71",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "72",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "73",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "98",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "99",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "100",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "101",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "102",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "104",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "105",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "107",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "108",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#validityDate",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "validityDate",
+      "undefined" : "validityDate"
+    },
+    "cardinality" : "1",
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The date until which a given action is valid and after which it is necessary to repeat it."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "range" : "3",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "2",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "17",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "17",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "17",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "14",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "14",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#isHeldSampleBodyBy",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isHeldSampleBodyBy",
+      "undefined" : "isHeldSampleBodyBy"
+    },
+    "domain" : "8",
+    "subproperty" : [ "25", "26" ],
+    "comment" : {
+      "undefined" : "Relationship between a sample body and the equipment that hold it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "range" : "13",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#holdsSampleBody",
+    "inverse" : "24",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsSampleBody",
+      "undefined" : "holdsSampleBody"
+    },
+    "domain" : "8",
+    "subproperty" : [ "29", "30" ],
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the sample body it can hold"
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "range" : "16",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "17",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "13",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "16",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "21",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "14",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "13",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "13",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "17",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "14",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#purpose",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "48",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "purpose",
+      "undefined" : "purpose"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "The puspose of an equipment."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#hasDocument",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasDocument"
+    },
+    "domain" : "3",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#holdsStaticSampleBody",
+    "inverse" : "25",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsStaticSampleBody",
+      "undefined" : "holdsStaticSampleBody"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the static sample  body it can hold"
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#holdsMovingSampleBody",
+    "inverse" : "26",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsMovingSampleBody",
+      "undefined" : "holdsMovingSampleBody"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the moving sample  body it can hold"
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#measuringPrinciple",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "53",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuringPrinciple",
+      "undefined" : "measuringPrinciple"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "The measuring principle followed by an equipment."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#holdsSampleBody",
+    "inverse" : "24",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsSampleBody",
+      "undefined" : "holdsSampleBody"
+    },
+    "domain" : "3",
+    "subproperty" : [ "29", "30" ],
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the sample body it can hold"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#hasCalibration",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCalibration",
+      "undefined" : "hasCalibration"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "The relation between a specific equipment and the calibrations performed on it."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#purpose",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "54",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "purpose",
+      "undefined" : "purpose"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "The puspose of an equipment."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#hasDocument",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasDocument"
+    },
+    "domain" : "2",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#hasLocation",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasLocation"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#shortNam",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "shortNam"
+    },
+    "domain" : "2",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#measuringPrinciple",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "65",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuringPrinciple",
+      "undefined" : "measuringPrinciple"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "The measuring principle followed by an equipment."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#longName",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "longName"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "allValues", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#belongsTo",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "belongsTo"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "external" ],
+    "id" : "69"
+  }, {
+    "range" : "50",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#hasDocument",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "hasDocument"
+    },
+    "domain" : "17",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#holdsSampleBody",
+    "inverse" : "24",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsSampleBody",
+      "undefined" : "holdsSampleBody"
+    },
+    "domain" : "2",
+    "subproperty" : [ "29", "30" ],
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the sample body it can hold"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOperationCondition",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOperationCondition"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "73"
+  }, {
+    "range" : "31",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "16",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "16",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "4",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#holdsMovingSampleBody",
+    "inverse" : "26",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsMovingSampleBody",
+      "undefined" : "holdsMovingSampleBody"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "88",
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the moving sample  body it can hold"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#hasManufacturer",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasManufacturer"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#holdsMovingSampleBody",
+    "inverse" : "26",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsMovingSampleBody",
+      "undefined" : "holdsMovingSampleBody"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "83",
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the moving sample  body it can hold"
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "83",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#holdsStaticSampleBody",
+    "inverse" : "25",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsStaticSampleBody",
+      "undefined" : "holdsStaticSampleBody"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "88",
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the static sample  body it can hold"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#holdsStaticSampleBody",
+    "inverse" : "25",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsStaticSampleBody",
+      "undefined" : "holdsStaticSampleBody"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "83",
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the static sample  body it can hold"
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#holdsStaticSampleBody",
+    "inverse" : "25",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsStaticSampleBody",
+      "undefined" : "holdsStaticSampleBody"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "83",
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the static sample  body it can hold"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "92",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#holdsMovingSampleBody",
+    "inverse" : "26",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsMovingSampleBody",
+      "undefined" : "holdsMovingSampleBody"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "83",
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the moving sample  body it can hold"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "93",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#hasDocument",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasDocument"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOperationCondition",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOperationCondition"
+    },
+    "domain" : "96",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "108"
+  }, {
+    "range" : "62",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "21",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "16",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "13",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "14",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "17",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "38",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "21",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#isHeldMovingSampleBodyBy",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isHeldMovingSampleBodyBy",
+      "undefined" : "isHeldMovingSampleBodyBy"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Relationship between a movig sample body and the equipment that hold it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "range" : "16",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "4",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "38",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "2",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "6",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "14",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "2",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "78",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "78",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "5",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "78",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "78",
+    "domain" : "94",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "78",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "78",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "50",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "50",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#isHeldStaticSampleBodyBy",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isHeldStaticSampleBodyBy",
+      "undefined" : "isHeldStaticSampleBodyBy"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Relationship between astatic  sample body and the equipment that hold it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#executionDate",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "range" : "89",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont/equipment",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "executionDate",
+      "undefined" : "executionDate"
+    },
+    "cardinality" : "1",
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The date when a specific action has been performed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "133"
+  }, {
+    "range" : "78",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "82",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  } ]
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/tribont/tribontAlignmentTribain"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/tribont/tribontAlignmentTribain">
+    <Prefix name="" IRI="https://w3id.org/trib#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="ns1" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="tribAIn" IRI="http://ktmfk.de/ontology/tribAIn/"/>
+    <Prefix name="materialMetadata" IRI="http://ktmfk.de/ontology/tribAIn/materialMetadata/"/>
+    <Prefix name="unitOfMeasurementMetadata" IRI="http://ktmfk.de/ontology/tribAIn/unitOfMeasurementMetadata/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="ns:license"/>
+        <IRI>https://creativecommons.org/licenses/by-nc/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal>2023-05-30</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal xml:lang="en">Definition of the alignments between the TribOnt (v1.0) and the TribAIn ontologies.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
+        <Literal>2023-05-30</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal xml:lang="en">TribOnt main module alignment with TribAIn ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <Literal xml:lang="tekniker.es&gt;">Stable</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Characterization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:PhysicalExperiment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:RepresentationExperimentalResults"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:TribologicalTesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont#MeasuringTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont#Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont#TestOutputDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont#TribologicalTest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="tribAIn:carriesOut"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="tribAIn:isCarriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/tribont#executes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/tribont#isExecutedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:PhysicalExperiment"/>
+        <Class IRI="https://w3id.org/tribont#Test"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:TribologicalTesting"/>
+        <Class IRI="https://w3id.org/tribont#TribologicalTest"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="tribAIn:Characterization"/>
+        <Class IRI="https://w3id.org/tribont#MeasuringTest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="tribAIn:RepresentationExperimentalResults"/>
+        <Class IRI="https://w3id.org/tribont#TestOutputDocument"/>
+    </SubClassOf>
+    <EquivalentObjectProperties>
+        <ObjectProperty abbreviatedIRI="tribAIn:carriesOut"/>
+        <ObjectProperty IRI="https://w3id.org/tribont#executes"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty abbreviatedIRI="tribAIn:isCarriedOutBy"/>
+        <ObjectProperty IRI="https://w3id.org/tribont#isExecutedBy"/>
+    </EquivalentObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483690"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483692"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

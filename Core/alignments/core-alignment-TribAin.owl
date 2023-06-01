@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/tribont/core/coreAlignmentTribain"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/tribont/core/coreAlignmentTribain">
+    <Prefix name="" IRI="https://w3id.org/trib#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="ns1" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="tribAIn" IRI="http://ktmfk.de/ontology/tribAIn/"/>
+    <Prefix name="materialMetadata" IRI="http://ktmfk.de/ontology/tribAIn/materialMetadata/"/>
+    <Prefix name="unitOfMeasurementMetadata" IRI="http://ktmfk.de/ontology/tribAIn/unitOfMeasurementMetadata/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal>2023-05-30</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal xml:lang="en">Definition of the alignments between the  Core module (v1.0) and the TribAIn ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
+        <Literal>2023-05-30</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal xml:lang="en">Core module alignment with TribAIn ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <Literal xml:lang="tekniker.es&gt;">Testing</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Document"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:CoefficientOfFriction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:ConcentrationUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:ContentBearingObject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Diameter"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:DistanceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:ForceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Geometry"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Humidity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:MassUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:PoissonsRatio"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:PressureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Ra"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Representation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Rk"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Rp"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Rpk"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Rq"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Rsk"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Runtime"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Rv"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Rz"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:SpeedUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:SurfaceRoughness"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:TechnicalStandard"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:TemperatureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:TimeUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:TorqueUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:TribologicalParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="tribAIn:Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="terms:Standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/isCharacterisedBy#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/isCharacterisedBy#Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#COFMean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Diameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#DistanceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Duration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#ForceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#GeometricDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Humidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#PercentageUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#PoisssonRatio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#PressureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Ra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Rp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Rpk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Rq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Rsk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Rv"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#Rz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#SurfaceRoughness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#TemperatureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#TimeUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#TorqueUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#TribologicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#VelocityUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/tribont/core#WeightUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="tribAIn:hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/isCharacterisedBy#value"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:ConcentrationUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#PercentageUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Diameter"/>
+        <Class IRI="https://w3id.org/tribont/core#Diameter"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:DistanceUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#DistanceUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:ForceUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#ForceUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Geometry"/>
+        <Class IRI="https://w3id.org/tribont/core#GeometricDimension"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Humidity"/>
+        <Class IRI="https://w3id.org/tribont/core#Humidity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:MassUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#WeightUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:PoissonsRatio"/>
+        <Class IRI="https://w3id.org/tribont/core#PoisssonRatio"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:PressureUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#PressureUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Ra"/>
+        <Class IRI="https://w3id.org/tribont/core#Ra"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Rk"/>
+        <Class IRI="https://w3id.org/tribont/core#Rv"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Rp"/>
+        <Class IRI="https://w3id.org/tribont/core#Rp"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Rpk"/>
+        <Class IRI="https://w3id.org/tribont/core#Rpk"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Rq"/>
+        <Class IRI="https://w3id.org/tribont/core#Rq"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Rsk"/>
+        <Class IRI="https://w3id.org/tribont/core#Rsk"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Runtime"/>
+        <Class IRI="https://w3id.org/tribont/core#Duration"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Rv"/>
+        <Class IRI="https://w3id.org/tribont/core#Rv"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Rz"/>
+        <Class IRI="https://w3id.org/tribont/core#Rz"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:SpeedUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#VelocityUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:SurfaceRoughness"/>
+        <Class IRI="https://w3id.org/tribont/core#SurfaceRoughness"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:TemperatureUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#TemperatureUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:TimeUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#TimeUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:TorqueUnit"/>
+        <Class IRI="https://w3id.org/tribont/core#TorqueUnit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:TribologicalParameter"/>
+        <Class IRI="https://w3id.org/tribont/core#TribologicalProperty"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="tribAIn:Unit"/>
+        <Class IRI="https://w3id.org/isCharacterisedBy#Unit"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Document"/>
+        <Class abbreviatedIRI="tribAIn:ContentBearingObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="tribAIn:Parameter"/>
+        <Class IRI="https://w3id.org/isCharacterisedBy#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="tribAIn:TechnicalStandard"/>
+        <Class abbreviatedIRI="terms:Standard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/tribont/core#COFMean"/>
+        <Class abbreviatedIRI="tribAIn:CoefficientOfFriction"/>
+    </SubClassOf>
+    <EquivalentDataProperties>
+        <DataProperty abbreviatedIRI="tribAIn:hasValue"/>
+        <DataProperty IRI="https://w3id.org/isCharacterisedBy#value"/>
+    </EquivalentDataProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483654"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483656"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

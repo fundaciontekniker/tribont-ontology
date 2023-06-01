@@ -1,0 +1,2692 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "tekniker.es>", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/isCharacterisedBy", "https://w3id.org/tribont", "https://w3id.org/tribont/sample", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/tribont/core", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/tribont/equipment", "http://org.semanticweb.owlapi/error", "https://w3id.org/tribont/material" ],
+    "title" : {
+      "undefined" : "TribOnt ontology"
+    },
+    "iri" : "https://w3id.org/tribont",
+    "version" : "1.0",
+    "author" : [ "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>" ],
+    "description" : {
+      "en" : "The goal  is to represent the tribological experiments by relaying on the representation included in the core,,  sample and equipment modules."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "tekniker.es>",
+        "value" : "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "tekniker.es>",
+        "value" : "Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>\nDomain expert:Iban Quintana (Tekniker)  <mailto:iban.quintana>\nDomain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "tekniker.es>",
+        "value" : "Testing",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2023-05-09",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "tribont",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "TribOnt ontology",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2023-05-09",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/tribont/material#MaterialIdentification",
+    "baseIri" : "https://w3id.org/tribont/material",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialIdentification"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/tribont#Operator",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Operator",
+      "undefined" : "Operator"
+    },
+    "comment" : {
+      "undefined" : "Person performing an specific activity or operation."
+    },
+    "id" : "19",
+    "superClasses" : [ "20", "21" ]
+  }, {
+    "iri" : "https://w3id.org/tribont#Test",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Test",
+      "undefined" : "Test"
+    },
+    "subClasses" : [ "36", "37" ],
+    "comment" : {
+      "undefined" : "An activity intended to establish the techncial attributes or characteristics of something,"
+    },
+    "id" : "29",
+    "superClasses" : [ "33", "34", "35" ]
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#SubjectOfInterest",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubjectOfInterest"
+    },
+    "subClasses" : [ "29", "1", "38" ],
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#TribologicalProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TribologicalProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#EquipmentStandard",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EquipmentStandard"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/tribont#Experiment",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Experiment",
+      "undefined" : "Experiment"
+    },
+    "comment" : {
+      "undefined" : "A series of activities to carry out an experimentation procedure and measure its outputs."
+    },
+    "id" : "38",
+    "superClasses" : [ "34", "53", "54" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/core#Company",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Company"
+    },
+    "attributes" : [ "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/tribont#TribologicalTest",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TribologicalTest",
+      "undefined" : "TribologicalTest"
+    },
+    "comment" : {
+      "undefined" : "A testing activity that reproduces certain operation conditions to assess one or more tribological attributes or characteristics of a given sample system."
+    },
+    "id" : "12",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#SampleBatch",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SampleBatch"
+    },
+    "attributes" : [ "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#TechnicalDocument",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnicalDocument"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#ExperimentalEquipment",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExperimentalEquipment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/tribont/material#MaterialStandard",
+    "baseIri" : "https://w3id.org/tribont/material",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialStandard"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#Calibration",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Calibration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#Property",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#MeasuringEquipment",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasuringEquipment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/tribont#MeasuringTest",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasuringTest",
+      "undefined" : "MeasuringTest"
+    },
+    "subClasses" : [ "65", "66", "67" ],
+    "comment" : {
+      "undefined" : "A testing activity that measures one or more attributes or characteristics of a given sample."
+    },
+    "id" : "37",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#Sample",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sample"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/tribont#TestOutputMeasurementFile",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TestOutputMeasurementFile"
+    },
+    "id" : "70",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#Scale",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Scale"
+    },
+    "attributes" : [ "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "56",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/tribont#TestOutputDocument",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TestOutputDocument",
+      "undefined" : "TestOutputDocument"
+    },
+    "subClasses" : [ "77", "70" ],
+    "comment" : {
+      "undefined" : "A document compiling the outputs of a given test."
+    },
+    "id" : "4",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/core#HardnessProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HardnessProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error66",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error66"
+    },
+    "subClasses" : [ "19" ],
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#EquipmentClass",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EquipmentClass"
+    },
+    "attributes" : [ "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error61",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error61"
+    },
+    "subClasses" : [ "29" ],
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#OperationProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperationProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error64",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error64"
+    },
+    "subClasses" : [ "38" ],
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error65",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error65"
+    },
+    "subClasses" : [ "19" ],
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error62",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error62"
+    },
+    "subClasses" : [ "29" ],
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error63",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error63"
+    },
+    "subClasses" : [ "38" ],
+    "attributes" : [ "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#CalibrationDocument",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CalibrationDocument"
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/tribont#WeightMeasurement",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WeightMeasurement",
+      "undefined" : "WeightMeasurement"
+    },
+    "comment" : {
+      "undefined" : "A testing activity to measure the weight of a given sample."
+    },
+    "id" : "66",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "https://w3id.org/tribont#ExperimentalTest",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ExperimentalTest",
+      "undefined" : "ExperimentalTest"
+    },
+    "subClasses" : [ "12" ],
+    "comment" : {
+      "undefined" : "A testing activity that reproduces certain operation conditions to assess one or more technical attributes or characteristics of a given sample or sample system."
+    },
+    "id" : "36",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/core#Document",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#TechnicalProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnicalProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/tribont#WearScarMeasurement",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WearScarMeasurement",
+      "undefined" : "WearScarMeasurement"
+    },
+    "comment" : {
+      "undefined" : "A testing activity to measure  one or more attributes or characteristics of the resulting scar in a given sample."
+    },
+    "id" : "67",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/core#WearProperty",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WearProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#Equipment",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Equipment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#Unit",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit"
+    },
+    "attributes" : [ "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://w3id.org/tribont/sample#SampleSystem",
+    "baseIri" : "https://w3id.org/tribont/sample",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SampleSystem"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#Tribometer",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tribometer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#Weight",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://w3id.org/tribont#TestOutputReport",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TestOutputReport"
+    },
+    "id" : "77",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/equipment#HardnessTester",
+    "baseIri" : "https://w3id.org/tribont/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HardnessTester"
+    },
+    "attributes" : [ "external" ],
+    "id" : "179"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#Role",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#Standard",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Standard"
+    },
+    "subClasses" : [ "26" ],
+    "attributes" : [ "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/tribont/material#Material",
+    "baseIri" : "https://w3id.org/tribont/material",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material"
+    },
+    "attributes" : [ "external" ],
+    "id" : "157"
+  }, {
+    "iri" : "https://w3id.org/tribont#HardnessMeasurement",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HardnessMeasurement",
+      "undefined" : "A testing activity to measure  one or more  hardnes attributes or characteristics of  a given sample."
+    },
+    "id" : "65",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "https://w3id.org/tribont#TestStep",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TestStep",
+      "undefined" : "TestStep"
+    },
+    "comment" : {
+      "undefined" : "Each of the steps into which a given test can be subdivided"
+    },
+    "id" : "1",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "https://w3id.org/tribont#TestStandard",
+    "baseIri" : "https://w3id.org/tribont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TestStandard",
+      "undefined" : "TestStandard"
+    },
+    "comment" : {
+      "undefined" : "A document approved by a recognized bodythat provides common to by fullfiled by a test."
+    },
+    "id" : "26",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://w3id.org/tribont/material#MaterialApplication",
+    "baseIri" : "https://w3id.org/tribont/material",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialApplication"
+    },
+    "attributes" : [ "external" ],
+    "id" : "107"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "3",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "5",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "7",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "10",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "11",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "14",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "16",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "31",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "32",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "39",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "40",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "42",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "43",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "49",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "51",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "52",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "89",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "91",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "98",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "99",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "100",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "102",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "104",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "105",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "108",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "162",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "167",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "168",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "174",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "175",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "177",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "178",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "180",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "181",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "182",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "202",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "203",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:disjointWith"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOperationMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOperationMeasure"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#hasDocument",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasDocument"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/tribont#hasDependency",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDependency",
+      "undefined" : "hasDependency"
+    },
+    "domain" : "1",
+    "subproperty" : [ "8", "9" ],
+    "comment" : {
+      "undefined" : "Identifies the dependency between two activities."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOperationCondition",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOperationCondition"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "12",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/tribont#tests",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "tests",
+      "undefined" : "tests"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Relationship between a testing activity and what it tests (i.e., sample,  sample system)."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/tribont#isExecutedBy",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isExecutedBy",
+      "undefined" : "isExecutedBy"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Relationship between an activity and the equipment that executes it."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "16"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/tribont#isExecutedBy",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isExecutedBy",
+      "undefined" : "isExecutedBy"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "Relationship between an activity and the equipment that executes it."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "29",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#hasDocument",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasDocument"
+    },
+    "domain" : "29",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#hasDocument",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasDocument"
+    },
+    "domain" : "29",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/tribont#isPerformedBy",
+    "inverse" : "41",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isPerformedBy",
+      "undefined" : "isPerformedBy"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "Relationship between an activity and the person who performs it."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOperationCondition",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOperationCondition"
+    },
+    "domain" : "29",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isMadeOf",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isMadeOf"
+    },
+    "domain" : "29",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "43"
+  }, {
+    "range" : "23",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "24",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/tribont#tests",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "48",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "tests",
+      "undefined" : "tests"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "Relationship between a testing activity and what it tests (i.e., sample,  sample system)."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/tribont#isExecutedBy",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "50",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isExecutedBy",
+      "undefined" : "isExecutedBy"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "Relationship between an activity and the equipment that executes it."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOperationMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOperationMeasure"
+    },
+    "domain" : "29",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/tribont#hasDependency",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDependency",
+      "undefined" : "hasDependency"
+    },
+    "domain" : "29",
+    "subproperty" : [ "8", "9" ],
+    "comment" : {
+      "undefined" : "Identifies the dependency between two activities."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/tribont#hasNofollowDependency",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNofollowDependency",
+      "undefined" : "hasNofollowDependency"
+    },
+    "superproperty" : [ "57" ],
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Indicates that an activity has not a following dependency."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/tribont#hasAfterEndDependency",
+    "equivalent" : [ "58" ],
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAfterEndDependency",
+      "undefined" : "hasAfterEndDependency"
+    },
+    "superproperty" : [ "57" ],
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Relation between an activity and the one preceeding it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "range" : "64",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "35",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "54",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "36",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "74",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "37",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "4",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "4",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "21",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "33",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "53",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://w3id.org/tribont#isPrevious",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isPrevious",
+      "undefined" : "isPrevious"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Relationship between an activity and the one following it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "range" : "34",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "34",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "37",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "37",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://w3id.org/tribont#isExecutedBy",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "82",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isExecutedBy",
+      "undefined" : "isExecutedBy"
+    },
+    "domain" : "66",
+    "comment" : {
+      "undefined" : "Relationship between an activity and the equipment that executes it."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "66",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "89"
+  }, {
+    "range" : "27",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "29",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "29",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "34",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "67",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "67",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "66",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "99"
+  }, {
+    "range" : "64",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "103",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "74",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "107",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "61",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "55",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "18",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "74",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "55",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "64",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "103",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "18",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "107",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "19",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "103",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "74",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "61",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "64",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "106",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://w3id.org/tribont#isNext",
+    "inverse" : "83",
+    "equivalent" : [ "9" ],
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isNext",
+      "undefined" : "isNext"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Relationship between an activity and the one preceding it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/tribont#executes",
+    "inverse" : "124",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "executes",
+      "undefined" : "executes"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Relationship between an equipment and the activity it carries out."
+    },
+    "attributes" : [ "object" ],
+    "id" : "123"
+  }, {
+    "range" : "55",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://w3id.org/tribont#performs",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "performs",
+      "undefined" : "performs"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Relationship between a person and the activity he/she performs."
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "range" : "19",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "107",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "107",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "18",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "107",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "61",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "61",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "18",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "107",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "61",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "64",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "18",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "64",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "103",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://w3id.org/tribont#isTestedBy",
+    "inverse" : "141",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isTestedBy",
+      "undefined" : "isTestedBy"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Relationship between a sample body or sample system and the testing activity testing it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "140"
+  }, {
+    "range" : "18",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "64",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "103",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "107",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "61",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "107",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "61",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "74",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "18",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "15",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "59",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "101",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "30",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "48",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "range" : "157",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "101",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "15",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "59",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "1",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "101",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "range" : "30",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "48",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "157",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "29",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isMadeOf",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "isMadeOf"
+    },
+    "domain" : "38",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "168"
+  }, {
+    "range" : "1",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "18",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "18",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "iri" : "https://w3id.org/tribont#isPerformedBy",
+    "inverse" : "41",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isPerformedBy",
+      "undefined" : "isPerformedBy"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Relationship between an activity and the person who performs it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#hasDocument",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasDocument"
+    },
+    "domain" : "38",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "173"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#hasDocument",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasDocument"
+    },
+    "domain" : "38",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "174"
+  }, {
+    "iri" : "https://w3id.org/tribont#isExecutedBy",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "60",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isExecutedBy",
+      "undefined" : "isExecutedBy"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Relationship between an activity and the equipment that executes it."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "175"
+  }, {
+    "range" : "15",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "iri" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure",
+    "baseIri" : "https://w3id.org/tribont/core",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "isCharacterisedByOutputMeasure"
+    },
+    "domain" : "65",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "177"
+  }, {
+    "iri" : "https://w3id.org/tribont#isExecutedBy",
+    "baseIri" : "https://w3id.org/tribont",
+    "range" : "179",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/tribont",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isExecutedBy",
+      "undefined" : "isExecutedBy"
+    },
+    "domain" : "65",
+    "comment" : {
+      "undefined" : "Relationship between an activity and the equipment that executes it."
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "178"
+  }, {
+    "range" : "15",
+    "domain" : "157",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "15",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "59",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "range" : "19",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "range" : "55",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "range" : "74",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "range" : "103",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "64",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "61",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "107",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "18",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "34",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "106",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "range" : "15",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "59",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "59",
+    "domain" : "157",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "48",
+    "domain" : "157",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "range" : "15",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "59",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "48",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "157",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "48",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "157",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "101",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "48",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "157",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "15",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "59",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "207"
+  } ]
+}

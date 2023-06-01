@@ -1,506 +1,581 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/isCharacterisedBy"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="https://w3id.org/isCharacterisedBy"
-     xmlns:ns="http://creativecommons.org/ns#"
-     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/isCharacterisedBy">
-        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
+     ontologyIRI="https://w3id.org/isCharacterisedBy">
+    <Prefix name="" IRI="https://w3id.org/isCharacterisedBy"/>
+    <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="ns1" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="ns:license"/>
+        <IRI>https://creativecommons.org/licenses/by-nc/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
 Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
-Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
-        <terms:created>2023-05-09</terms:created>
-        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
-        <terms:description xml:lang="en">The goal of this ontology design pattern is to characterise a subject or group of subjects of interest by assigning qualifiable or quantifiable attributes or characteristics.</terms:description>
-        <terms:issued>2023-05-09</terms:issued>
-        <terms:title>isCharacterisedBy ontology design pattern </terms:title>
-        <vann:preferredNamespacePrefix>icb</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/isCharacterisedBy</vann:preferredNamespaceUri>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://creativecommons.org/ns#license -->
-
-    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/created -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/issued -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
-    
-
-
-    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#belongsTo -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#belongsTo">
-        <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isGroupingOf"/>
-        <rdfs:comment>Relationship between a member and the group it belongs to.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-        <rdfs:label>belongsTo</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#characterises -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#characterises">
-        <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-        <rdfs:range rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-        <rdfs:comment>Relationship between a Property and the SubjectOfInterest it characterises.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-        <rdfs:label>characterises</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#hasUnit -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#hasUnit">
-        <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isUnitFor"/>
-        <rdfs:range rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
-        <rdfs:comment>Relationship between a quantifiable property and a unit of measurement</rdfs:comment>
-        <rdfs:comment>https://w3id.org/isCharacterisedBy</rdfs:comment>
-        <rdfs:label>hasUnit</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#isCharacterisedBy -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isCharacterisedBy">
-        <rdfs:domain rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-        <rdfs:comment>Relationship between a SubjectOfInterest and the Property that characterises it.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-        <rdfs:label>isCharacterisedBy</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#isGroupingOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isGroupingOf">
-        <rdfs:comment>Relationship between a group and the members of such group. All the members of a group have the same charabterists or attributes.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-        <rdfs:label>isGroupingOf</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#isUnitFor -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isUnitFor">
-        <rdfs:domain rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
-        <rdfs:comment>Relationship between an unit and the property of which it is a unit of measurement.</rdfs:comment>
-        <rdfs:comment>https://w3id.org/isCharacterisedBy</rdfs:comment>
-        <rdfs:label>isUnitFor</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/dc/terms/identifier -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
-        <rdfs:comment>An unambiguous reference to the resource within a given context.</rdfs:comment>
-        <rdfs:isDefinedBy>http://purl.org/dc/terms</rdfs:isDefinedBy>
-        <rdfs:label>identifier</rdfs:label>
-        
-    </owl:DatatypeProperty>
-    
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:comment>A name given to the resource.</rdfs:comment>
-        <rdfs:isDefinedBy>http://purl.org/dc/terms</rdfs:isDefinedBy>
-        <rdfs:label>title</rdfs:label>
-        <ns1:term_status></ns1:term_status>
-    </owl:DatatypeProperty>
-    	
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#maxValue -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/isCharacterisedBy#maxValue">
-        <rdfs:comment>Maximum permissible value.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-        <rdfs:label>maxValue</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#minValue -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/isCharacterisedBy#minValue">
-        <rdfs:comment>Minimun permissible value.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-        <rdfs:label>minValue</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#value -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/isCharacterisedBy#value">
-        <rdfs:comment>Specific value.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-        <rdfs:label>value</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#Property -->
-
-    <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Property">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#hasUnit"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#maxValue"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#minValue"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#value"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/dc/terms/title"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Property is a qualifiable or quantifiable attribute, or characteristic of something. or somebody</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-        <rdfs:label>Property</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#SubjectOfInterest -->
-
-    <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isGroupingOf"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/dc/terms/title"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A subject of interest is an abstraction of a real world phenomena (thing, person, event, etc).</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-        <rdfs:label>SubjectOfInterest</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#Unit -->
-
-    <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Unit">
-        <rdfs:comment>A reference to the unit of measure of a quantifiable aspect (attribute or characteristic).</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
-        <rdfs:label>Unit</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-            <rdf:Description rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
-        </owl:members>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Rules
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="urn:swrl:var#p">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl:var#soi">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl:var#soc">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#soi"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#soc"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl:var#soc"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#belongsTo"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl:var#soi"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl:var#soc"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#soi"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-</rdf:RDF>
+Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal>2023-05-30</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal xml:lang="en">The goal of this ontology design pattern is to characterise a subject or group of subjects of interest by assigning qualifiable or quantifiable attributes or characteristics.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
+        <Literal>2023-05-30</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal>isCharacterisedBy ontology design pattern </Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>icb</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <Literal xml:lang="tekniker.es&gt;">Stable</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubjectOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#characterises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCharacterisedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGroupingOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUnitFor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:identifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#value"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasUnit"/>
+            <Class IRI="#Unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#characterises"/>
+            <Class IRI="#SubjectOfInterest"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasUnit"/>
+            <Class IRI="#Unit"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#maxValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#minValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#value"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="terms:identifier"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="terms:title"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubjectOfInterest"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isCharacterisedBy"/>
+            <Class IRI="#Property"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubjectOfInterest"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isGroupingOf"/>
+            <Class IRI="#SubjectOfInterest"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubjectOfInterest"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="terms:identifier"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubjectOfInterest"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="terms:title"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Property"/>
+        <Class IRI="#SubjectOfInterest"/>
+        <Class IRI="#Unit"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectProperty IRI="#isGroupingOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#characterises"/>
+        <ObjectProperty IRI="#isCharacterisedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasUnit"/>
+        <ObjectProperty IRI="#isUnitFor"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCharacterisedBy"/>
+        <Class IRI="#SubjectOfInterest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUnitFor"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#characterises"/>
+        <Class IRI="#SubjectOfInterest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasUnit"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Property"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SubjectOfInterest"/>
+                <Variable IRI="urn:swrl:var#soi"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isCharacterisedBy"/>
+                <Variable IRI="urn:swrl:var#soc"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#SubjectOfInterest"/>
+                <Variable IRI="urn:swrl:var#soc"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#belongsTo"/>
+                <Variable IRI="urn:swrl:var#soi"/>
+                <Variable IRI="urn:swrl:var#soc"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isCharacterisedBy"/>
+                <Variable IRI="urn:swrl:var#soi"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>terms:identifier</AbbreviatedIRI>
+        <Literal>An unambiguous reference to the resource within a given context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>terms:identifier</AbbreviatedIRI>
+        <Literal>http://purl.org/dc/terms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>terms:identifier</AbbreviatedIRI>
+        <Literal>identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>terms:title</AbbreviatedIRI>
+        <Literal>A name given to the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>terms:title</AbbreviatedIRI>
+        <Literal>http://purl.org/dc/terms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>terms:title</AbbreviatedIRI>
+        <Literal>title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <AbbreviatedIRI>terms:title</AbbreviatedIRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Property</IRI>
+        <Literal>Property is a qualifiable or quantifiable attribute, or characteristic of something. or somebody</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Property</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Property</IRI>
+        <Literal>Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Property</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SubjectOfInterest</IRI>
+        <Literal>A subject of interest is an abstraction of a real world phenomena (thing, person, event, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#SubjectOfInterest</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SubjectOfInterest</IRI>
+        <Literal>SubjectOfInterest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#SubjectOfInterest</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unit</IRI>
+        <Literal>A reference to the unit of measure of a quantifiable aspect (attribute or characteristic).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Unit</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit</IRI>
+        <Literal>Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Unit</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#belongsTo</IRI>
+        <Literal>Relationship between a member and the group it belongs to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#belongsTo</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#belongsTo</IRI>
+        <Literal>belongsTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#belongsTo</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#characterises</IRI>
+        <Literal>Relationship between a Property and the SubjectOfInterest it characterises.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#characterises</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#characterises</IRI>
+        <Literal>characterises</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#characterises</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasUnit</IRI>
+        <Literal>Relationship between a quantifiable property and a unit of measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasUnit</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasUnit</IRI>
+        <Literal>hasUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasUnit</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCharacterisedBy</IRI>
+        <Literal>Relationship between a SubjectOfInterest and the Property that characterises it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isCharacterisedBy</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isCharacterisedBy</IRI>
+        <Literal>isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#isCharacterisedBy</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isGroupingOf</IRI>
+        <Literal>Relationship between a group and the members of such group. All the members of a group have the same charabterists or attributes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isGroupingOf</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isGroupingOf</IRI>
+        <Literal>isGroupingOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#isGroupingOf</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isUnitFor</IRI>
+        <Literal>Relationship between an unit and the property of which it is a unit of measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isUnitFor</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isUnitFor</IRI>
+        <Literal>isUnitFor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#isUnitFor</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maxValue</IRI>
+        <Literal>Maximum permissible value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#maxValue</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maxValue</IRI>
+        <Literal>maxValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#maxValue</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#minValue</IRI>
+        <Literal>Minimun permissible value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#minValue</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#minValue</IRI>
+        <Literal>minValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#minValue</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#value</IRI>
+        <Literal>Specific value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#value</IRI>
+        <Literal>https://w3id.org/isCharacterisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#value</IRI>
+        <Literal>value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#value</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
 
 
