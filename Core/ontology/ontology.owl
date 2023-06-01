@@ -1291,6 +1291,18 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <NamedIndividual IRI="#ms"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#n103mbar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#n104straindegreeC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#n106m2s"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#n106psi"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#nitrogen"/>
     </Declaration>
     <Declaration>
@@ -1460,18 +1472,6 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Å"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#103mbar"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#104straindegreeC"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#106m2s"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#106psi"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="ns:license"/>
@@ -4192,6 +4192,22 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <NamedIndividual IRI="#ms"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#MechanicalUnit"/>
+        <NamedIndividual IRI="#n103mbar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExpansionCOFUnit"/>
+        <NamedIndividual IRI="#n104straindegreeC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViscosityUnit"/>
+        <NamedIndividual IRI="#n106m2s"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MechanicalUnit"/>
+        <NamedIndividual IRI="#n106psi"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EnvironmentMedium"/>
         <NamedIndividual IRI="#nitrogen"/>
     </ClassAssertion>
@@ -4418,22 +4434,6 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
     <ClassAssertion>
         <Class IRI="#DistanceUnit"/>
         <NamedIndividual IRI="#Å"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MechanicalUnit"/>
-        <NamedIndividual IRI="#103mbar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ExpansionCOFUnit"/>
-        <NamedIndividual IRI="#104straindegreeC"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ViscosityUnit"/>
-        <NamedIndividual IRI="#106m2s"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#MechanicalUnit"/>
-        <NamedIndividual IRI="#106psi"/>
     </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#characterisesOperationCondition"/>
@@ -11660,6 +11660,66 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Literal>Testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#n103mbar</IRI>
+        <Literal>https://w3id.org/tribont/core</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#n103mbar</IRI>
+        <Literal>10-3_mbar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#n103mbar</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#n104straindegreeC</IRI>
+        <Literal>https://w3id.org/tribont/core</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#n104straindegreeC</IRI>
+        <Literal>10-4_strain/°C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#n104straindegreeC</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#n106m2s</IRI>
+        <Literal>https://w3id.org/tribont/core</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#n106m2s</IRI>
+        <Literal>10-6m2/s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#n106m2s</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#n106psi</IRI>
+        <Literal>https://w3id.org/tribont/core</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#n106psi</IRI>
+        <Literal>106psi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#n106psi</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#name</IRI>
         <Literal>Name of somebody or something.</Literal>
@@ -12560,64 +12620,19 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Literal>Testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#103mbar</IRI>
-        <Literal>https://w3id.org/tribont/core</Literal>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#103mbar</IRI>
-        <Literal>10-3_mbar</Literal>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483684"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
-        <IRI>#103mbar</IRI>
-        <Literal>Testing</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#104straindegreeC</IRI>
-        <Literal>https://w3id.org/tribont/core</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#104straindegreeC</IRI>
-        <Literal>10-4_strain/°C</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
-        <IRI>#104straindegreeC</IRI>
-        <Literal>Testing</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#106m2s</IRI>
-        <Literal>https://w3id.org/tribont/core</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#106m2s</IRI>
-        <Literal>10-6m2/s</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
-        <IRI>#106m2s</IRI>
-        <Literal>Testing</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#106psi</IRI>
-        <Literal>https://w3id.org/tribont/core</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#106psi</IRI>
-        <Literal>106psi</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
-        <IRI>#106psi</IRI>
-        <Literal>Testing</Literal>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
@@ -12685,7 +12700,7 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483699"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
@@ -12700,7 +12715,7 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483702"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
@@ -12710,12 +12725,12 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483704"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483705"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
@@ -12730,7 +12745,7 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483708"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
@@ -12740,7 +12755,7 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:cardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483710"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
@@ -12755,7 +12770,7 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:cardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483713"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
@@ -12785,12 +12800,12 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:maxCardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483719"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:maxCardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483720"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
@@ -12800,38 +12815,23 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:maxCardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483722"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:maxCardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483723"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnnotationProperty abbreviatedIRI="owl:cardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483724"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
         <AnonymousIndividual nodeID="_:genid2147483725"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147483726"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:cardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147483727"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147483728"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
 </Ontology>
