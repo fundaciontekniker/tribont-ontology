@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/tribont/core">
-    <Prefix name="" IRI="https://w3id.org/tribont/core#"/>
+    <Prefix name="" IRI="https://w3id.org/tribont/core"/>
     <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="ns1" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -59,6 +59,15 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <Literal xml:lang="tekniker.es&gt;">Testing</Literal>
     </Annotation>
+    <Declaration>
+        <Class IRI="https://w3id.org/isCharacterisedBy#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/isCharacterisedBy#Unit"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#Acceleration"/>
     </Declaration>
@@ -684,6 +693,15 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Class IRI="#i-ph"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="https://w3id.org/isCharacterisedBy#characterises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/isCharacterisedBy#hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#characterisesOperationCondition"/>
     </Declaration>
     <Declaration>
@@ -736,6 +754,9 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:identifier"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#accessUrl"/>
@@ -12599,217 +12620,217 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484330"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484331"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484332"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484333"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484334"/>
+        <AnonymousIndividual nodeID="_:genid2147483652"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484335"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484336"/>
+        <AnonymousIndividual nodeID="_:genid2147483654"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484337"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484338"/>
+        <AnonymousIndividual nodeID="_:genid2147483656"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484339"/>
+        <AnonymousIndividual nodeID="_:genid2147483657"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484340"/>
+        <AnonymousIndividual nodeID="_:genid2147483658"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484341"/>
+        <AnonymousIndividual nodeID="_:genid2147483659"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484342"/>
+        <AnonymousIndividual nodeID="_:genid2147483660"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484343"/>
+        <AnonymousIndividual nodeID="_:genid2147483661"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484344"/>
+        <AnonymousIndividual nodeID="_:genid2147483662"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484345"/>
+        <AnonymousIndividual nodeID="_:genid2147483663"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484346"/>
+        <AnonymousIndividual nodeID="_:genid2147483664"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484347"/>
+        <AnonymousIndividual nodeID="_:genid2147483665"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484348"/>
+        <AnonymousIndividual nodeID="_:genid2147483666"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484349"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484350"/>
+        <AnonymousIndividual nodeID="_:genid2147483668"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484351"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484352"/>
+        <AnonymousIndividual nodeID="_:genid2147483670"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484353"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484354"/>
+        <AnonymousIndividual nodeID="_:genid2147483672"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484355"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484356"/>
+        <AnonymousIndividual nodeID="_:genid2147483674"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:cardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484357"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484358"/>
+        <AnonymousIndividual nodeID="_:genid2147483676"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484359"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484360"/>
+        <AnonymousIndividual nodeID="_:genid2147483678"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484361"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484362"/>
+        <AnonymousIndividual nodeID="_:genid2147483680"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484363"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484364"/>
+        <AnonymousIndividual nodeID="_:genid2147483682"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484365"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:maxCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484366"/>
+        <AnonymousIndividual nodeID="_:genid2147483684"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:maxCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484367"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484368"/>
+        <AnonymousIndividual nodeID="_:genid2147483686"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484369"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484370"/>
+        <AnonymousIndividual nodeID="_:genid2147483688"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:cardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484371"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147484372"/>
+        <AnonymousIndividual nodeID="_:genid2147483690"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
 </Ontology>
