@@ -426,7 +426,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</Literal>
         <Literal>Relationship between a quantifiable property and a unit of measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#hasUnit</IRI>
         <Literal>https://w3id.org/isCharacterisedBy</Literal>
     </AnnotationAssertion>
@@ -486,7 +486,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</Literal>
         <Literal>Relationship between an unit and the property of which it is a unit of measurement.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#isUnitFor</IRI>
         <Literal>https://w3id.org/isCharacterisedBy</Literal>
     </AnnotationAssertion>
@@ -562,17 +562,17 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147483940"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147483941"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147483942"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
 </Ontology>
