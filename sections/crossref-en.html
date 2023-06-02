@@ -4,19 +4,13 @@ This section provides details for each class and property defined by TribOnt ont
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#HardnessMeasurement" title="https://w3id.org/tribont#HardnessMeasurement">A testing activity to measure  one or more  hardnes attributes or characteristics of  a given sample.</a>
-      </li>
-      <li>
-         <a href="#/equipment#EquipmentStandard"
-            title="https://w3id.org/tribont/equipment#EquipmentStandard">
-            <span>equipment standard</span>
-         </a>
-      </li>
-      <li>
          <a href="#Experiment" title="https://w3id.org/tribont#Experiment">Experiment</a>
       </li>
       <li>
          <a href="#ExperimentalTest" title="https://w3id.org/tribont#ExperimentalTest">ExperimentalTest</a>
+      </li>
+      <li>
+         <a href="#HardnessMeasurement" title="https://w3id.org/tribont#HardnessMeasurement">HardnessMeasurement</a>
       </li>
       <li>
          <a href="#MeasuringTest" title="https://w3id.org/tribont#MeasuringTest">MeasuringTest</a>
@@ -57,46 +51,6 @@ This section provides details for each class and property defined by TribOnt ont
          <a href="#WeightMeasurement" title="https://w3id.org/tribont#WeightMeasurement">WeightMeasurement</a>
       </li>
    </ul>
-   <div class="entity" id="HardnessMeasurement">
-      <h3>A testing activity to measure  one or more  hardnes attributes or characteristics of  a given sample.<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/tribont#HardnessMeasurement</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>https://w3id.org/tribont</dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>Testing</dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#MeasuringTest" title="https://w3id.org/tribont#MeasuringTest">MeasuringTest</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="/equipment#EquipmentStandard">
-      <h3>equipment standard<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/tribont/equipment#EquipmentStandard</p>
-      <dl class="description">
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="https://w3id.org/tribont/material#MaterialStandard"
-               target="_blank"
-               title="https://w3id.org/tribont/material#MaterialStandard">material standard</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Experiment">
       <h3>Experiment<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -118,16 +72,9 @@ This section provides details for each class and property defined by TribOnt ont
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://org.semanticweb.owlapi/error#Error63"
-               target="_blank"
-               title="http://org.semanticweb.owlapi/error#Error63">error63</a>
-            <sup class="type-c" title="class">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error64"
-               target="_blank"
-               title="http://org.semanticweb.owlapi/error#Error64">error64</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/isCharacterisedBy#SubjectOfInterest"
+            <a href="https://w3id.org/isCharacterisedBy#SubjectOfInterest"
                target="_blank"
                title="https://w3id.org/isCharacterisedBy#SubjectOfInterest">subject of interest</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
@@ -141,17 +88,13 @@ This section provides details for each class and property defined by TribOnt ont
                title="https://w3id.org/tribont/equipment#EquipmentClass">equipment class</a>
             <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/material#Material"
                target="_blank"
-               title="https://w3id.org/tribont/material#Material">material</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/sample#Sample"
+               title="https://w3id.org/tribont/material#Material">material</a>, <a href="https://w3id.org/tribont/sample#Sample"
                target="_blank"
-               title="https://w3id.org/tribont/sample#Sample">sample</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/sample#SampleBatch"
+               title="https://w3id.org/tribont/sample#Sample">sample</a>, <a href="https://w3id.org/tribont/sample#SampleBatch"
                target="_blank"
-               title="https://w3id.org/tribont/sample#SampleBatch">sample batch</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/sample#SampleSystem"
+               title="https://w3id.org/tribont/sample#SampleBatch">sample batch</a>, <a href="https://w3id.org/tribont/sample#SampleSystem"
                target="_blank"
                title="https://w3id.org/tribont/sample#SampleSystem">sample system</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -186,6 +129,32 @@ This section provides details for each class and property defined by TribOnt ont
          </dd>
       </dl>
    </div>
+   <div class="entity" id="HardnessMeasurement">
+      <h3>HardnessMeasurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/tribont#HardnessMeasurement</p>
+      <div class="comment">
+         <span class="markdown">A testing activity to measure  one or more  hardness attributes or characteristics of  a given sample.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/tribont</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>Testing</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#MeasuringTest" title="https://w3id.org/tribont#MeasuringTest">MeasuringTest</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="MeasuringTest">
       <h3>MeasuringTest<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -212,7 +181,7 @@ This section provides details for each class and property defined by TribOnt ont
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#HardnessMeasurement" title="https://w3id.org/tribont#HardnessMeasurement">A testing activity to measure  one or more  hardnes attributes or characteristics of  a given sample.</a>
+            <a href="#HardnessMeasurement" title="https://w3id.org/tribont#HardnessMeasurement">HardnessMeasurement</a>
             <sup class="type-c" title="class">c</sup>, <a href="#WearScarMeasurement" title="https://w3id.org/tribont#WearScarMeasurement">WearScarMeasurement</a>
             <sup class="type-c" title="class">c</sup>, <a href="#WeightMeasurement" title="https://w3id.org/tribont#WeightMeasurement">WeightMeasurement</a>
             <sup class="type-c" title="class">c</sup>
@@ -239,48 +208,30 @@ This section provides details for each class and property defined by TribOnt ont
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd>
-            <a href="http://org.semanticweb.owlapi/error#Error65"
-               target="_blank"
-               title="http://org.semanticweb.owlapi/error#Error65">error65</a>
-            <sup class="type-c" title="class">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error66"
-               target="_blank"
-               title="http://org.semanticweb.owlapi/error#Error66">error66</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
+         <dd/>
          <dt>is disjoint with</dt>
          <dd>
             <a href="https://w3id.org/isCharacterisedBy#Property"
                target="_blank"
-               title="https://w3id.org/isCharacterisedBy#Property">property</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/isCharacterisedBy#SubjectOfInterest"
+               title="https://w3id.org/isCharacterisedBy#Property">property</a>, <a href="https://w3id.org/isCharacterisedBy#SubjectOfInterest"
                target="_blank"
-               title="https://w3id.org/isCharacterisedBy#SubjectOfInterest">subject of interest</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/isCharacterisedBy#Unit"
+               title="https://w3id.org/isCharacterisedBy#SubjectOfInterest">subject of interest</a>, <a href="https://w3id.org/isCharacterisedBy#Unit"
                target="_blank"
-               title="https://w3id.org/isCharacterisedBy#Unit">unit</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/core#Company"
+               title="https://w3id.org/isCharacterisedBy#Unit">unit</a>, <a href="https://w3id.org/tribont/core#Company"
                target="_blank"
-               title="https://w3id.org/tribont/core#Company">company</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/core#Document"
+               title="https://w3id.org/tribont/core#Company">company</a>, <a href="https://w3id.org/tribont/core#Document"
                target="_blank"
-               title="https://w3id.org/tribont/core#Document">document</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/core#Role"
+               title="https://w3id.org/tribont/core#Document">document</a>, <a href="https://w3id.org/tribont/core#Role"
                target="_blank"
-               title="https://w3id.org/tribont/core#Role">role</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/core#Standard"
+               title="https://w3id.org/tribont/core#Role">role</a>, <a href="https://w3id.org/tribont/core#Standard"
                target="_blank"
-               title="https://w3id.org/tribont/core#Standard">standard</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/equipment#Calibration"
+               title="https://w3id.org/tribont/core#Standard">standard</a>, <a href="https://w3id.org/tribont/equipment#Calibration"
                target="_blank"
-               title="https://w3id.org/tribont/equipment#Calibration">calibration</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/material#MaterialApplication"
+               title="https://w3id.org/tribont/equipment#Calibration">calibration</a>, <a href="https://w3id.org/tribont/material#MaterialApplication"
                target="_blank"
-               title="https://w3id.org/tribont/material#MaterialApplication">material application</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/material#MaterialIdentification"
+               title="https://w3id.org/tribont/material#MaterialApplication">material application</a>, <a href="https://w3id.org/tribont/material#MaterialIdentification"
                target="_blank"
                title="https://w3id.org/tribont/material#MaterialIdentification">material identification</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -305,16 +256,9 @@ This section provides details for each class and property defined by TribOnt ont
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://org.semanticweb.owlapi/error#Error61"
-               target="_blank"
-               title="http://org.semanticweb.owlapi/error#Error61">error61</a>
-            <sup class="type-c" title="class">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error62"
-               target="_blank"
-               title="http://org.semanticweb.owlapi/error#Error62">error62</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/isCharacterisedBy#SubjectOfInterest"
+            <a href="https://w3id.org/isCharacterisedBy#SubjectOfInterest"
                target="_blank"
                title="https://w3id.org/isCharacterisedBy#SubjectOfInterest">subject of interest</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
          <dd>
@@ -334,17 +278,13 @@ This section provides details for each class and property defined by TribOnt ont
                title="https://w3id.org/tribont/equipment#EquipmentClass">equipment class</a>
             <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/material#Material"
                target="_blank"
-               title="https://w3id.org/tribont/material#Material">material</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/sample#Sample"
+               title="https://w3id.org/tribont/material#Material">material</a>, <a href="https://w3id.org/tribont/sample#Sample"
                target="_blank"
-               title="https://w3id.org/tribont/sample#Sample">sample</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/sample#SampleBatch"
+               title="https://w3id.org/tribont/sample#Sample">sample</a>, <a href="https://w3id.org/tribont/sample#SampleBatch"
                target="_blank"
-               title="https://w3id.org/tribont/sample#SampleBatch">sample batch</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/sample#SampleSystem"
+               title="https://w3id.org/tribont/sample#SampleBatch">sample batch</a>, <a href="https://w3id.org/tribont/sample#SampleSystem"
                target="_blank"
                title="https://w3id.org/tribont/sample#SampleSystem">sample system</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -402,7 +342,6 @@ This section provides details for each class and property defined by TribOnt ont
             <a href="https://w3id.org/tribont/core#Document"
                target="_blank"
                title="https://w3id.org/tribont/core#Document">document</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
          <dd>
@@ -415,11 +354,9 @@ This section provides details for each class and property defined by TribOnt ont
          <dd>
             <a href="https://w3id.org/tribont/equipment#CalibrationDocument"
                target="_blank"
-               title="https://w3id.org/tribont/equipment#CalibrationDocument">calibration document</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/equipment#TechnicalDocument"
+               title="https://w3id.org/tribont/equipment#CalibrationDocument">calibration document</a>, <a href="https://w3id.org/tribont/equipment#TechnicalDocument"
                target="_blank"
                title="https://w3id.org/tribont/equipment#TechnicalDocument">technical document</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -447,14 +384,12 @@ This section provides details for each class and property defined by TribOnt ont
             <a href="https://w3id.org/tribont/core#Standard"
                target="_blank"
                title="https://w3id.org/tribont/core#Standard">standard</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
             <a href="https://w3id.org/tribont/material#MaterialStandard"
                target="_blank"
                title="https://w3id.org/tribont/material#MaterialStandard">material standard</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -482,7 +417,6 @@ This section provides details for each class and property defined by TribOnt ont
             <a href="https://w3id.org/isCharacterisedBy#SubjectOfInterest"
                target="_blank"
                title="https://w3id.org/isCharacterisedBy#SubjectOfInterest">subject of interest</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
@@ -496,17 +430,13 @@ This section provides details for each class and property defined by TribOnt ont
                title="https://w3id.org/tribont/equipment#EquipmentClass">equipment class</a>
             <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/material#Material"
                target="_blank"
-               title="https://w3id.org/tribont/material#Material">material</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/sample#Sample"
+               title="https://w3id.org/tribont/material#Material">material</a>, <a href="https://w3id.org/tribont/sample#Sample"
                target="_blank"
-               title="https://w3id.org/tribont/sample#Sample">sample</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/sample#SampleBatch"
+               title="https://w3id.org/tribont/sample#Sample">sample</a>, <a href="https://w3id.org/tribont/sample#SampleBatch"
                target="_blank"
-               title="https://w3id.org/tribont/sample#SampleBatch">sample batch</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/tribont/sample#SampleSystem"
+               title="https://w3id.org/tribont/sample#SampleBatch">sample batch</a>, <a href="https://w3id.org/tribont/sample#SampleSystem"
                target="_blank"
                title="https://w3id.org/tribont/sample#SampleSystem">sample system</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>

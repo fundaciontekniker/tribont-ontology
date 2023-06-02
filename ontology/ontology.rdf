@@ -15,13 +15,13 @@
         <owl:imports rdf:resource="https://w3id.org/tribont/equipment"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/sample"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
-Domain expert:Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
-Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
-        <terms:created>2023-05-09</terms:created>
-        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker) 
+Domain expert:Iban Quintana (Tekniker) 
+Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
+        <terms:created>2023-06-02</terms:created>
+        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)</terms:creator>
         <terms:description xml:lang="en">The goal  is to represent the tribological experiments by relaying on the representation included in the core,,  sample and equipment modules.</terms:description>
-        <terms:issued>2023-05-09</terms:issued>
+        <terms:issued>2023-06-02</terms:issued>
         <terms:title>TribOnt ontology</terms:title>
         <vann:preferredNamespacePrefix>tribont</vann:preferredNamespacePrefix>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
@@ -102,27 +102,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#cardinality -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#maxCardinality -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxCardinality"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
     
 
 
@@ -291,34 +270,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
-    <!-- https://w3id.org/tribont/core#isCharacterisedByOperationCondition -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOperationCondition"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#isCharacterisedByOperationMeasure -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOperationMeasure"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#isCharacterisedByOutputMeasure -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOutputMeasure"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#isMadeOf -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isMadeOf"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -331,75 +282,10 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error61 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error61"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error62 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error62"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error63 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error63"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error64 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error64"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error65 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error65"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error66 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error66"/>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#Property -->
-
-
-    <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#SubjectOfInterest -->
-
-
-    <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
-    
-
-
-    <!-- https://w3id.org/isCharacterisedBy#Unit -->
-
-
-    <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
-    
-
-
     <!-- https://w3id.org/tribont#Experiment -->
 
 
     <owl:Class rdf:about="https://w3id.org/tribont#Experiment">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error63"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error64"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -417,6 +303,18 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/tribont/core#isMadeOf"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/tribont#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/title"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A series of activities to carry out an experimentation procedure and measure its outputs.</rdfs:comment>
@@ -514,8 +412,19 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
 
     <owl:Class rdf:about="https://w3id.org/tribont#Operator">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error65"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error66"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tribont/core#name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Person performing an specific activity or operation.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
         <rdfs:label>Operator</rdfs:label>
@@ -528,8 +437,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
 
     <owl:Class rdf:about="https://w3id.org/tribont#Test">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error61"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error62"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -603,6 +510,18 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
                 <owl:onProperty rdf:resource="https://w3id.org/tribont#isExecutedBy"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/title"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>An activity intended to establish the techncial attributes or characteristics of something,</rdfs:comment>
@@ -795,90 +714,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
-    <!-- https://w3id.org/tribont/core#Company -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#Company"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#Document -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#Document"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#HardnessProperty -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#OperationProperty -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#OperationProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#Role -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#Role"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#Standard -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#Standard"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#TechnicalProperty -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#TribologicalProperty -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#TribologicalProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#WearProperty -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#WearProperty"/>
-    
-
-
-    <!-- https://w3id.org/tribont/core#Weight -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/core#Weight"/>
-    
-
-
-    <!-- https://w3id.org/tribont/equipment#Calibration -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/equipment#Calibration"/>
-    
-
-
-    <!-- https://w3id.org/tribont/equipment#CalibrationDocument -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/equipment#CalibrationDocument"/>
-    
-
-
     <!-- https://w3id.org/tribont/equipment#Equipment -->
 
 
@@ -896,9 +731,9 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     <!-- https://w3id.org/tribont/equipment#EquipmentStandard -->
 
 
-    <owl:Class rdf:about="https://w3id.org/tribont/equipment#EquipmentStandard">
+    <rdf:Description rdf:about="https://w3id.org/tribont/equipment#EquipmentStandard">
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
-    </owl:Class>
+    </rdf:Description>
     
 
 
@@ -906,13 +741,6 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
 
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ExperimentalEquipment"/>
-    
-
-
-    <!-- https://w3id.org/tribont/equipment#HardnessTester -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/equipment#HardnessTester"/>
     
 
 
@@ -930,86 +758,12 @@ Domain expert:Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:co
     
 
 
-    <!-- https://w3id.org/tribont/equipment#TechnicalDocument -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/equipment#TechnicalDocument"/>
-    
-
-
     <!-- https://w3id.org/tribont/equipment#Tribometer -->
 
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#Tribometer"/>
-    
-
-
-    <!-- https://w3id.org/tribont/material#Material -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Material"/>
-    
-
-
-    <!-- https://w3id.org/tribont/material#MaterialApplication -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialApplication"/>
-    
-
-
-    <!-- https://w3id.org/tribont/material#MaterialIdentification -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialIdentification"/>
-    
-
-
-    <!-- https://w3id.org/tribont/material#MaterialStandard -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialStandard"/>
-    
-
-
-    <!-- https://w3id.org/tribont/sample#Sample -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/sample#Sample"/>
-    
-
-
-    <!-- https://w3id.org/tribont/sample#SampleBatch -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleBatch"/>
-    
-
-
-    <!-- https://w3id.org/tribont/sample#SampleSystem -->
-
-
-    <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleSystem"/>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>

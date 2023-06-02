@@ -28,7 +28,7 @@ function loadTOC(){
 				t+='</ul>';
 				j=0;
 			}
-			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).text()+'</a></li>';
 			i++;
 		}
 		if(jQuery(this).is('h3')){
@@ -36,23 +36,23 @@ function loadTOC(){
 				t+='<ul>';
 			}
 			j++;
-			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).text()+'</a></li>';
 		}
+		t = t.replace(' back to ToC','');
 	  });
 	  t+='</ul>';
 	  $("#toc").html(t); 
 }
- $.fn.ignore = function(sel){
-        return this.clone().find(sel||">*").remove().end();};    
-	$(function(){
+    $(function(){
       $("#abstract").load("sections/abstract-en.html"); 
       $("#introduction").load("sections/introduction-en.html"); 
       $("#overview").load("sections/overview-en.html"); 
       $("#description").load("sections/description-en.html"); 
-	  $("#alignments").load("sections/alignments-en.html"); 		  
+	  $("#alignments").load("sections/alignments-en.html"); 
       $("#references").load("sections/references-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
+	
     </script> 
   </head> 
 
@@ -61,7 +61,7 @@ function loadTOC(){
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>TribOnt ontology</h1>
-<h2>Release 2023-05-30</h2>
+<h2>Release 2023-06-02</h2>
 
 
 <dl>
@@ -70,7 +70,7 @@ function loadTOC(){
 <dt>Revision:</dt>
 <dd>1.0</dd>
 <dt>Issued on: </dt>
-<dd>2023-05-30</dd>
+<dd>2023-06-02</dd>
 <dt>Authors:</dt>
 <dd>Patricia Casla (Tekniker)</dd>
 

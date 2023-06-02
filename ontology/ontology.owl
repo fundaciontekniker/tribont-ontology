@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/tribont">
-    <Prefix name="" IRI="https://w3id.org/tribont#"/>
+    <Prefix name="" IRI="https://w3id.org/tribont"/>
     <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="ns1" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -33,7 +33,7 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:created"/>
-        <Literal>2023-05-30</Literal>
+        <Literal>2023-06-02</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:creator"/>
@@ -45,7 +45,7 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:issued"/>
-        <Literal>2023-05-30</Literal>
+        <Literal>2023-06-02</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:title"/>
@@ -632,14 +632,14 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
         <Literal>Testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HardnessMeasurement</IRI>
+        <Literal>A testing activity to measure  one or more  hardness attributes or characteristics of  a given sample.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#HardnessMeasurement</IRI>
         <Literal>https://w3id.org/tribont</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#HardnessMeasurement</IRI>
-        <Literal>A testing activity to measure  one or more  hardnes attributes or characteristics of  a given sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1053,12 +1053,12 @@ Domain expert:Xana Fernandez (Tekniker)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147485177"/>
+        <AnonymousIndividual nodeID="_:genid2147483723"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid2147485178"/>
+        <AnonymousIndividual nodeID="_:genid2147483724"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
 </Ontology>
