@@ -9,14 +9,14 @@
 <https://w3id.org/tribont/material> rdf:type owl:Ontology ;
                                      owl:imports <https://w3id.org/tribont/core> ;
                                      <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
-                                     <http://purl.org/dc/terms/contributor> """Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>
-Domain expert:Iban Quintana (Tekniker)  <mailto:iban.quintana>
-Domain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>"""@tekniker.es> ;
-                                     <http://purl.org/dc/terms/created> "2023-05-09" ;
-                                     <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>"@tekniker.es> ;
+                                     <http://purl.org/dc/terms/contributor> """Izaskun Fernandez (Tekniker) 
+Domain expert:Iban Quintana (Tekniker) 
+Domain expert:Xana Fernandez (Tekniker)"""@tekniker.es> ;
+                                     <http://purl.org/dc/terms/created> "2023-05-30" ;
+                                     <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@tekniker.es> ;
                                      <http://purl.org/dc/terms/description> "The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples."@en ;
-                                     <http://purl.org/dc/terms/issued> "2023-05-09" ;
-                                     <http://purl.org/dc/terms/title> "TribOnt material module" ;
+                                     <http://purl.org/dc/terms/issued> "2023-05-30" ;
+                                     <http://purl.org/dc/terms/title> "Material module" ;
                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "material" ;
                                      owl:versionInfo 1.0 ;
                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
@@ -24,38 +24,6 @@ Domain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>"""@tekniker.es>
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://creativecommons.org/ns#license
-<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/contributor
-<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/creator
-<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/issued
-<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
-
 
 ###  http://www.w3.org/2002/07/owl#cardinality
 owl:cardinality rdf:type owl:AnnotationProperty .
@@ -163,10 +131,6 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  https://w3id.org/tribont/core#longName
-<https://w3id.org/tribont/core#longName> rdf:type owl:DatatypeProperty .
-
-
 ###  https://w3id.org/tribont/core#name
 <https://w3id.org/tribont/core#name> rdf:type owl:DatatypeProperty .
 
@@ -187,89 +151,9 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  https://w3id.org/isCharacterisedBy#Property
-<https://w3id.org/isCharacterisedBy#Property> rdf:type owl:Class .
-
-
-###  https://w3id.org/isCharacterisedBy#SubjectOfInterest
-<https://w3id.org/isCharacterisedBy#SubjectOfInterest> rdf:type owl:Class .
-
-
-###  https://w3id.org/isCharacterisedBy#Unit
-<https://w3id.org/isCharacterisedBy#Unit> rdf:type owl:Class .
-
-
 ###  https://w3id.org/tribont/core#Body
 <https://w3id.org/tribont/core#Body> rdf:type owl:Class ;
                                      owl:disjointWith :Material .
-
-
-###  https://w3id.org/tribont/core#Company
-<https://w3id.org/tribont/core#Company> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#ContentUnit
-<https://w3id.org/tribont/core#ContentUnit> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#Document
-<https://w3id.org/tribont/core#Document> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#ElectricalProperty
-<https://w3id.org/tribont/core#ElectricalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#LiquidPhysicalProperty
-<https://w3id.org/tribont/core#LiquidPhysicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#LiquidThermalProperty
-<https://w3id.org/tribont/core#LiquidThermalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#MechanicalProperty
-<https://w3id.org/tribont/core#MechanicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#OperationProperty
-<https://w3id.org/tribont/core#OperationProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#PercentageUnit
-<https://w3id.org/tribont/core#PercentageUnit> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#PhysicalProperty
-<https://w3id.org/tribont/core#PhysicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#Role
-<https://w3id.org/tribont/core#Role> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#SolidPhysicalProperty
-<https://w3id.org/tribont/core#SolidPhysicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#SolidThermalProperty
-<https://w3id.org/tribont/core#SolidThermalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#Standard
-<https://w3id.org/tribont/core#Standard> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#SystemProperty
-<https://w3id.org/tribont/core#SystemProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#TechnicalProperty
-<https://w3id.org/tribont/core#TechnicalProperty> rdf:type owl:Class .
-
-
-###  https://w3id.org/tribont/core#ThermalProperty
-<https://w3id.org/tribont/core#ThermalProperty> rdf:type owl:Class .
 
 
 ###  https://w3id.org/tribont/material#Ag
@@ -1983,13 +1867,10 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
 [ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:cardinality "1"^^xsd:nonNegativeInteger
@@ -2007,13 +1888,16 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 [ owl:maxCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################

@@ -223,7 +223,7 @@
   } ]
 }, {
   "@id" : "_:genid40",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -241,13 +241,13 @@
   } ]
 }, {
   "@id" : "_:genid43",
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid44",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -259,25 +259,25 @@
   } ]
 }, {
   "@id" : "_:genid46",
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid47",
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid48",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid49",
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -292,7 +292,7 @@
   } ]
 }, {
   "@id" : "_:genid50",
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -575,30 +575,6 @@
     } ]
   } ]
 }, {
-  "@id" : "http://creativecommons.org/ns#license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/contributor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/created",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/issued",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.w3.org/2002/07/owl#cardinality",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -614,15 +590,6 @@
   "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/isCharacterisedBy#Property",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/isCharacterisedBy#SubjectOfInterest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/isCharacterisedBy#Unit",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "https://w3id.org/isCharacterisedBy#hasUnit",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -634,60 +601,6 @@
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/tribont/material#Material"
   } ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#Company",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#ContentUnit",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#Document",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#ElectricalProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#LiquidPhysicalProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#LiquidThermalProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#MechanicalProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#OperationProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#PercentageUnit",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#PhysicalProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#Role",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#SolidPhysicalProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#SolidThermalProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#Standard",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#SystemProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#TechnicalProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#ThermalProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/tribont/core#longName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "https://w3id.org/tribont/core#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
@@ -705,24 +618,24 @@
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@language" : "tekniker.es>",
-    "@value" : "Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>\nDomain expert:Iban Quintana (Tekniker)  <mailto:iban.quintana>\nDomain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>"
+    "@value" : "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"
   } ],
   "http://purl.org/dc/terms/created" : [ {
-    "@value" : "2023-05-09"
+    "@value" : "2023-05-30"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "tekniker.es>",
-    "@value" : "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>"
+    "@value" : "Patricia Casla (Tekniker)"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples."
   } ],
   "http://purl.org/dc/terms/issued" : [ {
-    "@value" : "2023-05-09"
+    "@value" : "2023-05-30"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@value" : "TribOnt material module"
+    "@value" : "Material module"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "material"
