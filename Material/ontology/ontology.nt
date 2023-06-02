@@ -1,12 +1,12 @@
 <https://w3id.org/tribont/material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/tribont/material> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/tribont/core> .
 <https://w3id.org/tribont/material> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/tribont/material> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>\nDomain expert:Iban Quintana (Tekniker)  <mailto:iban.quintana>\nDomain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>"@tekniker.es> .
-<https://w3id.org/tribont/material> <http://purl.org/dc/terms/created> "2023-05-09" .
-<https://w3id.org/tribont/material> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>"@tekniker.es> .
+<https://w3id.org/tribont/material> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"@tekniker.es> .
+<https://w3id.org/tribont/material> <http://purl.org/dc/terms/created> "2023-05-30" .
+<https://w3id.org/tribont/material> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@tekniker.es> .
 <https://w3id.org/tribont/material> <http://purl.org/dc/terms/description> "The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples."@en .
-<https://w3id.org/tribont/material> <http://purl.org/dc/terms/issued> "2023-05-09" .
-<https://w3id.org/tribont/material> <http://purl.org/dc/terms/title> "TribOnt material module" .
+<https://w3id.org/tribont/material> <http://purl.org/dc/terms/issued> "2023-05-30" .
+<https://w3id.org/tribont/material> <http://purl.org/dc/terms/title> "Material module" .
 <https://w3id.org/tribont/material> <http://purl.org/vocab/vann/preferredNamespacePrefix> "material" .
 <https://w3id.org/tribont/material> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/tribont/material> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
@@ -18,30 +18,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://creativecommons.org/ns#license
-<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/contributor
-<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/creator
-<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/issued
-<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2002/07/owl#cardinality
 <http://www.w3.org/2002/07/owl#cardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -144,9 +120,6 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/tribont/core#longName
-<https://w3id.org/tribont/core#longName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
 # https://w3id.org/tribont/core#name
 <https://w3id.org/tribont/core#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
@@ -169,69 +142,9 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/isCharacterisedBy#Property
-<https://w3id.org/isCharacterisedBy#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/isCharacterisedBy#SubjectOfInterest
-<https://w3id.org/isCharacterisedBy#SubjectOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/isCharacterisedBy#Unit
-<https://w3id.org/isCharacterisedBy#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # https://w3id.org/tribont/core#Body
 <https://w3id.org/tribont/core#Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/core#Body> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tribont/material#Material> .
-# 
-# https://w3id.org/tribont/core#Company
-<https://w3id.org/tribont/core#Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#ContentUnit
-<https://w3id.org/tribont/core#ContentUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#Document
-<https://w3id.org/tribont/core#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#ElectricalProperty
-<https://w3id.org/tribont/core#ElectricalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#LiquidPhysicalProperty
-<https://w3id.org/tribont/core#LiquidPhysicalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#LiquidThermalProperty
-<https://w3id.org/tribont/core#LiquidThermalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#MechanicalProperty
-<https://w3id.org/tribont/core#MechanicalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#OperationProperty
-<https://w3id.org/tribont/core#OperationProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#PercentageUnit
-<https://w3id.org/tribont/core#PercentageUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#PhysicalProperty
-<https://w3id.org/tribont/core#PhysicalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#Role
-<https://w3id.org/tribont/core#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#SolidPhysicalProperty
-<https://w3id.org/tribont/core#SolidPhysicalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#SolidThermalProperty
-<https://w3id.org/tribont/core#SolidThermalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#Standard
-<https://w3id.org/tribont/core#Standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#SystemProperty
-<https://w3id.org/tribont/core#SystemProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#TechnicalProperty
-<https://w3id.org/tribont/core#TechnicalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/tribont/core#ThermalProperty
-<https://w3id.org/tribont/core#ThermalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/tribont/material#Ag
 <https://w3id.org/tribont/material#Ag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1799,17 +1712,17 @@ _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#filler> <http://www.w3.org/2000/01/rdf-schema#label> "filler" .
 <https://w3id.org/tribont/material#filler> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-_:genid40 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid41 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid42 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid43 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid44 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid45 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid46 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid47 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid48 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid49 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid50 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # 
 # 
 # #################################################################

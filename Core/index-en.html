@@ -7,9 +7,10 @@
 
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/tribont/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/tribont/core","name":"Core module", "headline":"The goal of this module is to represent the common classes, and object and data properties included in two or more modules of the TribOnt ontology.", "datePublished":"2023-05-30", "version":"1.0", "license":"https://creativecommons.org/licenses/by-nc/4.0/", "author":[{"@type":"Person","name":"Patricia Casla (Tekniker)"}], "contributor":[{"@type":"Person","name":"Izaskun Fernandez(Tekniker)},{"@type":"Person","name":"Iban Quintana"}, {"@type":"Person","name":"Xana Fernandez"}Iban Quintana (Tekniker), Xana Fernandez (Tekniker)"}]}</script>
+<script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
 
-    <script> 
+   <script> 
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -27,7 +28,7 @@ function loadTOC(){
 				t+='</ul>';
 				j=0;
 			}
-			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).text()+'</a></li>';
 			i++;
 		}
 		if(jQuery(this).is('h3')){
@@ -35,13 +36,14 @@ function loadTOC(){
 				t+='<ul>';
 			}
 			j++;
-			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).text()+'</a></li>';
 		}
+		t = t.replace(' back to ToC','');
 	  });
 	  t+='</ul>';
 	  $("#toc").html(t); 
-}    
-	$(function(){
+}
+    $(function(){
       $("#abstract").load("sections/abstract-en.html"); 
       $("#introduction").load("sections/introduction-en.html"); 
       $("#overview").load("sections/overview-en.html"); 
@@ -50,6 +52,7 @@ function loadTOC(){
       $("#references").load("sections/references-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
+	
     </script> 
   </head> 
 
