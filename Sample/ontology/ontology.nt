@@ -2,12 +2,12 @@
 <https://w3id.org/tribont/sample> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/tribont/core> .
 <https://w3id.org/tribont/sample> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/tribont/material> .
 <https://w3id.org/tribont/sample> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/tribont/sample> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>\nDomain expert:Iban Quintana (Tekniker)  <mailto:iban.quintana>\nDomain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>"@tekniker.es> .
-<https://w3id.org/tribont/sample> <http://purl.org/dc/terms/created> "2023-05-09" .
-<https://w3id.org/tribont/sample> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>"@tekniker.es> .
+<https://w3id.org/tribont/sample> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"@tekniker.es> .
+<https://w3id.org/tribont/sample> <http://purl.org/dc/terms/created> "2023-05-30" .
+<https://w3id.org/tribont/sample> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@tekniker.es> .
 <https://w3id.org/tribont/sample> <http://purl.org/dc/terms/description> "The goal of this module is to represent the sample systems , and the undelaying samples, involved in the tribological experiments."@en .
-<https://w3id.org/tribont/sample> <http://purl.org/dc/terms/issued> "2023-05-09" .
-<https://w3id.org/tribont/sample> <http://purl.org/dc/terms/title> "TribOnt sample module" .
+<https://w3id.org/tribont/sample> <http://purl.org/dc/terms/issued> "2023-05-30" .
+<https://w3id.org/tribont/sample> <http://purl.org/dc/terms/title> "Sample module" .
 <https://w3id.org/tribont/sample> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sample" .
 <https://w3id.org/tribont/sample> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/tribont/sample> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
@@ -87,8 +87,8 @@
 # https://w3id.org/tribont/sample#hasCoating
 <https://w3id.org/tribont/sample#hasCoating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/tribont/sample#hasCoating> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/tribont/sample#isCoatingFor> .
+<https://w3id.org/tribont/sample#hasCoating> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a sample  and its coating." .
 <https://w3id.org/tribont/sample#hasCoating> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/sample" .
-<https://w3id.org/tribont/sample#hasCoating> <http://www.w3.org/2000/01/rdf-schema#label> "Relationship between a sample  and its coating." .
 <https://w3id.org/tribont/sample#hasCoating> <http://www.w3.org/2000/01/rdf-schema#label> "hasCoating" .
 <https://w3id.org/tribont/sample#hasCoating> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
@@ -453,7 +453,7 @@ _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/sample#SampleRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/core#Role> .
 <https://w3id.org/tribont/sample#SampleRole> <http://www.w3.org/2000/01/rdf-schema#comment> "The position or purpose that a sample has in a situation." .
 <https://w3id.org/tribont/sample#SampleRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/sample" .
-<https://w3id.org/tribont/sample#SampleRole> <http://www.w3.org/2000/01/rdf-schema#label> "reference" .
+<https://w3id.org/tribont/sample#SampleRole> <http://www.w3.org/2000/01/rdf-schema#label> "SampleRole" .
 <https://w3id.org/tribont/sample#SampleRole> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/sample#SampleSystem
@@ -505,14 +505,14 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/sample#target> <http://www.w3.org/2000/01/rdf-schema#label> "target" .
 <https://w3id.org/tribont/sample#target> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-_:genid39 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid40 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid41 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid43 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid44 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid45 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid46 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # 
 # 
 # #################################################################

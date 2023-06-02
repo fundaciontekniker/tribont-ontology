@@ -1,12 +1,12 @@
 <https://w3id.org/tribont/equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/tribont/equipment> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/tribont/core> .
 <https://w3id.org/tribont/equipment> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>\nDomain expert:Iban Quintana (Tekniker)  <mailto:iban.quintana>\nDomain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>"@tekniker.es> .
+<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"@tekniker.es> .
 <https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/created> "2023-05-09" .
-<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>"@tekniker.es> .
+<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@tekniker.es> .
 <https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/description> "The goal of this module is to represent the equipment hierarchy model involved in the tribological experiments."@en .
 <https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/issued> "2023-05-09" .
-<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/title> "TribOnt equipment module" .
+<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/title> "Equipment module" .
 <https://w3id.org/tribont/equipment> <http://purl.org/vocab/vann/preferredNamespacePrefix> "equipment" .
 <https://w3id.org/tribont/equipment> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/tribont/equipment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
@@ -193,9 +193,6 @@
 # #################################################################
 # 
 # 
-# http://org.semanticweb.owlapi/error#Error60
-<http://org.semanticweb.owlapi/error#Error60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # https://w3id.org/isCharacterisedBy#Property
 <https://w3id.org/isCharacterisedBy#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -275,7 +272,6 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/tribont/equipment#Equipment
 <https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error60> .
 <https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/isCharacterisedBy#SubjectOfInterest> .
 <https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
 _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/tribont/equipment#TechnicalDocument> .
@@ -314,26 +310,31 @@ _:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribon
 _:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsSampleBody> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/tribont/equipment#Calibration> .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/tribont/core#Company> .
 _:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#hasCalibration> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#hasLocation> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#shortNam> .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/tribont/equipment#Calibration> .
+_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#hasCalibration> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
 _:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#measuringPrinciple> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#shortNam> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
 _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#purpose> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#measuringPrinciple> .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
-_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#longName> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#purpose> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#longName> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "An object which is instrumental for reaching a particular purpose through its characteristic functioning process." .
 <https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/equipment" .
 <https://w3id.org/tribont/equipment#Equipment> <http://www.w3.org/2000/01/rdf-schema#label> "Equipment" .
@@ -342,26 +343,26 @@ _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/tribont/equipment#EquipmentClass
 <https://w3id.org/tribont/equipment#EquipmentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/equipment#EquipmentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/isCharacterisedBy#SubjectOfInterest> .
-<https://w3id.org/tribont/equipment#EquipmentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/tribont/equipment#TechnicalDocument> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#hasDocument> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#EquipmentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/equipment#TechnicalDocument> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/tribont/equipment#TechnicalDocument> .
 _:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#hasDocument> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#EquipmentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#Body> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsSampleBody> .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/equipment#TechnicalDocument> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#hasDocument> .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#EquipmentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#measuringPrinciple> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#Body> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsSampleBody> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#EquipmentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
 _:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#purpose> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#measuringPrinciple> .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tribont/equipment#EquipmentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#purpose> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#EquipmentClass> <http://www.w3.org/2000/01/rdf-schema#comment> "An aggrupation of equipments with a set of common atributes of characteristics." .
 <https://w3id.org/tribont/equipment#EquipmentClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/equipment" .
 <https://w3id.org/tribont/equipment#EquipmentClass> <http://www.w3.org/2000/01/rdf-schema#label> "EquipmentClass" .
@@ -394,10 +395,10 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/tribont/equipment#HardnessTester
 <https://w3id.org/tribont/equipment#HardnessTester> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/equipment#HardnessTester> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/equipment#MeasuringEquipment> .
-<https://w3id.org/tribont/equipment#HardnessTester> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#HardnessProperty> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#isCharacterisedByOutputMeasure> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tribont/equipment#HardnessTester> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#HardnessProperty> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#isCharacterisedByOutputMeasure> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#HardnessTester> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment that measures the hardness of a material, " .
 <https://w3id.org/tribont/equipment#HardnessTester> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/equipment" .
 <https://w3id.org/tribont/equipment#HardnessTester> <http://www.w3.org/2000/01/rdf-schema#label> "HardnessTester" .
@@ -447,10 +448,10 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/tribont/equipment#OpticalMicroscope
 <https://w3id.org/tribont/equipment#OpticalMicroscope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/equipment#OpticalMicroscope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/equipment#MeasuringEquipment> .
-<https://w3id.org/tribont/equipment#OpticalMicroscope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
-_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/equipment#OpticalMicroscope> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#isCharacterisedByOperationCondition> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tribont/equipment#OpticalMicroscope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/equipment#OpticalMicroscope> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#isCharacterisedByOperationCondition> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#OpticalMicroscope> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment used to assess surfaces by magnifying images with visible light." .
 <https://w3id.org/tribont/equipment#OpticalMicroscope> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/equipment" .
 <https://w3id.org/tribont/equipment#OpticalMicroscope> <http://www.w3.org/2000/01/rdf-schema#label> "OpticalMicroscope" .
@@ -467,10 +468,10 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/tribont/equipment#Scale
 <https://w3id.org/tribont/equipment#Scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/equipment#Scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/equipment#MeasuringEquipment> .
-<https://w3id.org/tribont/equipment#Scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#Weight> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#isCharacterisedByOutputMeasure> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tribont/equipment#Scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#Weight> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#isCharacterisedByOutputMeasure> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Scale> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment used to measure the weigth of somebody or something." .
 <https://w3id.org/tribont/equipment#Scale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/equipment" .
 <https://w3id.org/tribont/equipment#Scale> <http://www.w3.org/2000/01/rdf-schema#label> "Scale" .
@@ -503,26 +504,26 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/tribont/equipment#Tribometer
 <https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/equipment#ExperimentalEquipment> .
-<https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/tribont/core#Body> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsMovingSampleBody> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
 _:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/tribont/core#Body> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsStaticSampleBody> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsMovingSampleBody> .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#TribologicalProperty> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#isCharacterisedByOutputMeasure> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/tribont/core#Body> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsStaticSampleBody> .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#Body> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsMovingSampleBody> .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#TribologicalProperty> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#isCharacterisedByOutputMeasure> .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
 _:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#Body> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsStaticSampleBody> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsMovingSampleBody> .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#Body> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsStaticSampleBody> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment used to measure tribological properties (e.g. friction coefficients, wear, etc.) by simulating the interaction of between two surfaces in contact under specific operation conditions." .
 <https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/equipment" .
 <https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/2000/01/rdf-schema#label> "Tribometer" .
@@ -531,29 +532,28 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/tribont/equipment#TribometerClass
 <https://w3id.org/tribont/equipment#TribometerClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/equipment#TribometerClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/equipment#ExperimentalEquipmentClass> .
-<https://w3id.org/tribont/equipment#TribometerClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
-_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#Body> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsMovingSampleBody> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#TribometerClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
 _:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#Body> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsStaticSampleBody> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsMovingSampleBody> .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tribont/equipment#TribometerClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#Body> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/equipment#holdsStaticSampleBody> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/tribont/equipment#TribometerClass> <http://www.w3.org/2000/01/rdf-schema#comment> "An aggrupation of tribometers with a set of common atributes of characteristics." .
 <https://w3id.org/tribont/equipment#TribometerClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/equipment" .
 <https://w3id.org/tribont/equipment#TribometerClass> <http://www.w3.org/2000/01/rdf-schema#label> "TribometerClass" .
 <https://w3id.org/tribont/equipment#TribometerClass> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-_:genid34 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid37 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid39 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid42 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid43 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid44 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # 
 # 

@@ -1,4 +1,4 @@
-<h2 id="desc" class="list">TribOnt equipment module: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="desc" class="list">Equipment module: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 
 
@@ -6,6 +6,8 @@
 <p>An Equipment is located in a company (<i>hasLocation</i> object property) and can be characterised by the operation conditions that can be configured to perform a specific activity (<i>OperationProperty</i> class, <i>isCharacterisedByOperationCondition</i> object property), the operation conditions whose evolution can be measured throughout the performed activity (<i>OperationProperty</i> class , <i>isCharacterisedByOperationMeasure</i> object property), and the specific technical properties that can be measured as result of it (<i>TechnicalProperty</i> class, <i>isCharacterisedByOutputMeasure</i> object property). Each equipment specialisation can measure a specific set of technical properties. For example, a tribometer measures tribological properties (<i>TribologicalProperty</i> class) while a hardness tester  measures hardness properties (<i>HardnessProperty</i> class). Furthermore, an equipment can hold different sample bodies (<i>Body</i> class) with specific characteristics (<i>BodyProperty</i> class). Tribometers can hold either moving (<i>holdsMovingSampleBody</i> object property) or static (<i>holdsStaticSample</i> object property) bodies.</p>
 <p>The <i>EquipmentClass</i> class describes an aggregation of equipment with similar characteristics. Each equipment belonging to an equipment class  inherits the entire representation of the <i>EquipmentClass</i> class and can be further particularised.</p>
 <p>Figure 1 includes an UML diagram representing the main classes and object properties linked to the <i>Equipment</i> module.</p>
+<p> icb: represent isCharacterised ontology design pattern.</p>
+
 
 <center>
 <img src="img_TribOnt_Equipment_overview.jpg">

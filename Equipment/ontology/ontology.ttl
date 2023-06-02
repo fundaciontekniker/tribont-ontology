@@ -9,14 +9,14 @@
 <https://w3id.org/tribont/equipment> rdf:type owl:Ontology ;
                                       owl:imports <https://w3id.org/tribont/core> ;
                                       <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
-                                      <http://purl.org/dc/terms/contributor> """Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>
-Domain expert:Iban Quintana (Tekniker)  <mailto:iban.quintana>
-Domain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>"""@tekniker.es> ;
+                                      <http://purl.org/dc/terms/contributor> """Izaskun Fernandez (Tekniker) 
+Domain expert:Iban Quintana (Tekniker) 
+Domain expert:Xana Fernandez (Tekniker)"""@tekniker.es> ;
                                       <http://purl.org/dc/terms/created> "2023-05-09" ;
-                                      <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>"@tekniker.es> ;
+                                      <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@tekniker.es> ;
                                       <http://purl.org/dc/terms/description> "The goal of this module is to represent the equipment hierarchy model involved in the tribological experiments."@en ;
                                       <http://purl.org/dc/terms/issued> "2023-05-09" ;
-                                      <http://purl.org/dc/terms/title> "TribOnt equipment module" ;
+                                      <http://purl.org/dc/terms/title> "Equipment module" ;
                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "equipment" ;
                                       owl:versionInfo 1.0 ;
                                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
@@ -216,10 +216,6 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  http://org.semanticweb.owlapi/error#Error60
-<http://org.semanticweb.owlapi/error#Error60> rdf:type owl:Class .
-
-
 ###  https://w3id.org/isCharacterisedBy#Property
 <https://w3id.org/isCharacterisedBy#Property> rdf:type owl:Class .
 
@@ -315,8 +311,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/equipment#Equipment
 :Equipment rdf:type owl:Class ;
-           rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error60> ,
-                           <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
+           rdfs:subClassOf <https://w3id.org/isCharacterisedBy#SubjectOfInterest> ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty <https://w3id.org/tribont/core#hasDocument> ;
                              owl:someValuesFrom :TechnicalDocument
@@ -348,6 +343,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :holdsSampleBody ;
                              owl:allValuesFrom <https://w3id.org/tribont/core#Body>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <https://w3id.org/tribont/core#hasLocation> ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass <https://w3id.org/tribont/core#Company>
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :hasCalibration ;
@@ -599,7 +599,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -608,7 +608,13 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -618,15 +624,6 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
