@@ -80,6 +80,19 @@
   "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/tribont/core#Company"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/tribont/core#hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/tribont/equipment#Calibration"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
@@ -90,7 +103,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/tribont/core#shortNam"
@@ -99,7 +112,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/tribont/equipment#measuringPrinciple"
@@ -108,7 +121,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/tribont/equipment#purpose"
@@ -117,22 +130,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/tribont/core#longName"
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/tribont/core#hasDocument"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/tribont/equipment#TechnicalDocument"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -150,6 +154,15 @@
 }, {
   "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/tribont/core#hasDocument"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/tribont/equipment#TechnicalDocument"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/tribont/equipment#TechnicalDocument"
   } ],
@@ -157,7 +170,7 @@
     "@id" : "https://w3id.org/tribont/core#hasDocument"
   } ]
 }, {
-  "@id" : "_:genid21",
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/tribont/core#Body"
@@ -166,7 +179,7 @@
     "@id" : "https://w3id.org/tribont/equipment#holdsSampleBody"
   } ]
 }, {
-  "@id" : "_:genid22",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/tribont/equipment#measuringPrinciple"
@@ -175,7 +188,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/tribont/equipment#purpose"
@@ -184,7 +197,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/tribont/core#HardnessProperty"
@@ -193,7 +206,7 @@
     "@id" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure"
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/tribont/equipment#OpticalMicroscope"
@@ -202,7 +215,7 @@
     "@id" : "https://w3id.org/tribont/core#isCharacterisedByOperationCondition"
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/tribont/core#Weight"
@@ -211,7 +224,7 @@
     "@id" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/tribont/equipment#holdsMovingSampleBody"
@@ -220,22 +233,13 @@
     "@id" : "https://w3id.org/tribont/core#Body"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/tribont/equipment#holdsStaticSampleBody"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/tribont/core#Body"
-  } ]
-}, {
-  "@id" : "_:genid29",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/tribont/core#TribologicalProperty"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -254,10 +258,10 @@
   "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/tribont/core#Body"
+    "@id" : "https://w3id.org/tribont/core#TribologicalProperty"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/tribont/equipment#holdsMovingSampleBody"
+    "@id" : "https://w3id.org/tribont/core#isCharacterisedByOutputMeasure"
   } ]
 }, {
   "@id" : "_:genid31",
@@ -266,7 +270,7 @@
     "@id" : "https://w3id.org/tribont/core#Body"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/tribont/equipment#holdsStaticSampleBody"
+    "@id" : "https://w3id.org/tribont/equipment#holdsMovingSampleBody"
   } ]
 }, {
   "@id" : "_:genid32",
@@ -275,7 +279,7 @@
     "@id" : "https://w3id.org/tribont/core#Body"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/tribont/equipment#holdsMovingSampleBody"
+    "@id" : "https://w3id.org/tribont/equipment#holdsStaticSampleBody"
   } ]
 }, {
   "@id" : "_:genid33",
@@ -284,17 +288,20 @@
     "@id" : "https://w3id.org/tribont/core#Body"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/tribont/equipment#holdsStaticSampleBody"
+    "@id" : "https://w3id.org/tribont/equipment#holdsMovingSampleBody"
   } ]
 }, {
   "@id" : "_:genid34",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/tribont/core#Body"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/tribont/equipment#holdsStaticSampleBody"
   } ]
 }, {
   "@id" : "_:genid35",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -306,7 +313,7 @@
   } ]
 }, {
   "@id" : "_:genid37",
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -333,7 +340,7 @@
   } ]
 }, {
   "@id" : "_:genid40",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -351,7 +358,7 @@
   } ]
 }, {
   "@id" : "_:genid43",
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -715,9 +722,6 @@
   "@id" : "http://creativecommons.org/ns#license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error60",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://purl.org/dc/terms/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -824,14 +828,14 @@
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@language" : "tekniker.es>",
-    "@value" : "Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>\nDomain expert:Iban Quintana (Tekniker)  <mailto:iban.quintana>\nDomain expert:Xana Fernandez (Tekniker)  <mailto:xana.fernandez>"
+    "@value" : "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@value" : "2023-05-09"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "tekniker.es>",
-    "@value" : "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>"
+    "@value" : "Patricia Casla (Tekniker)"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -841,7 +845,7 @@
     "@value" : "2023-05-09"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@value" : "TribOnt equipment module"
+    "@value" : "Equipment module"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "equipment"
@@ -931,8 +935,6 @@
     "@value" : "Equipment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://org.semanticweb.owlapi/error#Error60"
-  }, {
     "@id" : "https://w3id.org/isCharacterisedBy#SubjectOfInterest"
   }, {
     "@id" : "_:genid4"
@@ -958,6 +960,8 @@
     "@id" : "_:genid17"
   }, {
     "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "Testing"
@@ -977,8 +981,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/isCharacterisedBy#SubjectOfInterest"
   }, {
-    "@id" : "_:genid19"
-  }, {
     "@id" : "_:genid20"
   }, {
     "@id" : "_:genid21"
@@ -986,6 +988,8 @@
     "@id" : "_:genid22"
   }, {
     "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid24"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "Testing"
@@ -1059,7 +1063,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/tribont/equipment#MeasuringEquipment"
   }, {
-    "@id" : "_:genid24"
+    "@id" : "_:genid25"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "Testing"
@@ -1172,7 +1176,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/tribont/equipment#MeasuringEquipment"
   }, {
-    "@id" : "_:genid25"
+    "@id" : "_:genid26"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "Testing"
@@ -1210,7 +1214,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/tribont/equipment#MeasuringEquipment"
   }, {
-    "@id" : "_:genid26"
+    "@id" : "_:genid27"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "Testing"
@@ -1284,8 +1288,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/tribont/equipment#ExperimentalEquipment"
   }, {
-    "@id" : "_:genid27"
-  }, {
     "@id" : "_:genid28"
   }, {
     "@id" : "_:genid29"
@@ -1293,6 +1295,8 @@
     "@id" : "_:genid30"
   }, {
     "@id" : "_:genid31"
+  }, {
+    "@id" : "_:genid32"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "Testing"
@@ -1312,9 +1316,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/tribont/equipment#ExperimentalEquipmentClass"
   }, {
-    "@id" : "_:genid32"
-  }, {
     "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid34"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "Testing"
