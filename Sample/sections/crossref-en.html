@@ -1,5 +1,5 @@
-<h2 id="crossreference" class="list">Cross-reference for TribOnt sample module classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by TribOnt sample module.
+<h2 id="crossreference" class="list">Cross-reference for Sample module classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Sample module.
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
@@ -32,13 +32,13 @@ This section provides details for each class and property defined by TribOnt sam
             title="https://w3id.org/tribont/sample#LubricationSample">LubricationSample</a>
       </li>
       <li>
-         <a href="#SampleRole" title="https://w3id.org/tribont/sample#SampleRole">reference</a>
-      </li>
-      <li>
          <a href="#Sample" title="https://w3id.org/tribont/sample#Sample">Sample</a>
       </li>
       <li>
          <a href="#SampleBatch" title="https://w3id.org/tribont/sample#SampleBatch">SampleBatch</a>
+      </li>
+      <li>
+         <a href="#SampleRole" title="https://w3id.org/tribont/sample#SampleRole">SampleRole</a>
       </li>
       <li>
          <a href="#SampleSystem" title="https://w3id.org/tribont/sample#SampleSystem">SampleSystem</a>
@@ -67,7 +67,7 @@ This section provides details for each class and property defined by TribOnt sam
          <dd>
             <a href="#Sample" title="https://w3id.org/tribont/sample#Sample">Sample</a>
             <sup class="type-c" title="class">c</sup> 
-            <span class="logic">and</span> (<a href="#hasCoating" title="https://w3id.org/tribont/sample#hasCoating">Relationship between a sample  and its coating.</a>
+            <span class="logic">and</span> (<a href="#hasCoating" title="https://w3id.org/tribont/sample#hasCoating">hasCoating</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
             <a href="#Coating" title="https://w3id.org/tribont/sample#Coating">Coating</a>
@@ -232,7 +232,7 @@ This section provides details for each class and property defined by TribOnt sam
       <dl class="description">
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#SampleRole" title="https://w3id.org/tribont/sample#SampleRole">reference</a>
+            <a href="#SampleRole" title="https://w3id.org/tribont/sample#SampleRole">SampleRole</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -313,45 +313,6 @@ This section provides details for each class and property defined by TribOnt sam
          <dt>has super-classes</dt>
          <dd>
             <a href="#Sample" title="https://w3id.org/tribont/sample#Sample">Sample</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="SampleRole">
-      <h3>reference<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/tribont/sample#SampleRole</p>
-      <div class="comment">
-         <span class="markdown">The position or purpose that a sample has in a situation.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>https://w3id.org/tribont/sample</dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>Testing</dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="https://w3id.org/tribont/core#Role"
-               target="_blank"
-               title="https://w3id.org/tribont/core#Role">role</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#reference" title="https://w3id.org/tribont/sample#reference">reference</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#target" title="https://w3id.org/tribont/sample#target">target</a>
-            <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#https://w3id.org/tribont/material#ElementRole" title="https://w3id.org/tribont/material#ElementRole">element role</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -445,6 +406,45 @@ This section provides details for each class and property defined by TribOnt sam
          </dd>
       </dl>
    </div>
+   <div class="entity" id="SampleRole">
+      <h3>SampleRole<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/tribont/sample#SampleRole</p>
+      <div class="comment">
+         <span class="markdown">The position or purpose that a sample has in a situation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/tribont/sample</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>Testing</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="https://w3id.org/tribont/core#Role"
+               target="_blank"
+               title="https://w3id.org/tribont/core#Role">role</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#reference" title="https://w3id.org/tribont/sample#reference">reference</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#target" title="https://w3id.org/tribont/sample#target">target</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://w3id.org/tribont/material#ElementRole" title="https://w3id.org/tribont/material#ElementRole">element role</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="SampleSystem">
       <h3>SampleSystem<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -499,6 +499,9 @@ This section provides details for each class and property defined by TribOnt sam
          <a href="#hasBody" title="https://w3id.org/tribont/sample#hasBody">hasBody</a>
       </li>
       <li>
+         <a href="#hasCoating" title="https://w3id.org/tribont/sample#hasCoating">hasCoating</a>
+      </li>
+      <li>
          <a href="#hasCoreMaterial" title="https://w3id.org/tribont/sample#hasCoreMaterial">hasCoreMaterial</a>
       </li>
       <li>
@@ -539,9 +542,6 @@ This section provides details for each class and property defined by TribOnt sam
          <a href="#isStaticSampleFor"
             title="https://w3id.org/tribont/sample#isStaticSampleFor">isStaticSampleFor</a>
       </li>
-      <li>
-         <a href="#hasCoating" title="https://w3id.org/tribont/sample#hasCoating">Relationship between a sample  and its coating.</a>
-      </li>
    </ul>
    <div class="entity" id="hasBody">
       <h3>hasBody<sup class="type-op" title="object property">op</sup>
@@ -561,6 +561,34 @@ This section provides details for each class and property defined by TribOnt sam
          <dt>Term status</dt>
          <dd>Testing</dd>
       </dl>
+   </div>
+   <div class="entity" id="hasCoating">
+      <h3>hasCoating<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/tribont/sample#hasCoating</p>
+      <div class="comment">
+         <span class="markdown">Relationship between a sample  and its coating.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/tribont/sample</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>Testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCoatingFor" title="https://w3id.org/tribont/sample#isCoatingFor">isCoatingFor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="hasCoreMaterial">
       <h3>hasCoreMaterial<sup class="type-op" title="object property">op</sup>
@@ -747,7 +775,7 @@ This section provides details for each class and property defined by TribOnt sam
          <dl>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasCoating" title="https://w3id.org/tribont/sample#hasCoating">Relationship between a sample  and its coating.</a>
+               <a href="#hasCoating" title="https://w3id.org/tribont/sample#hasCoating">hasCoating</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -894,31 +922,6 @@ This section provides details for each class and property defined by TribOnt sam
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasCoating">
-      <h3>Relationship between a sample  and its coating.<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/tribont/sample#hasCoating</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>https://w3id.org/tribont/sample</dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>Testing</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isCoatingFor" title="https://w3id.org/tribont/sample#isCoatingFor">isCoatingFor</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
@@ -998,7 +1001,7 @@ This section provides details for each class and property defined by TribOnt sam
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#SampleRole" title="https://w3id.org/tribont/sample#SampleRole">reference</a>
+            <a href="#SampleRole" title="https://w3id.org/tribont/sample#SampleRole">SampleRole</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1024,7 +1027,7 @@ This section provides details for each class and property defined by TribOnt sam
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#SampleRole" title="https://w3id.org/tribont/sample#SampleRole">reference</a>
+            <a href="#SampleRole" title="https://w3id.org/tribont/sample#SampleRole">SampleRole</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
