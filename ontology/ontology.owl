@@ -7,6 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://gbol.life/ontology/bibo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
@@ -17,6 +18,8 @@
         <owl:imports rdf:resource="https://w3id.org/tribont/equipment"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/sample"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <bibo:status>published</bibo:status>
+        <terms:bibliographicCitation>Work in progress</terms:bibliographicCitation>
         <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker) 
 Domain expert:Iban Quintana (Tekniker) 
 Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
@@ -26,8 +29,8 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <terms:issued>2023-06-02</terms:issued>
         <terms:title>TribOnt ontology</terms:title>
         <vann:preferredNamespacePrefix>tribont</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/tribont</vann:preferredNamespaceUri>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <ns1:term_status xml:lang="tekniker.es&gt;">Testing</ns1:term_status>
     </owl:Ontology>
     
 
@@ -46,6 +49,18 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- http://creativecommons.org/ns#license -->
 
     <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://gbol.life/ontology/bibo#status -->
+
+    <owl:AnnotationProperty rdf:about="http://gbol.life/ontology/bibo#status"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
@@ -519,6 +534,10 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <owl:Class rdf:about="https://w3id.org/tribont#TestOutputMeasurementFile">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont#TestOutputDocument"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
+        <rdfs:label>TestOutputMeasurementFile</rdfs:label>
+        <ns1:term_status>Document including the output measures (i.e., technical properties) from a  test.</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
@@ -527,6 +546,10 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <owl:Class rdf:about="https://w3id.org/tribont#TestOutputReport">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont#TestOutputDocument"/>
+        <rdfs:isDefinedBy>https://w3id.org/tribont</rdfs:isDefinedBy>
+        <rdfs:label>TestOutputReport</rdfs:label>
+        <ns1:term_status>Document report ing the results of a test.  technical properties) from a  test.</ns1:term_status>
+        <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
 
