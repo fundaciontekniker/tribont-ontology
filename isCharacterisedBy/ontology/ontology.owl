@@ -24,8 +24,10 @@ Xana Fernandez (Tekniker)</terms:contributor>
         <terms:title>isCharacterisedBy ontology design pattern </terms:title>
         <vann:preferredNamespacePrefix>icb</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/isCharacterisedBy</vann:preferredNamespaceUri>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <ns1:term_status xml:lang="en">Stable</ns1:term_status>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>				
+		<bibo:status>published</bibo:status>
+        <terms:bibliographicCitation>Work in progress</terms:bibliographicCitation>
+        <vann:preferredNamespaceUri>https://w3id.org/isCharacterisedBy</vann:preferredNamespaceUri>
     </owl:Ontology>
     
 

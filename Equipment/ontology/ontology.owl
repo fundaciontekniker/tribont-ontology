@@ -25,7 +25,9 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <terms:title>Equipment module</terms:title>
         <vann:preferredNamespacePrefix>equipment</vann:preferredNamespacePrefix>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <ns1:term_status xml:lang="en">Testing</ns1:term_status>
+		<bibo:status>published</bibo:status>
+        <terms:bibliographicCitation>Work in progress</terms:bibliographicCitation>
+        <vann:preferredNamespaceUri>https://w3id.org/tribont/equipment</vann:preferredNamespaceUri>
     </owl:Ontology>
     
 
