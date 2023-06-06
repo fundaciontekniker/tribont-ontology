@@ -223,31 +223,31 @@
   } ]
 }, {
   "@id" : "_:genid40",
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid41",
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid42",
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid43",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid44",
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -277,7 +277,7 @@
   } ]
 }, {
   "@id" : "_:genid49",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -616,15 +616,21 @@
   "http://creativecommons.org/ns#license" : [ {
     "@id" : "https://creativecommons.org/licenses/by-nc/4.0/"
   } ],
+  "http://gbol.life/ontology/bibo#status" : [ {
+    "@value" : "published"
+  } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Work in progress"
+  } ],
   "http://purl.org/dc/terms/contributor" : [ {
-    "@language" : "tekniker.es>",
+    "@language" : "en",
     "@value" : "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"
   } ],
   "http://purl.org/dc/terms/created" : [ {
-    "@value" : "2023-05-30"
+    "@value" : "2023-06-02"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@language" : "tekniker.es>",
+    "@language" : "en",
     "@value" : "Patricia Casla (Tekniker)"
   } ],
   "http://purl.org/dc/terms/description" : [ {
@@ -632,7 +638,7 @@
     "@value" : "The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples."
   } ],
   "http://purl.org/dc/terms/issued" : [ {
-    "@value" : "2023-05-30"
+    "@value" : "2023-06-02"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Material module"
@@ -640,16 +646,15 @@
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "material"
   } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/tribont/material"
+  } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "https://w3id.org/tribont/core"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1.0"
-  } ],
-  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@language" : "tekniker.es>",
-    "@value" : "Testing"
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/material#AISI_52100",
@@ -3871,6 +3876,9 @@
 }, {
   "@id" : "https://w3id.org/tribont/material#hasElementRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between an element and its role,"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/material"
   } ],
@@ -3884,8 +3892,6 @@
     "@id" : "https://w3id.org/tribont/material#isElementRoleFor"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "Relationship between an element and its role,"
-  }, {
     "@value" : "Testing"
   } ]
 }, {
@@ -3909,6 +3915,9 @@
 }, {
   "@id" : "https://w3id.org/tribont/material#hasSupplier",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between a company and what it supplies.."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/material"
   } ],
@@ -3919,8 +3928,6 @@
     "@id" : "https://w3id.org/tribont/material#isSuppliedBy"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "Relationship between a company and what it supplies.."
-  }, {
     "@value" : "Testing"
   } ]
 }, {
@@ -3944,6 +3951,9 @@
 }, {
   "@id" : "https://w3id.org/tribont/material#isElementRoleFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between a role and the  element to which it applies."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/tribont/material#ElementRole"
   } ],
@@ -3954,13 +3964,14 @@
     "@value" : "isElementRoleFor"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "Relationship between a role and the  element to which it applies."
-  }, {
     "@value" : "Testing"
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/material#isNamingFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between a name and what it identifies.."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/material"
   } ],
@@ -3968,8 +3979,6 @@
     "@value" : "isNamingFor"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "Relationship between a name and what it identifies.."
-  }, {
     "@value" : "Testing"
   } ]
 }, {
@@ -3990,6 +3999,9 @@
 }, {
   "@id" : "https://w3id.org/tribont/material#isTypicalUseFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between an application and what it is usually applied to,"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/material"
   } ],
@@ -3997,8 +4009,6 @@
     "@value" : "isTypicalUseFor"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "Relationship between an application and what it is usually applied to,"
-  }, {
     "@value" : "Testing"
   } ]
 }, {

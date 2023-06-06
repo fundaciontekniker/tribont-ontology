@@ -7,20 +7,21 @@
 @base <https://w3id.org/tribont/sample#> .
 
 <https://w3id.org/tribont/sample> rdf:type owl:Ontology ;
-                                   owl:imports <https://w3id.org/tribont/core> ,
-                                               <https://w3id.org/tribont/material> ;
+                                   owl:imports <https://w3id.org/tribont/material> ;
                                    <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                   <http://gbol.life/ontology/bibo#status> "published" ;
+                                   <http://purl.org/dc/terms/bibliographicCitation> "Work in progress" ;
                                    <http://purl.org/dc/terms/contributor> """Izaskun Fernandez (Tekniker) 
 Domain expert:Iban Quintana (Tekniker) 
-Domain expert:Xana Fernandez (Tekniker)"""@tekniker.es> ;
+Domain expert:Xana Fernandez (Tekniker)"""@en ;
                                    <http://purl.org/dc/terms/created> "2023-05-30" ;
-                                   <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@tekniker.es> ;
+                                   <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@en ;
                                    <http://purl.org/dc/terms/description> "The goal of this module is to represent the sample systems , and the undelaying samples, involved in the tribological experiments."@en ;
                                    <http://purl.org/dc/terms/issued> "2023-05-30" ;
                                    <http://purl.org/dc/terms/title> "Sample module" ;
                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "sample" ;
-                                   owl:versionInfo 1.0 ;
-                                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
+                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tribont/sample" ;
+                                   owl:versionInfo 1.0 .
 
 #################################################################
 #    Annotation properties
@@ -532,10 +533,10 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -547,13 +548,13 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 [ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################

@@ -7,21 +7,22 @@
 @base <https://w3id.org/tribont#> .
 
 <https://w3id.org/tribont> rdf:type owl:Ontology ;
-                            owl:imports <https://w3id.org/tribont/core> ,
-                                        <https://w3id.org/tribont/equipment> ,
+                            owl:imports <https://w3id.org/tribont/equipment> ,
                                         <https://w3id.org/tribont/sample> ;
                             <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                            <http://gbol.life/ontology/bibo#status> "published" ;
+                            <http://purl.org/dc/terms/bibliographicCitation> "Work in progress" ;
                             <http://purl.org/dc/terms/contributor> """Izaskun Fernandez (Tekniker) 
 Domain expert:Iban Quintana (Tekniker) 
-Domain expert:Xana Fernandez (Tekniker)"""@tekniker.es> ;
+Domain expert:Xana Fernandez (Tekniker)"""@en ;
                             <http://purl.org/dc/terms/created> "2023-06-02" ;
-                            <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@tekniker.es> ;
+                            <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@en ;
                             <http://purl.org/dc/terms/description> "The goal  is to represent the tribological experiments by relaying on the representation included in the core,,  sample and equipment modules."@en ;
                             <http://purl.org/dc/terms/issued> "2023-06-02" ;
                             <http://purl.org/dc/terms/title> "TribOnt ontology" ;
                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "tribont" ;
-                            owl:versionInfo 1.0 ;
-                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
+                            <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tribont" ;
+                            owl:versionInfo 1.0 .
 
 #################################################################
 #    Annotation properties
@@ -29,6 +30,14 @@ Domain expert:Xana Fernandez (Tekniker)"""@tekniker.es> ;
 
 ###  http://creativecommons.org/ns#license
 <http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://gbol.life/ontology/bibo#status
+<http://gbol.life/ontology/bibo#status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/contributor
@@ -232,9 +241,9 @@ Domain expert:Xana Fernandez (Tekniker)"""@tekniker.es> ;
                                        owl:onProperty <https://w3id.org/tribont/core#isCharacterisedByOutputMeasure> ;
                                        owl:allValuesFrom <https://w3id.org/tribont/core#HardnessProperty>
                                      ] ;
+                     rdfs:comment "A testing activity to measure  one or more  hardness attributes or characteristics of  a given sample." ;
                      rdfs:isDefinedBy "https://w3id.org/tribont" ;
-                     rdfs:label "A testing activity to measure  one or more  hardnes attributes or characteristics of  a given sample." ,
-                                "HardnessMeasurement" ;
+                     rdfs:label "HardnessMeasurement" ;
                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
@@ -354,12 +363,20 @@ Domain expert:Xana Fernandez (Tekniker)"""@tekniker.es> ;
 
 ###  https://w3id.org/tribont#TestOutputMeasurementFile
 :TestOutputMeasurementFile rdf:type owl:Class ;
-                           rdfs:subClassOf :TestOutputDocument .
+                           rdfs:subClassOf :TestOutputDocument ;
+                           rdfs:comment "Document including the output measures (i.e., technical properties) from a  test." ;
+                           rdfs:isDefinedBy "https://w3id.org/tribont" ;
+                           rdfs:label "TestOutputMeasurementFile" ;
+                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont#TestOutputReport
 :TestOutputReport rdf:type owl:Class ;
-                  rdfs:subClassOf :TestOutputDocument .
+                  rdfs:subClassOf :TestOutputDocument ;
+                  rdfs:comment "Document report ing the results of a test.  technical properties) from a  test." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont" ;
+                  rdfs:label "TestOutputReport" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont#TestStandard
@@ -491,6 +508,26 @@ Domain expert:Xana Fernandez (Tekniker)"""@tekniker.es> ;
 
 ###  https://w3id.org/tribont/equipment#Tribometer
 <https://w3id.org/tribont/equipment#Tribometer> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/tribont/core#ASTMD5706
+<https://w3id.org/tribont/core#ASTMD5706> rdf:type :TestStandard .
+
+
+###  https://w3id.org/tribont/core#ASTMD5707
+<https://w3id.org/tribont/core#ASTMD5707> rdf:type :TestStandard .
+
+
+###  https://w3id.org/tribont/core#ASTMD6425
+<https://w3id.org/tribont/core#ASTMD6425> rdf:type :TestStandard .
+
+
+###  https://w3id.org/tribont/core#ASTMD7421
+<https://w3id.org/tribont/core#ASTMD7421> rdf:type :TestStandard .
 
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger

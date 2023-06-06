@@ -6,7 +6,7 @@
     <uri id="User Entered Import Resolution" name="https://w3id.org/isCharacterisedBy" uri="file:/C:/Workspace/tribont-ontology/isCharacterisedBy/ontology/ontology.rdf"/>
     <uri id="User Entered Import Resolution" name="https://w3id.org/tribont/core" uri="file:/C:/Workspace/tribont-ontology/Core/ontology/ontology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1685536815672" name="duplicate:https://w3id.org/tribont" uri="ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1685536815672" name="duplicate:https://w3id.org/tribont" uri="ontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1686044907985" name="duplicate:https://w3id.org/tribont" uri="ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1686044907985" name="duplicate:https://w3id.org/tribont" uri="ontology.rdf"/>
     </group>
 </catalog>

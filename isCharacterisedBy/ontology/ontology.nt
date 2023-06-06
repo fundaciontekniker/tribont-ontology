@@ -1,15 +1,16 @@
 <https://w3id.org/isCharacterisedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/isCharacterisedBy> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/isCharacterisedBy> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>\nIban Quintana (Tekniker)  <mailto:iban.quintana>\nXana Fernandez (Tekniker)  <mailto:xana.fernandez>"@tekniker.es> .
-<https://w3id.org/isCharacterisedBy> <http://purl.org/dc/terms/created> "2023-05-09" .
-<https://w3id.org/isCharacterisedBy> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>"@tekniker.es> .
+<https://w3id.org/isCharacterisedBy> <http://gbol.life/ontology/bibo#status> "published" .
+<https://w3id.org/isCharacterisedBy> <http://purl.org/dc/terms/bibliographicCitation> "Work in progress" .
+<https://w3id.org/isCharacterisedBy> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker) \nIban Quintana (Tekniker) \nXana Fernandez (Tekniker)"@en .
+<https://w3id.org/isCharacterisedBy> <http://purl.org/dc/terms/created> "2023-05-30" .
+<https://w3id.org/isCharacterisedBy> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@en .
 <https://w3id.org/isCharacterisedBy> <http://purl.org/dc/terms/description> "The goal of this ontology design pattern is to characterise a subject or group of subjects of interest by assigning qualifiable or quantifiable attributes or characteristics."@en .
-<https://w3id.org/isCharacterisedBy> <http://purl.org/dc/terms/issued> "2023-05-09" .
+<https://w3id.org/isCharacterisedBy> <http://purl.org/dc/terms/issued> "2023-05-30" .
 <https://w3id.org/isCharacterisedBy> <http://purl.org/dc/terms/title> "isCharacterisedBy ontology design pattern " .
 <https://w3id.org/isCharacterisedBy> <http://purl.org/vocab/vann/preferredNamespacePrefix> "icb" .
 <https://w3id.org/isCharacterisedBy> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/isCharacterisedBy" .
 <https://w3id.org/isCharacterisedBy> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<https://w3id.org/isCharacterisedBy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Stable"@tekniker.es> .
 # 
 # 
 # #################################################################
@@ -21,6 +22,12 @@
 # 
 # http://creativecommons.org/ns#license
 <http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://gbol.life/ontology/bibo#status
+<http://gbol.life/ontology/bibo#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -83,7 +90,7 @@
 <https://w3id.org/isCharacterisedBy#hasUnit> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/isCharacterisedBy#isUnitFor> .
 <https://w3id.org/isCharacterisedBy#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/isCharacterisedBy#Unit> .
 <https://w3id.org/isCharacterisedBy#hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a quantifiable property and a unit of measurement" .
-<https://w3id.org/isCharacterisedBy#hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "https://w3id.org/isCharacterisedBy" .
+<https://w3id.org/isCharacterisedBy#hasUnit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/isCharacterisedBy" .
 <https://w3id.org/isCharacterisedBy#hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "hasUnit" .
 <https://w3id.org/isCharacterisedBy#hasUnit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
@@ -106,7 +113,7 @@
 <https://w3id.org/isCharacterisedBy#isUnitFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/isCharacterisedBy#isUnitFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/isCharacterisedBy#Unit> .
 <https://w3id.org/isCharacterisedBy#isUnitFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between an unit and the property of which it is a unit of measurement." .
-<https://w3id.org/isCharacterisedBy#isUnitFor> <http://www.w3.org/2000/01/rdf-schema#comment> "https://w3id.org/isCharacterisedBy" .
+<https://w3id.org/isCharacterisedBy#isUnitFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/isCharacterisedBy" .
 <https://w3id.org/isCharacterisedBy#isUnitFor> <http://www.w3.org/2000/01/rdf-schema#label> "isUnitFor" .
 <https://w3id.org/isCharacterisedBy#isUnitFor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
@@ -229,9 +236,6 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/isCharacterisedBy#Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit" .
 <https://w3id.org/isCharacterisedBy#Unit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # 
 # 
 # #################################################################
@@ -255,17 +259,17 @@ _:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.
 # #################################################################
 # 
 # 
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid16 <http://www.w3.org/2002/07/owl#members> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#Unit> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#SubjectOfInterest> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#Property> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid13 <http://www.w3.org/2002/07/owl#members> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#Unit> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#SubjectOfInterest> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#Property> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # 
 # 
@@ -279,46 +283,46 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl:var#soi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl:var#soc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
-_:genid20 <http://www.w3.org/2003/11/swrl#body> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
-_:genid22 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#soc> .
-_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#soi> .
-_:genid22 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/isCharacterisedBy#belongsTo> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
-_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#soc> .
-_:genid24 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/isCharacterisedBy#SubjectOfInterest> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
-_:genid26 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
-_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#soc> .
-_:genid26 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
-_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#soi> .
-_:genid28 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/isCharacterisedBy#SubjectOfInterest> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
-_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
-_:genid30 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/isCharacterisedBy#Property> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid20 <http://www.w3.org/2003/11/swrl#head> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
-_:genid32 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
-_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#soi> .
-_:genid32 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid17 <http://www.w3.org/2003/11/swrl#body> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#soc> .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#soi> .
+_:genid19 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/isCharacterisedBy#belongsTo> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#soc> .
+_:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/isCharacterisedBy#SubjectOfInterest> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#soc> .
+_:genid23 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#soi> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/isCharacterisedBy#SubjectOfInterest> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid27 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/isCharacterisedBy#Property> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/2003/11/swrl#head> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#soi> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

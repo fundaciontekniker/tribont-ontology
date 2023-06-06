@@ -8,18 +8,19 @@
 
 <https://w3id.org/isCharacterisedBy> rdf:type owl:Ontology ;
                                       <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
-                                      <http://purl.org/dc/terms/contributor> """Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>
-Iban Quintana (Tekniker)  <mailto:iban.quintana>
-Xana Fernandez (Tekniker)  <mailto:xana.fernandez>"""@tekniker.es> ;
-                                      <http://purl.org/dc/terms/created> "2023-05-09" ;
-                                      <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>"@tekniker.es> ;
+                                      <http://gbol.life/ontology/bibo#status> "published" ;
+                                      <http://purl.org/dc/terms/bibliographicCitation> "Work in progress" ;
+                                      <http://purl.org/dc/terms/contributor> """Izaskun Fernandez (Tekniker) 
+Iban Quintana (Tekniker) 
+Xana Fernandez (Tekniker)"""@en ;
+                                      <http://purl.org/dc/terms/created> "2023-05-30" ;
+                                      <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@en ;
                                       <http://purl.org/dc/terms/description> "The goal of this ontology design pattern is to characterise a subject or group of subjects of interest by assigning qualifiable or quantifiable attributes or characteristics."@en ;
-                                      <http://purl.org/dc/terms/issued> "2023-05-09" ;
+                                      <http://purl.org/dc/terms/issued> "2023-05-30" ;
                                       <http://purl.org/dc/terms/title> "isCharacterisedBy ontology design pattern " ;
                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "icb" ;
                                       <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/isCharacterisedBy" ;
-                                      owl:versionInfo 1.0 ;
-                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Stable"@tekniker.es> .
+                                      owl:versionInfo 1.0 .
 
 #################################################################
 #    Annotation properties
@@ -27,6 +28,14 @@ Xana Fernandez (Tekniker)  <mailto:xana.fernandez>"""@tekniker.es> ;
 
 ###  http://creativecommons.org/ns#license
 <http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://gbol.life/ontology/bibo#status
+<http://gbol.life/ontology/bibo#status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/contributor
@@ -96,8 +105,8 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 :hasUnit rdf:type owl:ObjectProperty ;
          owl:inverseOf :isUnitFor ;
          rdfs:range :Unit ;
-         rdfs:comment "Relationship between a quantifiable property and a unit of measurement" ,
-                      "https://w3id.org/isCharacterisedBy" ;
+         rdfs:comment "Relationship between a quantifiable property and a unit of measurement" ;
+         rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
          rdfs:label "hasUnit" ;
          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
@@ -122,8 +131,8 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/isCharacterisedBy#isUnitFor
 :isUnitFor rdf:type owl:ObjectProperty ;
            rdfs:domain :Unit ;
-           rdfs:comment "Relationship between an unit and the property of which it is a unit of measurement." ,
-                        "https://w3id.org/isCharacterisedBy" ;
+           rdfs:comment "Relationship between an unit and the property of which it is a unit of measurement." ;
+           rdfs:isDefinedBy "https://w3id.org/isCharacterisedBy" ;
            rdfs:label "isUnitFor" ;
            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
@@ -245,23 +254,14 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
-] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 #################################################################
 #    Annotations
 #################################################################
 
 <http://purl.org/dc/terms/title> rdfs:comment "A name given to the resource." ;
-                                  rdfs:isDefinedBy "http://purl.org/dc/terms" ;
-                                  rdfs:label "title" ;
-                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "" .
+                                 rdfs:isDefinedBy "http://purl.org/dc/terms" ;
+                                 rdfs:label "title" ;
+                                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "" .
 
 
 #################################################################

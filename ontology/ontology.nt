@@ -1,17 +1,18 @@
 <https://w3id.org/tribont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/tribont> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/tribont/core> .
 <https://w3id.org/tribont> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/tribont/equipment> .
 <https://w3id.org/tribont> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/tribont/sample> .
 <https://w3id.org/tribont> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/tribont> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"@tekniker.es> .
+<https://w3id.org/tribont> <http://gbol.life/ontology/bibo#status> "published" .
+<https://w3id.org/tribont> <http://purl.org/dc/terms/bibliographicCitation> "Work in progress" .
+<https://w3id.org/tribont> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"@en .
 <https://w3id.org/tribont> <http://purl.org/dc/terms/created> "2023-06-02" .
-<https://w3id.org/tribont> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@tekniker.es> .
+<https://w3id.org/tribont> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@en .
 <https://w3id.org/tribont> <http://purl.org/dc/terms/description> "The goal  is to represent the tribological experiments by relaying on the representation included in the core,,  sample and equipment modules."@en .
 <https://w3id.org/tribont> <http://purl.org/dc/terms/issued> "2023-06-02" .
 <https://w3id.org/tribont> <http://purl.org/dc/terms/title> "TribOnt ontology" .
 <https://w3id.org/tribont> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tribont" .
+<https://w3id.org/tribont> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tribont" .
 <https://w3id.org/tribont> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<https://w3id.org/tribont> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
 # 
 # 
 # #################################################################
@@ -23,6 +24,12 @@
 # 
 # http://creativecommons.org/ns#license
 <http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://gbol.life/ontology/bibo#status
+<http://gbol.life/ontology/bibo#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -212,8 +219,8 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#HardnessProperty> .
 _:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#isCharacterisedByOutputMeasure> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tribont#HardnessMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A testing activity to measure  one or more  hardness attributes or characteristics of  a given sample." .
 <https://w3id.org/tribont#HardnessMeasurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont" .
-<https://w3id.org/tribont#HardnessMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "A testing activity to measure  one or more  hardnes attributes or characteristics of  a given sample." .
 <https://w3id.org/tribont#HardnessMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "HardnessMeasurement" .
 <https://w3id.org/tribont#HardnessMeasurement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
@@ -334,10 +341,18 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/tribont#TestOutputMeasurementFile
 <https://w3id.org/tribont#TestOutputMeasurementFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont#TestOutputMeasurementFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont#TestOutputDocument> .
+<https://w3id.org/tribont#TestOutputMeasurementFile> <http://www.w3.org/2000/01/rdf-schema#comment> "Document including the output measures (i.e., technical properties) from a  test." .
+<https://w3id.org/tribont#TestOutputMeasurementFile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont" .
+<https://w3id.org/tribont#TestOutputMeasurementFile> <http://www.w3.org/2000/01/rdf-schema#label> "TestOutputMeasurementFile" .
+<https://w3id.org/tribont#TestOutputMeasurementFile> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont#TestOutputReport
 <https://w3id.org/tribont#TestOutputReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont#TestOutputReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont#TestOutputDocument> .
+<https://w3id.org/tribont#TestOutputReport> <http://www.w3.org/2000/01/rdf-schema#comment> "Document report ing the results of a test.  technical properties) from a  test." .
+<https://w3id.org/tribont#TestOutputReport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont" .
+<https://w3id.org/tribont#TestOutputReport> <http://www.w3.org/2000/01/rdf-schema#label> "TestOutputReport" .
+<https://w3id.org/tribont#TestOutputReport> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont#TestStandard
 <https://w3id.org/tribont#TestStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -457,6 +472,27 @@ _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/tribont/equipment#Tribometer
 <https://w3id.org/tribont/equipment#Tribometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/tribont/core#ASTMD5706
+<https://w3id.org/tribont/core#ASTMD5706> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tribont#TestStandard> .
+# 
+# https://w3id.org/tribont/core#ASTMD5707
+<https://w3id.org/tribont/core#ASTMD5707> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tribont#TestStandard> .
+# 
+# https://w3id.org/tribont/core#ASTMD6425
+<https://w3id.org/tribont/core#ASTMD6425> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tribont#TestStandard> .
+# 
+# https://w3id.org/tribont/core#ASTMD7421
+<https://w3id.org/tribont/core#ASTMD7421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/tribont#TestStandard> .
 # 
 _:genid45 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid46 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
