@@ -747,6 +747,49 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- https://w3id.org/tribont/material#MaterialStandard -->
 
     <rdf:Description rdf:about="https://w3id.org/tribont/material#MaterialStandard"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/tribont/core#ASTMD5706 -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/core#ASTMD5706">
+        <rdf:type rdf:resource="https://w3id.org/tribont#TestStandard"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/core#ASTMD5707 -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/core#ASTMD5707">
+        <rdf:type rdf:resource="https://w3id.org/tribont#TestStandard"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/core#ASTMD6425 -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/core#ASTMD6425">
+        <rdf:type rdf:resource="https://w3id.org/tribont#TestStandard"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/tribont/core#ASTMD7421 -->
+
+    <rdf:Description rdf:about="https://w3id.org/tribont/core#ASTMD7421">
+        <rdf:type rdf:resource="https://w3id.org/tribont#TestStandard"/>
+    </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
