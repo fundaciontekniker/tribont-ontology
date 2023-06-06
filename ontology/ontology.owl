@@ -14,7 +14,6 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/tribont">
-        <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/equipment"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/sample"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
