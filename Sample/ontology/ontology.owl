@@ -4,19 +4,20 @@
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:bibo="http://gbol.life/ontology/bibo#"	 
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://gbol.life/ontology/bibo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/tribont/sample">
-        <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
         <owl:imports rdf:resource="https://w3id.org/tribont/material"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <bibo:status>published</bibo:status>
+        <terms:bibliographicCitation>Work in progress</terms:bibliographicCitation>
         <terms:contributor xml:lang="en">Izaskun Fernandez (Tekniker) 
 Domain expert:Iban Quintana (Tekniker) 
 Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
@@ -26,11 +27,8 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <terms:issued>2023-05-30</terms:issued>
         <terms:title>Sample module</terms:title>
         <vann:preferredNamespacePrefix>sample</vann:preferredNamespacePrefix>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <bibo:status>published</bibo:status>
-        <terms:bibliographicCitation>Work in progress</terms:bibliographicCitation>
         <vann:preferredNamespaceUri>https://w3id.org/tribont/sample</vann:preferredNamespaceUri>
-
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -776,6 +774,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
@@ -785,19 +789,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     
 
