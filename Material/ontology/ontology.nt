@@ -1,15 +1,17 @@
 <https://w3id.org/tribont/material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/tribont/material> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/tribont/core> .
 <https://w3id.org/tribont/material> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/tribont/material> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"@tekniker.es> .
-<https://w3id.org/tribont/material> <http://purl.org/dc/terms/created> "2023-05-30" .
-<https://w3id.org/tribont/material> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@tekniker.es> .
+<https://w3id.org/tribont/material> <http://gbol.life/ontology/bibo#status> "published" .
+<https://w3id.org/tribont/material> <http://purl.org/dc/terms/bibliographicCitation> "Work in progress" .
+<https://w3id.org/tribont/material> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"@en .
+<https://w3id.org/tribont/material> <http://purl.org/dc/terms/created> "2023-06-02" .
+<https://w3id.org/tribont/material> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@en .
 <https://w3id.org/tribont/material> <http://purl.org/dc/terms/description> "The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples."@en .
-<https://w3id.org/tribont/material> <http://purl.org/dc/terms/issued> "2023-05-30" .
+<https://w3id.org/tribont/material> <http://purl.org/dc/terms/issued> "2023-06-02" .
 <https://w3id.org/tribont/material> <http://purl.org/dc/terms/title> "Material module" .
 <https://w3id.org/tribont/material> <http://purl.org/vocab/vann/preferredNamespacePrefix> "material" .
+<https://w3id.org/tribont/material> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<https://w3id.org/tribont/material> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
 # 
 # 
 # #################################################################
@@ -53,9 +55,9 @@
 <https://w3id.org/tribont/material#hasElementRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/tribont/material#hasElementRole> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/tribont/material#isElementRoleFor> .
 <https://w3id.org/tribont/material#hasElementRole> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tribont/material#ElementRole> .
+<https://w3id.org/tribont/material#hasElementRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between an element and its role," .
 <https://w3id.org/tribont/material#hasElementRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#hasElementRole> <http://www.w3.org/2000/01/rdf-schema#label> "hasElementRole" .
-<https://w3id.org/tribont/material#hasElementRole> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Relationship between an element and its role," .
 <https://w3id.org/tribont/material#hasElementRole> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#hasNaming
@@ -69,9 +71,9 @@
 # https://w3id.org/tribont/material#hasSupplier
 <https://w3id.org/tribont/material#hasSupplier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/tribont/material#hasSupplier> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/tribont/material#isSuppliedBy> .
+<https://w3id.org/tribont/material#hasSupplier> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a company and what it supplies.." .
 <https://w3id.org/tribont/material#hasSupplier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#hasSupplier> <http://www.w3.org/2000/01/rdf-schema#label> "hasSupplier" .
-<https://w3id.org/tribont/material#hasSupplier> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Relationship between a company and what it supplies.." .
 <https://w3id.org/tribont/material#hasSupplier> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#hasTypicalUse
@@ -85,16 +87,16 @@
 # https://w3id.org/tribont/material#isElementRoleFor
 <https://w3id.org/tribont/material#isElementRoleFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/tribont/material#isElementRoleFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tribont/material#ElementRole> .
+<https://w3id.org/tribont/material#isElementRoleFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a role and the  element to which it applies." .
 <https://w3id.org/tribont/material#isElementRoleFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#isElementRoleFor> <http://www.w3.org/2000/01/rdf-schema#label> "isElementRoleFor" .
-<https://w3id.org/tribont/material#isElementRoleFor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Relationship between a role and the  element to which it applies." .
 <https://w3id.org/tribont/material#isElementRoleFor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#isNamingFor
 <https://w3id.org/tribont/material#isNamingFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tribont/material#isNamingFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a name and what it identifies.." .
 <https://w3id.org/tribont/material#isNamingFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#isNamingFor> <http://www.w3.org/2000/01/rdf-schema#label> "isNamingFor" .
-<https://w3id.org/tribont/material#isNamingFor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Relationship between a name and what it identifies.." .
 <https://w3id.org/tribont/material#isNamingFor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#isSuppliedBy
@@ -106,9 +108,9 @@
 # 
 # https://w3id.org/tribont/material#isTypicalUseFor
 <https://w3id.org/tribont/material#isTypicalUseFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tribont/material#isTypicalUseFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between an application and what it is usually applied to," .
 <https://w3id.org/tribont/material#isTypicalUseFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#isTypicalUseFor> <http://www.w3.org/2000/01/rdf-schema#label> "isTypicalUseFor" .
-<https://w3id.org/tribont/material#isTypicalUseFor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Relationship between an application and what it is usually applied to," .
 <https://w3id.org/tribont/material#isTypicalUseFor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # 
@@ -1712,16 +1714,16 @@ _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#filler> <http://www.w3.org/2000/01/rdf-schema#label> "filler" .
 <https://w3id.org/tribont/material#filler> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-_:genid40 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid41 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid42 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid44 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid45 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid46 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid47 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid48 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid49 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid50 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # 
 # 

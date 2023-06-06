@@ -1,15 +1,17 @@
 <https://w3id.org/tribont/equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/tribont/equipment> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/tribont/core> .
 <https://w3id.org/tribont/equipment> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"@tekniker.es> .
-<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/created> "2023-05-09" .
-<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@tekniker.es> .
+<https://w3id.org/tribont/equipment> <http://gbol.life/ontology/bibo#status> "published" .
+<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/bibliographicCitation> "Work in progress" .
+<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"@en .
+<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/created> "2023-06-02" .
+<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@en .
 <https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/description> "The goal of this module is to represent the equipment hierarchy model involved in the tribological experiments."@en .
-<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/issued> "2023-05-09" .
+<https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/issued> "2023-06-02" .
 <https://w3id.org/tribont/equipment> <http://purl.org/dc/terms/title> "Equipment module" .
 <https://w3id.org/tribont/equipment> <http://purl.org/vocab/vann/preferredNamespacePrefix> "equipment" .
+<https://w3id.org/tribont/equipment> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tribont/equipment" .
 <https://w3id.org/tribont/equipment> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<https://w3id.org/tribont/equipment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
 # 
 # 
 # #################################################################
@@ -546,13 +548,13 @@ _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/equipment#TribometerClass> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 _:genid35 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid39 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid40 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid42 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid44 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # 

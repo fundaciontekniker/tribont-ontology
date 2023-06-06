@@ -482,6 +482,12 @@
   "@id" : "http://creativecommons.org/ns#license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://gbol.life/ontology/bibo#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -514,15 +520,21 @@
   "http://creativecommons.org/ns#license" : [ {
     "@id" : "https://creativecommons.org/licenses/by-nc/4.0/"
   } ],
+  "http://gbol.life/ontology/bibo#status" : [ {
+    "@value" : "published"
+  } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Work in progress"
+  } ],
   "http://purl.org/dc/terms/contributor" : [ {
-    "@language" : "tekniker.es>",
+    "@language" : "en",
     "@value" : "Izaskun Fernandez (Tekniker) \nDomain expert:Iban Quintana (Tekniker) \nDomain expert:Xana Fernandez (Tekniker)"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@value" : "2023-06-02"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@language" : "tekniker.es>",
+    "@language" : "en",
     "@value" : "Patricia Casla (Tekniker)"
   } ],
   "http://purl.org/dc/terms/description" : [ {
@@ -538,9 +550,10 @@
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "tribont"
   } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/tribont"
+  } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://w3id.org/tribont/core"
-  }, {
     "@id" : "https://w3id.org/tribont/equipment"
   }, {
     "@id" : "https://w3id.org/tribont/sample"
@@ -548,10 +561,6 @@
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1.0"
-  } ],
-  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@language" : "tekniker.es>",
-    "@value" : "Testing"
   } ]
 }, {
   "@id" : "https://w3id.org/tribont#Experiment",
@@ -606,12 +615,13 @@
 }, {
   "@id" : "https://w3id.org/tribont#HardnessMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A testing activity to measure  one or more  hardness attributes or characteristics of  a given sample."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "A testing activity to measure  one or more  hardnes attributes or characteristics of  a given sample."
-  }, {
     "@value" : "HardnessMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -733,14 +743,38 @@
 }, {
   "@id" : "https://w3id.org/tribont#TestOutputMeasurementFile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Document including the output measures (i.e., technical properties) from a  test."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/tribont"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TestOutputMeasurementFile"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/tribont#TestOutputDocument"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "Testing"
   } ]
 }, {
   "@id" : "https://w3id.org/tribont#TestOutputReport",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Document report ing the results of a test.  technical properties) from a  test."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/tribont"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TestOutputReport"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/tribont#TestOutputDocument"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "Testing"
   } ]
 }, {
   "@id" : "https://w3id.org/tribont#TestStandard",
@@ -1048,6 +1082,26 @@
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "Testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tribont/core#ASTMD5706",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/tribont#TestStandard"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tribont/core#ASTMD5707",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/tribont#TestStandard"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tribont/core#ASTMD6425",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/tribont#TestStandard"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tribont/core#ASTMD7421",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/tribont#TestStandard"
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#hasDocument",

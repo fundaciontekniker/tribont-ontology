@@ -22,18 +22,14 @@ This section provides details for each class and property defined by TribOnt ont
          <a href="#Test" title="https://w3id.org/tribont#Test">Test</a>
       </li>
       <li>
-         <a href="#TestOutputMeasurementFile"
-            title="https://w3id.org/tribont#TestOutputMeasurementFile">
-            <span>test output measurement file</span>
-         </a>
-      </li>
-      <li>
-         <a href="#TestOutputReport" title="https://w3id.org/tribont#TestOutputReport">
-            <span>test output report</span>
-         </a>
-      </li>
-      <li>
          <a href="#TestOutputDocument" title="https://w3id.org/tribont#TestOutputDocument">TestOutputDocument</a>
+      </li>
+      <li>
+         <a href="#TestOutputMeasurementFile"
+            title="https://w3id.org/tribont#TestOutputMeasurementFile">TestOutputMeasurementFile</a>
+      </li>
+      <li>
+         <a href="#TestOutputReport" title="https://w3id.org/tribont#TestOutputReport">TestOutputReport</a>
       </li>
       <li>
          <a href="#TestStandard" title="https://w3id.org/tribont#TestStandard">TestStandard</a>
@@ -288,36 +284,6 @@ This section provides details for each class and property defined by TribOnt ont
          </dd>
       </dl>
    </div>
-   <div class="entity" id="TestOutputMeasurementFile">
-      <h3>test output measurement file<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/tribont#TestOutputMeasurementFile</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TestOutputDocument" title="https://w3id.org/tribont#TestOutputDocument">TestOutputDocument</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="TestOutputReport">
-      <h3>test output report<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/tribont#TestOutputReport</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TestOutputDocument" title="https://w3id.org/tribont#TestOutputDocument">TestOutputDocument</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="TestOutputDocument">
       <h3>TestOutputDocument<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -346,8 +312,8 @@ This section provides details for each class and property defined by TribOnt ont
          <dt>has sub-classes</dt>
          <dd>
             <a href="#TestOutputMeasurementFile"
-               title="https://w3id.org/tribont#TestOutputMeasurementFile">test output measurement file</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TestOutputReport" title="https://w3id.org/tribont#TestOutputReport">test output report</a>
+               title="https://w3id.org/tribont#TestOutputMeasurementFile">TestOutputMeasurementFile</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TestOutputReport" title="https://w3id.org/tribont#TestOutputReport">TestOutputReport</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -357,6 +323,58 @@ This section provides details for each class and property defined by TribOnt ont
                title="https://w3id.org/tribont/equipment#CalibrationDocument">calibration document</a>, <a href="https://w3id.org/tribont/equipment#TechnicalDocument"
                target="_blank"
                title="https://w3id.org/tribont/equipment#TechnicalDocument">technical document</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TestOutputMeasurementFile">
+      <h3>TestOutputMeasurementFile<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/tribont#TestOutputMeasurementFile</p>
+      <div class="comment">
+         <span class="markdown">Document including the output measures (i.e., technical properties) from a  test.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/tribont</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>Testing</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#TestOutputDocument" title="https://w3id.org/tribont#TestOutputDocument">TestOutputDocument</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TestOutputReport">
+      <h3>TestOutputReport<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/tribont#TestOutputReport</p>
+      <div class="comment">
+         <span class="markdown">Document report ing the results of a test.  technical properties) from a  test.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/tribont</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>Testing</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#TestOutputDocument" title="https://w3id.org/tribont#TestOutputDocument">TestOutputDocument</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>

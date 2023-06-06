@@ -1,14 +1,14 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "en", "tekniker.es>", "undefined" ],
+    "languages" : [ "en", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/isCharacterisedBy", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "undefined" : "isCharacterisedBy ontology design pattern "
     },
     "iri" : "https://w3id.org/isCharacterisedBy",
     "version" : "1.0",
-    "author" : [ "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>" ],
+    "author" : [ "Patricia Casla (Tekniker)" ],
     "description" : {
       "en" : "The goal of this ontology design pattern is to characterise a subject or group of subjects of interest by assigning qualifiable or quantifiable attributes or characteristics."
     },
@@ -21,32 +21,32 @@
       } ],
       "creator" : [ {
         "identifier" : "creator",
-        "language" : "tekniker.es>",
-        "value" : "Patricia Casla (Tekniker)  <mailto:patricia.casla@tekniker.es>",
+        "language" : "en",
+        "value" : "Patricia Casla (Tekniker)",
         "type" : "label"
       } ],
       "contributor" : [ {
         "identifier" : "contributor",
-        "language" : "tekniker.es>",
-        "value" : "Izaskun Fernandez (Tekniker)  <mailto:izaskun.fernandez>\nIban Quintana (Tekniker)  <mailto:iban.quintana>\nXana Fernandez (Tekniker)  <mailto:xana.fernandez>",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "tekniker.es>",
-        "value" : "Stable",
+        "language" : "en",
+        "value" : "Izaskun Fernandez (Tekniker) \nIban Quintana (Tekniker) \nXana Fernandez (Tekniker)",
         "type" : "label"
       } ],
       "created" : [ {
         "identifier" : "created",
         "language" : "undefined",
-        "value" : "2023-05-09",
+        "value" : "2023-05-30",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
         "value" : "icb",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "Work in progress",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -64,7 +64,7 @@
       "issued" : [ {
         "identifier" : "issued",
         "language" : "undefined",
-        "value" : "2023-05-09",
+        "value" : "2023-05-30",
         "type" : "label"
       } ],
       "title" : [ {
@@ -72,15 +72,21 @@
         "language" : "undefined",
         "value" : "isCharacterisedBy ontology design pattern ",
         "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "undefined",
+        "value" : "published",
+        "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "2",
+    "id" : "9",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "7",
+    "id" : "11",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "13",
@@ -89,10 +95,10 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
     "id" : "18",
@@ -113,14 +119,14 @@
   "classAttribute" : [ {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "2",
+    "id" : "9",
     "label" : {
       "IRI-based" : "double"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "7",
+    "id" : "11",
     "label" : {
       "IRI-based" : "double"
     }
@@ -182,7 +188,7 @@
     "comment" : {
       "undefined" : "A subject of interest is an abstraction of a real world phenomena (thing, person, event, etc)."
     },
-    "id" : "9"
+    "id" : "5"
   }, {
     "iri" : "https://w3id.org/isCharacterisedBy#Unit",
     "baseIri" : "https://w3id.org/isCharacterisedBy",
@@ -208,7 +214,7 @@
     "comment" : {
       "undefined" : "A reference to the unit of measure of a quantifiable aspect (attribute or characteristic)."
     },
-    "id" : "4"
+    "id" : "2"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
@@ -249,20 +255,20 @@
     "id" : "0",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "3",
-    "type" : "owl:allValuesFrom"
+    "id" : "4",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "6",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "7",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "8",
-    "type" : "owl:disjointWith"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "10",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "11",
-    "type" : "owl:disjointWith"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "12",
     "type" : "owl:allValuesFrom"
@@ -276,7 +282,7 @@
     "id" : "19",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "5",
+    "id" : "3",
     "type" : "owl:objectProperty"
   }, {
     "id" : "16",
@@ -295,7 +301,8 @@
     "type" : "owl:allValuesFrom"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://w3id.org/isCharacterisedBy#value",
+    "iri" : "https://w3id.org/isCharacterisedBy#hasUnit",
+    "inverse" : "3",
     "baseIri" : "https://w3id.org/isCharacterisedBy",
     "range" : "2",
     "annotations" : {
@@ -313,29 +320,6 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "value",
-      "undefined" : "value"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "Specific value."
-    },
-    "attributes" : [ "datatype", "allValues" ],
-    "id" : "0"
-  }, {
-    "iri" : "https://w3id.org/isCharacterisedBy#hasUnit",
-    "inverse" : "5",
-    "baseIri" : "https://w3id.org/isCharacterisedBy",
-    "range" : "4",
-    "annotations" : {
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "Testing",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
       "IRI-based" : "hasUnit",
       "undefined" : "hasUnit"
     },
@@ -344,11 +328,26 @@
       "undefined" : "Relationship between a quantifiable property and a unit of measurement"
     },
     "attributes" : [ "object", "allValues" ],
-    "id" : "3"
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
   }, {
     "iri" : "https://w3id.org/isCharacterisedBy#minValue",
     "baseIri" : "https://w3id.org/isCharacterisedBy",
-    "range" : "7",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -372,26 +371,11 @@
       "undefined" : "Minimun permissible value."
     },
     "attributes" : [ "datatype", "allValues" ],
-    "id" : "6"
-  }, {
-    "range" : "9",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "8"
-  }, {
-    "range" : "4",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "10"
-  }, {
-    "range" : "4",
-    "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "11"
   }, {
     "iri" : "https://w3id.org/isCharacterisedBy#maxValue",
     "baseIri" : "https://w3id.org/isCharacterisedBy",
-    "range" : "13",
+    "range" : "11",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -415,12 +399,40 @@
       "undefined" : "Maximum permissible value."
     },
     "attributes" : [ "datatype", "allValues" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/isCharacterisedBy#value",
+    "baseIri" : "https://w3id.org/isCharacterisedBy",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/isCharacterisedBy",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "value",
+      "undefined" : "value"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Specific value."
+    },
+    "attributes" : [ "datatype", "allValues" ],
     "id" : "12"
   }, {
     "iri" : "https://w3id.org/isCharacterisedBy#characterises",
     "inverse" : "16",
     "baseIri" : "https://w3id.org/isCharacterisedBy",
-    "range" : "9",
+    "range" : "5",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -447,10 +459,16 @@
     "id" : "14"
   }, {
     "iri" : "https://w3id.org/isCharacterisedBy#hasUnit",
-    "inverse" : "5",
+    "inverse" : "3",
     "baseIri" : "https://w3id.org/isCharacterisedBy",
-    "range" : "4",
+    "range" : "2",
     "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/isCharacterisedBy",
+        "type" : "label"
+      } ],
       "term_status" : [ {
         "identifier" : "term_status",
         "language" : "undefined",
@@ -496,6 +514,12 @@
     "baseIri" : "https://w3id.org/isCharacterisedBy",
     "range" : "18",
     "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/isCharacterisedBy",
+        "type" : "label"
+      } ],
       "term_status" : [ {
         "identifier" : "term_status",
         "language" : "undefined",
@@ -507,12 +531,12 @@
       "IRI-based" : "isUnitFor",
       "undefined" : "isUnitFor"
     },
-    "domain" : "4",
+    "domain" : "2",
     "comment" : {
       "undefined" : "Relationship between an unit and the property of which it is a unit of measurement."
     },
     "attributes" : [ "object" ],
-    "id" : "5"
+    "id" : "3"
   }, {
     "iri" : "https://w3id.org/isCharacterisedBy#isCharacterisedBy",
     "baseIri" : "https://w3id.org/isCharacterisedBy",
@@ -535,7 +559,7 @@
       "IRI-based" : "isCharacterisedBy",
       "undefined" : "isCharacterisedBy"
     },
-    "domain" : "9",
+    "domain" : "5",
     "comment" : {
       "undefined" : "Relationship between a SubjectOfInterest and the Property that characterises it."
     },
@@ -571,9 +595,9 @@
     "attributes" : [ "object" ],
     "id" : "23"
   }, {
-    "iri" : "https://w3id.org/isCharacterisedBy#isGroupingOf",
+    "iri" : "https://w3id.org/isCharacterisedBy#isCharacterisedBy",
     "baseIri" : "https://w3id.org/isCharacterisedBy",
-    "range" : "9",
+    "range" : "1",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -589,12 +613,12 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "isGroupingOf",
-      "undefined" : "isGroupingOf"
+      "IRI-based" : "isCharacterisedBy",
+      "undefined" : "isCharacterisedBy"
     },
-    "domain" : "9",
+    "domain" : "5",
     "comment" : {
-      "undefined" : "Relationship between a group and the members of such group. All the members of a group have the same charabterists or attributes."
+      "undefined" : "Relationship between a SubjectOfInterest and the Property that characterises it."
     },
     "attributes" : [ "object", "allValues" ],
     "id" : "25"
@@ -628,9 +652,9 @@
     "attributes" : [ "datatype", "external" ],
     "id" : "26"
   }, {
-    "iri" : "https://w3id.org/isCharacterisedBy#isCharacterisedBy",
+    "iri" : "https://w3id.org/isCharacterisedBy#isGroupingOf",
     "baseIri" : "https://w3id.org/isCharacterisedBy",
-    "range" : "1",
+    "range" : "5",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -646,12 +670,12 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "isCharacterisedBy",
-      "undefined" : "isCharacterisedBy"
+      "IRI-based" : "isGroupingOf",
+      "undefined" : "isGroupingOf"
     },
-    "domain" : "9",
+    "domain" : "5",
     "comment" : {
-      "undefined" : "Relationship between a SubjectOfInterest and the Property that characterises it."
+      "undefined" : "Relationship between a group and the members of such group. All the members of a group have the same charabterists or attributes."
     },
     "attributes" : [ "object", "allValues" ],
     "id" : "27"

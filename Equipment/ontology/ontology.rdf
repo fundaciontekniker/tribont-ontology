@@ -7,6 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://gbol.life/ontology/bibo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
@@ -15,17 +16,19 @@
     <owl:Ontology rdf:about="https://w3id.org/tribont/equipment">
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker) 
+        <bibo:status>published</bibo:status>
+        <terms:bibliographicCitation>Work in progress</terms:bibliographicCitation>
+        <terms:contributor xml:lang="en">Izaskun Fernandez (Tekniker) 
 Domain expert:Iban Quintana (Tekniker) 
 Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
-        <terms:created>2023-05-09</terms:created>
-        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)</terms:creator>
+        <terms:created>2023-06-02</terms:created>
+        <terms:creator xml:lang="en">Patricia Casla (Tekniker)</terms:creator>
         <terms:description xml:lang="en">The goal of this module is to represent the equipment hierarchy model involved in the tribological experiments.</terms:description>
-        <terms:issued>2023-05-09</terms:issued>
+        <terms:issued>2023-06-02</terms:issued>
         <terms:title>Equipment module</terms:title>
         <vann:preferredNamespacePrefix>equipment</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/tribont/equipment</vann:preferredNamespaceUri>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <ns1:term_status xml:lang="tekniker.es&gt;">Testing</ns1:term_status>
     </owl:Ontology>
     
 
@@ -940,7 +943,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -952,13 +961,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>

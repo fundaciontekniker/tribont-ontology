@@ -7,23 +7,26 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://gbol.life/ontology/bibo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/tribont/material">
         <owl:imports rdf:resource="https://w3id.org/tribont/core"/>
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker) 
+        <bibo:status>published</bibo:status>
+        <terms:bibliographicCitation>Work in progress</terms:bibliographicCitation>
+        <terms:contributor xml:lang="en">Izaskun Fernandez (Tekniker) 
 Domain expert:Iban Quintana (Tekniker) 
 Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
-        <terms:created>2023-05-30</terms:created>
-        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)</terms:creator>
+        <terms:created>2023-06-02</terms:created>
+        <terms:creator xml:lang="en">Patricia Casla (Tekniker)</terms:creator>
         <terms:description xml:lang="en">The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples.</terms:description>
-        <terms:issued>2023-05-30</terms:issued>
+        <terms:issued>2023-06-02</terms:issued>
         <terms:title>Material module</terms:title>
         <vann:preferredNamespacePrefix>material</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/tribont/material</vann:preferredNamespaceUri>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <ns1:term_status xml:lang="tekniker.es&gt;">Testing</ns1:term_status>
     </owl:Ontology>
     
 
@@ -107,9 +110,9 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasElementRole">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/material#isElementRoleFor"/>
         <rdfs:range rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+        <rdfs:comment>Relationship between an element and its role,</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>hasElementRole</rdfs:label>
-        <ns1:term_status>Relationship between an element and its role,</ns1:term_status>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -133,9 +136,9 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasSupplier">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/material#isSuppliedBy"/>
+        <rdfs:comment>Relationship between a company and what it supplies..</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>hasSupplier</rdfs:label>
-        <ns1:term_status>Relationship between a company and what it supplies..</ns1:term_status>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -159,9 +162,9 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isElementRoleFor">
         <rdfs:domain rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
+        <rdfs:comment>Relationship between a role and the  element to which it applies.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>isElementRoleFor</rdfs:label>
-        <ns1:term_status>Relationship between a role and the  element to which it applies.</ns1:term_status>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -171,9 +174,9 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isNamingFor">
+        <rdfs:comment>Relationship between a name and what it identifies..</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>isNamingFor</rdfs:label>
-        <ns1:term_status>Relationship between a name and what it identifies..</ns1:term_status>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -195,9 +198,9 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isTypicalUseFor">
+        <rdfs:comment>Relationship between an application and what it is usually applied to,</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>isTypicalUseFor</rdfs:label>
-        <ns1:term_status>Relationship between an application and what it is usually applied to,</ns1:term_status>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -2743,27 +2746,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
@@ -2771,6 +2753,27 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>

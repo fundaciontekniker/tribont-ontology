@@ -7,6 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://gbol.life/ontology/bibo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
@@ -14,18 +15,19 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/isCharacterisedBy">
         <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:contributor xml:lang="tekniker.es&gt;">Izaskun Fernandez (Tekniker)  &lt;mailto:izaskun.fernandez&gt;
-Iban Quintana (Tekniker)  &lt;mailto:iban.quintana&gt;
-Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
-        <terms:created>2023-05-09</terms:created>
-        <terms:creator xml:lang="tekniker.es&gt;">Patricia Casla (Tekniker)  &lt;mailto:patricia.casla@tekniker.es&gt;</terms:creator>
+        <bibo:status>published</bibo:status>
+        <terms:bibliographicCitation>Work in progress</terms:bibliographicCitation>
+        <terms:contributor xml:lang="en">Izaskun Fernandez (Tekniker) 
+Iban Quintana (Tekniker) 
+Xana Fernandez (Tekniker)</terms:contributor>
+        <terms:created>2023-05-30</terms:created>
+        <terms:creator xml:lang="en">Patricia Casla (Tekniker)</terms:creator>
         <terms:description xml:lang="en">The goal of this ontology design pattern is to characterise a subject or group of subjects of interest by assigning qualifiable or quantifiable attributes or characteristics.</terms:description>
-        <terms:issued>2023-05-09</terms:issued>
+        <terms:issued>2023-05-30</terms:issued>
         <terms:title>isCharacterisedBy ontology design pattern </terms:title>
         <vann:preferredNamespacePrefix>icb</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/isCharacterisedBy</vann:preferredNamespaceUri>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <ns1:term_status xml:lang="tekniker.es&gt;">Stable</ns1:term_status>
     </owl:Ontology>
     
 
@@ -46,6 +48,20 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
 
 
     <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://gbol.life/ontology/bibo#status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://gbol.life/ontology/bibo#status"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
@@ -165,7 +181,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isUnitFor"/>
         <rdfs:range rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Relationship between a quantifiable property and a unit of measurement</rdfs:comment>
-        <rdfs:comment>https://w3id.org/isCharacterisedBy</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>hasUnit</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
@@ -203,7 +219,7 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isUnitFor">
         <rdfs:domain rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Relationship between an unit and the property of which it is a unit of measurement.</rdfs:comment>
-        <rdfs:comment>https://w3id.org/isCharacterisedBy</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
         <rdfs:label>isUnitFor</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:ObjectProperty>
@@ -395,15 +411,6 @@ Xana Fernandez (Tekniker)  &lt;mailto:xana.fernandez&gt;</terms:contributor>
         <rdfs:label>Unit</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
     
 
 

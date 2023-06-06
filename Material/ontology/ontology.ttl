@@ -9,17 +9,19 @@
 <https://w3id.org/tribont/material> rdf:type owl:Ontology ;
                                      owl:imports <https://w3id.org/tribont/core> ;
                                      <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                     <http://gbol.life/ontology/bibo#status> "published" ;
+                                     <http://purl.org/dc/terms/bibliographicCitation> "Work in progress" ;
                                      <http://purl.org/dc/terms/contributor> """Izaskun Fernandez (Tekniker) 
 Domain expert:Iban Quintana (Tekniker) 
-Domain expert:Xana Fernandez (Tekniker)"""@tekniker.es> ;
-                                     <http://purl.org/dc/terms/created> "2023-05-30" ;
-                                     <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@tekniker.es> ;
+Domain expert:Xana Fernandez (Tekniker)"""@en ;
+                                     <http://purl.org/dc/terms/created> "2023-06-02" ;
+                                     <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@en ;
                                      <http://purl.org/dc/terms/description> "The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples."@en ;
-                                     <http://purl.org/dc/terms/issued> "2023-05-30" ;
+                                     <http://purl.org/dc/terms/issued> "2023-06-02" ;
                                      <http://purl.org/dc/terms/title> "Material module" ;
                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "material" ;
-                                     owl:versionInfo 1.0 ;
-                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing"@tekniker.es> .
+                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tribont/material" ;
+                                     owl:versionInfo 1.0 .
 
 #################################################################
 #    Annotation properties
@@ -61,10 +63,10 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 :hasElementRole rdf:type owl:ObjectProperty ;
                 owl:inverseOf :isElementRoleFor ;
                 rdfs:range :ElementRole ;
+                rdfs:comment "Relationship between an element and its role," ;
                 rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                 rdfs:label "hasElementRole" ;
-                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Relationship between an element and its role," ,
-                                                                           "Testing" .
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#hasNaming
@@ -79,10 +81,10 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/tribont/material#hasSupplier
 :hasSupplier rdf:type owl:ObjectProperty ;
              owl:inverseOf :isSuppliedBy ;
+             rdfs:comment "Relationship between a company and what it supplies.." ;
              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
              rdfs:label "hasSupplier" ;
-             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Relationship between a company and what it supplies.." ,
-                                                                        "Testing" .
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#hasTypicalUse
@@ -97,18 +99,18 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/tribont/material#isElementRoleFor
 :isElementRoleFor rdf:type owl:ObjectProperty ;
                   rdfs:domain :ElementRole ;
+                  rdfs:comment "Relationship between a role and the  element to which it applies." ;
                   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                   rdfs:label "isElementRoleFor" ;
-                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Relationship between a role and the  element to which it applies." ,
-                                                                             "Testing" .
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#isNamingFor
 :isNamingFor rdf:type owl:ObjectProperty ;
+             rdfs:comment "Relationship between a name and what it identifies.." ;
              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
              rdfs:label "isNamingFor" ;
-             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Relationship between a name and what it identifies.." ,
-                                                                        "Testing" .
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#isSuppliedBy
@@ -121,10 +123,10 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/material#isTypicalUseFor
 :isTypicalUseFor rdf:type owl:ObjectProperty ;
+                 rdfs:comment "Relationship between an application and what it is usually applied to," ;
                  rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                  rdfs:label "isTypicalUseFor" ;
-                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Relationship between an application and what it is usually applied to," ,
-                                                                            "Testing" .
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 #################################################################
@@ -1867,34 +1869,34 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
 ] .
 
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
