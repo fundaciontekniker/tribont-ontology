@@ -305,7 +305,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- https://w3id.org/tribont/material#AlluminiumAlloy -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#AlluminiumAlloy">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MetalAndAlloy"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MetallicMaterial"/>
         <rdfs:comment>Alluminium alloy.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>AlluminiumAlloy</rdfs:label>
@@ -639,13 +639,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     
 
 
-    <!-- https://w3id.org/tribont/material#Ceramic -->
+    <!-- https://w3id.org/tribont/material#CeramicMaterial -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Ceramic">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#NonPolymeric"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/material#CeramicMaterial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidMaterial"/>
         <rdfs:comment>Ceramic material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Ceramic</rdfs:label>
+        <rdfs:label>CeramicMaterial</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -675,13 +675,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     
 
 
-    <!-- https://w3id.org/tribont/material#Composite -->
+    <!-- https://w3id.org/tribont/material#CompositeMaterial -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Composite">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Hybrid"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/material#CompositeMaterial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidMaterial"/>
         <rdfs:comment>Composite material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Composite</rdfs:label>
+        <rdfs:label>CompositeMaterial</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -738,7 +738,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- https://w3id.org/tribont/material#ElastomerThermoplastic -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElastomerThermoplastic">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Polymer"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerMaterial"/>
         <rdfs:comment>Elastomer thermoplastic material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>ElastomerThermoplastic</rdfs:label>
@@ -750,7 +750,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- https://w3id.org/tribont/material#ElastomerThermoset -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElastomerThermoset">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Polymer"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerMaterial"/>
         <rdfs:comment>Elastomer thermoset material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>ElastomerThermoset</rdfs:label>
@@ -871,22 +871,10 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- https://w3id.org/tribont/material#FluidLubricant -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#FluidLubricant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Liquid"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#LiquidMaterial"/>
         <rdfs:comment>Fluid lubricant material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>FluidLubricant</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/material#Foam -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Foam">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Hybrid"/>
-        <rdfs:comment>Foam material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Foam</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -919,7 +907,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- https://w3id.org/tribont/material#Glass -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Glass">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#NonPolymeric"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#CeramicMaterial"/>
         <rdfs:comment>Glass material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Glass</rdfs:label>
@@ -1074,30 +1062,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     
 
 
-    <!-- https://w3id.org/tribont/material#Honeycomb -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Honeycomb">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Hybrid"/>
-        <rdfs:comment>Honeycomb material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Honeycomb</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/material#Hybrid -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Hybrid">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#NonPolymeric"/>
-        <rdfs:comment>Hybrid material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Hybrid</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/material#ImpactModifier -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ImpactModifier">
@@ -1171,9 +1135,9 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     
 
 
-    <!-- https://w3id.org/tribont/material#Liquid -->
+    <!-- https://w3id.org/tribont/material#LiquidMaterial -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Liquid">
+    <owl:Class rdf:about="https://w3id.org/tribont/material#LiquidMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Material"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1190,10 +1154,10 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#Solid"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#SolidMaterial"/>
         <rdfs:comment>Liquid material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Liquid</rdfs:label>
+        <rdfs:label>LiquidMaterial</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1354,13 +1318,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     
 
 
-    <!-- https://w3id.org/tribont/material#MetalAndAlloy -->
+    <!-- https://w3id.org/tribont/material#MetallicMaterial -->
 
-    <owl:Class rdf:about="https://w3id.org/tribont/material#MetalAndAlloy">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#NonPolymeric"/>
+    <owl:Class rdf:about="https://w3id.org/tribont/material#MetallicMaterial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidMaterial"/>
         <rdfs:comment>Metal and alloy material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>MetalAndAlloy</rdfs:label>
+        <rdfs:label>MetallicMaterial</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1474,18 +1438,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     
 
 
-    <!-- https://w3id.org/tribont/material#NaturalMaterial -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#NaturalMaterial">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#NonPolymeric"/>
-        <rdfs:comment>Natural material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>NaturalMaterial</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/material#Nb -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Nb">
@@ -1542,20 +1494,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <rdfs:comment>Any Non Ferrous Metal Inhibitors Content.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>NonFerrousMetalInhibitor</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tribont/material#NonPolymeric -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#NonPolymeric">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Solid"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#Polymer"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#SolidLubricant"/>
-        <rdfs:comment>Non polymeric material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>NonPolymeric</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1690,7 +1628,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- https://w3id.org/tribont/material#PlasticThermoplastic -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#PlasticThermoplastic">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Polymer"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerMaterial"/>
         <rdfs:comment>Plastic thermoplastic material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>PlasticThermoplastic</rdfs:label>
@@ -1702,7 +1640,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- https://w3id.org/tribont/material#PlasticThermoset -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#PlasticThermoset">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Polymer"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerMaterial"/>
         <rdfs:comment>Plastic Thermoset material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>PlasticThermoset</rdfs:label>
@@ -1723,19 +1661,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     
 
 
-    <!-- https://w3id.org/tribont/material#Polymer -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Polymer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Solid"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#SolidLubricant"/>
-        <rdfs:comment>Any polymer</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Polymer</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/material#PolymerElementConcentration -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#PolymerElementConcentration">
@@ -1743,6 +1668,18 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <rdfs:comment>Concentration of polymer element in a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>PolymerElementConcentration</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/material#PolymerMaterial -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#PolymerMaterial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidMaterial"/>
+        <rdfs:comment>Any polymer</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>PolymerMaterial</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -1964,34 +1901,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     
 
 
-    <!-- https://w3id.org/tribont/material#Solid -->
-
-    <owl:Class rdf:about="https://w3id.org/tribont/material#Solid">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Material"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidThermalProperty"/>
-                            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementConcentration"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Solid material.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
-        <rdfs:label>Solid</rdfs:label>
-        <ns1:term_status>Testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/tribont/material#SolidContaminants -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#SolidContaminants">
@@ -2013,10 +1922,38 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- https://w3id.org/tribont/material#SolidLubricant -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#SolidLubricant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Solid"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidMaterial"/>
         <rdfs:comment>Solid lubricant material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>SolidLubricant</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tribont/material#SolidMaterial -->
+
+    <owl:Class rdf:about="https://w3id.org/tribont/material#SolidMaterial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Material"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#ElectricalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#MechanicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/core#SolidThermalProperty"/>
+                            <rdf:Description rdf:about="https://w3id.org/tribont/material#ElementConcentration"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Solid material.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
+        <rdfs:label>SolidMaterial</rdfs:label>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     
@@ -2061,7 +1998,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- https://w3id.org/tribont/material#Steel -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Steel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MetalAndAlloy"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MetallicMaterial"/>
         <rdfs:comment>Steel material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>Steel</rdfs:label>
@@ -2211,7 +2148,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- https://w3id.org/tribont/material#TitaniumAlloy -->
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#TitaniumAlloy">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MetalAndAlloy"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MetallicMaterial"/>
         <rdfs:comment>Titanium alloy material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
         <rdfs:label>TitaniumAlloy</rdfs:label>
@@ -2544,6 +2481,24 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
@@ -2557,24 +2512,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     
 
