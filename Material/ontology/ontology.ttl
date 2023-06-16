@@ -4,7 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/tribont/material#> .
+@base <https://w3id.org/tribont/material> .
 
 <https://w3id.org/tribont/material> rdf:type owl:Ontology ;
                                      owl:imports <https://w3id.org/tribont/core> ;
@@ -17,7 +17,6 @@ Domain expert:Xana Fernandez (Tekniker)"""@en ;
                                      <http://purl.org/dc/terms/created> "2023-06-02" ;
                                      <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@en ;
                                      <http://purl.org/dc/terms/description> "The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples."@en ;
-                                     <http://purl.org/dc/terms/issued> "2023-06-02" ;
                                      <http://purl.org/dc/terms/title> "Material module" ;
                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "material" ;
                                      <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tribont/material" ;
@@ -205,7 +204,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/material#AlluminiumAlloy
 :AlluminiumAlloy rdf:type owl:Class ;
-                 rdfs:subClassOf :MetalAndAlloy ;
+                 rdfs:subClassOf :MetallicMaterial ;
                  rdfs:comment "Alluminium alloy." ;
                  rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                  rdfs:label "AlluminiumAlloy" ;
@@ -455,13 +454,13 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-###  https://w3id.org/tribont/material#Ceramic
-:Ceramic rdf:type owl:Class ;
-         rdfs:subClassOf :NonPolymeric ;
-         rdfs:comment "Ceramic material." ;
-         rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-         rdfs:label "Ceramic" ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+###  https://w3id.org/tribont/material#CeramicMaterial
+:CeramicMaterial rdf:type owl:Class ;
+                 rdfs:subClassOf :SolidMaterial ;
+                 rdfs:comment "Ceramic material." ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                 rdfs:label "CeramicMaterial" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#ChemicalElementConcentration
@@ -482,13 +481,13 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-###  https://w3id.org/tribont/material#Composite
-:Composite rdf:type owl:Class ;
-           rdfs:subClassOf :Hybrid ;
-           rdfs:comment "Composite material." ;
-           rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-           rdfs:label "Composite" ;
-           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+###  https://w3id.org/tribont/material#CompositeMaterial
+:CompositeMaterial rdf:type owl:Class ;
+                   rdfs:subClassOf :SolidMaterial ;
+                   rdfs:comment "Composite material." ;
+                   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                   rdfs:label "CompositeMaterial" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#Cr
@@ -529,7 +528,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/material#ElastomerThermoplastic
 :ElastomerThermoplastic rdf:type owl:Class ;
-                        rdfs:subClassOf :Polymer ;
+                        rdfs:subClassOf :PolymerMaterial ;
                         rdfs:comment "Elastomer thermoplastic material." ;
                         rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                         rdfs:label "ElastomerThermoplastic" ;
@@ -538,7 +537,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/material#ElastomerThermoset
 :ElastomerThermoset rdf:type owl:Class ;
-                    rdfs:subClassOf :Polymer ;
+                    rdfs:subClassOf :PolymerMaterial ;
                     rdfs:comment "Elastomer thermoset material." ;
                     rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                     rdfs:label "ElastomerThermoset" ;
@@ -628,20 +627,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/material#FluidLubricant
 :FluidLubricant rdf:type owl:Class ;
-                rdfs:subClassOf :Liquid ;
+                rdfs:subClassOf :LiquidMaterial ;
                 rdfs:comment "Fluid lubricant material." ;
                 rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                 rdfs:label "FluidLubricant" ;
                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-
-
-###  https://w3id.org/tribont/material#Foam
-:Foam rdf:type owl:Class ;
-      rdfs:subClassOf :Hybrid ;
-      rdfs:comment "Foam material." ;
-      rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-      rdfs:label "Foam" ;
-      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#Gd
@@ -664,7 +654,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/material#Glass
 :Glass rdf:type owl:Class ;
-       rdfs:subClassOf :NonPolymeric ;
+       rdfs:subClassOf :CeramicMaterial ;
        rdfs:comment "Glass material." ;
        rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
        rdfs:label "Glass" ;
@@ -780,24 +770,6 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-###  https://w3id.org/tribont/material#Honeycomb
-:Honeycomb rdf:type owl:Class ;
-           rdfs:subClassOf :Hybrid ;
-           rdfs:comment "Honeycomb material." ;
-           rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-           rdfs:label "Honeycomb" ;
-           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-
-
-###  https://w3id.org/tribont/material#Hybrid
-:Hybrid rdf:type owl:Class ;
-        rdfs:subClassOf :NonPolymeric ;
-        rdfs:comment "Hybrid material." ;
-        rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-        rdfs:label "Hybrid" ;
-        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-
-
 ###  https://w3id.org/tribont/material#ImpactModifier
 :ImpactModifier rdf:type owl:Class ;
                 rdfs:subClassOf :OtherElementConcentration ,
@@ -853,24 +825,24 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-###  https://w3id.org/tribont/material#Liquid
-:Liquid rdf:type owl:Class ;
-        rdfs:subClassOf :Material ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
-                          owl:allValuesFrom [ rdf:type owl:Class ;
-                                              owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
-                                                            <https://w3id.org/tribont/core#LiquidPhysicalProperty>
-                                                            <https://w3id.org/tribont/core#LiquidThermalProperty>
-                                                            :ElementConcentration
-                                                          )
-                                            ]
-                        ] ;
-        owl:disjointWith :Solid ;
-        rdfs:comment "Liquid material." ;
-        rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-        rdfs:label "Liquid" ;
-        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+###  https://w3id.org/tribont/material#LiquidMaterial
+:LiquidMaterial rdf:type owl:Class ;
+                rdfs:subClassOf :Material ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                      owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
+                                                                    <https://w3id.org/tribont/core#LiquidPhysicalProperty>
+                                                                    <https://w3id.org/tribont/core#LiquidThermalProperty>
+                                                                    :ElementConcentration
+                                                                  )
+                                                    ]
+                                ] ;
+                owl:disjointWith :SolidMaterial ;
+                rdfs:comment "Liquid material." ;
+                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                rdfs:label "LiquidMaterial" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#LowAlloySteel
@@ -985,13 +957,13 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-###  https://w3id.org/tribont/material#MetalAndAlloy
-:MetalAndAlloy rdf:type owl:Class ;
-               rdfs:subClassOf :NonPolymeric ;
-               rdfs:comment "Metal and alloy material." ;
-               rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-               rdfs:label "MetalAndAlloy" ;
-               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+###  https://w3id.org/tribont/material#MetallicMaterial
+:MetallicMaterial rdf:type owl:Class ;
+                  rdfs:subClassOf :SolidMaterial ;
+                  rdfs:comment "Metal and alloy material." ;
+                  rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                  rdfs:label "MetallicMaterial" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#Mg
@@ -1075,15 +1047,6 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-###  https://w3id.org/tribont/material#NaturalMaterial
-:NaturalMaterial rdf:type owl:Class ;
-                 rdfs:subClassOf :NonPolymeric ;
-                 rdfs:comment "Natural material." ;
-                 rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-                 rdfs:label "NaturalMaterial" ;
-                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-
-
 ###  https://w3id.org/tribont/material#Nb
 :Nb rdf:type owl:Class ;
     rdfs:subClassOf :ChemicalElementConcentration ;
@@ -1127,17 +1090,6 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                           rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                           rdfs:label "NonFerrousMetalInhibitor" ;
                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-
-
-###  https://w3id.org/tribont/material#NonPolymeric
-:NonPolymeric rdf:type owl:Class ;
-              rdfs:subClassOf :Solid ;
-              owl:disjointWith :Polymer ,
-                               :SolidLubricant ;
-              rdfs:comment "Non polymeric material." ;
-              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-              rdfs:label "NonPolymeric" ;
-              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#O
@@ -1236,7 +1188,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/material#PlasticThermoplastic
 :PlasticThermoplastic rdf:type owl:Class ;
-                      rdfs:subClassOf :Polymer ;
+                      rdfs:subClassOf :PolymerMaterial ;
                       rdfs:comment "Plastic thermoplastic material." ;
                       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                       rdfs:label "PlasticThermoplastic" ;
@@ -1245,7 +1197,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/material#PlasticThermoset
 :PlasticThermoset rdf:type owl:Class ;
-                  rdfs:subClassOf :Polymer ;
+                  rdfs:subClassOf :PolymerMaterial ;
                   rdfs:comment "Plastic Thermoset material." ;
                   rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                   rdfs:label "PlasticThermoset" ;
@@ -1261,16 +1213,6 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-###  https://w3id.org/tribont/material#Polymer
-:Polymer rdf:type owl:Class ;
-         rdfs:subClassOf :Solid ;
-         owl:disjointWith :SolidLubricant ;
-         rdfs:comment "Any polymer" ;
-         rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-         rdfs:label "Polymer" ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-
-
 ###  https://w3id.org/tribont/material#PolymerElementConcentration
 :PolymerElementConcentration rdf:type owl:Class ;
                              rdfs:subClassOf :ElementConcentration ;
@@ -1278,6 +1220,15 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                              rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                              rdfs:label "PolymerElementConcentration" ;
                              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/material#PolymerMaterial
+:PolymerMaterial rdf:type owl:Class ;
+                 rdfs:subClassOf :SolidMaterial ;
+                 rdfs:comment "Any polymer" ;
+                 rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+                 rdfs:label "PolymerMaterial" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#Pr
@@ -1442,26 +1393,6 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-###  https://w3id.org/tribont/material#Solid
-:Solid rdf:type owl:Class ;
-       rdfs:subClassOf :Material ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
-                         owl:allValuesFrom [ rdf:type owl:Class ;
-                                             owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
-                                                           <https://w3id.org/tribont/core#MechanicalProperty>
-                                                           <https://w3id.org/tribont/core#SolidPhysicalProperty>
-                                                           <https://w3id.org/tribont/core#SolidThermalProperty>
-                                                           :ElementConcentration
-                                                         )
-                                           ]
-                       ] ;
-       rdfs:comment "Solid material." ;
-       rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
-       rdfs:label "Solid" ;
-       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-
-
 ###  https://w3id.org/tribont/material#SolidContaminants
 :SolidContaminants rdf:type owl:Class ;
                    rdfs:subClassOf :OtherElementConcentration ,
@@ -1477,11 +1408,31 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/material#SolidLubricant
 :SolidLubricant rdf:type owl:Class ;
-                rdfs:subClassOf :Solid ;
+                rdfs:subClassOf :SolidMaterial ;
                 rdfs:comment "Solid lubricant material." ;
                 rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                 rdfs:label "SolidLubricant" ;
                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+
+
+###  https://w3id.org/tribont/material#SolidMaterial
+:SolidMaterial rdf:type owl:Class ;
+               rdfs:subClassOf :Material ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <https://w3id.org/isCharacterisedBy#isCharacterisedBy> ;
+                                 owl:allValuesFrom [ rdf:type owl:Class ;
+                                                     owl:unionOf ( <https://w3id.org/tribont/core#ElectricalProperty>
+                                                                   <https://w3id.org/tribont/core#MechanicalProperty>
+                                                                   <https://w3id.org/tribont/core#SolidPhysicalProperty>
+                                                                   <https://w3id.org/tribont/core#SolidThermalProperty>
+                                                                   :ElementConcentration
+                                                                 )
+                                                   ]
+                               ] ;
+               rdfs:comment "Solid material." ;
+               rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
+               rdfs:label "SolidMaterial" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
 ###  https://w3id.org/tribont/material#Sr
@@ -1513,7 +1464,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/material#Steel
 :Steel rdf:type owl:Class ;
-       rdfs:subClassOf :MetalAndAlloy ;
+       rdfs:subClassOf :MetallicMaterial ;
        rdfs:comment "Steel material." ;
        rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
        rdfs:label "Steel" ;
@@ -1625,7 +1576,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/tribont/material#TitaniumAlloy
 :TitaniumAlloy rdf:type owl:Class ;
-               rdfs:subClassOf :MetalAndAlloy ;
+               rdfs:subClassOf :MetallicMaterial ;
                rdfs:comment "Titanium alloy material." ;
                rdfs:isDefinedBy "https://w3id.org/tribont/material" ;
                rdfs:label "TitaniumAlloy" ;
@@ -1869,37 +1820,37 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
 [ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################
@@ -2033,4 +1984,4 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 ] .
 
 
-###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
