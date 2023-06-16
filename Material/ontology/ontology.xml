@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/tribont/material"
+<rdf:RDF xmlns="https://w3id.org/tribont/material#"
      xml:base="https://w3id.org/tribont/material"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
@@ -22,7 +22,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <terms:created>2023-06-02</terms:created>
         <terms:creator xml:lang="en">Patricia Casla (Tekniker)</terms:creator>
         <terms:description xml:lang="en">The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples.</terms:description>
-        <terms:issued>2023-06-02</terms:issued>
         <terms:title>Material module</terms:title>
         <vann:preferredNamespacePrefix>material</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/tribont/material</vann:preferredNamespaceUri>
@@ -39,22 +38,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
-
-    <!-- http://gbol.life/ontology/bibo#status -->
-
-    <owl:AnnotationProperty rdf:about="http://gbol.life/ontology/bibo#status"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/bibliographicCitation -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#cardinality -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
     
@@ -62,11 +51,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://www.w3.org/2002/07/owl#maxCardinality -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxCardinality"/>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#maxQualifiedCardinality -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxQualifiedCardinality"/>
     
@@ -74,11 +65,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
     
 
 
     <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
@@ -92,10 +85,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#hasUnit -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#hasUnit"/>
     
@@ -103,11 +98,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#isCharacterisedBy -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
     
 
 
     <!-- https://w3id.org/tribont/material#hasElementRole -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasElementRole">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/material#isElementRoleFor"/>
@@ -122,6 +119,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#hasNaming -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasNaming">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/material#isNamingFor"/>
         <rdfs:comment>Relationship between something and the name identifying it.</rdfs:comment>
@@ -133,6 +131,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#hasSupplier -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasSupplier">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/material#isSuppliedBy"/>
@@ -146,6 +145,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#hasTypicalUse -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#hasTypicalUse">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/material#isTypicalUseFor"/>
         <rdfs:comment>Relationship between something and  its typical application.</rdfs:comment>
@@ -157,6 +157,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#isElementRoleFor -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isElementRoleFor">
         <rdfs:domain rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
@@ -170,6 +171,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#isNamingFor -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isNamingFor">
         <rdfs:comment>Relationship between a name and what it identifies..</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
@@ -181,6 +183,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#isSuppliedBy -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isSuppliedBy">
         <rdfs:comment>Relationship between something and the company supplying it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
@@ -191,6 +194,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#isTypicalUseFor -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/material#isTypicalUseFor">
         <rdfs:comment>Relationship between an application and what it is usually applied to,</rdfs:comment>
@@ -209,10 +213,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/tribont/core#name -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#name"/>
     
@@ -220,11 +226,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#shortNam -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#shortNam"/>
     
 
 
     <!-- https://w3id.org/tribont/material#number -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/material#number">
         <rdfs:comment>Defined number for the unique designation of materials.</rdfs:comment>
@@ -243,10 +251,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/tribont/core#Body -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Body">
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/material#Material"/>
@@ -255,6 +265,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Ag -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ag">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -268,6 +279,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Al -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Al">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Al in a material.</rdfs:comment>
@@ -279,6 +291,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Al203 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Al203">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -292,6 +305,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#AlN -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#AlN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of AlN in a material.</rdfs:comment>
@@ -303,6 +317,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Alluminium-Flake -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Alluminium-Flake">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
@@ -316,6 +331,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#AlluminiumAlloy -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#AlluminiumAlloy">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MetallicMaterial"/>
         <rdfs:comment>Alluminium alloy.</rdfs:comment>
@@ -328,6 +344,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#AntifrictionLubricant -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#AntifrictionLubricant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:comment>Content of Anti-friction/wearLubricant in a material.</rdfs:comment>
@@ -339,6 +356,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Antioxidant -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Antioxidant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
@@ -365,6 +383,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Aramid-Fiber -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Aramid-Fiber">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Aramid-Fiber in a material.</rdfs:comment>
@@ -376,6 +395,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#ArsenicOxide -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ArsenicOxide">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -389,6 +409,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#As -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#As">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of As in a material.</rdfs:comment>
@@ -400,6 +421,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Au -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Au">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -413,6 +435,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#B -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#B">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of B in a material.</rdfs:comment>
@@ -424,6 +447,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#B203 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#B203">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -437,6 +461,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#B4C -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#B4C">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of B4C in a material.</rdfs:comment>
@@ -448,6 +473,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#BN -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#BN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -461,6 +487,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#BaO -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#BaO">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of BaO in a material.</rdfs:comment>
@@ -472,6 +499,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#BaSO4 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#BaSO4">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
@@ -485,6 +513,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Be -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Be">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Be in a material.</rdfs:comment>
@@ -496,6 +525,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#BeO -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#BeO">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -509,6 +539,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Bi -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Bi">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Biin a material.</rdfs:comment>
@@ -520,6 +551,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#C -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#C">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -533,6 +565,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Ca -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ca">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ca in a material.</rdfs:comment>
@@ -544,6 +577,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#CaCO3 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#CaCO3">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -557,6 +591,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#CaO -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#CaO">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of CaO in a material.</rdfs:comment>
@@ -568,6 +603,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#CalciumCarbonate-Powder -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#CalciumCarbonate-Powder">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
@@ -581,6 +617,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Carbon-Fiber -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Carbon-Fiber">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Carbon-Fiber in a material.</rdfs:comment>
@@ -592,6 +629,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Carbon-Powder -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Carbon-Powder">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
@@ -605,6 +643,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Cd -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Cd">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Cd in a material.</rdfs:comment>
@@ -616,6 +655,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#CdS -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#CdS">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -629,6 +669,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Ce -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ce">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ce in a material.</rdfs:comment>
@@ -640,6 +681,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Cellulose -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Cellulose">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
@@ -653,6 +695,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#CeramicMaterial -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#CeramicMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidMaterial"/>
         <rdfs:comment>Ceramic material.</rdfs:comment>
@@ -664,6 +707,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#ChemicalElementConcentration -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ChemicalElementConcentration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementConcentration"/>
@@ -677,6 +721,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Co -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Co">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Co in a material.</rdfs:comment>
@@ -688,6 +733,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#CompositeMaterial -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#CompositeMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidMaterial"/>
@@ -701,6 +747,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Cr -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Cr">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Cr in a material.</rdfs:comment>
@@ -712,6 +759,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Cr203 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Cr203">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -725,6 +773,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Cu -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Cu">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Cu in a material.</rdfs:comment>
@@ -736,6 +785,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Dy -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Dy">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -749,6 +799,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#ElastomerThermoplastic -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElastomerThermoplastic">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerMaterial"/>
         <rdfs:comment>Elastomer thermoplastic material.</rdfs:comment>
@@ -761,6 +812,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#ElastomerThermoset -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElastomerThermoset">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerMaterial"/>
         <rdfs:comment>Elastomer thermoset material.</rdfs:comment>
@@ -772,6 +824,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#ElementConcentration -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElementConcentration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
@@ -798,6 +851,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#ElementRole -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElementRole">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Role"/>
         <rdfs:comment>The position or purpose that an element has in a situation or relationship.</rdfs:comment>
@@ -809,6 +863,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Er -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Er">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -822,6 +877,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Eu -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Eu">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Eu in a material.</rdfs:comment>
@@ -833,6 +889,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#F -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#F">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -846,6 +903,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Fe -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Fe">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Fe in a material.</rdfs:comment>
@@ -857,6 +915,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Fe203 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Fe203">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -870,6 +929,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#FlameRetardant -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#FlameRetardant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:comment>Content of FlameRetardant in a material.</rdfs:comment>
@@ -881,6 +941,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#FluidLubricant -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#FluidLubricant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#LiquidMaterial"/>
@@ -894,6 +955,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Gd -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Gd">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Gd in a material.</rdfs:comment>
@@ -905,6 +967,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Ge -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ge">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -918,6 +981,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Glass -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Glass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#CeramicMaterial"/>
         <rdfs:comment>Glass material.</rdfs:comment>
@@ -929,6 +993,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Glass-Fiber -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Glass-Fiber">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
@@ -942,6 +1007,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Glass-MatFabric -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Glass-MatFabric">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Glass-MatFabric in a material.</rdfs:comment>
@@ -953,6 +1019,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Glycol -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Glycol">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
@@ -979,6 +1046,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Graphite-Powder -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Graphite-Powder">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Graphite-Powder in a material.</rdfs:comment>
@@ -990,6 +1058,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Grease -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Grease">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#FluidLubricant"/>
@@ -1004,6 +1073,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#H -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#H">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of H in a material.</rdfs:comment>
@@ -1015,6 +1085,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#H2O -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#H2O">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1028,6 +1099,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Hf -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Hf">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Hf in a material.</rdfs:comment>
@@ -1039,6 +1111,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Hg -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Hg">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1052,6 +1125,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#HighAlloySteel -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#HighAlloySteel">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Steel"/>
         <rdfs:comment>High alloy steel material.</rdfs:comment>
@@ -1064,6 +1138,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Ho -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ho">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ho in a material.</rdfs:comment>
@@ -1075,6 +1150,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#ImpactModifier -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ImpactModifier">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
@@ -1089,6 +1165,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#In -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#In">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of In in a material.</rdfs:comment>
@@ -1100,6 +1177,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Ir -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ir">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1113,6 +1191,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#La -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#La">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of La in a material.</rdfs:comment>
@@ -1124,6 +1203,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Li -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Li">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1137,6 +1217,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Li2O -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Li2O">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Li2O in a material.</rdfs:comment>
@@ -1148,6 +1229,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#LiquidMaterial -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#LiquidMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Material"/>
@@ -1177,6 +1259,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#LowAlloySteel -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#LowAlloySteel">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Steel"/>
         <rdfs:comment>Low alloy steel material.</rdfs:comment>
@@ -1189,6 +1272,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Lu -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Lu">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Lu in a material.</rdfs:comment>
@@ -1200,6 +1284,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Material -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Material">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
@@ -1241,6 +1326,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#MaterialApplication -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialApplication">
         <rdfs:comment>The possible uses of a material.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
@@ -1251,6 +1337,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#MaterialIdentification -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialIdentification">
         <rdfs:subClassOf>
@@ -1281,6 +1368,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#MaterialNaming -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialNaming">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialIdentification"/>
         <rdfs:subClassOf>
@@ -1308,6 +1396,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#MaterialStandard -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialStandard">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Standard"/>
         <rdfs:comment>A document approved by a recognized body that provides common to by fullfiled by a material.</rdfs:comment>
@@ -1319,6 +1408,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#MaterialTradename -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#MaterialTradename">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MaterialIdentification"/>
@@ -1332,6 +1422,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#MetallicMaterial -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#MetallicMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidMaterial"/>
         <rdfs:comment>Metal and alloy material.</rdfs:comment>
@@ -1343,6 +1434,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Mg -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Mg">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1356,6 +1448,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Mica -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Mica">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Mica in a material.</rdfs:comment>
@@ -1367,6 +1460,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Mineral -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Mineral">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
@@ -1380,6 +1474,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Mn -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Mn">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Mn in a material.</rdfs:comment>
@@ -1391,6 +1486,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Mo -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Mo">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1404,6 +1500,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#MoS2 -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#MoS2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of MoS2 in a material.</rdfs:comment>
@@ -1415,6 +1512,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#N -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#N">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1428,6 +1526,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Na2O -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Na2O">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Na2O in a material.</rdfs:comment>
@@ -1439,6 +1538,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#NaCl -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#NaCl">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1452,6 +1552,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Nb -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Nb">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Nb in a material.</rdfs:comment>
@@ -1463,6 +1564,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Nd -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Nd">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1476,6 +1578,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Ni -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ni">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ni in a material.</rdfs:comment>
@@ -1487,6 +1590,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#NonFerrousMetalInhibitor -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#NonFerrousMetalInhibitor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
@@ -1513,6 +1617,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#O -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#O">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of O in a material.</rdfs:comment>
@@ -1524,6 +1629,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#O2 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#O2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1537,6 +1643,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Oil -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Oil">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#FluidLubricant"/>
         <rdfs:comment>Oil material.</rdfs:comment>
@@ -1549,6 +1656,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Os -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Os">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Os in a material.</rdfs:comment>
@@ -1560,6 +1668,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#OtherElementConcentration -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#OtherElementConcentration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementConcentration"/>
@@ -1579,6 +1688,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#P -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#P">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of P in a material.</rdfs:comment>
@@ -1590,6 +1700,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#PTFE-Lubricant -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#PTFE-Lubricant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidLubricant"/>
@@ -1603,6 +1714,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Pb -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Pb">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Pb in a material.</rdfs:comment>
@@ -1614,6 +1726,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#PbO -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#PbO">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1627,6 +1740,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Pd -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Pd">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Pd in a material.</rdfs:comment>
@@ -1638,6 +1752,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#PlasticThermoplastic -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#PlasticThermoplastic">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerMaterial"/>
@@ -1651,6 +1766,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#PlasticThermoset -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#PlasticThermoset">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerMaterial"/>
         <rdfs:comment>Plastic Thermoset material.</rdfs:comment>
@@ -1662,6 +1778,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#PlasticizerOil -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#PlasticizerOil">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
@@ -1675,6 +1792,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#PolymerElementConcentration -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#PolymerElementConcentration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ElementConcentration"/>
         <rdfs:comment>Concentration of polymer element in a material.</rdfs:comment>
@@ -1686,6 +1804,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#PolymerMaterial -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#PolymerMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidMaterial"/>
@@ -1699,6 +1818,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Pr -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Pr">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Pr in a material.</rdfs:comment>
@@ -1710,6 +1830,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Pt -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Pt">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1723,6 +1844,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Rag-Cotton-Fabric -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Rag-Cotton-Fabric">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Rag-Cotton-Fabric in a material.</rdfs:comment>
@@ -1734,6 +1856,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Re -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Re">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1747,6 +1870,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Rh -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Rh">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Rh in a material.</rdfs:comment>
@@ -1758,6 +1882,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Ru -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ru">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1771,6 +1896,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#S -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#S">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of S in a material.</rdfs:comment>
@@ -1782,6 +1908,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Sb -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Sb">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1795,6 +1922,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Sc -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Sc">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Sc in a material.</rdfs:comment>
@@ -1806,6 +1934,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Se -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Se">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1819,6 +1948,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Si -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Si">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Si in a material.</rdfs:comment>
@@ -1830,6 +1960,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Si3N4 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Si3N4">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1843,6 +1974,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#SiC -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#SiC">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of SiC in a material.</rdfs:comment>
@@ -1854,6 +1986,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#SiO2 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#SiO2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -1867,6 +2000,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Silica-Fumed -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Silica-Fumed">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Silica-Fumed in a material.</rdfs:comment>
@@ -1878,6 +2012,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Silicone-Lubricant -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Silicone-Lubricant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidLubricant"/>
@@ -1891,6 +2026,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Sm -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Sm">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Sm  in a material.</rdfs:comment>
@@ -1903,6 +2039,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Sn -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Sn">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Sn in a material.</rdfs:comment>
@@ -1914,6 +2051,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#SolidContaminants -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#SolidContaminants">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
@@ -1933,6 +2071,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#SolidLubricant -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#SolidLubricant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#SolidMaterial"/>
         <rdfs:comment>Solid lubricant material.</rdfs:comment>
@@ -1944,6 +2083,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#SolidMaterial -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#SolidMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Material"/>
@@ -1973,6 +2113,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Sr -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Sr">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Sr in a material.</rdfs:comment>
@@ -1984,6 +2125,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#StainlessSteel -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#StainlessSteel">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Steel"/>
@@ -1997,6 +2139,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#StainlessSteel-Fiber -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#StainlessSteel-Fiber">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of StainlessSteel-Fiber in a material.</rdfs:comment>
@@ -2009,6 +2152,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Steel -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Steel">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MetallicMaterial"/>
         <rdfs:comment>Steel material.</rdfs:comment>
@@ -2020,6 +2164,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#SulfateAsh -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#SulfateAsh">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
@@ -2039,6 +2184,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Ta -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ta">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ta in a material.</rdfs:comment>
@@ -2050,6 +2196,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#TaC -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#TaC">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -2063,6 +2210,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Talc -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Talc">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#PolymerElementConcentration"/>
         <rdfs:comment>Content of Talc in a material.</rdfs:comment>
@@ -2074,6 +2222,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Tb -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Tb">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -2087,6 +2236,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Te -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Te">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Te in a material.</rdfs:comment>
@@ -2098,6 +2248,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#ThO2 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ThO2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -2111,6 +2262,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Ti -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Ti">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Ti in a material.</rdfs:comment>
@@ -2122,6 +2274,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#TiB2 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#TiB2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -2135,6 +2288,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#TiC -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#TiC">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of TiC in a material.</rdfs:comment>
@@ -2146,6 +2300,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#TiO2 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#TiO2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -2159,6 +2314,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#TitaniumAlloy -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#TitaniumAlloy">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#MetallicMaterial"/>
         <rdfs:comment>Titanium alloy material.</rdfs:comment>
@@ -2170,6 +2326,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Tl -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Tl">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -2183,6 +2340,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Tm -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Tm">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Tm in a material.</rdfs:comment>
@@ -2194,6 +2352,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Tolyltriazole -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Tolyltriazole">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#NonFerrousMetalInhibitor"/>
@@ -2207,6 +2366,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#ToolSteel -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#ToolSteel">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#Steel"/>
         <rdfs:comment>Steel used for tooling.</rdfs:comment>
@@ -2218,6 +2378,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#U -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#U">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -2231,6 +2392,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#UVStabilizer -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#UVStabilizer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
         <rdfs:comment>Content of UVStabilizer in a material.</rdfs:comment>
@@ -2242,6 +2404,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#V -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#V">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -2255,6 +2418,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#W -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#W">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of W in a material.</rdfs:comment>
@@ -2267,6 +2431,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#WC -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#WC">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of WC in a material.</rdfs:comment>
@@ -2278,6 +2443,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Water -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Water">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#OtherElementConcentration"/>
@@ -2297,6 +2463,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Y -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Y">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Y in a material.</rdfs:comment>
@@ -2308,6 +2475,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Y203 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Y203">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -2321,6 +2489,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Yb -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Yb">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Yb in a material.</rdfs:comment>
@@ -2332,6 +2501,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#Zn -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Zn">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -2345,6 +2515,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#ZnO -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#ZnO">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of ZnO in a material.</rdfs:comment>
@@ -2357,6 +2528,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#Zr -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#Zr">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
         <rdfs:comment>Content of Zr in a material.</rdfs:comment>
@@ -2368,6 +2540,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#ZrO2 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ZrO2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/material#ChemicalElementConcentration"/>
@@ -2387,16 +2560,19 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/tribont/core#percentage -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#percentage"/>
     
 
 
     <!-- https://w3id.org/tribont/material#AISI_52100 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#AISI_52100">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
@@ -2409,6 +2585,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#ASTM_A295 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#ASTM_A295">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
@@ -2419,6 +2596,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#BS_970 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#BS_970">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
@@ -2431,6 +2609,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#CAS_Number -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#CAS_Number">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
@@ -2441,6 +2620,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#DIN_17230 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#DIN_17230">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
@@ -2453,6 +2633,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#JIS_G4805 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#JIS_G4805">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#MaterialStandard"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
@@ -2463,6 +2644,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/material#additive -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#additive">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
@@ -2475,6 +2657,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#basic -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#basic">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
@@ -2486,6 +2669,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#filler -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/material#filler">
         <rdf:type rdf:resource="https://w3id.org/tribont/material#ElementRole"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/material</rdfs:isDefinedBy>
@@ -2493,37 +2677,37 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     
 
@@ -2535,6 +2719,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
@@ -2667,5 +2852,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
 

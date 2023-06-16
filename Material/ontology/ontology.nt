@@ -7,7 +7,6 @@
 <https://w3id.org/tribont/material> <http://purl.org/dc/terms/created> "2023-06-02" .
 <https://w3id.org/tribont/material> <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@en .
 <https://w3id.org/tribont/material> <http://purl.org/dc/terms/description> "The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples."@en .
-<https://w3id.org/tribont/material> <http://purl.org/dc/terms/issued> "2023-06-02" .
 <https://w3id.org/tribont/material> <http://purl.org/dc/terms/title> "Material module" .
 <https://w3id.org/tribont/material> <http://purl.org/vocab/vann/preferredNamespacePrefix> "material" .
 <https://w3id.org/tribont/material> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tribont/material" .
@@ -190,7 +189,7 @@
 # 
 # https://w3id.org/tribont/material#AlluminiumAlloy
 <https://w3id.org/tribont/material#AlluminiumAlloy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#AlluminiumAlloy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#MetalAndAlloy> .
+<https://w3id.org/tribont/material#AlluminiumAlloy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#MetallicMaterial> .
 <https://w3id.org/tribont/material#AlluminiumAlloy> <http://www.w3.org/2000/01/rdf-schema#comment> "Alluminium alloy." .
 <https://w3id.org/tribont/material#AlluminiumAlloy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#AlluminiumAlloy> <http://www.w3.org/2000/01/rdf-schema#label> "AlluminiumAlloy" .
@@ -208,14 +207,14 @@
 <https://w3id.org/tribont/material#Antioxidant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#Antioxidant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#OtherElementConcentration> .
 <https://w3id.org/tribont/material#Antioxidant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#PercentageUnit> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#PercentageUnit> .
 <https://w3id.org/tribont/material#Antioxidant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/tribont/core#PercentageUnit> .
-_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/tribont/core#PercentageUnit> .
 <https://w3id.org/tribont/material#Antioxidant> <http://www.w3.org/2000/01/rdf-schema#comment> "Antioxidant content for something." .
 <https://w3id.org/tribont/material#Antioxidant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#Antioxidant> <http://www.w3.org/2000/01/rdf-schema#label> "Antioxidant" .
@@ -413,13 +412,13 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/tribont/material#Cellulose> <http://www.w3.org/2000/01/rdf-schema#label> "Cellulose" .
 <https://w3id.org/tribont/material#Cellulose> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-# https://w3id.org/tribont/material#Ceramic
-<https://w3id.org/tribont/material#Ceramic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#Ceramic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#NonPolymeric> .
-<https://w3id.org/tribont/material#Ceramic> <http://www.w3.org/2000/01/rdf-schema#comment> "Ceramic material." .
-<https://w3id.org/tribont/material#Ceramic> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
-<https://w3id.org/tribont/material#Ceramic> <http://www.w3.org/2000/01/rdf-schema#label> "Ceramic" .
-<https://w3id.org/tribont/material#Ceramic> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+# https://w3id.org/tribont/material#CeramicMaterial
+<https://w3id.org/tribont/material#CeramicMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tribont/material#CeramicMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#SolidMaterial> .
+<https://w3id.org/tribont/material#CeramicMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Ceramic material." .
+<https://w3id.org/tribont/material#CeramicMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
+<https://w3id.org/tribont/material#CeramicMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "CeramicMaterial" .
+<https://w3id.org/tribont/material#CeramicMaterial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#ChemicalElementConcentration
 <https://w3id.org/tribont/material#ChemicalElementConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -437,13 +436,13 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/tribont/material#Co> <http://www.w3.org/2000/01/rdf-schema#label> "Co" .
 <https://w3id.org/tribont/material#Co> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-# https://w3id.org/tribont/material#Composite
-<https://w3id.org/tribont/material#Composite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#Composite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Hybrid> .
-<https://w3id.org/tribont/material#Composite> <http://www.w3.org/2000/01/rdf-schema#comment> "Composite material." .
-<https://w3id.org/tribont/material#Composite> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
-<https://w3id.org/tribont/material#Composite> <http://www.w3.org/2000/01/rdf-schema#label> "Composite" .
-<https://w3id.org/tribont/material#Composite> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+# https://w3id.org/tribont/material#CompositeMaterial
+<https://w3id.org/tribont/material#CompositeMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tribont/material#CompositeMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#SolidMaterial> .
+<https://w3id.org/tribont/material#CompositeMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Composite material." .
+<https://w3id.org/tribont/material#CompositeMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
+<https://w3id.org/tribont/material#CompositeMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "CompositeMaterial" .
+<https://w3id.org/tribont/material#CompositeMaterial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#Cr
 <https://w3id.org/tribont/material#Cr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -479,7 +478,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/tribont/material#ElastomerThermoplastic
 <https://w3id.org/tribont/material#ElastomerThermoplastic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#ElastomerThermoplastic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Polymer> .
+<https://w3id.org/tribont/material#ElastomerThermoplastic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#PolymerMaterial> .
 <https://w3id.org/tribont/material#ElastomerThermoplastic> <http://www.w3.org/2000/01/rdf-schema#comment> "Elastomer thermoplastic material." .
 <https://w3id.org/tribont/material#ElastomerThermoplastic> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#ElastomerThermoplastic> <http://www.w3.org/2000/01/rdf-schema#label> "ElastomerThermoplastic" .
@@ -487,7 +486,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/tribont/material#ElastomerThermoset
 <https://w3id.org/tribont/material#ElastomerThermoset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#ElastomerThermoset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Polymer> .
+<https://w3id.org/tribont/material#ElastomerThermoset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#PolymerMaterial> .
 <https://w3id.org/tribont/material#ElastomerThermoset> <http://www.w3.org/2000/01/rdf-schema#comment> "Elastomer thermoset material." .
 <https://w3id.org/tribont/material#ElastomerThermoset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#ElastomerThermoset> <http://www.w3.org/2000/01/rdf-schema#label> "ElastomerThermoset" .
@@ -497,14 +496,14 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/tribont/material#ElementConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#ElementConcentration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/isCharacterisedBy#Property> .
 <https://w3id.org/tribont/material#ElementConcentration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/material#ElementRole> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#hasElementRole> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#hasElementRole> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/material#ElementRole> .
 <https://w3id.org/tribont/material#ElementConcentration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/tribont/material#ElementRole> .
-_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#hasElementRole> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#hasElementRole> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/tribont/material#ElementRole> .
 <https://w3id.org/tribont/material#ElementConcentration> <http://www.w3.org/2000/01/rdf-schema#comment> "Concentration of an specific element in a material." .
 <https://w3id.org/tribont/material#ElementConcentration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#ElementConcentration> <http://www.w3.org/2000/01/rdf-schema#label> "ElementConcentration" .
@@ -568,19 +567,11 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/tribont/material#FluidLubricant
 <https://w3id.org/tribont/material#FluidLubricant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#FluidLubricant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Liquid> .
+<https://w3id.org/tribont/material#FluidLubricant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#LiquidMaterial> .
 <https://w3id.org/tribont/material#FluidLubricant> <http://www.w3.org/2000/01/rdf-schema#comment> "Fluid lubricant material." .
 <https://w3id.org/tribont/material#FluidLubricant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#FluidLubricant> <http://www.w3.org/2000/01/rdf-schema#label> "FluidLubricant" .
 <https://w3id.org/tribont/material#FluidLubricant> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-# 
-# https://w3id.org/tribont/material#Foam
-<https://w3id.org/tribont/material#Foam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#Foam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Hybrid> .
-<https://w3id.org/tribont/material#Foam> <http://www.w3.org/2000/01/rdf-schema#comment> "Foam material." .
-<https://w3id.org/tribont/material#Foam> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
-<https://w3id.org/tribont/material#Foam> <http://www.w3.org/2000/01/rdf-schema#label> "Foam" .
-<https://w3id.org/tribont/material#Foam> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#Gd
 <https://w3id.org/tribont/material#Gd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -600,7 +591,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/tribont/material#Glass
 <https://w3id.org/tribont/material#Glass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#Glass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#NonPolymeric> .
+<https://w3id.org/tribont/material#Glass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#CeramicMaterial> .
 <https://w3id.org/tribont/material#Glass> <http://www.w3.org/2000/01/rdf-schema#comment> "Glass material." .
 <https://w3id.org/tribont/material#Glass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#Glass> <http://www.w3.org/2000/01/rdf-schema#label> "Glass" .
@@ -626,14 +617,14 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/tribont/material#Glycol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#Glycol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#OtherElementConcentration> .
 <https://w3id.org/tribont/material#Glycol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#ContentUnit> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#ContentUnit> .
 <https://w3id.org/tribont/material#Glycol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/tribont/core#ContentUnit> .
-_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/tribont/core#ContentUnit> .
 <https://w3id.org/tribont/material#Glycol> <http://www.w3.org/2000/01/rdf-schema#comment> "Content of glycol of something." .
 <https://w3id.org/tribont/material#Glycol> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#Glycol> <http://www.w3.org/2000/01/rdf-schema#label> "Glycol" .
@@ -704,22 +695,6 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/tribont/material#Ho> <http://www.w3.org/2000/01/rdf-schema#label> "Ho" .
 <https://w3id.org/tribont/material#Ho> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-# https://w3id.org/tribont/material#Honeycomb
-<https://w3id.org/tribont/material#Honeycomb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#Honeycomb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Hybrid> .
-<https://w3id.org/tribont/material#Honeycomb> <http://www.w3.org/2000/01/rdf-schema#comment> "Honeycomb material." .
-<https://w3id.org/tribont/material#Honeycomb> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
-<https://w3id.org/tribont/material#Honeycomb> <http://www.w3.org/2000/01/rdf-schema#label> "Honeycomb" .
-<https://w3id.org/tribont/material#Honeycomb> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-# 
-# https://w3id.org/tribont/material#Hybrid
-<https://w3id.org/tribont/material#Hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#Hybrid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#NonPolymeric> .
-<https://w3id.org/tribont/material#Hybrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Hybrid material." .
-<https://w3id.org/tribont/material#Hybrid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
-<https://w3id.org/tribont/material#Hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Hybrid" .
-<https://w3id.org/tribont/material#Hybrid> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-# 
 # https://w3id.org/tribont/material#ImpactModifier
 <https://w3id.org/tribont/material#ImpactModifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#ImpactModifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#OtherElementConcentration> .
@@ -769,32 +744,32 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/tribont/material#Li2O> <http://www.w3.org/2000/01/rdf-schema#label> "Li2O" .
 <https://w3id.org/tribont/material#Li2O> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-# https://w3id.org/tribont/material#Liquid
-<https://w3id.org/tribont/material#Liquid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#Liquid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Material> .
-<https://w3id.org/tribont/material#Liquid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid8 .
-_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ElementConcentration> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#LiquidThermalProperty> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#LiquidPhysicalProperty> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#ElectricalProperty> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
+# https://w3id.org/tribont/material#LiquidMaterial
+<https://w3id.org/tribont/material#LiquidMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tribont/material#LiquidMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Material> .
+<https://w3id.org/tribont/material#LiquidMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/tribont/material#Liquid> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tribont/material#Solid> .
-<https://w3id.org/tribont/material#Liquid> <http://www.w3.org/2000/01/rdf-schema#comment> "Liquid material." .
-<https://w3id.org/tribont/material#Liquid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
-<https://w3id.org/tribont/material#Liquid> <http://www.w3.org/2000/01/rdf-schema#label> "Liquid" .
-<https://w3id.org/tribont/material#Liquid> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#ElectricalProperty> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#LiquidPhysicalProperty> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#LiquidThermalProperty> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ElementConcentration> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/tribont/material#LiquidMaterial> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tribont/material#SolidMaterial> .
+<https://w3id.org/tribont/material#LiquidMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Liquid material." .
+<https://w3id.org/tribont/material#LiquidMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
+<https://w3id.org/tribont/material#LiquidMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "LiquidMaterial" .
+<https://w3id.org/tribont/material#LiquidMaterial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#LowAlloySteel
 <https://w3id.org/tribont/material#LowAlloySteel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -816,34 +791,34 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/tribont/material#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/isCharacterisedBy#SubjectOfInterest> .
 <https://w3id.org/tribont/material#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
-_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid14 .
-_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ElementConcentration> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#ThermalProperty> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#PhysicalProperty> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#MechanicalProperty> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#ElectricalProperty> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#ElectricalProperty> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#MechanicalProperty> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#PhysicalProperty> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#ThermalProperty> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ElementConcentration> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/tribont/material#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/material#MaterialIdentification> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#hasNaming> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#hasNaming> .
+_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/material#MaterialIdentification> .
 <https://w3id.org/tribont/material#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/material#MaterialApplication> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#hasTypicalUse> .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#hasTypicalUse> .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/material#MaterialApplication> .
 <https://w3id.org/tribont/material#Material> <http://www.w3.org/2000/01/rdf-schema#comment> "The basic material from which something is made." .
 <https://w3id.org/tribont/material#Material> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material" .
@@ -859,17 +834,17 @@ _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/tribont/material#MaterialIdentification
 <https://w3id.org/tribont/material#MaterialIdentification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#MaterialIdentification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#longName> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#longName> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/tribont/material#MaterialIdentification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#name> .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#name> .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/tribont/material#MaterialIdentification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#shortNam> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#shortNam> .
+_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/tribont/material#MaterialIdentification> <http://www.w3.org/2000/01/rdf-schema#comment> "Something that identifies a material." .
 <https://w3id.org/tribont/material#MaterialIdentification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "MaterialIdentification" .
 <https://w3id.org/tribont/material#MaterialIdentification> <http://www.w3.org/2000/01/rdf-schema#label> "MaterialIdentification" .
@@ -879,15 +854,15 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#MaterialNaming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#MaterialNaming> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#MaterialIdentification> .
 <https://w3id.org/tribont/material#MaterialNaming> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
-_:genid25 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#name> .
 _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/core#name> .
+_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/tribont/material#MaterialNaming> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid26 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#number> .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#number> .
+_:genid26 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/tribont/material#MaterialNaming> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tribont/material#MaterialTradename> .
 <https://w3id.org/tribont/material#MaterialNaming> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique name asssigned to a material independently of the manufacturer." .
 <https://w3id.org/tribont/material#MaterialNaming> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
@@ -910,13 +885,13 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#MaterialTradename> <http://www.w3.org/2000/01/rdf-schema#label> "MaterialTradename" .
 <https://w3id.org/tribont/material#MaterialTradename> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-# https://w3id.org/tribont/material#MetalAndAlloy
-<https://w3id.org/tribont/material#MetalAndAlloy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#MetalAndAlloy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#NonPolymeric> .
-<https://w3id.org/tribont/material#MetalAndAlloy> <http://www.w3.org/2000/01/rdf-schema#comment> "Metal and alloy material." .
-<https://w3id.org/tribont/material#MetalAndAlloy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
-<https://w3id.org/tribont/material#MetalAndAlloy> <http://www.w3.org/2000/01/rdf-schema#label> "MetalAndAlloy" .
-<https://w3id.org/tribont/material#MetalAndAlloy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+# https://w3id.org/tribont/material#MetallicMaterial
+<https://w3id.org/tribont/material#MetallicMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tribont/material#MetallicMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#SolidMaterial> .
+<https://w3id.org/tribont/material#MetallicMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Metal and alloy material." .
+<https://w3id.org/tribont/material#MetallicMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
+<https://w3id.org/tribont/material#MetallicMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "MetallicMaterial" .
+<https://w3id.org/tribont/material#MetallicMaterial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#Mg
 <https://w3id.org/tribont/material#Mg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -990,14 +965,6 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#NaCl> <http://www.w3.org/2000/01/rdf-schema#label> "NaCl" .
 <https://w3id.org/tribont/material#NaCl> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-# https://w3id.org/tribont/material#NaturalMaterial
-<https://w3id.org/tribont/material#NaturalMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#NaturalMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#NonPolymeric> .
-<https://w3id.org/tribont/material#NaturalMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Natural material." .
-<https://w3id.org/tribont/material#NaturalMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
-<https://w3id.org/tribont/material#NaturalMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "NaturalMaterial" .
-<https://w3id.org/tribont/material#NaturalMaterial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-# 
 # https://w3id.org/tribont/material#Nb
 <https://w3id.org/tribont/material#Nb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#Nb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#ChemicalElementConcentration> .
@@ -1026,28 +993,18 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#NonFerrousMetalInhibitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#NonFerrousMetalInhibitor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#OtherElementConcentration> .
 <https://w3id.org/tribont/material#NonFerrousMetalInhibitor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#PercentageUnit> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
+_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#PercentageUnit> .
 <https://w3id.org/tribont/material#NonFerrousMetalInhibitor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
-_:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/tribont/core#PercentageUnit> .
-_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
+_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/tribont/core#PercentageUnit> .
 <https://w3id.org/tribont/material#NonFerrousMetalInhibitor> <http://www.w3.org/2000/01/rdf-schema#comment> "Any Non Ferrous Metal Inhibitors Content." .
 <https://w3id.org/tribont/material#NonFerrousMetalInhibitor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#NonFerrousMetalInhibitor> <http://www.w3.org/2000/01/rdf-schema#label> "NonFerrousMetalInhibitor" .
 <https://w3id.org/tribont/material#NonFerrousMetalInhibitor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-# 
-# https://w3id.org/tribont/material#NonPolymeric
-<https://w3id.org/tribont/material#NonPolymeric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#NonPolymeric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Solid> .
-<https://w3id.org/tribont/material#NonPolymeric> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tribont/material#Polymer> .
-<https://w3id.org/tribont/material#NonPolymeric> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tribont/material#SolidLubricant> .
-<https://w3id.org/tribont/material#NonPolymeric> <http://www.w3.org/2000/01/rdf-schema#comment> "Non polymeric material." .
-<https://w3id.org/tribont/material#NonPolymeric> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
-<https://w3id.org/tribont/material#NonPolymeric> <http://www.w3.org/2000/01/rdf-schema#label> "NonPolymeric" .
-<https://w3id.org/tribont/material#NonPolymeric> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#O
 <https://w3id.org/tribont/material#O> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1085,9 +1042,9 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#OtherElementConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#OtherElementConcentration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#ElementConcentration> .
 <https://w3id.org/tribont/material#OtherElementConcentration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/tribont/material#additive> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#hasElementRole> .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tribont/material#hasElementRole> .
+_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/tribont/material#additive> .
 <https://w3id.org/tribont/material#OtherElementConcentration> <http://www.w3.org/2000/01/rdf-schema#comment> "Concentration  of an additive element in a material." .
 <https://w3id.org/tribont/material#OtherElementConcentration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#OtherElementConcentration> <http://www.w3.org/2000/01/rdf-schema#label> "OtherElementConcentration" .
@@ -1135,7 +1092,7 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/tribont/material#PlasticThermoplastic
 <https://w3id.org/tribont/material#PlasticThermoplastic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#PlasticThermoplastic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Polymer> .
+<https://w3id.org/tribont/material#PlasticThermoplastic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#PolymerMaterial> .
 <https://w3id.org/tribont/material#PlasticThermoplastic> <http://www.w3.org/2000/01/rdf-schema#comment> "Plastic thermoplastic material." .
 <https://w3id.org/tribont/material#PlasticThermoplastic> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#PlasticThermoplastic> <http://www.w3.org/2000/01/rdf-schema#label> "PlasticThermoplastic" .
@@ -1143,7 +1100,7 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/tribont/material#PlasticThermoset
 <https://w3id.org/tribont/material#PlasticThermoset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#PlasticThermoset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Polymer> .
+<https://w3id.org/tribont/material#PlasticThermoset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#PolymerMaterial> .
 <https://w3id.org/tribont/material#PlasticThermoset> <http://www.w3.org/2000/01/rdf-schema#comment> "Plastic Thermoset material." .
 <https://w3id.org/tribont/material#PlasticThermoset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#PlasticThermoset> <http://www.w3.org/2000/01/rdf-schema#label> "PlasticThermoset" .
@@ -1157,15 +1114,6 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#PlasticizerOil> <http://www.w3.org/2000/01/rdf-schema#label> "Plasticizer/Oil" .
 <https://w3id.org/tribont/material#PlasticizerOil> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-# https://w3id.org/tribont/material#Polymer
-<https://w3id.org/tribont/material#Polymer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#Polymer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Solid> .
-<https://w3id.org/tribont/material#Polymer> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tribont/material#SolidLubricant> .
-<https://w3id.org/tribont/material#Polymer> <http://www.w3.org/2000/01/rdf-schema#comment> "Any polymer" .
-<https://w3id.org/tribont/material#Polymer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
-<https://w3id.org/tribont/material#Polymer> <http://www.w3.org/2000/01/rdf-schema#label> "Polymer" .
-<https://w3id.org/tribont/material#Polymer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-# 
 # https://w3id.org/tribont/material#PolymerElementConcentration
 <https://w3id.org/tribont/material#PolymerElementConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#PolymerElementConcentration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#ElementConcentration> .
@@ -1173,6 +1121,14 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#PolymerElementConcentration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#PolymerElementConcentration> <http://www.w3.org/2000/01/rdf-schema#label> "PolymerElementConcentration" .
 <https://w3id.org/tribont/material#PolymerElementConcentration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+# 
+# https://w3id.org/tribont/material#PolymerMaterial
+<https://w3id.org/tribont/material#PolymerMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tribont/material#PolymerMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#SolidMaterial> .
+<https://w3id.org/tribont/material#PolymerMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Any polymer" .
+<https://w3id.org/tribont/material#PolymerMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
+<https://w3id.org/tribont/material#PolymerMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "PolymerMaterial" .
+<https://w3id.org/tribont/material#PolymerMaterial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#Pr
 <https://w3id.org/tribont/material#Pr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1318,42 +1274,13 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#Sn> <http://www.w3.org/2000/01/rdf-schema#label> "Sn" .
 <https://w3id.org/tribont/material#Sn> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-# https://w3id.org/tribont/material#Solid
-<https://w3id.org/tribont/material#Solid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#Solid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Material> .
-<https://w3id.org/tribont/material#Solid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid31 .
-_:genid31 <http://www.w3.org/2002/07/owl#unionOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ElementConcentration> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#SolidThermalProperty> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#SolidPhysicalProperty> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#MechanicalProperty> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#ElectricalProperty> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/tribont/material#Solid> <http://www.w3.org/2000/01/rdf-schema#comment> "Solid material." .
-<https://w3id.org/tribont/material#Solid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
-<https://w3id.org/tribont/material#Solid> <http://www.w3.org/2000/01/rdf-schema#label> "Solid" .
-<https://w3id.org/tribont/material#Solid> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
-# 
 # https://w3id.org/tribont/material#SolidContaminants
 <https://w3id.org/tribont/material#SolidContaminants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#SolidContaminants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#OtherElementConcentration> .
-<https://w3id.org/tribont/material#SolidContaminants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
-_:genid37 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/tribont/core#percentage> .
-_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tribont/material#SolidContaminants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
+_:genid30 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/tribont/core#percentage> .
 <https://w3id.org/tribont/material#SolidContaminants> <http://www.w3.org/2000/01/rdf-schema#comment> "Solid contaminants." .
 <https://w3id.org/tribont/material#SolidContaminants> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#SolidContaminants> <http://www.w3.org/2000/01/rdf-schema#label> "SolidContaminants" .
@@ -1361,11 +1288,40 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/tribont/material#SolidLubricant
 <https://w3id.org/tribont/material#SolidLubricant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#SolidLubricant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Solid> .
+<https://w3id.org/tribont/material#SolidLubricant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#SolidMaterial> .
 <https://w3id.org/tribont/material#SolidLubricant> <http://www.w3.org/2000/01/rdf-schema#comment> "Solid lubricant material." .
 <https://w3id.org/tribont/material#SolidLubricant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#SolidLubricant> <http://www.w3.org/2000/01/rdf-schema#label> "SolidLubricant" .
 <https://w3id.org/tribont/material#SolidLubricant> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
+# 
+# https://w3id.org/tribont/material#SolidMaterial
+<https://w3id.org/tribont/material#SolidMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tribont/material#SolidMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#Material> .
+<https://w3id.org/tribont/material#SolidMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#isCharacterisedBy> .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid32 <http://www.w3.org/2002/07/owl#unionOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#ElectricalProperty> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#MechanicalProperty> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#SolidPhysicalProperty> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#SolidThermalProperty> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ElementConcentration> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/tribont/material#SolidMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Solid material." .
+<https://w3id.org/tribont/material#SolidMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
+<https://w3id.org/tribont/material#SolidMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "SolidMaterial" .
+<https://w3id.org/tribont/material#SolidMaterial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
 # https://w3id.org/tribont/material#Sr
 <https://w3id.org/tribont/material#Sr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1393,7 +1349,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/tribont/material#Steel
 <https://w3id.org/tribont/material#Steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#Steel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#MetalAndAlloy> .
+<https://w3id.org/tribont/material#Steel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#MetallicMaterial> .
 <https://w3id.org/tribont/material#Steel> <http://www.w3.org/2000/01/rdf-schema#comment> "Steel material." .
 <https://w3id.org/tribont/material#Steel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#Steel> <http://www.w3.org/2000/01/rdf-schema#label> "Steel" .
@@ -1403,9 +1359,9 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#SulfateAsh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#SulfateAsh> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#OtherElementConcentration> .
 <https://w3id.org/tribont/material#SulfateAsh> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
-_:genid38 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/tribont/core#percentage> .
-_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
+_:genid38 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/tribont/core#percentage> .
 <https://w3id.org/tribont/material#SulfateAsh> <http://www.w3.org/2000/01/rdf-schema#comment> "Sulfate ash ." .
 <https://w3id.org/tribont/material#SulfateAsh> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#SulfateAsh> <http://www.w3.org/2000/01/rdf-schema#label> "SulfateAsh" .
@@ -1493,7 +1449,7 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/tribont/material#TitaniumAlloy
 <https://w3id.org/tribont/material#TitaniumAlloy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tribont/material#TitaniumAlloy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#MetalAndAlloy> .
+<https://w3id.org/tribont/material#TitaniumAlloy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#MetallicMaterial> .
 <https://w3id.org/tribont/material#TitaniumAlloy> <http://www.w3.org/2000/01/rdf-schema#comment> "Titanium alloy material." .
 <https://w3id.org/tribont/material#TitaniumAlloy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#TitaniumAlloy> <http://www.w3.org/2000/01/rdf-schema#label> "TitaniumAlloy" .
@@ -1575,9 +1531,9 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/tribont/material#Water> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tribont/material#OtherElementConcentration> .
 <https://w3id.org/tribont/material#Water> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
-_:genid39 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#ContentUnit> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/isCharacterisedBy#hasUnit> .
+_:genid39 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/tribont/core#ContentUnit> .
 <https://w3id.org/tribont/material#Water> <http://www.w3.org/2000/01/rdf-schema#comment> "Water content of something." .
 <https://w3id.org/tribont/material#Water> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/tribont/material" .
 <https://w3id.org/tribont/material#Water> <http://www.w3.org/2000/01/rdf-schema#label> "Water" .
@@ -1714,17 +1670,17 @@ _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/tribont/material#filler> <http://www.w3.org/2000/01/rdf-schema#label> "filler" .
 <https://w3id.org/tribont/material#filler> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 # 
-_:genid40 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid41 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid42 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid43 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid44 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid45 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid46 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid47 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid48 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid49 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid50 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # 
 # 
 # #################################################################
@@ -1736,347 +1692,347 @@ _:genid50 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://w
 # 
 _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 _:genid51 <http://www.w3.org/2002/07/owl#members> _:genid60 .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#MaterialIdentification> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#MaterialApplication> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#Standard> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#Role> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#Document> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#Company> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#Unit> .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#SubjectOfInterest> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#Property> .
 _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#Property> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#SubjectOfInterest> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/isCharacterisedBy#Unit> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#Company> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#Document> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#Role> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#Standard> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#MaterialApplication> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#MaterialIdentification> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 _:genid61 <http://www.w3.org/2002/07/owl#members> _:genid65 .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ElementConcentration> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#TechnicalProperty> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#SystemProperty> .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#OperationProperty> .
 _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#OperationProperty> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#SystemProperty> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/core#TechnicalProperty> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ElementConcentration> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 _:genid66 <http://www.w3.org/2002/07/owl#members> _:genid165 .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid164 .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid163 .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid162 .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid161 .
-_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid160 .
-_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid159 .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid158 .
-_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid157 .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid156 .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid155 .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid154 .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid153 .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid152 .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid151 .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid150 .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid149 .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid148 .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid147 .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid146 .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid144 .
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid143 .
-_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid142 .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid141 .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid138 .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid137 .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid133 .
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid132 .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid131 .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid127 .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid125 .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid122 .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid118 .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid116 .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid112 .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid107 .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid101 .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ZrO2> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Zr> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ZnO> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Zn> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Yb> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Y203> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Y> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#WC> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#W> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#V> .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#U> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Tm> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Tl> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#TiO2> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#TiC> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#TiB2> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ti> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ThO2> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Te> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Tb> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#TaC> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ta> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Sr> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Sn> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Sm> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#SiO2> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#SiC> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Si3N4> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Si> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Se> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Sc> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Sb> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#S> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ru> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Rh> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Re> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Pt> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Pr> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Pd> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#PbO> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Pb> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#P> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Os> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#O2> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#O> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ni> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Nd> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Nb> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#NaCl> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Na2O> .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#N> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Mo> .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Mn> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Mg> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Lu> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Li2O> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Li> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#La> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ir> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#In> .
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ho> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Hg> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Hf> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#H2O> .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#H> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ge> .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Gd> .
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Fe203> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Fe> .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#F> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Eu> .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Er> .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Dy> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Cu> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Cr203> .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Cr> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Co> .
-_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ce> .
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#CdS> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Cd> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#CaO> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#CaCO3> .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ca> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#C> .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Bi> .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#BeO> .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Be> .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#BaO> .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#BN> .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#B4C> .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#B203> .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#B> .
-_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Au> .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#As> .
-_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ArsenicOxide> .
-_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#AlN> .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Al203> .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Al> .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ag> .
 _:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ag> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid164 .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Al> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid163 .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Al203> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid162 .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#AlN> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid161 .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ArsenicOxide> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid160 .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#As> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid159 .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Au> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid158 .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#B> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid157 .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#B203> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid156 .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#B4C> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid155 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#BN> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid154 .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#BaO> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid153 .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Be> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#BeO> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid151 .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Bi> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid150 .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#C> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ca> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid148 .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#CaCO3> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#CaO> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid146 .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Cd> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#CdS> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ce> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid143 .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Co> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Cr> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid141 .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Cr203> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Cu> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Dy> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Er> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Eu> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#F> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Fe> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Fe203> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Gd> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ge> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#H> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#H2O> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Hf> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Hg> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ho> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#In> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ir> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#La> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Li> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Li2O> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Lu> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Mg> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Mn> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Mo> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#N> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Na2O> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#NaCl> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Nb> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Nd> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ni> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#O> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#O2> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Os> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#P> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Pb> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#PbO> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Pd> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Pr> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Pt> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Re> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Rh> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ru> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#S> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Sb> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Sc> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Se> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Si> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Si3N4> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#SiC> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#SiO2> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Sm> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Sn> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Sr> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ta> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#TaC> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Tb> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Te> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ThO2> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Ti> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#TiB2> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#TiC> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#TiO2> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Tl> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Tm> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#U> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#V> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#W> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#WC> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Y> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Y203> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Yb> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Zn> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ZnO> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#Zr> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/tribont/material#ZrO2> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
