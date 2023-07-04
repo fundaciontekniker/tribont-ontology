@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/tribont/core"
+<rdf:RDF xmlns="https://w3id.org/tribont/core#"
      xml:base="https://w3id.org/tribont/core"
      xmlns:ns="http://creativecommons.org/ns#"
-     xmlns:icb="https://w3id.org/isCharacterisedBy"
      xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -41,10 +40,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://creativecommons.org/ns#license -->
+
 
     <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
@@ -52,11 +53,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/contributor -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
     <!-- http://purl.org/dc/terms/created -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
@@ -64,11 +67,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
@@ -76,11 +81,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/issued -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
     <!-- http://purl.org/dc/terms/publisher -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
@@ -88,11 +95,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
@@ -100,11 +109,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://www.w3.org/2002/07/owl#cardinality -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#maxCardinality -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxCardinality"/>
     
@@ -112,17 +123,20 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://www.w3.org/2002/07/owl#maxQualifiedCardinality -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxQualifiedCardinality"/>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
     
 
 
     <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
@@ -136,10 +150,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#characterises -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#characterises"/>
     
@@ -147,17 +163,20 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#hasUnit -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#hasUnit"/>
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#isCharacterisedBy -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
     
 
 
     <!-- https://w3id.org/tribont/core#characterisesOperationCondition -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#characterisesOperationCondition">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
@@ -172,6 +191,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#characterisesOperationMeasure -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#characterisesOperationMeasure">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isCharacterisedByOperationMeasure"/>
@@ -184,6 +204,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#characterisesOutputMeasure -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#characterisesOutputMeasure">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#characterises"/>
@@ -198,6 +219,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#compliesWith -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#compliesWith">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isCompliedBy"/>
         <rdfs:comment>Relationship between something and the standard or procedure it complies with.</rdfs:comment>
@@ -209,6 +231,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#hasDocument -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasDocument">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isDocumentFor"/>
@@ -223,6 +246,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#hasLocation -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasLocation">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isLocationFor"/>
         <rdfs:comment>Relationship between something and where it is located.</rdfs:comment>
@@ -234,6 +258,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#hasManufacturer -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasManufacturer">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isManufacturerFor"/>
@@ -248,6 +273,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#hasOwner -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasOwner">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isOwnerOf"/>
         <rdfs:range rdf:resource="https://w3id.org/tribont/core#Company"/>
@@ -261,6 +287,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#isCharacterisedByOperationCondition -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOperationCondition">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
         <rdfs:comment>Relationship between a  SubjectOfInterest it characterises  (e.g. equipemnt or test) and a specified operation property characterisig it..</rdfs:comment>
@@ -272,6 +299,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#isCharacterisedByOperationMeasure -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOperationMeasure">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
@@ -285,6 +313,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#isCharacterisedByOutputMeasure -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOutputMeasure">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
         <rdfs:comment>Relationship between aSubjectOfInterest it characterises (e.g. equipemnt or test). and an output technical measurecgarcaterisg it.</rdfs:comment>
@@ -297,6 +326,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#isCompliedBy -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCompliedBy">
         <rdfs:comment>Relationship between a standard or procedure and what it regulates or formalise.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -307,6 +337,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#isDocumentFor -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isDocumentFor">
         <rdfs:domain rdf:resource="https://w3id.org/tribont/core#Document"/>
@@ -320,6 +351,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#isLocationFor -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isLocationFor">
         <rdfs:comment>Relationship between a physical location and  and something that is located there..</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
@@ -330,6 +362,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#isMadeOf -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isMadeOf">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/core#isPartOf"/>
@@ -343,6 +376,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#isManufacturerFor -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isManufacturerFor">
         <rdfs:domain rdf:resource="https://w3id.org/tribont/core#Company"/>
         <rdfs:comment>Relationship between between a company and what it produces.</rdfs:comment>
@@ -355,6 +389,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#isOwnerOf -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isOwnerOf">
         <rdfs:domain rdf:resource="https://w3id.org/tribont/core#Company"/>
         <rdfs:comment>Relationship between an company and something it owns..</rdfs:comment>
@@ -366,6 +401,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#isPartOf -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isPartOf">
         <rdfs:comment>Relationship between a component part and that of which it is a part.</rdfs:comment>
@@ -384,10 +420,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/terms/identifier -->
+
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
         <rdfs:comment>An unambiguous reference to the resource within a given context.</rdfs:comment>
@@ -400,6 +438,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#accessUrl -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#accessUrl">
         <rdfs:comment>Url to access a specific information content or document.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -410,6 +449,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#longName -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#longName">
         <rdfs:comment>long name of somebody or something.</rdfs:comment>
@@ -422,6 +462,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#name -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#name">
         <rdfs:comment>Name of somebody or something.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -432,6 +473,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#shortName -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#shortName">
         <rdfs:comment>Short name of somebody or something.</rdfs:comment>
@@ -450,10 +492,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#Property -->
+
 
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Property">
         <rdfs:subClassOf>
@@ -468,17 +512,20 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#SubjectOfInterest -->
 
+
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#Unit -->
 
+
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
     
 
 
     <!-- https://w3id.org/tribont/core#Acceleration -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Acceleration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
@@ -505,6 +552,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#AccelerationUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#AccelerationUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for derivative of velocity with respect to time.</rdfs:comment>
@@ -517,6 +565,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#AcidNumberAN -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#AcidNumberAN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:comment>Acid number of something.</rdfs:comment>
@@ -528,6 +577,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#AirReleaseTimeLAV -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#AirReleaseTimeLAV">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -554,6 +604,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#AlkalineAdditivesConsumption -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#AlkalineAdditivesConsumption">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:subClassOf>
@@ -579,6 +630,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#AngleUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#AngleUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for angle.</rdfs:comment>
@@ -591,6 +643,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#AngularPosition -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#AngularPosition">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
         <rdfs:comment>Angular position of something.</rdfs:comment>
@@ -602,6 +655,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#AxialLoad -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#AxialLoad">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
@@ -627,6 +681,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Body -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Body">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
@@ -682,6 +737,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#BodyProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#BodyProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of a body.</rdfs:comment>
@@ -693,6 +749,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#COFMean -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#COFMean">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#FrictionProperty"/>
@@ -706,6 +763,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#CapacityUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#CapacityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for capacity.</rdfs:comment>
@@ -717,6 +775,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ChamberTemperature -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ChamberTemperature">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Temperature"/>
@@ -731,6 +790,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#CloudPoint -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#CloudPoint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidThermalProperty"/>
         <rdfs:comment>Cloud point.</rdfs:comment>
@@ -741,6 +801,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ColdFilterPluggingPoint -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ColdFilterPluggingPoint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidThermalProperty"/>
@@ -753,6 +814,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ColourIndex -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#ColourIndex">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:comment>Colour index  of something.</rdfs:comment>
@@ -764,6 +826,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Company -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Company">
         <rdfs:subClassOf>
@@ -794,6 +857,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#CompressiveStrength -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#CompressiveStrength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
         <rdfs:subClassOf>
@@ -818,6 +882,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Conductivity -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Conductivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -844,6 +909,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ContactSurfaceType -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#ContactSurfaceType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SystemProperty"/>
         <rdfs:comment>Contact surface type (e.g. line, point,etc. .</rdfs:comment>
@@ -856,6 +922,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ContentUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#ContentUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for contents.</rdfs:comment>
@@ -867,6 +934,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#CoradsonCarbonResidue -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#CoradsonCarbonResidue">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -886,6 +954,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#CorrosionLevel -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#CorrosionLevel">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:comment>Corrosion level of something.</rdfs:comment>
@@ -898,6 +967,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#CourseOfMovement -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#CourseOfMovement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
         <rdfs:comment>Type of relative motion  between two or more bodies.</rdfs:comment>
@@ -909,6 +979,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Decceleration -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Decceleration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
@@ -934,6 +1005,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Density -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Density">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
@@ -961,6 +1033,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#DensityUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#DensityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for density.</rdfs:comment>
@@ -973,6 +1046,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Diameter -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Diameter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
         <rdfs:comment>Diameter of something.</rdfs:comment>
@@ -984,6 +1058,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Dispersancy -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Dispersancy">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -1010,6 +1085,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#DissipationFactor -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#DissipationFactor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:comment>Dissipation factor of something.</rdfs:comment>
@@ -1022,6 +1098,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#DistanceUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#DistanceUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for distance.</rdfs:comment>
@@ -1033,6 +1110,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Document -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Document">
         <rdfs:subClassOf>
@@ -1063,6 +1141,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Duration -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Duration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
         <rdfs:subClassOf>
@@ -1087,6 +1166,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#DynamicViscosity -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#DynamicViscosity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -1113,6 +1193,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ElectricalBreakdownVoltage -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#ElectricalBreakdownVoltage">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:subClassOf>
@@ -1138,6 +1219,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ElectricalConductivity -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#ElectricalConductivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#ElectricalProperty"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#ElectricalResistivity"/>
@@ -1151,6 +1233,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ElectricalProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#ElectricalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of electrical behaviour of something.</rdfs:comment>
@@ -1162,6 +1245,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ElectricalResistivity -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ElectricalResistivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#ElectricalProperty"/>
@@ -1175,6 +1259,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#EnvironmentMedium -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#EnvironmentMedium">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
         <rdfs:comment>Environment medium surrounding something .</rdfs:comment>
@@ -1186,6 +1271,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#EnvironmentProperty -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#EnvironmentProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
@@ -1199,6 +1285,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ExpansionCOFUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#ExpansionCOFUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for expansion coefficient.</rdfs:comment>
@@ -1210,6 +1297,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ExternalForce -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ExternalForce">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
@@ -1236,6 +1324,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Filterability -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Filterability">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:comment>Filterability of something.</rdfs:comment>
@@ -1248,6 +1337,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#FlashPoint -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#FlashPoint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidThermalProperty"/>
         <rdfs:comment>Flash point of something.</rdfs:comment>
@@ -1258,6 +1348,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#FlexuralStrength -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#FlexuralStrength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
@@ -1284,6 +1375,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#FoamingTendency -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#FoamingTendency">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:subClassOf>
@@ -1309,6 +1401,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ForceUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#ForceUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for force.</rdfs:comment>
@@ -1320,6 +1413,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#FractureToughness -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#FractureToughness">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
@@ -1346,6 +1440,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Frequency -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Frequency">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
         <rdfs:subClassOf>
@@ -1371,6 +1466,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#FrequencyUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#FrequencyUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for frequency.</rdfs:comment>
@@ -1383,6 +1479,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#FrictionProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#FrictionProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of the friction between two or more bodies.</rdfs:comment>
@@ -1394,6 +1491,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#FrictionTorque -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#FrictionTorque">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
@@ -1420,6 +1518,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#GeometricDimension -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#GeometricDimension">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#BodyProperty"/>
         <rdfs:subClassOf>
@@ -1445,6 +1544,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#GeometricalArrangement -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#GeometricalArrangement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SystemProperty"/>
         <rdfs:comment>Geometrical combination of bodies belonging to a tribological system (e.g. ball on disc).</rdfs:comment>
@@ -1456,6 +1556,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#HardnessBrinell -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessBrinell">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
@@ -1469,6 +1570,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#HardnessKnoop100g -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessKnoop100g">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
         <rdfs:comment>Knoop hardness of something.</rdfs:comment>
@@ -1480,6 +1582,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#HardnessProperty -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
@@ -1506,6 +1609,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#HardnessRockwellB -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessRockwellB">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
         <rdfs:comment>RockwellB hardness of something .</rdfs:comment>
@@ -1517,6 +1621,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#HardnessRockwellC -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessRockwellC">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
@@ -1530,6 +1635,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#HardnessRockwellM -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessRockwellM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
         <rdfs:comment>RockwellM hardnes of somethings .</rdfs:comment>
@@ -1541,6 +1647,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#HardnessRockwellR -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessRockwellR">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
@@ -1554,6 +1661,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#HardnessShoreA -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessShoreA">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
         <rdfs:comment>ShoreA hardness of something .</rdfs:comment>
@@ -1565,6 +1673,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#HardnessShoreD -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessShoreD">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
@@ -1578,6 +1687,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#HardnessUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for hardness.</rdfs:comment>
@@ -1589,6 +1699,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#HardnessVickers -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessVickers">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
@@ -1602,6 +1713,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#HeatCapacityUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#HeatCapacityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for heat capacity.</rdfs:comment>
@@ -1614,6 +1726,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Height -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Height">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
         <rdfs:comment>Height of something.</rdfs:comment>
@@ -1625,6 +1738,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Humidity -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Humidity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
@@ -1651,6 +1765,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Inclination -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Inclination">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
         <rdfs:subClassOf>
@@ -1676,6 +1791,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#IndentationHardnessMicro -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#IndentationHardnessMicro">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
         <rdfs:comment>Indentation hardness micro.</rdfs:comment>
@@ -1688,6 +1804,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#IndentationHardnessNano -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#IndentationHardnessNano">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#HardnessProperty"/>
         <rdfs:comment>Indentation hardness nano.</rdfs:comment>
@@ -1699,6 +1816,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#InhibitedHydraulicFluidsOxidationStabilityAndLubricatingOilsForHighPressureLoads">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -1725,6 +1843,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#InnerDiameter -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#InnerDiameter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Diameter"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#OuterDiameter"/>
@@ -1737,6 +1856,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#InnerTeethHeight -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#InnerTeethHeight">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TeethHeight"/>
@@ -1751,6 +1871,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#InnerTeethLength -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#InnerTeethLength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TeethLength"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#OuterTeethLength"/>
@@ -1763,6 +1884,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#InterfacialTensionBetweenWaterOil -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#InterfacialTensionBetweenWaterOil">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -1789,6 +1911,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#KinematicViscosity -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#KinematicViscosity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:subClassOf>
@@ -1814,6 +1937,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Laboratory -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Laboratory">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Company"/>
         <rdfs:comment>A laboratory.</rdfs:comment>
@@ -1826,6 +1950,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Length -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Length">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
         <rdfs:comment>Length of something.</rdfs:comment>
@@ -1837,6 +1962,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#LinearSpeed -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LinearSpeed">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
@@ -1863,6 +1989,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#LiquidPhysicalProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#LiquidPhysicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#PhysicalProperty"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
@@ -1875,6 +2002,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#LiquidThermalProperty -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LiquidThermalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#ThermalProperty"/>
@@ -1901,6 +2029,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Load -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Load">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
         <rdfs:subClassOf>
@@ -1926,6 +2055,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#LoadLeverRatio -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#LoadLeverRatio">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
         <rdfs:comment>Load leverlratio of something.</rdfs:comment>
@@ -1937,6 +2067,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#LoadPressure -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LoadPressure">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
@@ -1970,6 +2101,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#LoadProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#LoadProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
         <rdfs:comment>Qualifiable or quantifiable  attribute, or characteristic of load.</rdfs:comment>
@@ -1981,6 +2113,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#LoadRate -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LoadRate">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
@@ -2007,6 +2140,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#LoadRateUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#LoadRateUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for load rate.</rdfs:comment>
@@ -2018,6 +2152,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#LodineNumber -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LodineNumber">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -2031,6 +2166,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#LubricantType -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#LubricantType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
         <rdfs:comment>Lubricant type.</rdfs:comment>
@@ -2042,6 +2178,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#LubricantsOxidationStability -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#LubricantsOxidationStability">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -2068,6 +2205,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#LubricationRegime -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#LubricationRegime">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
         <rdfs:comment>Lubrication regime applied to a test or process .</rdfs:comment>
@@ -2080,6 +2218,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#MagnificationProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#MagnificationProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
         <rdfs:comment>MagnificationProperty applyed to something.</rdfs:comment>
@@ -2091,6 +2230,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#MaxLoadWithoutFailure -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#MaxLoadWithoutFailure">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
@@ -2117,6 +2257,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#MaximumServiceTemperature -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#MaximumServiceTemperature">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidThermalProperty"/>
         <rdfs:subClassOf>
@@ -2142,6 +2283,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#MechanicalProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#MechanicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of mechanical behaviour of something.</rdfs:comment>
@@ -2154,6 +2296,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#MechanicalUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#MechanicalUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement units for mechanizal properties.</rdfs:comment>
@@ -2165,6 +2308,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#MeltingPoint -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#MeltingPoint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidThermalProperty"/>
@@ -2191,6 +2335,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#MovementProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#MovementProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of something&apos;s movement.</rdfs:comment>
@@ -2202,6 +2347,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#MovementType -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#MovementType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
@@ -2215,6 +2361,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#NeutralisationNumberNN -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#NeutralisationNumberNN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:comment>Neutralisation number of something.</rdfs:comment>
@@ -2226,6 +2373,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#NormalForce -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#NormalForce">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
@@ -2252,6 +2400,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#NumberOfContactSurface -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#NumberOfContactSurface">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SystemProperty"/>
         <rdfs:comment>Number of contact surfaces of something.</rdfs:comment>
@@ -2263,6 +2412,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#O2Level -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#O2Level">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
@@ -2289,6 +2439,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#OperationProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#OperationProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
         <rdfs:comment>Quantifiable operation attribute, or characteristic of something.</rdfs:comment>
@@ -2300,6 +2451,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#OuterDiameter -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#OuterDiameter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Diameter"/>
@@ -2313,6 +2465,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#OuterTeethHeight -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#OuterTeethHeight">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TeethHeight"/>
         <rdfs:comment>Outer teeth height of something.</rdfs:comment>
@@ -2324,6 +2477,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#OuterTeethLength -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#OuterTeethLength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TeethLength"/>
@@ -2337,6 +2491,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#PQIndex -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#PQIndex">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:comment>PQ index of something.</rdfs:comment>
@@ -2349,6 +2504,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#PercentageUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#PercentageUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for angle.</rdfs:comment>
@@ -2360,6 +2516,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#PhLevel -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PhLevel">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
@@ -2386,6 +2543,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#PhysicalProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#PhysicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable physical attribute, or characteristic of a something.</rdfs:comment>
@@ -2398,6 +2556,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#PoisssonRatio -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#PoisssonRatio">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
         <rdfs:comment>Poissson ratio of something.</rdfs:comment>
@@ -2409,6 +2568,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#PolishGrade -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#PolishGrade">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceProperty"/>
@@ -2428,6 +2588,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Porosity -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Porosity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidPhysicalProperty"/>
@@ -2454,6 +2615,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#PourPoint -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#PourPoint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidThermalProperty"/>
         <rdfs:comment>Pour point of something.</rdfs:comment>
@@ -2465,6 +2627,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Pressure -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Pressure">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
@@ -2491,6 +2654,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#PressureUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#PressureUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for pressure.</rdfs:comment>
@@ -2503,6 +2667,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Ra -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Ra">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Arithmetical mean height of the absolute values.</rdfs:comment>
@@ -2514,6 +2679,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#RadiationDosage -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#RadiationDosage">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
@@ -2540,6 +2706,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#RadiationType -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#RadiationType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
         <rdfs:comment>Radiation type.</rdfs:comment>
@@ -2551,6 +2718,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#RelativeDielectricConstant -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#RelativeDielectricConstant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -2564,6 +2732,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Rk -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Core height.</rdfs:comment>
@@ -2575,6 +2744,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Rku -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rku">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -2588,6 +2758,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Rmk1 -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rmk1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Material ratio of the reduced peak height</rdfs:comment>
@@ -2599,6 +2770,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Rmk2 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rmk2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -2612,6 +2784,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Role -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Role">
         <rdfs:comment>The position or purpose that someone or something has in a situation, organization, society, or relationship:.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -2622,6 +2795,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#RotationSpeed -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#RotationSpeed">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
@@ -2648,6 +2822,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#RotationSpeedUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#RotationSpeedUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:subClassOf>
@@ -2667,6 +2842,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Rp -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rp">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Mean peak height.</rdfs:comment>
@@ -2678,6 +2854,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Rpk -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rpk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -2691,6 +2868,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Rpkx -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rpkx">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Reduced peak height along x</rdfs:comment>
@@ -2702,6 +2880,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Rq -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rq">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -2715,6 +2894,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Rsk -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rsk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Skewness</rdfs:comment>
@@ -2726,6 +2906,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Rt -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rt">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -2739,6 +2920,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Rust-PreventingCharacteristicInPresenceOfWater -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rust-PreventingCharacteristicInPresenceOfWater">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
         <rdfs:comment>Rust-Preventing Characteristic In Presence Of Water.</rdfs:comment>
@@ -2750,6 +2932,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Rv -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rv">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -2763,6 +2946,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Rvkx -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rvkx">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Maximum peak height</rdfs:comment>
@@ -2774,6 +2958,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Rz -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Rz">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -2787,6 +2972,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Sa -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sa">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Arithmetical mean height</rdfs:comment>
@@ -2798,6 +2984,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#SampleTemperature -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SampleTemperature">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Temperature"/>
@@ -2811,6 +2998,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Sdq -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sdq">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Sdq.</rdfs:comment>
@@ -2822,6 +3010,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Sdr -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sdr">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -2835,6 +3024,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Shape -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Shape">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#BodyProperty"/>
         <rdfs:comment>The form or outline of something</rdfs:comment>
@@ -2846,6 +3036,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ShearStability -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ShearStability">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -2872,6 +3063,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Sk -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Core height</rdfs:comment>
@@ -2884,6 +3076,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Sku -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sku">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Kurtosis</rdfs:comment>
@@ -2895,6 +3088,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#SlidingSpeed -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SlidingSpeed">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
@@ -2921,6 +3115,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#SlipPercentage -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#SlipPercentage">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
         <rdfs:subClassOf>
@@ -2946,6 +3141,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Smk1 -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Smk1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Material ratio of the hills</rdfs:comment>
@@ -2957,6 +3153,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Smk2 -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Smk2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -2970,6 +3167,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#SolidPhysicalProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#SolidPhysicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#PhysicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable physical attribute, or characteristic of a solid.</rdfs:comment>
@@ -2982,6 +3180,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#SolidThermalProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#SolidThermalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#ThermalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable thermal attribute, or characteristic of a solid.</rdfs:comment>
@@ -2992,6 +3191,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Sp -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sp">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -3004,6 +3204,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#SpecificHeatCapacity -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#SpecificHeatCapacity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidThermalProperty"/>
@@ -3030,6 +3231,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Spk -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Spk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Reduced peak height</rdfs:comment>
@@ -3041,6 +3243,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Spkx -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Spkx">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -3054,6 +3257,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Sq -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sq">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Root mean square height</rdfs:comment>
@@ -3065,6 +3269,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Ssk -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Ssk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -3078,6 +3283,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Standard -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Standard">
         <rdfs:comment>A reference point against which other things can be evaluated or compared.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -3088,6 +3294,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#StrokeAmplitude -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#StrokeAmplitude">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
@@ -3121,6 +3328,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#StrokeDiameter -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#StrokeDiameter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
         <rdfs:subClassOf>
@@ -3145,6 +3353,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#StrokeLength -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#StrokeLength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
@@ -3171,6 +3380,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#SurfaceProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#SurfaceProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
         <rdfs:subClassOf>
@@ -3189,6 +3399,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#SurfaceRoughness -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#SurfaceRoughness">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceProperty"/>
         <rdfs:comment>Surface roughness. .</rdfs:comment>
@@ -3200,6 +3411,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Sv -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sv">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -3213,6 +3425,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Svk -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Svk">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Reduced valley depth</rdfs:comment>
@@ -3224,6 +3437,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Svkx -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Svkx">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -3237,6 +3451,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#SystemProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#SystemProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
         <rdfs:comment>Qualifiable or quantifiable  attribute, or characteristic of a sample system. .</rdfs:comment>
@@ -3248,6 +3463,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Sz -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Sz">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -3261,6 +3477,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#TechnicalProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#TechnicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
         <rdfs:comment>Qualifiable or quantifiable technical attribute, or characteristic of something. .</rdfs:comment>
@@ -3272,6 +3489,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#TeethHeight -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TeethHeight">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
@@ -3285,6 +3503,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#TeethLength -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#TeethLength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
         <rdfs:comment>Length of a teeth. .</rdfs:comment>
@@ -3296,6 +3515,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Temperature -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Temperature">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#EnvironmentProperty"/>
@@ -3322,6 +3542,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#TemperatureUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#TemperatureUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for temperature.</rdfs:comment>
@@ -3334,6 +3555,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#TendencyUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#TendencyUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for tendency.</rdfs:comment>
@@ -3345,6 +3567,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#TensileStrength -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TensileStrength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
@@ -3371,6 +3594,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#TensionUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#TensionUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for tension.</rdfs:comment>
@@ -3382,6 +3606,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ThermalConductivity -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ThermalConductivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidThermalProperty"/>
@@ -3408,6 +3633,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ThermalConductivityUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#ThermalConductivityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for conductivity.</rdfs:comment>
@@ -3419,6 +3645,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ThermalExpansionCoefficient -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ThermalExpansionCoefficient">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SolidThermalProperty"/>
@@ -3445,6 +3672,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ThermalProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#ThermalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable termal attribute, or characteristic of something.</rdfs:comment>
@@ -3457,6 +3685,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#TimeUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#TimeUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for time.</rdfs:comment>
@@ -3468,6 +3697,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Torque -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Torque">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LoadProperty"/>
@@ -3494,6 +3724,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#TorqueUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#TorqueUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for torque.</rdfs:comment>
@@ -3505,6 +3736,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ToughnessUnit -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ToughnessUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
@@ -3518,6 +3750,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#TribologicalProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#TribologicalProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TechnicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable tribological attribute, or characteristic of something.</rdfs:comment>
@@ -3529,6 +3762,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Velocity -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Velocity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MovementProperty"/>
@@ -3555,6 +3789,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#VelocityUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#VelocityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for velocity.</rdfs:comment>
@@ -3566,6 +3801,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ViscosityUnit -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#ViscosityUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
@@ -3579,6 +3815,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Vmc -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Vmc">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Core material volume</rdfs:comment>
@@ -3590,6 +3827,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Vmp -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Vmp">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -3603,6 +3841,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#VoltageUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#VoltageUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for voltage.</rdfs:comment>
@@ -3614,6 +3853,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Volume -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Volume">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#BodyProperty"/>
@@ -3640,6 +3880,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Vvc -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Vvc">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
         <rdfs:comment>Core void volume</rdfs:comment>
@@ -3651,6 +3892,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Vvv -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Vvv">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#SurfaceRoughness"/>
@@ -3664,6 +3906,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#WearProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#WearProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#TribologicalProperty"/>
         <rdfs:comment>Qualifiable or quantifiable wear attribute, or characteristic of something..</rdfs:comment>
@@ -3675,6 +3918,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#WearScarLength -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#WearScarLength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#WearScarProperty"/>
@@ -3702,6 +3946,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#WearScarProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#WearScarProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#WearProperty"/>
         <rdfs:comment> Qualifiable or quantifiable  attribute, or characteristic of a wear scar.</rdfs:comment>
@@ -3713,6 +3958,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#WearScarVolume -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#WearScarVolume">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#WearScarProperty"/>
@@ -3739,6 +3985,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#WearType -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#WearType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#OperationProperty"/>
         <rdfs:comment>Wear type of something.</rdfs:comment>
@@ -3751,6 +3998,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#WeibullModulus -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#WeibullModulus">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
         <rdfs:comment>Weibull modulus of something.</rdfs:comment>
@@ -3762,6 +4010,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Weight -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Weight">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#BodyProperty"/>
@@ -3788,6 +4037,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#WeightUnit -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#WeightUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
         <rdfs:comment>Measurement unit for weight.</rdfs:comment>
@@ -3799,6 +4049,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Width -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Width">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#GeometricDimension"/>
@@ -3812,6 +4063,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#YieldStrength -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#YieldStrength">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
         <rdfs:comment>Yield strength of something.</rdfs:comment>
@@ -3824,6 +4076,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#YoungModulus -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#YoungModulus">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#MechanicalProperty"/>
         <rdfs:comment>Young modulus of something.</rdfs:comment>
@@ -3835,6 +4088,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#i-ph -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#i-ph">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#LiquidPhysicalProperty"/>
@@ -3854,10 +4108,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/tribont/core#ASTMD5706 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ASTMD5706">
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -3869,6 +4125,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ASTMD5707 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ASTMD5707">
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ASTMD5707</rdfs:label>
@@ -3878,6 +4135,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ASTMD6425 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ASTMD6425">
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -3889,6 +4147,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ASTMD7421 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ASTMD7421">
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
         <rdfs:label>ASTMD7421</rdfs:label>
@@ -3898,6 +4157,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#BTUhr.ft.degreeF -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#BTUhr.ft.degreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
@@ -3910,6 +4170,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#BTUin2 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#BTUin2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -3920,6 +4181,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#BTUlb.degreeF -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#BTUlb.degreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
@@ -3932,6 +4194,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Ba -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Ba">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -3942,6 +4205,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#EHD -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#EHD">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricationRegime"/>
@@ -3954,6 +4218,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#HV -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#HV">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -3964,6 +4229,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Hz -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Hz">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
@@ -3976,6 +4242,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Jcm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Jcm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -3986,6 +4253,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Jkg.degreeC -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Jkg.degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
@@ -3998,6 +4266,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Jm.s.degreeC -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Jm.s.degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4008,6 +4277,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Jm2 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Jm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
@@ -4020,6 +4290,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Jm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Jm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4030,6 +4301,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Kgf -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Kgf">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
@@ -4042,6 +4314,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#MGO -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#MGO">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4052,6 +4325,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#MJm2 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#MJm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
@@ -4064,6 +4338,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#MJm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#MJm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4074,6 +4349,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#MPa -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#MPa">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
@@ -4086,6 +4362,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#N -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ForceUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4096,6 +4373,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#N.m -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.m">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TorqueUnit"/>
@@ -4108,6 +4386,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#N.mmg.degreeC -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmg.degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4118,6 +4397,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#N.mmmm2 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmmm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
@@ -4130,6 +4410,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#N.mmmm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmmm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4140,6 +4421,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#N.mmms.mm.degreeC -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmms.mm.degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
@@ -4152,6 +4434,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#N.mmsmm.degreeC -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmsmm.degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4162,6 +4445,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#N.mmtonne.degreeC -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N.mmtonne.degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
@@ -4174,6 +4458,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#N2CO295 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#N2CO295">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4184,6 +4469,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Nmm -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Nmm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
@@ -4196,6 +4482,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Nmm2 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Nmm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4206,6 +4493,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Ns -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Ns">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LoadRateUnit"/>
@@ -4218,6 +4506,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Pa -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Pa">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PressureUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4228,6 +4517,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Wm.degreeC -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Wm.degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
@@ -4240,6 +4530,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#abrasive_wear -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#abrasive_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4250,6 +4541,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#adhesive_wear -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#adhesive_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
@@ -4262,6 +4554,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ambient_air -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ambient_air">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4272,6 +4565,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ambient_humidity -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ambient_humidity">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Humidity"/>
@@ -4284,6 +4578,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ambient_pressure -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ambient_pressure">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Pressure"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4294,6 +4589,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#area -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#area">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ContactSurfaceType"/>
@@ -4306,6 +4602,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#atm -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#atm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4316,6 +4613,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ball -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ball">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
@@ -4328,6 +4626,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ball_on_disc -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ball_on_disc">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4338,6 +4637,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ball_on_plate -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ball_on_plate">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
@@ -4350,6 +4650,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#bar -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#bar">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PressureUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4360,6 +4661,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#boundary_lubrication -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#boundary_lubrication">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricationRegime"/>
@@ -4372,6 +4674,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#calg.degreeC -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#calg.degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4382,6 +4685,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#cm -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
@@ -4394,6 +4698,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#cm100m -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cm100m">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4404,6 +4709,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#cm2s -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cm2s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
@@ -4416,6 +4722,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#cm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4426,6 +4733,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#cmcm -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cmcm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
@@ -4438,6 +4746,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#corrosive_gas -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#corrosive_gas">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4448,6 +4757,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#cuboid -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cuboid">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
@@ -4460,6 +4770,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#cylinder -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#cylinder">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4470,6 +4781,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#day -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#day">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
@@ -4482,6 +4794,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#degree -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degree">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#AngleUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4492,6 +4805,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#degreeC -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
@@ -4504,6 +4818,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#degreeF -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4514,6 +4829,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#degreeK -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeK">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
@@ -4526,6 +4842,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#degreeR -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#degreeR">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TemperatureUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4536,6 +4853,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#disc -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#disc">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
@@ -4548,6 +4866,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#dm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#dm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4558,6 +4877,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#dry -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#dry">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricationRegime"/>
@@ -4570,6 +4890,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#dyncm -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#dyncm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4580,6 +4901,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#dyncm1.5 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#dyncm1.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
@@ -4592,6 +4914,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#dyncm2 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#dyncm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4602,6 +4925,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#e-4 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#e-4">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
@@ -4614,6 +4938,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ergcm2 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ergcm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4624,6 +4949,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ergcm3 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ergcm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
@@ -4636,6 +4962,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ergg.degreeC -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ergg.degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4646,6 +4973,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ergs.cm.degreeC -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ergs.cm.degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
@@ -4658,6 +4986,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#fl-ozUk -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#fl-ozUk">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4668,6 +4997,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#fl-ozUs -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#fl-ozUs">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
@@ -4680,6 +5010,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#fretting_wear -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#fretting_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4690,6 +5021,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ft.lbfft2 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft.lbfft2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
@@ -4702,6 +5034,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ft.lbfft3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft.lbfft3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4712,6 +5045,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ft.lbfin2 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft.lbfin2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
@@ -4724,6 +5058,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ft.lbfin3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft.lbfin3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4734,6 +5069,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ft2hr -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft2hr">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
@@ -4746,6 +5082,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ft2s -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft2s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
         <rdfs:label>ft2/s</rdfs:label>
@@ -4754,6 +5091,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ft3 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ft3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
@@ -4766,6 +5104,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ftft -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ftft">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4776,6 +5115,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#g -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#g">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WeightUnit"/>
@@ -4788,6 +5128,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#galUk -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#galUk">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4798,6 +5139,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#galUs -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#galUs">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
@@ -4810,6 +5152,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#gcm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#gcm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4820,6 +5163,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#gear -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#gear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
@@ -4832,6 +5176,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#gmm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#gmm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4842,6 +5187,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#grease -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#grease">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricantType"/>
@@ -4854,6 +5200,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#grinded -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#grinded">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PolishGrade"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4864,6 +5211,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#h -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#h">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
@@ -4876,6 +5224,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#hPa -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hPa">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4886,6 +5235,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#hb -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hb">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
@@ -4898,6 +5248,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#hk -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hk">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4908,6 +5259,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#hour -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hour">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
@@ -4920,6 +5272,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#hrb -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hrb">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4930,6 +5283,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#hrc -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hrc">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
@@ -4942,6 +5296,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#hrm -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hrm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4952,6 +5307,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#hrr -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hrr">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
@@ -4964,6 +5320,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#hv -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#hv">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4974,6 +5331,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#in.lbfin2 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#in.lbfin2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
@@ -4986,6 +5344,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#in.lbfin3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#in.lbfin3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -4996,6 +5355,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#in100ft -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#in100ft">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
@@ -5008,6 +5368,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#in2s -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#in2s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5018,6 +5379,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#inHg -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#inHg">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
@@ -5030,6 +5392,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#inin -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#inin">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5040,6 +5403,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#inindegreeF -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#inindegreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
@@ -5052,6 +5416,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#innert_gas -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#innert_gas">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5062,6 +5427,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#kHz -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kHz">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
@@ -5074,6 +5440,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#kJkg.degreeC -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kJkg.degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5084,6 +5451,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#kJm2 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kJm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
@@ -5096,6 +5464,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#kJm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kJm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5106,6 +5475,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#kNcm2 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kNcm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
@@ -5118,6 +5488,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#kNm -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kNm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5128,6 +5499,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#kg -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kg">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WeightUnit"/>
@@ -5140,6 +5512,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#kgfmm2 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kgfmm2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5150,6 +5523,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#kgm3 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kgm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
@@ -5162,6 +5536,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#kgmm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kgmm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5172,6 +5547,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#km -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#km">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
@@ -5184,6 +5560,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ksi -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ksi">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5194,6 +5571,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ksi.in0.5 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ksi.in0.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
@@ -5206,6 +5584,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#kv -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#kv">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#VoltageUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5216,6 +5595,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#lapped -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lapped">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PolishGrade"/>
@@ -5228,6 +5608,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#lbf.ftlb.degreeF -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.ftlb.degreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5238,6 +5619,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#lbf.ftslug.degreeF -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.ftslug.degreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
@@ -5250,6 +5632,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#lbf.in.inlbf.s2.degreeF -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.in.inlbf.s2.degreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5260,6 +5643,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#lbf.inlb.degreeF -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.inlb.degreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HeatCapacityUnit"/>
@@ -5272,6 +5656,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#lbf.s2in.in3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbf.s2in.in3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5282,6 +5667,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#lbfft -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbfft">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
@@ -5294,6 +5680,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#lbfft1.5 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbfft1.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5304,6 +5691,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#lbfft2 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbfft2">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
@@ -5316,6 +5704,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#lbfin -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbfin">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5326,6 +5715,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#lbfs.degreeF -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbfs.degreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ThermalConductivityUnit"/>
@@ -5338,6 +5728,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#lbft3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbft3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5348,6 +5739,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#lbin3 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#lbin3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
@@ -5360,6 +5752,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#line -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#line">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ContactSurfaceType"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5370,6 +5763,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#linear_reciprocating -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#linear_reciprocating">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CourseOfMovement"/>
@@ -5382,6 +5776,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#linear_unidirectional -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#linear_unidirectional">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CourseOfMovement"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5392,6 +5787,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#liquid_lubricant -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#liquid_lubricant">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricantType"/>
@@ -5404,6 +5800,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#m -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#m">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5414,6 +5811,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#m2s -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#m2s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
@@ -5426,6 +5824,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#m3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#m3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5436,6 +5835,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#mNm -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mNm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TensionUnit"/>
@@ -5448,6 +5848,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#mPa -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mPa">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PressureUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5458,6 +5859,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#m_m -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#m_m">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
@@ -5470,6 +5872,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#mb -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mb">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5480,6 +5883,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#mg -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mg">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WeightUnit"/>
@@ -5492,6 +5896,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#mgm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mgm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5502,6 +5907,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#microHz -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microHz">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#FrequencyUnit"/>
@@ -5514,6 +5920,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#microinche -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microinche">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5524,6 +5931,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#microm -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
@@ -5536,6 +5944,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#microm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5546,6 +5955,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#microstrain -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microstrain">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
@@ -5558,6 +5968,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#microstraindegreeC -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microstraindegreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5568,6 +5979,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#microstraindegreeF -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#microstraindegreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
@@ -5580,6 +5992,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#mile -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mile">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5590,6 +6003,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#milisecond -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#milisecond">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
@@ -5602,6 +6016,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#min -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#min">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationSpeedUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5612,6 +6027,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#minute -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#minute">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
@@ -5624,6 +6040,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#mixed_lubrication -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mixed_lubrication">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricationRegime"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5634,6 +6051,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ml -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ml">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
@@ -5646,6 +6064,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#mlml -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mlml">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5656,6 +6075,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#mm -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
@@ -5668,6 +6088,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#mm2ms -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mm2ms">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5678,6 +6099,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#mm2s -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mm2s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
@@ -5690,6 +6112,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#mm3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5700,6 +6123,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#mmmm -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mmmm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
@@ -5712,6 +6136,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#mms -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mms">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#VelocityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5722,6 +6147,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#mpa.m0.5 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mpa.m0.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
@@ -5734,6 +6160,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#mpa.mm0.5 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#mpa.mm0.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5744,6 +6171,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ms -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ms">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#VelocityUnit"/>
@@ -5756,6 +6184,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#n103mbar -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#n103mbar">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5766,6 +6195,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#n104straindegreeC -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#n104straindegreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
@@ -5778,6 +6208,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#n106m2s -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#n106m2s">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ViscosityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5788,6 +6219,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#n106psi -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#n106psi">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
@@ -5800,6 +6232,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#nitrogen -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#nitrogen">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5810,6 +6243,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#nmile -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#nmile">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
@@ -5822,6 +6256,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#nmm1.5 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#nmm1.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5832,6 +6267,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#no_lubricant -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#no_lubricant">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricantType"/>
@@ -5844,6 +6280,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#oil -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#oil">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricantType"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5854,6 +6291,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#pa.m0.5 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#pa.m0.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
@@ -5866,6 +6304,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#percentage -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#percentage">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PercentageUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5876,6 +6315,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#percentagestraindegreeF -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#percentagestraindegreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
@@ -5888,6 +6328,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#percentangestraindegreeC -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#percentangestraindegreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5898,6 +6339,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#pin -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#pin">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
@@ -5910,6 +6352,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#pin_on_disc -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#pin_on_disc">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5920,6 +6363,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#pintUk -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#pintUk">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
@@ -5932,6 +6376,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#pintUs -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#pintUs">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CapacityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5942,6 +6387,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#plate -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#plate">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
@@ -5954,6 +6400,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#point -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#point">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ContactSurfaceType"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5964,6 +6411,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#polished -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#polished">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#PolishGrade"/>
@@ -5976,6 +6424,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ppb -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ppb">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ContentUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -5986,6 +6435,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#psi -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#psi">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
@@ -5998,6 +6448,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#psi.in0.5 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#psi.in0.5">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ToughnessUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6008,6 +6459,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#radian -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#radian">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#AngleUnit"/>
@@ -6020,6 +6472,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ring -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ring">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6030,6 +6483,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#ring_on_cylinder -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ring_on_cylinder">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
@@ -6042,6 +6496,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#ring_on_disc -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#ring_on_disc">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6052,6 +6507,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#rolling -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#rolling">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MovementType"/>
@@ -6064,6 +6520,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#rotating_reciprocating -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#rotating_reciprocating">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CourseOfMovement"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6074,6 +6531,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#rotating_unidirectional -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#rotating_unidirectional">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#CourseOfMovement"/>
@@ -6086,6 +6544,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#rpm -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#rpm">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#RotationSpeedUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6096,6 +6555,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#seal -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#seal">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
@@ -6108,6 +6568,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#seal_on_shaft -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#seal_on_shaft">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#GeometricalArrangement"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6118,6 +6579,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#second -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#second">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
@@ -6130,6 +6592,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#shaft -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#shaft">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6140,6 +6603,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#sliding -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#sliding">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MovementType"/>
@@ -6152,6 +6616,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#sliding_wear -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#sliding_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6162,6 +6627,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#slip -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#slip">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MovementType"/>
@@ -6174,6 +6640,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#slip_rolling_wear -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#slip_rolling_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6184,6 +6651,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#slugft3 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#slugft3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
@@ -6196,6 +6664,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#solid_friction -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#solid_friction">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricationRegime"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6206,6 +6675,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#solid_lubricant -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#solid_lubricant">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#LubricantType"/>
@@ -6218,6 +6688,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#sonotrode -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#sonotrode">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#Shape"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6228,6 +6699,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#sp-gr2323degreeC -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#sp-gr2323degreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
@@ -6240,6 +6712,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#stick_slip -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#stick_slip">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MovementType"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6250,6 +6723,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#strain -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#strain">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
@@ -6262,6 +6736,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#strain_percentage -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#strain_percentage">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TendencyUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6272,6 +6747,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#straindegreeC -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#straindegreeC">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
@@ -6284,6 +6760,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#straindegreeF -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#straindegreeF">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#ExpansionCOFUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6294,6 +6771,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#synthetic_air -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#synthetic_air">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
@@ -6306,6 +6784,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#tonin3 -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#tonin3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6316,6 +6795,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#tonnemm3 -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#tonnemm3">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DensityUnit"/>
@@ -6328,6 +6808,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#torr -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#torr">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#MechanicalUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6339,6 +6820,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#tribocorrosive_wear -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#tribocorrosive_wear">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#WearType"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6349,6 +6831,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#v -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#v">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#VoltageUnit"/>
@@ -6362,6 +6845,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#vacuum -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#vacuum">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#EnvironmentMedium"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6372,6 +6856,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#week -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#week">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
@@ -6384,6 +6869,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#wt_percentage -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#wt_percentage">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#HardnessUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6394,6 +6880,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#yd -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#yd">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
@@ -6406,6 +6893,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#year -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#year">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#TimeUnit"/>
         <rdfs:isDefinedBy>https://w3id.org/tribont/core</rdfs:isDefinedBy>
@@ -6416,6 +6904,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/core#Å -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/core#Å">
         <rdf:type rdf:resource="https://w3id.org/tribont/core#DistanceUnit"/>
@@ -6439,13 +6928,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6476,45 +6959,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6538,10 +6982,55 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -6563,11 +7052,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     <rdf:Description rdf:about="http://purl.org/dc/terms/title">
-        <ns1:term_status>Testing</ns1:term_status>
-        <rdfs:label>title</rdfs:label>
-        <rdfs:comment>http://purl.org/dc/terms/</rdfs:comment>
         <rdfs:comment>A name given to the resource.</rdfs:comment>
+        <rdfs:comment>http://purl.org/dc/terms/</rdfs:comment>
+        <rdfs:label>title</rdfs:label>
+        <ns1:term_status>Testing</ns1:term_status>
     </rdf:Description>
     
 
@@ -6579,6 +7069,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
@@ -6847,5 +7338,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
 

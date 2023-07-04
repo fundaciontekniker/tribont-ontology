@@ -510,7 +510,7 @@
   } ]
 }, {
   "@id" : "_:genid145",
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -528,13 +528,13 @@
   } ]
 }, {
   "@id" : "_:genid148",
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid149",
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -546,7 +546,7 @@
   } ]
 }, {
   "@id" : "_:genid151",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -582,7 +582,7 @@
   } ]
 }, {
   "@id" : "_:genid157",
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -612,7 +612,7 @@
   } ]
 }, {
   "@id" : "_:genid162",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -624,13 +624,13 @@
   } ]
 }, {
   "@id" : "_:genid164",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid165",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -648,7 +648,7 @@
   } ]
 }, {
   "@id" : "_:genid168",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -697,7 +697,7 @@
   } ]
 }, {
   "@id" : "_:genid174",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -709,13 +709,13 @@
   } ]
 }, {
   "@id" : "_:genid176",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid177",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -2220,7 +2220,7 @@
 }, {
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-},{
+}, {
   "@id" : "http://purl.org/dc/terms/title",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A name given to the resource."
@@ -2305,11 +2305,9 @@
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2023-05-30"
   } ],
-  
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "Tekniker"
   } ],
-  
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Core module"
   } ],
@@ -2536,10 +2534,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#BTUhr.ft.degreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ThermalConductivityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ThermalConductivityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -2551,10 +2546,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#BTUin2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -2566,10 +2558,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#BTUlb.degreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HeatCapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HeatCapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -2581,10 +2570,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Ba",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -2661,12 +2647,13 @@
   "@id" : "https://w3id.org/tribont/core#CapacityUnit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Body"
-  }, {
     "@value" : "Measurement unit for capacity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CapacityUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/isCharacterisedBy#Unit"
@@ -3110,10 +3097,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#EHD",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#LubricationRegime"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#LubricationRegime" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -3516,10 +3500,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#HV",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -3791,10 +3772,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Hz",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#FrequencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#FrequencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -3971,10 +3949,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Jcm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -3986,10 +3961,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Jkg.degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HeatCapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HeatCapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4001,10 +3973,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Jm.s.degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ThermalConductivityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ThermalConductivityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4016,10 +3985,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Jm2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4031,10 +3997,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Jm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4046,10 +4009,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Kgf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ForceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ForceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4379,10 +4339,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#MGO",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4394,10 +4351,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#MJm2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4409,10 +4363,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#MJm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4424,10 +4375,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#MPa",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4440,8 +4388,20 @@
 }, {
   "@id" : "https://w3id.org/tribont/core#MagnificationProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "MagnificationProperty applyed to something."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/tribont/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MagnificationProperty"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/tribont/core#OperationProperty"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "resting"
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#MaxLoadWithoutFailure",
@@ -4582,10 +4542,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#N",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ForceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ForceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4597,10 +4554,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#N.m",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TorqueUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TorqueUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4612,10 +4566,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#N.mmg.degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HeatCapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HeatCapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4627,10 +4578,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#N.mmmm2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4642,10 +4590,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#N.mmmm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4657,10 +4602,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#N.mmms.mm.degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ThermalConductivityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ThermalConductivityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4672,10 +4614,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#N.mmsmm.degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ThermalConductivityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ThermalConductivityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4687,10 +4626,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#N.mmtonne.degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HeatCapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HeatCapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4702,10 +4638,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#N2CO295",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#EnvironmentMedium"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#EnvironmentMedium" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4735,10 +4668,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Nmm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4750,10 +4680,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Nmm2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4787,10 +4714,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Ns",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#LoadRateUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#LoadRateUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -4932,10 +4856,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Pa",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#PressureUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#PressureUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6724,10 +6645,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Wm.degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ThermalConductivityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ThermalConductivityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6775,10 +6693,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#abrasive_wear",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#WearType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#WearType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6805,10 +6720,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#adhesive_wear",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#WearType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#WearType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6820,10 +6732,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ambient_air",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#EnvironmentMedium"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#EnvironmentMedium" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6835,10 +6744,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ambient_humidity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Humidity"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Humidity" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6850,10 +6756,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ambient_pressure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Pressure"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Pressure" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6865,10 +6768,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#area",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ContactSurfaceType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ContactSurfaceType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6880,10 +6780,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#atm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6895,10 +6792,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ball",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Shape"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Shape" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6910,10 +6804,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ball_on_disc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#GeometricalArrangement"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#GeometricalArrangement" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6925,10 +6816,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ball_on_plate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#GeometricalArrangement"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#GeometricalArrangement" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6940,10 +6828,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#bar",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#PressureUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#PressureUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6955,10 +6840,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#boundary_lubrication",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#LubricationRegime"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#LubricationRegime" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -6970,10 +6852,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#calg.degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HeatCapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HeatCapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7048,10 +6927,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#cm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DistanceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DistanceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7063,10 +6939,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#cm100m",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TendencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TendencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7078,10 +6951,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#cm2s",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ViscosityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ViscosityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7093,10 +6963,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#cm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7108,10 +6975,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#cmcm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TendencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TendencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7141,10 +7005,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#corrosive_gas",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#EnvironmentMedium"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#EnvironmentMedium" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7156,10 +7017,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#cuboid",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Shape"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Shape" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7171,10 +7029,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#cylinder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Shape"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Shape" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7186,10 +7041,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#day",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TimeUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TimeUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7201,10 +7053,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#degree",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#AngleUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#AngleUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7216,10 +7065,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TemperatureUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TemperatureUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7231,10 +7077,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#degreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TemperatureUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TemperatureUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7246,10 +7089,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#degreeK",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TemperatureUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TemperatureUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7261,10 +7101,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#degreeR",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TemperatureUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TemperatureUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7276,10 +7113,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#disc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Shape"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Shape" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7291,10 +7125,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#dm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7306,10 +7137,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#dry",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#LubricationRegime"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#LubricationRegime" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7321,10 +7149,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#dyncm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7336,10 +7161,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#dyncm1.5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ToughnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ToughnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7351,10 +7173,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#dyncm2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7366,10 +7185,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#e-4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#PercentageUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#PercentageUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7381,10 +7197,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ergcm2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7396,10 +7209,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ergcm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7411,10 +7221,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ergg.degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HeatCapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HeatCapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7426,10 +7233,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ergs.cm.degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ThermalConductivityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ThermalConductivityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7441,10 +7245,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#fl-ozUk",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7456,10 +7257,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#fl-ozUs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7471,10 +7269,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#fretting_wear",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#WearType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#WearType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7486,10 +7281,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ft.lbfft2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7501,10 +7293,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ft.lbfft3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7516,10 +7305,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ft.lbfin2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7531,10 +7317,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ft.lbfin3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7546,10 +7329,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ft2hr",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ViscosityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ViscosityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7561,19 +7341,13 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ft2s",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ViscosityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ViscosityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ft2/s"
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ft3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7585,10 +7359,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ftft",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TendencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TendencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7600,10 +7371,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#g",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#WeightUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#WeightUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7615,10 +7383,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#galUk",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7630,10 +7395,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#galUs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7645,10 +7407,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#gcm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7660,10 +7419,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#gear",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Shape"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Shape" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7675,10 +7431,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#gmm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7690,10 +7443,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#grease",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#LubricantType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#LubricantType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7705,10 +7455,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#grinded",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#PolishGrade"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#PolishGrade" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7720,10 +7467,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#h",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HardnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HardnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7735,10 +7479,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#hPa",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7831,10 +7572,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#hb",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HardnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HardnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7846,10 +7584,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#hk",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HardnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HardnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7861,10 +7596,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#hour",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TimeUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TimeUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7876,10 +7608,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#hrb",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HardnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HardnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7891,10 +7620,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#hrc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HardnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HardnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7906,10 +7632,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#hrm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HardnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HardnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7921,10 +7644,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#hrr",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HardnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HardnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7936,10 +7656,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#hv",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HardnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HardnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7969,10 +7686,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#in.lbfin2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7984,10 +7698,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#in.lbfin3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -7999,10 +7710,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#in100ft",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TendencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TendencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8014,10 +7722,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#in2s",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ViscosityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ViscosityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8029,10 +7734,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#inHg",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8044,10 +7746,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#inin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TendencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TendencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8059,10 +7758,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#inindegreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ExpansionCOFUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ExpansionCOFUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8074,10 +7770,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#innert_gas",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#EnvironmentMedium"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#EnvironmentMedium" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8260,10 +7953,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#kHz",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#FrequencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#FrequencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8275,10 +7965,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#kJkg.degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HeatCapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HeatCapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8290,10 +7977,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#kJm2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8305,10 +7989,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#kJm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8320,10 +8001,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#kNcm2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8335,10 +8013,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#kNm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8350,10 +8025,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#kg",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#WeightUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#WeightUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8365,10 +8037,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#kgfmm2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8380,10 +8049,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#kgm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8395,10 +8061,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#kgmm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8410,10 +8073,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#km",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DistanceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DistanceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8425,10 +8085,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ksi",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8440,10 +8097,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ksi.in0.5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ToughnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ToughnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8455,10 +8109,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#kv",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#VoltageUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#VoltageUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8470,10 +8121,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lapped",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#PolishGrade"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#PolishGrade" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8485,10 +8133,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbf.ftlb.degreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HeatCapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HeatCapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8500,10 +8145,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbf.ftslug.degreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HeatCapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HeatCapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8515,10 +8157,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbf.in.inlbf.s2.degreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HeatCapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HeatCapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8530,10 +8169,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbf.inlb.degreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HeatCapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HeatCapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8545,10 +8181,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbf.s2in.in3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8560,10 +8193,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbfft",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8575,10 +8205,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbfft1.5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ToughnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ToughnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8590,10 +8217,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbfft2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8605,10 +8229,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbfin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8620,10 +8241,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbfs.degreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ThermalConductivityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ThermalConductivityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8635,10 +8253,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbft3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8650,10 +8265,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#lbin3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8665,10 +8277,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#line",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ContactSurfaceType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ContactSurfaceType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8680,10 +8289,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#linear_reciprocating",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CourseOfMovement"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CourseOfMovement" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8695,10 +8301,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#linear_unidirectional",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CourseOfMovement"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CourseOfMovement" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8710,10 +8313,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#liquid_lubricant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#LubricantType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#LubricantType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8740,10 +8340,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#m",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DistanceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DistanceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8755,10 +8352,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#m2s",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ViscosityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ViscosityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8770,10 +8364,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#m3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8785,10 +8376,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mNm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TensionUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TensionUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8800,10 +8388,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mPa",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#PressureUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#PressureUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8815,10 +8400,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#m_m",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TendencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TendencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8830,10 +8412,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mb",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8845,10 +8424,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mg",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#WeightUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#WeightUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8860,10 +8436,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mgm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8875,10 +8448,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#microHz",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#FrequencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#FrequencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8890,10 +8460,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#microinche",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DistanceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DistanceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8905,10 +8472,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#microm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DistanceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DistanceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8920,10 +8484,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#microm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8935,10 +8496,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#microstrain",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TendencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TendencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8950,10 +8508,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#microstraindegreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ExpansionCOFUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ExpansionCOFUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8965,10 +8520,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#microstraindegreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ExpansionCOFUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ExpansionCOFUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8980,10 +8532,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mile",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DistanceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DistanceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -8995,10 +8544,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#milisecond",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TimeUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TimeUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9010,10 +8556,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#min",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#RotationSpeedUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#RotationSpeedUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9025,10 +8568,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#minute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TimeUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TimeUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9040,10 +8580,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mixed_lubrication",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#LubricationRegime"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#LubricationRegime" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9055,10 +8592,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ml",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9070,10 +8604,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mlml",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TendencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TendencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9085,10 +8616,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DistanceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DistanceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9100,10 +8628,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mm2ms",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ViscosityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ViscosityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9115,10 +8640,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mm2s",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ViscosityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ViscosityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9130,10 +8652,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9145,10 +8664,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mmmm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TendencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TendencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9160,10 +8676,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mms",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#VelocityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#VelocityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9175,10 +8688,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mpa.m0.5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ToughnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ToughnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9190,10 +8700,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#mpa.mm0.5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ToughnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ToughnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9205,10 +8712,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ms",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#VelocityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#VelocityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9220,10 +8724,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#n103mbar",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9235,10 +8736,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#n104straindegreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ExpansionCOFUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ExpansionCOFUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9250,10 +8748,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#n106m2s",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ViscosityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ViscosityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9265,10 +8760,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#n106psi",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9295,10 +8787,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#nitrogen",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#EnvironmentMedium"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#EnvironmentMedium" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9310,10 +8799,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#nmile",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DistanceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DistanceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9325,10 +8811,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#nmm1.5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ToughnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ToughnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9340,10 +8823,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#no_lubricant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#LubricantType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#LubricantType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9355,10 +8835,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#oil",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#LubricantType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#LubricantType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9370,10 +8847,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#pa.m0.5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ToughnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ToughnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9385,10 +8859,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#percentage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#PercentageUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#PercentageUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9400,10 +8871,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#percentagestraindegreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ExpansionCOFUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ExpansionCOFUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9415,10 +8883,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#percentangestraindegreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ExpansionCOFUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ExpansionCOFUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9430,10 +8895,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#pin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Shape"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Shape" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9445,10 +8907,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#pin_on_disc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#GeometricalArrangement"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#GeometricalArrangement" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9460,10 +8919,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#pintUk",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9475,10 +8931,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#pintUs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CapacityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CapacityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9490,10 +8943,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#plate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Shape"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Shape" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9505,10 +8955,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#point",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ContactSurfaceType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ContactSurfaceType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9520,10 +8967,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#polished",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#PolishGrade"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#PolishGrade" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9535,10 +8979,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ppb",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ContentUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ContentUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9550,10 +8991,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#psi",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9565,10 +9003,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#psi.in0.5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ToughnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ToughnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9580,10 +9015,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#radian",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#AngleUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#AngleUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9595,10 +9027,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ring",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Shape"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Shape" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9610,10 +9039,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ring_on_cylinder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#GeometricalArrangement"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#GeometricalArrangement" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9625,10 +9051,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#ring_on_disc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#GeometricalArrangement"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#GeometricalArrangement" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9640,10 +9063,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#rolling",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MovementType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MovementType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9655,10 +9075,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#rotating_reciprocating",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CourseOfMovement"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CourseOfMovement" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9670,10 +9087,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#rotating_unidirectional",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#CourseOfMovement"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#CourseOfMovement" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9685,10 +9099,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#rpm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#RotationSpeedUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#RotationSpeedUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9700,10 +9111,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#seal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Shape"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Shape" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9715,10 +9123,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#seal_on_shaft",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#GeometricalArrangement"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#GeometricalArrangement" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9730,10 +9135,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#second",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TimeUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TimeUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9745,10 +9147,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#shaft",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Shape"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Shape" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9775,10 +9174,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#sliding",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MovementType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MovementType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9790,10 +9186,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#sliding_wear",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#WearType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#WearType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9805,10 +9198,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#slip",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MovementType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MovementType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9820,10 +9210,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#slip_rolling_wear",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#WearType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#WearType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9835,10 +9222,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#slugft3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9850,10 +9234,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#solid_friction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#LubricationRegime"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#LubricationRegime" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9865,10 +9246,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#solid_lubricant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#LubricantType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#LubricantType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9880,10 +9258,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#sonotrode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#Shape"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#Shape" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9895,10 +9270,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#sp-gr2323degreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9910,10 +9282,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#stick_slip",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MovementType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MovementType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9925,10 +9294,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#strain",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TendencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TendencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9940,10 +9306,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#strain_percentage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TendencyUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TendencyUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9955,10 +9318,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#straindegreeC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ExpansionCOFUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ExpansionCOFUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9970,10 +9330,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#straindegreeF",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#ExpansionCOFUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#ExpansionCOFUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -9985,10 +9342,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#synthetic_air",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#EnvironmentMedium"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#EnvironmentMedium" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -10000,10 +9354,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#tonin3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -10015,10 +9366,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#tonnemm3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DensityUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DensityUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -10030,10 +9378,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#torr",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#MechanicalUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#MechanicalUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -10045,10 +9390,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#tribocorrosive_wear",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#WearType"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#WearType" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -10060,10 +9402,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#v",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#VoltageUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#VoltageUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -10077,10 +9416,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#vacuum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#EnvironmentMedium"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#EnvironmentMedium" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -10092,10 +9428,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#week",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TimeUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TimeUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -10107,10 +9440,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#wt_percentage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#HardnessUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#HardnessUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -10122,10 +9452,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#yd",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DistanceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DistanceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -10137,10 +9464,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#year",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#TimeUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#TimeUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],
@@ -10152,10 +9476,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/tribont/core#Å",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/tribont/core#DistanceUnit"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/tribont/core#DistanceUnit" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/tribont/core"
   } ],

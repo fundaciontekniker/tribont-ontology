@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/tribont/equipment"
+<rdf:RDF xmlns="https://w3id.org/tribont/equipment#"
      xml:base="https://w3id.org/tribont/equipment"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
@@ -42,10 +42,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://creativecommons.org/ns#license -->
+
 
     <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
@@ -53,11 +55,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/contributor -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
     <!-- http://purl.org/dc/terms/created -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
@@ -65,11 +69,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
@@ -77,11 +83,20 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/issued -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
     <!-- http://purl.org/dc/terms/title -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
@@ -89,11 +104,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
@@ -101,11 +118,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://www.w3.org/2002/07/owl#cardinality -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#maxCardinality -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxCardinality"/>
     
@@ -113,11 +132,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
     
 
 
     <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
@@ -131,10 +152,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#belongsTo -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#belongsTo"/>
     
@@ -142,11 +165,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#hasDocument -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasDocument"/>
     
 
 
     <!-- https://w3id.org/tribont/core#hasLocation -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasLocation"/>
     
@@ -154,11 +179,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#hasManufacturer -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#hasManufacturer"/>
     
 
 
     <!-- https://w3id.org/tribont/core#isCharacterisedByOperationCondition -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOperationCondition"/>
     
@@ -166,11 +193,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#isCharacterisedByOutputMeasure -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/core#isCharacterisedByOutputMeasure"/>
     
 
 
     <!-- https://w3id.org/tribont/equipment#hasCalibration -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#hasCalibration">
         <rdfs:comment>The relation between a specific equipment and the calibrations performed on it.</rdfs:comment>
@@ -182,6 +211,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#holdsMovingSampleBody -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#holdsMovingSampleBody">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/equipment#holdsSampleBody"/>
@@ -196,6 +226,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#holdsSampleBody -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#holdsSampleBody">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/equipment#isHeldSampleBodyBy"/>
         <rdfs:comment>Relationship between an equipment and the sample body it can hold</rdfs:comment>
@@ -207,6 +238,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#holdsStaticSampleBody -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#holdsStaticSampleBody">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/equipment#holdsSampleBody"/>
@@ -221,6 +253,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#isHeldMovingSampleBodyBy -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#isHeldMovingSampleBodyBy">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/equipment#isHeldSampleBodyBy"/>
         <rdfs:comment>Relationship between a movig sample body and the equipment that hold it.</rdfs:comment>
@@ -233,6 +266,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#isHeldSampleBodyBy -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#isHeldSampleBodyBy">
         <rdfs:comment>Relationship between a sample body and the equipment that hold it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
@@ -243,6 +277,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#isHeldStaticSampleBodyBy -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/equipment#isHeldStaticSampleBodyBy">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/tribont/equipment#isHeldSampleBodyBy"/>
@@ -262,10 +297,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/tribont/core#longName -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#longName"/>
     
@@ -273,11 +310,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#shortNam -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/core#shortNam"/>
     
 
 
     <!-- https://w3id.org/tribont/equipment#executionDate -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#executionDate">
         <rdfs:comment>The date when a specific action has been performed.</rdfs:comment>
@@ -290,6 +329,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#measuringPrinciple -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#measuringPrinciple">
         <rdfs:comment>The measuring principle followed by an equipment.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
@@ -301,6 +341,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#purpose -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#purpose">
         <rdfs:comment>The puspose of an equipment.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/equipment</rdfs:isDefinedBy>
@@ -311,6 +352,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#validityDate -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/equipment#validityDate">
         <rdfs:comment>The date until which a given action is valid and after which it is necessary to repeat it.</rdfs:comment>
@@ -329,10 +371,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#Property -->
+
 
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
     
@@ -340,11 +384,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#SubjectOfInterest -->
 
+
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#Unit -->
+
 
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Unit"/>
     
@@ -352,11 +398,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Body -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Body"/>
     
 
 
     <!-- https://w3id.org/tribont/core#Company -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Company"/>
     
@@ -364,11 +412,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Document -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Document"/>
     
 
 
     <!-- https://w3id.org/tribont/core#HardnessProperty -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#HardnessProperty"/>
     
@@ -376,11 +426,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#OperationProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#OperationProperty"/>
     
 
 
     <!-- https://w3id.org/tribont/core#Role -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Role"/>
     
@@ -388,11 +440,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#Standard -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Standard"/>
     
 
 
     <!-- https://w3id.org/tribont/core#TechnicalProperty -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
     
@@ -400,17 +454,20 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#TribologicalProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#TribologicalProperty"/>
     
 
 
     <!-- https://w3id.org/tribont/core#Weight -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#Weight"/>
     
 
 
     <!-- https://w3id.org/tribont/equipment#AbrasionTester -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#AbrasionTester">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
@@ -423,6 +480,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#Calibration -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#Calibration">
         <rdfs:subClassOf>
@@ -455,6 +513,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#CalibrationDocument -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#CalibrationDocument">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Document"/>
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/equipment#TechnicalDocument"/>
@@ -467,6 +526,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#Equipment -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#Equipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
@@ -567,6 +627,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#EquipmentClass -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#EquipmentClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
         <rdfs:subClassOf>
@@ -609,6 +670,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#EquipmentStandard -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#EquipmentStandard">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Standard"/>
         <rdfs:comment>A document approved by a recognized body that provides common to by fullfiled by an equipment.</rdfs:comment>
@@ -620,6 +682,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#ExperimentalEquipment -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ExperimentalEquipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
@@ -633,6 +696,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#ExperimentalEquipmentClass -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ExperimentalEquipmentClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#EquipmentClass"/>
         <rdfs:comment>An aggrupation of experimental equipments with a set of common atributes of characteristics.</rdfs:comment>
@@ -644,6 +708,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#HardnessTester -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#HardnessTester">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
@@ -663,6 +728,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#HardnessTesterClass -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#HardnessTesterClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipmentClass"/>
         <rdfs:comment>An aggrupation of hardness testers with a set of common atributes of characteristics.</rdfs:comment>
@@ -674,6 +740,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#MachineryBook -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#MachineryBook">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#TechnicalDocument"/>
@@ -688,6 +755,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#ManufacturerDataSheet -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ManufacturerDataSheet">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#TechnicalDocument"/>
         <rdfs:comment>A document provided by the manufacturer that includes a summary of technical characteristics, and describes how and when to use something.</rdfs:comment>
@@ -699,6 +767,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#MeasuringEquipment -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#MeasuringEquipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
@@ -712,6 +781,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#MeasuringEquipmentClass -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#MeasuringEquipmentClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#EquipmentClass"/>
         <rdfs:comment>An aggrupation of measuring equipment with a set of common atributes of characteristics.</rdfs:comment>
@@ -723,6 +793,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#OpticalMicroscope -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#OpticalMicroscope">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
@@ -742,6 +813,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#OpticalProfilometer -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#OpticalProfilometer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
         <rdfs:comment>An equipment used to measure precisely surface profiles.</rdfs:comment>
@@ -753,6 +825,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#Scale -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#Scale">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
@@ -772,6 +845,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#ScanningElectronMicroscope -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ScanningElectronMicroscope">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
         <rdfs:comment>An equipment used to assess the materials surfaces by producing images of a sample.</rdfs:comment>
@@ -783,6 +857,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#ScratchTester -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#ScratchTester">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#MeasuringEquipment"/>
@@ -796,6 +871,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#TechnicalDocument -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#TechnicalDocument">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Document"/>
         <rdfs:comment>Information on how to to use and maintain something as for e.g. drawings, manuals, technical reports, etc.</rdfs:comment>
@@ -807,6 +883,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/equipment#Tribometer -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#Tribometer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#ExperimentalEquipment"/>
@@ -850,6 +927,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/equipment#TribometerClass -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/equipment#TribometerClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/equipment#ExperimentalEquipmentClass"/>
         <rdfs:subClassOf>
@@ -870,13 +948,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:Class>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -891,13 +969,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     
 
@@ -909,6 +987,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
@@ -942,16 +1021,17 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="urn:swrl:var#eqc">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
+
     <rdf:Description rdf:about="urn:swrl:var#eq">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl:var#m">
+    <rdf:Description rdf:about="urn:swrl:var#c">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl:var#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#eqc">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl:var#mp">
@@ -960,7 +1040,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <rdf:Description rdf:about="urn:swrl:var#p">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl:var#c">
+    <rdf:Description rdf:about="urn:swrl:var#m">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
@@ -971,77 +1051,8 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/equipment#EquipmentClass"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#eqc"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#belongsTo"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl:var#eqc"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#hasManufacturer"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl:var#eqc"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl:var#m"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#hasManufacturer"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#m"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#hasDocument"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#eqc"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1049,9 +1060,10 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/equipment#hasCalibration"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#c"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1060,9 +1072,9 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#belongsTo"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl:var#eqc"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#hasDocument"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1207,8 +1219,8 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/tribont/equipment#EquipmentClass"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#eqc"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1216,10 +1228,9 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/equipment#hasCalibration"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#c"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1228,9 +1239,78 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#hasDocument"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#belongsTo"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#eqc"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#hasManufacturer"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#eqc"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#m"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#hasManufacturer"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tribont/core#hasDocument"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#eqc"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/tribont/equipment#Equipment"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/isCharacterisedBy#belongsTo"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#eq"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#eqc"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1259,5 +1339,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
 
