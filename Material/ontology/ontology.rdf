@@ -23,6 +23,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <terms:creator xml:lang="en">Patricia Casla (Tekniker)</terms:creator>
         <terms:description xml:lang="en">The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples.</terms:description>
         <terms:issued>2023-06-02</terms:issued>
+        <terms:publisher>Tekniker</terms:publisher>
         <terms:title>Material module</terms:title>
         <vann:preferredNamespacePrefix>material</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/tribont/material</vann:preferredNamespaceUri>
@@ -51,6 +52,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- http://purl.org/dc/terms/bibliographicCitation -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
 
 

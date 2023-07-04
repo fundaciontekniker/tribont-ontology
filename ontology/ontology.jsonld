@@ -502,7 +502,13 @@
 }, {
   "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
+}, 
+
+{
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+},
+{
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -544,6 +550,11 @@
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2023-06-02"
   } ],
+   
+   "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Tekniker"
+  } ],
+   
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "TribOnt ontology"
   } ],

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/isCharacterisedBy"
+<rdf:RDF xmlns="https://w3id.org/isCharacterisedBy#"
      xml:base="https://w3id.org/isCharacterisedBy"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
@@ -41,10 +41,12 @@ Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://creativecommons.org/ns#license -->
+
 
     <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
@@ -52,11 +54,13 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://gbol.life/ontology/bibo#status -->
 
+
     <owl:AnnotationProperty rdf:about="http://gbol.life/ontology/bibo#status"/>
     
 
 
     <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
@@ -64,11 +68,13 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/contributor -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
     <!-- http://purl.org/dc/terms/created -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
@@ -76,11 +82,13 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
@@ -88,11 +96,13 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/issued -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
     <!-- http://purl.org/dc/terms/publisher -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
@@ -100,11 +110,13 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/title -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
@@ -112,17 +124,20 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
     
 
 
     <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
@@ -136,10 +151,12 @@ Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#belongsTo -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#belongsTo">
         <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isGroupingOf"/>
@@ -152,6 +169,7 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/isCharacterisedBy#characterises -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#characterises">
         <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
@@ -166,6 +184,7 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#hasUnit -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#hasUnit">
         <owl:inverseOf rdf:resource="https://w3id.org/isCharacterisedBy#isUnitFor"/>
         <rdfs:range rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
@@ -179,6 +198,7 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#isCharacterisedBy -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isCharacterisedBy">
         <rdfs:domain rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
         <rdfs:comment>Relationship between a SubjectOfInterest and the Property that characterises it.</rdfs:comment>
@@ -191,6 +211,7 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#isGroupingOf -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isGroupingOf">
         <rdfs:comment>Relationship between a group and the members of such group. All the members of a group have the same charabterists or attributes.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
@@ -201,6 +222,7 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/isCharacterisedBy#isUnitFor -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isUnitFor">
         <rdfs:domain rdf:resource="https://w3id.org/isCharacterisedBy#Unit"/>
@@ -220,10 +242,12 @@ Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/terms/identifier -->
+
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
         <rdfs:comment>An unambiguous reference to the resource within a given context.</rdfs:comment>
@@ -235,11 +259,13 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/title -->
 
+
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#maxValue -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/isCharacterisedBy#maxValue">
         <rdfs:comment>Maximum permissible value.</rdfs:comment>
@@ -252,6 +278,7 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#minValue -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/isCharacterisedBy#minValue">
         <rdfs:comment>Minimun permissible value.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
@@ -262,6 +289,7 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/isCharacterisedBy#value -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/isCharacterisedBy#value">
         <rdfs:comment>Specific value.</rdfs:comment>
@@ -280,10 +308,12 @@ Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#Property -->
+
 
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Property">
         <rdfs:subClassOf>
@@ -346,6 +376,7 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#SubjectOfInterest -->
 
+
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -381,6 +412,7 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#Unit -->
 
+
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Unit">
         <rdfs:comment>A reference to the unit of measure of a quantifiable aspect (attribute or characteristic).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/isCharacterisedBy</rdfs:isDefinedBy>
@@ -398,11 +430,12 @@ Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     <rdf:Description rdf:about="http://purl.org/dc/terms/title">
-        <ns1:term_status></ns1:term_status>
-        <rdfs:label>title</rdfs:label>
-        <rdfs:isDefinedBy>http://purl.org/dc/terms</rdfs:isDefinedBy>
         <rdfs:comment>A name given to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/dc/terms</rdfs:isDefinedBy>
+        <rdfs:label>title</rdfs:label>
+        <ns1:term_status></ns1:term_status>
     </rdf:Description>
     
 
@@ -414,6 +447,7 @@ Xana Fernandez (Tekniker)</terms:contributor>
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
@@ -433,6 +467,7 @@ Xana Fernandez (Tekniker)</terms:contributor>
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
 
     <rdf:Description rdf:about="urn:swrl:var#p">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
@@ -527,5 +562,6 @@ Xana Fernandez (Tekniker)</terms:contributor>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
 

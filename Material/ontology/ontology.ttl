@@ -17,6 +17,7 @@ Domain expert:Xana Fernandez (Tekniker)"""@en ;
                                      <http://purl.org/dc/terms/created> "2023-06-02" ;
                                      <http://purl.org/dc/terms/creator> "Patricia Casla (Tekniker)"@en ;
                                      <http://purl.org/dc/terms/description> "The goal of this module is to represent the materials  that can be involved in the tribological experiments as part of the tested samples."@en ;
+                                     <http://purl.org/dc/terms/publisher> "Tekniker" ;
                                      <http://purl.org/dc/terms/title> "Material module" ;
                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "material" ;
                                      <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tribont/material" ;
@@ -25,6 +26,18 @@ Domain expert:Xana Fernandez (Tekniker)"""@en ;
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://gbol.life/ontology/bibo#status
+<http://gbol.life/ontology/bibo#status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
 
 ###  http://www.w3.org/2002/07/owl#cardinality
 owl:cardinality rdf:type owl:AnnotationProperty .
@@ -1820,37 +1833,37 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Testing" .
 
 
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:maxCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################

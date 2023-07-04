@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/tribont/sample"
+<rdf:RDF xmlns="https://w3id.org/tribont/sample#"
      xml:base="https://w3id.org/tribont/sample"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
@@ -42,10 +42,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://creativecommons.org/ns#license -->
+
 
     <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
@@ -53,11 +55,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/contributor -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
     <!-- http://purl.org/dc/terms/created -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
@@ -65,11 +69,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
@@ -77,11 +83,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/issued -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
     <!-- http://purl.org/dc/terms/publisher -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
@@ -89,11 +97,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/dc/terms/title -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
@@ -101,11 +111,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#cardinality -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
     
@@ -113,11 +125,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://www.w3.org/2002/07/owl#maxCardinality -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxCardinality"/>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#maxQualifiedCardinality -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxQualifiedCardinality"/>
     
@@ -125,11 +139,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
     
 
 
     <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
@@ -143,10 +159,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#belongsTo -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#belongsTo"/>
     
@@ -154,11 +172,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#isCharacterisedBy -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/isCharacterisedBy#isCharacterisedBy"/>
     
 
 
     <!-- https://w3id.org/tribont/sample#hasBody -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasBody">
         <rdfs:comment>Relationship between something  and its body configuration..</rdfs:comment>
@@ -170,6 +190,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#hasCoating -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasCoating">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isCoatingFor"/>
@@ -183,6 +204,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#hasCoreMaterial -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasCoreMaterial">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isCoreMaterialFor"/>
         <rdfs:comment>Relationship between something and the material of which it is made</rdfs:comment>
@@ -194,6 +216,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#hasLubricationSample -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasLubricationSample">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isLubricationSampleFor"/>
@@ -207,6 +230,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#hasMovingSample -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasMovingSample">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isMovingSampleFor"/>
         <rdfs:comment>Relationship between a sample system and a moving sample body that is part of it.</rdfs:comment>
@@ -218,6 +242,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#hasSampleRole -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasSampleRole">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isSampleRoleFor"/>
@@ -231,6 +256,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#hasStaticSample -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#hasStaticSample">
         <owl:inverseOf rdf:resource="https://w3id.org/tribont/sample#isStaticSampleFor"/>
         <rdfs:comment>Relationship between a sample system and a static sample body that is part of it.</rdfs:comment>
@@ -243,6 +269,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#interactsWith -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#interactsWith">
         <rdfs:comment>Releation between sveral samples interacting one with each other.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
@@ -253,6 +280,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#isCoatingFor -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isCoatingFor">
         <rdfs:comment>Relationship between a coating  and the sample  of which it is a part.</rdfs:comment>
@@ -265,6 +293,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#isCoreMaterialFor -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isCoreMaterialFor">
         <rdfs:comment>Relationship between  the material it is made of and something</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
@@ -275,6 +304,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#isLubricationSampleFor -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isLubricationSampleFor">
         <rdfs:comment>Relationship between a lubrication sample  and the sample system of which it is a part.</rdfs:comment>
@@ -287,6 +317,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#isMovingSampleFor -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isMovingSampleFor">
         <rdfs:comment>Relationship between a moving sample  and the sample system of which it is a part.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
@@ -298,6 +329,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#isSampleRoleFor -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isSampleRoleFor">
         <rdfs:comment>Relationship between a role and the sample to which it applies,</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/tribont/sample</rdfs:isDefinedBy>
@@ -308,6 +340,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#isStaticSampleFor -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tribont/sample#isStaticSampleFor">
         <rdfs:comment>Relationship between a static sample  and the sample system of which it is a part.</rdfs:comment>
@@ -326,10 +359,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/tribont/sample#executionDate -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/sample#executionDate">
         <rdfs:comment>Data when something has been executed.</rdfs:comment>
@@ -341,6 +376,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#preparationDate -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tribont/sample#preparationDate">
         <rdfs:comment>Data when something has been prepared.</rdfs:comment>
@@ -359,10 +395,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/isCharacterisedBy#Property -->
+
 
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#Property"/>
     
@@ -370,11 +408,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/isCharacterisedBy#SubjectOfInterest -->
 
+
     <owl:Class rdf:about="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
     
 
 
     <!-- https://w3id.org/tribont/core#Body -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Body"/>
     
@@ -382,11 +422,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#OperationProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#OperationProperty"/>
     
 
 
     <!-- https://w3id.org/tribont/core#Role -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#Role"/>
     
@@ -394,11 +436,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/core#SystemProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/core#SystemProperty"/>
     
 
 
     <!-- https://w3id.org/tribont/core#TechnicalProperty -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/core#TechnicalProperty"/>
     
@@ -406,11 +450,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#ElementConcentration -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElementConcentration"/>
     
 
 
     <!-- https://w3id.org/tribont/material#ElementRole -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#ElementRole">
         <owl:disjointWith rdf:resource="https://w3id.org/tribont/sample#SampleRole"/>
@@ -420,11 +466,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#FluidLubricant -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#FluidLubricant"/>
     
 
 
     <!-- https://w3id.org/tribont/material#Material -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/material#Material"/>
     
@@ -432,11 +480,13 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/material#SolidLubricant -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/material#SolidLubricant"/>
     
 
 
     <!-- https://w3id.org/tribont/sample#CoatedSample -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#CoatedSample">
         <owl:equivalentClass>
@@ -460,6 +510,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#Coating -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#Coating">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
@@ -492,6 +543,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#CoatingProperty -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/sample#CoatingProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#Property"/>
         <rdfs:comment>Qualifiable or quantifiable attribute, or characteristic of a coating.</rdfs:comment>
@@ -503,6 +555,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#CoatingThickness -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#CoatingThickness">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#CoatingProperty"/>
@@ -516,6 +569,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#CoatingType -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/sample#CoatingType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/sample#CoatingProperty"/>
         <rdfs:comment>Type of coating.</rdfs:comment>
@@ -527,6 +581,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#LubricatedSampleSystem -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#LubricatedSampleSystem">
         <owl:equivalentClass>
@@ -550,6 +605,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#LubricationSample -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#LubricationSample">
         <owl:equivalentClass>
@@ -581,6 +637,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#Sample -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#Sample">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
@@ -651,6 +708,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#SampleBatch -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleBatch">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
         <rdfs:subClassOf>
@@ -702,6 +760,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#SampleRole -->
 
+
     <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleRole">
         <rdfs:subClassOf rdf:resource="https://w3id.org/tribont/core#Role"/>
         <rdfs:comment>The position or purpose that a sample has in a situation.</rdfs:comment>
@@ -713,6 +772,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
     <!-- https://w3id.org/tribont/sample#SampleSystem -->
+
 
     <owl:Class rdf:about="https://w3id.org/tribont/sample#SampleSystem">
         <rdfs:subClassOf rdf:resource="https://w3id.org/isCharacterisedBy#SubjectOfInterest"/>
@@ -756,10 +816,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/tribont/sample#reference -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/sample#reference">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleRole"/>
@@ -773,6 +835,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
     <!-- https://w3id.org/tribont/sample#target -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/tribont/sample#target">
         <rdf:type rdf:resource="https://w3id.org/tribont/sample#SampleRole"/>
         <rdfs:comment>Target sample for the  testing  activity.</rdfs:comment>
@@ -781,28 +844,28 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <ns1:term_status>Testing</ns1:term_status>
     </owl:NamedIndividual>
     <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
     </rdf:Description>
     
 
@@ -814,6 +877,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
@@ -846,6 +910,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
 
     <rdf:Description rdf:about="urn:swrl:var#s">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
@@ -1168,5 +1233,6 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
 
