@@ -26,6 +26,7 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
         <terms:creator xml:lang="en">Patricia Casla (Tekniker)</terms:creator>
         <terms:description xml:lang="en">The goal  is to represent the tribological experiments by relaying on the representation included in the core,,  sample and equipment modules.</terms:description>
         <terms:issued>2023-06-02</terms:issued>
+        <terms:publisher>Tekniker</terms:publisher>
         <terms:title>TribOnt ontology</terms:title>
         <vann:preferredNamespacePrefix>tribont</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/tribont</vann:preferredNamespaceUri>
@@ -90,6 +91,12 @@ Domain expert:Xana Fernandez (Tekniker)</terms:contributor>
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
 
 
