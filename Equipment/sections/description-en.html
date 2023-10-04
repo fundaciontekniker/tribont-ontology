@@ -1,24 +1,6 @@
 <h2 id="desc" class="list">Equipment module: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
 
-
-<p>The <i>Equipment</i> class represents the elements of the equipment hierarchy model. Specific specialisation classes represent experimental (<i>ExperimentalEquipment</i> class) and measuring (<i>MeasuringEquipment</i> class) equipment. The <i>Tribometer</i> class is a specialisation of the <i>ExperimentalEquipment</i> class and the <i>AbrasionTester</i>, <i>HardnessTester</i>, <i>OpticalMicroscope</i>, <i>OpticalProfilometer</i> and<i> Scale</i> classes are a specialisation of the <i>MeasuringEquipment</i> class. An equipment is manufactured (<i>hasManufacturer</i> object property) and owned (<i>isOwnedBy</i> object property) by a specific company (<i>Company</i> class) and has associated technical documentation (<i>TechnicalDocument</i> class) which can include the machinery book (<i>MachineryBook</i> class) and the manufacturer data sheet (<i>ManufacturerDataSheet</i> class) which are specialisation of the <i>Document</i>class. In addition, each equipment should be calibrated (<i>Calibration</i> class) according to a specific standard (<i>Standard</i> clas, <i>compliesWith</i> object property), Each calibration activity should identify the execution date and validity period (<i>executionDate</i> and <i>validityDate</i> data properties) and keep evidence  of any relevant information (<i>CalibrationDocument</i> class).</p>
-<p>An Equipment is located in a company (<i>hasLocation</i> object property) and can be characterised by the operation conditions that can be configured to perform a specific activity (<i>OperationProperty</i> class, <i>isCharacterisedByOperationCondition</i> object property), the operation conditions whose evolution can be measured throughout the performed activity (<i>OperationProperty</i> class , <i>isCharacterisedByOperationMeasure</i> object property), and the specific technical properties that can be measured as result of it (<i>TechnicalProperty</i> class, <i>isCharacterisedByOutputMeasure</i> object property). Each equipment specialisation can measure a specific set of technical properties. For example, a tribometer measures tribological properties (<i>TribologicalProperty</i> class) while a hardness tester  measures hardness properties (<i>HardnessProperty</i> class). Furthermore, an equipment can hold different sample bodies (<i>Body</i> class) with specific characteristics (<i>BodyProperty</i> class). Tribometers can hold either moving (<i>holdsMovingSampleBody</i> object property) or static (<i>holdsStaticSample</i> object property) bodies.</p>
-<p>The <i>EquipmentClass</i> class describes an aggregation of equipment with similar characteristics. Each equipment belonging to an equipment class  inherits the entire representation of the <i>EquipmentClass</i> class and can be further particularised.</p>
-
-
-<!-- 
-<p>Figure 1 includes an UML diagram representing the main classes and object properties linked to the <i>Equipment</i> module.</p>
-<p> icb: represent isCharacterised ontology design pattern.</p>
-
-
-<center>
-<img src="img_TribOnt_Equipment_overview.jpg">
-</center>
-<center>
-<p>Figure 1: TribOnt Ontology: Equipment Module Overview/p>
-</center> -->
-
+<div id="competencyquestions">
 <h3 id="ns" class="list">Competency Questions</h3>
 <p>This section shows the specification of the requirements for the <i>Sample</i> module in the form of key basic Competency Questions..</p>
 
@@ -37,7 +19,20 @@
   <li>CQ: What company is the manufacturer of an equipment?</li> 
   <li>CQ: Where is located a given equipment?</li> 
 </ol>
+</div>
 
-</span>
+<div id="details">
+<h3 id="ns" class="list">Details</h3>
+<p>The <i>Equipment</i> class represents the elements of the equipment hierarchy model. Specific specialisation classes represent experimental (<i>ExperimentalEquipment</i> class) and measuring (<i>MeasuringEquipment</i> class) equipment. The <i>Tribometer</i> class is a specialisation of the <i>ExperimentalEquipment</i> class and the <i>AbrasionTester</i>, <i>HardnessTester</i>, <i>OpticalMicroscope</i>, <i>OpticalProfilometer</i> and<i> Scale</i> classes are a specialisation of the <i>MeasuringEquipment</i> class. An equipment is manufactured (<i>hasManufacturer</i> object property) and owned (<i>isOwnedBy</i> object property) by a specific company (<i>Company</i> class) and has associated technical documentation (<i>TechnicalDocument</i> class) which can include the machinery book (<i>MachineryBook</i> class) and the manufacturer data sheet (<i>ManufacturerDataSheet</i> class) which are specialisation of the <i>Document</i>class. In addition, each equipment should be calibrated (<i>Calibration</i> class) according to a specific standard (<i>Standard</i> clas, <i>compliesWith</i> object property), Each calibration activity should identify the execution date and validity period (<i>executionDate</i> and <i>validityDate</i> data properties) and keep evidence  of any relevant information (<i>CalibrationDocument</i> class).</p>
+<p>An Equipment is located in a company (<i>hasLocation</i> object property) and can be characterised by the operation conditions that can be configured to perform a specific activity (<i>OperationProperty</i> class, <i>isCharacterisedByOperationCondition</i> object property), the operation conditions whose evolution can be measured throughout the performed activity (<i>OperationProperty</i> class , <i>isCharacterisedByOperationMeasure</i> object property), and the specific technical properties that can be measured as result of it (<i>TechnicalProperty</i> class, <i>isCharacterisedByOutputMeasure</i> object property). Each equipment specialisation can measure a specific set of technical properties. For example, a tribometer measures tribological properties (<i>TribologicalProperty</i> class) while a hardness tester  measures hardness properties (<i>HardnessProperty</i> class). Furthermore, an equipment can hold different sample bodies (<i>Body</i> class) with specific characteristics (<i>BodyProperty</i> class). Tribometers can hold either moving (<i>holdsMovingSampleBody</i> object property) or static (<i>holdsStaticSample</i> object property) bodies.</p>
+<p>The <i>EquipmentClass</i> class describes an aggregation of equipment with similar characteristics. Each equipment belonging to an equipment class  inherits the entire representation of the <i>EquipmentClass</i> class and can be further particularised.</p>
+<p>Figure 1 includes an overview of the main classes and object properties.</p>
+<center><img src="resources/images/img_TribOnt_Equipment_overview.jpg"><figcaption>Figure 1: Equipment Module Overview</figcaption></center>
+</div>
+
+
+
+
+
 
 
