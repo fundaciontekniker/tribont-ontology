@@ -28,12 +28,10 @@
 
 <div id="details">
 <h3 id="ns" class="list">Details</h3>
-<p>Figure 2 and Figure 3 includes an overview of the main classes and object properties.</p>
-<center><img src="resources/images/img_TribOnt_overview1.jpg"><figcaption>Figure 2: TribOnt Ontology Overview - 1</figcaption></center>
-<center><img src="resources/images/img_TribOnt_overview2.jpg"><figcaption>Figure 3: TribOnt Ontology Overview - 2</figcaption></center>
-
 <p>An experiment (<i>Experiment</i> class) to perform the tribological characterisation of a material can be defined by a set of tests (<i>Test</i> class, <i>isMadeOf</i> object property) following a specific procedure represented by a dependency flow (<i>hasDependency</i> object property). In some cases, the tests involved in the experiment follow a specific sequence (<i>hasAfterEndDependency</i> object property, specialisation of <i>hasDependency</i>) but in other cases they are performed in parallel (<i>hasNofollowDependency</i> object property, specialisation of <i>hasDependency</i>). In turn, each test can be made of a set of test steps  (<i>TestStep</i> class) following a specific procedure, as described previously.</p>
 <p>Each test is executed by an equipment (<i>isExecutedBy</i> object property), and can be characterised by a set of configured operation conditions (<i>isCharcaterisedByOperationCondition</i> object property) that can comply or not with a given standard (<i>compliesWith</i> object property). Furthermore, tests can be characterised by the evolution of a set of operation conditions (<i>isCharacterisedByOperationMeasure</i> object property) during its execution, and the measurements of the specific set of technical properties (<i>TechnicalProperty</i> class) resulting from it (<i>isCharacterisedByOutputMeasure</i> object property). Analogously each test step can be characterised by a set of configured operation conditions, the evolution of a set of operation conditions, and the specific set of technical properties measured as result of it. The values of the measured technical properties represent mean or termination values (i.e., value data property), all the intermediate values of the technical properties , along with the values of the operation conditions measured throughout the tests or tests steps, are compiled in specific output files (<i>TestOutputDocument</i> class).</p>
 <p>Tests can apply either to a sample or a sample system (<i>tests</i> object property. Tribological tests (<i>TribologicalTest</i> class) aim to assess one or more tribological characteristics (<i>TribologicalProperty</i> class) of a given sample system, while Measuring tests (<i>MeasuringTest</i> class) aims to measure one or more characteristics of a given sample.</p>
-
+<p>Figure 2 and Figure 3 include an overview of the main classes and object properties.</p>
+<center><img src="resources/images/img_TribOnt_overview1.jpg"><figcaption>Figure 2: TribOnt Ontology Overview - 1</figcaption></center>
+<center><img src="resources/images/img_TribOnt_overview2.jpg"><figcaption>Figure 3: TribOnt Ontology Overview - 2</figcaption></center>
 </div>

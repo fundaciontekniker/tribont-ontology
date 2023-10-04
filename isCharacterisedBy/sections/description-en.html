@@ -1,19 +1,22 @@
 <h2 id="desc" class="list">isCharacterisedBy ontology design pattern : Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
 
-<p>The goal of this ontology design pattern is to characterise a subject or group of subjects of interest (<i>SubjectOfInterest</i> class) by assigning qualifiable or quantifiable attributes or characteristics (<i>Property</i> class). Quantitative properties can be described either by a specific value (<i>value</i> data property) or a range of values (<i>minValue, masValue</i> data properties), and including the unit of measurement (<i>Unit</i> class and <i>hasUnit</i> object property). A property cannot exist without characterising at least a subject of interest.</p>
-<p>As described a <i>SubjectOfInterest</i> class can describe either a subject of interest or a grouping of subjects of interest which have similar characteristics. If it represents an aggrupation, the subjects of interest belonging to the group inherits all the properties that characterise it and can be further particularised.</p>
-
-
+<div id="competencyquestions">
 <h3 id="ns" class="list">Competency Questions</h3>
 <p>This section shows the specification of the requirements for the isCharacterisedBy design pattern in the form of key basic Competency Questions.</p>
-
 <ul>
   <li>CQ.01: What are the properties that characterise a subject of interest?</li>
   <li>CQ.02: What are the subjects of interest belonging to a given subjects of interest?</li>
   <li>CQ.03: Which are the values and unit of measurement of a property?</li>
-
 </ul>
+</div>
 
-</span>
+<div id="details">
+<h3 id="ns" class="list">Details</h3>
+<p>The goal of this ontology design pattern is to characterise a subject or group of subjects of interest (<i>SubjectOfInterest</i> class) by assigning qualifiable or quantifiable attributes or characteristics (<i>Property</i> class). Quantitative properties can be described either by a specific value (<i>value</i> data property) or a range of values (<i>minValue, masValue</i> data properties), and including the unit of measurement (<i>Unit</i> class and <i>hasUnit</i> object property). A property cannot exist without characterising at least a subject of interest.</p>
+<p>As described a <i>SubjectOfInterest</i> class can describe either a subject of interest or a grouping of subjects of interest which have similar characteristics. If it represents an aggrupation, the subjects of interest belonging to the group inherits all the properties that characterise it and can be further particularised.</p>
+<p>Figure 1 includes an overview of the main classes and object properties.</p>
+<center><img src="resources/images/img_TribOnt_isCharacterised_overview.jpg"><figcaption>Figure 1: isCharacterisedBy ODP Overview</figcaption></center>
+</div>
+
+
 
