@@ -1,24 +1,8 @@
 <h2 id="desc" class="list">Sample module: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
 
-<p>The <i>Sample</i> class represents the elements of the sample hierarchy model involved in the tribological experiments. A sample has always a specific body configuration (<i>Body</i> class), it is made of a specific core material (<i>hasCoreMaterial</i> object property) and can be characterised by a set of technical properties (<i>TechnicalProperty</i> class). Furthermore, a sample can have a coating (<i>Coating</i> class, <i>hasCoating</i> object property) made of a specific core material (<i>hasCoreMaterial</i> object property) and characterised by specific properties (<i>CoatingProperty</i> class) such as thickness (<i>CoatingThickness</i> class) or type (<i>CoatingType</i> class). Both the <i>CoatedSample</i> (i.e., representing the samples which include a coating) and <i>LubricationSample</i> classes (i.e., representing the samples used as lubricants) are a specialisation of the <i>Sample</i> class.</p>
-<p></p>
-<p>The <i>SampleBatch</i> class describes a grouping of samples which have been prepared at the same time following the same procedure and have similar characteristics. Each sample belonging to a sample batch inherits the entire representation of the <i>SampleBatch</i> class and can be further particularised.</p>
-
-<p>The <i>SampleSystem</i> class represents the tribological system involved in the tribological experiments that includes two or more static (<i>hasStaticSample</i> object property) and moving (<i>hasMovingSample</i> object property) samples (<i>Sample</i> class)  that interact (<i>interactsWith</i> object property) with each other. In addition a sample system can include a lubricant (<i>hasLubricationSample</i> object property). Sample systems are characterised  by specific properties (<i>SystemProperty</i> class) such as the geometrical arrangement (<i>GeometricalArrangement</i> class) describing the geometrical combination of bodies belonging to the tribological system (e.g., ball on disc), the  type of contact surfaces (<i>ContactSurfaceType</i> class) or the number of contact surfaces (<i>NumberOfContactSurface</i> class). <i>LubricatedSampleSystem</i> class is a specialisation of the SampleSystem class representing the sample systems that include a lubricant.</p>
-
-<!-- <p>Figure 1 includes an UML diagram representing the main classes and object properties linked to the <i>Sample</i> module.</p>
-<p> icb: represents isCharacterised ontology design pattern.</p> 
-
-
-<center><img src="resources/images/img_TribOnt_Sample_overview.jpg">  
- <figcaption>Figure 1: TribOnt Ontology: Sample Module Overview</figcaption>
-</center>-->
-
-
+<div id="competencyquestions">
 <h3 id="ns" class="list">Competency Questions</h3>
 <p>This section shows the specification of the requirements for the <i>Sample</i> module in the form of key basic Competency Questions..</p>
-
 <ul>
   <li>CQ.01: What is the list of coated samples?</li>
   <li>CQ.02: What is the list of bared samples?</li>
@@ -38,8 +22,17 @@
   <li>CQ.16: What are the characteristics of the coating of a sample?</li>  
   <li>CQ.17: What are the characteristics of a sample body?</li>
 </ul>
+</div>
 
 
-</span>
+<div id="details">
+<h3 id="ns" class="list">Details</h3>
+<p>The <i>Sample</i> class represents the elements of the sample hierarchy model involved in the tribological experiments. A sample has always a specific body configuration (<i>Body</i> class), it is made of a specific core material (<i>hasCoreMaterial</i> object property) and can be characterised by a set of technical properties (<i>TechnicalProperty</i> class). Furthermore, a sample can have a coating (<i>Coating</i> class, <i>hasCoating</i> object property) made of a specific core material (<i>hasCoreMaterial</i> object property) and characterised by specific properties (<i>CoatingProperty</i> class) such as thickness (<i>CoatingThickness</i> class) or type (<i>CoatingType</i> class). Both the <i>CoatedSample</i> (i.e., representing the samples which include a coating) and <i>LubricationSample</i> classes (i.e., representing the samples used as lubricants) are a specialisation of the <i>Sample</i> class.</p>
+<p>The <i>SampleBatch</i> class describes a grouping of samples which have been prepared at the same time following the same procedure and have similar characteristics. Each sample belonging to a sample batch inherits the entire representation of the <i>SampleBatch</i> class and can be further particularised.</p>
+<p>The <i>SampleSystem</i> class represents the tribological system involved in the tribological experiments that includes two or more static (<i>hasStaticSample</i> object property) and moving (<i>hasMovingSample</i> object property) samples (<i>Sample</i> class)  that interact (<i>interactsWith</i> object property) with each other. In addition a sample system can include a lubricant (<i>hasLubricationSample</i> object property). Sample systems are characterised  by specific properties (<i>SystemProperty</i> class) such as the geometrical arrangement (<i>GeometricalArrangement</i> class) describing the geometrical combination of bodies belonging to the tribological system (e.g., ball on disc), the  type of contact surfaces (<i>ContactSurfaceType</i> class) or the number of contact surfaces (<i>NumberOfContactSurface</i> class). <i>LubricatedSampleSystem</i> class is a specialisation of the SampleSystem class representing the sample systems that include a lubricant.</p>
+<p>Figure 1 includes an overview of the main classes and object properties.</p>
+<center><img src="resources/images/img_TribOnt_Sample_overview.jpg"><figcaption>Figure 1: Sample Module Overview</figcaption></center>
+
+</div>
 
 
